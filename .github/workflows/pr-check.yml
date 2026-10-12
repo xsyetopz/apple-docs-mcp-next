@@ -11,90 +11,65 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2.2.0
         with:
-          version: 9
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
-          cache: 'pnpm'
+          bun-version-file: .bun-version
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
-      - name: Check code formatting
-        run: |
-          pnpm run lint
-          if [ $? -ne 0 ]; then
-            echo "❌ Linting failed. Please run 'pnpm run lint:fix' locally and commit the changes."
-            exit 1
-          fi
+      - name: Check commit messages
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: bunx commitlint --from "$BASE_SHA" --to "$HEAD_SHA" --verbose
 
-      - name: Run type checking
+      - name: Run checks
         run: |
-          npx tsc --noEmit
-          if [ $? -ne 0 ]; then
-            echo "❌ Type checking failed. Please fix TypeScript errors."
-            exit 1
-          fi
-
-      - name: Run tests
-        run: |
-          pnpm run test:ci
-          if [ $? -ne 0 ]; then
-            echo "❌ Tests failed. Please ensure all tests pass."
-            exit 1
-          fi
-
-      - name: Build project
-        run: |
-          pnpm run build
-          if [ $? -ne 0 ]; then
-            echo "❌ Build failed. Please ensure the project builds successfully."
+          if ! bun run ci; then
+            echo "❌ Checks failed. Run 'bun run format' and 'bun run ci' locally and commit the changes."
             exit 1
           fi
 
       - name: Verify bundled data
         run: |
-          if [ ! -d "dist/data/wwdc" ]; then
-            echo "❌ WWDC data not found in build output"
+          if [ ! -d "data/wwdc" ]; then
+            echo "❌ WWDC data not found"
             exit 1
           fi
 
-          file_count=$(find dist/data/wwdc -name "*.json" | wc -l)
+          file_count=$(find data/wwdc -name "*.json" | wc -l)
           if [ "$file_count" -lt 1000 ]; then
             echo "❌ Expected at least 1000 JSON files in WWDC data, found $file_count"
             exit 1
           fi
 
-          echo "✅ Found $file_count WWDC data files"
+          if [ ! -f "api-map/apple-docs-map.tsv" ]; then
+            echo "❌ Docs map api-map/apple-docs-map.tsv not found"
+            exit 1
+          fi
+
+          echo "✅ Found $file_count WWDC data files and the docs map"
 
       - name: Check package size
         run: |
-          size=$(du -sm dist | cut -f1)
-          echo "📦 Build size: ${size}MB"
-
-          if [ "$size" -gt 100 ]; then
-            echo "⚠️ Warning: Build size is larger than 100MB (${size}MB)"
-          fi
+          size=$(bun pm pack --dry-run 2>/dev/null | grep -i 'unpacked size' | awk '{print $NF}' || true)
+          echo "📦 Package unpacked size: ${size:-unknown}"
 
       - name: Comment PR status
         if: always()
         uses: actions/github-script@v7
         with:
           script: |
-            const { context } = require('@actions/github');
             const success = '${{ job.status }}' === 'success';
 
             const body = success
-              ? '✅ **All PR checks passed!**\n\n- ✓ Linting\n- ✓ Type checking\n- ✓ Tests (434 passing)\n- ✓ Build successful\n- ✓ WWDC data bundled'
+              ? '✅ **All PR checks passed!**\n\n- ✓ Type checking\n- ✓ Commit messages\n- ✓ Biome and markdownlint\n- ✓ Tests\n- ✓ Bundled data'
               : '❌ **PR checks failed**\n\nPlease review the CI logs for details.';
 
             github.rest.issues.createComment({
