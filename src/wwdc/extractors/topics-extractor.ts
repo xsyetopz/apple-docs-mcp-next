@@ -1,22 +1,12 @@
 /**
- * WWDC video topic classification extractor
+ * The videos on one WWDC topic page, for scripts/add-wwdc-year.ts
  */
 
-import { JSDOM } from "jsdom";
 import { WWDC_URLS } from "../../core/constants.ts";
-import { httpClient } from "../../core/http-client.ts";
 import { logger } from "../../core/logger.ts";
 import { fetchVideosPage } from "./content-extractor.ts";
 
-export interface Topic {
-  id: string; // URL slug, e.g., "accessibility-inclusion"
-  name: string; // Display name, e.g., "Accessibility & Inclusion"
-  url: string; // Complete URL
-  description?: string; // Topic description
-  videoCount?: number; // Number of videos in this topic
-}
-
-export interface TopicVideo {
+interface TopicVideo {
   id: string;
   year: string;
   title: string;
@@ -24,94 +14,6 @@ export interface TopicVideo {
   description?: string | undefined;
   thumbnail?: string | undefined;
   url: string;
-}
-
-/**
- * Extract all topic categories
- */
-export async function extractAllTopics(): Promise<Topic[]> {
-  const url = WWDC_URLS.TOPICS;
-  logger.info("Extracting topic categories list...");
-
-  try {
-    const response = await httpClient.get(url);
-    const html = await response.text();
-    const dom = new JSDOM(html);
-    const document = dom.window.document;
-
-    const topics: Topic[] = [];
-
-    // Find topic links - look for both /videos/topics/xxx and /videos/xxx/ formats
-    const topicLinks = document.querySelectorAll('a[href*="/videos/"]');
-
-    topicLinks.forEach((link: Element) => {
-      const href = link.getAttribute("href") || "";
-
-      // Look for topic links in different formats
-      const match =
-        href.match(/\/videos\/topics\/([a-z-]+)/) ||
-        href.match(/\/videos\/([a-z-]+)\/?$/);
-
-      if (match && !href.includes("/play/")) {
-        // The group is `[a-z-]+`, so a match always has it
-        const id = match[1] ?? "";
-
-        // Skip non-topic links
-        if (
-          id === "all-videos" ||
-          id === "collections" ||
-          id === "about" ||
-          id === "wwdc" ||
-          /^\d+$/.test(id)
-        ) {
-          return;
-        }
-
-        // Extract name from heading or link text
-        const heading = link.querySelector("h3, h4") || link;
-        const name = heading.textContent?.trim() || "";
-
-        if (!name) {
-          return;
-        }
-
-        // Extract video count if available
-        let videoCount = 0; // Default to 0
-        const countElement = link.querySelector("p");
-        if (countElement) {
-          const countMatch =
-            countElement.textContent?.match(/(\d+)\s*videos?/i);
-          if (countMatch) {
-            videoCount = parseInt(countMatch[1] ?? "", 10);
-          }
-        }
-
-        topics.push({
-          id,
-          name,
-          url: `${WWDC_URLS.BASE.replace("/videos", "")}${href}`,
-          videoCount,
-        });
-      }
-    });
-
-    // Remove duplicates
-    const uniqueTopics = Array.from(
-      new Map(topics.map((t) => [t.id, t])).values(),
-    );
-
-    // Sort alphabetically by name
-    uniqueTopics.sort((a, b) => a.name.localeCompare(b.name));
-
-    logger.info(`Found ${uniqueTopics.length} topic categories`);
-    return uniqueTopics;
-  } catch (error) {
-    logger.error("Failed to extract topic categories:", error);
-    throw new Error(
-      `Failed to extract topics: ${error instanceof Error ? error.message : String(error)}`,
-      { cause: error },
-    );
-  }
 }
 
 /**
@@ -184,28 +86,3 @@ export async function extractTopicVideos(url: string): Promise<TopicVideo[]> {
     throw error;
   }
 }
-
-/**
- * Standard topic mapping (ensures consistency)
- */
-export const TOPIC_ID_TO_NAME: Record<string, string> = {
-  "accessibility-inclusion": "Accessibility & Inclusion",
-  "app-services": "App Services",
-  "app-store-distribution-marketing": "App Store, Distribution & Marketing",
-  "audio-video": "Audio & Video",
-  "business-education": "Business & Education",
-  design: "Design",
-  "developer-tools": "Developer Tools",
-  essentials: "Essentials",
-  "graphics-games": "Graphics & Games",
-  "health-fitness": "Health & Fitness",
-  "maps-location": "Maps & Location",
-  "machine-learning-ai": "Machine Learning & AI",
-  "photos-camera": "Photos & Camera",
-  "privacy-security": "Privacy & Security",
-  "safari-web": "Safari & Web",
-  "spatial-computing": "Spatial Computing",
-  swift: "Swift",
-  "swiftui-ui-frameworks": "SwiftUI & UI Frameworks",
-  "system-services": "System Services",
-};

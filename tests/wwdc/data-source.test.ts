@@ -9,7 +9,6 @@ type AnyMock = Mock<(...args: unknown[]) => Promise<unknown>>;
 // Mock the module before importing
 mock.module("../../src/wwdc/data-source.ts", () => ({
   clearDataCache: mock(),
-  isDataAvailable: mock(),
   loadAllVideos: mock(),
   loadGlobalMetadata: mock(),
   loadTopicIndex: mock(),
@@ -20,7 +19,6 @@ mock.module("../../src/wwdc/data-source.ts", () => ({
 // Import after mocking
 const {
   clearDataCache,
-  isDataAvailable,
   loadAllVideos,
   loadGlobalMetadata,
   loadTopicIndex,
@@ -188,25 +186,6 @@ describe("WWDC Data Source", () => {
       clearDataCache();
 
       expect(clearDataCache).toHaveBeenCalled();
-    });
-  });
-
-  describe("isDataAvailable", () => {
-    it("should return true when data is available", async () => {
-      (isDataAvailable as AnyMock).mockResolvedValue(true);
-
-      const result = await isDataAvailable();
-
-      expect(result).toBe(true);
-      expect(isDataAvailable).toHaveBeenCalled();
-    });
-
-    it("should return false when data is not available", async () => {
-      (isDataAvailable as AnyMock).mockResolvedValue(false);
-
-      const result = await isDataAvailable();
-
-      expect(result).toBe(false);
     });
   });
 });

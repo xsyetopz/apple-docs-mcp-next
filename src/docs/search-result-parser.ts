@@ -18,7 +18,7 @@ export interface SearchResult {
 /**
  * Type mapping for search filters
  */
-export const typeMapping: Record<string, string[]> = {
+const typeMapping: Record<string, string[]> = {
   all: [
     "documentation",
     "documentation-article",
@@ -37,7 +37,7 @@ export const typeMapping: Record<string, string[]> = {
 /**
  * Where the Human Interface Guidelines live on developer.apple.com
  */
-export const DESIGN_GUIDELINES_PATH = "/design/human-interface-guidelines/";
+const DESIGN_GUIDELINES_PATH = "/design/human-interface-guidelines/";
 
 /**
  * Where App Store Connect Help lives: web pages, which Apple's search reports by `sourceURL`
@@ -52,7 +52,7 @@ const UNSUPPORTED_TYPES = ["general", "video", "forums", "news"];
 /**
  * Check if result type is supported
  */
-export function isResultTypeSupported(
+function isResultTypeSupported(
   resultType: string,
   filterType: string,
 ): boolean {
@@ -73,7 +73,7 @@ export function isResultTypeSupported(
 /**
  * Check if URL is supported
  */
-export function isUrlSupported(url: string): boolean {
+function isUrlSupported(url: string): boolean {
   if (!url) {
     return false;
   }

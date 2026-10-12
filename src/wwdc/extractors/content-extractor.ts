@@ -17,7 +17,7 @@ import type {
 } from "../types.ts";
 
 /** A videos page Apple answered with another page: it redirects retired URLs (a session's /code) to /videos/ */
-export class PageMovedError extends Error {}
+class PageMovedError extends Error {}
 
 /** A session's code section whose examples no longer hold code where the extractor reads it */
 class CodeSectionChangedError extends Error {}

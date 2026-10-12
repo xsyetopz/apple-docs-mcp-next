@@ -24,7 +24,6 @@ mock.module("../src/wwdc/data-source.ts", () => ({
   loadVideoData: mock(),
   loadAllVideos: mock(),
   clearDataCache: mock(),
-  isDataAvailable: mock().mockResolvedValue(true),
 }));
 
 type ToolResponse = {

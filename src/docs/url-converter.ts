@@ -63,16 +63,3 @@ export function isValidAppleDeveloperUrl(url: string): boolean {
     return false;
   }
 }
-
-/**
- * Extract API name from URL
- * @param url The URL to extract name from
- * @returns The API name
- */
-export function extractApiNameFromUrl(url: string): string {
-  try {
-    return new URL(url).pathname.split("/").pop() || "Unknown API";
-  } catch {
-    return "Unknown API";
-  }
-}

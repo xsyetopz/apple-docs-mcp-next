@@ -70,7 +70,7 @@ function formatReference(
  * Where an asset loads from (an image, a sample's download, a tutorial's project files): its path, with or without a
  * leading slash, is from the pages' base, as swift-docc-render resolves it; a full URL stays as it is
  */
-export function assetUrl(path: string): string {
+function assetUrl(path: string): string {
   return new URL(path.replace(/^\//, ""), APPLE_URLS.ASSETS).href;
 }
 

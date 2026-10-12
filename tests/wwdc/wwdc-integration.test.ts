@@ -22,7 +22,6 @@ mock.module("../../src/wwdc/data-source.ts", () => ({
   loadVideoData: mock(),
   loadAllVideos: mock(),
   clearDataCache: mock(),
-  isDataAvailable: mock(),
 }));
 
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";

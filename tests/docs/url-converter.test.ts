@@ -5,7 +5,6 @@ import { describe, expect, it } from "bun:test";
 
 import {
   convertToJsonApiUrl,
-  extractApiNameFromUrl,
   isValidAppleDeveloperUrl,
 } from "../../src/docs/url-converter.ts";
 
@@ -76,38 +75,6 @@ describe("URL Converter", () => {
       invalidUrls.forEach((url) => {
         expect(isValidAppleDeveloperUrl(url)).toBe(false);
       });
-    });
-  });
-
-  describe("extractApiNameFromUrl", () => {
-    it("should extract API name from URL", () => {
-      const testCases = [
-        {
-          url: "https://developer.apple.com/documentation/swiftui/view",
-          expected: "view",
-        },
-        {
-          url: "https://developer.apple.com/documentation/foundation/nsstring",
-          expected: "nsstring",
-        },
-        {
-          url: "https://developer.apple.com/documentation/swiftui/view/",
-          expected: "",
-        },
-      ];
-
-      testCases.forEach(({ url, expected }) => {
-        const result = extractApiNameFromUrl(url);
-        if (expected === "") {
-          expect(result).toBe("Unknown API");
-        } else {
-          expect(result).toBe(expected);
-        }
-      });
-    });
-
-    it('should return "Unknown API" for invalid URLs', () => {
-      expect(extractApiNameFromUrl("not-a-url")).toBe("Unknown API");
     });
   });
 });

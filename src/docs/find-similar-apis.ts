@@ -94,10 +94,7 @@ export async function handleFindSimilarApis({
 
     uniqueApis.sort((a, b) => b.confidence - a.confidence);
 
-    const maxResults =
-      SEARCH_DEPTH_LIMITS[searchDepth as keyof typeof SEARCH_DEPTH_LIMITS] ||
-      SEARCH_DEPTH_LIMITS.medium;
-    const limitedApis = uniqueApis.slice(0, maxResults);
+    const limitedApis = uniqueApis.slice(0, SEARCH_DEPTH_LIMITS[searchDepth]);
 
     const title = data.metadata?.title ?? "API";
 

@@ -139,10 +139,3 @@ export function clearDataCache(): void {
   wwdcDataCache.clear();
   logger.info("WWDC data cache cleared");
 }
-
-/**
- * Check if WWDC data is available
- */
-export function isDataAvailable(): Promise<boolean> {
-  return Bun.file(path.join(WWDC_DATA_DIR, "index.json")).exists();
-}

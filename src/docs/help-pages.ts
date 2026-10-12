@@ -13,7 +13,7 @@ import { HELP_PATH } from "./search-result-parser.ts";
 class HelpPageLayoutError extends Error {}
 
 /** One page the help's navigation lists */
-export interface HelpPage {
+interface HelpPage {
   url: string;
   title: string;
   section: string;
