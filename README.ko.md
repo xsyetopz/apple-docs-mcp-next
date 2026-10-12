@@ -250,45 +250,51 @@ bun install
 
 ```text
 "SwiftUI 애니메이션 검색"
-"CoreML 모델 로딩 방법 찾기"
-"Swift async/await 패턴 찾아보기"
-"AlarmKit 스케줄링 예제 보여줘"
+"withAnimation API 문서 찾기"
+"Swift의 async/await 패턴 찾아보기"
+"UITableView 델리게이트 메서드 보여줘"
+"Core Data NSPersistentContainer 예제 검색"
+"AVFoundation 비디오 재생 API 찾기"
 ```
 
-### 📚 프레임워크 심화 탐구
+### 📚 문서 접근
 
 ```text
 "SwiftUI 프레임워크의 상세 정보 가져오기"
-"iOS 18 프레임워크의 새로운 기능은?"
-"Vision 프레임워크 기능에 대해 알려줘"
-"모든 WeatherKit API 보여줘"
+"관련 API와 함께 withAnimation API 보여줘"
+"SwiftData의 플랫폼 호환성 가져오기"
+"유사한 API와 함께 UIViewController 문서 보여줘"
+"NSManagedObjectContext 문서 보여줘"
+"URLSession async/await 메서드 가져오기"
 ```
 
-### 🔧 API 탐색
+### 🔧 프레임워크 탐색
 
 ```text
-"UIViewController 라이프사이클 메서드 보여줘"
-"SwiftData 모델 생성 세부사항 가져오기"
-"AlarmAttributes 속성은 무엇인가?"
-"모든 ARKit 앵커 타입 나열"
+"SwiftUI 프레임워크 API 색인 보여줘"
+"모든 UIKit 클래스와 메서드 나열"
+"ARKit 프레임워크 구조 살펴보기"
+"WeatherKit API 계층 구조 가져오기"
+"Core ML 모델 로딩 API 탐색"
+"Vision 프레임워크 이미지 분석 API 보여줘"
 ```
 
-### 💡 샘플 코드 및 튜토리얼
+### 🔗 API 탐색
 
 ```text
-"알람 스케줄링 샘플 코드 찾기"
-"SwiftUI 튜토리얼 예제 보여줘"
-"카메라 캡처 샘플 코드 가져오기"
-"Core Data 마이그레이션 예제 찾기"
+"UIViewController 관련 API 찾기"
+"withAnimation과 유사한 API 보여줘"
+"SwiftData 문서의 모든 참조 가져오기"
+"Core Data NSManagedObject의 대안 찾기"
 ```
 
-### 📋 기술 발견
+### 📋 기술 및 플랫폼 분석
 
 ```text
-"iOS 26의 모든 베타 프레임워크 나열"
-"그래픽 & 게임 기술 보여줘"
-"어떤 머신러닝 프레임워크가 사용 가능한가?"
-"모든 watchOS 프레임워크 탐색"
+"베타 단계의 기술 나열"
+"Graphics and Games 기술 보여줘"
+"어떤 머신러닝 프레임워크를 사용할 수 있나?"
+"Vision 프레임워크의 플랫폼 호환성 분석"
 ```
 
 ### 📰 문서 업데이트
@@ -304,8 +310,8 @@ bun install
 ### 🎯 기술 개요
 
 ```text
-"앱 디자인과 UI의 기술 개요 보여줘"
-"게임 개발을 위한 포괄적인 가이드 가져오기"
+"앱 디자인 및 UI에 대한 기술 개요 보여줘"
+"게임 개발을 위한 종합 가이드 가져오기"
 "AI 및 머신러닝 개요 탐색"
 "iOS 전용 기술 가이드 보여줘"
 "데이터 관리 기술 개요 가져오기"
@@ -317,7 +323,7 @@ bun install
 "SwiftUI 샘플 코드 프로젝트 보여줘"
 "머신러닝 샘플 코드 찾기"
 "UIKit 예제 프로젝트 가져오기"
-"추천 WWDC 샘플 코드 보여줘"
+"추천 SwiftUI 샘플 코드 보여줘"
 "Core Data 샘플 구현 찾기"
 "베타 샘플 코드 프로젝트만 보여줘"
 ```
@@ -325,22 +331,22 @@ bun install
 ### 🎥 WWDC 비디오 검색
 
 ```text
-"SwiftUI에 대한 WWDC 비디오 검색"
+"SwiftUI에 관한 WWDC 비디오 검색"
 "머신러닝 WWDC 세션 찾기"
 "WWDC 2024 비디오 보여줘"
 "async/await WWDC 강연 검색"
-"Swift 동시성에 대한 WWDC 비디오 찾기"
-"접근성 주제의 WWDC 세션 보여줘"
+"Swift 동시성에 관한 WWDC 비디오 찾기"
+"접근성 중심 WWDC 세션 보여줘"
 ```
 
 ### 📺 WWDC 비디오 상세 정보
 
 ```text
-"WWDC 세션 10176의 상세 정보 가져와"
+"WWDC23 세션 10176의 상세 정보 가져오기"
 "WWDC23 SwiftData 세션의 대본 보여줘"
-"WWDC 비디오 10019의 코드 예제 가져오기"
+"WWDC20 세션 10019의 코드 예제 가져오기"
 "Vision Pro WWDC 세션의 리소스 보여줘"
-"'Meet async/await in Swift' 세션의 대본 가져와"
+"'Meet async/await in Swift' 세션의 대본 가져오기"
 ```
 
 ### 📋 WWDC 주제 및 연도
@@ -348,10 +354,19 @@ bun install
 ```text
 "모든 WWDC 주제 나열"
 "Swift 주제의 WWDC 비디오 보여줘"
-"개발자 도구에 대한 WWDC 비디오 가져오기"
+"개발자 도구에 관한 WWDC 비디오 가져오기"
 "2023년 WWDC 비디오 나열"
 "모든 SwiftUI 및 UI 프레임워크 세션 보여줘"
 "머신러닝 WWDC 콘텐츠 가져오기"
+```
+
+### 🛠️ 고급 사용
+
+```text
+"플랫폼 분석과 함께 @State 관련 API 찾기"
+"SwiftUI 문서의 모든 참조 해석"
+"Vision 프레임워크의 플랫폼 호환성 분석 가져오기"
+"심층 검색으로 UIViewController와 유사한 API 찾기"
 ```
 
 ## 🛠️ 사용 가능한 도구

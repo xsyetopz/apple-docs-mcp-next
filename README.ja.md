@@ -248,45 +248,51 @@ bun install
 
 ```text
 "SwiftUI アニメーションを検索"
-"CoreML モデル読み込み方法を見つける"
+"withAnimation API のドキュメントを検索"
 "Swift の async/await パターンを調べる"
-"AlarmKit スケジューリング例を表示"
+"UITableView のデリゲートメソッドを表示"
+"Core Data の NSPersistentContainer の例を検索"
+"AVFoundation のビデオ再生 API を検索"
 ```
 
-### 📚 フレームワーク深掘り
+### 📚 ドキュメントへのアクセス
 
 ```text
 "SwiftUI フレームワークの詳細情報を取得"
-"iOS 18 フレームワークの新機能は？"
-"Vision フレームワークの機能について教えて"
-"すべての WeatherKit API を表示"
+"関連 API を含む withAnimation API を表示"
+"SwiftData のプラットフォーム互換性を取得"
+"類似 API を含む UIViewController のドキュメントにアクセス"
+"NSManagedObjectContext のドキュメントを表示"
+"URLSession の async/await メソッドを取得"
 ```
 
-### 🔧 API 探索
+### 🔧 フレームワーク探索
 
 ```text
-"UIViewController ライフサイクルメソッドを表示"
-"SwiftData モデル作成の詳細を取得"
-"AlarmAttributes のプロパティは何？"
-"すべての ARKit アンカータイプをリスト"
+"SwiftUI フレームワークの API インデックスを表示"
+"すべての UIKit クラスとメソッドをリスト"
+"ARKit フレームワークの構造を閲覧"
+"WeatherKit API の階層を取得"
+"Core ML モデル読み込み API を探索"
+"Vision フレームワークの画像解析 API を表示"
 ```
 
-### 💡 サンプルコードとチュートリアル
+### 🔗 API 発見
 
 ```text
-"アラームスケジューリングのサンプルコードを見つける"
-"SwiftUI チュートリアル例を表示"
-"カメラキャプチャのサンプルコードを取得"
-"Core Data マイグレーション例を見つける"
+"UIViewController に関連する API を検索"
+"withAnimation に類似する API を表示"
+"SwiftData のドキュメントからすべての参照を取得"
+"Core Data の NSManagedObject の代替手段を探す"
 ```
 
-### 📋 テクノロジー発見
+### 📋 テクノロジーとプラットフォーム分析
 
 ```text
-"iOS 26 のすべてのベータフレームワークをリスト"
-"グラフィックス & ゲームテクノロジーを表示"
+"ベータ版のテクノロジーをリスト"
+"Graphics and Games のテクノロジーを表示"
 "どの機械学習フレームワークが利用可能？"
-"すべての watchOS フレームワークを閲覧"
+"Vision フレームワークのプラットフォーム互換性を分析"
 ```
 
 ### 📰 ドキュメント更新
@@ -314,19 +320,19 @@ bun install
 ```text
 "SwiftUI サンプルコードプロジェクトを表示"
 "機械学習のサンプルコードを検索"
-"UIKit サンプルプロジェクトを取得"
-"注目の WWDC サンプルコードを表示"
-"Core Data サンプル実装を検索"
-"ベータサンプルコードプロジェクトのみを表示"
+"UIKit のサンプルプロジェクトを取得"
+"注目の SwiftUI サンプルコードを表示"
+"Core Data のサンプル実装を検索"
+"ベータ版のサンプルコードプロジェクトのみを表示"
 ```
 
 ### 🎥 WWDC ビデオ検索
 
 ```text
 "SwiftUI に関する WWDC ビデオを検索"
-"機械学習の WWDC セッションを検索"
-"WWDC 2024 ビデオを表示"
-"async/await WWDC トークを検索"
+"機械学習に関する WWDC セッションを検索"
+"WWDC 2024 のビデオを表示"
+"async/await に関する WWDC トークを検索"
 "Swift 並行処理に関する WWDC ビデオを検索"
 "アクセシビリティに焦点を当てた WWDC セッションを表示"
 ```
@@ -334,9 +340,9 @@ bun install
 ### 📺 WWDC ビデオ詳細
 
 ```text
-"WWDC セッション 10176 の詳細を取得"
-"WWDC23 SwiftData セッションのトランスクリプトを表示"
-"WWDC ビデオ 10019 のコード例を取得"
+"WWDC23 セッション 10176 の詳細を取得"
+"SwiftData に関する WWDC23 セッションのトランスクリプトを表示"
+"WWDC20 セッション 10019 のコード例を取得"
 "Vision Pro WWDC セッションのリソースを表示"
 "'Meet async/await in Swift' セッションのトランスクリプトを取得"
 ```
@@ -348,8 +354,17 @@ bun install
 "Swift トピックの WWDC ビデオを表示"
 "開発者ツールに関する WWDC ビデオを取得"
 "2023 年の WWDC ビデオをリスト"
-"すべての SwiftUI および UI フレームワークセッションを表示"
-"機械学習 WWDC コンテンツを取得"
+"すべての SwiftUI および UI フレームワークのセッションを表示"
+"機械学習の WWDC コンテンツを取得"
+```
+
+### 🛠️ 高度な使い方
+
+```text
+"プラットフォーム分析付きで @State の関連 API を検索"
+"SwiftUI ドキュメントからすべての参照を解決"
+"Vision フレームワークのプラットフォーム互換性分析を取得"
+"ディープサーチで UIViewController に類似する API を検索"
 ```
 
 ## 🛠️ 利用可能なツール

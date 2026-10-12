@@ -289,8 +289,8 @@ bun install
 ### 📋 Technology & Platform Analysis
 
 ```text
-"List all Beta frameworks in iOS 26"
-"Show me Graphics & Games technologies"
+"List the technologies that are in beta"
+"Show me Graphics and Games technologies"
 "What machine learning frameworks are available?"
 "Analyze platform compatibility for Vision framework"
 ```
@@ -321,7 +321,7 @@ bun install
 "Show SwiftUI sample code projects"
 "Find sample code for machine learning"
 "Get UIKit example projects"
-"Show featured WWDC sample code"
+"Show featured SwiftUI sample code"
 "Find Core Data sample implementations"
 "Show only beta sample code projects"
 ```
@@ -340,9 +340,9 @@ bun install
 ### 📺 WWDC Video Details
 
 ```text
-"Get details for WWDC session 10176"
+"Get details for WWDC23 session 10176"
 "Show me the transcript for WWDC23 session on SwiftData"
-"Get code examples from WWDC video 10019"
+"Get code examples from WWDC20 session 10019"
 "Show resources from Vision Pro WWDC session"
 "Get transcript for 'Meet async/await in Swift' session"
 ```

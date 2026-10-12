@@ -250,7 +250,9 @@ bun install
 "搜索 SwiftUI 动画"
 "查找 withAnimation API 文档"
 "查询 Swift 中的 async/await 模式"
-"显示 AlarmKit 调度示例"
+"显示 UITableView 委托方法"
+"搜索 Core Data NSPersistentContainer 示例"
+"查找 AVFoundation 视频播放 API"
 ```
 
 ### 📚 文档访问
@@ -260,6 +262,8 @@ bun install
 "显示 withAnimation API 及相关 API"
 "获取 SwiftData 的平台兼容性"
 "访问 UIViewController 文档及类似 API"
+"显示 NSManagedObjectContext 文档"
+"获取 URLSession async/await 方法"
 ```
 
 ### 🔧 框架探索
@@ -269,6 +273,8 @@ bun install
 "列出所有 UIKit 类和方法"
 "浏览 ARKit 框架结构"
 "获取 WeatherKit API 层次结构"
+"探索 Core ML 模型加载 API"
+"显示 Vision 框架图像分析 API"
 ```
 
 ### 🔗 API 发现
@@ -283,8 +289,8 @@ bun install
 ### 📋 技术和平台分析
 
 ```text
-"列出 iOS 26 中的所有 Beta 框架"
-"显示图形和游戏技术"
+"列出处于 beta 阶段的技术"
+"显示 Graphics and Games 技术"
 "有哪些机器学习框架可用？"
 "分析 Vision 框架的平台兼容性"
 ```
@@ -293,7 +299,7 @@ bun install
 
 ```text
 "显示最新的 WWDC 更新"
-"SwiftUI 有什么新功能？"
+"SwiftUI 有什么新变化？"
 "获取 iOS 的技术更新"
 "显示 Xcode 的发布说明"
 "查找最新更新中的 beta 功能"
@@ -305,7 +311,7 @@ bun install
 "显示应用设计和 UI 的技术概览"
 "获取游戏开发的综合指南"
 "探索 AI 和机器学习概览"
-"显示 iOS 特定的技术指南"
+"显示 iOS 专属的技术指南"
 "获取数据管理技术概览"
 ```
 
@@ -313,30 +319,30 @@ bun install
 
 ```text
 "显示 SwiftUI 示例代码项目"
-"查找机器学习示例代码"
+"查找机器学习的示例代码"
 "获取 UIKit 示例项目"
-"显示精选 WWDC 示例代码"
+"显示精选的 SwiftUI 示例代码"
 "查找 Core Data 示例实现"
-"仅显示测试版示例代码项目"
+"仅显示 beta 示例代码项目"
 ```
 
 ### 🎥 WWDC 视频搜索
 
 ```text
 "搜索关于 SwiftUI 的 WWDC 视频"
-"查找机器学习的 WWDC 会议"
+"查找关于机器学习的 WWDC 会议"
 "显示 WWDC 2024 视频"
-"搜索 async/await WWDC 演讲"
+"搜索 async/await 相关的 WWDC 演讲"
 "查找关于 Swift 并发的 WWDC 视频"
-"显示无障碍主题的 WWDC 会议"
+"显示以无障碍为主题的 WWDC 会议"
 ```
 
 ### 📺 WWDC 视频详情
 
 ```text
-"获取 WWDC 会议 10176 的详情"
-"显示 WWDC23 SwiftData 会议的文字记录"
-"获取 WWDC 视频 10019 的代码示例"
+"获取 WWDC23 会议 10176 的详情"
+"显示 WWDC23 中关于 SwiftData 的会议文字记录"
+"获取 WWDC20 会议 10019 的代码示例"
 "显示 Vision Pro WWDC 会议的资源"
 "获取 'Meet async/await in Swift' 会议的文字记录"
 ```
@@ -348,14 +354,14 @@ bun install
 "显示 Swift 主题的 WWDC 视频"
 "获取关于开发者工具的 WWDC 视频"
 "列出 2023 年的 WWDC 视频"
-"显示所有 SwiftUI 和 UI 框架会议"
-"获取机器学习 WWDC 内容"
+"显示所有 SwiftUI 和 UI 框架相关的会议"
+"获取机器学习相关的 WWDC 内容"
 ```
 
 ### 🛠️ 高级用法
 
 ```text
-"查找 @State 相关 API 及平台分析"
+"查找 @State 相关的 API 及平台分析"
 "解析 SwiftUI 文档中的所有引用"
 "获取 Vision 框架的平台兼容性分析"
 "深度搜索与 UIViewController 类似的 API"
