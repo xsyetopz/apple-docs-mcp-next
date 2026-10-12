@@ -1,6 +1,6 @@
 {
   "name": "apple-docs-mcp-next",
-  "version": "1.0.26",
+  "version": "2.0.0",
   "description": "MCP server for Apple Developer Documentation: API reference, Human Interface Guidelines, App Store Connect Help, sample code and 1,700 WWDC sessions with transcripts and code, on Bun",
   "keywords": [
     "mcp",
