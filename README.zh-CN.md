@@ -1,6 +1,6 @@
 # Apple Docs MCP - Apple 开发者文档模型上下文协议服务器
 
-[![npm 版本](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp.svg)](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp)
+[![npm 版本](https://badge.fury.io/js/apple-docs-mcp-next.svg)](https://www.npmjs.com/package/apple-docs-mcp-next)
 [![许可证: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Apple 开发者文档 MCP 服务器 - 通过模型上下文协议访问 Apple 官方开发文档、框架、API、SwiftUI、UIKit 和 WWDC 视频。使用 AI 自然语言查询搜索 iOS、macOS、watchOS、tvOS 和 visionOS 文档。在 Claude、Cursor 或任何兼容 MCP 的 AI 助手中即时获取 Swift/Objective-C 代码示例、API 参考和技术指南。
@@ -29,23 +29,25 @@ Apple 开发者文档 MCP 服务器 - 通过模型上下文协议访问 Apple �
 
 将此配置添加到您的 Claude Desktop 配置文件中：
 
-**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+
 **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
 > **注意**: 如果遇到使用旧版本的问题，添加 `@latest` 以强制使用最新版本：
+>
 > ```json
-> "args": ["-y", "@kimsungwhee/apple-docs-mcp@latest"]
+> "args": ["apple-docs-mcp-next@latest"]
 > ```
 
 重启 Claude Desktop 并开始询问 Apple API！
@@ -56,7 +58,7 @@ Apple 开发者文档 MCP 服务器 - 通过模型上下文协议访问 Apple �
 <summary><strong>📱 Claude Code</strong></summary>
 
 ```bash
-claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
+claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 ```
 
 [📖 Claude Code MCP 文档](https://docs.anthropic.com/en/docs/claude-code/mcp)
@@ -74,8 +76,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -96,8 +98,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
     "servers": {
       "apple-docs": {
         "type": "stdio",
-        "command": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "command": "bunx",
+        "args": ["apple-docs-mcp-next"]
       }
     }
   }
@@ -117,8 +119,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -138,8 +140,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
   "context_servers": {
     "Apple Docs": {
       "command": {
-        "path": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "path": "bunx",
+        "args": ["apple-docs-mcp-next"]
       },
       "settings": {}
     }
@@ -155,6 +157,7 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 <summary><strong>🔧 Cline</strong></summary>
 
 **通过市场**:
+
 1. 打开 Cline → 菜单 (☰) → MCP 服务器 → 市场
 2. 搜索 "Apple Docs MCP" → 安装
 
@@ -164,8 +167,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"],
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -185,7 +188,7 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
   "mcpServers": {
     "apple-docs": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@kimsungwhee/apple-docs-mcp"],
+      "args": ["/c", "bunx", "apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -199,29 +202,24 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 <summary><strong>⚙️ 高级安装</strong></summary>
 
 **全局安装**:
-```bash
-# 使用 pnpm（推荐）
-pnpm add -g @kimsungwhee/apple-docs-mcp
 
-# 使用 npm
-npm install -g @kimsungwhee/apple-docs-mcp
+```bash
+bun add -g apple-docs-mcp-next
 ```
 
 **直接使用**:
+
 ```bash
-npx @kimsungwhee/apple-docs-mcp --help
+bunx apple-docs-mcp-next --help
 ```
 
 **开发环境设置**:
+
 ```bash
-git clone https://github.com/kimsungwhee/apple-docs-mcp.git
-cd apple-docs-mcp
+git clone https://github.com/xsyetopz/apple-docs-mcp-next.git
+cd apple-docs-mcp-next
 
-# 使用 pnpm（推荐）
-pnpm install && pnpm run build
-
-# 使用 npm
-npm install && npm run build
+bun install
 ```
 
 </details>
@@ -229,7 +227,8 @@ npm install && npm run build
 ## 💬 使用示例
 
 ### 🔍 智能搜索
-```
+
+```text
 "搜索 SwiftUI 动画"
 "查找 withAnimation API 文档"
 "查询 Swift 中的 async/await 模式"
@@ -237,7 +236,8 @@ npm install && npm run build
 ```
 
 ### 📚 文档访问
-```
+
+```text
 "获取 SwiftUI 框架的详细信息"
 "显示 withAnimation API 及相关 API"
 "获取 SwiftData 的平台兼容性"
@@ -245,7 +245,8 @@ npm install && npm run build
 ```
 
 ### 🔧 框架探索
-```
+
+```text
 "显示 SwiftUI 框架 API 索引"
 "列出所有 UIKit 类和方法"
 "浏览 ARKit 框架结构"
@@ -253,7 +254,8 @@ npm install && npm run build
 ```
 
 ### 🔗 API 发现
-```
+
+```text
 "查找与 UIViewController 相关的 API"
 "显示与 withAnimation 类似的 API"
 "获取 SwiftData 文档中的所有引用"
@@ -261,7 +263,8 @@ npm install && npm run build
 ```
 
 ### 📋 技术和平台分析
-```
+
+```text
 "列出 iOS 26 中的所有 Beta 框架"
 "显示图形和游戏技术"
 "有哪些机器学习框架可用？"
@@ -269,7 +272,8 @@ npm install && npm run build
 ```
 
 ### 📰 文档更新
-```
+
+```text
 "显示最新的 WWDC 更新"
 "SwiftUI 有什么新功能？"
 "获取 iOS 的技术更新"
@@ -278,7 +282,8 @@ npm install && npm run build
 ```
 
 ### 🎯 技术概览
-```
+
+```text
 "显示应用设计和 UI 的技术概览"
 "获取游戏开发的综合指南"
 "探索 AI 和机器学习概览"
@@ -287,7 +292,8 @@ npm install && npm run build
 ```
 
 ### 💻 示例代码库
-```
+
+```text
 "显示 SwiftUI 示例代码项目"
 "查找机器学习示例代码"
 "获取 UIKit 示例项目"
@@ -297,7 +303,8 @@ npm install && npm run build
 ```
 
 ### 🎥 WWDC 视频搜索
-```
+
+```text
 "搜索关于 SwiftUI 的 WWDC 视频"
 "查找机器学习的 WWDC 会议"
 "显示 WWDC 2024 视频"
@@ -307,7 +314,8 @@ npm install && npm run build
 ```
 
 ### 📺 WWDC 视频详情
-```
+
+```text
 "获取 WWDC 会议 10176 的详情"
 "显示 WWDC23 SwiftData 会议的文字记录"
 "获取 WWDC 视频 10019 的代码示例"
@@ -316,7 +324,8 @@ npm install && npm run build
 ```
 
 ### 📋 WWDC 主题和年份
-```
+
+```text
 "列出所有 WWDC 主题"
 "显示 Swift 主题的 WWDC 视频"
 "获取关于开发者工具的 WWDC 视频"
@@ -326,7 +335,8 @@ npm install && npm run build
 ```
 
 ### 🛠️ 高级用法
-```
+
+```text
 "查找 @State 相关 API 及平台分析"
 "解析 SwiftUI 文档中的所有引用"
 "获取 Vision 框架的平台兼容性分析"
@@ -336,7 +346,7 @@ npm install && npm run build
 ## 🛠️ 可用工具
 
 | 工具 | 描述 | 主要功能 |
-|------|------|----------|
+| ------ | ------ | ---------- |
 | `search_apple_docs` | 搜索 Apple 开发者文档 | 官方搜索 API，增强格式化，平台过滤 |
 | `get_apple_doc_content` | 获取详细文档内容 | JSON API 访问，可选增强分析（相关/类似 API，平台兼容性） |
 | `list_technologies` | 浏览所有 Apple 技术 | 类别过滤，语言支持，beta 状态 |
@@ -353,10 +363,9 @@ npm install && npm run build
 | `get_platform_compatibility` | 平台兼容性分析 | 版本支持，beta 状态，弃用信息 |
 | `find_similar_apis` | 发现类似 API | Apple 官方推荐，主题分组 |
 
-
 ## 🏗️ 技术架构
 
-```
+```text
 apple-docs-mcp/
 ├── 🔧 src/
 │   ├── index.ts                      # MCP 服务器入口点，包含所有工具
@@ -383,7 +392,6 @@ apple-docs-mcp/
 │       ├── error-handler.ts          # 错误处理和验证
 │       ├── http-client.ts            # 带性能跟踪的 HTTP 客户端
 │       └── url-converter.ts          # URL 转换工具
-├── 📦 dist/                          # 编译后的 JavaScript
 ├── 📄 package.json                   # 包配置
 └── 📖 README.md                      # 此文件
 ```
@@ -400,7 +408,7 @@ apple-docs-mcp/
 ### 💾 缓存策略
 
 | 内容类型 | 缓存时长 | 缓存大小 | 原因 |
-|----------|----------|----------|------|
+| ---------- | ---------- | ---------- | ------ |
 | API 文档 | 30 分钟 | 500 项 | 频繁访问，适度更新 |
 | 搜索结果 | 10 分钟 | 200 项 | 动态内容，用户特定 |
 | 框架索引 | 1 小时 | 100 项 | 稳定结构，变化较少 |
@@ -414,26 +422,22 @@ apple-docs-mcp/
 
 ```bash
 # 开发模式（自动重载）
-pnpm run dev    # 或: npm run dev
+bun run dev
 
-# 生产构建
-pnpm run build  # 或: npm run build
 
 # 类型检查
-pnpm exec tsc --noEmit  # 或: npx tsc --noEmit
+bun check
 
-# 清理构建产物
-pnpm run clean  # 或: npm run clean
 ```
 
 ### 本地测试
 
 ```bash
 # 直接测试 MCP 服务器
-node dist/index.js
+bun run start
 
 # 使用示例查询测试
-npx @kimsungwhee/apple-docs-mcp --test
+bunx apple-docs-mcp-next --test
 ```
 
 ## 🤝 贡献
@@ -458,7 +462,7 @@ MIT 许可证 - 详见 [LICENSE](LICENSE)。
 
 <div align="center">
 
-**为 Apple 开发者社区用 ❤️ 制作**
+<p><strong>为 Apple 开发者社区用 ❤️ 制作</strong></p>
 
 搜索 Apple 开发者文档 | iOS 开发 | macOS 开发 | Swift 编程 | SwiftUI | UIKit | Xcode | WWDC 视频 | 模型上下文协议 | MCP 服务器
 

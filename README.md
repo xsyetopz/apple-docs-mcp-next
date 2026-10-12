@@ -1,6 +1,6 @@
 # Apple Docs MCP - Apple Developer Documentation Model Context Protocol Server
 
-[![npm version](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp.svg)](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp)
+[![npm version](https://badge.fury.io/js/apple-docs-mcp-next.svg)](https://www.npmjs.com/package/apple-docs-mcp-next)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Apple Developer Documentation MCP Server - Access Apple's official developer docs, frameworks, APIs, SwiftUI, UIKit, and WWDC videos through Model Context Protocol. Search iOS, macOS, watchOS, tvOS, and visionOS documentation with AI-powered natural language queries. Get instant access to Swift/Objective-C code examples, API references, and technical guides directly in Claude, Cursor, or any MCP-compatible AI assistant.
@@ -30,23 +30,25 @@ Apple Developer Documentation MCP Server - Access Apple's official developer doc
 
 Add this to your Claude Desktop configuration:
 
-**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+
 **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
 > **Note**: If you encounter issues with an old version being used, add `@latest` to force the latest version:
+>
 > ```json
-> "args": ["-y", "@kimsungwhee/apple-docs-mcp@latest"]
+> "args": ["apple-docs-mcp-next@latest"]
 > ```
 
 Restart Claude Desktop and start asking about Apple APIs!
@@ -57,7 +59,7 @@ Restart Claude Desktop and start asking about Apple APIs!
 <summary><strong>📱 Claude Code</strong></summary>
 
 ```bash
-claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
+claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 ```
 
 [📖 Claude Code MCP docs](https://docs.anthropic.com/en/docs/claude-code/mcp)
@@ -75,8 +77,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -97,8 +99,8 @@ Add to your VS Code MCP config:
     "servers": {
       "apple-docs": {
         "type": "stdio",
-        "command": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "command": "bunx",
+        "args": ["apple-docs-mcp-next"]
       }
     }
   }
@@ -118,8 +120,8 @@ Add to your Windsurf MCP config:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -139,8 +141,8 @@ Add to your Zed `settings.json`:
   "context_servers": {
     "Apple Docs": {
       "command": {
-        "path": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "path": "bunx",
+        "args": ["apple-docs-mcp-next"]
       },
       "settings": {}
     }
@@ -156,6 +158,7 @@ Add to your Zed `settings.json`:
 <summary><strong>🔧 Cline</strong></summary>
 
 **Via Marketplace**:
+
 1. Open Cline → Menu (☰) → MCP Servers → Marketplace
 2. Search "Apple Docs MCP" → Install
 
@@ -165,8 +168,8 @@ Add to your Zed `settings.json`:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"],
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -185,8 +188,8 @@ Add to your Zed `settings.json`:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -206,7 +209,7 @@ For Windows systems, use:
   "mcpServers": {
     "apple-docs": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@kimsungwhee/apple-docs-mcp"],
+      "args": ["/c", "bunx", "apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -220,29 +223,24 @@ For Windows systems, use:
 <summary><strong>⚙️ Advanced Installation</strong></summary>
 
 **Global Installation**:
-```bash
-# Using pnpm (recommended)
-pnpm add -g @kimsungwhee/apple-docs-mcp
 
-# Using npm
-npm install -g @kimsungwhee/apple-docs-mcp
+```bash
+bun add -g apple-docs-mcp-next
 ```
 
 **Direct Usage**:
+
 ```bash
-npx @kimsungwhee/apple-docs-mcp --help
+bunx apple-docs-mcp-next --help
 ```
 
 **Development Setup**:
+
 ```bash
-git clone https://github.com/kimsungwhee/apple-docs-mcp.git
-cd apple-docs-mcp
+git clone https://github.com/xsyetopz/apple-docs-mcp-next.git
+cd apple-docs-mcp-next
 
-# Using pnpm (recommended)
-pnpm install && pnpm run build
-
-# Using npm
-npm install && npm run build
+bun install
 ```
 
 </details>
@@ -250,7 +248,8 @@ npm install && npm run build
 ## 💬 Usage Examples
 
 ### 🔍 Smart Search
-```
+
+```text
 "Search for SwiftUI animations"
 "Find withAnimation API documentation"
 "Look up async/await patterns in Swift"
@@ -260,7 +259,8 @@ npm install && npm run build
 ```
 
 ### 📚 Documentation Access
-```
+
+```text
 "Get detailed information about the SwiftUI framework"
 "Show me withAnimation API with related APIs"
 "Get platform compatibility for SwiftData"
@@ -270,7 +270,8 @@ npm install && npm run build
 ```
 
 ### 🔧 Framework Exploration
-```
+
+```text
 "Show me SwiftUI framework API index"
 "List all UIKit classes and methods"
 "Browse ARKit framework structure"
@@ -280,7 +281,8 @@ npm install && npm run build
 ```
 
 ### 🔗 API Discovery
-```
+
+```text
 "Find APIs related to UIViewController"
 "Show me similar APIs to withAnimation"
 "Get all references from SwiftData documentation"
@@ -288,7 +290,8 @@ npm install && npm run build
 ```
 
 ### 📋 Technology & Platform Analysis
-```
+
+```text
 "List all Beta frameworks in iOS 26"
 "Show me Graphics & Games technologies"
 "What machine learning frameworks are available?"
@@ -296,7 +299,8 @@ npm install && npm run build
 ```
 
 ### 📰 Documentation Updates
-```
+
+```text
 "Show me the latest WWDC updates"
 "What's new in SwiftUI?"
 "Get technology updates for iOS"
@@ -305,7 +309,8 @@ npm install && npm run build
 ```
 
 ### 🎯 Technology Overviews
-```
+
+```text
 "Show me technology overviews for app design and UI"
 "Get comprehensive guides for games development"
 "Explore AI and machine learning overviews"
@@ -314,7 +319,8 @@ npm install && npm run build
 ```
 
 ### 💻 Sample Code Library
-```
+
+```text
 "Show SwiftUI sample code projects"
 "Find sample code for machine learning"
 "Get UIKit example projects"
@@ -324,7 +330,8 @@ npm install && npm run build
 ```
 
 ### 🎥 WWDC Video Search
-```
+
+```text
 "Search WWDC videos about SwiftUI"
 "Find WWDC sessions on machine learning"
 "Show me WWDC 2024 videos"
@@ -334,7 +341,8 @@ npm install && npm run build
 ```
 
 ### 📺 WWDC Video Details
-```
+
+```text
 "Get details for WWDC session 10176"
 "Show me the transcript for WWDC23 session on SwiftData"
 "Get code examples from WWDC video 10019"
@@ -343,7 +351,8 @@ npm install && npm run build
 ```
 
 ### 📋 WWDC Topics & Years
-```
+
+```text
 "List all WWDC topics"
 "Show me Swift topic WWDC videos"
 "Get WWDC videos about developer tools"
@@ -353,7 +362,8 @@ npm install && npm run build
 ```
 
 ### 🛠️ Advanced Usage
-```
+
+```text
 "Find related APIs for @State with platform analysis"
 "Resolve all references from SwiftUI documentation"
 "Get platform compatibility analysis for Vision framework"
@@ -363,7 +373,7 @@ npm install && npm run build
 ## 🛠️ Available Tools
 
 | Tool | Description | Key Features |
-|------|-------------|--------------|
+| ------ | ------------- | -------------- |
 | `search_apple_docs` | Search Apple Developer Documentation | Official search API, find specific APIs, classes, methods |
 | `get_apple_doc_content` | Get detailed documentation content | JSON API access, optional enhanced analysis (related/similar APIs, platform compatibility) |
 | `list_technologies` | Browse all Apple technologies | Category filtering, language support, beta status |
@@ -382,7 +392,7 @@ npm install && npm run build
 
 ## 🏗️ Technical Architecture for Apple Developer Documentation Access
 
-```
+```text
 apple-docs-mcp/
 ├── 🔧 src/
 │   ├── index.ts                      # MCP server entry point with all tools
@@ -411,7 +421,6 @@ apple-docs-mcp/
 │       ├── user-agent-pool.ts        # Smart UserAgent rotation system
 │       ├── http-headers-generator.ts # Dynamic browser headers generation
 │       └── url-converter.ts          # URL conversion utilities
-├── 📦 dist/                          # Compiled JavaScript
 ├── 📄 package.json                   # Package configuration
 └── 📖 README.md                      # This file
 ```
@@ -430,7 +439,7 @@ apple-docs-mcp/
 ### 💾 Caching Strategy
 
 | Content Type | Cache Duration | Cache Size | Reason |
-|--------------|----------------|------------|--------|
+| -------------- | ---------------- | ------------ | -------- |
 | API Documentation | 30 minutes | 500 entries | Frequently accessed, moderate updates |
 | Search Results | 10 minutes | 200 entries | Dynamic content, user-specific |
 | Framework Indexes | 1 hour | 100 entries | Stable structure, less frequent changes |
@@ -447,6 +456,7 @@ All WWDC video data (2014-2025) is **bundled directly in the npm package**, prov
 - ✅ **Instant responses** - All data is locally available
 
 The package includes:
+
 - 📹 **1,260+ WWDC session videos** with full transcripts
 - 🏷️ **20 topic categories** for organized browsing
 - 📅 **13 years of content** (2012-2025)
@@ -463,7 +473,7 @@ The MCP server includes an intelligent UserAgent rotation system to improve API 
 #### Environment Variables
 
 | Variable | Description | Default | Example |
-|----------|-------------|---------|---------|
+| ---------- | ------------- | --------- | --------- |
 | `USER_AGENT_ROTATION_ENABLED` | Enable/disable rotation | `true` | `true` |
 | `USER_AGENT_POOL_STRATEGY` | Rotation strategy | `random` | `smart` |
 | `USER_AGENT_MAX_RETRIES` | Max retry attempts | `3` | `5` |
@@ -494,6 +504,7 @@ export NODE_ENV=development
 #### Built-in UserAgents
 
 The server includes 12+ pre-configured UserAgent strings covering:
+
 - Chrome (Mac Intel/Apple Silicon, Windows, Linux)
 - Firefox (Mac Intel/Apple Silicon, Windows, Linux)
 - Safari (Mac Intel/Apple Silicon, latest versions)
@@ -505,26 +516,22 @@ The server includes 12+ pre-configured UserAgent strings covering:
 
 ```bash
 # Development with auto-reload
-pnpm run dev    # or: npm run dev
+bun run dev
 
-# Build for production  
-pnpm run build  # or: npm run build
 
 # Type checking
-pnpm exec tsc --noEmit  # or: npx tsc --noEmit
+bun check
 
-# Clean build artifacts
-pnpm run clean  # or: npm run clean
 ```
 
 ### Testing Locally
 
 ```bash
 # Test the MCP server directly
-node dist/index.js
+bun run start
 
 # Test with sample queries
-npx @kimsungwhee/apple-docs-mcp --test
+bunx apple-docs-mcp-next --test
 ```
 
 ## 🤝 Contributing
@@ -549,7 +556,7 @@ This project is not affiliated with or endorsed by Apple Inc. It uses publicly a
 
 <div align="center">
 
-**Made with ❤️ for the Apple Developer Community**
+<p><strong>Made with ❤️ for the Apple Developer Community</strong></p>
 
 Search Apple Developer Documentation | iOS Development | macOS Development | Swift Programming | SwiftUI | UIKit | Xcode | WWDC Videos | Model Context Protocol | MCP Server
 

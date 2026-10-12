@@ -1,6 +1,6 @@
 # Apple Docs MCP - Apple 開発者ドキュメント モデルコンテキストプロトコルサーバー
 
-[![npm バージョン](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp.svg)](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp)
+[![npm バージョン](https://badge.fury.io/js/apple-docs-mcp-next.svg)](https://www.npmjs.com/package/apple-docs-mcp-next)
 [![ライセンス: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Apple 開発者ドキュメント MCP サーバー - モデルコンテキストプロトコルで Apple 公式開発者ドキュメント、フレームワーク、API、SwiftUI、UIKit、WWDC ビデオにアクセス。AI 自然言語クエリで iOS、macOS、watchOS、tvOS、visionOS ドキュメントを検索。Claude、Cursor、または MCP 対応 AI アシスタントで Swift/Objective-C コード例、API リファレンス、技術ガイドを即座に取得。
@@ -29,23 +29,25 @@ Apple 開発者ドキュメント MCP サーバー - モデルコンテキスト
 
 Claude Desktop 設定ファイルに以下を追加してください：
 
-**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+
 **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
 > **注意**: 古いバージョンが使用される問題が発生した場合、`@latest` を追加して最新バージョンを強制します：
+>
 > ```json
-> "args": ["-y", "@kimsungwhee/apple-docs-mcp@latest"]
+> "args": ["apple-docs-mcp-next@latest"]
 > ```
 
 Claude Desktop を再起動して Apple API について質問を始めましょう！
@@ -56,7 +58,7 @@ Claude Desktop を再起動して Apple API について質問を始めましょ
 <summary><strong>📱 Claude Code</strong></summary>
 
 ```bash
-claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
+claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 ```
 
 [📖 Claude Code MCP ドキュメント](https://docs.anthropic.com/en/docs/claude-code/mcp)
@@ -74,8 +76,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -96,8 +98,8 @@ VS Code MCP 設定に追加:
     "servers": {
       "apple-docs": {
         "type": "stdio",
-        "command": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "command": "bunx",
+        "args": ["apple-docs-mcp-next"]
       }
     }
   }
@@ -117,8 +119,8 @@ Windsurf MCP 設定に追加:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -138,8 +140,8 @@ Zed の `settings.json` に追加:
   "context_servers": {
     "Apple Docs": {
       "command": {
-        "path": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "path": "bunx",
+        "args": ["apple-docs-mcp-next"]
       },
       "settings": {}
     }
@@ -155,6 +157,7 @@ Zed の `settings.json` に追加:
 <summary><strong>🔧 Cline</strong></summary>
 
 **マーケットプレイス経由**:
+
 1. Cline を開く → メニュー (☰) → MCP サーバー → マーケットプレイス
 2. "Apple Docs MCP" を検索 → インストール
 
@@ -164,8 +167,8 @@ Zed の `settings.json` に追加:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"],
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -185,7 +188,7 @@ Windows システムの場合:
   "mcpServers": {
     "apple-docs": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@kimsungwhee/apple-docs-mcp"],
+      "args": ["/c", "bunx", "apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -199,29 +202,24 @@ Windows システムの場合:
 <summary><strong>⚙️ 高度なインストール</strong></summary>
 
 **グローバルインストール**:
-```bash
-# pnpm を使用（推奨）
-pnpm add -g @kimsungwhee/apple-docs-mcp
 
-# npm を使用
-npm install -g @kimsungwhee/apple-docs-mcp
+```bash
+bun add -g apple-docs-mcp-next
 ```
 
 **直接使用**:
+
 ```bash
-npx @kimsungwhee/apple-docs-mcp --help
+bunx apple-docs-mcp-next --help
 ```
 
 **開発環境セットアップ**:
+
 ```bash
-git clone https://github.com/kimsungwhee/apple-docs-mcp.git
-cd apple-docs-mcp
+git clone https://github.com/xsyetopz/apple-docs-mcp-next.git
+cd apple-docs-mcp-next
 
-# pnpm を使用（推奨）
-pnpm install && pnpm run build
-
-# npm を使用
-npm install && npm run build
+bun install
 ```
 
 </details>
@@ -229,7 +227,8 @@ npm install && npm run build
 ## 💬 使用例
 
 ### 🔍 スマート検索
-```
+
+```text
 "SwiftUI アニメーションを検索"
 "CoreML モデル読み込み方法を見つける"
 "Swift の async/await パターンを調べる"
@@ -237,7 +236,8 @@ npm install && npm run build
 ```
 
 ### 📚 フレームワーク深掘り
-```
+
+```text
 "SwiftUI フレームワークの詳細情報を取得"
 "iOS 18 フレームワークの新機能は？"
 "Vision フレームワークの機能について教えて"
@@ -245,7 +245,8 @@ npm install && npm run build
 ```
 
 ### 🔧 API 探索
-```
+
+```text
 "UIViewController ライフサイクルメソッドを表示"
 "SwiftData モデル作成の詳細を取得"
 "AlarmAttributes のプロパティは何？"
@@ -253,7 +254,8 @@ npm install && npm run build
 ```
 
 ### 💡 サンプルコードとチュートリアル
-```
+
+```text
 "アラームスケジューリングのサンプルコードを見つける"
 "SwiftUI チュートリアル例を表示"
 "カメラキャプチャのサンプルコードを取得"
@@ -261,7 +263,8 @@ npm install && npm run build
 ```
 
 ### 📋 テクノロジー発見
-```
+
+```text
 "iOS 26 のすべてのベータフレームワークをリスト"
 "グラフィックス & ゲームテクノロジーを表示"
 "どの機械学習フレームワークが利用可能？"
@@ -269,7 +272,8 @@ npm install && npm run build
 ```
 
 ### 📰 ドキュメント更新
-```
+
+```text
 "最新の WWDC 更新を表示"
 "SwiftUI の新機能は？"
 "iOS のテクノロジー更新を取得"
@@ -278,7 +282,8 @@ npm install && npm run build
 ```
 
 ### 🎯 テクノロジー概要
-```
+
+```text
 "アプリデザインと UI のテクノロジー概要を表示"
 "ゲーム開発の包括的なガイドを取得"
 "AI と機械学習の概要を探索"
@@ -287,7 +292,8 @@ npm install && npm run build
 ```
 
 ### 💻 サンプルコードライブラリ
-```
+
+```text
 "SwiftUI サンプルコードプロジェクトを表示"
 "機械学習のサンプルコードを検索"
 "UIKit サンプルプロジェクトを取得"
@@ -297,7 +303,8 @@ npm install && npm run build
 ```
 
 ### 🎥 WWDC ビデオ検索
-```
+
+```text
 "SwiftUI に関する WWDC ビデオを検索"
 "機械学習の WWDC セッションを検索"
 "WWDC 2024 ビデオを表示"
@@ -307,7 +314,8 @@ npm install && npm run build
 ```
 
 ### 📺 WWDC ビデオ詳細
-```
+
+```text
 "WWDC セッション 10176 の詳細を取得"
 "WWDC23 SwiftData セッションのトランスクリプトを表示"
 "WWDC ビデオ 10019 のコード例を取得"
@@ -316,7 +324,8 @@ npm install && npm run build
 ```
 
 ### 📋 WWDC トピックと年度
-```
+
+```text
 "すべての WWDC トピックをリスト"
 "Swift トピックの WWDC ビデオを表示"
 "開発者ツールに関する WWDC ビデオを取得"
@@ -328,7 +337,7 @@ npm install && npm run build
 ## 🛠️ 利用可能なツール
 
 | ツール | 説明 | 主要機能 |
-|-------|------|----------|
+| ------- | ------ | ---------- |
 | `search_apple_docs` | Apple 開発者ドキュメント検索 | 公式検索 API、拡張フォーマット、プラットフォームフィルタリング |
 | `get_apple_doc_content` | 詳細なドキュメントコンテンツ取得 | JSON API アクセス、オプション拡張分析（関連/類似 API、プラットフォーム互換性） |
 | `list_technologies` | すべての Apple テクノロジー閲覧 | カテゴリフィルタリング、言語サポート、ベータステータス |
@@ -346,7 +355,7 @@ npm install && npm run build
 
 ## 🏗️ 技術アーキテクチャ
 
-```
+```text
 apple-docs-mcp/
 ├── 🔧 src/
 │   ├── index.ts                      # MCP サーバーエントリーポイント、すべてのツールを含む
@@ -373,7 +382,6 @@ apple-docs-mcp/
 │       ├── error-handler.ts          # エラー処理と検証
 │       ├── http-client.ts            # パフォーマンス追跡 HTTP クライアント
 │       └── url-converter.ts          # URL 変換ユーティリティ
-├── 📦 dist/                          # コンパイル済み JavaScript
 ├── 🧪 tests/                         # テストスイート
 ├── 📄 package.json                   # パッケージ設定
 └── 📖 README.md                      # このファイル
@@ -389,7 +397,7 @@ apple-docs-mcp/
 ### 💾 キャッシュ戦略
 
 | コンテンツタイプ | キャッシュ期間 | キャッシュサイズ | 理由 |
-|------------------|----------------|----------------|------|
+| ------------------ | ---------------- | ---------------- | ------ |
 | API ドキュメント | 30分 | 500 エントリ | 頻繁にアクセスされる、適度な更新 |
 | 検索結果 | 10分 | 200 エントリ | 動的コンテンツ、ユーザー固有 |
 | フレームワークインデックス | 1時間 | 100 エントリ | 安定した構造、変更頻度が低い |
@@ -403,26 +411,22 @@ apple-docs-mcp/
 
 ```bash
 # 自動リロード付き開発
-pnpm run dev    # または: npm run dev
+bun run dev
 
-# プロダクションビルド
-pnpm run build  # または: npm run build
 
 # 型チェック
-pnpm exec tsc --noEmit  # または: npx tsc --noEmit
+bun check
 
-# ビルド成果物のクリーン
-pnpm run clean  # または: npm run clean
 ```
 
 ### ローカルテスト
 
 ```bash
 # MCP サーバーを直接テスト
-node dist/index.js
+bun run start
 
 # サンプルクエリでテスト
-npx @kimsungwhee/apple-docs-mcp --test
+bunx apple-docs-mcp-next --test
 ```
 
 ## 🤝 コントリビューション
@@ -447,7 +451,7 @@ MIT ライセンス - 詳細は [LICENSE](LICENSE) をご覧ください。
 
 <div align="center">
 
-**Apple 開発者コミュニティのために ❤️ で作成**
+<p><strong>Apple 開発者コミュニティのために ❤️ で作成</strong></p>
 
 Apple 開発者ドキュメント検索 | iOS 開発 | macOS 開発 | Swift プログラミング | SwiftUI | UIKit | Xcode | WWDC ビデオ | モデルコンテキストプロトコル | MCP サーバー
 

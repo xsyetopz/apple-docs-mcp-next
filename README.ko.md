@@ -1,6 +1,6 @@
 # Apple Docs MCP - Apple 개발자 문서 모델 컨텍스트 프로토콜 서버
 
-[![npm 버전](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp.svg)](https://badge.fury.io/js/@kimsungwhee%2Fapple-docs-mcp)
+[![npm 버전](https://badge.fury.io/js/apple-docs-mcp-next.svg)](https://www.npmjs.com/package/apple-docs-mcp-next)
 [![라이선스: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Apple 개발자 문서 MCP 서버 - 모델 컨텍스트 프로토콜을 통해 Apple 공식 개발자 문서, 프레임워크, API, SwiftUI, UIKit 및 WWDC 비디오에 액세스하세요. AI 기반 자연어 쿼리로 iOS, macOS, watchOS, tvOS, visionOS 문서를 검색합니다. Claude, Cursor 또는 MCP 호환 AI 어시스턴트에서 Swift/Objective-C 코드 예제, API 레퍼런스 및 기술 가이드를 즉시 확인할 수 있습니다.
@@ -30,23 +30,25 @@ Apple 개발자 문서 MCP 서버 - 모델 컨텍스트 프로토콜을 통해 A
 
 Claude Desktop 구성 파일에 다음을 추가하세요:
 
-**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+
 **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
 > **참고**: 이전 버전이 사용되는 문제가 발생하면 `@latest`를 추가하여 최신 버전을 강제합니다:
+>
 > ```json
-> "args": ["-y", "@kimsungwhee/apple-docs-mcp@latest"]
+> "args": ["apple-docs-mcp-next@latest"]
 > ```
 
 Claude Desktop을 재시작하고 Apple API에 대해 질문해보세요!
@@ -57,7 +59,7 @@ Claude Desktop을 재시작하고 Apple API에 대해 질문해보세요!
 <summary><strong>📱 Claude Code</strong></summary>
 
 ```bash
-claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
+claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 ```
 
 [📖 Claude Code MCP 문서](https://docs.anthropic.com/en/docs/claude-code/mcp)
@@ -75,8 +77,8 @@ claude mcp add apple-docs -- npx -y @kimsungwhee/apple-docs-mcp@latest
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -97,8 +99,8 @@ VS Code MCP 구성에 추가:
     "servers": {
       "apple-docs": {
         "type": "stdio",
-        "command": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "command": "bunx",
+        "args": ["apple-docs-mcp-next"]
       }
     }
   }
@@ -118,8 +120,8 @@ Windsurf MCP 구성에 추가:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -139,8 +141,8 @@ Zed `settings.json`에 추가:
   "context_servers": {
     "Apple Docs": {
       "command": {
-        "path": "npx",
-        "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+        "path": "bunx",
+        "args": ["apple-docs-mcp-next"]
       },
       "settings": {}
     }
@@ -156,6 +158,7 @@ Zed `settings.json`에 추가:
 <summary><strong>🔧 Cline</strong></summary>
 
 **마켓플레이스를 통해**:
+
 1. Cline 열기 → 메뉴 (☰) → MCP 서버 → 마켓플레이스
 2. "Apple Docs MCP" 검색 → 설치
 
@@ -165,8 +168,8 @@ Zed `settings.json`에 추가:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"],
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -185,8 +188,8 @@ Zed `settings.json`에 추가:
 {
   "mcpServers": {
     "apple-docs": {
-      "command": "npx",
-      "args": ["-y", "@kimsungwhee/apple-docs-mcp"]
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
@@ -206,7 +209,7 @@ Windows 시스템의 경우:
   "mcpServers": {
     "apple-docs": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@kimsungwhee/apple-docs-mcp"],
+      "args": ["/c", "bunx", "apple-docs-mcp-next"],
       "disabled": false,
       "autoApprove": []
     }
@@ -220,29 +223,24 @@ Windows 시스템의 경우:
 <summary><strong>⚙️ 고급 설치</strong></summary>
 
 **전역 설치**:
-```bash
-# pnpm 사용 (권장)
-pnpm add -g @kimsungwhee/apple-docs-mcp
 
-# npm 사용
-npm install -g @kimsungwhee/apple-docs-mcp
+```bash
+bun add -g apple-docs-mcp-next
 ```
 
 **직접 사용**:
+
 ```bash
-npx @kimsungwhee/apple-docs-mcp --help
+bunx apple-docs-mcp-next --help
 ```
 
 **개발 환경 설정**:
+
 ```bash
-git clone https://github.com/kimsungwhee/apple-docs-mcp.git
-cd apple-docs-mcp
+git clone https://github.com/xsyetopz/apple-docs-mcp-next.git
+cd apple-docs-mcp-next
 
-# pnpm 사용 (권장)
-pnpm install && pnpm run build
-
-# npm 사용
-npm install && npm run build
+bun install
 ```
 
 </details>
@@ -250,7 +248,8 @@ npm install && npm run build
 ## 💬 사용 예제
 
 ### 🔍 스마트 검색
-```
+
+```text
 "SwiftUI 애니메이션 검색"
 "CoreML 모델 로딩 방법 찾기"
 "Swift async/await 패턴 찾아보기"
@@ -258,7 +257,8 @@ npm install && npm run build
 ```
 
 ### 📚 프레임워크 심화 탐구
-```
+
+```text
 "SwiftUI 프레임워크의 상세 정보 가져오기"
 "iOS 18 프레임워크의 새로운 기능은?"
 "Vision 프레임워크 기능에 대해 알려줘"
@@ -266,7 +266,8 @@ npm install && npm run build
 ```
 
 ### 🔧 API 탐색
-```
+
+```text
 "UIViewController 라이프사이클 메서드 보여줘"
 "SwiftData 모델 생성 세부사항 가져오기"
 "AlarmAttributes 속성은 무엇인가?"
@@ -274,7 +275,8 @@ npm install && npm run build
 ```
 
 ### 💡 샘플 코드 및 튜토리얼
-```
+
+```text
 "알람 스케줄링 샘플 코드 찾기"
 "SwiftUI 튜토리얼 예제 보여줘"
 "카메라 캡처 샘플 코드 가져오기"
@@ -282,7 +284,8 @@ npm install && npm run build
 ```
 
 ### 📋 기술 발견
-```
+
+```text
 "iOS 26의 모든 베타 프레임워크 나열"
 "그래픽 & 게임 기술 보여줘"
 "어떤 머신러닝 프레임워크가 사용 가능한가?"
@@ -290,7 +293,8 @@ npm install && npm run build
 ```
 
 ### 📰 문서 업데이트
-```
+
+```text
 "최신 WWDC 업데이트 보여줘"
 "SwiftUI의 새로운 기능은?"
 "iOS 기술 업데이트 가져오기"
@@ -299,7 +303,8 @@ npm install && npm run build
 ```
 
 ### 🎯 기술 개요
-```
+
+```text
 "앱 디자인과 UI의 기술 개요 보여줘"
 "게임 개발을 위한 포괄적인 가이드 가져오기"
 "AI 및 머신러닝 개요 탐색"
@@ -308,7 +313,8 @@ npm install && npm run build
 ```
 
 ### 💻 샘플 코드 라이브러리
-```
+
+```text
 "SwiftUI 샘플 코드 프로젝트 보여줘"
 "머신러닝 샘플 코드 찾기"
 "UIKit 예제 프로젝트 가져오기"
@@ -318,7 +324,8 @@ npm install && npm run build
 ```
 
 ### 🎥 WWDC 비디오 검색
-```
+
+```text
 "SwiftUI에 대한 WWDC 비디오 검색"
 "머신러닝 WWDC 세션 찾기"
 "WWDC 2024 비디오 보여줘"
@@ -328,7 +335,8 @@ npm install && npm run build
 ```
 
 ### 📺 WWDC 비디오 상세 정보
-```
+
+```text
 "WWDC 세션 10176의 상세 정보 가져와"
 "WWDC23 SwiftData 세션의 대본 보여줘"
 "WWDC 비디오 10019의 코드 예제 가져오기"
@@ -337,7 +345,8 @@ npm install && npm run build
 ```
 
 ### 📋 WWDC 주제 및 연도
-```
+
+```text
 "모든 WWDC 주제 나열"
 "Swift 주제의 WWDC 비디오 보여줘"
 "개발자 도구에 대한 WWDC 비디오 가져오기"
@@ -349,7 +358,7 @@ npm install && npm run build
 ## 🛠️ 사용 가능한 도구
 
 | 도구 | 설명 | 주요 기능 |
-|------|------|----------|
+| ------ | ------ | ---------- |
 | `search_apple_docs` | Apple 개발자 문서 검색 | 공식 검색 API, 특정 API/클래스/메서드 검색 |
 | `get_apple_doc_content` | 상세한 문서 내용 가져오기 | JSON API 액세스, 선택적 향상 분석 (관련/유사 API, 플랫폼 호환성) |
 | `list_technologies` | 모든 Apple 기술 탐색 | 카테고리 필터링, 언어 지원, 베타 상태 |
@@ -368,7 +377,7 @@ npm install && npm run build
 
 ## 🏗️ 기술 아키텍처
 
-```
+```text
 apple-docs-mcp/
 ├── 🔧 src/
 │   ├── index.ts                      # MCP 서버 진입점, 모든 도구 포함
@@ -397,7 +406,6 @@ apple-docs-mcp/
 │       ├── user-agent-pool.ts        # 스마트 UserAgent 로테이션 시스템
 │       ├── http-headers-generator.ts # 동적 브라우저 헤더 생성
 │       └── url-converter.ts          # URL 변환 유틸리티
-├── 📦 dist/                          # 컴파일된 JavaScript
 ├── 🧪 tests/                         # 테스트 스위트
 ├── 📄 package.json                   # 패키지 구성
 └── 📖 README.md                      # 이 파일
@@ -417,7 +425,7 @@ apple-docs-mcp/
 ### 💾 캐싱 전략
 
 | 콘텐츠 타입 | 캐시 기간 | 캐시 크기 | 이유 |
-|-------------|-----------|----------|------|
+| ------------- | ----------- | ---------- | ------ |
 | API 문서 | 30분 | 500 항목 | 자주 액세스됨, 적당한 업데이트 |
 | 검색 결과 | 10분 | 200 항목 | 동적 콘텐츠, 사용자별 |
 | 프레임워크 인덱스 | 1시간 | 100 항목 | 안정적인 구조, 변경 빈도 낮음 |
@@ -435,6 +443,7 @@ apple-docs-mcp/
 - ✅ **즉각적인 응답** - 모든 데이터가 로컬에서 사용 가능
 
 포함된 데이터:
+
 - 📹 **1,260개 이상의 WWDC 세션 비디오** 및 전체 대본
 - 🏷️ **20개 주제 카테고리**로 체계적인 탐색
 - 📅 **13년간의 콘텐츠** (2012-2025)
@@ -451,7 +460,7 @@ MCP 서버는 API 안정성을 향상시키기 위한 지능형 UserAgent 로테
 #### 환경 변수
 
 | 변수 | 설명 | 기본값 | 예시 |
-|------|------|--------|------|
+| ------ | ------ | -------- | ------ |
 | `USER_AGENT_ROTATION_ENABLED` | 로테이션 활성화/비활성화 | `true` | `true` |
 | `USER_AGENT_POOL_STRATEGY` | 로테이션 전략 | `random` | `smart` |
 | `USER_AGENT_MAX_RETRIES` | 최대 재시도 횟수 | `3` | `5` |
@@ -482,6 +491,7 @@ export NODE_ENV=development
 #### 내장 UserAgent
 
 서버에는 다음을 포함하는 12개 이상의 사전 구성된 UserAgent 문자열이 포함됩니다:
+
 - Chrome (Mac Intel/Apple Silicon, Windows, Linux)
 - Firefox (Mac Intel/Apple Silicon, Windows, Linux)
 - Safari (Mac Intel/Apple Silicon, 최신 버전)
@@ -493,26 +503,22 @@ export NODE_ENV=development
 
 ```bash
 # 자동 재로드 개발
-pnpm run dev    # 또는: npm run dev
+bun run dev
 
-# 프로덕션 빌드
-pnpm run build  # 또는: npm run build
 
 # 타입 체크
-pnpm exec tsc --noEmit  # 또는: npx tsc --noEmit
+bun check
 
-# 빌드 결과물 정리
-pnpm run clean  # 또는: npm run clean
 ```
 
 ### 로컬 테스트
 
 ```bash
 # MCP 서버 직접 테스트
-node dist/index.js
+bun run start
 
 # 샘플 쿼리로 테스트
-npx @kimsungwhee/apple-docs-mcp --test
+bunx apple-docs-mcp-next --test
 ```
 
 ## 🤝 기여
@@ -537,7 +543,7 @@ MIT 라이선스 - 자세한 내용은 [LICENSE](LICENSE)를 참조하세요.
 
 <div align="center">
 
-**Apple 개발자 커뮤니티를 위해 ❤️로 제작**
+<p><strong>Apple 개발자 커뮤니티를 위해 ❤️로 제작</strong></p>
 
 Apple 개발자 문서 검색 | iOS 개발 | macOS 개발 | Swift 프로그래밍 | SwiftUI | UIKit | Xcode | WWDC 비디오 | 모델 컨텍스트 프로토콜 | MCP 서버
 
