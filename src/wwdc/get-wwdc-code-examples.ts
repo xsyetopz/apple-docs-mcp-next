@@ -20,13 +20,13 @@ export interface CodeExamplesQuery {
 /**
  * Get WWDC code examples
  */
-export async function handleGetWWDCCodeExamples({
+export const handleGetWWDCCodeExamples = async ({
   framework,
   topic,
   year,
   language,
   limit,
-}: CodeExamplesQuery): Promise<string> {
+}: CodeExamplesQuery): Promise<string> => {
   const metadata = await loadGlobalMetadata();
   const codeExamples: Array<{
     code: string;
@@ -124,12 +124,12 @@ export async function handleGetWWDCCodeExamples({
   const limitedExamples = codeExamples.slice(0, limit);
 
   return formatCodeExamples(limitedExamples, framework, topic, year, language);
-}
+};
 
 /**
  * Format code examples
  */
-function formatCodeExamples(
+const formatCodeExamples = (
   examples: Array<{
     code: string;
     language: string;
@@ -143,7 +143,7 @@ function formatCodeExamples(
   topic?: string,
   year?: string,
   language?: string,
-): string {
+): string => {
   if (examples.length === 0) {
     return "No code examples found matching the criteria.";
   }
@@ -199,4 +199,4 @@ function formatCodeExamples(
   });
 
   return content;
-}
+};

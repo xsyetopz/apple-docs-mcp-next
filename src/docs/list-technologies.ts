@@ -29,12 +29,12 @@ export interface TechnologiesQuery {
   limit: number;
 }
 
-export async function handleListTechnologies({
+export const handleListTechnologies = async ({
   category,
   language,
   includeBeta,
   limit,
-}: TechnologiesQuery): Promise<string> {
+}: TechnologiesQuery): Promise<string> => {
   logger.info("Fetching technologies list...");
 
   const cacheKey = generateUrlCacheKey("technologies", {
@@ -68,12 +68,12 @@ export async function handleListTechnologies({
   technologiesCache.set(cacheKey, result);
 
   return result;
-}
+};
 
 /**
  * Each technology's name as Apple writes it, by the last segment of its documentation path ("pdfkit" → "PDFKit")
  */
-export async function technologyNames(): Promise<Map<string, string>> {
+export const technologyNames = async (): Promise<Map<string, string>> => {
   const data = await httpClient.getJson<TechnologiesPage>(
     APPLE_URLS.TECHNOLOGIES_JSON,
   );
@@ -87,9 +87,9 @@ export async function technologyNames(): Promise<Map<string, string>> {
         tech.title,
       ]),
   );
-}
+};
 
-function parseTechnologies(data: TechnologiesPage): TechnologyGroup[] {
+const parseTechnologies = (data: TechnologiesPage): TechnologyGroup[] => {
   const groups: TechnologyGroup[] = [];
   // Apple marks a beta technology on its reference, as Swift-DocC marks any beta page
   const betaIdentifiers = new Set(
@@ -125,9 +125,9 @@ function parseTechnologies(data: TechnologiesPage): TechnologyGroup[] {
   }
 
   return groups;
-}
+};
 
-function applyTechnologyFilters(
+const applyTechnologyFilters = (
   groups: TechnologyGroup[],
   filters: {
     category?: string | undefined;
@@ -135,7 +135,7 @@ function applyTechnologyFilters(
     includeBeta?: boolean | undefined;
     limit?: number | undefined;
   },
-): TechnologyGroup[] {
+): TechnologyGroup[] => {
   const category = filters.category?.toLowerCase() ?? "";
   return groups
     .map((group) => {
@@ -154,9 +154,9 @@ function applyTechnologyFilters(
       };
     })
     .filter((group) => group.technologies.length > 0);
-}
+};
 
-function formatTechnologiesList(groups: TechnologyGroup[]): string {
+const formatTechnologiesList = (groups: TechnologyGroup[]): string => {
   if (groups.length === 0) {
     return "No technologies found matching the specified criteria.";
   }
@@ -208,4 +208,4 @@ function formatTechnologiesList(groups: TechnologyGroup[]): string {
     "\n---\n\n[View all technologies on Apple Developer](https://developer.apple.com/documentation/technologies)";
 
   return content;
-}
+};

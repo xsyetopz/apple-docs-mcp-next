@@ -25,23 +25,23 @@ class CodeSectionChangedError extends Error {}
 /**
  * A page of developer.apple.com/videos as a document; a redirect is an error, as the page it lands on is another one
  */
-export async function fetchVideosPage(url: string): Promise<Document> {
+export const fetchVideosPage = async (url: string): Promise<Document> => {
   const response = await httpClient.get(url);
   if (response.redirected) {
     throw new PageMovedError(`${url} redirected to ${response.url}`);
   }
   return new JSDOM(await response.text()).window.document;
-}
+};
 
 /**
  * Extract complete content for a single WWDC video, with its topics from Apple's topic pages
  */
-export async function extractVideoContent(
+export const extractVideoContent = async (
   videoUrl: string,
   videoId: string,
   year: string,
   topics: string[],
-): Promise<WWDCVideo> {
+): Promise<WWDCVideo> => {
   try {
     logger.info("Extracting WWDC session", { year, videoId });
 
@@ -95,12 +95,12 @@ export async function extractVideoContent(
     logger.error(`Failed to extract video ${videoId}:`, error);
     throw error;
   }
-}
+};
 
 /**
  * Extract title
  */
-function extractTitle(document: Document): string {
+const extractTitle = (document: Document): string => {
   // Try multiple selectors
   const selectors = [
     "h1.video-title",
@@ -117,12 +117,12 @@ function extractTitle(document: Document): string {
   }
 
   return "Untitled Video";
-}
+};
 
 /**
  * Extract speakers
  */
-function extractSpeakers(document: Document): string[] {
+const extractSpeakers = (document: Document): string[] => {
   const speakers: string[] = [];
 
   // Try to extract from description
@@ -145,12 +145,12 @@ function extractSpeakers(document: Document): string[] {
   }
 
   return speakers.filter((s) => s.length > 0);
-}
+};
 
 /**
  * Extract duration
  */
-function extractDuration(document: Document): string {
+const extractDuration = (document: Document): string => {
   const selectors = [".video-duration", '[itemprop="duration"]', ".duration"];
 
   for (const selector of selectors) {
@@ -161,12 +161,12 @@ function extractDuration(document: Document): string {
   }
 
   return "";
-}
+};
 
 /**
  * The transcript on the session page, if it has one; a community or Q&A video's page has an empty transcript section
  */
-function extractTranscript(document: Document): TranscriptData | undefined {
+const extractTranscript = (document: Document): TranscriptData | undefined => {
   const transcriptContainer = document.querySelector(
     '.transcript, [data-supplement="transcript"], #transcript',
   );
@@ -174,12 +174,12 @@ function extractTranscript(document: Document): TranscriptData | undefined {
     ? extractTranscriptFromDocument(document)
     : undefined;
   return transcript?.fullText ? transcript : undefined;
-}
+};
 
 /**
  * Extract transcript data from document
  */
-function extractTranscriptFromDocument(document: Document): TranscriptData {
+const extractTranscriptFromDocument = (document: Document): TranscriptData => {
   const segments: TranscriptSegment[] = [];
   let fullText = "";
 
@@ -207,15 +207,15 @@ function extractTranscriptFromDocument(document: Document): TranscriptData {
     fullText: fullText.trim(),
     segments,
   };
-}
+};
 
 /**
  * The code examples in the session page's code section: one container each, its "m:ss - Title" line before the code
  */
-function extractCodeExamples(
+const extractCodeExamples = (
   document: Document,
   videoUrl: string,
-): CodeExample[] {
+): CodeExample[] => {
   const containers = document.querySelectorAll("li.sample-code-main-container");
   const codeBlocks = [
     ...document.querySelectorAll(
@@ -248,12 +248,12 @@ function extractCodeExamples(
   return removeDuplicateCodeExamples(
     examples.filter((example) => example.code.length >= 10),
   );
-}
+};
 
 /**
  * Extract code from transcript (legacy pages)
  */
-function extractCodeFromTranscript(document: Document): CodeExample[] {
+const extractCodeFromTranscript = (document: Document): CodeExample[] => {
   const examples: CodeExample[] = [];
 
   // Find code blocks in transcript
@@ -274,12 +274,12 @@ function extractCodeFromTranscript(document: Document): CodeExample[] {
   });
 
   return examples;
-}
+};
 
 /**
  * Detect code language
  */
-function detectLanguage(element: Element): string {
+const detectLanguage = (element: Element): string => {
   // Detect from class attribute
   const className = element.className;
   if (className.includes("swift")) {
@@ -301,12 +301,12 @@ function detectLanguage(element: Element): string {
 
   // Default to Swift (most WWDC code is Swift)
   return "swift";
-}
+};
 
 /**
  * Extract chapter information
  */
-function extractChapters(document: Document): Chapter[] {
+const extractChapters = (document: Document): Chapter[] => {
   const chapters: Chapter[] = [];
 
   const chapterElements = document.querySelectorAll(
@@ -329,12 +329,12 @@ function extractChapters(document: Document): Chapter[] {
   });
 
   return chapters;
-}
+};
 
 /**
  * The session page's Resources list: its documentation links and downloads
  */
-function extractResources(document: Document): VideoResources {
+const extractResources = (document: Document): VideoResources => {
   const resourceList = document.querySelector("li.supplement.details ul.links");
   if (resourceList) {
     return extractResourcesFromDocument(resourceList);
@@ -364,12 +364,12 @@ function extractResources(document: Document): VideoResources {
   });
 
   return resources;
-}
+};
 
 /**
  * Extract resources from a page or one part of it
  */
-function extractResourcesFromDocument(root: ParentNode): VideoResources {
+const extractResourcesFromDocument = (root: ParentNode): VideoResources => {
   const links: NonNullable<VideoResources["resourceLinks"]> = [];
   const resources: VideoResources = {
     resourceLinks: links,
@@ -426,15 +426,15 @@ function extractResourcesFromDocument(root: ParentNode): VideoResources {
   });
 
   return resources;
-}
+};
 
 /**
  * Extract related videos
  */
-async function extractRelatedVideos(
+const extractRelatedVideos = async (
   document: Document,
   videoUrl: string,
-): Promise<RelatedVideo[]> {
+): Promise<RelatedVideo[]> => {
   const relatedVideos: RelatedVideo[] = [];
 
   try {
@@ -479,12 +479,12 @@ async function extractRelatedVideos(
   }
 
   return relatedVideos;
-}
+};
 
 /**
  * Clean up code indentation
  */
-function cleanCodeIndentation(code: string): string {
+const cleanCodeIndentation = (code: string): string => {
   const lines = code.split("\n");
 
   // Remove empty lines at start and end
@@ -516,12 +516,14 @@ function cleanCodeIndentation(code: string): string {
   }
 
   return lines.join("\n").trim();
-}
+};
 
 /**
  * Remove duplicate code examples
  */
-function removeDuplicateCodeExamples(examples: CodeExample[]): CodeExample[] {
+const removeDuplicateCodeExamples = (
+  examples: CodeExample[],
+): CodeExample[] => {
   const seen = new Map<string, CodeExample>();
 
   for (const example of examples) {
@@ -540,4 +542,4 @@ function removeDuplicateCodeExamples(examples: CodeExample[]): CodeExample[] {
   }
 
   return Array.from(seen.values());
-}
+};

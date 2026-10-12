@@ -19,7 +19,9 @@ interface TopicVideo {
 /**
  * Extract all videos on a topic's page, by its link (the `url` of a topic in the data's index.json)
  */
-export async function extractTopicVideos(url: string): Promise<TopicVideo[]> {
+export const extractTopicVideos = async (
+  url: string,
+): Promise<TopicVideo[]> => {
   logger.info("Extracting the videos of a topic page", { url });
 
   try {
@@ -85,4 +87,4 @@ export async function extractTopicVideos(url: string): Promise<TopicVideo[]> {
     });
     throw error;
   }
-}
+};

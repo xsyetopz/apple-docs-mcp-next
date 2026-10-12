@@ -22,11 +22,11 @@ export interface PlatformCompatibilityQuery {
   includeRelated: boolean;
 }
 
-export async function handleGetPlatformCompatibility({
+export const handleGetPlatformCompatibility = async ({
   apiUrl,
   compareMode,
   includeRelated,
-}: PlatformCompatibilityQuery): Promise<string> {
+}: PlatformCompatibilityQuery): Promise<string> => {
   logger.info(`Analyzing platform compatibility for: ${apiUrl}`);
 
   if (compareMode === "framework") {
@@ -34,12 +34,12 @@ export async function handleGetPlatformCompatibility({
   } else {
     return await analyzeSingleApiCompatibility(apiUrl, includeRelated);
   }
-}
+};
 
-async function analyzeSingleApiCompatibility(
+const analyzeSingleApiCompatibility = async (
   apiUrl: string,
   includeRelated: boolean,
-): Promise<string> {
+): Promise<string> => {
   const jsonApiUrl = convertToJsonApiUrl(apiUrl);
 
   if (!jsonApiUrl) {
@@ -71,24 +71,24 @@ async function analyzeSingleApiCompatibility(
   }
 
   return result;
-}
+};
 
-async function analyzeFrameworkCompatibility(
+const analyzeFrameworkCompatibility = async (
   frameworkUrl: string,
   includeRelated: boolean,
-): Promise<string> {
+): Promise<string> => {
   // Could extend this to analyze the whole framework
   // For now it uses single-API analysis as the base.
   return await analyzeSingleApiCompatibility(
     frameworkUrl,
     includeRelated || true,
   );
-}
+};
 
-async function analyzeRelatedCompatibility(
+const analyzeRelatedCompatibility = async (
   data: RenderNode,
   maxRelated: number = 3,
-): Promise<CompatibilityAnalysis[]> {
+): Promise<CompatibilityAnalysis[]> => {
   const analyses: CompatibilityAnalysis[] = [];
 
   if (!data.topicSections || !data.references) {
@@ -139,13 +139,13 @@ async function analyzeRelatedCompatibility(
   }
 
   return analyses;
-}
+};
 
-function analyzeCompatibility(
+const analyzeCompatibility = (
   apiName: string,
   apiUrl: string,
   platforms: PlatformAvailability[],
-): CompatibilityAnalysis {
+): CompatibilityAnalysis => {
   const supportedPlatforms: string[] = [];
   const betaPlatforms: string[] = [];
   const deprecatedPlatforms: string[] = [];
@@ -181,12 +181,12 @@ function analyzeCompatibility(
     minVersions,
     crossPlatformSupport: supportedPlatforms.length > 1,
   };
-}
+};
 
-function formatCompatibilityAnalysis(
+const formatCompatibilityAnalysis = (
   analysis: CompatibilityAnalysis,
   isRelated: boolean = false,
-): string {
+): string => {
   const prefix = isRelated ? "### " : "# ";
   let content = `${prefix}Platform Compatibility: ${analysis.apiName}\n\n`;
 
@@ -275,4 +275,4 @@ function formatCompatibilityAnalysis(
   }
 
   return content;
-}
+};

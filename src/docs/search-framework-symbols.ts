@@ -9,14 +9,14 @@ import { normalizeFrameworkName } from "./framework-mapper.ts";
  * Searches a framework's symbols (classes, structs, protocols, and so on).
  */
 // Function to find symbols recursively (defined outside to reduce complexity)
-function findSymbolsRecursive(
+const findSymbolsRecursive = (
   items: RenderIndexNode[],
   symbolType: string,
   namePattern: string | undefined,
   limit: number,
   symbols: RenderIndexNode[],
   depth: number = 0,
-): boolean {
+): boolean => {
   if (depth > 6) {
     return false;
   }
@@ -55,7 +55,7 @@ function findSymbolsRecursive(
   }
 
   return false;
-}
+};
 
 export interface FrameworkSymbolsQuery {
   framework: string;
@@ -65,13 +65,13 @@ export interface FrameworkSymbolsQuery {
   limit: number;
 }
 
-export async function searchFrameworkSymbols({
+export const searchFrameworkSymbols = async ({
   framework,
   symbolType,
   namePattern,
   language,
   limit,
-}: FrameworkSymbolsQuery): Promise<string> {
+}: FrameworkSymbolsQuery): Promise<string> => {
   const normalizedFramework = normalizeFrameworkName(framework);
   logger.info(
     `Searching ${symbolType} symbols in ${normalizedFramework} framework`,
@@ -154,9 +154,9 @@ export async function searchFrameworkSymbols({
   indexCache.set(cacheKey, result);
 
   return result;
-}
+};
 
-function formatSymbolItem(item: RenderIndexNode): string {
+const formatSymbolItem = (item: RenderIndexNode): string => {
   const url = `https://developer.apple.com${item.path ?? ""}`;
   let result = `- [**${item.title}**](${url})`;
 
@@ -176,11 +176,11 @@ function formatSymbolItem(item: RenderIndexNode): string {
   }
 
   return `${result}\n`;
-}
+};
 
-function groupByType(
+const groupByType = (
   symbols: RenderIndexNode[],
-): Record<string, RenderIndexNode[]> {
+): Record<string, RenderIndexNode[]> => {
   const groups: Record<string, RenderIndexNode[]> = {};
 
   for (const symbol of symbols) {
@@ -189,9 +189,9 @@ function groupByType(
   }
 
   return groups;
-}
+};
 
-function formatTypeLabel(type: string): string {
+const formatTypeLabel = (type: string): string => {
   const typeLabels: Record<string, string> = {
     symbol: "Symbol",
     module: "Module",
@@ -218,9 +218,9 @@ function formatTypeLabel(type: string): string {
   };
 
   return typeLabels[type] || type.charAt(0).toUpperCase() + type.slice(1);
-}
+};
 
-function pluralizeType(type: string): string {
+const pluralizeType = (type: string): string => {
   const typeLabel = formatTypeLabel(type);
 
   // Special cases for pluralization
@@ -233,9 +233,9 @@ function pluralizeType(type: string): string {
   };
 
   return pluralRules[typeLabel] || `${typeLabel}s`;
-}
+};
 
-function matchesPattern(name: string, pattern: string): boolean {
+const matchesPattern = (name: string, pattern: string): boolean => {
   const regexPattern = pattern
     .split("*")
     .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
@@ -243,12 +243,12 @@ function matchesPattern(name: string, pattern: string): boolean {
 
   const regex = new RegExp(`^${regexPattern}$`, "i");
   return regex.test(name);
-}
+};
 
-function findCollections(items: RenderIndexNode[]): RenderIndexNode[] {
+const findCollections = (items: RenderIndexNode[]): RenderIndexNode[] => {
   const collections: RenderIndexNode[] = [];
 
-  function search(itemList: RenderIndexNode[]) {
+  const search = (itemList: RenderIndexNode[]) => {
     for (const item of itemList) {
       if (item.type === "collection") {
         collections.push(item);
@@ -257,8 +257,8 @@ function findCollections(items: RenderIndexNode[]): RenderIndexNode[] {
         search(item.children);
       }
     }
-  }
+  };
 
   search(items);
   return collections;
-}
+};

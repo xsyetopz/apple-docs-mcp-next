@@ -38,7 +38,7 @@ export class AppError extends Error {
 }
 
 /** A request that failed for good, named by what went wrong */
-export function classifyFetchError(error: unknown, url: string): AppError {
+export const classifyFetchError = (error: unknown, url: string): AppError => {
   if (error instanceof TypeError) {
     return new AppError({
       type: ErrorType.NETWORK_ERROR,
@@ -86,10 +86,10 @@ export function classifyFetchError(error: unknown, url: string): AppError {
     message: error.message,
     cause: error,
   });
-}
+};
 
 /** Any other failure of the tool named `context`, logged and named by its message */
-export function classifyError(error: unknown, context: string): AppError {
+export const classifyError = (error: unknown, context: string): AppError => {
   logger.error(`Error in ${context}:`, error);
 
   if (!(error instanceof Error)) {
@@ -167,10 +167,10 @@ export function classifyError(error: unknown, context: string): AppError {
       "Verify the API endpoint is correct",
     ],
   });
-}
+};
 
 /** Throws an INVALID_INPUT error when `value` is empty or blank */
-export function requireText(value: string, fieldName: string): void {
+export const requireText = (value: string, fieldName: string): void => {
   if (value.trim().length === 0) {
     throw new AppError({
       type: ErrorType.INVALID_INPUT,
@@ -181,4 +181,4 @@ export function requireText(value: string, fieldName: string): void {
       ],
     });
   }
-}
+};

@@ -26,11 +26,11 @@ export interface DocsMapQuery {
  * given: the docs map's shell search (awk, sort -n, head) as a tool, without awk reading `(`, `.` or `*` in a Swift
  * name as a pattern.
  */
-export async function handleSearchDocsMap({
+export const handleSearchDocsMap = async ({
   query,
   technology: technologies,
   limit,
-}: DocsMapQuery): Promise<string> {
+}: DocsMapQuery): Promise<string> => {
   const [map, builtAt] = await Promise.all([MAP.text(), MAP.lastModified]);
   const rows: MapRow[] = map
     .split("\n")
@@ -97,4 +97,4 @@ export async function handleSearchDocsMap({
         `- **${title}** · ${kind} · ${technology} · ${url}`,
     ),
   ].join("\n");
-}
+};

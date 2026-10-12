@@ -25,10 +25,10 @@ Searched wrong, or not there:
 - Not there: the word matches only another framework's term ("confetti" is an AVFoundation camera reaction), a wildcard symbol search in the framework finds nothing, and Xcode's DocumentationSearch returns only generic matches; look outside Apple's frameworks.
 - An existing API comes first under its exact name. Result counts mean nothing: searches fill about 20 slots.`;
 
-export function createServer(): McpServer {
+export const createServer = (): McpServer => {
   const server = new McpServer(PACKAGE, { instructions: SEARCH_GUIDE });
   for (const register of tools) {
     register(server);
   }
   return server;
-}
+};

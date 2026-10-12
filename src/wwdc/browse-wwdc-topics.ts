@@ -13,12 +13,12 @@ export interface TopicsQuery {
 /**
  * Browse WWDC topics
  */
-export async function handleBrowseWWDCTopics({
+export const handleBrowseWWDCTopics = async ({
   topicId,
   includeVideos,
   year,
   limit,
-}: TopicsQuery): Promise<string> {
+}: TopicsQuery): Promise<string> => {
   const metadata = await loadGlobalMetadata();
 
   if (!topicId) {
@@ -107,4 +107,4 @@ export async function handleBrowseWWDCTopics({
   }
 
   return content;
-}
+};

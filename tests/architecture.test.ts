@@ -21,17 +21,17 @@ const ALLOWED: Record<Layer, readonly Layer[]> = {
 
 const MCP_LAYERS: readonly Layer[] = ["main", "server", "tools"];
 
-function layerOf(file: string): Layer {
+const layerOf = (file: string): Layer => {
   const [first = ""] = path.relative(SRC, file).split(path.sep);
   return first.replace(/\.ts$/, "") as Layer;
-}
+};
 
-async function imports(file: string): Promise<string[]> {
+const imports = async (file: string): Promise<string[]> => {
   const source = await Bun.file(file).text();
   return [...source.matchAll(/(?:from|import)\s*\(?\s*"([^"]+)"/g)].map(
     ([, specifier = ""]) => specifier,
   );
-}
+};
 
 const files = await Array.fromAsync(
   new Bun.Glob("**/*.ts").scan({ cwd: SRC, absolute: true }),

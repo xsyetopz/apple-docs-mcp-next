@@ -69,13 +69,13 @@ mock.module("../src/core/cache.ts", () => ({
  * Replaces some exports of a module, keeping the others real. The use cases that are not under test answer with a
  * fixed text; search and the page reader keep the real code, which the tests reach through the mocked HTTP client.
  */
-async function replaceExports(
+const replaceExports = async (
   path: string,
   overrides: Record<string, unknown>,
-): Promise<void> {
+): Promise<void> => {
   const actual = await import(path);
   mock.module(path, () => ({ ...actual, ...overrides }));
-}
+};
 
 const { fetchAppleDocJson: actualFetchAppleDocJson } = await import(
   "../src/docs/doc-fetcher.ts"

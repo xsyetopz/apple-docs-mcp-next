@@ -37,11 +37,11 @@ import {
 /**
  * Format JSON documentation content with enhanced analysis
  */
-function formatJsonDocumentation(
+const formatJsonDocumentation = (
   jsonData: RenderNode,
   originalUrl: string,
   options: AnalysisOptions,
-): string {
+): string => {
   let content = "";
 
   // Add header with title and status
@@ -72,15 +72,15 @@ function formatJsonDocumentation(
   content += `---\n\n[View full documentation on Apple Developer](${originalUrl})`;
 
   return content;
-}
+};
 
 /**
  * The sections the include… flags ask for, read from the page's JSON
  */
-function formatAnalysisSections(
+const formatAnalysisSections = (
   jsonData: RenderNode,
   options: AnalysisOptions,
-): string {
+): string => {
   let content = "";
 
   if (options.includeRelatedApis) {
@@ -112,22 +112,22 @@ function formatAnalysisSections(
   }
 
   return content;
-}
+};
 
 /**
  * A sample's Download button: a reference to the project's zip, linked like any reference
  */
-function formatSampleDownload(jsonData: RenderNode): string {
+const formatSampleDownload = (jsonData: RenderNode): string => {
   const action = jsonData.sampleCodeDownload?.action;
   return action
     ? `${formatInlineContent([action], jsonData.references)}\n\n`
     : "";
-}
+};
 
 /**
  * Format specific API content (methods, properties, etc.)
  */
-function formatSpecificAPIContent(jsonData: RenderNode): string {
+const formatSpecificAPIContent = (jsonData: RenderNode): string => {
   let content = "";
 
   for (const section of jsonData.primaryContentSections ?? []) {
@@ -157,16 +157,16 @@ function formatSpecificAPIContent(jsonData: RenderNode): string {
   }
 
   return content + formatTopicsSection(jsonData);
-}
+};
 
 /**
  * A web-service page's sections: an endpoint's URL, parameters, body and responses; an object's properties; a type's
  * possible values. Other kinds (mentions, details) are left out.
  */
-function formatWebServiceSection(
+const formatWebServiceSection = (
   section: Extract<DocumentationPrimaryRenderSection, { kind: string }>,
   references: References,
-): string {
+): string => {
   const fields = (items: TypedProperty[]): string =>
     items.map((item) => formatTypedProperty(item, references)).join("");
   switch (section.kind) {
@@ -201,15 +201,15 @@ function formatWebServiceSection(
     default:
       return "";
   }
-}
+};
 
 /**
  * A property, parameter or body field on one line: its name, type, flags, description and attributes
  */
-function formatTypedProperty(
+const formatTypedProperty = (
   property: TypedProperty,
   references: References,
-): string {
+): string => {
   const flags = [
     property.required && "required",
     property.readOnly && "read-only",
@@ -227,7 +227,7 @@ function formatTypedProperty(
     .filter(Boolean)
     .join("; ");
   return `- \`${property.name}\` (${formatTypeTokens(property.type, references)}${flags})${notes ? `: ${notes}` : ""}\n`;
-}
+};
 
 /**
  * swift-docc-render's labels for an attribute that comes without a title (its `parameters` strings)
@@ -245,7 +245,10 @@ const ATTRIBUTE_LABELS: Record<Attribute["kind"], string> = {
 /**
  * A property's default, bound, allowed values or allowed types
  */
-function formatAttribute(attribute: Attribute, references: References): string {
+const formatAttribute = (
+  attribute: Attribute,
+  references: References,
+): string => {
   const label = attribute.title ?? ATTRIBUTE_LABELS[attribute.kind];
   switch (attribute.kind) {
     case "allowedValues":
@@ -255,15 +258,15 @@ function formatAttribute(attribute: Attribute, references: References): string {
     default:
       return `${label}: ${attribute.value}`;
   }
-}
+};
 
 /**
  * A type's tokens as text, each token with a page linked to it
  */
-function formatTypeTokens(
+const formatTypeTokens = (
   tokens: DeclarationToken[],
   references: References,
-): string {
+): string => {
   return tokens
     .map((token) => {
       const url = token.identifier
@@ -272,33 +275,33 @@ function formatTypeTokens(
       return url ? `[\`${token.text}\`](${url})` : token.text;
     })
     .join("");
-}
+};
 
 /**
  * Blocks as one line of text, for a list item
  */
-function formatOneLine(
+const formatOneLine = (
   blocks: RenderBlockContent[],
   references: References,
-): string {
+): string => {
   return formatContentItems(blocks, references)
     .trim()
     .replace(/\s*\n+\s*/g, " ");
-}
+};
 
 /**
  * A page's Topics: Apple's groups of its members (a type's) or collections (a framework's), under the heading
  * Apple's renderer gives them, swift-docc-render's `sections.topics` string; the page's JSON has only each group's title.
  */
-function formatTopicsSection(jsonData: RenderNode): string {
+const formatTopicsSection = (jsonData: RenderNode): string => {
   const topics = formatTopicGroups(jsonData);
   return topics ? `## Topics\n\n${topics}` : "";
-}
+};
 
 /**
  * Each Topics group's title, its description when it has one, and the pages in it, as links
  */
-function formatTopicGroups(jsonData: RenderNode): string {
+const formatTopicGroups = (jsonData: RenderNode): string => {
   return (jsonData.topicSections ?? [])
     .filter((section) => section.title && section.identifiers.length > 0)
     .map(
@@ -310,13 +313,13 @@ function formatTopicGroups(jsonData: RenderNode): string {
         `${section.identifiers.map((identifier) => formatIdentifierLine(identifier, jsonData.references)).join("")}\n`,
     )
     .join("");
-}
+};
 
 /**
  * The page's Relationships (Conforms To, Inherits From, Inherited By, Conforming Types), each type by name as Apple's
  * pages list them
  */
-function formatRelationshipsSection(jsonData: RenderNode): string {
+const formatRelationshipsSection = (jsonData: RenderNode): string => {
   const groups = (jsonData.relationshipsSections ?? [])
     .filter((section) => section.identifiers.length > 0)
     .map(
@@ -329,7 +332,7 @@ function formatRelationshipsSection(jsonData: RenderNode): string {
           .join("")}\n`,
     );
   return groups.length > 0 ? `## Relationships\n\n${groups.join("")}` : "";
-}
+};
 
 type References = RenderNode["references"];
 
@@ -338,10 +341,10 @@ type References = RenderNode["references"];
  * notes, lists, side-by-side columns, tables, link lists (a HIG page's videos) and tutorial layouts. Blocks of any
  * other type are left out.
  */
-function formatBlock(
+const formatBlock = (
   block: RenderBlockContent,
   references: References,
-): string {
+): string => {
   if (!("type" in block)) {
     return formatLayout(block, references);
   }
@@ -386,25 +389,28 @@ function formatBlock(
     default:
       return "";
   }
-}
+};
 
 /**
  * A tutorial's layout, which the spec tags with `kind`: full width, columns, or content beside its picture
  */
-function formatLayout(
+const formatLayout = (
   block: Exclude<RenderBlockContent, { type: string }>,
   references: References,
-): string {
+): string => {
   return "content" in block
     ? formatContentItems(block.content, references) +
         formatMedia("media" in block ? block.media : null, references)
     : "";
-}
+};
 
 /**
  * A tutorial step: what to do, the code file as it stands after it, its pictures, and the caption under them
  */
-function formatStep(block: RenderBlockContent, references: References): string {
+const formatStep = (
+  block: RenderBlockContent,
+  references: References,
+): string => {
   if (!("type" in block) || block.type !== "step") {
     return formatBlock(block, references);
   }
@@ -415,46 +421,46 @@ function formatStep(block: RenderBlockContent, references: References): string {
     formatMedia(block.runtimePreview, references) +
     formatContentItems(block.caption, references)
   );
-}
+};
 
 /**
  * A picture on its own line; a video or a missing reference leaves nothing
  */
-function formatMedia(
+const formatMedia = (
   identifier: string | null | undefined,
   references: References,
-): string {
+): string => {
   const image = identifier ? formatImage(identifier, references) : "";
   return image ? `${image}\n\n` : "";
-}
+};
 
 /**
  * A tutorial step's code: the whole file as it stands after the step
  */
-function formatCodeFile(
+const formatCodeFile = (
   identifier: string | null | undefined,
   references: References,
-): string {
+): string => {
   const file = identifier ? references?.[identifier] : undefined;
   return file?.type === "file"
     ? `**${file.fileName}**\n\n\`\`\`${file.syntax}\n${file.content.join("\n")}\n\`\`\`\n\n`
     : "";
-}
+};
 
 /**
  * A tutorials page's sections, which documentation pages leave empty: an overview's volumes, a tutorial's tasks and an
  * article's body; its questions and the link to what comes next are left out. The page header gives the hero's title.
  */
-function formatTutorialSections(jsonData: RenderNode): string {
+const formatTutorialSections = (jsonData: RenderNode): string => {
   return (jsonData.sections ?? [])
     .map((section) => formatTutorialSection(section, jsonData.references))
     .join("");
-}
+};
 
-function formatTutorialSection(
+const formatTutorialSection = (
   section: RenderSection,
   references: References,
-): string {
+): string => {
   switch (section.kind) {
     case "hero":
     case "intro": {
@@ -493,22 +499,22 @@ function formatTutorialSection(
     default:
       return "";
   }
-}
+};
 
-function formatContentItems(
+const formatContentItems = (
   items: RenderBlockContent[],
   references: References,
-): string {
+): string => {
   return items.map((item) => formatBlock(item, references)).join("");
-}
+};
 
 /**
  * Format a table in Markdown, each cell's blocks on one line; a table without a header row gets an empty one
  */
-function formatTable(
+const formatTable = (
   table: Extract<RenderBlockContent, { type: "table" }>,
   references: References,
-): string {
+): string => {
   const rows = table.rows.map(
     (row) =>
       `| ${row
@@ -528,12 +534,12 @@ function formatTable(
       ? rows.shift()
       : `|${" |".repeat(width)}`;
   return `${header}\n|${" --- |".repeat(width)}\n${rows.map((row) => `${row}\n`).join("")}\n`;
-}
+};
 
 /**
  * Format API collection content (overview + API lists)
  */
-function formatAPICollectionContent(jsonData: RenderNode): string {
+const formatAPICollectionContent = (jsonData: RenderNode): string => {
   let content = "";
 
   // Add primary content sections (Overview); an article that opens with its own heading keeps it
@@ -549,7 +555,7 @@ function formatAPICollectionContent(jsonData: RenderNode): string {
   }
 
   return content + formatTopicsSection(jsonData);
-}
+};
 
 export interface DocContentQuery {
   url: string;
@@ -565,10 +571,10 @@ type AnalysisOptions = Omit<DocContentQuery, "url">;
  * One documentation page as Markdown, with the analysis sections the include… flags ask for: an App Store Connect Help
  * page from its HTML, any other page from its JSON
  */
-export async function fetchAppleDocJson({
+export const fetchAppleDocJson = async ({
   url,
   ...options
-}: DocContentQuery): Promise<string> {
+}: DocContentQuery): Promise<string> => {
   requireText(url, "URL");
   if (!isValidAppleDeveloperUrl(url)) {
     throw new AppError({
@@ -608,19 +614,19 @@ export async function fetchAppleDocJson({
       cause: error,
     });
   }
-}
+};
 
-function fetchRenderNode(jsonApiUrl: string): Promise<RenderNode> {
+const fetchRenderNode = (jsonApiUrl: string): Promise<RenderNode> => {
   logger.info(`Fetching Apple doc JSON from: ${jsonApiUrl}`);
   return httpClient.getJson<RenderNode>(jsonApiUrl);
-}
+};
 
 /**
  * Extract related APIs from JSON data
  */
-function extractRelatedApis(
+const extractRelatedApis = (
   jsonData: RenderNode,
-): Array<{ title: string; url: string; relationship: string }> {
+): Array<{ title: string; url: string; relationship: string }> => {
   const relatedApis: Array<{
     title: string;
     url: string;
@@ -678,17 +684,19 @@ function extractRelatedApis(
   }
 
   return relatedApis.slice(0, PROCESSING_LIMITS.MAX_DOC_FETCHER_RELATED_APIS); // Limit results
-}
+};
 
 /**
  * Extract references from JSON data
  */
-function extractReferences(jsonData: RenderNode): Array<{
+const extractReferences = (
+  jsonData: RenderNode,
+): Array<{
   title: string;
   url: string;
   type: string;
   abstract?: string | undefined;
-}> {
+}> => {
   const references: Array<{
     title: string;
     url: string;
@@ -722,14 +730,14 @@ function extractReferences(jsonData: RenderNode): Array<{
   }
 
   return references;
-}
+};
 
 /**
  * Extract similar APIs from JSON data
  */
-function extractSimilarApis(
+const extractSimilarApis = (
   jsonData: RenderNode,
-): Array<{ title: string; url: string; category: string }> {
+): Array<{ title: string; url: string; category: string }> => {
   const similarApis: Array<{ title: string; url: string; category: string }> =
     [];
 
@@ -759,18 +767,20 @@ function extractSimilarApis(
   }
 
   return similarApis.slice(0, PROCESSING_LIMITS.MAX_DOC_FETCHER_SIMILAR_APIS); // Limit results
-}
+};
 
 /**
  * Analyze platform compatibility
  */
-function analyzePlatformCompatibility(jsonData: RenderNode): {
+const analyzePlatformCompatibility = (
+  jsonData: RenderNode,
+): {
   supportedPlatforms: string;
   betaPlatforms: string[];
   deprecatedPlatforms: string[];
   crossPlatform: boolean;
   platforms: PlatformAvailability[];
-} | null {
+} | null => {
   if (!jsonData.metadata?.platforms) {
     return null;
   }
@@ -793,14 +803,14 @@ function analyzePlatformCompatibility(jsonData: RenderNode): {
     crossPlatform: platforms.length > 1,
     platforms,
   };
-}
+};
 
 /**
  * Format related APIs section
  */
-function formatRelatedApisSection(
+const formatRelatedApisSection = (
   relatedApis: Array<{ title: string; url: string; relationship: string }>,
-): string {
+): string => {
   let content = "\n## Related APIs\n\n";
 
   for (const api of relatedApis) {
@@ -808,19 +818,19 @@ function formatRelatedApisSection(
   }
 
   return `${content}\n`;
-}
+};
 
 /**
  * Format references section
  */
-function formatReferencesSection(
+const formatReferencesSection = (
   references: Array<{
     title: string;
     url: string;
     type: string;
     abstract?: string | undefined;
   }>,
-): string {
+): string => {
   let content = "\n## Key References\n\n";
 
   // Group by type
@@ -847,14 +857,14 @@ function formatReferencesSection(
   }
 
   return content;
-}
+};
 
 /**
  * Format similar APIs section
  */
-function formatSimilarApisSection(
+const formatSimilarApisSection = (
   similarApis: Array<{ title: string; url: string; category: string }>,
-): string {
+): string => {
   let content = "\n## Similar APIs\n\n";
 
   // Group by category
@@ -874,18 +884,18 @@ function formatSimilarApisSection(
   }
 
   return content;
-}
+};
 
 /**
  * Format platform analysis section
  */
-function formatPlatformAnalysisSection(analysis: {
+const formatPlatformAnalysisSection = (analysis: {
   supportedPlatforms: string;
   betaPlatforms: string[];
   deprecatedPlatforms: string[];
   crossPlatform?: boolean;
   platforms?: PlatformAvailability[];
-}): string {
+}): string => {
   let content = "\n## Platform Compatibility Analysis\n\n";
 
   content += `**Supported Platforms:** ${analysis.supportedPlatforms}\n`;
@@ -912,4 +922,4 @@ function formatPlatformAnalysisSection(analysis: {
   }
 
   return `${content}\n`;
-}
+};

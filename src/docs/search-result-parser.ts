@@ -53,10 +53,10 @@ const UNSUPPORTED_TYPES = ["general", "video", "forums", "news"];
 /**
  * Check if result type is supported
  */
-function isResultTypeSupported(
+const isResultTypeSupported = (
   resultType: string,
   filterType: SearchType,
-): boolean {
+): boolean => {
   // Apply type filter
   const allowedTypes = typeMapping[filterType];
   if (!allowedTypes.includes(resultType)) {
@@ -69,12 +69,12 @@ function isResultTypeSupported(
   }
 
   return true;
-}
+};
 
 /**
  * Check if URL is supported
  */
-function isUrlSupported(url: string): boolean {
+const isUrlSupported = (url: string): boolean => {
   if (!url) {
     return false;
   }
@@ -94,7 +94,7 @@ function isUrlSupported(url: string): boolean {
   }
 
   return true;
-}
+};
 
 /**
  * A result as Apple's search API streams it
@@ -114,10 +114,10 @@ const KIND_TYPES: Record<string, string> = {
 /**
  * Parse a single search result
  */
-export function parseSearchResult(
+export const parseSearchResult = (
   result: ApiSearchResult,
   filterType: SearchType,
-): SearchResult | null {
+): SearchResult | null => {
   const metadata = result.value?.metadata ?? {};
   if (metadata.itemTypes?.includes("Video")) {
     return parseWWDCSession(metadata, filterType);
@@ -126,15 +126,15 @@ export function parseSearchResult(
     return parseHelpPage(metadata, filterType);
   }
   return parseDocumentationPage(metadata, filterType);
-}
+};
 
 /**
  * A documentation, guideline or sample-code page
  */
-function parseDocumentationPage(
+const parseDocumentationPage = (
   metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
   filterType: SearchType,
-): SearchResult | null {
+): SearchResult | null => {
   const { title, permalink, kind, description, hierarchy } = metadata;
   // A guideline page reports itself as an article, so its place on the site is what tells it apart
   const type = permalink?.includes(DESIGN_GUIDELINES_PATH)
@@ -157,16 +157,16 @@ function parseDocumentationPage(
     description: description ?? "",
     framework: hierarchy?.split(" > ")[0],
   };
-}
+};
 
 /**
  * An App Store Connect Help page, whose title carries its place: "Platform version information - App information -
  * Reference - App Store Connect - Help"
  */
-function parseHelpPage(
+const parseHelpPage = (
   metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
   filterType: SearchType,
-): SearchResult | null {
+): SearchResult | null => {
   const [title, section] = (metadata.title ?? "").split(" - ");
   if (
     !title ||
@@ -184,15 +184,15 @@ function parseHelpPage(
       ? `App Store Connect Help › ${section}`
       : "App Store Connect Help",
   };
-}
+};
 
 /**
  * A video result, kept when it is a WWDC session: those the bundled WWDC data holds, transcript and code
  */
-function parseWWDCSession(
+const parseWWDCSession = (
   metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
   filterType: SearchType,
-): SearchResult | null {
+): SearchResult | null => {
   const session = /^wwdc(\d{4})-(\d+)$/.exec(metadata.ids?.[0] ?? "");
   const year = session?.[1];
   const videoId = session?.[2];
@@ -214,4 +214,4 @@ function parseWWDCSession(
     description: metadata.descriptions?.[0] ?? "",
     wwdc: { year, videoId },
   };
-}
+};

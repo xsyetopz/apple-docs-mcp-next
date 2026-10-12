@@ -14,25 +14,25 @@ export interface VideoQuery {
 /**
  * Get WWDC video details
  */
-export async function handleGetWWDCVideo({
+export const handleGetWWDCVideo = async ({
   year,
   videoId,
   includeTranscript,
   includeCode,
-}: VideoQuery): Promise<string> {
+}: VideoQuery): Promise<string> => {
   const video = await loadVideoData(year, videoId);
 
   return formatVideoDetail(video, includeTranscript, includeCode);
-}
+};
 
 /**
  * Format video details
  */
-function formatVideoDetail(
+const formatVideoDetail = (
   video: WWDCVideo,
   includeTranscript: boolean,
   includeCode: boolean,
-): string {
+): string => {
   let content = `# ${video.title}\n\n`;
   content += `**WWDC${video.year}** | [Watch Video](${video.url})\n\n`;
 
@@ -121,4 +121,4 @@ function formatVideoDetail(
   }
 
   return content;
-}
+};

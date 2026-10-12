@@ -25,13 +25,13 @@ const headerGenerator = new HeaderGenerator({
 });
 
 /** A fresh Safari header set, with the request's own headers (its Accept, its Content-Type) in place of the generated ones */
-function browserHeaders(own: HeadersInit | undefined): Headers {
+const browserHeaders = (own: HeadersInit | undefined): Headers => {
   const headers = new Headers(headerGenerator.getHeaders());
   for (const [name, value] of new Headers(own)) {
     headers.set(name, value);
   }
   return headers;
-}
+};
 
 /** At most `MAX_REQUESTS_PER_MINUTE` requests a minute; past that, requests wait their turn */
 const limiter = new Bottleneck({
@@ -62,12 +62,12 @@ class HttpStatusError extends Error {
  * stream once its results are ready, so the timeout only catches a request that hangs. Network errors, timeouts and
  * 5xx answers retry with backoff, a warning each; any other status fails at once.
  */
-async function request<T>(
+const request = async <T>(
   url: string,
   init: RequestInit,
   read: (response: Response) => Promise<T>,
   options: RequestOptions | undefined,
-): Promise<T> {
+): Promise<T> => {
   const method = init.method ?? "GET";
   try {
     return await pRetry(
@@ -111,7 +111,7 @@ async function request<T>(
   } catch (error) {
     throw classifyFetchError(error, url);
   }
-}
+};
 
 export const httpClient = {
   /** The response, its body left for the caller to read */

@@ -11,7 +11,9 @@ import type { VideoListItem } from "../types.ts";
 /**
  * Extract all WWDC video list for specified year
  */
-export async function extractVideoList(year: string): Promise<VideoListItem[]> {
+export const extractVideoList = async (
+  year: string,
+): Promise<VideoListItem[]> => {
   const url = WWDC_URLS.getYearUrl(year);
   logger.info(`Extracting video list for WWDC${year} from ${url}`);
 
@@ -78,15 +80,15 @@ export async function extractVideoList(year: string): Promise<VideoListItem[]> {
       { cause: error },
     );
   }
-}
+};
 
 /**
  * Extract video information from element
  */
-function extractVideoFromElement(
+const extractVideoFromElement = (
   element: Element,
   year: string,
-): VideoListItem | null {
+): VideoListItem | null => {
   // Extract video ID, first from the data attribute
   let id = element.getAttribute("data-video-id");
 
@@ -123,12 +125,12 @@ function extractVideoFromElement(
     duration,
     thumbnail,
   };
-}
+};
 
 /**
  * Extract title
  */
-function extractTitle(element: Element): string {
+const extractTitle = (element: Element): string => {
   const selectors = [
     ".video-title",
     ".item-title",
@@ -155,12 +157,12 @@ function extractTitle(element: Element): string {
   }
 
   return "Untitled";
-}
+};
 
 /**
  * Extract title from link element
  */
-function extractTitleFromLink(link: Element): string {
+const extractTitleFromLink = (link: Element): string => {
   // Try to get from link text
   const linkText = link.textContent?.trim();
   if (linkText && linkText.length > 3) {
@@ -180,12 +182,12 @@ function extractTitleFromLink(link: Element): string {
   }
 
   return "Untitled";
-}
+};
 
 /**
  * Extract duration
  */
-function extractDuration(element: Element): string {
+const extractDuration = (element: Element): string => {
   const selectors = [
     ".video-duration",
     ".duration",
@@ -205,23 +207,23 @@ function extractDuration(element: Element): string {
   }
 
   return "";
-}
+};
 
 /**
  * Extract duration from link element
  */
-function extractDurationFromLink(link: Element): string {
+const extractDurationFromLink = (link: Element): string => {
   const parent = link.closest(".video-card, .collection-item, article");
   if (parent) {
     return extractDuration(parent);
   }
   return "";
-}
+};
 
 /**
  * Extract thumbnail
  */
-function extractThumbnail(element: Element): string {
+const extractThumbnail = (element: Element): string => {
   const img = element.querySelector(
     'img[src*="devimages"], img.thumbnail, img.video-thumbnail',
   );
@@ -234,15 +236,15 @@ function extractThumbnail(element: Element): string {
     }
   }
   return "";
-}
+};
 
 /**
  * Extract thumbnail from link element
  */
-function extractThumbnailFromLink(link: Element): string {
+const extractThumbnailFromLink = (link: Element): string => {
   const parent = link.closest(".video-card, .collection-item, article");
   if (parent) {
     return extractThumbnail(parent);
   }
   return "";
-}
+};

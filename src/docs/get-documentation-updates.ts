@@ -22,14 +22,14 @@ export interface DocumentationUpdatesQuery {
 /**
  * Handle get documentation updates
  */
-export async function handleGetDocumentationUpdates({
+export const handleGetDocumentationUpdates = async ({
   category,
   technology,
   year,
   searchQuery,
   includeBeta,
   limit,
-}: DocumentationUpdatesQuery): Promise<string> {
+}: DocumentationUpdatesQuery): Promise<string> => {
   logger.info("Fetching documentation updates...");
 
   // Generate cache key
@@ -73,12 +73,12 @@ export async function handleGetDocumentationUpdates({
   updatesCache.set(cacheKey, result);
 
   return result;
-}
+};
 
 /**
  * Parse updates data
  */
-function parseUpdates(updatesData: RenderNode, updatesIndex: RenderIndex) {
+const parseUpdates = (updatesData: RenderNode, updatesIndex: RenderIndex) => {
   const updates: UpdateItem[] = [];
 
   // Process main updates sections
@@ -130,15 +130,15 @@ function parseUpdates(updatesData: RenderNode, updatesIndex: RenderIndex) {
   }
 
   return updates;
-}
+};
 
 /**
  * Process index section recursively
  */
-function processIndexSection(
+const processIndexSection = (
   sections: RenderIndexNode[],
   updates: UpdateItem[],
-) {
+) => {
   sections.forEach((section) => {
     // Find corresponding update item
     const matchingUpdate = updates.find(
@@ -162,12 +162,12 @@ function processIndexSection(
       processIndexSection(section.children, updates);
     }
   });
-}
+};
 
 /**
  * Get section category
  */
-function getSectionCategory(title: string): UpdateCategory {
+const getSectionCategory = (title: string): UpdateCategory => {
   const lowerTitle = title.toLowerCase();
   if (lowerTitle.includes("wwdc")) {
     return "wwdc";
@@ -179,12 +179,12 @@ function getSectionCategory(title: string): UpdateCategory {
     return "technology";
   }
   return "other";
-}
+};
 
 /**
  * Extract technology from path
  */
-function extractTechnologyFromPath(path: string): string | undefined {
+const extractTechnologyFromPath = (path: string): string | undefined => {
   const match = path.match(/\/documentation\/updates\/([^/]+)/i);
   if (match?.[1]) {
     // Convert to proper case
@@ -195,12 +195,12 @@ function extractTechnologyFromPath(path: string): string | undefined {
       .join(" ");
   }
   return undefined;
-}
+};
 
 /**
  * Apply filters to updates
  */
-function applyUpdatesFilters(
+const applyUpdatesFilters = (
   updates: UpdateItem[],
   filters: {
     category?: string | undefined;
@@ -210,7 +210,7 @@ function applyUpdatesFilters(
     includeBeta?: boolean | undefined;
     limit?: number | undefined;
   },
-): UpdateItem[] {
+): UpdateItem[] => {
   let filtered = [...updates];
 
   // Category filter
@@ -257,12 +257,12 @@ function applyUpdatesFilters(
   }
 
   return filtered;
-}
+};
 
 /**
  * Format updates list
  */
-function formatUpdatesList(updates: UpdateItem[]): string {
+const formatUpdatesList = (updates: UpdateItem[]): string => {
   if (updates.length === 0) {
     return "No documentation updates found matching the specified criteria.";
   }
@@ -349,7 +349,7 @@ function formatUpdatesList(updates: UpdateItem[]): string {
     "\n---\n\n[View all updates on Apple Developer](https://developer.apple.com/documentation/updates)";
 
   return content;
-}
+};
 
 /**
  * Update item interface

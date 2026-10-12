@@ -42,11 +42,11 @@ const HELP = {
 const PACE_MS = 1000;
 
 /** Every page under `nodes`, with the section heading above it and the titles of its ancestors */
-function rowsOf(
+const rowsOf = (
   nodes: RenderIndexNode[],
   technology: { title: string; url: string },
   ancestors: string[],
-): Row[] {
+): Row[] => {
   let group = "";
   return nodes.flatMap((node) => {
     if (node.type === "groupMarker") {
@@ -71,10 +71,10 @@ function rowsOf(
       ...rowsOf(node.children ?? [], technology, [...ancestors, node.title]),
     ];
   });
-}
+};
 
 /** The HIG's pages, breadth-first from its root through each page's Topics */
-async function higRows(): Promise<Row[]> {
+const higRows = async (): Promise<Row[]> => {
   const rows: Row[] = [];
   const seen = new Set([HIG.path]);
   const queue = [{ path: HIG.path, ancestors: [] as string[] }];
@@ -109,10 +109,10 @@ async function higRows(): Promise<Row[]> {
     }
   }
   return rows;
-}
+};
 
 /** App Store Connect Help's pages, from the navigation every help page carries */
-async function helpRows(): Promise<Row[]> {
+const helpRows = async (): Promise<Row[]> => {
   const html = await httpClient.getText(APPLE_URLS.APP_STORE_CONNECT_HELP);
   return helpPagesOf(html, APPLE_URLS.APP_STORE_CONNECT_HELP).map(
     ({ url, title, section }) => ({
@@ -125,10 +125,10 @@ async function helpRows(): Promise<Row[]> {
       home: HELP.path,
     }),
   );
-}
+};
 
 /** One row per URL: the first, unless a later one comes from the technology the URL belongs to */
-function byUrl(rows: Row[]): Row[] {
+const byUrl = (rows: Row[]): Row[] => {
   const owns = (row: Row): boolean =>
     row.url === SITE + row.home || row.url.startsWith(`${SITE}${row.home}/`);
   const kept = new Map<string, Row>();
@@ -139,9 +139,9 @@ function byUrl(rows: Row[]): Row[] {
     }
   }
   return [...kept.values()];
-}
+};
 
-async function buildMap(out: string): Promise<void> {
+const buildMap = async (out: string): Promise<void> => {
   const catalog = await httpClient.getJson<RenderNode>(
     APPLE_URLS.TECHNOLOGIES_JSON,
   );
@@ -211,7 +211,7 @@ async function buildMap(out: string): Promise<void> {
       failed,
     }),
   );
-}
+};
 
 const out = process.argv[2];
 if (!out) {

@@ -8,9 +8,9 @@ import type { WWDCVideo } from "./types.ts";
 /**
  * Helper function to load multiple video data files
  */
-export async function loadVideosData(
+export const loadVideosData = async (
   videoFiles: string[],
-): Promise<WWDCVideo[]> {
+): Promise<WWDCVideo[]> => {
   const videos: WWDCVideo[] = [];
   for (const file of videoFiles) {
     // Extract year and video ID from filename (e.g., "videos/2024-10015.json")
@@ -28,4 +28,4 @@ export async function loadVideosData(
     }
   }
   return videos;
-}
+};

@@ -20,12 +20,12 @@ export interface VideoListQuery {
 /**
  * List WWDC videos
  */
-export async function handleListWWDCVideos({
+export const handleListWWDCVideos = async ({
   year,
   topic,
   hasCode,
   limit,
-}: VideoListQuery): Promise<string> {
+}: VideoListQuery): Promise<string> => {
   const metadata = await loadGlobalMetadata();
 
   let allVideos: Array<WWDCVideo & { year: string }> = [];
@@ -102,17 +102,17 @@ export async function handleListWWDCVideos({
   const limitedVideos = filteredVideos.slice(0, limit);
 
   return formatVideoList(limitedVideos, year, topic, hasCode);
-}
+};
 
 /**
  * Format video list
  */
-function formatVideoList(
+const formatVideoList = (
   videos: Array<WWDCVideo & { year: string }>,
   year?: string,
   topic?: string,
   hasCode?: boolean,
-): string {
+): string => {
   if (videos.length === 0) {
     return "No WWDC videos found matching the criteria.";
   }
@@ -181,4 +181,4 @@ function formatVideoList(
     });
 
   return content;
-}
+};

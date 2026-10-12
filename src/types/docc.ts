@@ -44,13 +44,13 @@ export type RenderBlockContent =
   | TaggedByType<Schemas["Row"]>;
 
 /** Apple marks a deprecation with the version that made it, leaving `deprecated` false (UIAlertView, 2026-10-06) */
-export function isDeprecated(platform: PlatformAvailability): boolean {
+export const isDeprecated = (platform: PlatformAvailability): boolean => {
   return Boolean(platform.deprecated) || platform.deprecatedAt !== undefined;
-}
+};
 
 /** A reference to a page; the others are a page's images, videos, files and links */
-export function isTopicReference(
+export const isTopicReference = (
   reference: RenderReference | undefined,
-): reference is TopicRenderReference {
+): reference is TopicRenderReference => {
   return reference?.type === "topic" || reference?.type === "section";
-}
+};

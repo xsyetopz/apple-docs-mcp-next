@@ -54,10 +54,10 @@ const VIDEOS_SCOPE = developerPath("/videos/play/");
 /**
  * The response streams for one search, each read to its end: `all` sends two requests, every other type one
  */
-export function searchStreams(
+export const searchStreams = (
   query: string,
   type: SearchType,
-): Promise<string[]> {
+): Promise<string[]> => {
   const search = (
     includedResponses: string[],
     searchScope?: object,
@@ -78,4 +78,4 @@ export function searchStreams(
       ? [search(["search"]), search(["search"], VIDEOS_SCOPE)]
       : [search(["search"], SEARCH_SCOPES[type])],
   );
-}
+};

@@ -29,16 +29,16 @@ class UntopicedYearError extends Error {}
 
 const DATA = path.resolve("data/wwdc");
 
-async function readJSON<T>(file: string): Promise<T> {
+const readJSON = async <T>(file: string): Promise<T> => {
   return JSON.parse(await readFile(path.join(DATA, file), "utf8")) as T;
-}
+};
 
-async function writeJSON(file: string, value: unknown): Promise<void> {
+const writeJSON = async (file: string, value: unknown): Promise<void> => {
   await mkdir(path.dirname(path.join(DATA, file)), { recursive: true });
   await writeFile(path.join(DATA, file), `${JSON.stringify(value, null, 2)}\n`);
-}
+};
 
-function entryOf(video: WWDCVideo): Entry {
+const entryOf = (video: WWDCVideo): Entry => {
   return {
     id: video.id,
     year: video.year,
@@ -50,18 +50,18 @@ function entryOf(video: WWDCVideo): Entry {
     url: video.url,
     dataFile: `videos/${video.year}-${video.id}.json`,
   };
-}
+};
 
 /** The order of every topic's sessions: the tools list a topic's first sessions */
-function newestFirst(a: Entry, b: Entry): number {
+const newestFirst = (a: Entry, b: Entry): number => {
   return b.year.localeCompare(a.year) || a.title.localeCompare(b.title);
-}
+};
 
 /** Each of the year's sessions with the names of the topics whose pages list it */
-async function topicsOfYear(
+const topicsOfYear = async (
   year: string,
   topics: GlobalMetadata["topics"],
-): Promise<Map<string, string[]>> {
+): Promise<Map<string, string[]>> => {
   const listed: Array<[string, string]> = [];
   for (const topic of topics) {
     const ids = new Set(
@@ -80,9 +80,9 @@ async function topicsOfYear(
     (map, [id, name]) => map.set(id, [...(map.get(id) ?? []), name]),
     new Map<string, string[]>(),
   );
-}
+};
 
-async function addYear(year: string): Promise<void> {
+const addYear = async (year: string): Promise<void> => {
   const meta = await readJSON<GlobalMetadata>("index.json");
   const list = await extractVideoList(year);
   if (list.length === 0) {
@@ -170,7 +170,7 @@ async function addYear(year: string): Promise<void> {
       retired: retired.map((entry) => entry.id),
     }),
   );
-}
+};
 
 const year = process.argv[2];
 if (!year || !/^\d{4}$/.test(year)) {

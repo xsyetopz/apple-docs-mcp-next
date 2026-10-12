@@ -17,13 +17,13 @@ export interface ContentSearchQuery {
 /**
  * Search WWDC content
  */
-export async function handleSearchWWDCContent({
+export const handleSearchWWDCContent = async ({
   query,
   searchIn,
   year,
   language,
   limit,
-}: ContentSearchQuery): Promise<string> {
+}: ContentSearchQuery): Promise<string> => {
   const metadata = await loadGlobalMetadata();
   const queryLower = query.toLowerCase();
   const results: Array<{
@@ -121,15 +121,15 @@ export async function handleSearchWWDCContent({
   const limitedResults = results.slice(0, limit);
 
   return formatSearchResults(limitedResults, query, searchIn);
-}
+};
 
 /**
  * Search in transcript
  */
-function searchInTranscript(
+const searchInTranscript = (
   fullText: string,
   query: string,
-): Array<{ context: string; timestamp?: string | undefined }> {
+): Array<{ context: string; timestamp?: string | undefined }> => {
   const matches: Array<{ context: string; timestamp?: string | undefined }> =
     [];
   const lines = fullText.split("\n");
@@ -145,12 +145,12 @@ function searchInTranscript(
   }
 
   return matches;
-}
+};
 
 /**
  * Search in code
  */
-function searchInCode(
+const searchInCode = (
   codeExamples: Array<{
     code: string;
     language: string;
@@ -159,7 +159,7 @@ function searchInCode(
   }>,
   query: string,
   language?: string,
-): Array<{ context: string; timestamp?: string | undefined }> {
+): Array<{ context: string; timestamp?: string | undefined }> => {
   const matches: Array<{ context: string; timestamp?: string | undefined }> =
     [];
 
@@ -181,12 +181,12 @@ function searchInCode(
   }
 
   return matches;
-}
+};
 
 /**
  * Format search results
  */
-function formatSearchResults(
+const formatSearchResults = (
   results: Array<{
     video: WWDCVideo & { year: string };
     matches: Array<{
@@ -197,7 +197,7 @@ function formatSearchResults(
   }>,
   query: string,
   searchIn: string,
-): string {
+): string => {
   if (results.length === 0) {
     return `No ${searchIn === "code" ? "code" : searchIn === "transcript" ? "transcript" : "content"} found containing "${query}".`;
   }
@@ -225,4 +225,4 @@ function formatSearchResults(
   });
 
   return content;
-}
+};

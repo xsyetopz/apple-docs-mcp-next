@@ -19,9 +19,9 @@ export interface ToolSpec<Input extends z.ZodObject> {
 /** Registers one tool on a server */
 export type Tool = (server: McpServer) => void;
 
-export function defineTool<Input extends z.ZodObject>(
+export const defineTool = <Input extends z.ZodObject>(
   spec: ToolSpec<Input>,
-): Tool {
+): Tool => {
   return (server) => {
     server.registerTool<z.ZodObject, z.ZodObject>(
       spec.name,
@@ -35,12 +35,12 @@ export function defineTool<Input extends z.ZodObject>(
       (input) => call(spec, input as z.output<Input>),
     );
   };
-}
+};
 
-async function call<Input extends z.ZodObject>(
+const call = async <Input extends z.ZodObject>(
   spec: ToolSpec<Input>,
   input: z.output<Input>,
-): Promise<CallToolResult> {
+): Promise<CallToolResult> => {
   try {
     return { content: [{ type: "text", text: await spec.run(input) }] };
   } catch (error) {
@@ -51,11 +51,11 @@ async function call<Input extends z.ZodObject>(
       isError: true,
     };
   }
-}
+};
 
-function errorText({ message, suggestions }: AppError): string {
+const errorText = ({ message, suggestions }: AppError): string => {
   if (suggestions.length === 0) {
     return `Error: ${message}`;
   }
   return `Error: ${message}\n\nSuggestions:\n${suggestions.map((suggestion) => `• ${suggestion}`).join("\n")}`;
-}
+};

@@ -50,12 +50,12 @@ export interface TechnologyOverviewsQuery {
 /**
  * Handle get technology overviews
  */
-export async function handleGetTechnologyOverviews({
+export const handleGetTechnologyOverviews = async ({
   category,
   searchQuery,
   includeSubcategories,
   limit,
-}: TechnologyOverviewsQuery): Promise<string> {
+}: TechnologyOverviewsQuery): Promise<string> => {
   logger.info("Fetching technology overviews...");
 
   const cacheKey = generateUrlCacheKey("technology-overviews", {
@@ -86,12 +86,12 @@ export async function handleGetTechnologyOverviews({
   technologyOverviewsCache.set(cacheKey, result);
 
   return result;
-}
+};
 
 /**
  * Every collection and article under the tree's root, the Technology Overviews page itself
  */
-function entriesOf(data: RenderNode, index: RenderIndex): OverviewEntry[] {
+const entriesOf = (data: RenderNode, index: RenderIndex): OverviewEntry[] => {
   const abstracts = new Map(
     Object.values(data.references ?? {})
       .filter(isTopicReference)
@@ -108,15 +108,15 @@ function entriesOf(data: RenderNode, index: RenderIndex): OverviewEntry[] {
     "",
     abstracts,
   );
-}
+};
 
-function flatten(
+const flatten = (
   nodes: RenderIndexNode[],
   depth: number,
   ancestors: string[],
   parentTitle: string,
   abstracts: Map<string, string>,
-): OverviewEntry[] {
+): OverviewEntry[] => {
   let group = "";
   return nodes.flatMap((node) => {
     if (node.type === "groupMarker") {
@@ -146,15 +146,15 @@ function flatten(
       ),
     ];
   });
-}
+};
 
 /**
  * The entries the filters keep, at most `limit` of them: as the tree, or as a flat list when text was searched for
  */
-function formatOverviews(
+const formatOverviews = (
   all: OverviewEntry[],
   filters: OverviewFilters,
-): string {
+): string => {
   if (all.length === 0) {
     return NOTHING_FOUND;
   }
@@ -195,12 +195,12 @@ function formatOverviews(
     `# Apple Developer Technology Overviews\n\n${body}\n\n---\n\n` +
     "[Explore all Technology Overviews](https://developer.apple.com/documentation/technologyoverviews)"
   );
-}
+};
 
 /**
  * Top entries as headings under their group's heading; the ones inside them as nested lists under their group's name
  */
-function tree(entries: OverviewEntry[], base: number): string {
+const tree = (entries: OverviewEntry[], base: number): string => {
   const lines: string[] = [];
   let heading = "";
   let label = "";
@@ -233,9 +233,9 @@ function tree(entries: OverviewEntry[], base: number): string {
     );
   }
   return lines.join("\n").trim();
-}
+};
 
-function flatList(entries: OverviewEntry[]): string {
+const flatList = (entries: OverviewEntry[]): string => {
   return entries
     .map(
       (entry) =>
@@ -243,12 +243,12 @@ function flatList(entries: OverviewEntry[]): string {
         `${entry.parentTitle ? ` — in ${entry.parentTitle}` : ""}${entry.abstract ? `: ${entry.abstract}` : ""}`,
     )
     .join("\n");
-}
+};
 
-function urlOf(entry: OverviewEntry): string {
+const urlOf = (entry: OverviewEntry): string => {
   return `https://developer.apple.com${entry.path}`;
-}
+};
 
-function typeOf(entry: OverviewEntry): string {
+const typeOf = (entry: OverviewEntry): string => {
   return TYPE_LABELS[entry.type] ?? entry.type;
-}
+};

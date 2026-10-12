@@ -38,10 +38,10 @@ export const wwdcDataCache = new LRUCache<string, string>({
 /**
  * Generate cache key for URL-based requests
  */
-export function generateUrlCacheKey(
+export const generateUrlCacheKey = (
   url: string,
   params?: Record<string, unknown>,
-): string {
+): string => {
   let key = url;
   if (params) {
     const sortedParams = Object.keys(params)
@@ -51,4 +51,4 @@ export function generateUrlCacheKey(
     key += `?${sortedParams}`;
   }
   return key;
-}
+};

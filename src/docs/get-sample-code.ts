@@ -40,12 +40,12 @@ export interface SampleCodeQuery {
 /**
  * Handles the get_sample_code tool request
  */
-export async function handleGetSampleCode({
+export const handleGetSampleCode = async ({
   framework,
   beta,
   searchQuery,
   limit,
-}: SampleCodeQuery): Promise<string> {
+}: SampleCodeQuery): Promise<string> => {
   // Generate cache key
   const cacheKey = generateUrlCacheKey("sample-code", {
     framework,
@@ -118,16 +118,16 @@ export async function handleGetSampleCode({
   // Cache the result
   sampleCodeCache.set(cacheKey, result);
   return result;
-}
+};
 
 /**
  * Parses sample codes from the content and index data
  */
-function parseSampleCodes(
+const parseSampleCodes = (
   content: RenderNode,
   index: RenderIndex,
   names: Map<string, string>,
-): ParsedSampleCode[] {
+): ParsedSampleCode[] => {
   const sampleCodes: ParsedSampleCode[] = [];
   const featuredIds = new Set<string>();
 
@@ -184,14 +184,14 @@ function parseSampleCodes(
     framework: names.get(code.path.split("/")[2] ?? "") ?? code.framework,
     description: summaries.get(code.path),
   }));
-}
+};
 
 /**
  * Deduplicates sample codes based on path
  */
-function deduplicateSampleCodes(
+const deduplicateSampleCodes = (
   sampleCodes: ParsedSampleCode[],
-): ParsedSampleCode[] {
+): ParsedSampleCode[] => {
   const uniqueCodes = new Map<string, ParsedSampleCode>();
 
   for (const code of sampleCodes) {
@@ -211,19 +211,19 @@ function deduplicateSampleCodes(
   }
 
   return Array.from(uniqueCodes.values());
-}
+};
 
 /**
  * Recursively processes sample code nodes
  */
-function processSampleCodeNodes(
+const processSampleCodeNodes = (
   nodes: RenderIndexNode[],
   sampleCodes: ParsedSampleCode[],
   frameworkMap: Map<string, string>,
   featuredIds: Set<string>,
   currentFramework: string,
   depth: number,
-): void {
+): void => {
   for (const node of nodes) {
     if (node.type === "groupMarker") {
       // This is a framework/category marker
@@ -273,12 +273,12 @@ function processSampleCodeNodes(
       );
     }
   }
-}
+};
 
 /**
  * Extract framework name from URL path
  */
-function extractFrameworkFromPath(path: string): string | null {
+const extractFrameworkFromPath = (path: string): string | null => {
   // Match pattern like /documentation/framework/...
   const match = path.match(/^\/documentation\/([^/]+)\//);
   if (match) {
@@ -290,23 +290,23 @@ function extractFrameworkFromPath(path: string): string | null {
     return normalizeFrameworkName(framework);
   }
   return null;
-}
+};
 
 /**
  * Converts a path to doc URL format
  */
-function pathToDocUrl(path: string): string {
+const pathToDocUrl = (path: string): string => {
   // Convert /documentation/framework/sample-name to doc://com.apple.documentation/documentation/framework/sample-name
   return `doc://com.apple.documentation${path}`;
-}
+};
 
 /**
  * Applies filters to sample codes
  */
-function applySampleCodeFilters(
+const applySampleCodeFilters = (
   sampleCodes: ParsedSampleCode[],
   filters: SampleCodeFilters,
-): ParsedSampleCode[] {
+): ParsedSampleCode[] => {
   return sampleCodes.filter((code) => {
     // Framework filter - normalize both for comparison
     if (filters.framework) {
@@ -386,12 +386,12 @@ function applySampleCodeFilters(
 
     return true;
   });
-}
+};
 
 /**
  * Formats the sample code result
  */
-function formatSampleCodeResult(
+const formatSampleCodeResult = (
   sampleCodes: ParsedSampleCode[],
   options: {
     framework?: string | undefined;
@@ -400,7 +400,7 @@ function formatSampleCodeResult(
     totalFound: number;
     showing: number;
   },
-): string {
+): string => {
   const lines: string[] = [];
 
   // Header
@@ -512,15 +512,15 @@ function formatSampleCodeResult(
   }
 
   return lines.join("\n").trim();
-}
+};
 
 /**
  * Formats a single sample code item
  */
-function formatSampleCodeItem(
+const formatSampleCodeItem = (
   code: ParsedSampleCode,
   showFramework: boolean = true,
-): string {
+): string => {
   const badges: string[] = [];
   if (code.beta) {
     badges.push("🧪 Beta");
@@ -534,4 +534,4 @@ function formatSampleCodeItem(
     showFramework && code.framework ? ` (${code.framework})` : "";
 
   return `- [${code.title}](${code.url})${badgeStr}${frameworkStr}${code.description ? `: ${code.description}` : ""}`;
-}
+};

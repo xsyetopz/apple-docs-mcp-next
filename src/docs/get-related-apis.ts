@@ -24,12 +24,12 @@ export interface RelatedApisQuery {
   includeSeeAlso: boolean;
 }
 
-export async function handleGetRelatedApis({
+export const handleGetRelatedApis = async ({
   apiUrl,
   includeInherited,
   includeConformance,
   includeSeeAlso,
-}: RelatedApisQuery): Promise<string> {
+}: RelatedApisQuery): Promise<string> => {
   logger.info(`Fetching related APIs for: ${apiUrl}`);
 
   const jsonApiUrl = convertToJsonApiUrl(apiUrl);
@@ -110,13 +110,13 @@ export async function handleGetRelatedApis({
   const uniqueApis = deduplicateApis(relatedApis);
 
   return formatRelatedApis(apiUrl, uniqueApis);
-}
+};
 
-function extractApiFromIdentifier(
+const extractApiFromIdentifier = (
   identifier: string,
   relationship: string,
   references: References,
-): RelatedAPI | null {
+): RelatedAPI | null => {
   const ref = references?.[identifier];
   if (isTopicReference(ref)) {
     return {
@@ -146,9 +146,9 @@ function extractApiFromIdentifier(
   }
 
   return null;
-}
+};
 
-function deduplicateApis(apis: RelatedAPI[]): RelatedAPI[] {
+const deduplicateApis = (apis: RelatedAPI[]): RelatedAPI[] => {
   const seen = new Set<string>();
   return apis.filter((api) => {
     if (seen.has(api.identifier)) {
@@ -157,12 +157,12 @@ function deduplicateApis(apis: RelatedAPI[]): RelatedAPI[] {
     seen.add(api.identifier);
     return true;
   });
-}
+};
 
-function formatRelatedApis(
+const formatRelatedApis = (
   originalUrl: string,
   relatedApis: RelatedAPI[],
-): string {
+): string => {
   if (relatedApis.length === 0) {
     return `No related APIs found for: ${originalUrl}`;
   }
@@ -191,11 +191,11 @@ function formatRelatedApis(
   content += `---\n\n*Total: ${relatedApis.length} related APIs*`;
 
   return content;
-}
+};
 
-function groupApisByRelationship(
+const groupApisByRelationship = (
   apis: RelatedAPI[],
-): Map<string, RelatedAPI[]> {
+): Map<string, RelatedAPI[]> => {
   const groups = new Map<string, RelatedAPI[]>();
 
   for (const api of apis) {
@@ -205,4 +205,4 @@ function groupApisByRelationship(
   }
 
   return groups;
-}
+};

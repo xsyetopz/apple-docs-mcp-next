@@ -23,14 +23,14 @@ export interface RelatedVideosQuery {
 /**
  * Find related WWDC videos
  */
-export async function handleFindRelatedWWDCVideos({
+export const handleFindRelatedWWDCVideos = async ({
   videoId,
   year,
   includeExplicitRelated,
   includeTopicRelated,
   includeYearRelated,
   limit,
-}: RelatedVideosQuery): Promise<string> {
+}: RelatedVideosQuery): Promise<string> => {
   const sourceVideo = await loadVideoData(year, videoId);
 
   let content = `# Related Videos for "${sourceVideo.title}"\n\n`;
@@ -199,4 +199,4 @@ export async function handleFindRelatedWWDCVideos({
   }
 
   return content;
-}
+};

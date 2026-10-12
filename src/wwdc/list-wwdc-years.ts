@@ -6,7 +6,7 @@ import { loadGlobalMetadata } from "./data-source.ts";
 /**
  * List all available WWDC years
  */
-export async function handleListWWDCYears(): Promise<string> {
+export const handleListWWDCYears = async (): Promise<string> => {
   const metadata = await loadGlobalMetadata();
 
   let content = "# Available WWDC Years\n\n";
@@ -34,4 +34,4 @@ export async function handleListWWDCYears(): Promise<string> {
   }
 
   return content;
-}
+};

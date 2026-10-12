@@ -20,14 +20,14 @@ interface HelpPage {
 }
 
 /** Whether a node sits inside a table cell, where a Markdown row has to stay on one line */
-function inTableCell(node: Node): boolean {
+const inTableCell = (node: Node): boolean => {
   for (let parent = node.parentNode; parent; parent = parent.parentNode) {
     if (parent.nodeName === "TD" || parent.nodeName === "TH") {
       return true;
     }
   }
   return false;
-}
+};
 
 // Apple's table cells hold paragraphs, lists and figures; inside a cell they become one line
 const turndown = new TurndownService({
@@ -48,7 +48,7 @@ const turndown = new TurndownService({
 /**
  * One help page's article as Markdown, its links and pictures made full against the page's address
  */
-export async function fetchHelpPage(url: string): Promise<string> {
+export const fetchHelpPage = async (url: string): Promise<string> => {
   const { document } = new JSDOM(await httpClient.getText(url), { url }).window;
   const article = document.querySelector("article");
   if (!article) {
@@ -72,12 +72,12 @@ export async function fetchHelpPage(url: string): Promise<string> {
     }
   }
   return turndown.turndown(article.innerHTML);
-}
+};
 
 /**
  * Every page the help's navigation lists, read from any one page's HTML
  */
-export function helpPagesOf(html: string, url: string): HelpPage[] {
+export const helpPagesOf = (html: string, url: string): HelpPage[] => {
   const { document } = new JSDOM(html, { url }).window;
   return [
     ...document.querySelectorAll(
@@ -92,4 +92,4 @@ export function helpPagesOf(html: string, url: string): HelpPage[] {
       link.querySelector(".form-dropdown-option-text")?.textContent.trim() ??
       "",
   }));
-}
+};

@@ -34,12 +34,12 @@ export interface SimilarApisQuery {
   includeAlternatives: boolean;
 }
 
-export async function handleFindSimilarApis({
+export const handleFindSimilarApis = async ({
   apiUrl,
   searchDepth,
   filterByCategory,
   includeAlternatives,
-}: SimilarApisQuery): Promise<string> {
+}: SimilarApisQuery): Promise<string> => {
   try {
     logger.info(`Finding similar APIs for: ${apiUrl}`);
 
@@ -110,15 +110,15 @@ export async function handleFindSimilarApis({
     }
     throw new Error(errorMessage, { cause: error });
   }
-}
+};
 
 /**
  * The pages a deprecation note links, first among the similar APIs
  */
-function replacementsIn(
+const replacementsIn = (
   deprecation: RenderBlockContent[],
   references: References,
-): SimilarAPI[] {
+): SimilarAPI[] => {
   return paragraphsOf(deprecation)
     .flat()
     .flatMap((inline) =>
@@ -135,20 +135,22 @@ function replacementsIn(
         : [],
     )
     .filter((api): api is SimilarAPI => api !== null);
-}
+};
 
 /** The inline content of each paragraph among blocks */
-function paragraphsOf(blocks: RenderBlockContent[]): RenderInlineContent[][] {
+const paragraphsOf = (
+  blocks: RenderBlockContent[],
+): RenderInlineContent[][] => {
   return blocks.flatMap((block) =>
     "type" in block && block.type === "paragraph" ? [block.inlineContent] : [],
   );
-}
+};
 
-function extractSeeAlsoApis(
+const extractSeeAlsoApis = (
   seeAlsoSections: TasksGroupSection[],
   references: References,
   filterByCategory?: string,
-): SimilarAPI[] {
+): SimilarAPI[] => {
   const apis: SimilarAPI[] = [];
 
   for (const section of seeAlsoSections) {
@@ -176,13 +178,13 @@ function extractSeeAlsoApis(
   }
 
   return apis;
-}
+};
 
-function extractTopicApis(
+const extractTopicApis = (
   topicSections: TasksGroupSection[],
   references: References,
   filterByCategory?: string,
-): SimilarAPI[] {
+): SimilarAPI[] => {
   const apis: SimilarAPI[] = [];
 
   for (const section of topicSections) {
@@ -215,11 +217,11 @@ function extractTopicApis(
   }
 
   return apis;
-}
+};
 
-async function extractDeepRelatedApis(
+const extractDeepRelatedApis = async (
   seedApis: SimilarAPI[],
-): Promise<SimilarAPI[]> {
+): Promise<SimilarAPI[]> => {
   const deepApis: SimilarAPI[] = [];
 
   for (const seedApi of seedApis) {
@@ -255,15 +257,15 @@ async function extractDeepRelatedApis(
   }
 
   return deepApis;
-}
+};
 
-function createSimilarApi(
+const createSimilarApi = (
   identifier: string,
   category: string,
   similarityType: string,
   confidence: number,
   references: References,
-): SimilarAPI | null {
+): SimilarAPI | null => {
   const ref = references?.[identifier];
   if (isTopicReference(ref)) {
     return {
@@ -296,9 +298,9 @@ function createSimilarApi(
   }
 
   return null;
-}
+};
 
-function deduplicateAndScore(apis: SimilarAPI[]): SimilarAPI[] {
+const deduplicateAndScore = (apis: SimilarAPI[]): SimilarAPI[] => {
   const apiMap = new Map<string, SimilarAPI>();
 
   for (const api of apis) {
@@ -313,15 +315,15 @@ function deduplicateAndScore(apis: SimilarAPI[]): SimilarAPI[] {
   }
 
   return Array.from(apiMap.values());
-}
+};
 
-function formatSimilarApis(
+const formatSimilarApis = (
   originalUrl: string,
   similarApis: SimilarAPI[],
   originalApiName?: string,
   originalData?: RenderNode,
   deprecationNote?: string,
-): string {
+): string => {
   const apiName =
     originalApiName || new URL(originalUrl).pathname.split("/").pop() || "API";
   let content = `# Similar APIs to ${apiName}\n\n`;
@@ -383,9 +385,9 @@ function formatSimilarApis(
   content += `---\n\n*Total: ${similarApis.length} similar APIs found*`;
 
   return content;
-}
+};
 
-function formatSingleSimilarApi(api: SimilarAPI): string {
+const formatSingleSimilarApi = (api: SimilarAPI): string => {
   let content = `### [${api.title}](${api.url})\n`;
 
   if (api.abstract) {
@@ -403,4 +405,4 @@ function formatSingleSimilarApi(api: SimilarAPI): string {
   content += `*${metadata.join(" | ")}*\n\n`;
 
   return content;
-}
+};

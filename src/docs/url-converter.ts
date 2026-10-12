@@ -7,7 +7,7 @@
  * @param webUrl The web URL to convert
  * @returns The corresponding JSON API URL
  */
-export function convertToJsonApiUrl(webUrl: string): string | null {
+export const convertToJsonApiUrl = (webUrl: string): string | null => {
   try {
     // Remove trailing slash if present
     if (webUrl.endsWith("/")) {
@@ -48,18 +48,18 @@ export function convertToJsonApiUrl(webUrl: string): string | null {
   } catch {
     return null;
   }
-}
+};
 
 /**
  * Validate if URL is from Apple Developer domain
  * @param url The URL to validate
  * @returns True if valid Apple Developer URL
  */
-export function isValidAppleDeveloperUrl(url: string): boolean {
+export const isValidAppleDeveloperUrl = (url: string): boolean => {
   try {
     const urlObj = new URL(url);
     return urlObj.hostname === "developer.apple.com";
   } catch {
     return false;
   }
-}
+};

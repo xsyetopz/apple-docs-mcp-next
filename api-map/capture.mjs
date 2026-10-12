@@ -19,11 +19,11 @@ const page = await context.newPage();
 
 // Each step waits for its query request. Only requests are mapped: the page aborts its own streams (a new search
 // cancels the last, an idle timer the rest), so Chrome never reports a response as finished.
-async function query(action) {
+const query = async (action) => {
   const request = page.waitForRequest("**/api/v1/query");
   await action();
   await request;
-}
+};
 
 try {
   for (const text of QUERIES) {

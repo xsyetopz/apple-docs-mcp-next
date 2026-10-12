@@ -27,11 +27,11 @@ export interface ReferencesQuery {
   filterByType: string;
 }
 
-export async function handleResolveReferencesBatch({
+export const handleResolveReferencesBatch = async ({
   sourceUrl,
   maxReferences,
   filterByType,
-}: ReferencesQuery): Promise<string> {
+}: ReferencesQuery): Promise<string> => {
   logger.info(`Resolving references from: ${sourceUrl}`);
 
   const jsonApiUrl = convertToJsonApiUrl(sourceUrl);
@@ -70,12 +70,12 @@ export async function handleResolveReferencesBatch({
     resolvedReferences,
     data.metadata?.title,
   );
-}
+};
 
-function filterReferences(
+const filterReferences = (
   references: NonNullable<References>,
   filterByType: string,
-): Record<string, TopicRenderReference> {
+): Record<string, TopicRenderReference> => {
   return Object.fromEntries(
     Object.entries(references).flatMap(([identifier, refData]) =>
       isTopicReference(refData) &&
@@ -87,13 +87,13 @@ function filterReferences(
         : [],
     ),
   );
-}
+};
 
-async function resolveReference(
+const resolveReference = async (
   identifier: string,
   refData: TopicRenderReference,
   references: References,
-): Promise<ResolvedReference | null> {
+): Promise<ResolvedReference | null> => {
   try {
     const resolved: ResolvedReference = {
       identifier,
@@ -123,13 +123,13 @@ async function resolveReference(
     logger.error(`Failed to resolve reference ${identifier}:`, error);
     return null;
   }
-}
+};
 
-function formatResolvedReferences(
+const formatResolvedReferences = (
   sourceUrl: string,
   references: ResolvedReference[],
   sourceTitle?: string,
-): string {
+): string => {
   if (references.length === 0) {
     return `No references could be resolved from: ${sourceUrl}`;
   }
@@ -153,11 +153,11 @@ function formatResolvedReferences(
   content += `---\n\n*Total: ${references.length} references resolved*`;
 
   return content;
-}
+};
 
-function groupReferencesByRole(
+const groupReferencesByRole = (
   references: ResolvedReference[],
-): Record<string, ResolvedReference[]> {
+): Record<string, ResolvedReference[]> => {
   const groups: Record<string, ResolvedReference[]> = {};
 
   for (const ref of references) {
@@ -169,9 +169,9 @@ function groupReferencesByRole(
   }
 
   return groups;
-}
+};
 
-function formatRoleTitle(role: string): string {
+const formatRoleTitle = (role: string): string => {
   const roleTitles: Record<string, string> = {
     symbol: "API Symbols",
     collection: "Collections",
@@ -183,9 +183,9 @@ function formatRoleTitle(role: string): string {
   };
 
   return roleTitles[role] || role.charAt(0).toUpperCase() + role.slice(1);
-}
+};
 
-function formatSingleReference(ref: ResolvedReference): string {
+const formatSingleReference = (ref: ResolvedReference): string => {
   let content = `### [${ref.title}](${ref.url})\n`;
 
   if (ref.fragments && ref.fragments.length > 0) {
@@ -208,4 +208,4 @@ function formatSingleReference(ref: ResolvedReference): string {
   }
 
   return content;
-}
+};

@@ -16,10 +16,10 @@ type References = RenderNode["references"];
 /**
  * Format inline content: text, code voice, links and references, keeping strong and emphasized runs
  */
-export function formatInlineContent(
+export const formatInlineContent = (
   inlineContent: RenderInlineContent[],
   references: References,
-): string {
+): string => {
   return inlineContent
     .map((inline) => {
       switch (inline.type) {
@@ -42,16 +42,16 @@ export function formatInlineContent(
       }
     })
     .join("");
-}
+};
 
 /**
  * A reference reads as the words the page links (its overriding title), else its target's title; a symbol is code.
  * An active one links to its target, as Apple's pages do.
  */
-function formatReference(
+const formatReference = (
   inline: Extract<RenderInlineContent, { type: "reference" }>,
   references: References,
-): string {
+): string => {
   const target = references?.[inline.identifier];
   const title =
     inline.overridingTitle ??
@@ -64,22 +64,22 @@ function formatReference(
       : title;
   const url = inline.isActive ? referenceUrl(target) : undefined;
   return url ? `[${text}](${url})` : text;
-}
+};
 
 /**
  * Where an asset loads from (an image, a sample's download, a tutorial's project files): its path, with or without a
  * leading slash, is from the pages' base, as swift-docc-render resolves it; a full URL stays as it is
  */
-function assetUrl(path: string): string {
+const assetUrl = (path: string): string => {
   return new URL(path.replace(/^\//, ""), APPLE_URLS.ASSETS).href;
-}
+};
 
 /**
  * Where a reference leads: a page (a WWDC session's carries a full URL; a page's, a site path), a link, or a download
  */
-export function referenceUrl(
+export const referenceUrl = (
   ref: RenderReference | undefined,
-): string | undefined {
+): string | undefined => {
   if (isTopicReference(ref)) {
     return ref.url.startsWith("http")
       ? ref.url
@@ -91,22 +91,22 @@ export function referenceUrl(
   return ref?.type === "download" || ref?.type === "externalLocation"
     ? assetUrl(ref.url)
     : undefined;
-}
+};
 
 /**
  * The web address of a page Apple names by its doc:// identifier: doc://<bundle>/<path> is developer.apple.com/<path>
  */
-export function docUrl(identifier: string): string {
+export const docUrl = (identifier: string): string => {
   return `${APPLE_URLS.BASE}/${identifier.replace(/^doc:\/\/[^/]+\//, "")}`;
-}
+};
 
 /**
  * An image as Markdown: Apple's alt text, which carries what the image shows, and its light 2x file
  */
-export function formatImage(
+export const formatImage = (
   identifier: string,
   references: References,
-): string {
+): string => {
   const image = references?.[identifier];
   if (image?.type !== "image") {
     return "";
@@ -118,31 +118,31 @@ export function formatImage(
     return image.alt ?? "";
   }
   return `![${image.alt ?? ""}](${assetUrl(file.url)})`;
-}
+};
 
 /**
  * A link to a page the JSON names by identifier, titled as the page's references title it; a symbol is code
  */
-export function formatIdentifierLink(
+export const formatIdentifierLink = (
   identifier: string,
   references: References,
-): string {
+): string => {
   const ref = references?.[identifier];
   if (isTopicReference(ref)) {
     return `[${ref.kind === "symbol" ? `\`${ref.title}\`` : ref.title}](${referenceUrl(ref)})`;
   }
   // Unlisted in the references: its identifier is still its address
   return `[\`${identifier.split("/").pop() ?? identifier}\`](${docUrl(identifier)})`;
-}
+};
 
 /**
  * A Topics or See Also line: the page's link, a symbol's titled with its declaration, then the one-line summary its
  * reference carries, as Apple's pages list a type's members
  */
-export function formatIdentifierLine(
+export const formatIdentifierLine = (
   identifier: string,
   references: References,
-): string {
+): string => {
   const ref = references?.[identifier];
   const summary =
     isTopicReference(ref) && ref.abstract
@@ -156,12 +156,12 @@ export function formatIdentifierLine(
       ? `[\`${declaration}\`](${referenceUrl(ref)})`
       : formatIdentifierLink(identifier, references);
   return `- ${link}${summary ? `: ${summary}` : ""}\n`;
-}
+};
 
 /**
  * Format document header with title and status
  */
-export function formatDocumentHeader(jsonData: RenderNode): string {
+export const formatDocumentHeader = (jsonData: RenderNode): string => {
   let content = "";
 
   // Add title with status information
@@ -192,23 +192,23 @@ export function formatDocumentHeader(jsonData: RenderNode): string {
   }
 
   return content;
-}
+};
 
 /**
  * Format document abstract
  */
-export function formatDocumentAbstract(jsonData: RenderNode): string {
+export const formatDocumentAbstract = (jsonData: RenderNode): string => {
   const abstractText = formatInlineContent(
     jsonData.abstract ?? [],
     jsonData.references,
   ).trim();
   return abstractText ? `${abstractText}\n\n` : "";
-}
+};
 
 /**
  * Format platform availability section
  */
-export function formatPlatformAvailability(jsonData: RenderNode): string {
+export const formatPlatformAvailability = (jsonData: RenderNode): string => {
   if (
     !jsonData.metadata?.platforms ||
     !Array.isArray(jsonData.metadata.platforms)
@@ -223,22 +223,22 @@ export function formatPlatformAvailability(jsonData: RenderNode): string {
   });
 
   return `${content}\n`;
-}
+};
 
 /**
  * " 17.0+" after a platform's name, or nothing when the page's JSON gives no version: Apple's site then shows the name
  * alone (swift-docc-render's AvailabilityRange), as on XCUIAutomation's pages.
  */
-export function formatIntroducedVersion(
+export const formatIntroducedVersion = (
   platform: PlatformAvailability,
-): string {
+): string => {
   return platform.introducedAt ? ` ${platform.introducedAt}+` : "";
-}
+};
 
 /**
  * Format a single platform line
  */
-function formatPlatformLine(platform: PlatformAvailability): string {
+const formatPlatformLine = (platform: PlatformAvailability): string => {
   const platformStatus = [];
 
   if (platform.beta) {
@@ -261,12 +261,12 @@ function formatPlatformLine(platform: PlatformAvailability): string {
   }
 
   return `${platformLine}\n`;
-}
+};
 
 /**
  * Format See Also section
  */
-export function formatSeeAlsoSection(jsonData: RenderNode): string {
+export const formatSeeAlsoSection = (jsonData: RenderNode): string => {
   if (!jsonData.seeAlsoSections || !Array.isArray(jsonData.seeAlsoSections)) {
     return "";
   }
@@ -284,24 +284,24 @@ export function formatSeeAlsoSection(jsonData: RenderNode): string {
   });
 
   return content;
-}
+};
 
 /**
  * Format See Also identifiers
  */
-function formatSeeAlsoIdentifiers(
+const formatSeeAlsoIdentifiers = (
   identifiers: string[],
   references: References,
-): string {
+): string => {
   return `${identifiers
     .map((identifier) => formatIdentifierLine(identifier, references))
     .join("")}\n`;
-}
+};
 
 /**
  * Check if document is a specific API
  */
-export function isSpecificAPIDocument(jsonData: RenderNode): boolean {
+export const isSpecificAPIDocument = (jsonData: RenderNode): boolean => {
   // A web-service endpoint has no declaration; its URL is its signature
   return (
     jsonData.primaryContentSections?.some(
@@ -310,4 +310,4 @@ export function isSpecificAPIDocument(jsonData: RenderNode): boolean {
         (section.kind === "declarations" || section.kind === "restEndpoint"),
     ) ?? false
   );
-}
+};

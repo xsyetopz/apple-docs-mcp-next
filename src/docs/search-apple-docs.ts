@@ -12,10 +12,10 @@ export interface DocsSearchQuery {
   type: SearchType;
 }
 
-export async function searchAppleDocs({
+export const searchAppleDocs = async ({
   query,
   type,
-}: DocsSearchQuery): Promise<string> {
+}: DocsSearchQuery): Promise<string> => {
   requireText(query, "Search query");
   logger.info(`Searching Apple docs for: ${query}`);
   const streams = await searchStreams(query, type);
@@ -25,4 +25,4 @@ export async function searchAppleDocs({
     `${APPLE_URLS.SEARCH}?q=${encodeURIComponent(query)}`,
     type,
   );
-}
+};

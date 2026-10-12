@@ -8,12 +8,12 @@ import { parseSearchResult } from "./search-result-parser.ts";
 /**
  * Formats search results for display
  */
-export function formatSearchResults(
+export const formatSearchResults = (
   results: SearchResult[],
   query: string,
   filterType: SearchType,
   searchUrl: string,
-): string {
+): string => {
   let content = "";
 
   // Add header
@@ -45,16 +45,16 @@ export function formatSearchResults(
   content += formatSearchFooter(searchUrl);
 
   return content;
-}
+};
 
 /**
  * Format no results message
  */
-function formatNoResultsMessage(
+const formatNoResultsMessage = (
   query: string,
   filterType: SearchType,
   searchUrl: string,
-): string {
+): string => {
   let content = "## No Results Found\n\n";
   content += `No ${filterType === "all" ? "" : `${filterType} `}results found for "${query}".\n\n`;
   content += "### Suggestions:\n";
@@ -71,14 +71,14 @@ function formatNoResultsMessage(
 
   content += `\n[View search on Apple Developer](${searchUrl})`;
   return content;
-}
+};
 
 /**
  * Group results by type
  */
-function groupResultsByType(
+const groupResultsByType = (
   results: SearchResult[],
-): Record<string, SearchResult[]> {
+): Record<string, SearchResult[]> => {
   const groups: Record<string, SearchResult[]> = {};
 
   results.forEach((result) => {
@@ -90,12 +90,12 @@ function groupResultsByType(
   });
 
   return groups;
-}
+};
 
 /**
  * Get display type for result
  */
-function getDisplayType(type: string): string {
+const getDisplayType = (type: string): string => {
   const typeDisplayNames: Record<string, string> = {
     documentation: "📚 API Documentation",
     "documentation-article": "📄 Articles",
@@ -108,12 +108,12 @@ function getDisplayType(type: string): string {
   };
 
   return typeDisplayNames[type] || "📝 Other";
-}
+};
 
 /**
  * Format a group of results
  */
-function formatResultGroup(type: string, results: SearchResult[]): string {
+const formatResultGroup = (type: string, results: SearchResult[]): string => {
   let content = `## ${type}\n\n`;
 
   results.forEach((result, index) => {
@@ -121,12 +121,12 @@ function formatResultGroup(type: string, results: SearchResult[]): string {
   });
 
   return content;
-}
+};
 
 /**
  * Format a single search result
  */
-function formatSingleResult(result: SearchResult, index: number): string {
+const formatSingleResult = (result: SearchResult, index: number): string => {
   let content = `### ${index}. ${result.title}`;
 
   // Add badges
@@ -159,19 +159,19 @@ function formatSingleResult(result: SearchResult, index: number): string {
   content += `**URL:** ${result.url}\n\n`;
 
   return content;
-}
+};
 
 /**
  * Format search footer
  */
-function formatSearchFooter(searchUrl: string): string {
+const formatSearchFooter = (searchUrl: string): string => {
   return `---\n\n[View all results on Apple Developer](${searchUrl})`;
-}
+};
 
 /**
  * Check if query might be video-related and provide WWDC tool suggestions
  */
-function getVideoSuggestion(query: string): string | null {
+const getVideoSuggestion = (query: string): string | null => {
   const videoKeywords = [
     "video",
     "wwdc",
@@ -213,13 +213,13 @@ This search covers documentation and samples, but not WWDC videos. For WWDC cont
   }
 
   return null;
-}
+};
 
 /**
  * Replays the JSON lines Apple's search API streams, as its search page does: each `search` event takes `removeLast`
  * characters off the results document, then appends `append`
  */
-export function streamedDocument(jsonl: string): string {
+export const streamedDocument = (jsonl: string): string => {
   let document = "";
   for (const line of jsonl.split("\n")) {
     if (!line.trim()) {
@@ -233,23 +233,23 @@ export function streamedDocument(jsonl: string): string {
     }
   }
   return document;
-}
+};
 
-function streamedResults(jsonl: string): ApiSearchResult[] {
+const streamedResults = (jsonl: string): ApiSearchResult[] => {
   const document = streamedDocument(jsonl);
   return document ? (JSON.parse(document) as SearchDocument).results : [];
-}
+};
 
 /**
  * The results of one or more searches (`all` sends two), in order and each page once, WWDC sessions capped at
  * `MAX_WWDC_RESULTS`
  */
-export function parseSearchResults(
+export const parseSearchResults = (
   streams: string[],
   query: string,
   searchUrl: string,
   filterType: SearchType,
-): string {
+): string => {
   const found = streams
     .flatMap(streamedResults)
     .map((result) => parseSearchResult(result, filterType))
@@ -268,4 +268,4 @@ export function parseSearchResults(
     .slice(0, API_LIMITS.MAX_SEARCH_RESULTS);
 
   return formatSearchResults(results, query, filterType, searchUrl);
-}
+};

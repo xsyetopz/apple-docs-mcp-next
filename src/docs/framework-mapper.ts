@@ -166,11 +166,13 @@ const BY_KEY = new Map(FRAMEWORKS.map((name) => [key(name), name]));
  * The framework's name as Apple writes it, or what was typed with its first letter capitalized when it names none.
  * A sample-code group in Apple's index can come without a title, so a missing name gives an empty one.
  */
-export function normalizeFrameworkName(framework: string | undefined): string {
+export const normalizeFrameworkName = (
+  framework: string | undefined,
+): string => {
   const typed = framework?.trim() ?? "";
   return (
     SYNONYMS[key(typed)] ??
     BY_KEY.get(key(typed)) ??
     typed.charAt(0).toUpperCase() + typed.slice(1)
   );
-}
+};
