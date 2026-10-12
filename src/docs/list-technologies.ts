@@ -35,44 +35,39 @@ export async function handleListTechnologies({
   includeBeta,
   limit,
 }: TechnologiesQuery): Promise<string> {
-  try {
-    logger.info("Fetching technologies list...");
+  logger.info("Fetching technologies list...");
 
-    const cacheKey = generateUrlCacheKey("technologies", {
-      category,
-      language,
-      includeBeta,
-      limit,
-    });
+  const cacheKey = generateUrlCacheKey("technologies", {
+    category,
+    language,
+    includeBeta,
+    limit,
+  });
 
-    const cachedResult = technologiesCache.get(cacheKey);
-    if (cachedResult) {
-      logger.debug("Technologies cache hit");
-      return cachedResult;
-    }
-
-    const data = await httpClient.getJson<TechnologiesPage>(
-      APPLE_URLS.TECHNOLOGIES_JSON,
-    );
-
-    const technologies = parseTechnologies(data);
-
-    const filteredTechnologies = applyTechnologyFilters(technologies, {
-      category,
-      language,
-      includeBeta,
-      limit,
-    });
-
-    const result = formatTechnologiesList(filteredTechnologies);
-
-    technologiesCache.set(cacheKey, result);
-
-    return result;
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    return `Error: Failed to list technologies: ${errorMessage}`;
+  const cachedResult = technologiesCache.get(cacheKey);
+  if (cachedResult) {
+    logger.debug("Technologies cache hit");
+    return cachedResult;
   }
+
+  const data = await httpClient.getJson<TechnologiesPage>(
+    APPLE_URLS.TECHNOLOGIES_JSON,
+  );
+
+  const technologies = parseTechnologies(data);
+
+  const filteredTechnologies = applyTechnologyFilters(technologies, {
+    category,
+    language,
+    includeBeta,
+    limit,
+  });
+
+  const result = formatTechnologiesList(filteredTechnologies);
+
+  technologiesCache.set(cacheKey, result);
+
+  return result;
 }
 
 /**

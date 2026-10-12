@@ -251,28 +251,27 @@ describe("list-technologies", () => {
     it("should handle fetch errors", async () => {
       mockHttpClient.getJson.mockRejectedValue(new Error("Network error"));
 
-      const result = await handleListTechnologies({
-        category: undefined,
-        language: undefined,
-        includeBeta: true,
-        limit: 200,
-      });
-
-      expect(result).toContain("Error: Failed to list technologies:");
-      expect(result).toContain("Network error");
+      await expect(
+        handleListTechnologies({
+          category: undefined,
+          language: undefined,
+          includeBeta: true,
+          limit: 200,
+        }),
+      ).rejects.toThrow("Network error");
     });
 
     it("should report malformed JSON as an error", async () => {
       mockHttpClient.getJson.mockResolvedValue({ invalid: "response" });
 
-      const result = await handleListTechnologies({
-        category: undefined,
-        language: undefined,
-        includeBeta: true,
-        limit: 200,
-      });
-
-      expect(result).toContain("Error: Failed to list technologies:");
+      await expect(
+        handleListTechnologies({
+          category: undefined,
+          language: undefined,
+          includeBeta: true,
+          limit: 200,
+        }),
+      ).rejects.toThrow(TypeError);
     });
 
     it("should return detailed technology information when available", async () => {

@@ -72,92 +72,88 @@ export async function searchFrameworkSymbols({
   language,
   limit,
 }: FrameworkSymbolsQuery): Promise<string> {
-  try {
-    const normalizedFramework = normalizeFrameworkName(framework);
-    logger.info(
-      `Searching ${symbolType} symbols in ${normalizedFramework} framework`,
-    );
+  const normalizedFramework = normalizeFrameworkName(framework);
+  logger.info(
+    `Searching ${symbolType} symbols in ${normalizedFramework} framework`,
+  );
 
-    const indexUrl = `${APPLE_URLS.TUTORIALS_DATA}index/${framework.toLowerCase()}`;
-    const cacheKey = generateUrlCacheKey(indexUrl, {
-      framework: normalizedFramework,
-      symbolType,
-      namePattern,
-      language,
-      limit,
-    });
+  const indexUrl = `${APPLE_URLS.TUTORIALS_DATA}index/${framework.toLowerCase()}`;
+  const cacheKey = generateUrlCacheKey(indexUrl, {
+    framework: normalizedFramework,
+    symbolType,
+    namePattern,
+    language,
+    limit,
+  });
 
-    const cachedResult = indexCache.get(cacheKey);
-    if (cachedResult) {
-      return cachedResult;
+  const cachedResult = indexCache.get(cacheKey);
+  if (cachedResult) {
+    return cachedResult;
+  }
+
+  const data = await httpClient.getJson<RenderIndex>(indexUrl);
+
+  const indexItems = data.interfaceLanguages?.[language] || [];
+
+  if (indexItems.length === 0) {
+    const availableLanguages = Object.keys(data.interfaceLanguages || {});
+    return `Language "${language}" not available for ${framework}. Available languages: ${availableLanguages.join(", ")}`;
+  }
+
+  const symbols: RenderIndexNode[] = [];
+  findSymbolsRecursive(indexItems, symbolType, namePattern, limit, symbols);
+
+  const typeLabel =
+    symbolType === "all" ? "Symbols" : pluralizeType(symbolType);
+  let result = `# ${framework} Framework ${typeLabel}\n\n`;
+
+  if (symbols.length === 0) {
+    const typeText =
+      symbolType === "all"
+        ? "symbols"
+        : pluralizeType(symbolType).toLowerCase();
+    result += `No ${typeText} found`;
+    if (namePattern) {
+      result += ` matching pattern "${namePattern}"`;
     }
+    result += ` in ${framework} framework.\n`;
 
-    const data = await httpClient.getJson<RenderIndex>(indexUrl);
-
-    const indexItems = data.interfaceLanguages?.[language] || [];
-
-    if (indexItems.length === 0) {
-      const availableLanguages = Object.keys(data.interfaceLanguages || {});
-      return `Language "${language}" not available for ${framework}. Available languages: ${availableLanguages.join(", ")}`;
-    }
-
-    const symbols: RenderIndexNode[] = [];
-    findSymbolsRecursive(indexItems, symbolType, namePattern, limit, symbols);
-
-    const typeLabel =
-      symbolType === "all" ? "Symbols" : pluralizeType(symbolType);
-    let result = `# ${framework} Framework ${typeLabel}\n\n`;
-
-    if (symbols.length === 0) {
-      const typeText =
-        symbolType === "all"
-          ? "symbols"
-          : pluralizeType(symbolType).toLowerCase();
-      result += `No ${typeText} found`;
-      if (namePattern) {
-        result += ` matching pattern "${namePattern}"`;
+    const collections = findCollections(indexItems);
+    if (collections.length > 0) {
+      result += "\n## Try exploring these collections:\n\n";
+      for (const col of collections.slice(
+        0,
+        PROCESSING_LIMITS.MAX_COLLECTIONS_TO_SHOW,
+      )) {
+        result += `- [${col.title}](https://developer.apple.com${col.path})\n`;
       }
-      result += ` in ${framework} framework.\n`;
+    }
+  } else {
+    result += `**Found:** ${symbols.length} ${symbolType === "all" ? "symbols" : pluralizeType(symbolType).toLowerCase()}`;
+    if (namePattern) {
+      result += ` matching "${namePattern}"`;
+    }
+    result += "\n\n";
 
-      const collections = findCollections(indexItems);
-      if (collections.length > 0) {
-        result += "\n## Try exploring these collections:\n\n";
-        for (const col of collections.slice(
-          0,
-          PROCESSING_LIMITS.MAX_COLLECTIONS_TO_SHOW,
-        )) {
-          result += `- [${col.title}](https://developer.apple.com${col.path})\n`;
+    if (symbolType === "all") {
+      const grouped = groupByType(symbols);
+      for (const [type, items] of Object.entries(grouped)) {
+        result += `## ${pluralizeType(type)} (${items.length})\n\n`;
+        for (const item of items) {
+          result += formatSymbolItem(item);
         }
+        result += "\n";
       }
     } else {
-      result += `**Found:** ${symbols.length} ${symbolType === "all" ? "symbols" : pluralizeType(symbolType).toLowerCase()}`;
-      if (namePattern) {
-        result += ` matching "${namePattern}"`;
-      }
-      result += "\n\n";
-
-      if (symbolType === "all") {
-        const grouped = groupByType(symbols);
-        for (const [type, items] of Object.entries(grouped)) {
-          result += `## ${pluralizeType(type)} (${items.length})\n\n`;
-          for (const item of items) {
-            result += formatSymbolItem(item);
-          }
-          result += "\n";
-        }
-      } else {
-        for (const symbol of symbols) {
-          result += formatSymbolItem(symbol);
-        }
+      for (const symbol of symbols) {
+        result += formatSymbolItem(symbol);
       }
     }
-
-    indexCache.set(cacheKey, result);
-
-    return result;
-  } catch (error) {
-    return `Error searching classes: ${error instanceof Error ? error.message : String(error)}`;
   }
+
+  indexCache.set(cacheKey, result);
+
+  return result;
 }
 
 function formatSymbolItem(item: RenderIndexNode): string {

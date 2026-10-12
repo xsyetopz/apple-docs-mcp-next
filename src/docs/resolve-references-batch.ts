@@ -32,49 +32,44 @@ export async function handleResolveReferencesBatch({
   maxReferences,
   filterByType,
 }: ReferencesQuery): Promise<string> {
-  try {
-    logger.info(`Resolving references from: ${sourceUrl}`);
+  logger.info(`Resolving references from: ${sourceUrl}`);
 
-    const jsonApiUrl = convertToJsonApiUrl(sourceUrl);
+  const jsonApiUrl = convertToJsonApiUrl(sourceUrl);
 
-    if (!jsonApiUrl) {
-      throw new Error("Invalid Apple Developer Documentation URL");
-    }
-
-    const data = await httpClient.getJson<RenderNode>(jsonApiUrl);
-
-    if (!data.references || Object.keys(data.references).length === 0) {
-      return `No references found in: ${sourceUrl}`;
-    }
-
-    const filteredReferences = filterReferences(data.references, filterByType);
-    const limitedReferences = Object.entries(filteredReferences).slice(
-      0,
-      maxReferences,
-    );
-
-    const resolvedReferences: ResolvedReference[] = [];
-
-    for (const [identifier, refData] of limitedReferences) {
-      const resolved = await resolveReference(
-        identifier,
-        refData,
-        data.references,
-      );
-      if (resolved) {
-        resolvedReferences.push(resolved);
-      }
-    }
-
-    return formatResolvedReferences(
-      sourceUrl,
-      resolvedReferences,
-      data.metadata?.title,
-    );
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    return `Error: Failed to resolve references: ${errorMessage}`;
+  if (!jsonApiUrl) {
+    throw new Error("Invalid Apple Developer Documentation URL");
   }
+
+  const data = await httpClient.getJson<RenderNode>(jsonApiUrl);
+
+  if (!data.references || Object.keys(data.references).length === 0) {
+    return `No references found in: ${sourceUrl}`;
+  }
+
+  const filteredReferences = filterReferences(data.references, filterByType);
+  const limitedReferences = Object.entries(filteredReferences).slice(
+    0,
+    maxReferences,
+  );
+
+  const resolvedReferences: ResolvedReference[] = [];
+
+  for (const [identifier, refData] of limitedReferences) {
+    const resolved = await resolveReference(
+      identifier,
+      refData,
+      data.references,
+    );
+    if (resolved) {
+      resolvedReferences.push(resolved);
+    }
+  }
+
+  return formatResolvedReferences(
+    sourceUrl,
+    resolvedReferences,
+    data.metadata?.title,
+  );
 }
 
 function filterReferences(

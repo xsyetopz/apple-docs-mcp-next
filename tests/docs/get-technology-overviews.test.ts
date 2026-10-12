@@ -336,14 +336,13 @@ describe("get-technology-overviews", () => {
       httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
     ).mockRejectedValue(new Error("Network error"));
 
-    const result = await handleGetTechnologyOverviews({
-      category: undefined,
-      searchQuery: undefined,
-      includeSubcategories: true,
-      limit: 50,
-    });
-
-    expect(result).toContain("Error: Failed to fetch technology overviews");
-    expect(result).toContain("Network error");
+    await expect(
+      handleGetTechnologyOverviews({
+        category: undefined,
+        searchQuery: undefined,
+        includeSubcategories: true,
+        limit: 50,
+      }),
+    ).rejects.toThrow("Network error");
   });
 });

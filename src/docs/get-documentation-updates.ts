@@ -30,56 +30,49 @@ export async function handleGetDocumentationUpdates({
   includeBeta,
   limit,
 }: DocumentationUpdatesQuery): Promise<string> {
-  try {
-    logger.info("Fetching documentation updates...");
+  logger.info("Fetching documentation updates...");
 
-    // Generate cache key
-    const cacheKey = generateUrlCacheKey("documentation-updates", {
-      category,
-      technology,
-      year,
-      searchQuery,
-      includeBeta,
-      limit,
-    });
+  // Generate cache key
+  const cacheKey = generateUrlCacheKey("documentation-updates", {
+    category,
+    technology,
+    year,
+    searchQuery,
+    includeBeta,
+    limit,
+  });
 
-    // Try to get from cache first
-    const cachedResult = updatesCache.get(cacheKey);
-    if (cachedResult) {
-      logger.debug("Updates cache hit");
-      return cachedResult;
-    }
-
-    // Fetch both updates data files
-    const [updatesData, updatesIndex] = await Promise.all([
-      httpClient.getJson<RenderNode>(APPLE_URLS.UPDATES_JSON),
-      httpClient.getJson<RenderIndex>(APPLE_URLS.UPDATES_INDEX_JSON),
-    ]);
-
-    // Parse and filter updates
-    const updates = parseUpdates(updatesData, updatesIndex);
-    const filteredUpdates = applyUpdatesFilters(updates, {
-      category,
-      technology,
-      year,
-      searchQuery,
-      includeBeta,
-      limit,
-    });
-
-    // Format output
-    const result = formatUpdatesList(filteredUpdates);
-
-    // Cache the result
-    updatesCache.set(cacheKey, result);
-
-    return result;
-  } catch (error) {
-    const errorMessage =
-      error instanceof Error ? error.message : JSON.stringify(error);
-    logger.error("Error fetching documentation updates:", error);
-    return `Error: Failed to fetch documentation updates: ${errorMessage}`;
+  // Try to get from cache first
+  const cachedResult = updatesCache.get(cacheKey);
+  if (cachedResult) {
+    logger.debug("Updates cache hit");
+    return cachedResult;
   }
+
+  // Fetch both updates data files
+  const [updatesData, updatesIndex] = await Promise.all([
+    httpClient.getJson<RenderNode>(APPLE_URLS.UPDATES_JSON),
+    httpClient.getJson<RenderIndex>(APPLE_URLS.UPDATES_INDEX_JSON),
+  ]);
+
+  // Parse and filter updates
+  const updates = parseUpdates(updatesData, updatesIndex);
+  const filteredUpdates = applyUpdatesFilters(updates, {
+    category,
+    technology,
+    year,
+    searchQuery,
+    includeBeta,
+    limit,
+  });
+
+  // Format output
+  const result = formatUpdatesList(filteredUpdates);
+
+  // Cache the result
+  updatesCache.set(cacheKey, result);
+
+  return result;
 }
 
 /**

@@ -247,9 +247,7 @@ describe("parseSearchResults", () => {
     });
 
     it("should report a malformed response", () => {
-      expect(text("<html>not a stream</html>")).toContain(
-        "Error parsing search results",
-      );
+      expect(() => text("<html>not a stream</html>")).toThrow(SyntaxError);
     });
 
     it("should skip results with missing fields", () => {

@@ -388,22 +388,21 @@ describe("get-documentation-updates", () => {
     );
   });
 
-  it("should handle errors gracefully", async () => {
+  it("rejects with the failure", async () => {
     (
       httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
     ).mockRejectedValue(new Error("Network error"));
 
-    const result = await handleGetDocumentationUpdates({
-      category: "all",
-      technology: undefined,
-      year: undefined,
-      searchQuery: undefined,
-      includeBeta: true,
-      limit: 50,
-    });
-
-    expect(result).toContain("Error: Failed to fetch documentation updates");
-    expect(result).toContain("Network error");
+    await expect(
+      handleGetDocumentationUpdates({
+        category: "all",
+        technology: undefined,
+        year: undefined,
+        searchQuery: undefined,
+        includeBeta: true,
+        limit: 50,
+      }),
+    ).rejects.toThrow("Network error");
   });
 
   it("should handle partial data correctly", async () => {

@@ -1,7 +1,6 @@
 /**
  * One WWDC session from the bundled data, as text
  */
-import { logger } from "../core/logger.ts";
 import { loadVideoData } from "./data-source.ts";
 import type { WWDCVideo } from "./types.ts";
 
@@ -21,15 +20,9 @@ export async function handleGetWWDCVideo({
   includeTranscript,
   includeCode,
 }: VideoQuery): Promise<string> {
-  try {
-    const video = await loadVideoData(year, videoId);
+  const video = await loadVideoData(year, videoId);
 
-    return formatVideoDetail(video, includeTranscript, includeCode);
-  } catch (error) {
-    logger.error("Failed to get WWDC video:", error);
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    return `Error: Failed to get WWDC video: ${errorMessage}`;
-  }
+  return formatVideoDetail(video, includeTranscript, includeCode);
 }
 
 /**

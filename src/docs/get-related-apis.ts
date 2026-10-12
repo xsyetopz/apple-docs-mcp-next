@@ -30,91 +30,86 @@ export async function handleGetRelatedApis({
   includeConformance,
   includeSeeAlso,
 }: RelatedApisQuery): Promise<string> {
-  try {
-    logger.info(`Fetching related APIs for: ${apiUrl}`);
+  logger.info(`Fetching related APIs for: ${apiUrl}`);
 
-    const jsonApiUrl = convertToJsonApiUrl(apiUrl);
+  const jsonApiUrl = convertToJsonApiUrl(apiUrl);
 
-    if (!jsonApiUrl) {
-      throw new Error("Invalid Apple Developer Documentation URL");
-    }
-
-    const data = await httpClient.getJson<RenderNode>(jsonApiUrl);
-
-    const relatedApis: RelatedAPI[] = [];
-
-    // Relationship sections (inheritance, conformance)
-    if (data.relationshipsSections) {
-      for (const section of data.relationshipsSections) {
-        const shouldInclude =
-          (includeInherited &&
-            (section.type === "inheritsFrom" ||
-              section.type === "inheritedBy")) ||
-          (includeConformance &&
-            (section.type === "conformsTo" ||
-              section.type === "conformingTypes"));
-
-        if (shouldInclude && section.identifiers) {
-          for (const identifier of section.identifiers) {
-            const api = extractApiFromIdentifier(
-              identifier,
-              section.title,
-              data.references,
-            );
-            if (api) {
-              relatedApis.push(api);
-            }
-          }
-        }
-      }
-    }
-
-    if (includeSeeAlso && data.seeAlsoSections) {
-      for (const section of data.seeAlsoSections) {
-        if (section.identifiers) {
-          for (const identifier of section.identifiers) {
-            const api = extractApiFromIdentifier(
-              identifier,
-              `See Also: ${section.title ?? ""}`,
-              data.references,
-            );
-            if (api) {
-              relatedApis.push(api);
-            }
-          }
-        }
-      }
-    }
-
-    if (data.topicSections) {
-      for (const section of data.topicSections) {
-        if (section.identifiers && section.identifiers.length > 0) {
-          // Only the first 3 per section, to avoid too many
-          const limitedIdentifiers = section.identifiers.slice(
-            0,
-            PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
-          );
-          for (const identifier of limitedIdentifiers) {
-            const api = extractApiFromIdentifier(
-              identifier,
-              `Related: ${section.title ?? ""}`,
-              data.references,
-            );
-            if (api) {
-              relatedApis.push(api);
-            }
-          }
-        }
-      }
-    }
-
-    const uniqueApis = deduplicateApis(relatedApis);
-
-    return formatRelatedApis(apiUrl, uniqueApis);
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    return `Error: Failed to get related APIs: ${errorMessage}`;
+  if (!jsonApiUrl) {
+    throw new Error("Invalid Apple Developer Documentation URL");
   }
+
+  const data = await httpClient.getJson<RenderNode>(jsonApiUrl);
+
+  const relatedApis: RelatedAPI[] = [];
+
+  // Relationship sections (inheritance, conformance)
+  if (data.relationshipsSections) {
+    for (const section of data.relationshipsSections) {
+      const shouldInclude =
+        (includeInherited &&
+          (section.type === "inheritsFrom" ||
+            section.type === "inheritedBy")) ||
+        (includeConformance &&
+          (section.type === "conformsTo" ||
+            section.type === "conformingTypes"));
+
+      if (shouldInclude && section.identifiers) {
+        for (const identifier of section.identifiers) {
+          const api = extractApiFromIdentifier(
+            identifier,
+            section.title,
+            data.references,
+          );
+          if (api) {
+            relatedApis.push(api);
+          }
+        }
+      }
+    }
+  }
+
+  if (includeSeeAlso && data.seeAlsoSections) {
+    for (const section of data.seeAlsoSections) {
+      if (section.identifiers) {
+        for (const identifier of section.identifiers) {
+          const api = extractApiFromIdentifier(
+            identifier,
+            `See Also: ${section.title ?? ""}`,
+            data.references,
+          );
+          if (api) {
+            relatedApis.push(api);
+          }
+        }
+      }
+    }
+  }
+
+  if (data.topicSections) {
+    for (const section of data.topicSections) {
+      if (section.identifiers && section.identifiers.length > 0) {
+        // Only the first 3 per section, to avoid too many
+        const limitedIdentifiers = section.identifiers.slice(
+          0,
+          PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
+        );
+        for (const identifier of limitedIdentifiers) {
+          const api = extractApiFromIdentifier(
+            identifier,
+            `Related: ${section.title ?? ""}`,
+            data.references,
+          );
+          if (api) {
+            relatedApis.push(api);
+          }
+        }
+      }
+    }
+  }
+
+  const uniqueApis = deduplicateApis(relatedApis);
+
+  return formatRelatedApis(apiUrl, uniqueApis);
 }
 
 function extractApiFromIdentifier(

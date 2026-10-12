@@ -1,5 +1,4 @@
 import { API_LIMITS } from "../core/constants.ts";
-import { logger } from "../core/logger.ts";
 import type { SearchDocument } from "../types/captured/search-document.ts";
 import type { SearchStream } from "../types/captured/search-stream.ts";
 import type { SearchType } from "./search-api.ts";
@@ -251,27 +250,22 @@ export function parseSearchResults(
   searchUrl: string,
   filterType: SearchType,
 ): string {
-  try {
-    const found = streams
-      .flatMap(streamedResults)
-      .map((result) => parseSearchResult(result, filterType))
-      .filter((result): result is SearchResult => result !== null);
-    const parsed = found.filter(
-      (result, index) =>
-        found.findIndex((other) => other.url === result.url) === index,
-    );
-    const sessions = parsed
-      .filter((result) => result.type === "wwdc-session")
-      .slice(0, API_LIMITS.MAX_WWDC_RESULTS);
-    const results = parsed
-      .filter(
-        (result) => result.type !== "wwdc-session" || sessions.includes(result),
-      )
-      .slice(0, API_LIMITS.MAX_SEARCH_RESULTS);
+  const found = streams
+    .flatMap(streamedResults)
+    .map((result) => parseSearchResult(result, filterType))
+    .filter((result): result is SearchResult => result !== null);
+  const parsed = found.filter(
+    (result, index) =>
+      found.findIndex((other) => other.url === result.url) === index,
+  );
+  const sessions = parsed
+    .filter((result) => result.type === "wwdc-session")
+    .slice(0, API_LIMITS.MAX_WWDC_RESULTS);
+  const results = parsed
+    .filter(
+      (result) => result.type !== "wwdc-session" || sessions.includes(result),
+    )
+    .slice(0, API_LIMITS.MAX_SEARCH_RESULTS);
 
-    return formatSearchResults(results, query, filterType, searchUrl);
-  } catch (error) {
-    logger.error("Error parsing search results:", error);
-    return `Error parsing search results: ${error instanceof Error ? error.message : "Unknown error"}`;
-  }
+  return formatSearchResults(results, query, filterType, searchUrl);
 }

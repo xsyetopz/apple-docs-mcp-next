@@ -26,88 +26,82 @@ export async function handleListWWDCVideos({
   hasCode,
   limit,
 }: VideoListQuery): Promise<string> {
-  try {
-    const metadata = await loadGlobalMetadata();
+  const metadata = await loadGlobalMetadata();
 
-    let allVideos: Array<WWDCVideo & { year: string }> = [];
-    // A topic ID is one the bundled data lists ("swift", "swiftui-ui-frameworks"); other text is a word to find
-    const isTopicId = metadata.topics.some((t) => t.id === topic);
-    let byTopicIndex = false;
+  let allVideos: Array<WWDCVideo & { year: string }> = [];
+  // A topic ID is one the bundled data lists ("swift", "swiftui-ui-frameworks"); other text is a word to find
+  const isTopicId = metadata.topics.some((t) => t.id === topic);
+  let byTopicIndex = false;
 
-    if (topic && isTopicId) {
-      try {
-        const topicIndex = await loadTopicIndex(topic);
+  if (topic && isTopicId) {
+    try {
+      const topicIndex = await loadTopicIndex(topic);
 
-        const videosToLoad =
-          year && year !== "all"
-            ? topicIndex.videos.filter((v) => v.year === year)
-            : topicIndex.videos;
+      const videosToLoad =
+        year && year !== "all"
+          ? topicIndex.videos.filter((v) => v.year === year)
+          : topicIndex.videos;
 
-        const videoFiles = videosToLoad.map((v) => v.dataFile);
-        const videos = await loadVideosData(videoFiles);
-
-        allVideos = videos.map((v: WWDCVideo) => ({ ...v, year: v.year }));
-        byTopicIndex = true;
-      } catch (error) {
-        logger.warn(
-          "Failed to load the topic index, searching by keyword instead",
-          { topic, error },
-        );
-        // Fall through to load by year and filter by keyword
-      }
-    }
-
-    if (!byTopicIndex && year && year !== "all") {
-      const yearIndex = await loadYearIndex(year);
-
-      const videoFiles = yearIndex.videos.map((v) => v.dataFile);
+      const videoFiles = videosToLoad.map((v) => v.dataFile);
       const videos = await loadVideosData(videoFiles);
 
       allVideos = videos.map((v: WWDCVideo) => ({ ...v, year: v.year }));
-    } else if (!byTopicIndex) {
-      const yearsToLoad = metadata.years;
+      byTopicIndex = true;
+    } catch (error) {
+      logger.warn(
+        "Failed to load the topic index, searching by keyword instead",
+        { topic, error },
+      );
+      // Fall through to load by year and filter by keyword
+    }
+  }
 
-      for (const y of yearsToLoad) {
-        try {
-          const yearIndex = await loadYearIndex(y);
-          const videoFiles = yearIndex.videos.map((v) => v.dataFile);
-          const videos = await loadVideosData(videoFiles);
+  if (!byTopicIndex && year && year !== "all") {
+    const yearIndex = await loadYearIndex(year);
 
-          const videosWithYear = videos.map((v: WWDCVideo) => ({
-            ...v,
-            year: y,
-          }));
-          allVideos.push(...videosWithYear);
-        } catch (error) {
-          logger.warn(`Failed to load year ${y}:`, error);
-        }
+    const videoFiles = yearIndex.videos.map((v) => v.dataFile);
+    const videos = await loadVideosData(videoFiles);
+
+    allVideos = videos.map((v: WWDCVideo) => ({ ...v, year: v.year }));
+  } else if (!byTopicIndex) {
+    const yearsToLoad = metadata.years;
+
+    for (const y of yearsToLoad) {
+      try {
+        const yearIndex = await loadYearIndex(y);
+        const videoFiles = yearIndex.videos.map((v) => v.dataFile);
+        const videos = await loadVideosData(videoFiles);
+
+        const videosWithYear = videos.map((v: WWDCVideo) => ({
+          ...v,
+          year: y,
+        }));
+        allVideos.push(...videosWithYear);
+      } catch (error) {
+        logger.warn(`Failed to load year ${y}:`, error);
       }
     }
-
-    let filteredVideos = allVideos;
-
-    // Topic filter (if not already filtered through topic index)
-    if (topic && !byTopicIndex) {
-      const topicLower = topic.toLowerCase();
-      filteredVideos = filteredVideos.filter(
-        (v) =>
-          v.topics.some((t) => t.toLowerCase().includes(topicLower)) ||
-          v.title.toLowerCase().includes(topicLower),
-      );
-    }
-
-    if (hasCode !== undefined) {
-      filteredVideos = filteredVideos.filter((v) => v.hasCode === hasCode);
-    }
-
-    const limitedVideos = filteredVideos.slice(0, limit);
-
-    return formatVideoList(limitedVideos, year, topic, hasCode);
-  } catch (error) {
-    logger.error("Failed to list WWDC videos:", error);
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    return `Error: Failed to list WWDC videos: ${errorMessage}`;
   }
+
+  let filteredVideos = allVideos;
+
+  // Topic filter (if not already filtered through topic index)
+  if (topic && !byTopicIndex) {
+    const topicLower = topic.toLowerCase();
+    filteredVideos = filteredVideos.filter(
+      (v) =>
+        v.topics.some((t) => t.toLowerCase().includes(topicLower)) ||
+        v.title.toLowerCase().includes(topicLower),
+    );
+  }
+
+  if (hasCode !== undefined) {
+    filteredVideos = filteredVideos.filter((v) => v.hasCode === hasCode);
+  }
+
+  const limitedVideos = filteredVideos.slice(0, limit);
+
+  return formatVideoList(limitedVideos, year, topic, hasCode);
 }
 
 /**

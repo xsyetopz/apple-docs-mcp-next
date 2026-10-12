@@ -165,7 +165,7 @@ describe("searchFrameworkSymbols", () => {
   });
 
   describe("error cases", () => {
-    it("should handle invalid framework gracefully", async () => {
+    it("should reject an invalid framework", async () => {
       (indexCache.get as Mock<(...args: unknown[]) => unknown>).mockReturnValue(
         null,
       );
@@ -173,15 +173,15 @@ describe("searchFrameworkSymbols", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockRejectedValue(new Error("404 Not Found"));
 
-      const result = await searchFrameworkSymbols({
-        framework: "invalidframework",
-        symbolType: "class",
-        namePattern: undefined,
-        language: "swift",
-        limit: 10,
-      });
-
-      expect(result).toContain("Error searching classes: 404 Not Found");
+      await expect(
+        searchFrameworkSymbols({
+          framework: "invalidframework",
+          symbolType: "class",
+          namePattern: undefined,
+          language: "swift",
+          limit: 10,
+        }),
+      ).rejects.toThrow("404 Not Found");
     });
 
     it("should handle empty framework name", async () => {
@@ -192,15 +192,15 @@ describe("searchFrameworkSymbols", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockRejectedValue(new Error("Invalid URL"));
 
-      const result = await searchFrameworkSymbols({
-        framework: "",
-        symbolType: "class",
-        namePattern: undefined,
-        language: "swift",
-        limit: 10,
-      });
-
-      expect(result).toContain("Error searching classes");
+      await expect(
+        searchFrameworkSymbols({
+          framework: "",
+          symbolType: "class",
+          namePattern: undefined,
+          language: "swift",
+          limit: 10,
+        }),
+      ).rejects.toThrow("Invalid URL");
     });
 
     it("should handle unsupported language", async () => {
@@ -267,15 +267,15 @@ describe("searchFrameworkSymbols", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockRejectedValue(new Error("Network error"));
 
-      const result = await searchFrameworkSymbols({
-        framework: "uikit",
-        symbolType: "class",
-        namePattern: undefined,
-        language: "swift",
-        limit: 10,
-      });
-
-      expect(result).toContain("Error searching classes: Network error");
+      await expect(
+        searchFrameworkSymbols({
+          framework: "uikit",
+          symbolType: "class",
+          namePattern: undefined,
+          language: "swift",
+          limit: 10,
+        }),
+      ).rejects.toThrow("Network error");
     });
   });
 

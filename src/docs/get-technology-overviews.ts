@@ -56,45 +56,36 @@ export async function handleGetTechnologyOverviews({
   includeSubcategories,
   limit,
 }: TechnologyOverviewsQuery): Promise<string> {
-  try {
-    logger.info("Fetching technology overviews...");
+  logger.info("Fetching technology overviews...");
 
-    const cacheKey = generateUrlCacheKey("technology-overviews", {
-      category,
-      searchQuery,
-      includeSubcategories,
-      limit,
-    });
+  const cacheKey = generateUrlCacheKey("technology-overviews", {
+    category,
+    searchQuery,
+    includeSubcategories,
+    limit,
+  });
 
-    const cachedResult = technologyOverviewsCache.get(cacheKey);
-    if (cachedResult) {
-      logger.debug("Technology overviews cache hit");
-      return cachedResult;
-    }
-
-    const [overviewsData, overviewsIndex] = await Promise.all([
-      httpClient.getJson<RenderNode>(APPLE_URLS.TECHNOLOGY_OVERVIEWS_JSON),
-      httpClient.getJson<RenderIndex>(
-        APPLE_URLS.TECHNOLOGY_OVERVIEWS_INDEX_JSON,
-      ),
-    ]);
-
-    const result = formatOverviews(entriesOf(overviewsData, overviewsIndex), {
-      category,
-      searchQuery,
-      includeSubcategories,
-      limit,
-    });
-
-    technologyOverviewsCache.set(cacheKey, result);
-
-    return result;
-  } catch (error) {
-    const errorMessage =
-      error instanceof Error ? error.message : JSON.stringify(error);
-    logger.error("Error fetching technology overviews:", error);
-    return `Error: Failed to fetch technology overviews: ${errorMessage}`;
+  const cachedResult = technologyOverviewsCache.get(cacheKey);
+  if (cachedResult) {
+    logger.debug("Technology overviews cache hit");
+    return cachedResult;
   }
+
+  const [overviewsData, overviewsIndex] = await Promise.all([
+    httpClient.getJson<RenderNode>(APPLE_URLS.TECHNOLOGY_OVERVIEWS_JSON),
+    httpClient.getJson<RenderIndex>(APPLE_URLS.TECHNOLOGY_OVERVIEWS_INDEX_JSON),
+  ]);
+
+  const result = formatOverviews(entriesOf(overviewsData, overviewsIndex), {
+    category,
+    searchQuery,
+    includeSubcategories,
+    limit,
+  });
+
+  technologyOverviewsCache.set(cacheKey, result);
+
+  return result;
 }
 
 /**

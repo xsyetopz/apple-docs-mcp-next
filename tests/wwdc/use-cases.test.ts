@@ -244,20 +244,19 @@ describe("WWDC Handlers", () => {
       expect(result).not.toContain("No Code Video");
     });
 
-    test("should handle errors gracefully", async () => {
+    test("rejects with the failure", async () => {
       mockLoadGlobalMetadata.mockRejectedValue(
         new Error("Failed to load metadata"),
       );
 
-      const result = await handleListWWDCVideos({
-        year: undefined,
-        topic: undefined,
-        hasCode: undefined,
-        limit: 50,
-      });
-
-      expect(result).toContain("Error: Failed to list WWDC videos");
-      expect(result).toContain("Failed to load metadata");
+      await expect(
+        handleListWWDCVideos({
+          year: undefined,
+          topic: undefined,
+          hasCode: undefined,
+          limit: 50,
+        }),
+      ).rejects.toThrow("Failed to load metadata");
     });
   });
 
@@ -421,19 +420,18 @@ describe("WWDC Handlers", () => {
       expect(result).toContain("No content found");
     });
 
-    test("should handle errors gracefully", async () => {
+    test("rejects with the failure", async () => {
       mockLoadGlobalMetadata.mockRejectedValue(new Error("Search failed"));
 
-      const result = await handleSearchWWDCContent({
-        query: "test",
-        searchIn: "both",
-        year: undefined,
-        language: undefined,
-        limit: 20,
-      });
-
-      expect(result).toContain("Error: Failed to search WWDC content");
-      expect(result).toContain("Search failed");
+      await expect(
+        handleSearchWWDCContent({
+          query: "test",
+          searchIn: "both",
+          year: undefined,
+          language: undefined,
+          limit: 20,
+        }),
+      ).rejects.toThrow("Search failed");
     });
   });
 
@@ -532,15 +530,14 @@ describe("WWDC Handlers", () => {
     test("should handle missing video", async () => {
       mockLoadVideoData.mockRejectedValue(new Error("Video not found"));
 
-      const result = await handleGetWWDCVideo({
-        year: "2025",
-        videoId: "99999",
-        includeTranscript: true,
-        includeCode: true,
-      });
-
-      expect(result).toContain("Error: Failed to get WWDC video");
-      expect(result).toContain("Video not found");
+      await expect(
+        handleGetWWDCVideo({
+          year: "2025",
+          videoId: "99999",
+          includeTranscript: true,
+          includeCode: true,
+        }),
+      ).rejects.toThrow("Video not found");
     });
   });
 
@@ -932,17 +929,16 @@ describe("WWDC Handlers", () => {
     test("should handle video not found", async () => {
       mockLoadVideoData.mockRejectedValue(new Error("Video not found"));
 
-      const result = await handleFindRelatedWWDCVideos({
-        videoId: "99999",
-        year: "2025",
-        includeExplicitRelated: true,
-        includeTopicRelated: true,
-        includeYearRelated: false,
-        limit: 15,
-      });
-
-      expect(result).toContain("Error: Failed to find related WWDC videos");
-      expect(result).toContain("Video not found");
+      await expect(
+        handleFindRelatedWWDCVideos({
+          videoId: "99999",
+          year: "2025",
+          includeExplicitRelated: true,
+          includeTopicRelated: true,
+          includeYearRelated: false,
+          limit: 15,
+        }),
+      ).rejects.toThrow("Video not found");
     });
   });
 

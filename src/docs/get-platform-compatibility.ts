@@ -27,17 +27,12 @@ export async function handleGetPlatformCompatibility({
   compareMode,
   includeRelated,
 }: PlatformCompatibilityQuery): Promise<string> {
-  try {
-    logger.info(`Analyzing platform compatibility for: ${apiUrl}`);
+  logger.info(`Analyzing platform compatibility for: ${apiUrl}`);
 
-    if (compareMode === "framework") {
-      return await analyzeFrameworkCompatibility(apiUrl, includeRelated);
-    } else {
-      return await analyzeSingleApiCompatibility(apiUrl, includeRelated);
-    }
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    return `Error: Failed to analyze platform compatibility: ${errorMessage}`;
+  if (compareMode === "framework") {
+    return await analyzeFrameworkCompatibility(apiUrl, includeRelated);
+  } else {
+    return await analyzeSingleApiCompatibility(apiUrl, includeRelated);
   }
 }
 

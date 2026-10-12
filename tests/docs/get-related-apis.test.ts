@@ -189,29 +189,27 @@ describe("get-related-apis", () => {
     it("should handle invalid URL", async () => {
       mockConvertToJsonApiUrl.mockReturnValue(null);
 
-      const result = await handleGetRelatedApis({
-        apiUrl: "invalid-url",
-        includeInherited: true,
-        includeConformance: true,
-        includeSeeAlso: true,
-      });
-
-      expect(result).toContain("Error: Failed to get related APIs:");
-      expect(result).toContain("Invalid Apple Developer Documentation URL");
+      await expect(
+        handleGetRelatedApis({
+          apiUrl: "invalid-url",
+          includeInherited: true,
+          includeConformance: true,
+          includeSeeAlso: true,
+        }),
+      ).rejects.toThrow("Invalid Apple Developer Documentation URL");
     });
 
     it("should handle fetch errors", async () => {
       mockHttpClient.getJson.mockRejectedValue(new Error("Network error"));
 
-      const result = await handleGetRelatedApis({
-        apiUrl: mockApiUrl,
-        includeInherited: true,
-        includeConformance: true,
-        includeSeeAlso: true,
-      });
-
-      expect(result).toContain("Error: Failed to get related APIs:");
-      expect(result).toContain("Network error");
+      await expect(
+        handleGetRelatedApis({
+          apiUrl: mockApiUrl,
+          includeInherited: true,
+          includeConformance: true,
+          includeSeeAlso: true,
+        }),
+      ).rejects.toThrow("Network error");
     });
 
     it("should handle malformed JSON response", async () => {

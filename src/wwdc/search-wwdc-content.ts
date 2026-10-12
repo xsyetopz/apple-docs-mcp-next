@@ -24,111 +24,103 @@ export async function handleSearchWWDCContent({
   language,
   limit,
 }: ContentSearchQuery): Promise<string> {
-  try {
-    const metadata = await loadGlobalMetadata();
-    const queryLower = query.toLowerCase();
-    const results: Array<{
-      video: WWDCVideo & { year: string };
-      matches: Array<{
-        type: "transcript" | "code";
-        context: string;
-        timestamp?: string | undefined;
-      }>;
-    }> = [];
+  const metadata = await loadGlobalMetadata();
+  const queryLower = query.toLowerCase();
+  const results: Array<{
+    video: WWDCVideo & { year: string };
+    matches: Array<{
+      type: "transcript" | "code";
+      context: string;
+      timestamp?: string | undefined;
+    }>;
+  }> = [];
 
-    const yearsToSearch = year ? [year] : metadata.years;
+  const yearsToSearch = year ? [year] : metadata.years;
 
-    for (const y of yearsToSearch) {
-      try {
-        const yearIndex = await loadYearIndex(y);
+  for (const y of yearsToSearch) {
+    try {
+      const yearIndex = await loadYearIndex(y);
 
-        // Pre-filter: only load videos that might contain search content
-        const potentialVideos = yearIndex.videos.filter((v) => {
-          const titleMatch =
-            v.title?.toLowerCase().includes(queryLower) || false;
-          const topicMatch =
-            v.topics?.some((t) => t.toLowerCase().includes(queryLower)) ||
-            false;
-          return (
-            titleMatch ||
-            topicMatch ||
-            ((searchIn === "code" || searchIn === "both") && v.hasCode) ||
-            ((searchIn === "transcript" || searchIn === "both") &&
-              v.hasTranscript)
-          );
-        });
+      // Pre-filter: only load videos that might contain search content
+      const potentialVideos = yearIndex.videos.filter((v) => {
+        const titleMatch = v.title?.toLowerCase().includes(queryLower) || false;
+        const topicMatch =
+          v.topics?.some((t) => t.toLowerCase().includes(queryLower)) || false;
+        return (
+          titleMatch ||
+          topicMatch ||
+          ((searchIn === "code" || searchIn === "both") && v.hasCode) ||
+          ((searchIn === "transcript" || searchIn === "both") &&
+            v.hasTranscript)
+        );
+      });
 
-        if (potentialVideos.length === 0) {
-          continue;
-        }
-
-        const videoFiles = potentialVideos.map((v) => v.dataFile);
-        const videos = await loadVideosData(videoFiles);
-
-        for (const video of videos) {
-          const matches: Array<{
-            type: "transcript" | "code";
-            context: string;
-            timestamp?: string | undefined;
-          }> = [];
-
-          if (
-            (searchIn === "transcript" || searchIn === "both") &&
-            video.transcript
-          ) {
-            const transcriptMatches = searchInTranscript(
-              video.transcript.fullText,
-              queryLower,
-            );
-            matches.push(
-              ...transcriptMatches.map((m) => ({
-                type: "transcript" as const,
-                context: m.context,
-                timestamp: m.timestamp,
-              })),
-            );
-          }
-
-          if (
-            (searchIn === "code" || searchIn === "both") &&
-            video.codeExamples
-          ) {
-            const codeMatches = searchInCode(
-              video.codeExamples,
-              queryLower,
-              language,
-            );
-            matches.push(
-              ...codeMatches.map((m) => ({
-                type: "code" as const,
-                context: m.context,
-                timestamp: m.timestamp,
-              })),
-            );
-          }
-
-          if (matches.length > 0) {
-            results.push({
-              video: { ...video, year: y },
-              matches: matches.slice(0, 3), // Max 3 matches per video
-            });
-          }
-        }
-      } catch (error) {
-        logger.warn(`Failed to search year ${y}:`, error);
+      if (potentialVideos.length === 0) {
+        continue;
       }
+
+      const videoFiles = potentialVideos.map((v) => v.dataFile);
+      const videos = await loadVideosData(videoFiles);
+
+      for (const video of videos) {
+        const matches: Array<{
+          type: "transcript" | "code";
+          context: string;
+          timestamp?: string | undefined;
+        }> = [];
+
+        if (
+          (searchIn === "transcript" || searchIn === "both") &&
+          video.transcript
+        ) {
+          const transcriptMatches = searchInTranscript(
+            video.transcript.fullText,
+            queryLower,
+          );
+          matches.push(
+            ...transcriptMatches.map((m) => ({
+              type: "transcript" as const,
+              context: m.context,
+              timestamp: m.timestamp,
+            })),
+          );
+        }
+
+        if (
+          (searchIn === "code" || searchIn === "both") &&
+          video.codeExamples
+        ) {
+          const codeMatches = searchInCode(
+            video.codeExamples,
+            queryLower,
+            language,
+          );
+          matches.push(
+            ...codeMatches.map((m) => ({
+              type: "code" as const,
+              context: m.context,
+              timestamp: m.timestamp,
+            })),
+          );
+        }
+
+        if (matches.length > 0) {
+          results.push({
+            video: { ...video, year: y },
+            matches: matches.slice(0, 3), // Max 3 matches per video
+          });
+        }
+      }
+    } catch (error) {
+      logger.warn(`Failed to search year ${y}:`, error);
     }
-
-    results.sort((a, b) => b.matches.length - a.matches.length);
-
-    const limitedResults = results.slice(0, limit);
-
-    return formatSearchResults(limitedResults, query, searchIn);
-  } catch (error) {
-    logger.error("Failed to search WWDC content:", error);
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    return `Error: Failed to search WWDC content: ${errorMessage}`;
   }
+
+  results.sort((a, b) => b.matches.length - a.matches.length);
+
+  const limitedResults = results.slice(0, limit);
+
+  return formatSearchResults(limitedResults, query, searchIn);
 }
 
 /**
