@@ -18,7 +18,7 @@ class Logger {
    */
   debug(message: string, ...args: unknown[]): void {
     if (this.enabled && this.shouldLog(LogLevel.DEBUG)) {
-      console.log(`[DEBUG] ${message}`, ...args);
+      console.error(`[DEBUG] ${message}`, ...args);
     }
   }
 
@@ -27,7 +27,7 @@ class Logger {
    */
   info(message: string, ...args: unknown[]): void {
     if (this.enabled && this.shouldLog(LogLevel.INFO)) {
-      console.log(`[INFO] ${message}`, ...args);
+      console.error(`[INFO] ${message}`, ...args);
     }
   }
 
@@ -36,7 +36,7 @@ class Logger {
    */
   warn(message: string, ...args: unknown[]): void {
     if (this.shouldLog(LogLevel.WARN)) {
-      console.warn(`[WARN] ${message}`, ...args);
+      console.error(`[WARN] ${message}`, ...args);
     }
   }
 
