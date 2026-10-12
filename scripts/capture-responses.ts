@@ -6,11 +6,11 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { APPLE_URLS } from "../src/core/constants.ts";
 import { httpClient } from "../src/core/http-client.ts";
-import { searchStreams } from "../src/docs/search-api.ts";
+import { type SearchType, searchStreams } from "../src/docs/search-api.ts";
 import { streamedDocument } from "../src/docs/search-parser.ts";
 
 /** One search per kind of result: docs and WWDC sessions, guidelines, sample code, API reference, App Store Connect Help */
-const SEARCHES: Array<[name: string, query: string, type: string]> = [
+const SEARCHES: Array<[name: string, query: string, type: SearchType]> = [
   ["navigationstack-all", "NavigationStack", "all"],
   ["tab-bars-design", "tab bars", "design"],
   ["food-truck-sample", "Food Truck", "sample"],

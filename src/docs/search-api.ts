@@ -29,7 +29,9 @@ const developerPath = (pathPrefix: string) => ({
  * Search scopes by `type`, built the way Apple's search page builds its filters
  * (developer.apple.com/search/scripts/search.js); `all` joins the documentation and the design guidelines
  */
-const SEARCH_SCOPES: Record<string, object> = {
+export type SearchType = "all" | "documentation" | "design" | "sample" | "help";
+
+const SEARCH_SCOPES: Record<SearchType, object> = {
   documentation: developerPath("/documentation/"),
   design: developerPath("/design/human-interface-guidelines/"),
   sample: { kind: "documentationRole", value: "sampleCode" },
@@ -52,7 +54,10 @@ const VIDEOS_SCOPE = developerPath("/videos/play/");
 /**
  * The response streams for one search, each read to its end: `all` sends two requests, every other type one
  */
-export function searchStreams(query: string, type: string): Promise<string[]> {
+export function searchStreams(
+  query: string,
+  type: SearchType,
+): Promise<string[]> {
   const search = (
     includedResponses: string[],
     searchScope?: object,
@@ -71,6 +76,6 @@ export function searchStreams(query: string, type: string): Promise<string[]> {
   return Promise.all(
     type === "all"
       ? [search(["search"]), search(["search"], VIDEOS_SCOPE)]
-      : [search(["search"], SEARCH_SCOPES[type] ?? SEARCH_SCOPES["all"])],
+      : [search(["search"], SEARCH_SCOPES[type])],
   );
 }

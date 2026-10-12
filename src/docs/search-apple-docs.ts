@@ -4,12 +4,12 @@
 import { APPLE_URLS } from "../core/constants.ts";
 import { requireText } from "../core/errors.ts";
 import { logger } from "../core/logger.ts";
-import { searchStreams } from "./search-api.ts";
+import { type SearchType, searchStreams } from "./search-api.ts";
 import { parseSearchResults } from "./search-parser.ts";
 
 export interface DocsSearchQuery {
   query: string;
-  type: string;
+  type: SearchType;
 }
 
 export async function searchAppleDocs({

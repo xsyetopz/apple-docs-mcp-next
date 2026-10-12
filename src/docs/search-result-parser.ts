@@ -1,4 +1,5 @@
 import type { Result } from "../types/captured/search-document.ts";
+import type { SearchType } from "./search-api.ts";
 
 /**
  * Search result parsing utilities
@@ -18,7 +19,7 @@ export interface SearchResult {
 /**
  * Type mapping for search filters
  */
-const typeMapping: Record<string, string[]> = {
+const typeMapping: Record<SearchType, string[]> = {
   all: [
     "documentation",
     "documentation-article",
@@ -54,10 +55,10 @@ const UNSUPPORTED_TYPES = ["general", "video", "forums", "news"];
  */
 function isResultTypeSupported(
   resultType: string,
-  filterType: string,
+  filterType: SearchType,
 ): boolean {
   // Apply type filter
-  const allowedTypes = typeMapping[filterType] ?? typeMapping["all"] ?? [];
+  const allowedTypes = typeMapping[filterType];
   if (!allowedTypes.includes(resultType)) {
     return false;
   }
@@ -115,7 +116,7 @@ const KIND_TYPES: Record<string, string> = {
  */
 export function parseSearchResult(
   result: ApiSearchResult,
-  filterType: string,
+  filterType: SearchType,
 ): SearchResult | null {
   const metadata = result.value?.metadata ?? {};
   if (metadata.itemTypes?.includes("Video")) {
@@ -132,7 +133,7 @@ export function parseSearchResult(
  */
 function parseDocumentationPage(
   metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
-  filterType: string,
+  filterType: SearchType,
 ): SearchResult | null {
   const { title, permalink, kind, description, hierarchy } = metadata;
   // A guideline page reports itself as an article, so its place on the site is what tells it apart
@@ -164,7 +165,7 @@ function parseDocumentationPage(
  */
 function parseHelpPage(
   metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
-  filterType: string,
+  filterType: SearchType,
 ): SearchResult | null {
   const [title, section] = (metadata.title ?? "").split(" - ");
   if (
@@ -190,7 +191,7 @@ function parseHelpPage(
  */
 function parseWWDCSession(
   metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
-  filterType: string,
+  filterType: SearchType,
 ): SearchResult | null {
   const session = /^wwdc(\d{4})-(\d+)$/.exec(metadata.ids?.[0] ?? "");
   const year = session?.[1];

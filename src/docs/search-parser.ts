@@ -2,6 +2,7 @@ import { API_LIMITS } from "../core/constants.ts";
 import { logger } from "../core/logger.ts";
 import type { SearchDocument } from "../types/captured/search-document.ts";
 import type { SearchStream } from "../types/captured/search-stream.ts";
+import type { SearchType } from "./search-api.ts";
 import type { ApiSearchResult, SearchResult } from "./search-result-parser.ts";
 import { parseSearchResult } from "./search-result-parser.ts";
 
@@ -11,7 +12,7 @@ import { parseSearchResult } from "./search-result-parser.ts";
 export function formatSearchResults(
   results: SearchResult[],
   query: string,
-  filterType: string,
+  filterType: SearchType,
   searchUrl: string,
 ): string {
   let content = "";
@@ -52,7 +53,7 @@ export function formatSearchResults(
  */
 function formatNoResultsMessage(
   query: string,
-  filterType: string,
+  filterType: SearchType,
   searchUrl: string,
 ): string {
   let content = "## No Results Found\n\n";
@@ -248,7 +249,7 @@ export function parseSearchResults(
   streams: string[],
   query: string,
   searchUrl: string,
-  filterType: string,
+  filterType: SearchType,
 ): string {
   try {
     const found = streams

@@ -1,4 +1,5 @@
 import { describe, expect, it, mock } from "bun:test";
+import type { SearchType } from "../../src/docs/search-api.ts";
 import { parseSearchResults } from "../../src/docs/search-parser.ts";
 
 // Mock the cache to prevent interference between tests
@@ -66,7 +67,7 @@ const stream = (results: unknown[]) => {
 
 describe("parseSearchResults", () => {
   const mockSearchUrl = "https://developer.apple.com/search/?q=test";
-  const text = (jsonl: string, query = "test", filter = "all") =>
+  const text = (jsonl: string, query = "test", filter: SearchType = "all") =>
     parseSearchResults([jsonl], query, mockSearchUrl, filter);
 
   describe("successful parsing", () => {
