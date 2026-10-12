@@ -9,19 +9,17 @@ Apple 开发者文档 MCP 服务器 - 通过模型上下文协议访问 Apple �
 
 ## ✨ 功能特性
 
-- 🔍 **智能搜索**: 智能搜索 SwiftUI、UIKit、Foundation、CoreData、ARKit 等 Apple 开发者文档
-- 📚 **完整文档访问**: 完全访问 Apple JSON API，获取 Swift、Objective-C 和框架文档
-- 🔧 **框架索引**: 浏览 iOS、macOS、watchOS、tvOS、visionOS 框架的分层 API 结构
-- 📋 **技术目录**: 探索包括 SwiftUI、UIKit、Metal、Core ML、Vision 和 ARKit 在内的 Apple 技术
-- 📰 **文档更新**: 跟踪 WWDC 2024/2025 公告、iOS 26、macOS 26 和最新 SDK 发布
-- 🎯 **技术概览**: Swift、SwiftUI、UIKit 和所有 Apple 开发平台的综合指南
-- 💻 **示例代码库**: iOS、macOS 和跨平台开发的 Swift 和 Objective-C 代码示例
-- 🎥 **WWDC 视频库**: 搜索 WWDC 2014-2025 会议，包含文字记录、Swift/SwiftUI 代码示例和资源
-- 🔗 **相关 API 发现**: 查找 SwiftUI 视图、UIKit 控制器和框架特定的 API 关系
-- 📊 **平台兼容性**: iOS 13+、macOS 10.15+、watchOS 6+、tvOS 13+、visionOS 兼容性分析
-- ⚡ **高性能**: 针对 Xcode、Swift Playgrounds 和 AI 驱动的开发环境进行优化
-- 🌐 **多平台**: 完整的 iOS、iPadOS、macOS、watchOS、tvOS 和 visionOS 文档支持
-- 🏷️ **Beta 和状态跟踪**: iOS 26 beta API、已弃用的 UIKit 方法、新 SwiftUI 功能跟踪
+- 🔍 **搜索**: developer.apple.com 自身的搜索，覆盖 API 参考、人机界面指南（HIG）、示例代码、App Store Connect 帮助和 WWDC 会议
+- 📚 **文档页面**: 任一页面以 Markdown 形式呈现，数据来自网站渲染所用的 JSON：声明、概述、代码清单、Topics、关系、可用性和 See Also
+- 🗺️ **文档地图**: 磁盘上文档和 HIG 的每个页面标题，无需网络即可搜索
+- 🔧 **框架符号**: 从框架的导航索引中获取单个框架的符号，可按类型和通配符名称过滤
+- 📋 **技术目录**: Apple 技术索引，包含其类别、语言和 beta 标记
+- 📰 **文档更新**: 发布说明、每个框架的更新页面以及每届 WWDC 的 “What's new” 页面
+- 🎯 **技术概览**: 以一棵树的形式呈现 Apple 的技术概览指南
+- 💻 **示例代码**: Apple 的示例代码库，可按框架和关键词查找
+- 🔗 **相关、引用和类似 API**: 从页面的 JSON 读取；对于已弃用的 API，优先显示 Apple 推荐的替代项
+- 📊 **平台可用性**: 每个平台引入或弃用某 API 的版本
+- 🎥 **WWDC 视频库**: 2014 至 2026 年的 1,700 场会议，随服务器一起打包，包含文字记录和代码示例
 
 ## 🚀 快速开始
 
@@ -179,6 +177,26 @@ claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 </details>
 
 <details>
+<summary><strong>🟠 Amazon Q Developer CLI</strong></summary>
+
+**通过配置文件**: 添加到 `~/.aws/amazonq/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
+    }
+  }
+}
+```
+
+[📖 Amazon Q Developer CLI MCP 文档](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html)
+
+</details>
+
+<details>
 <summary><strong>🪟 Windows</strong></summary>
 
 对于 Windows 系统，使用：
@@ -207,10 +225,10 @@ claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 bun add -g apple-docs-mcp-next
 ```
 
-**直接使用**:
+**直接使用**（服务器通过 stdin 和 stdout 收发 MCP 消息）:
 
 ```bash
-bunx apple-docs-mcp-next --help
+bunx apple-docs-mcp-next
 ```
 
 **开发环境设置**:
@@ -345,100 +363,105 @@ bun install
 
 ## 🛠️ 可用工具
 
-| 工具 | 描述 | 主要功能 |
-| ------ | ------ | ---------- |
-| `search_apple_docs` | 搜索 Apple 开发者文档 | 官方搜索 API，增强格式化，平台过滤 |
-| `get_apple_doc_content` | 获取详细文档内容 | JSON API 访问，可选增强分析（相关/类似 API，平台兼容性） |
-| `list_technologies` | 浏览所有 Apple 技术 | 类别过滤，语言支持，beta 状态 |
-| `get_documentation_updates` | 跟踪 Apple 文档更新 | WWDC 公告，技术更新，发布说明，beta 过滤 |
-| `get_technology_overviews` | 获取技术概览和指南 | 综合指南，分层导航，平台过滤 |
-| `get_sample_code` | 浏览 Apple 示例代码项目 | 框架过滤，测试版状态，搜索，精选示例 |
-| `search_wwdc_videos` | 搜索 WWDC 视频会议 | 关键词搜索，主题/年份过滤，会议元数据 |
-| `get_wwdc_video_details` | 获取 WWDC 视频详情和文字记录 | 完整文字记录，代码示例，资源，平台信息 |
-| `list_wwdc_topics` | 列出所有可用的 WWDC 主题 | 19 个主题类别，从 Swift 到空间计算 |
-| `list_wwdc_years` | 列出所有可用的 WWDC 年份 | 会议年份及视频数量 |
-| `get_framework_index` | 框架 API 结构树 | 分层浏览，深度控制，类型过滤 |
-| `get_related_apis` | 查找相关 API | 继承、遵循、"参见"关系 |
-| `resolve_references_batch` | 批量解析 API 引用 | 从文档中提取和解析所有引用 |
-| `get_platform_compatibility` | 平台兼容性分析 | 版本支持，beta 状态，弃用信息 |
-| `find_similar_apis` | 发现类似 API | Apple 官方推荐，主题分组 |
+| 工具 | 返回内容 |
+| ------ | ----------------- |
+| `search_apple_docs` | 来自 developer.apple.com 的搜索结果：文档、HIG、示例代码、App Store Connect 帮助和 WWDC 会议 |
+| `get_apple_doc_content` | 一个文档页面的 Markdown 内容，可选包含相关、引用和类似 API 以及平台分析 |
+| `search_docs_map` | 标题包含查询词的页面，来自磁盘上的文档地图（无需网络） |
+| `list_technologies` | Apple 技术索引，按类别、语言和 beta 状态分组 |
+| `search_framework_symbols` | 某个框架的符号，按类型和通配符名称筛选 |
+| `get_related_apis` | 某个页面的继承、遵循、See Also 和 Topics |
+| `resolve_references_batch` | 某个页面引用的页面，附带其摘要和声明 |
+| `get_platform_compatibility` | API 在哪些平台可用，以及引入和弃用的版本 |
+| `find_similar_apis` | API 的替代项，已弃用的 API 优先显示 Apple 推荐的替代方案 |
+| `get_documentation_updates` | 发布说明、框架更新页面和 WWDC What's new 页面 |
+| `get_technology_overviews` | Apple 的技术概览指南 |
+| `get_sample_code` | Apple 的示例代码项目，按框架和关键词 |
+| `list_wwdc_videos` | 按年份、主题和是否含代码列出的 WWDC 会议 |
+| `search_wwdc_content` | 对 WWDC 文字记录和代码的全文搜索 |
+| `get_wwdc_video` | 单场会议：链接、文字记录、代码示例和相关会议 |
+| `get_wwdc_code_examples` | 按所用类型或框架列出的 WWDC 代码示例 |
+| `browse_wwdc_topics` | 19 个 WWDC 主题，或某个主题下的会议 |
+| `find_related_wwdc_videos` | 与某场会议相关的会议 |
+| `list_wwdc_years` | WWDC 年份及其会议数量 |
+
+所有工具都是只读的。失败的调用只返回一个错误结果，并说明可以改为尝试什么。
 
 ## 🏗️ 技术架构
 
 ```text
-apple-docs-mcp/
+apple-docs-mcp-next/
 ├── 🔧 src/
-│   ├── index.ts                      # MCP 服务器入口点，包含所有工具
-│   ├── tools/                        # MCP 工具实现
-│   │   ├── search-parser.ts          # HTML 搜索结果解析
-│   │   ├── doc-fetcher.ts            # JSON API 文档获取
-│   │   ├── list-technologies.ts      # 技术目录处理
-│   │   ├── get-documentation-updates.ts # 文档更新跟踪
-│   │   ├── get-technology-overviews.ts # 技术概览和指南
-│   │   ├── get-sample-code.ts        # 示例代码库浏览器
-│   │   ├── get-framework-index.ts    # 框架结构索引
-│   │   ├── get-related-apis.ts       # 相关 API 发现
-│   │   ├── resolve-references-batch.ts # 批量引用解析
-│   │   ├── get-platform-compatibility.ts # 平台分析
-│   │   ├── find-similar-apis.ts      # 类似 API 推荐
-│   │   └── wwdc/                     # WWDC 视频工具
-│   │       ├── wwdc-handlers.ts      # WWDC 工具处理程序
-│   │       ├── content-extractor.ts  # 视频内容提取
-│   │       ├── topics-extractor.ts   # 主题列表
-│   │       └── video-list-extractor.ts # 视频列表解析
-│   └── utils/                        # 工具函数和辅助程序
-│       ├── cache.ts                  # 带 TTL 支持的内存缓存
-│       ├── constants.ts              # 应用程序常量和 URL
-│       ├── error-handler.ts          # 错误处理和验证
-│       ├── http-client.ts            # 带性能跟踪的 HTTP 客户端
-│       └── url-converter.ts          # URL 转换工具
-├── 📄 package.json                   # 包配置
-└── 📖 README.md                      # 此文件
+│   ├── main.ts                       # Executable: the server on stdio
+│   ├── server.ts                     # Composition root: the MCP server and its instructions
+│   ├── tools/                        # MCP side: one spec per tool (name, description, zod input schema, use case)
+│   │   ├── define-tool.ts            # Registers a spec; Markdown or one error result per call
+│   │   └── index.ts                  # Every tool the server offers
+│   ├── docs/                         # Use cases for Apple's documentation, HIG, sample code and help pages
+│   ├── wwdc/                         # Use cases for the bundled WWDC data, and its extractors
+│   ├── core/                         # HTTP client, caches, errors, logger, constants
+│   └── types/                        # DocC and captured response types (generated)
+├── 🧪 tests/                         # Bun tests, by layer, plus tests/architecture.test.ts for the import rules
+├── 📄 package.json                   # Package configuration
+└── 📖 README.md                      # This file
 ```
 
-### 🚀 性能特性
+### 🚀 请求与缓存
 
-- **基于内存的缓存**: 自定义缓存实现，具有自动清理和 TTL 支持
-- **智能搜索**: 官方 Apple 搜索 API，具有增强的结果格式化
-- **增强分析**: 可选的相关 API、平台兼容性和相似性分析
-- **错误恢复**: 优雅降级，全面的错误处理
-- **类型安全**: 完整的 TypeScript，使用 Zod v4.0.5 进行运行时验证
-- **最新依赖**: MCP SDK v1.15.1，优化的包占用空间
+- **缓存**: 内存中的 LRU 缓存，带存活时间，每类结果一个（见下表）；搜索结果不缓存
+- **浏览器请求头**: 每个发往 Apple 的请求都带有由 `header-generator` 生成的一套新 Safari 请求头
+- **重试**: 网络错误、超时和 5xx 响应最多重试 3 次，采用指数退避；其他状态码立即失败
+- **限速**: 每分钟最多 100 个请求，搜索之间间隔 15 秒，因为 Apple 对更快的请求会返回空结果
+- **校验**: 每个工具的参数在工具运行前都会按其 Zod 4 模式校验
+- **运行时**: Bun 1.4.3 和 MCP TypeScript SDK 1.32.1
 
 ### 💾 缓存策略
 
-| 内容类型 | 缓存时长 | 缓存大小 | 原因 |
-| ---------- | ---------- | ---------- | ------ |
-| API 文档 | 30 分钟 | 500 项 | 频繁访问，适度更新 |
-| 搜索结果 | 10 分钟 | 200 项 | 动态内容，用户特定 |
-| 框架索引 | 1 小时 | 100 项 | 稳定结构，变化较少 |
-| 技术列表 | 2 小时 | 50 项 | 很少变化，内容较大 |
-| 文档更新 | 30 分钟 | 100 项 | 定期更新，WWDC 公告 |
-| WWDC 视频数据 | 2 小时 | 无限制 | 稳定内容，本地 JSON 文件 |
+| 内容类型 | 缓存时长 | 缓存大小 |
+| ---------- | ---------- | ---------- |
+| 文档页面 | 30 分钟 | 500 项 |
+| 框架索引 | 1 小时 | 100 项 |
+| 技术列表 | 2 小时 | 50 项 |
+| 文档更新 | 30 分钟 | 100 项 |
+| 示例代码 | 2 小时 | 100 项 |
+| 技术概览 | 2 小时 | 100 项 |
+| WWDC 数据文件 | 1 小时 | 100 项 |
+
+## 📦 WWDC 数据
+
+WWDC 数据**随包一起打包**，位于 `data/wwdc/` 中，因此 WWDC 工具无需网络：
+
+- 📹 **1,700 场会议**，从 WWDC 2014 到 WWDC 2026
+- 📝 **1,416 份文字记录**，**715 场会议含代码示例**
+- 🏷️ **19 个主题**可供浏览
+- 💾 **41 MB** 的 JSON
+
+`bun scripts/add-wwdc-year.ts <year>` 用于向数据中添加某一年的 WWDC，或刷新该年的数据。
+
+## ⚙️ 配置
+
+| 变量 | 作用 | 默认值 |
+| ---------- | -------- | --------- |
+| `MCP_DEBUG` | `true` 会在日志中添加调试和信息行 | 关闭 |
+
+服务器只向 stderr 输出日志：在 stdio 传输中，stdout 承载 MCP 消息。
 
 ## 🧪 开发
 
-### 常用命令
-
 ```bash
-# 开发模式（自动重载）
-bun run dev
+bun install
 
-
-# 类型检查
-bun check
-
+bun run dev        # the server, restarted on each change
+bun run start      # the server on stdio
+bun check          # type check
+bun run lint       # Biome
+bun run test       # the tests, each file in isolation
+bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
 ```
 
-### 本地测试
+`tests/architecture.test.ts` 检查 `src/` 的分层：导入方向只能从 `main` 指向 `server`、`tools`、`docs` 和 `wwdc` 中的用例，再指向 `core`，不能反向。
 
-```bash
-# 直接测试 MCP 服务器
-bun run start
-
-# 使用示例查询测试
-bunx apple-docs-mcp-next --test
-```
+`bun scripts/build-docs-map.ts api-map/apple-docs-map.tsv` 重建 `search_docs_map` 所读取的文档地图。
 
 ## 🤝 贡献
 
@@ -466,6 +489,6 @@ MIT 许可证 - 详见 [LICENSE](LICENSE)。
 
 搜索 Apple 开发者文档 | iOS 开发 | macOS 开发 | Swift 编程 | SwiftUI | UIKit | Xcode | WWDC 视频 | 模型上下文协议 | MCP 服务器
 
-[报告问题](https://github.com/kimsungwhee/apple-docs-mcp/issues) • [请求功能](https://github.com/kimsungwhee/apple-docs-mcp/issues/new) • [文档](https://github.com/kimsungwhee/apple-docs-mcp)
+[报告问题](https://github.com/xsyetopz/apple-docs-mcp-next/issues) • [请求功能](https://github.com/xsyetopz/apple-docs-mcp-next/issues/new) • [文档](https://github.com/xsyetopz/apple-docs-mcp-next#readme)
 
 </div>

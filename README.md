@@ -9,20 +9,17 @@ Apple Developer Documentation MCP Server - Access Apple's official developer doc
 
 ## ✨ Features
 
-- 🔍 **Smart Search**: Intelligent search across Apple Developer Documentation for SwiftUI, UIKit, Foundation, CoreData, ARKit, and more
-- 📚 **Complete Documentation Access**: Full access to Apple's JSON API for Swift, Objective-C, and framework documentation
-- 🔧 **Framework Index**: Browse hierarchical API structures for iOS, macOS, watchOS, tvOS, visionOS frameworks
-- 📋 **Technology Catalog**: Explore Apple technologies including SwiftUI, UIKit, Metal, Core ML, Vision, and ARKit
-- 📰 **Documentation Updates**: Track WWDC 2024/2025 announcements, iOS 26, macOS 26, and latest SDK releases
-- 🎯 **Technology Overviews**: Comprehensive guides for Swift, SwiftUI, UIKit, and all Apple development platforms
-- 💻 **Sample Code Library**: Swift and Objective-C code examples for iOS, macOS, and cross-platform development
-- 🎥 **WWDC Video Library**: Search WWDC 2014-2025 sessions with transcripts, Swift/SwiftUI code examples, and resources
-- 🔗 **Related APIs Discovery**: Find SwiftUI views, UIKit controllers, and framework-specific API relationships
-- 📊 **Platform Compatibility**: iOS 13+, macOS 10.15+, watchOS 6+, tvOS 13+, visionOS compatibility analysis
-- ⚡ **High Performance**: Optimized for Xcode, Swift Playgrounds, and AI-powered development environments
-- 🔄 **Smart UserAgent Pool**: Intelligent UserAgent rotation system with automatic failure recovery and performance monitoring
-- 🌐 **Multi-Platform**: Complete iOS, iPadOS, macOS, watchOS, tvOS, and visionOS documentation support
-- 🏷️ **Beta & Status Tracking**: iOS 26 beta APIs, deprecated UIKit methods, new SwiftUI features tracking
+- 🔍 **Search**: developer.apple.com's own search across the API reference, the Human Interface Guidelines, sample code, App Store Connect Help and WWDC sessions
+- 📚 **Documentation pages**: any page as Markdown, from the JSON the website renders it from: declarations, overviews, code listings, Topics, relationships, availability and See Also
+- 🗺️ **Docs map**: every page title of the documentation and the HIG on disk, searched without the network
+- 🔧 **Framework symbols**: the symbols of one framework from its navigator index, filtered by kind and by a wildcard name
+- 📋 **Technology catalog**: Apple's technology index with its categories, languages and beta flags
+- 📰 **Documentation updates**: the release notes, each framework's updates page and each WWDC's What's new page
+- 🎯 **Technology overviews**: Apple's Technology Overviews guides as one tree
+- 💻 **Sample code**: Apple's sample-code library, by framework and keyword
+- 🔗 **Related, referenced and similar APIs**: read from a page's JSON, with Apple's replacements first for a deprecated API
+- 📊 **Platform availability**: the version each platform introduced or deprecated an API in
+- 🎥 **WWDC library**: 1,700 sessions from 2014 to 2026, bundled with the server, with transcripts and code examples
 
 ## 🚀 Quick Start
 
@@ -180,7 +177,7 @@ Add to your Zed `settings.json`:
 </details>
 
 <details>
-<summary><strong> Amazon A Developer CLI</strong></summary>
+<summary><strong>🟠 Amazon Q Developer CLI</strong></summary>
 
 **Via Config File**: Add to `~/.aws/amazonq/mcp.json`:
 
@@ -195,7 +192,7 @@ Add to your Zed `settings.json`:
 }
 ```
 
-[📖 Amazon A Developer CLI MCP docs](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html)
+[📖 Amazon Q Developer CLI MCP docs](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html)
 
 </details>
 
@@ -228,10 +225,10 @@ For Windows systems, use:
 bun add -g apple-docs-mcp-next
 ```
 
-**Direct Usage**:
+**Direct Usage** (the server speaks MCP on stdin and stdout):
 
 ```bash
-bunx apple-docs-mcp-next --help
+bunx apple-docs-mcp-next
 ```
 
 **Development Setup**:
@@ -372,23 +369,29 @@ bun install
 
 ## 🛠️ Available Tools
 
-| Tool | Description | Key Features |
-| ------ | ------------- | -------------- |
-| `search_apple_docs` | Search Apple Developer Documentation | Official search API, find specific APIs, classes, methods |
-| `get_apple_doc_content` | Get detailed documentation content | JSON API access, optional enhanced analysis (related/similar APIs, platform compatibility) |
-| `list_technologies` | Browse all Apple technologies | Category filtering, language support, beta status |
-| `search_framework_symbols` | Search symbols in specific framework | Classes, structs, protocols, wildcard patterns, type filtering |
-| `get_related_apis` | Find related APIs | Inheritance, conformance, "See Also" relationships |
-| `resolve_references_batch` | Batch resolve API references | Extract and resolve all references from documentation |
-| `get_platform_compatibility` | Platform compatibility analysis | Version support, beta status, deprecation info |
-| `find_similar_apis` | Discover similar APIs | Apple's official recommendations, topic groupings |
-| `get_documentation_updates` | Track Apple documentation updates | WWDC announcements, technology updates, release notes |
-| `get_technology_overviews` | Get technology overviews and guides | Comprehensive guides, hierarchical navigation, platform filtering |
-| `get_sample_code` | Browse Apple sample code projects | Framework filtering (with limitations), keyword search, beta status |
-| `search_wwdc_videos` | Search WWDC video sessions | Keyword search, topic/year filtering, session metadata |
-| `get_wwdc_video_details` | Get WWDC video details with transcript | Full transcripts, code examples, resources, platform info |
-| `list_wwdc_topics` | List all available WWDC topics | 19 topic categories from Swift to Spatial Computing |
-| `list_wwdc_years` | List all available WWDC years | Conference years with video counts |
+| Tool | What it returns |
+| ------ | ----------------- |
+| `search_apple_docs` | Search results from developer.apple.com: documentation, HIG, sample code, App Store Connect Help and WWDC sessions |
+| `get_apple_doc_content` | One documentation page as Markdown, optionally with related, referenced and similar APIs and a platform analysis |
+| `search_docs_map` | Pages whose title contains a query, from the docs map on disk (no network) |
+| `list_technologies` | Apple's technology index, by category, language and beta status |
+| `search_framework_symbols` | The symbols of one framework, by kind and wildcard name |
+| `get_related_apis` | Inheritance, conformances, See Also and Topics of one page |
+| `resolve_references_batch` | The pages one page references, with their summaries and declarations |
+| `get_platform_compatibility` | Where an API is available, introduced and deprecated |
+| `find_similar_apis` | Alternatives to an API, Apple's replacements first for a deprecated one |
+| `get_documentation_updates` | Release notes, framework updates pages and WWDC What's new pages |
+| `get_technology_overviews` | Apple's Technology Overviews guides |
+| `get_sample_code` | Apple's sample-code projects, by framework and keyword |
+| `list_wwdc_videos` | WWDC sessions by year, topic and code |
+| `search_wwdc_content` | Full-text search of WWDC transcripts and code |
+| `get_wwdc_video` | One session: links, transcript, code examples and related sessions |
+| `get_wwdc_code_examples` | WWDC code examples by the type or framework they use |
+| `browse_wwdc_topics` | The 19 WWDC topics, or one topic's sessions |
+| `find_related_wwdc_videos` | Sessions related to one session |
+| `list_wwdc_years` | The WWDC years with their session counts |
+
+Every tool is read-only. A failed call returns one error result with what to try instead.
 
 ## 🏗️ Technical Architecture for Apple Developer Documentation Access
 
@@ -409,114 +412,62 @@ apple-docs-mcp-next/
 └── 📖 README.md                      # This file
 ```
 
-### 🚀 Performance Features
+### 🚀 Requests and Caching
 
-- **Memory-Based Caching**: Custom cache implementation with automatic cleanup and TTL support
-- **Smart UserAgent Pool**: Intelligent rotation system with automatic failure recovery and performance monitoring
-- **Dynamic Headers**: Realistic browser headers generation (Accept, Accept-Language, User-Agent)
-- **Smart Search**: Official Apple search API with enhanced result formatting
-- **Enhanced Analysis**: Optional related APIs, platform compatibility, and similarity analysis
-- **Error Resilience**: Graceful degradation with comprehensive error handling
-- **Type Safety**: Full TypeScript with Zod v4.0.5 runtime validation
-- **Latest Dependencies**: MCP SDK v1.15.1, optimized package footprint
+- **Caches**: in-memory LRU caches with a time to live, one per kind of answer (below); search results are not cached
+- **Browser headers**: each request to Apple carries a fresh set of Safari headers from `header-generator`
+- **Retries**: network errors, timeouts and 5xx answers retry 3 times with exponential backoff; other statuses fail at once
+- **Pacing**: at most 100 requests a minute, and searches 15 s apart, as Apple answers quicker ones with no results
+- **Validation**: every tool's arguments are checked against its Zod 4 schema before the tool runs
+- **Runtime**: Bun 1.4.3 and the MCP TypeScript SDK 1.32.1
 
 ### 💾 Caching Strategy
 
-| Content Type | Cache Duration | Cache Size | Reason |
-| -------------- | ---------------- | ------------ | -------- |
-| API Documentation | 30 minutes | 500 entries | Frequently accessed, moderate updates |
-| Search Results | 10 minutes | 200 entries | Dynamic content, user-specific |
-| Framework Indexes | 1 hour | 100 entries | Stable structure, less frequent changes |
-| Technologies List | 2 hours | 50 entries | Rarely changes, large content |
-| Documentation Updates | 30 minutes | 100 entries | Regular updates, WWDC announcements |
+| Content Type | Cache Duration | Cache Size |
+| -------------- | ---------------- | ------------ |
+| Documentation pages | 30 minutes | 500 entries |
+| Framework indexes | 1 hour | 100 entries |
+| Technologies list | 2 hours | 50 entries |
+| Documentation updates | 30 minutes | 100 entries |
+| Sample code | 2 hours | 100 entries |
+| Technology overviews | 2 hours | 100 entries |
+| WWDC data files | 1 hour | 100 entries |
 
 ## 📦 WWDC Data
 
-All WWDC video data (2014-2025) is **bundled directly in the npm package**, providing:
+The WWDC data is **bundled with the package** in `data/wwdc/`, so the WWDC tools need no network:
 
-- ✅ **Zero network latency** - No API calls needed for WWDC content
-- ✅ **100% offline access** - Works without internet connection
-- ✅ **No rate limits** - Unlimited WWDC searches and browsing
-- ✅ **Instant responses** - All data is locally available
+- 📹 **1,700 sessions** from WWDC 2014 to WWDC 2026
+- 📝 **1,416 transcripts** and **715 sessions with code examples**
+- 🏷️ **19 topics** for browsing
+- 💾 **41 MB** of JSON
 
-The package includes:
-
-- 📹 **1,260+ WWDC session videos** with full transcripts
-- 🏷️ **20 topic categories** for organized browsing
-- 📅 **13 years of content** (2012-2025)
-- 💾 **35MB of optimized JSON data**
-
-> **Note**: Keep your package updated to get the latest WWDC content additions.
+`bun scripts/add-wwdc-year.ts <year>` adds a WWDC year to the data, or refreshes it.
 
 ## ⚙️ Configuration
 
-### 🔄 UserAgent Pool Configuration
+| Variable | Effect | Default |
+| ---------- | -------- | --------- |
+| `MCP_DEBUG` | `true` adds debug and info lines to the log | off |
 
-The MCP server includes an intelligent UserAgent rotation system to improve API reliability:
-
-#### Environment Variables
-
-| Variable | Description | Default | Example |
-| ---------- | ------------- | --------- | --------- |
-| `USER_AGENT_ROTATION_ENABLED` | Enable/disable rotation | `true` | `true` |
-| `USER_AGENT_POOL_STRATEGY` | Rotation strategy | `random` | `smart` |
-| `USER_AGENT_MAX_RETRIES` | Max retry attempts | `3` | `5` |
-| `USER_AGENT_POOL_CONFIG` | Custom pool config (JSON) | Built-in agents | See below |
-
-#### Custom Pool Configuration
-
-```bash
-# Configure custom UserAgent pool
-export USER_AGENT_POOL_CONFIG='[
-  {"userAgent": "MyApp/1.0 (compatible)", "weight": 3, "maxUsageCount": 1000},
-  {"userAgent": "MyApp/2.0 (advanced)", "weight": 2, "maxUsageCount": 800}
-]'
-
-# Set rotation strategy (random/sequential/smart)
-export USER_AGENT_POOL_STRATEGY=smart
-
-# Enable debugging
-export NODE_ENV=development
-```
-
-#### Available Strategies
-
-- **`random`**: Fast random selection (best performance)
-- **`sequential`**: Round-robin rotation (predictable order)
-- **`smart`**: Success rate optimization (best reliability)
-
-#### Built-in UserAgents
-
-The server includes 12+ pre-configured UserAgent strings covering:
-
-- Chrome (Mac Intel/Apple Silicon, Windows, Linux)
-- Firefox (Mac Intel/Apple Silicon, Windows, Linux)
-- Safari (Mac Intel/Apple Silicon, latest versions)
-- Edge (Windows, Mac Intel/Apple Silicon)
+The server logs to stderr only: on the stdio transport, stdout carries the MCP messages.
 
 ## 🧪 Development
 
-### Quick Commands
-
 ```bash
-# Development with auto-reload
-bun run dev
+bun install
 
-
-# Type checking
-bun check
-
+bun run dev        # the server, restarted on each change
+bun run start      # the server on stdio
+bun check          # type check
+bun run lint       # Biome
+bun run test       # the tests, each file in isolation
+bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
 ```
 
-### Testing Locally
+`tests/architecture.test.ts` checks the layers of `src/`: imports point from `main` to `server`, `tools`, the use cases in `docs` and `wwdc`, and `core`, never back.
 
-```bash
-# Test the MCP server directly
-bun run start
-
-# Test with sample queries
-bunx apple-docs-mcp-next --test
-```
+`bun scripts/build-docs-map.ts api-map/apple-docs-map.tsv` rebuilds the docs map that `search_docs_map` reads.
 
 ## 🤝 Contributing
 
@@ -544,6 +495,6 @@ This project is not affiliated with or endorsed by Apple Inc. It uses publicly a
 
 Search Apple Developer Documentation | iOS Development | macOS Development | Swift Programming | SwiftUI | UIKit | Xcode | WWDC Videos | Model Context Protocol | MCP Server
 
-[Report Issues](https://github.com/kimsungwhee/apple-docs-mcp/issues) • [Request Features](https://github.com/kimsungwhee/apple-docs-mcp/issues/new) • [Documentation](https://github.com/kimsungwhee/apple-docs-mcp)
+[Report Issues](https://github.com/xsyetopz/apple-docs-mcp-next/issues) • [Request Features](https://github.com/xsyetopz/apple-docs-mcp-next/issues/new) • [Documentation](https://github.com/xsyetopz/apple-docs-mcp-next#readme)
 
 </div>
