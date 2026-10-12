@@ -1,0 +1,26 @@
+{
+  "id": "110842",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110842/",
+  "title": "Q&A: Sign in with Apple",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Privacy & Security",
+    "Safari & Web"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10122",
+      "year": "2022",
+      "title": "Enhance your Sign in with Apple experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10122"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:31.966Z"
+}

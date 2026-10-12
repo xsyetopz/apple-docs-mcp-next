@@ -103,28 +103,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: App & System Services",
         "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
       },
       {
         "title": "TipKit",
         "url": "https://developer.apple.com/documentation/TipKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10070/5/8C64605E-ECD1-4D14-8B43-D7E3E751FAA3/downloads/wwdc2024-10070_hd.mp4?dl=1",
@@ -138,5 +122,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10229"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:57.128Z"
+  "extractedAt": "2026-10-11T16:35:04.249Z"
 }

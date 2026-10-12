@@ -1,0 +1,25 @@
+{
+  "id": "10297",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10297/",
+  "title": "Meet the presenter: Debug with structured logging",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10226",
+      "year": "2023",
+      "title": "Debug with structured logging",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10226"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:17.751Z"
+}

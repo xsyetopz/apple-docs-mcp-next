@@ -38,24 +38,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10670/5/F2522A6C-CD56-4570-8939-B8BB17427290/wwdc2020_10670_hd.mp4?dl=1",
@@ -69,5 +53,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10663"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:32.936Z"
+  "extractedAt": "2026-10-11T16:45:33.960Z"
 }

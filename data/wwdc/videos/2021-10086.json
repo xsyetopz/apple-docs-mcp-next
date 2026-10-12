@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Privacy & Security",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -97,24 +99,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "CloudKit",
         "url": "https://developer.apple.com/documentation/CloudKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10086/3/0126BD48-6C5E-4D8C-9464-DA85CFDF193B/downloads/wwdc2021-10086_hd.mp4?dl=1",
@@ -152,5 +138,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10117"
     }
   ],
-  "extractedAt": "2025-07-18T10:27:37.542Z"
+  "extractedAt": "2026-10-11T16:42:42.870Z"
 }

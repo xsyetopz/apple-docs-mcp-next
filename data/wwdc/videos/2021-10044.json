@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -37,24 +38,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "ShazamKit",
         "url": "https://developer.apple.com/documentation/ShazamKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10044/7/242BEFF9-E49D-4A96-972C-BEE65585211D/downloads/wwdc2021-10044_hd.mp4?dl=1",
@@ -92,5 +77,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10294"
     }
   ],
-  "extractedAt": "2025-07-18T09:24:18.034Z"
+  "extractedAt": "2026-10-11T16:42:30.542Z"
 }

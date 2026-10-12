@@ -18,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Apple Design Resources",
         "url": "https://developer.apple.com/design/resources/"
       },
       {
         "title": "Explore the Human Interface Guidelines",
         "url": "https://developer.apple.com/design/human-interface-guidelines/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10037/6/63F99354-D35D-475C-8069-74E58C813299/downloads/wwdc2022-10037_hd.mp4?dl=1",
@@ -47,11 +31,17 @@
   },
   "relatedVideos": [
     {
+      "id": "110532",
+      "year": "2022",
+      "title": "Meet the Presenter: Writing for interfaces",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110532"
+    },
+    {
       "id": "110932",
       "year": "2022",
       "title": "WWDC22 Day 4 recap",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110932"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:58.368Z"
+  "extractedAt": "2026-10-11T16:41:25.807Z"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "10331",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10331/",
+  "title": "Q&A: SwiftData",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Swift"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10196",
+      "year": "2023",
+      "title": "Dive deeper into SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10196"
+    },
+    {
+      "id": "10187",
+      "year": "2023",
+      "title": "Meet SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10187"
+    },
+    {
+      "id": "10189",
+      "year": "2023",
+      "title": "Migrate to SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10189"
+    },
+    {
+      "id": "10195",
+      "year": "2023",
+      "title": "Model your schema with SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10195"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:55.807Z"
+}

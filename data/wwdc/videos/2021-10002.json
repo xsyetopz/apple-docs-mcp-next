@@ -6,7 +6,10 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Health & Fitness",
+    "SwiftUI & UI Frameworks",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -31,14 +34,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Designing your app for the Always On state",
-        "url": "https://developer.apple.com/documentation/watchOS-Apps/designing-your-app-for-the-always-on-state"
-      },
-      {
         "title": "UNLocationNotificationTrigger",
         "url": "https://developer.apple.com/documentation/UserNotifications/UNLocationNotificationTrigger"
       },
@@ -47,16 +42,8 @@
         "url": "https://developer.apple.com/documentation/watchOS-Apps/updating-watchos-apps-with-timelines"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Designing your app for the Always On state",
+        "url": "https://developer.apple.com/documentation/watchOS-Apps/designing-your-app-for-the-always-on-state"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10002/4/6AE5C57E-FF72-4A1C-B627-40969B18D70D/downloads/wwdc2021-10002_hd.mp4?dl=1",
@@ -94,12 +81,6 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10102"
     },
     {
-      "id": "10321",
-      "year": "2021",
-      "title": "Monday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10321"
-    },
-    {
       "id": "10048",
       "year": "2021",
       "title": "Principles of great widgets",
@@ -112,5 +93,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10018"
     }
   ],
-  "extractedAt": "2025-07-18T10:26:11.542Z"
+  "extractedAt": "2026-10-11T16:42:44.570Z"
 }

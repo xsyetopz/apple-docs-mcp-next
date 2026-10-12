@@ -8,7 +8,8 @@
   "topics": [
     "Accessibility & Inclusion",
     "Business & Education",
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -19,28 +20,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "AutonomousSingleAppMode",
         "url": "https://developer.apple.com/documentation/DeviceManagement/AutonomousSingleAppMode"
       },
       {
         "title": "requestGuidedAccessSession(enabled:completionHandler:)",
         "url": "https://developer.apple.com/documentation/UIKit/UIAccessibility/requestGuidedAccessSession(enabled:completionHandler:)"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10152/3/0694C884-66D5-46B5-BAC6-A6671661A771/downloads/wwdc2022-10152_hd.mp4?dl=1",
@@ -54,11 +39,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10034"
     },
     {
+      "id": "110425",
+      "year": "2022",
+      "title": "Meet the Presenter: Create accessible Single App Mode experiences",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110425"
+    },
+    {
       "id": "110932",
       "year": "2022",
       "title": "WWDC22 Day 4 recap",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110932"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:20.579Z"
+  "extractedAt": "2026-10-11T16:41:37.963Z"
 }

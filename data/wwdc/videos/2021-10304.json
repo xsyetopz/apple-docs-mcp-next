@@ -8,7 +8,8 @@
   "topics": [
     "Accessibility & Inclusion",
     "Design",
-    "Essentials"
+    "Essentials",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -19,24 +20,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Inclusion",
         "url": "https://developer.apple.com/design/human-interface-guidelines/inclusion/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10304/4/5F0C8CED-8F09-4528-BEFE-98A248B6088B/downloads/wwdc2021-10304_hd.mp4?dl=1",
@@ -48,13 +33,7 @@
       "year": "2021",
       "title": "The practice of inclusive design",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10275"
-    },
-    {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:23.380Z"
+  "extractedAt": "2026-10-11T16:42:40.673Z"
 }

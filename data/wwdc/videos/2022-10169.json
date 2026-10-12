@@ -19,32 +19,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Intents",
         "url": "https://developer.apple.com/documentation/AppIntents"
-      },
-      {
-        "title": "Human Interface Guidelines: Siri",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/siri"
       },
       {
         "title": "Offering Actions in the Shortcuts App",
         "url": "https://developer.apple.com/documentation/SiriKit/offering-actions-in-the-shortcuts-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Siri",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/siri"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10169/5/8F7E31FB-73E9-405E-8031-74902FC37BB8/downloads/wwdc2022-10169_hd.mp4?dl=1",
@@ -70,6 +54,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10170"
     },
     {
+      "id": "110533",
+      "year": "2022",
+      "title": "Meet the Presenter: Design App Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110533"
+    },
+    {
       "id": "110931",
       "year": "2022",
       "title": "WWDC22 Day 3 recap",
@@ -82,5 +72,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10283"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:00.473Z"
+  "extractedAt": "2026-10-11T16:40:15.560Z"
 }

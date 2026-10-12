@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -85,28 +86,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Activating the Documentation Preview editor",
-        "url": "https://developer.apple.com/videos/play/wwdc2023/10244/?time=485"
-      },
-      {
         "title": "DocC",
         "url": "https://developer.apple.com/documentation/docc"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10244/4/6BE389F4-2F7E-4D0C-A6B6-25C8306D816E/downloads/wwdc2023-10244_hd.mp4?dl=1",
@@ -150,5 +131,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10166"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:24.574Z"
+  "extractedAt": "2026-10-11T16:36:00.042Z"
 }

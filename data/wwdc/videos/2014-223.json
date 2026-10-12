@@ -15,26 +15,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2014/223xxp1uag2jn3n/223/223_hd_prototyping_fake_it_till_you_make_it.mov?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2014/223xxp1uag2jn3n/223/223_sd_prototyping_fake_it_till_you_make_it.mov?dl=1"
   },
-  "extractedAt": "2025-07-18T09:39:15.712Z"
+  "extractedAt": "2026-10-11T16:49:21.286Z"
 }

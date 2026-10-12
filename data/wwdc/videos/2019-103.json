@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/103bax22h2udxu0n/103/103_hd_platforms_state_of_the_union.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/103bax22h2udxu0n/103/103_sd_platforms_state_of_the_union.mp4?dl=1"
   },
@@ -72,7 +55,13 @@
       "year": "2019",
       "title": "What’s New in AppKit for macOS",
       "url": "https://developer.apple.com/videos/play/wwdc2019/210"
+    },
+    {
+      "id": "801",
+      "year": "2019",
+      "title": "What’s New in iOS and macOS Design",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/801"
     }
   ],
-  "extractedAt": "2025-07-18T10:28:12.960Z"
+  "extractedAt": "2026-10-11T16:46:46.469Z"
 }

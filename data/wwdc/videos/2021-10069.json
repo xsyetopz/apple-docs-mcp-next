@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "HealthKit",
         "url": "https://developer.apple.com/documentation/HealthKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10069/3/A1BAF400-4B07-4759-956D-2A7D5522311C/downloads/wwdc2021-10069_hd.mp4?dl=1",
@@ -54,5 +39,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10282"
     }
   ],
-  "extractedAt": "2025-07-18T10:25:49.587Z"
+  "extractedAt": "2026-10-11T16:43:56.283Z"
 }

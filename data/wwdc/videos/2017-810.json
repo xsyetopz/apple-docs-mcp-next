@@ -17,28 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
+        "title": "Apple Design Site",
         "url": "https://developer.apple.com/design/"
       },
       {
         "title": "UIKit",
         "url": "https://developer.apple.com/documentation/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/810rf5oudq18pus/810/810_hd_whats_new_in_ios_11.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/810rf5oudq18pus/810/810_sd_whats_new_in_ios_11.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T11:00:15.316Z"
+  "extractedAt": "2026-10-11T16:48:51.315Z"
 }

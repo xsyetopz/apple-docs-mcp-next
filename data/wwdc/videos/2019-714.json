@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Filtering Network Traffic",
         "url": "https://developer.apple.com/documentation/NetworkExtension/filtering-network-traffic"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/714kr380j0vbvxv/714/714_hd_network_extensions_for_the_modern_mac.mp4?dl=1",
@@ -78,5 +62,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/210"
     }
   ],
-  "extractedAt": "2025-07-18T11:03:49.273Z"
+  "extractedAt": "2026-10-11T16:48:07.212Z"
 }

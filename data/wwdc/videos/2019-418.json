@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Graphics & Games"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Supporting Simulator in a Metal app",
         "url": "https://developer.apple.com/documentation/Metal/supporting-simulator-in-a-metal-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/418o9bbtoe880sauh/418/418_hd_getting_the_most_out_of_simulator.mp4?dl=1",
@@ -54,5 +39,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/401"
     }
   ],
-  "extractedAt": "2025-07-18T10:16:41.778Z"
+  "extractedAt": "2026-10-11T16:48:06.810Z"
 }

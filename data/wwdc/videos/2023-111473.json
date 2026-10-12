@@ -1,0 +1,43 @@
+{
+  "id": "111473",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111473/",
+  "title": "Q&A: Camera",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10105",
+      "year": "2023",
+      "title": "Create a more responsive camera experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10105"
+    },
+    {
+      "id": "10256",
+      "year": "2023",
+      "title": "Discover Continuity Camera for tvOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10256"
+    },
+    {
+      "id": "10137",
+      "year": "2023",
+      "title": "Support Cinematic mode videos in your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10137"
+    },
+    {
+      "id": "10106",
+      "year": "2023",
+      "title": "Support external cameras in your iPadOS app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10106"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:20.910Z"
+}

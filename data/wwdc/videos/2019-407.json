@@ -1,0 +1,56 @@
+{
+  "id": "407",
+  "year": "2019",
+  "url": "https://developer.apple.com/videos/play/wwdc2019/407/",
+  "title": "Create ML for Activity, Text, and Recommendations",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "426",
+      "year": "2019",
+      "title": "Building Activity Classification Models in Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/426"
+    },
+    {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406"
+    },
+    {
+      "id": "430",
+      "year": "2019",
+      "title": "Introducing the Create ML App",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/430"
+    },
+    {
+      "id": "427",
+      "year": "2019",
+      "title": "Training Recommendation Models in Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/427"
+    },
+    {
+      "id": "428",
+      "year": "2019",
+      "title": "Training Text Classifiers in Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/428"
+    },
+    {
+      "id": "209",
+      "year": "2019",
+      "title": "What's New in Machine Learning",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/209"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:47:58.887Z"
+}

@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Creating a Mobility Health App",
+        "url": "https://developer.apple.com/documentation/HealthKit/creating-a-mobility-health-app"
       },
       {
         "title": "Accessing Health Records",
         "url": "https://developer.apple.com/documentation/HealthKit/accessing-health-records"
       },
       {
-        "title": "Creating a Mobility Health App",
-        "url": "https://developer.apple.com/documentation/HealthKit/creating-a-mobility-health-app"
-      },
-      {
         "title": "HealthKit",
         "url": "https://developer.apple.com/documentation/HealthKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10664/3/A57EEE02-9009-45A1-B08B-797CE7A6F83B/wwdc2020_10664_hd.mp4?dl=1",
@@ -80,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10182"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:06.000Z"
+  "extractedAt": "2026-10-11T16:45:51.166Z"
 }

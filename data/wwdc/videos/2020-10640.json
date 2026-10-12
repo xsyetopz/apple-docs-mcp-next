@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for iOS",
-        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ios"
-      },
-      {
         "title": "Human Interface Guidelines: Pointing devices",
         "url": "https://developer.apple.com/design/human-interface-guidelines/pointing-devices"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Designing for iOS",
+        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ios"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10640/5/DFF319C6-2907-44A4-AE04-2439DACA8069/wwdc2020_10640_hd.mp4?dl=1",
@@ -64,5 +49,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10206"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:44.469Z"
+  "extractedAt": "2026-10-11T16:45:47.580Z"
 }

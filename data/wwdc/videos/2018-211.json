@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,8 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
+        "url": "https://developer.apple.com/documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts"
       },
       {
         "title": "Deleting Donated Shortcuts",
@@ -31,22 +32,6 @@
       {
         "title": "SiriKit",
         "url": "https://developer.apple.com/documentation/SiriKit"
-      },
-      {
-        "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
-        "url": "https://developer.apple.com/documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/211fjjqs9t1cbwzwgf0/211/211_hd_introduction_to_siri_shortcuts.mp4?dl=1",
@@ -66,5 +51,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10231"
     }
   ],
-  "extractedAt": "2025-07-18T09:18:23.397Z"
+  "extractedAt": "2026-10-11T16:48:23.916Z"
 }

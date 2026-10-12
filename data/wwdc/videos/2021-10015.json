@@ -56,24 +56,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Synchronizing a local store to the cloud",
         "url": "https://developer.apple.com/documentation/CoreData/synchronizing-a-local-store-to-the-cloud"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10015/4/7C4C52B4-3B54-4FCE-8300-BEA17FC4A7AE/downloads/wwdc2021-10015_hd.mp4?dl=1",
@@ -105,5 +89,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10086"
     }
   ],
-  "extractedAt": "2025-07-18T10:54:27.914Z"
+  "extractedAt": "2026-10-11T16:44:20.438Z"
 }

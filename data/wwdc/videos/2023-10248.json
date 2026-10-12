@@ -109,28 +109,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Analyzing responsiveness issues in your shipping app",
         "url": "https://developer.apple.com/documentation/Xcode/analyzing-responsiveness-issues-in-your-shipping-app"
       },
       {
         "title": "Improving app responsiveness",
         "url": "https://developer.apple.com/documentation/Xcode/improving-app-responsiveness"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10248/6/AB6FF62D-3A9D-4816-95E8-2E7B464CA1DF/downloads/wwdc2023-10248_hd.mp4?dl=1",
@@ -148,6 +132,12 @@
       "year": "2023",
       "title": "Meet RealityKit Trace",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10099"
+    },
+    {
+      "id": "10299",
+      "year": "2023",
+      "title": "Meet the presenter: Analyze hangs with Instruments",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10299"
     },
     {
       "id": "10082",
@@ -186,5 +176,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/411"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:11.853Z"
+  "extractedAt": "2026-10-11T16:37:55.860Z"
 }

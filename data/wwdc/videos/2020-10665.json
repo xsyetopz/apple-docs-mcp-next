@@ -18,8 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Messaging a Web Extension’s Native App",
+        "url": "https://developer.apple.com/documentation/SafariServices/messaging-a-web-extension-s-native-app"
       },
       {
         "title": "Developing a Safari Web Extension",
@@ -28,22 +28,6 @@
       {
         "title": "Explore the Human Interface Guidelines",
         "url": "https://developer.apple.com/design/human-interface-guidelines/"
-      },
-      {
-        "title": "Messaging a Web Extension’s Native App",
-        "url": "https://developer.apple.com/documentation/SafariServices/messaging-a-web-extension-s-native-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10665/3/C174BFAC-4EEB-41C6-9019-4386F9E18CD5/wwdc2020_10665_hd.mp4?dl=1",
@@ -81,5 +65,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10646"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:36.858Z"
+  "extractedAt": "2026-10-11T16:44:51.305Z"
 }

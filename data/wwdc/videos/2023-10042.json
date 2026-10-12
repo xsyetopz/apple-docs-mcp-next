@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Natural Language",
         "url": "https://developer.apple.com/documentation/NaturalLanguage"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10042/5/6CB98B4D-64C7-4818-8DFE-12CF2EFAF5CA/downloads/wwdc2023-10042_hd.mp4?dl=1",
@@ -46,6 +30,36 @@
       "year": "2023",
       "title": "Discover machine learning enhancements in Create ML",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10044"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251"
+    },
+    {
+      "id": "111247",
+      "year": "2023",
+      "title": "Q&A: Natural Language and Speech",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111247"
     },
     {
       "id": "10657",
@@ -60,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/232"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:56.468Z"
+  "extractedAt": "2026-10-11T16:37:07.564Z"
 }

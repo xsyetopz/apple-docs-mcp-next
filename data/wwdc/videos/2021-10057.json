@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -127,16 +128,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding hardware keyboard support to your app",
         "url": "https://developer.apple.com/documentation/UIKit/adding-hardware-keyboard-support-to-your-app"
-      },
-      {
-        "title": "Adding Menus and Shortcuts to the Menu Bar and User Interface",
-        "url": "https://developer.apple.com/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
       },
       {
         "title": "Enhancing your iPad app with pointer interactions",
@@ -147,20 +140,12 @@
         "url": "https://developer.apple.com/design/human-interface-guidelines/pointing-devices"
       },
       {
+        "title": "Adding menus and shortcuts to the menu bar and user interface",
+        "url": "https://developer.apple.com/documentation/UIKit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface"
+      },
+      {
         "title": "UIKit",
         "url": "https://developer.apple.com/documentation/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10057/7/5399C1AB-B62F-4A83-8AA1-FCBFDAFFBF44/downloads/wwdc2021-10057_hd.mp4?dl=1",
@@ -222,5 +207,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/259"
     }
   ],
-  "extractedAt": "2025-07-18T10:25:16.227Z"
+  "extractedAt": "2026-10-11T16:42:39.446Z"
 }

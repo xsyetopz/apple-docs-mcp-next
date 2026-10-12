@@ -37,14 +37,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVFoundation",
-        "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
-      {
         "title": "AVRouting",
         "url": "https://developer.apple.com/documentation/AVRouting"
       },
@@ -53,16 +45,8 @@
         "url": "https://developer.apple.com/documentation/AVFoundation/creating-a-seamless-multiview-playback-experience"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AVFoundation",
+        "url": "https://developer.apple.com/documentation/AVFoundation"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/302/5/87e78c55-cb0a-4d6f-9567-bc3f91ecb747/downloads/wwdc2025-302_hd.mp4?dl=1",
@@ -76,5 +60,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10225"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:34.646Z"
+  "extractedAt": "2026-10-11T16:33:26.502Z"
 }

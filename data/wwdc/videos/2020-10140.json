@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Accessibility & Inclusion",
-    "Business & Education"
+    "Business & Education",
+    "Maps & Location"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -66,24 +67,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10140/5/C86424DC-C2CF-464A-BDCE-35C9B4476E4B/wwdc2020_10140_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10140/5/C86424DC-C2CF-464A-BDCE-35C9B4476E4B/wwdc2020_10140_sd.mp4?dl=1"
   },
@@ -125,5 +109,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/705"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:13.650Z"
+  "extractedAt": "2026-10-11T16:45:45.816Z"
 }

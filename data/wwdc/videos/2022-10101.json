@@ -67,32 +67,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
+        "title": "Rendering reflections in real time using ray tracing",
+        "url": "https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing"
       },
       {
         "title": "Metal for Accelerating Ray Tracing",
         "url": "https://developer.apple.com/documentation/metal/metal_sample_code_library/accelerating_ray_tracing_using_metal"
       },
       {
-        "title": "Rendering reflections in real time using ray tracing",
-        "url": "https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10101/4/E7651C9D-CAC8-44A9-9BF8-8D0DC317F4A2/downloads/wwdc2022-10101_hd.mp4?dl=1",
@@ -112,6 +96,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10066"
     },
     {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
       "id": "10105",
       "year": "2022",
       "title": "Maximize your Metal ray tracing performance",
@@ -122,6 +112,18 @@
       "year": "2022",
       "title": "Profile and optimize your game's memory",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10106"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
     },
     {
       "id": "10149",
@@ -142,5 +144,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10150"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:17.350Z"
+  "extractedAt": "2026-10-11T16:41:16.282Z"
 }

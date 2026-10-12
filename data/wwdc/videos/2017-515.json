@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "HTTP Live Streaming (HLS) authoring specification for Apple devices",
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/515vy4sl7iu70/515/515_hd_hls_authoring_update.mp4?dl=1",
@@ -54,5 +38,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2017/514"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:58.297Z"
+  "extractedAt": "2026-10-11T16:48:48.345Z"
 }

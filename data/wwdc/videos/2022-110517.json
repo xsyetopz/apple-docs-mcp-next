@@ -1,0 +1,25 @@
+{
+  "id": "110517",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110517/",
+  "title": "Meet the Presenter: Discover Managed Device Attestation",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Business & Education"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10143",
+      "year": "2022",
+      "title": "Discover Managed Device Attestation",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10143"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:11.810Z"
+}

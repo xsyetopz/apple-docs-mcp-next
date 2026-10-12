@@ -103,20 +103,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ActivityKit",
-        "url": "https://developer.apple.com/documentation/ActivityKit"
+        "title": "Scheduling an alarm with AlarmKit",
+        "url": "https://developer.apple.com/documentation/AlarmKit/scheduling-an-alarm-with-alarmkit"
       },
       {
         "title": "AlarmKit",
         "url": "https://developer.apple.com/documentation/AlarmKit"
-      },
-      {
-        "title": "App Intents",
-        "url": "https://developer.apple.com/documentation/AppIntents"
       },
       {
         "title": "Creating your first app intent",
@@ -127,20 +119,12 @@
         "url": "https://developer.apple.com/design/human-interface-guidelines/live-activities"
       },
       {
-        "title": "Scheduling an alarm with AlarmKit",
-        "url": "https://developer.apple.com/documentation/AlarmKit/scheduling-an-alarm-with-alarmkit"
+        "title": "ActivityKit",
+        "url": "https://developer.apple.com/documentation/ActivityKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Intents",
+        "url": "https://developer.apple.com/documentation/AppIntents"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/230/4/d60bc47c-1b62-4fa0-a1d1-d046cf20f1de/downloads/wwdc2025-230_hd.mp4?dl=1",
@@ -160,5 +144,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10184"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:22.919Z"
+  "extractedAt": "2026-10-11T16:34:23.250Z"
 }

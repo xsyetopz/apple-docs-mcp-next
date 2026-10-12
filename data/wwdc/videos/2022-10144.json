@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Using Apple’s HTTP Live Streaming (HLS) Tools",
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/using-apple-s-http-live-streaming-hls-tools"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10144/3/B295073D-367F-4EAB-A65F-6FBB86ECDD6E/downloads/wwdc2022-10144_hd.mp4?dl=1",
@@ -48,5 +32,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10141"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:19.392Z"
+  "extractedAt": "2026-10-11T16:39:22.486Z"
 }

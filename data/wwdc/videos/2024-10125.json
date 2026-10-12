@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Privacy & Security",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,44 +51,28 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "ASCredentialProviderExtensionCapabilities",
         "url": "https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/ASCredentialProviderExtensionCapabilities"
-      },
-      {
-        "title": "Authentication Services",
-        "url": "https://developer.apple.com/documentation/AuthenticationServices"
-      },
-      {
-        "title": "Connecting to a service with passkeys",
-        "url": "https://developer.apple.com/documentation/AuthenticationServices/connecting-to-a-service-with-passkeys"
       },
       {
         "title": "Forum: Privacy & Security",
         "url": "https://developer.apple.com/forums/topics/privacy-and-security?cid=vf-a-0010"
       },
       {
-        "title": "Public-Private Key Authentication",
-        "url": "https://developer.apple.com/documentation/AuthenticationServices/public-private-key-authentication"
+        "title": "Connecting to a service with passkeys",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices/connecting-to-a-service-with-passkeys"
       },
       {
         "title": "Supporting passkeys",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Public-Private Key Authentication",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices/public-private-key-authentication"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Authentication Services",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10125/4/11A4C94C-65F3-4AE0-831C-EFE3BF97831C/downloads/wwdc2024-10125_hd.mp4?dl=1",
@@ -112,5 +98,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10105"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:17.298Z"
+  "extractedAt": "2026-10-11T16:34:59.823Z"
 }

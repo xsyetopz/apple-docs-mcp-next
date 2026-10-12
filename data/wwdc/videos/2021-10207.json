@@ -61,24 +61,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Expected Failures",
         "url": "https://developer.apple.com/documentation/XCTest/expected-failures"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10207/5/1AF9A073-9D29-4091-9876-AE8868480EDA/downloads/wwdc2021-10207_hd.mp4?dl=1",
@@ -104,5 +88,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10208"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:55.499Z"
+  "extractedAt": "2026-10-11T16:43:46.021Z"
 }

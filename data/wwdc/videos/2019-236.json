@@ -6,7 +6,10 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "Maps & Location",
+    "Privacy & Security",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,36 +20,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Maps Web Snapshots",
+        "url": "https://developer.apple.com/documentation/snapshots"
       },
       {
         "title": "Displaying Indoor Maps with MapKit JS",
         "url": "https://developer.apple.com/documentation/MapKitJS/displaying-indoor-maps-with-mapkit-js"
       },
       {
-        "title": "MapKit",
-        "url": "https://developer.apple.com/documentation/MapKit"
-      },
-      {
-        "title": "Maps Web Snapshots",
-        "url": "https://developer.apple.com/documentation/snapshots"
-      },
-      {
         "title": "Optimizing Map Views with Filtering and Camera Constraints",
         "url": "https://developer.apple.com/documentation/mapkit/mkmapview/optimizing_map_views_with_filtering_and_camera_constraints"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "MapKit",
+        "url": "https://developer.apple.com/documentation/MapKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/236an22jpbgtmv9ya/236/236_hd_whats_new_in_mapkit_and_mapkit_js.mp4?dl=1",
@@ -72,5 +59,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/705"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:49.982Z"
+  "extractedAt": "2026-10-11T16:48:05.532Z"
 }

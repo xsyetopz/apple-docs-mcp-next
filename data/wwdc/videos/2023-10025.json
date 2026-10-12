@@ -17,10 +17,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Establishing a certificate-based connection to APNs",
         "url": "https://developer.apple.com/documentation/UserNotifications/establishing-a-certificate-based-connection-to-apns"
       },
@@ -31,18 +27,6 @@
       {
         "title": "Sending notification requests to APNs",
         "url": "https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10025/4/A630204A-7F9E-49E8-9B21-ADC3517405E0/downloads/wwdc2023-10025_hd.mp4?dl=1",
@@ -56,5 +40,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10095"
     }
   ],
-  "extractedAt": "2025-07-18T11:01:26.439Z"
+  "extractedAt": "2026-10-11T16:37:10.406Z"
 }

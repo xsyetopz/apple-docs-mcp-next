@@ -1,0 +1,11 @@
+# Bun reads no `.env` file, so no secret of the developer reaches a test, a script, or a hook.
+env = false
+
+[install]
+linker = "isolated"
+
+[test]
+root = "tests"
+# The global mocks (fetch, console.error, the WWDC data folder) that every test file starts from.
+preload = ["./tests/setup.ts"]
+timeout = 5000

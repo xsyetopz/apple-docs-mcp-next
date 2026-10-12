@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Classifying Sounds in an Audio Stream",
         "url": "https://developer.apple.com/documentation/SoundAnalysis/classifying-sounds-in-an-audio-stream"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/425bfacxsewtyh8uye5/425/425_hd_training_sound_classification_models_in_create_ml.mp4?dl=1",
@@ -60,6 +44,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/704"
     },
     {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406"
+    },
+    {
       "id": "430",
       "year": "2019",
       "title": "Introducing the Create ML App",
@@ -72,5 +62,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/209"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:00.519Z"
+  "extractedAt": "2026-10-11T16:47:10.937Z"
 }

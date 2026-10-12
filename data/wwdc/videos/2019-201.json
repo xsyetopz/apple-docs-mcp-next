@@ -1,0 +1,55 @@
+{
+  "id": "201",
+  "year": "2019",
+  "url": "https://developer.apple.com/videos/play/wwdc2019/201/",
+  "title": "Accessibility Lessons",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Accessibility & Inclusion"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "238",
+      "year": "2019",
+      "title": "Accessibility in SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/238"
+    },
+    {
+      "id": "257",
+      "year": "2019",
+      "title": "Accessibility Inspector",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/257"
+    },
+    {
+      "id": "206",
+      "year": "2019",
+      "title": "Introducing SF Symbols",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/206"
+    },
+    {
+      "id": "250",
+      "year": "2019",
+      "title": "Making Apps More Accessible With Custom Actions",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/250"
+    },
+    {
+      "id": "244",
+      "year": "2019",
+      "title": "Visual Design and Accessibility",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/244"
+    },
+    {
+      "id": "254",
+      "year": "2019",
+      "title": "Writing Great Accessibility Labels",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/254"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:46:47.177Z"
+}

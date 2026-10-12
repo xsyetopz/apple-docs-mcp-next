@@ -1,0 +1,38 @@
+{
+  "id": "110921",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110921/",
+  "title": "Q&A: Swift Standard Library",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "Swift"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110357",
+      "year": "2022",
+      "title": "Meet Swift Regex",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110357"
+    },
+    {
+      "id": "110358",
+      "year": "2022",
+      "title": "Swift Regex: Beyond the basics",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110358"
+    },
+    {
+      "id": "110354",
+      "year": "2022",
+      "title": "What's new in Swift",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110354"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:41.483Z"
+}

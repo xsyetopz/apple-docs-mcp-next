@@ -1,8 +1,9 @@
 {
   "id": "photos-camera",
   "name": "Photos & Camera",
-  "videoCount": 54,
+  "videoCount": 76,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -15,11 +16,78 @@
   ],
   "videos": [
     {
+      "id": "303",
+      "year": "2026",
+      "title": "Build a responsive camera app that launches quickly",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/303/",
+      "dataFile": "videos/2026-303.json"
+    },
+    {
+      "id": "8018",
+      "year": "2026",
+      "title": "Camera and Photo Technologies Group Lab",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8018/",
+      "dataFile": "videos/2026-8018.json"
+    },
+    {
+      "id": "305",
+      "year": "2026",
+      "title": "Enhance RAW image processing with Core Image",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/305/",
+      "dataFile": "videos/2026-305.json"
+    },
+    {
+      "id": "304",
+      "year": "2026",
+      "title": "Implement high resolution photo capture",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/304/",
+      "dataFile": "videos/2026-304.json"
+    },
+    {
+      "id": "341",
+      "year": "2026",
+      "title": "Support the Center Stage front camera in your iOS app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/341/",
+      "dataFile": "videos/2026-341.json"
+    },
+    {
       "id": "319",
       "year": "2025",
       "title": "Capture cinematic video in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -32,7 +100,8 @@
       "year": "2025",
       "title": "Enhance your app with machine-learning-based video effects",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -45,7 +114,9 @@
       "year": "2025",
       "title": "Enhance your app’s audio recording capabilities",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -74,7 +145,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -117,7 +192,10 @@
       "topics": [
         "App Services",
         "Audio & Video",
-        "Business & Education"
+        "Business & Education",
+        "Machine Learning & AI",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -144,7 +222,9 @@
       "year": "2024",
       "title": "Use HDR for dynamic image experiences in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -171,7 +251,8 @@
       "year": "2023",
       "title": "Create a more responsive camera experience",
       "topics": [
-        "App Services"
+        "App Services",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -184,7 +265,8 @@
       "year": "2023",
       "title": "Discover Continuity Camera for tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -220,11 +302,143 @@
       "dataFile": "videos/2023-10304.json"
     },
     {
+      "id": "111474",
+      "year": "2023",
+      "title": "Meet the presenter: Create a more responsive camera experience",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111474/",
+      "dataFile": "videos/2023-111474.json"
+    },
+    {
+      "id": "111481",
+      "year": "2023",
+      "title": "Meet the presenter: Embed the Photos Picker in your app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111481/",
+      "dataFile": "videos/2023-111481.json"
+    },
+    {
+      "id": "111476",
+      "year": "2023",
+      "title": "Meet the presenter: Support Cinematic mode videos in your app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111476/",
+      "dataFile": "videos/2023-111476.json"
+    },
+    {
+      "id": "111475",
+      "year": "2023",
+      "title": "Meet the presenter: Support external cameras in your iPadOS app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111475/",
+      "dataFile": "videos/2023-111475.json"
+    },
+    {
+      "id": "111477",
+      "year": "2023",
+      "title": "Meet the presenter: Support HDR images in your app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111477/",
+      "dataFile": "videos/2023-111477.json"
+    },
+    {
+      "id": "111473",
+      "year": "2023",
+      "title": "Q&A: Camera",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111473/",
+      "dataFile": "videos/2023-111473.json"
+    },
+    {
+      "id": "111532",
+      "year": "2023",
+      "title": "Q&A: Continuity Camera for Apple TV",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111532/",
+      "dataFile": "videos/2023-111532.json"
+    },
+    {
+      "id": "111336",
+      "year": "2023",
+      "title": "Q&A: Motorized iPhone stands and DockKit",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111336/",
+      "dataFile": "videos/2023-111336.json"
+    },
+    {
+      "id": "111480",
+      "year": "2023",
+      "title": "Q&A: Photo Picker",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111480/",
+      "dataFile": "videos/2023-111480.json"
+    },
+    {
+      "id": "111479",
+      "year": "2023",
+      "title": "Q&A: PhotoKit",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111479/",
+      "dataFile": "videos/2023-111479.json"
+    },
+    {
       "id": "10137",
       "year": "2023",
       "title": "Support Cinematic mode videos in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -264,7 +478,8 @@
       "title": "What’s new in ScreenCaptureKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -277,7 +492,8 @@
       "year": "2022",
       "title": "Add Live Text interaction to your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -290,7 +506,8 @@
       "year": "2022",
       "title": "Bring Continuity Camera to your macOS app",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -371,7 +588,9 @@
       "title": "Display EDR content with Core Image, Metal, and SwiftUI",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -385,7 +604,9 @@
       "title": "Display HDR video in EDR with AVFoundation and Metal",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -399,7 +620,9 @@
       "title": "Explore EDR on iOS",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -408,11 +631,104 @@
       "dataFile": "videos/2022-10113.json"
     },
     {
+      "id": "110961",
+      "year": "2022",
+      "title": "Meet the Presenter: Bring Continuity Camera to your macOS app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110961/",
+      "dataFile": "videos/2022-110961.json"
+    },
+    {
+      "id": "110964",
+      "year": "2022",
+      "title": "Meet the Presenter: Create camera extensions with CoreMediaIO",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110964/",
+      "dataFile": "videos/2022-110964.json"
+    },
+    {
+      "id": "110962",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover advancements in iOS camera capture",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110962/",
+      "dataFile": "videos/2022-110962.json"
+    },
+    {
+      "id": "110959",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110959/",
+      "dataFile": "videos/2022-110959.json"
+    },
+    {
+      "id": "110960",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110960/",
+      "dataFile": "videos/2022-110960.json"
+    },
+    {
+      "id": "110954",
+      "year": "2022",
+      "title": "Q&A: Core Image",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110954/",
+      "dataFile": "videos/2022-110954.json"
+    },
+    {
+      "id": "110913",
+      "year": "2022",
+      "title": "Q&A: Photos and PhotoKit",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110913/",
+      "dataFile": "videos/2022-110913.json"
+    },
+    {
       "id": "10023",
       "year": "2022",
       "title": "What's new in the Photos picker",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -440,7 +756,8 @@
       "year": "2021",
       "title": "Capture and process ProRAW images",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -467,7 +784,8 @@
       "title": "Explore Core Image kernel improvements",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -481,7 +799,8 @@
       "title": "Explore HDR rendering with EDR",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -494,7 +813,8 @@
       "year": "2021",
       "title": "Explore low-latency video encoding with VideoToolbox",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -548,7 +868,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -562,7 +883,8 @@
       "title": "Capture and stream apps on the Mac with ReplayKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -577,7 +899,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -636,7 +959,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,

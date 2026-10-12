@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding Shortcuts for Wind Down",
         "url": "https://developer.apple.com/documentation/SiriKit/adding-shortcuts-for-wind-down"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10083/3/0A7396FB-7C58-496C-BB03-C3FC6F95A070/wwdc2020_10083_hd.mp4?dl=1",
@@ -108,5 +93,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10068"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:47.113Z"
+  "extractedAt": "2026-10-11T16:46:35.649Z"
 }

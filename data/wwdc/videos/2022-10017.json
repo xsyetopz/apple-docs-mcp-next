@@ -73,14 +73,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core ML",
-        "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
         "title": "Core ML Tools PyTorch Conversion Documentation",
         "url": "https://coremltools.readme.io/docs/pytorch-conversion"
       },
@@ -89,16 +81,8 @@
         "url": "https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core ML",
+        "url": "https://developer.apple.com/documentation/CoreML"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10017/3/6F4C9F52-725A-4AD2-83BD-A3D43D29A914/downloads/wwdc2022-10017_hd.mp4?dl=1",
@@ -124,10 +108,22 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10114"
     },
     {
+      "id": "110907",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore the machine learning developer experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110907"
+    },
+    {
       "id": "10027",
       "year": "2022",
       "title": "Optimize your Core ML usage",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10027"
+    },
+    {
+      "id": "110903",
+      "year": "2022",
+      "title": "Q&A: Core ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110903"
     },
     {
       "id": "10153",
@@ -136,5 +132,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10153"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:27.065Z"
+  "extractedAt": "2026-10-11T16:42:06.418Z"
 }

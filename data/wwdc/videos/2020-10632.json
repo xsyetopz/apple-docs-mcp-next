@@ -55,28 +55,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Learn more about Apple Silicon",
         "url": "https://developer.apple.com/documentation/apple-silicon"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10632/7/9639690B-2E3B-4B2D-A211-879DBACDE84E/wwdc2020_10632_hd.mp4?dl=1",
@@ -132,5 +116,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10214"
     }
   ],
-  "extractedAt": "2025-07-18T10:33:37.804Z"
+  "extractedAt": "2026-10-11T16:45:35.497Z"
 }

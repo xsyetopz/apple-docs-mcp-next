@@ -1,0 +1,32 @@
+{
+  "id": "110825",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110825/",
+  "title": "Q&A: Apple Music",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video",
+    "Safari & Web"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110347",
+      "year": "2022",
+      "title": "Explore more content with MusicKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110347"
+    },
+    {
+      "id": "10148",
+      "year": "2022",
+      "title": "Meet Apple Music API and MusicKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10148"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:42.760Z"
+}

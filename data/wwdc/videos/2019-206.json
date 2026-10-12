@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: SF Symbols",
         "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Apple Design Site",
+        "url": "https://developer.apple.com/design/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/206u451oe8jmzj52/206/206_hd_introducing_sf_symbols.mp4?dl=1",
@@ -72,6 +61,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10175"
     },
     {
+      "id": "201",
+      "year": "2019",
+      "title": "Accessibility Lessons",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/201"
+    },
+    {
       "id": "403",
       "year": "2019",
       "title": "Creating Great Localized Experiences with Xcode 11",
@@ -84,11 +79,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/227"
     },
     {
+      "id": "801",
+      "year": "2019",
+      "title": "What’s New in iOS and macOS Design",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/801"
+    },
+    {
       "id": "823",
       "year": "2017",
       "title": "Designing Glyphs",
       "url": "https://developer.apple.com/videos/play/wwdc2017/823"
     }
   ],
-  "extractedAt": "2025-07-18T09:38:06.074Z"
+  "extractedAt": "2026-10-11T16:46:54.776Z"
 }

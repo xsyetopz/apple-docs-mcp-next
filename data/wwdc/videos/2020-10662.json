@@ -25,14 +25,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Apple Pay",
-        "url": "https://developer.apple.com/documentation/passkit/apple_pay"
-      },
-      {
         "title": "Apple Pay on the Web",
         "url": "https://developer.apple.com/documentation/apple_pay_on_the_web"
       },
@@ -41,16 +33,8 @@
         "url": "https://developer.apple.com/documentation/PassKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Apple Pay",
+        "url": "https://developer.apple.com/documentation/passkit/apple_pay"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10662/10/5BB96234-A10B-43DF-9223-A782EE855E87/wwdc2020_10662_hd.mp4?dl=1",
@@ -76,5 +60,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10174"
     }
   ],
-  "extractedAt": "2025-07-18T09:17:09.672Z"
+  "extractedAt": "2026-10-11T16:45:39.978Z"
 }

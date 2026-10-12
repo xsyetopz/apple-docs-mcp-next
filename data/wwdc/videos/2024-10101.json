@@ -38,8 +38,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Implementing object tracking in your app",
+        "url": "https://developer.apple.com/documentation/visionOS/implementing-object-tracking-in-your-app"
       },
       {
         "title": "Exploring object tracking with ARKit",
@@ -48,22 +48,6 @@
       {
         "title": "Forum: Spatial Computing",
         "url": "https://developer.apple.com/forums/topics/spatial-computing?cid=vf-a-0010"
-      },
-      {
-        "title": "Implementing object tracking in your visionOS app",
-        "url": "https://developer.apple.com/documentation/visionOS/implementing-object-tracking-in-your-visionOS-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10101/4/6F54068C-B055-45B1-97A0-89AA6CFBDDD5/downloads/wwdc2024-10101_hd.mp4?dl=1",
@@ -101,5 +85,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10191"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:30.230Z"
+  "extractedAt": "2026-10-11T16:34:43.918Z"
 }

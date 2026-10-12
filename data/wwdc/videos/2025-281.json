@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Displaying static and interactive snippets",
         "url": "https://developer.apple.com/documentation/AppIntents/displaying-static-and-interactive-snippets"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/281/4/b85a7a8d-4835-4c00-b931-c7a7bdec6dd3/downloads/wwdc2025-281_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/281/4/b85a7a8d-4835-4c00-b931-c7a7bdec6dd3/downloads/wwdc2025-281_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:34:50.294Z"
+  "extractedAt": "2026-10-11T16:33:29.136Z"
 }

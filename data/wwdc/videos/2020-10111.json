@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10111/5/4F35F04B-7EDA-43C3-84B5-C05765126AD4/wwdc2020_10111_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10111/5/4F35F04B-7EDA-43C3-84B5-C05765126AD4/wwdc2020_10111_sd.mp4?dl=1"
   },
@@ -60,7 +43,13 @@
       "year": "2018",
       "title": "Introducing Network.framework: A modern alternative to Sockets",
       "url": "https://developer.apple.com/videos/play/wwdc2018/715"
+    },
+    {
+      "id": "714",
+      "year": "2018",
+      "title": "Optimizing Your App for Today’s Internet",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/714"
     }
   ],
-  "extractedAt": "2025-07-18T11:03:32.631Z"
+  "extractedAt": "2026-10-11T16:46:01.053Z"
 }

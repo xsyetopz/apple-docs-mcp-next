@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -37,8 +38,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Creating a photogrammetry command-line app",
+        "url": "https://developer.apple.com/documentation/RealityKit/creating-a-photogrammetry-command-line-app"
       },
       {
         "title": "Capturing photographs for RealityKit Object Capture",
@@ -49,14 +50,6 @@
         "url": "https://developer.apple.com/documentation/RealityKit/creating-3d-objects-from-photographs"
       },
       {
-        "title": "Creating a Photogrammetry Command-Line App",
-        "url": "https://developer.apple.com/documentation/realitykit/creating_a_photogrammetry_command-line_app"
-      },
-      {
-        "title": "Explore the RealityKit Developer Forums",
-        "url": "https://developer.apple.com/forums/tags/realitykit"
-      },
-      {
         "title": "PhotogrammetrySample",
         "url": "https://developer.apple.com/documentation/RealityKit/PhotogrammetrySample"
       },
@@ -65,20 +58,8 @@
         "url": "https://developer.apple.com/documentation/RealityKit/PhotogrammetrySession"
       },
       {
-        "title": "Taking Pictures for 3D Object Capture",
-        "url": "https://developer.apple.com/documentation/realitykit/taking_pictures_for_3d_object_capture"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Explore the RealityKit Developer Forums",
+        "url": "https://developer.apple.com/forums/tags/realitykit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10076/9/616F3DCB-8F4E-4C91-924E-6DB20B3D2A27/downloads/wwdc2021-10076_hd.mp4?dl=1",
@@ -108,13 +89,7 @@
       "year": "2021",
       "title": "Create 3D workflows with USD",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10077"
-    },
-    {
-      "id": "10321",
-      "year": "2021",
-      "title": "Monday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10321"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:30.085Z"
+  "extractedAt": "2026-10-11T16:42:27.105Z"
 }

@@ -17,48 +17,28 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "App Store Server API",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI"
-      },
-      {
-        "title": "App Store Server Notifications",
-        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
-      },
-      {
-        "title": "consumptionRequestReason",
-        "url": "https://developer.apple.com/documentation/AppStoreServerNotifications/consumptionRequestReason"
-      },
-      {
-        "title": "currency",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/currency"
-      },
-      {
-        "title": "Forum: App Store Distribution & Marketing",
-        "url": "https://developer.apple.com/forums/topics/app-store-distribution-and-marketing?cid=vf-a-0010"
-      },
-      {
-        "title": "Get Transaction History",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Get-Transaction-History"
+        "title": "renewalPrice",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice"
       },
       {
         "title": "offerDiscountType",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/offerDiscountType"
       },
       {
+        "title": "currency",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/currency"
+      },
+      {
         "title": "price",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/price"
       },
       {
-        "title": "refundPreference",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/refundPreference"
+        "title": "consumptionRequestReason",
+        "url": "https://developer.apple.com/documentation/AppStoreServerNotifications/consumptionRequestReason"
       },
       {
-        "title": "renewalPrice",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice"
+        "title": "refundPreference",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/refundPreference"
       },
       {
         "title": "Send Consumption Information",
@@ -69,16 +49,20 @@
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Forum: App Store Distribution & Marketing",
+        "url": "https://developer.apple.com/forums/topics/app-store-distribution-and-marketing?cid=vf-a-0010"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Get Transaction History",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Get-Transaction-History"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Store Server API",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI"
+      },
+      {
+        "title": "App Store Server Notifications",
+        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10062/4/1FA107E6-CAC2-4A88-978C-59A194F8B613/downloads/wwdc2024-10062_hd.mp4?dl=1",
@@ -122,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10040"
     }
   ],
-  "extractedAt": "2025-07-18T09:18:56.546Z"
+  "extractedAt": "2026-10-11T16:35:35.682Z"
 }

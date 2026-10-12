@@ -2,11 +2,11 @@
  * WWDC video list extractor
  */
 
-import { JSDOM } from 'jsdom';
-import { httpClient } from '../../utils/http-client.js';
-import { logger } from '../../utils/logger.js';
-import { WWDC_URLS } from '../../utils/constants.js';
-import type { VideoListItem } from '../../types/wwdc.js';
+import { JSDOM } from "jsdom";
+import type { VideoListItem } from "../../types/wwdc.ts";
+import { WWDC_URLS } from "../../utils/constants.ts";
+import { httpClient } from "../../utils/http-client.ts";
+import { logger } from "../../utils/logger.ts";
 
 /**
  * Extract all WWDC video list for specified year
@@ -28,7 +28,7 @@ export async function extractVideoList(year: string): Promise<VideoListItem[]> {
       '.video-card, .collection-item, article[data-video-id], a[href*="/videos/play/"]',
     );
 
-    videoElements.forEach(element => {
+    videoElements.forEach((element) => {
       const video = extractVideoFromElement(element, year);
       if (video && !uniqueVideos.has(video.id)) {
         uniqueVideos.set(video.id, video);
@@ -37,17 +37,21 @@ export async function extractVideoList(year: string): Promise<VideoListItem[]> {
 
     // If first method found nothing, try alternative selectors
     if (uniqueVideos.size === 0) {
-      logger.warn('No videos found with primary selectors, trying alternative method');
+      logger.warn(
+        "No videos found with primary selectors, trying alternative method",
+      );
 
       // Find all video links
-      const videoLinks = document.querySelectorAll(`a[href*="/videos/play/wwdc${year}/"]`);
+      const videoLinks = document.querySelectorAll(
+        `a[href*="/videos/play/wwdc${year}/"]`,
+      );
 
-      videoLinks.forEach(link => {
-        const href = link.getAttribute('href') || '';
+      videoLinks.forEach((link) => {
+        const href = link.getAttribute("href") || "";
         const match = href.match(/\/videos\/play\/wwdc\d+\/(\d+)\/?/);
 
         if (match) {
-          const id = match[1];
+          const id = match[1] ?? "";
           if (!uniqueVideos.has(id)) {
             const title = extractTitleFromLink(link);
             const url = WWDC_URLS.getVideoUrl(year, id);
@@ -67,30 +71,32 @@ export async function extractVideoList(year: string): Promise<VideoListItem[]> {
     const videos = Array.from(uniqueVideos.values());
     logger.info(`Found ${videos.length} videos for WWDC${year}`);
     return videos;
-
   } catch (error) {
     logger.error(`Failed to extract video list for WWDC${year}:`, error);
-    throw new Error(`Failed to extract video list for WWDC${year}: ${error instanceof Error ? error.message : String(error)}`);
+    throw new Error(
+      `Failed to extract video list for WWDC${year}: ${error instanceof Error ? error.message : String(error)}`,
+      { cause: error },
+    );
   }
 }
 
 /**
  * Extract video information from element
  */
-function extractVideoFromElement(element: Element, year: string): VideoListItem | null {
-  // Extract video ID
-  let id: string | null = null;
-
-  // Get from data attribute
-  id = element.getAttribute('data-video-id');
+function extractVideoFromElement(
+  element: Element,
+  year: string,
+): VideoListItem | null {
+  // Extract video ID, first from the data attribute
+  let id = element.getAttribute("data-video-id");
 
   // Get from link
   if (!id) {
     const link = element.querySelector('a[href*="/videos/play/"]') || element;
-    const href = link.getAttribute('href') || '';
+    const href = link.getAttribute("href") || "";
     const match = href.match(/\/videos\/play\/wwdc\d+\/(\d+)\/?/);
     if (match) {
-      id = match[1];
+      id = match[1] ?? null;
     }
   }
 
@@ -124,11 +130,11 @@ function extractVideoFromElement(element: Element, year: string): VideoListItem 
  */
 function extractTitle(element: Element): string {
   const selectors = [
-    '.video-title',
-    '.item-title',
-    'h2',
-    'h3',
-    'h4',
+    ".video-title",
+    ".item-title",
+    "h2",
+    "h3",
+    "h4",
     '[itemprop="name"]',
   ];
 
@@ -140,15 +146,15 @@ function extractTitle(element: Element): string {
   }
 
   // Get from image alt attribute
-  const img = element.querySelector('img[alt]');
+  const img = element.querySelector("img[alt]");
   if (img) {
-    const alt = img.getAttribute('alt') || '';
-    if (alt && !alt.toLowerCase().includes('thumbnail')) {
+    const alt = img.getAttribute("alt") || "";
+    if (alt && !alt.toLowerCase().includes("thumbnail")) {
       return alt.trim();
     }
   }
 
-  return 'Untitled';
+  return "Untitled";
 }
 
 /**
@@ -173,7 +179,7 @@ function extractTitleFromLink(link: Element): string {
     return nextSibling.textContent.trim();
   }
 
-  return 'Untitled';
+  return "Untitled";
 }
 
 /**
@@ -181,9 +187,9 @@ function extractTitleFromLink(link: Element): string {
  */
 function extractDuration(element: Element): string {
   const selectors = [
-    '.video-duration',
-    '.duration',
-    '.time',
+    ".video-duration",
+    ".duration",
+    ".time",
     '[itemprop="duration"]',
   ];
 
@@ -198,43 +204,47 @@ function extractDuration(element: Element): string {
     }
   }
 
-  return '';
+  return "";
 }
 
 /**
  * Extract duration from link element
  */
 function extractDurationFromLink(link: Element): string {
-  const parent = link.closest('.video-card, .collection-item, article');
+  const parent = link.closest(".video-card, .collection-item, article");
   if (parent) {
     return extractDuration(parent);
   }
-  return '';
+  return "";
 }
 
 /**
  * Extract thumbnail
  */
 function extractThumbnail(element: Element): string {
-  const img = element.querySelector('img[src*="devimages"], img.thumbnail, img.video-thumbnail');
+  const img = element.querySelector(
+    'img[src*="devimages"], img.thumbnail, img.video-thumbnail',
+  );
   if (img) {
-    const src = img.getAttribute('src') || '';
+    const src = img.getAttribute("src") || "";
     if (src) {
-      return src.startsWith('http') ? src : `${WWDC_URLS.BASE.replace('/videos', '')}${src}`;
+      return src.startsWith("http")
+        ? src
+        : `${WWDC_URLS.BASE.replace("/videos", "")}${src}`;
     }
   }
-  return '';
+  return "";
 }
 
 /**
  * Extract thumbnail from link element
  */
 function extractThumbnailFromLink(link: Element): string {
-  const parent = link.closest('.video-card, .collection-item, article');
+  const parent = link.closest(".video-card, .collection-item, article");
   if (parent) {
     return extractThumbnail(parent);
   }
-  return '';
+  return "";
 }
 
 /**
@@ -242,7 +252,7 @@ function extractThumbnailFromLink(link: Element): string {
  */
 export async function getAvailableYears(): Promise<string[]> {
   const url = WWDC_URLS.BASE;
-  logger.info('Fetching available WWDC years');
+  logger.info("Fetching available WWDC years");
 
   try {
     const response = await httpClient.get(url);
@@ -255,11 +265,11 @@ export async function getAvailableYears(): Promise<string[]> {
     // Find all WWDC links
     const wwdcLinks = document.querySelectorAll('a[href*="/videos/wwdc"]');
 
-    wwdcLinks.forEach(link => {
-      const href = link.getAttribute('href') || '';
+    wwdcLinks.forEach((link) => {
+      const href = link.getAttribute("href") || "";
       const match = href.match(/wwdc(\d{2,4})/);
       if (match) {
-        const year = match[1];
+        const year = match[1] ?? "";
         // Convert 2-digit year to 4-digit
         const fullYear = year.length === 2 ? `20${year}` : year;
         if (!years.includes(fullYear)) {
@@ -269,14 +279,13 @@ export async function getAvailableYears(): Promise<string[]> {
     });
 
     // Sort by year in descending order
-    years.sort((a, b) => parseInt(b) - parseInt(a));
+    years.sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
 
-    logger.info(`Found ${years.length} WWDC years: ${years.join(', ')}`);
+    logger.info(`Found ${years.length} WWDC years: ${years.join(", ")}`);
     return years;
-
   } catch (error) {
-    logger.error('Failed to fetch available years:', error);
+    logger.error("Failed to fetch available years:", error);
     // Return known years as fallback
-    return ['2025', '2024', '2023', '2022', '2021', '2020'];
+    return ["2026", "2025", "2024", "2023", "2022", "2021", "2020"];
   }
 }

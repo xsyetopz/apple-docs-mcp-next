@@ -91,24 +91,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Typography",
         "url": "https://developer.apple.com/design/human-interface-guidelines/typography"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/Building-Apps-with-Dynamic-Type.zip",
@@ -141,5 +125,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/206"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:52.346Z"
+  "extractedAt": "2026-10-11T16:46:38.949Z"
 }

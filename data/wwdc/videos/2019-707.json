@@ -17,8 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Refreshing and Maintaining Your App Using Background Tasks",
+        "url": "https://developer.apple.com/documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks"
       },
       {
         "title": "Background Tasks",
@@ -27,22 +27,6 @@
       {
         "title": "pushRegistry(_:didReceiveIncomingPushWith:for:completion:)",
         "url": "https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didReceiveIncomingPushWith:for:completion:)"
-      },
-      {
-        "title": "Refreshing and Maintaining Your App Using Background Tasks",
-        "url": "https://developer.apple.com/documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/707smbqns2s4u1v49bn/707/707_hd_advances_in_app_background_execution.mp4?dl=1",
@@ -56,5 +40,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/417"
     }
   ],
-  "extractedAt": "2025-07-18T10:17:10.376Z"
+  "extractedAt": "2026-10-11T16:47:11.780Z"
 }

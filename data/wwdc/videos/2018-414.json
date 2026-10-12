@@ -17,36 +17,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Mac OS X Debugging Magic",
+        "url": "https://developer.apple.com/library/archive/technotes/tn2124/_index.html"
       },
       {
         "title": "iOS Debugging Magic",
         "url": "https://developer.apple.com/library/archive/technotes/tn2239/_index.html"
       },
       {
-        "title": "Mac OS X Debugging Magic",
-        "url": "https://developer.apple.com/library/archive/technotes/tn2124/_index.html"
-      },
-      {
-        "title": "Thread Sanitizer",
-        "url": "https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early"
-      },
-      {
         "title": "Understanding and Analyzing Application Crash Reports",
         "url": "https://developer.apple.com/library/archive/technotes/tn2151/_index.html"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Thread Sanitizer",
+        "url": "https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/414djzbkfdpkvf50/414/414_hd_understanding_crashes_and_crash_logs.mp4?dl=1",
@@ -76,7 +60,13 @@
       "year": "2018",
       "title": "iOS Memory Deep Dive",
       "url": "https://developer.apple.com/videos/play/wwdc2018/416"
+    },
+    {
+      "id": "401",
+      "year": "2018",
+      "title": "What's New in Swift",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/401"
     }
   ],
-  "extractedAt": "2025-07-18T10:18:56.608Z"
+  "extractedAt": "2026-10-11T16:48:35.766Z"
 }

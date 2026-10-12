@@ -1,0 +1,37 @@
+{
+  "id": "110661",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110661/",
+  "title": "Meet the Presenter: Boost your performance with MetalFX Upscaling",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Graphics & Games"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10103",
+      "year": "2022",
+      "title": "Boost performance with MetalFX Upscaling",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10103"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:34.806Z"
+}

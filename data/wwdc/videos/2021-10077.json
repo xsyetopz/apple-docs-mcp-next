@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Search forums for USDZ",
         "url": "https://developer.apple.com/forums/tags/usdz"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10077/9/BE748DC5-387D-4E4A-8D9B-05B80B919870/downloads/wwdc2021-10077_hd.mp4?dl=1",
@@ -84,5 +69,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/602"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:55.029Z"
+  "extractedAt": "2026-10-11T16:44:21.346Z"
 }

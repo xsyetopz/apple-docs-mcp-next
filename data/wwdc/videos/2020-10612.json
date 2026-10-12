@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,28 +44,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Creating a game with scene understanding",
-        "url": "https://developer.apple.com/documentation/realitykit/creating_a_game_with_scene_understanding"
+        "url": "https://developer.apple.com/documentation/RealityKit/creating-a-game-with-scene-understanding"
       },
       {
         "title": "RealityKit",
         "url": "https://developer.apple.com/documentation/RealityKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10612/5/1B6C5C51-471E-4D93-9198-4D6B9AAE7D89/wwdc2020_10612_hd.mp4?dl=1",
@@ -102,5 +87,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/603"
     }
   ],
-  "extractedAt": "2025-07-18T10:33:32.596Z"
+  "extractedAt": "2026-10-11T16:44:58.317Z"
 }

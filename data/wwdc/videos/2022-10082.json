@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Improving app responsiveness",
         "url": "https://developer.apple.com/documentation/Xcode/improving-app-responsiveness"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10082/5/31EEEDCE-D908-48E8-AEDA-A40811515F69/downloads/wwdc2022-10082_hd.mp4?dl=1",
@@ -46,6 +30,12 @@
       "year": "2023",
       "title": "Analyze hangs with Instruments",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10248"
+    },
+    {
+      "id": "110926",
+      "year": "2022",
+      "title": "Q&A: Performance, power, and stability",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110926"
     },
     {
       "id": "110350",
@@ -84,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10057"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:15.580Z"
+  "extractedAt": "2026-10-11T16:41:21.825Z"
 }

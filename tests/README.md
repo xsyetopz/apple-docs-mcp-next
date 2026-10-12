@@ -1,83 +1,84 @@
 # Apple Docs MCP Tests
 
-This directory contains comprehensive tests for the Apple Docs MCP server.
+This directory contains the tests for the Apple Docs MCP server.
+They use `bun:test`.
 
 ## Test Structure
 
-```
+```text
 tests/
-├── helpers/                # Test utilities and helpers
-│   └── test-helpers.ts    # Common test data and utility functions
-├── mocks/                 # Mock modules
-│   ├── cache.mock.ts      # Cache system mocks
-│   └── http-client.mock.ts # HTTP client mocks
-├── tools/                 # Unit tests for tools
-│   ├── search-framework-symbols.test.ts
-│   ├── search-parser.test.ts
-│   └── doc-fetcher.test.ts
-├── integration/           # Integration tests
-│   ├── mcp-server.test.ts # MCP server integration tests
-│   └── search.test.ts    # Search functionality tests
-├── e2e/                   # End-to-end tests
-│   └── full-workflow.test.ts
-├── utils/                 # Utility tests
-│   ├── error-handler.test.ts
-│   ├── http-client.test.ts
-│   └── url-converter.test.ts
-├── basic.test.ts          # Basic test suite
-└── setup.ts              # Jest setup file
+├── helpers/                   # Shared test data and utility functions
+│   └── test-helpers.ts
+├── mocks/                     # Mock modules
+│   └── http-client.mock.ts
+├── regression/                # Regression tests for fixed bugs
+│   └── get-apple-doc-content-nesting.test.ts
+├── tools/                     # Tests for each tool, including tools/wwdc
+├── utils/                     # Tests for the utility modules
+├── index.test.ts              # Server tests
+├── response-format.test.ts    # MCP response format tests
+└── setup.ts                   # Preload for every test file
 ```
+
+`tests/setup.ts` is listed in `bunfig.toml` as a preload (`[test] preload`).
+It runs before each test file and sets the global mocks: `fetch`, `console.error`, and the WWDC data folder.
 
 ## Running Tests
 
 ```bash
-# Run all tests
-pnpm test
+# Run all tests (bun test --isolate)
+bun run test
 
-# Run specific test file
-pnpm test tests/tools/search-framework-symbols.test.ts
+# Run one test file
+bun run test tests/utils/http-client.test.ts
 
-# Run tests with coverage
-pnpm test -- --coverage
+# Run with coverage
+bun test --isolate --coverage
 
-# Run tests in watch mode
-pnpm test -- --watch
-
-# Run tests with verbose output
-pnpm test -- --verbose
+# Run in watch mode
+bun test --isolate --watch
 ```
+
+`bun run test` runs each test file in its own isolated module state.
+Module mocks from one file do not leak into another, so keep `--isolate` when you run the suite.
 
 ## Test Coverage Areas
 
 ### 1. Unit Tests
-- **Tool Functions**: Each tool has comprehensive unit tests covering:
+
+- **Tools**: Each tool has tests covering:
   - Normal operation
   - Error handling
   - Edge cases
   - Input validation
   - Cache behavior
+- **Utilities**: Error handling, URL conversion, framework mapping, HTTP client, and WWDC data loading
 
-### 2. Integration Tests
-- **MCP Server**: Tests the server lifecycle and request handling
-- **Tool Integration**: Tests tools working together
+### 2. Server Tests
 
-### 3. End-to-End Tests
-- **Full Workflows**: Tests complete user scenarios
-- **Error Recovery**: Tests error handling and recovery
-- **Performance**: Tests concurrent request handling
+- **MCP Server**: Server lifecycle and request handling (`index.test.ts`)
+- **Response Format**: Every tool returns a well-formed MCP response (`response-format.test.ts`)
+
+### 3. Regression Tests
+
+- **Nested responses**: `getAppleDocContent` must not wrap an MCP response inside another one (`regression/`)
 
 ## Key Test Patterns
 
 ### Mocking
+
 - HTTP requests are mocked to avoid external dependencies
 - Cache is mocked to control test data
-- File system operations are avoided in tests
+- Module mocks use `mock.module` from `bun:test`, and they must be set before the module under test is imported
+- File system operations are avoided in tests, except for the bundled WWDC data test
 
 ### Test Data
-- Consistent test data is defined in `helpers/test-helpers.ts`
+
+- Shared test data is defined in `helpers/test-helpers.ts`
 - Mock responses match actual API response structure
 
 ### Assertions
+
 - Tests verify both success and error paths
 - Response format is validated
 - Edge cases are thoroughly tested
@@ -85,15 +86,16 @@ pnpm test -- --verbose
 ## Adding New Tests
 
 When adding new features:
+
 1. Add unit tests for the core functionality
-2. Update integration tests if the feature affects the MCP interface
-3. Consider adding E2E tests for user-facing features
-4. Ensure all tests pass before committing
+2. Add or update server tests if the feature changes the MCP interface
+3. Add a regression test for each bug you fix, and check that it fails without the fix
+4. Ensure `bun run test` passes before committing
 
 ## Debugging Tests
 
 To debug failing tests:
-1. Run the specific test file with `--verbose`
+
+1. Run the specific test file with `bun run test <path>`
 2. Add `console.log` statements in the test
-3. Use `--detectOpenHandles` to find async issues
-4. Check mock implementations match actual behavior
+3. Check mock implementations match actual behavior

@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Logging",
         "url": "https://developer.apple.com/documentation/os/logging"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/405bjty1j94taqv8ii/405/405_hd_measuring_performance_using_logging.mp4?dl=1",
@@ -52,7 +36,13 @@
       "year": "2018",
       "title": "Creating Custom Instruments",
       "url": "https://developer.apple.com/videos/play/wwdc2018/410"
+    },
+    {
+      "id": "407",
+      "year": "2018",
+      "title": "Practical Approaches to Great App Performance",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/407"
     }
   ],
-  "extractedAt": "2025-07-18T10:18:11.338Z"
+  "extractedAt": "2026-10-11T16:48:26.228Z"
 }

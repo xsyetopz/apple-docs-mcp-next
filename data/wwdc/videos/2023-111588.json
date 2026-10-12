@@ -1,0 +1,25 @@
+{
+  "id": "111588",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111588/",
+  "title": "Meet the presenters: Mix Swift and C++",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Swift"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10172",
+      "year": "2023",
+      "title": "Mix Swift and C++",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10172"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:25.118Z"
+}

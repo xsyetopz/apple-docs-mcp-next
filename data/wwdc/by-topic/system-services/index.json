@@ -1,8 +1,9 @@
 {
   "id": "system-services",
   "name": "System Services",
-  "videoCount": 118,
+  "videoCount": 150,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -16,6 +17,143 @@
     "2015"
   ],
   "videos": [
+    {
+      "id": "319",
+      "year": "2026",
+      "title": "Build with the new Apple Foundation Model on Private Cloud Compute",
+      "topics": [
+        "Machine Learning & AI",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/319/",
+      "dataFile": "videos/2026-319.json"
+    },
+    {
+      "id": "226",
+      "year": "2026",
+      "title": "Create live communication experiences",
+      "topics": [
+        "App Services",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/226/",
+      "dataFile": "videos/2026-226.json"
+    },
+    {
+      "id": "389",
+      "year": "2026",
+      "title": "Discover container machines",
+      "topics": [
+        "Developer Tools",
+        "Swift",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/389/",
+      "dataFile": "videos/2026-389.json"
+    },
+    {
+      "id": "224",
+      "year": "2026",
+      "title": "Expand the capabilities of your Virtualization app",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/224/",
+      "dataFile": "videos/2026-224.json"
+    },
+    {
+      "id": "369",
+      "year": "2026",
+      "title": "Find your accessory with Bluetooth Channel Sounding",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/369/",
+      "dataFile": "videos/2026-369.json"
+    },
+    {
+      "id": "222",
+      "year": "2026",
+      "title": "Meet the new MetricKit",
+      "topics": [
+        "Developer Tools",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/222/",
+      "dataFile": "videos/2026-222.json"
+    },
+    {
+      "id": "8003",
+      "year": "2026",
+      "title": "Power and Performance Group Lab",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8003/",
+      "dataFile": "videos/2026-8003.json"
+    },
+    {
+      "id": "212",
+      "year": "2026",
+      "title": "Rev up your CarPlay app",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/212/",
+      "dataFile": "videos/2026-212.json"
+    },
+    {
+      "id": "310",
+      "year": "2026",
+      "title": "What’s new in Shortcuts",
+      "topics": [
+        "Machine Learning & AI",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/310/",
+      "dataFile": "videos/2026-310.json"
+    },
+    {
+      "id": "209",
+      "year": "2026",
+      "title": "What’s new in Wallet",
+      "topics": [
+        "App Services",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/209/",
+      "dataFile": "videos/2026-209.json"
+    },
     {
       "id": "299",
       "year": "2025",
@@ -37,7 +175,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Graphics & Games"
+        "Graphics & Games",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -103,7 +242,8 @@
       "year": "2025",
       "title": "Profile and optimize power usage in your app",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -130,7 +270,8 @@
       "year": "2025",
       "title": "Turbocharge your app for CarPlay",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -183,7 +324,8 @@
       "year": "2024",
       "title": "Say hello to the next generation of CarPlay design system",
       "topics": [
-        "Design"
+        "Design",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -196,7 +338,9 @@
       "year": "2024",
       "title": "Streamline sign-in with passkey upgrades and credential managers",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -222,7 +366,9 @@
       "year": "2023",
       "title": "Build better document-based apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -261,7 +407,8 @@
       "year": "2023",
       "title": "Discover Calendar and EventKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -275,7 +422,9 @@
       "title": "Get started with privacy manifests",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -297,6 +446,32 @@
       "dataFile": "videos/2023-10025.json"
     },
     {
+      "id": "10330",
+      "year": "2023",
+      "title": "Meet the presenter: What’s new in Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10330/",
+      "dataFile": "videos/2023-10330.json"
+    },
+    {
+      "id": "10338",
+      "year": "2023",
+      "title": "Meet the presenters: Sync to iCloud with CKSyncEngine",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10338/",
+      "dataFile": "videos/2023-10338.json"
+    },
+    {
       "id": "10150",
       "year": "2023",
       "title": "Optimize CarPlay for vehicle systems",
@@ -308,6 +483,99 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2023/10150/",
       "dataFile": "videos/2023-10150.json"
+    },
+    {
+      "id": "111544",
+      "year": "2023",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111544/",
+      "dataFile": "videos/2023-111544.json"
+    },
+    {
+      "id": "10339",
+      "year": "2023",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10339/",
+      "dataFile": "videos/2023-10339.json"
+    },
+    {
+      "id": "111450",
+      "year": "2023",
+      "title": "Q&A: Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111450/",
+      "dataFile": "videos/2023-111450.json"
+    },
+    {
+      "id": "111457",
+      "year": "2023",
+      "title": "Q&A: HomeKit, Matter, and Thread",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111457/",
+      "dataFile": "videos/2023-111457.json"
+    },
+    {
+      "id": "10334",
+      "year": "2023",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10334/",
+      "dataFile": "videos/2023-10334.json"
+    },
+    {
+      "id": "111219",
+      "year": "2023",
+      "title": "Q&A: Networking",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111219/",
+      "dataFile": "videos/2023-111219.json"
+    },
+    {
+      "id": "111220",
+      "year": "2023",
+      "title": "Q&A: Networking",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111220/",
+      "dataFile": "videos/2023-111220.json"
     },
     {
       "id": "10002",
@@ -354,7 +622,9 @@
       "title": "Unleash the UIKit trait system",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -368,7 +638,9 @@
       "title": "Verify app dependencies with digital signatures",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -382,7 +654,9 @@
       "title": "What’s new in AppKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -408,7 +682,9 @@
       "year": "2023",
       "title": "What’s new in UIKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -421,7 +697,9 @@
       "year": "2023",
       "title": "What’s new with text and text interactions",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -434,7 +712,9 @@
       "year": "2022",
       "title": "Add Shared with You to your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -447,7 +727,8 @@
       "year": "2022",
       "title": "Bring your driver to iPad with DriverKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -456,26 +737,12 @@
       "dataFile": "videos/2022-110373.json"
     },
     {
-      "id": "110339",
-      "year": "2022",
-      "title": "Build device-to-device interactions with Network Framework",
-      "topics": [
-        "App Services",
-        "Audio & Video",
-        "Essentials"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2022/110339/",
-      "dataFile": "videos/2022-110339.json"
-    },
-    {
       "id": "10002",
       "year": "2022",
       "title": "Create macOS or Linux virtual machines",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -502,7 +769,9 @@
       "year": "2022",
       "title": "Enhance collaboration experiences with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -556,7 +825,9 @@
       "year": "2022",
       "title": "Explore App Tracking Transparency",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -610,7 +881,9 @@
       "year": "2022",
       "title": "Integrate your custom collaboration app with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -648,6 +921,33 @@
       "dataFile": "videos/2022-10092.json"
     },
     {
+      "id": "110928",
+      "year": "2022",
+      "title": "Meet the Presenter: Evolve your Core Data schema",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110928/",
+      "dataFile": "videos/2022-110928.json"
+    },
+    {
+      "id": "110832",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet CKTool JS",
+      "topics": [
+        "Safari & Web",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110832/",
+      "dataFile": "videos/2022-110832.json"
+    },
+    {
       "id": "10119",
       "year": "2022",
       "title": "Optimize your use of Core Data and CloudKit",
@@ -659,6 +959,103 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10119/",
       "dataFile": "videos/2022-10119.json"
+    },
+    {
+      "id": "110831",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110831/",
+      "dataFile": "videos/2022-110831.json"
+    },
+    {
+      "id": "110834",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110834/",
+      "dataFile": "videos/2022-110834.json"
+    },
+    {
+      "id": "110836",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110836/",
+      "dataFile": "videos/2022-110836.json"
+    },
+    {
+      "id": "110838",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110838/",
+      "dataFile": "videos/2022-110838.json"
+    },
+    {
+      "id": "110540",
+      "year": "2022",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110540/",
+      "dataFile": "videos/2022-110540.json"
+    },
+    {
+      "id": "110916",
+      "year": "2022",
+      "title": "Q&A: Private Access Tokens",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110916/",
+      "dataFile": "videos/2022-110916.json"
+    },
+    {
+      "id": "110813",
+      "year": "2022",
+      "title": "Q&A: Right-to-left",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110813/",
+      "dataFile": "videos/2022-110813.json"
     },
     {
       "id": "10078",
@@ -708,7 +1105,8 @@
       "topics": [
         "App Services",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -748,7 +1146,9 @@
       "year": "2021",
       "title": "Analyze HTTP traffic in Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -761,7 +1161,8 @@
       "year": "2021",
       "title": "Automate CloudKit tests with cktool and declarative schema",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -817,7 +1218,8 @@
       "year": "2021",
       "title": "Create audio drivers with DriverKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -844,7 +1246,9 @@
       "year": "2021",
       "title": "Explore UWB-based car keys",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -910,7 +1314,8 @@
       "year": "2021",
       "title": "Send communication and Time Sensitive notifications",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -938,7 +1343,9 @@
       "title": "Streamline your localized strings",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -951,7 +1358,8 @@
       "year": "2021",
       "title": "Sync files to the cloud with FileProvider on macOS",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1005,7 +1413,9 @@
       "year": "2021",
       "title": "What's new in CloudKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1018,7 +1428,8 @@
       "year": "2021",
       "title": "What's new in Foundation",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1031,7 +1442,10 @@
       "year": "2021",
       "title": "What's new in watchOS 8",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1044,7 +1458,8 @@
       "year": "2020",
       "title": "Advancements in Game Controllers",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1097,7 +1512,9 @@
       "year": "2020",
       "title": "Core Data: Sundries and maxims",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1110,7 +1527,8 @@
       "year": "2020",
       "title": "Create great enterprise apps: A chat with Box's Aaron Levie",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1151,7 +1569,8 @@
       "year": "2020",
       "title": "Explore the new system architecture of Apple silicon Macs",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1363,6 +1782,19 @@
       "dataFile": "videos/2019-722.json"
     },
     {
+      "id": "711",
+      "year": "2019",
+      "title": "Introducing Combine and Advances in Foundation",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/711/",
+      "dataFile": "videos/2019-711.json"
+    },
+    {
       "id": "706",
       "year": "2019",
       "title": "Introducing Sign In with Apple",
@@ -1394,7 +1826,8 @@
       "year": "2019",
       "title": "Streaming Audio on watchOS 6",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1498,6 +1931,20 @@
       "dataFile": "videos/2019-717.json"
     },
     {
+      "id": "224",
+      "year": "2018",
+      "title": "Core Data Best Practices",
+      "topics": [
+        "Developer Tools",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/224/",
+      "dataFile": "videos/2018-224.json"
+    },
+    {
       "id": "715",
       "year": "2018",
       "title": "Introducing Network.framework: A modern alternative to Sockets",
@@ -1511,11 +1958,54 @@
       "dataFile": "videos/2018-715.json"
     },
     {
+      "id": "714",
+      "year": "2018",
+      "title": "Optimizing Your App for Today’s Internet",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/714/",
+      "dataFile": "videos/2018-714.json"
+    },
+    {
+      "id": "701",
+      "year": "2018",
+      "title": "Using Accelerate and simd",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/701/",
+      "dataFile": "videos/2018-701.json"
+    },
+    {
+      "id": "209",
+      "year": "2018",
+      "title": "What's New in Cocoa for macOS",
+      "topics": [
+        "Developer Tools",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/209/",
+      "dataFile": "videos/2018-209.json"
+    },
+    {
       "id": "717",
       "year": "2017",
       "title": "Developing Wireless CarPlay Systems",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1528,7 +2018,9 @@
       "year": "2017",
       "title": "Enabling Your App for CarPlay",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1569,7 +2061,8 @@
       "year": "2016",
       "title": "Developing CarPlay Systems, Part 1",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,

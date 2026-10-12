@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "CloudKit",
-        "url": "https://developer.apple.com/documentation/CloudKit"
-      },
-      {
         "title": "Managing iCloud Containers with CloudKit Database App",
         "url": "https://developer.apple.com/documentation/CloudKit/managing-icloud-containers-with-cloudkit-database-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "CloudKit",
+        "url": "https://developer.apple.com/documentation/CloudKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10115/3/76BE7C00-CB67-4FF0-A159-19D8B091CED3/downloads/wwdc2022-10115_hd.mp4?dl=1",
@@ -52,11 +36,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10116"
     },
     {
+      "id": "110831",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110831"
+    },
+    {
+      "id": "110834",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110834"
+    },
+    {
       "id": "10117",
       "year": "2021",
       "title": "Meet CloudKit Console",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10117"
     }
   ],
-  "extractedAt": "2025-07-18T11:02:21.867Z"
+  "extractedAt": "2026-10-11T16:40:26.972Z"
 }

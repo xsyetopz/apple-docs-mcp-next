@@ -18,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Capturing consistent color images",
         "url": "https://developer.apple.com/documentation/AVFoundation/capturing-consistent-color-images"
       },
       {
         "title": "Forum: Photos & Camera",
         "url": "https://developer.apple.com/forums/topics/media-technologies/photos-and-camera?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10162/4/8F68B3B4-3EF6-4291-8940-FC4AD3151DAC/downloads/wwdc2024-10162_hd.mp4?dl=1",
@@ -71,5 +55,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10146"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:41.660Z"
+  "extractedAt": "2026-10-11T16:35:36.856Z"
 }

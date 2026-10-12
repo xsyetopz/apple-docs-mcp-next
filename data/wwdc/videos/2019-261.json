@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,26 +16,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/261p8np41tos4h2/261/261_hd_large_content_viewer_ensuring_readability_for_everyone.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/261p8np41tos4h2/261/261_sd_large_content_viewer_ensuring_readability_for_everyone.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:09:34.731Z"
+  "extractedAt": "2026-10-11T16:47:03.947Z"
 }

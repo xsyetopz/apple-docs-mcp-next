@@ -68,36 +68,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Bringing multiple windows to your SwiftUI app",
-        "url": "https://developer.apple.com/documentation/swiftui/bringing_multiple_windows_to_your_swiftui_app"
+        "title": "Visualizing HealthKit State of Mind in visionOS",
+        "url": "https://developer.apple.com/documentation/HealthKit/visualizing-healthkit-state-of-mind-in-visionos"
       },
       {
         "title": "Forum: Health & Fitness",
         "url": "https://developer.apple.com/forums/topics/health-and-fitness?cid=vf-a-0010"
       },
       {
+        "title": "Bringing multiple windows to your SwiftUI app",
+        "url": "https://developer.apple.com/documentation/SwiftUI/bringing-multiple-windows-to-your-swiftui-app"
+      },
+      {
         "title": "HealthKit",
         "url": "https://developer.apple.com/documentation/HealthKit"
-      },
-      {
-        "title": "Visualizing HealthKit State of Mind in visionOS",
-        "url": "https://developer.apple.com/documentation/HealthKit/visualizing-healthkit-state-of-mind-in-visionos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10083/4/3EDC61A5-EEBF-48EB-9CB9-9AC6F587005E/downloads/wwdc2024-10083_hd.mp4?dl=1",
@@ -123,5 +107,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10664"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:40.088Z"
+  "extractedAt": "2026-10-11T16:35:36.444Z"
 }

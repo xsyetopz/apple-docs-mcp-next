@@ -43,28 +43,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Clips",
         "url": "https://developer.apple.com/documentation/AppClip"
       },
       {
         "title": "Human Interface Guidelines: App Clips",
         "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10178/4/9DD6B041-9DA7-4F78-82A1-B2E17AFA61CB/downloads/wwdc2023-10178_hd.mp4?dl=1",
@@ -72,11 +56,17 @@
   },
   "relatedVideos": [
     {
+      "id": "111234",
+      "year": "2023",
+      "title": "Q&A: App Clips",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111234"
+    },
+    {
       "id": "10146",
       "year": "2020",
       "title": "Configure and link your App Clips",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10146"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:58.199Z"
+  "extractedAt": "2026-10-11T16:37:14.902Z"
 }

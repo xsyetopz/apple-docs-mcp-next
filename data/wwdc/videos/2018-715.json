@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Implementing netcat with Network Framework",
         "url": "https://developer.apple.com/documentation/Network/implementing-netcat-with-network-framework"
-      },
-      {
-        "title": "Supporting IPv6 DNS64/NAT64 Networks",
-        "url": "https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#//apple_ref/doc/uid/TP40010220-CH213-SW1"
       },
       {
         "title": "URLSession",
         "url": "https://developer.apple.com/documentation/Foundation/URLSession"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Supporting IPv6 DNS64/NAT64 Networks",
+        "url": "https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#//apple_ref/doc/uid/TP40010220-CH213-SW1"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/715o2fzpdzzzf5f0/715/715_hd_introducing_networkframework_a_modern_alternative_to_sockets.mp4?dl=1",
@@ -50,10 +34,10 @@
   },
   "relatedVideos": [
     {
-      "id": "705",
-      "year": "2013",
-      "title": "WWDC2013 - What's New in Foundation Networking",
-      "url": "https://developer.apple.com/videos/play/wwdc2013/705/"
+      "id": "711",
+      "year": "2015",
+      "title": "WWDC2015 - Networking with NSURLSession",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/711/"
     },
     {
       "id": "707",
@@ -62,10 +46,10 @@
       "url": "https://developer.apple.com/videos/play/wwdc2014/707/"
     },
     {
-      "id": "711",
-      "year": "2015",
-      "title": "WWDC2015 - Networking with NSURLSession",
-      "url": "https://developer.apple.com/videos/play/wwdc2015/711/"
+      "id": "705",
+      "year": "2013",
+      "title": "WWDC2013 - What's New in Foundation Networking",
+      "url": "https://developer.apple.com/videos/play/wwdc2013/705/"
     },
     {
       "id": "10239",
@@ -78,7 +62,13 @@
       "year": "2020",
       "title": "Boost performance and security with modern networking",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10111"
+    },
+    {
+      "id": "714",
+      "year": "2018",
+      "title": "Optimizing Your App for Today’s Internet",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/714"
     }
   ],
-  "extractedAt": "2025-07-18T11:04:35.655Z"
+  "extractedAt": "2026-10-11T16:48:30.920Z"
 }

@@ -38,28 +38,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accelerate",
-        "url": "https://developer.apple.com/documentation/Accelerate"
-      },
-      {
         "title": "Encrypting and Decrypting Directories",
         "url": "https://developer.apple.com/documentation/AppleArchive/encrypting-and-decrypting-directories"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accelerate",
+        "url": "https://developer.apple.com/documentation/Accelerate"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10233/4/72F4F22E-DDAB-4A58-B049-7AC537198EFC/downloads/wwdc2021-10233_hd.mp4?dl=1",
@@ -73,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/718"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:39.737Z"
+  "extractedAt": "2026-10-11T16:44:28.005Z"
 }

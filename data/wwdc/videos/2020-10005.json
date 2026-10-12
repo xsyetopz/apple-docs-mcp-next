@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "Privacy & Security"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,24 +26,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Automatic Assessment Configuration",
         "url": "https://developer.apple.com/documentation/AutomaticAssessmentConfiguration"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10005/3/50CEFA81-2D73-4ACC-B274-399608A1BAAF/wwdc2020_10005_hd.mp4?dl=1",
@@ -56,5 +41,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10658"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:27.359Z"
+  "extractedAt": "2026-10-11T16:45:39.171Z"
 }

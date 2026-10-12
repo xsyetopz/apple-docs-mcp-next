@@ -109,24 +109,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Performance and metrics",
         "url": "https://developer.apple.com/documentation/Xcode/performance-and-metrics"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/312/4/ae42066d-6af2-4371-bf68-81a81ddef963/downloads/wwdc2025-312_hd.mp4?dl=1",
@@ -158,5 +142,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10217"
     }
   ],
-  "extractedAt": "2025-07-18T10:46:03.416Z"
+  "extractedAt": "2026-10-11T16:33:42.678Z"
 }

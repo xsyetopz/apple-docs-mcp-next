@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,32 +50,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accessing Calendar using EventKit and EventKitUI",
         "url": "https://developer.apple.com/documentation/EventKit/accessing-calendar-using-eventkit-and-eventkitui"
-      },
-      {
-        "title": "EventKit",
-        "url": "https://developer.apple.com/documentation/EventKit"
       },
       {
         "title": "Explore the Human Interface Guidelines for privacy",
         "url": "https://developer.apple.com/design/human-interface-guidelines/privacy"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "EventKit",
+        "url": "https://developer.apple.com/documentation/EventKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10052/5/B5C95345-FDF4-40FF-AFFB-350DD26BED61/downloads/wwdc2023-10052_hd.mp4?dl=1",
@@ -94,5 +79,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10197"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:52.666Z"
+  "extractedAt": "2026-10-11T16:37:04.326Z"
 }

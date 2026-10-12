@@ -1,0 +1,38 @@
+{
+  "id": "110395",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110395/",
+  "title": "Q&A: SwiftUI and UI Frameworks",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Essentials",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10075",
+      "year": "2022",
+      "title": "Use SwiftUI with AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10075"
+    },
+    {
+      "id": "10072",
+      "year": "2022",
+      "title": "Use SwiftUI with UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10072"
+    },
+    {
+      "id": "10068",
+      "year": "2022",
+      "title": "What's new in UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10068"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:18.727Z"
+}

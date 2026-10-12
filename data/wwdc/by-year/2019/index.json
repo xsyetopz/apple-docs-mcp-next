@@ -1,6 +1,6 @@
 {
   "year": "2019",
-  "videoCount": 153,
+  "videoCount": 159,
   "topics": [
     "Accessibility & Inclusion",
     "App Services",
@@ -28,7 +28,8 @@
       "year": "2019",
       "title": "Accessibility in SwiftUI",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -42,7 +43,8 @@
       "title": "Accessibility Inspector",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -51,11 +53,28 @@
       "dataFile": "videos/2019-257.json"
     },
     {
+      "id": "201",
+      "year": "2019",
+      "title": "Accessibility Lessons",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/201/",
+      "dataFile": "videos/2019-201.json"
+    },
+    {
       "id": "241",
       "year": "2019",
       "title": "Adding Indoor Maps to your App and Website",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -68,7 +87,8 @@
       "year": "2019",
       "title": "Adopting Swift Packages in Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -212,7 +232,8 @@
       "year": "2019",
       "title": "Advances in Speech Recognition",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -319,7 +340,8 @@
       "year": "2019",
       "title": "Binary Frameworks in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -454,7 +476,8 @@
       "year": "2019",
       "title": "Core ML 3 Framework",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -476,11 +499,40 @@
       "dataFile": "videos/2019-715.json"
     },
     {
+      "id": "407",
+      "year": "2019",
+      "title": "Create ML for Activity, Text, and Recommendations",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/407/",
+      "dataFile": "videos/2019-407.json"
+    },
+    {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406/",
+      "dataFile": "videos/2019-406.json"
+    },
+    {
       "id": "248",
       "year": "2019",
       "title": "Creating an Accessible Reading Experience",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -572,7 +624,8 @@
       "year": "2019",
       "title": "Debugging in Xcode 11",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -598,7 +651,8 @@
       "year": "2019",
       "title": "Delivering Optimized Metal Apps and Games",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -624,7 +678,8 @@
       "year": "2019",
       "title": "Designing Award Winning Apps and Games",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -663,7 +718,8 @@
       "year": "2019",
       "title": "Designing Great ML Experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -730,7 +786,8 @@
       "title": "Expanding the Sensory Experience with Core Haptics",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -817,11 +874,25 @@
       "dataFile": "videos/2019-404.json"
     },
     {
+      "id": "242",
+      "year": "2019",
+      "title": "Getting the Most out of Multitasking",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/242/",
+      "dataFile": "videos/2019-242.json"
+    },
+    {
       "id": "418",
       "year": "2019",
       "title": "Getting the Most Out of Simulator",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -835,7 +906,8 @@
       "title": "Great Developer Habits",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -976,6 +1048,19 @@
       "dataFile": "videos/2019-722.json"
     },
     {
+      "id": "711",
+      "year": "2019",
+      "title": "Introducing Combine and Advances in Foundation",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/711/",
+      "dataFile": "videos/2019-711.json"
+    },
+    {
       "id": "520",
       "year": "2019",
       "title": "Introducing Core Haptics",
@@ -1113,7 +1198,8 @@
       "year": "2019",
       "title": "Introducing SF Symbols",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1167,7 +1253,8 @@
       "year": "2019",
       "title": "Introducing the Create ML App",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1180,7 +1267,10 @@
       "year": "2019",
       "title": "Introducing the Indoor Maps Program",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1197,7 +1287,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2019/101/",
       "dataFile": "videos/2019-101.json"
     },
@@ -1206,7 +1296,8 @@
       "year": "2019",
       "title": "Large Content Viewer - Ensuring Readability for Everyone",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1232,7 +1323,8 @@
       "year": "2019",
       "title": "Making Apps More Accessible With Custom Actions",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1259,7 +1351,8 @@
       "title": "Mastering the Living Room With tvOS",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1272,7 +1365,8 @@
       "year": "2019",
       "title": "Mastering Xcode Previews",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1299,7 +1393,8 @@
       "year": "2019",
       "title": "Metal for Pro Apps",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1338,7 +1433,8 @@
       "year": "2019",
       "title": "Modern Swift API Design",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -1469,7 +1565,8 @@
       "year": "2019",
       "title": "Streaming Audio on watchOS 6",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1733,7 +1830,8 @@
       "title": "Visual Design and Accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1887,6 +1985,19 @@
       "dataFile": "videos/2019-719.json"
     },
     {
+      "id": "801",
+      "year": "2019",
+      "title": "What’s New in iOS and macOS Design",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/801/",
+      "dataFile": "videos/2019-801.json"
+    },
+    {
       "id": "808",
       "year": "2019",
       "title": "What's New in iOS Design",
@@ -1904,7 +2015,8 @@
       "year": "2019",
       "title": "What's New in Machine Learning",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1931,7 +2043,10 @@
       "year": "2019",
       "title": "What’s New in MapKit and MapKit JS",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2037,7 +2152,8 @@
       "year": "2019",
       "title": "Writing Great Accessibility Labels",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -55,8 +56,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Creating an Action Classifier Model",
+        "url": "https://developer.apple.com/documentation/CreateML/creating-an-action-classifier-model"
       },
       {
         "title": "Building a feature-rich app for sports analysis",
@@ -65,22 +66,6 @@
       {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
-      },
-      {
-        "title": "Creating an Action Classifier Model",
-        "url": "https://developer.apple.com/documentation/CreateML/creating-an-action-classifier-model"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10043/3/D1F0FA14-5265-4AB7-9D8D-118CA6F3E162/wwdc2020_10043_hd.mp4?dl=1",
@@ -124,5 +109,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/430"
     }
   ],
-  "extractedAt": "2025-07-18T10:15:18.899Z"
+  "extractedAt": "2026-10-11T16:44:44.192Z"
 }

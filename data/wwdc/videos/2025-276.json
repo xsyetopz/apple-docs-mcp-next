@@ -61,8 +61,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "vImage.PixelBuffer",
+        "url": "https://developer.apple.com/documentation/Accelerate/vImage/PixelBuffer"
       },
       {
         "title": "BNNS",
@@ -71,22 +71,6 @@
       {
         "title": "Supporting real-time ML inference on the CPU",
         "url": "https://developer.apple.com/documentation/Accelerate/supporting-real-time-ml-inference-on-the-cpu"
-      },
-      {
-        "title": "vImage.PixelBuffer",
-        "url": "https://developer.apple.com/documentation/Accelerate/vImage/PixelBuffer"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/276/4/68973e7e-a4db-44eb-9c9f-f90f3dde4a75/downloads/wwdc2025-276_hd.mp4?dl=1",
@@ -106,5 +90,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10211"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:52.008Z"
+  "extractedAt": "2026-10-11T16:34:25.770Z"
 }

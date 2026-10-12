@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accelerating ray tracing and motion blur using Metal",
         "url": "https://developer.apple.com/documentation/Metal/accelerating-ray-tracing-and-motion-blur-using-metal"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
       },
       {
         "title": "Metal Performance Shaders",
         "url": "https://developer.apple.com/documentation/MetalPerformanceShaders"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/613vjxxrkq20jn/613/613_hd_ray_tracing_with_metal.mp4?dl=1",
@@ -80,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/601"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:15.325Z"
+  "extractedAt": "2026-10-11T16:48:09.537Z"
 }

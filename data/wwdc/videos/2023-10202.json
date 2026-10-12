@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Diorama",
         "url": "https://developer.apple.com/documentation/visionOS/diorama"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10202/5/7DF5114E-91B3-4A42-AF97-D01AC560E3AB/downloads/wwdc2023-10202_hd.mp4?dl=1",
@@ -78,5 +63,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10273"
     }
   ],
-  "extractedAt": "2025-07-18T10:30:14.654Z"
+  "extractedAt": "2026-10-11T16:37:07.220Z"
 }

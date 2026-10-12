@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,24 +50,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Analyzing the performance of your visionOS app",
         "url": "https://developer.apple.com/documentation/visionOS/analyzing-the-performance-of-your-visionOS-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10099/5/3AFC66A2-7703-40D9-BB5A-874A5091FE1A/downloads/wwdc2023-10099_hd.mp4?dl=1",
@@ -92,6 +77,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10083"
     },
     {
+      "id": "111605",
+      "year": "2023",
+      "title": "Meet the presenters: Meet RealityKit Trace",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111605"
+    },
+    {
       "id": "10100",
       "year": "2023",
       "title": "Optimize app power and performance for spatial computing",
@@ -104,5 +95,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10157"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:27.139Z"
+  "extractedAt": "2026-10-11T16:37:10.727Z"
 }

@@ -61,22 +61,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building a desktop-class iPad app",
-        "url": "https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app"
-      },
-      {
-        "title": "centerItemGroups",
-        "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/centerItemGroups"
-      },
-      {
-        "title": "UICalendarView",
-        "url": "https://developer.apple.com/documentation/UIKit/UICalendarView"
-      },
-      {
         "title": "UINavigationItem.ItemStyle",
         "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/ItemStyle"
       },
@@ -85,16 +69,16 @@
         "url": "https://developer.apple.com/documentation/UIKit/UIPageControl"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "UICalendarView",
+        "url": "https://developer.apple.com/documentation/UIKit/UICalendarView"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "centerItemGroups",
+        "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/centerItemGroups"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Building a desktop-class iPad app",
+        "url": "https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10068/4/CD436E87-CE6B-4E99-A7EA-66C5A424B38B/downloads/wwdc2022-10068_hd.mp4?dl=1",
@@ -132,6 +116,36 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10069"
     },
     {
+      "id": "110833",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110833"
+    },
+    {
+      "id": "110419",
+      "year": "2022",
+      "title": "Q&A: Accessibility in UIKit and AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110419"
+    },
+    {
+      "id": "110395",
+      "year": "2022",
+      "title": "Q&A: SwiftUI and UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110395"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830"
+    },
+    {
       "id": "10072",
       "year": "2022",
       "title": "Use SwiftUI with UIKit",
@@ -162,5 +176,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10063"
     }
   ],
-  "extractedAt": "2025-07-18T10:54:05.151Z"
+  "extractedAt": "2026-10-11T16:39:35.807Z"
 }

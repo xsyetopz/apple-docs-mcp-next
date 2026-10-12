@@ -43,28 +43,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Background Assets",
-        "url": "https://developer.apple.com/documentation/BackgroundAssets"
-      },
-      {
         "title": "NSBundleResourceRequest",
         "url": "https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Background Assets",
+        "url": "https://developer.apple.com/documentation/BackgroundAssets"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110403/3/7B38146A-41F4-422B-A863-6E4277C76C6E/downloads/wwdc2022-110403_hd.mp4?dl=1",
@@ -84,5 +68,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10094"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:20.622Z"
+  "extractedAt": "2026-10-11T16:40:19.881Z"
 }

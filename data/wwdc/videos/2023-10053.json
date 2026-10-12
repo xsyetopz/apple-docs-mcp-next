@@ -26,28 +26,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Sandbox",
         "url": "https://developer.apple.com/documentation/Security/app-sandbox"
       },
       {
-        "title": "Detecting nudity in media and providing intervention options",
+        "title": "Detecting sensitive content in media and providing intervention options",
         "url": "https://developer.apple.com/documentation/SensitiveContentAnalysis/detecting-nudity-in-media-and-providing-intervention-options"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10053/4/8CAD0D27-5BB4-4640-9746-4DCBD46161DF/downloads/wwdc2023-10053_hd.mp4?dl=1",
@@ -121,5 +105,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10047"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:37.601Z"
+  "extractedAt": "2026-10-11T16:37:17.048Z"
 }

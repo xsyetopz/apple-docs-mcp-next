@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -103,20 +104,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Building and improving your app with Mac Catalyst",
+        "url": "https://developer.apple.com/documentation/UIKit/building-and-improving-your-app-with-mac-catalyst"
       },
       {
         "title": "Accessibility design for Mac Catalyst",
         "url": "https://developer.apple.com/documentation/Accessibility/accessibility_design_for_mac_catalyst"
-      },
-      {
-        "title": "Adding Menus and Shortcuts to the Menu Bar and User Interface",
-        "url": "https://developer.apple.com/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
-      },
-      {
-        "title": "Building and improving your app with Mac Catalyst",
-        "url": "https://developer.apple.com/documentation/UIKit/building-and-improving-your-app-with-mac-catalyst"
       },
       {
         "title": "Human Interface Guidelines: Mac Catalyst",
@@ -127,16 +120,8 @@
         "url": "https://developer.apple.com/documentation/UIKit/mac-catalyst"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adding menus and shortcuts to the menu bar and user interface",
+        "url": "https://developer.apple.com/documentation/UIKit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10053/3/2422D003-327B-45A7-95E1-047C49B735B3/downloads/wwdc2021-10053_hd.mp4?dl=1",
@@ -180,5 +165,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10059"
     }
   ],
-  "extractedAt": "2025-07-18T10:26:51.639Z"
+  "extractedAt": "2026-10-11T16:43:31.904Z"
 }

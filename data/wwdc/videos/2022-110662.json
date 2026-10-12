@@ -1,0 +1,50 @@
+{
+  "id": "110662",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110662/",
+  "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video",
+    "Graphics & Games"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "10065",
+      "year": "2022",
+      "title": "Plug-in and play: Add Apple frameworks to your Unity game projects",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10065"
+    },
+    {
+      "id": "110663",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110663"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664"
+    },
+    {
+      "id": "10064",
+      "year": "2022",
+      "title": "Reach new players with Game Center dashboard",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10064"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:29.645Z"
+}

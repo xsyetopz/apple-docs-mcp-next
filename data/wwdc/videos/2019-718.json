@@ -18,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accelerate",
-        "url": "https://developer.apple.com/documentation/Accelerate"
-      },
-      {
         "title": "Signal extraction from noise",
         "url": "https://developer.apple.com/documentation/Accelerate/signal-extraction-from-noise"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accelerate",
+        "url": "https://developer.apple.com/documentation/Accelerate"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/AccelerateSparse.zip",
@@ -52,7 +36,13 @@
       "year": "2021",
       "title": "Use Accelerate to improve performance and incorporate encrypted archives",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10233"
+    },
+    {
+      "id": "701",
+      "year": "2018",
+      "title": "Using Accelerate and simd",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/701"
     }
   ],
-  "extractedAt": "2025-07-18T10:51:04.446Z"
+  "extractedAt": "2026-10-11T16:47:03.201Z"
 }

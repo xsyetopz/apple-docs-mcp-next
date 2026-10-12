@@ -28,7 +28,8 @@
       "year": "2021",
       "title": "Accelerate machine learning with Metal Performance Shaders Graph",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -83,7 +84,8 @@
       "year": "2021",
       "title": "Add intelligence to your widgets",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -96,7 +98,8 @@
       "year": "2021",
       "title": "Add rich graphics to your SwiftUI app",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -136,7 +139,9 @@
       "year": "2021",
       "title": "Analyze HTTP traffic in Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -149,7 +154,8 @@
       "year": "2021",
       "title": "Apple’s privacy pillars in focus",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -163,7 +169,8 @@
       "title": "AR Quick Look, meet Object Capture",
       "topics": [
         "Essentials",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -189,7 +196,8 @@
       "year": "2021",
       "title": "Automate CloudKit tests with cktool and declarative schema",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -243,7 +251,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 1: Setup onboarding",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -256,7 +265,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 2: Schedule tasks",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -269,7 +279,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 3: Visualize progress",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -379,7 +390,9 @@
       "year": "2021",
       "title": "Build Mail app extensions",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -392,7 +405,8 @@
       "year": "2021",
       "title": "Capture and process ProRAW images",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -459,7 +473,8 @@
       "year": "2021",
       "title": "Coordinate media playback in Safari with Group Activities",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -485,7 +500,8 @@
       "year": "2021",
       "title": "Create 3D models with Object Capture",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -498,7 +514,8 @@
       "year": "2021",
       "title": "Create 3D workflows with USD",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -511,7 +528,8 @@
       "year": "2021",
       "title": "Create accessible experiences for watchOS",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -524,7 +542,8 @@
       "year": "2021",
       "title": "Create audio drivers with DriverKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -603,7 +622,8 @@
       "year": "2021",
       "title": "Deliver a great playback experience on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -644,7 +664,8 @@
       "year": "2021",
       "title": "Design for Safari 15",
       "topics": [
-        "Design"
+        "Design",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -657,7 +678,8 @@
       "year": "2021",
       "title": "Design for spatial interaction",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -790,7 +812,8 @@
       "title": "Discover account-driven User Enrollment",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -803,7 +826,8 @@
       "year": "2021",
       "title": "Discover and curate Swift Packages using Collections",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -829,7 +853,9 @@
       "year": "2021",
       "title": "Discover built-in sound classification in SoundAnalysis",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -911,7 +937,8 @@
       "year": "2021",
       "title": "Discover Web Inspector improvements",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -925,7 +952,8 @@
       "title": "Discoverable design",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -952,7 +980,8 @@
       "year": "2021",
       "title": "Dive into RealityKit 2",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1045,7 +1074,8 @@
       "year": "2021",
       "title": "Explore advanced rendering with RealityKit 2",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1058,7 +1088,8 @@
       "year": "2021",
       "title": "Explore ARKit 5",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1085,7 +1116,8 @@
       "title": "Explore Core Image kernel improvements",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1125,7 +1157,8 @@
       "title": "Explore HDR rendering with EDR",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1164,7 +1197,8 @@
       "year": "2021",
       "title": "Explore low-latency video encoding with VideoToolbox",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1191,7 +1225,8 @@
       "year": "2021",
       "title": "Explore Safari Web Extension improvements",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1204,7 +1239,8 @@
       "year": "2021",
       "title": "Explore ShazamKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1244,7 +1280,8 @@
       "title": "Explore the SF Symbols 3 app",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1257,7 +1294,9 @@
       "year": "2021",
       "title": "Explore UWB-based car keys",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1324,7 +1363,8 @@
       "title": "Faster and simpler notarization for Mac apps",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Developer Tools"
+        "Developer Tools",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -1461,7 +1501,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2021/101/",
       "dataFile": "videos/2021-101.json"
     },
@@ -1474,7 +1514,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2021/111/",
       "dataFile": "videos/2021-111.json"
     },
@@ -1484,7 +1524,8 @@
       "title": "Localize your SwiftUI app",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1564,7 +1605,8 @@
       "year": "2021",
       "title": "Meditation for fidgety skeptics",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1697,7 +1739,8 @@
       "year": "2021",
       "title": "Meet privacy-preserving ad attribution",
       "topics": [
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1710,7 +1753,8 @@
       "year": "2021",
       "title": "Meet Safari Web Extensions on iOS",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1778,7 +1822,9 @@
       "year": "2021",
       "title": "Meet the Location Button",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -1792,7 +1838,8 @@
       "title": "Meet the Screen Time API",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -1818,7 +1865,8 @@
       "year": "2021",
       "title": "Meet the UIKit button system",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1956,7 +2004,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2021/112/",
       "dataFile": "videos/2021-112.json"
     },
@@ -1967,7 +2015,8 @@
       "topics": [
         "Audio & Video",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1981,7 +2030,8 @@
       "title": "Principles of great widgets",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2007,7 +2057,8 @@
       "year": "2021",
       "title": "Qualities of a great Mac Catalyst app",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2021,7 +2072,8 @@
       "title": "Qualities of great iPad and iPhone apps on Macs with M1",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2088,7 +2140,8 @@
       "year": "2021",
       "title": "Send communication and Time Sensitive notifications",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2101,7 +2154,8 @@
       "year": "2021",
       "title": "SF Symbols in SwiftUI",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2155,7 +2209,9 @@
       "title": "Streamline your localized strings",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2220,7 +2276,8 @@
       "year": "2021",
       "title": "SwiftUI Accessibility: Beyond the basics",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2233,7 +2290,8 @@
       "year": "2021",
       "title": "SwiftUI on the Mac: Build the fundamentals",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2246,7 +2304,8 @@
       "year": "2021",
       "title": "SwiftUI on the Mac: The finishing touches",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2272,7 +2331,8 @@
       "year": "2021",
       "title": "Sync files to the cloud with FileProvider on macOS",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -2298,7 +2358,8 @@
       "year": "2021",
       "title": "Take your iPad apps to the next level",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2344,7 +2405,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2542,7 +2604,8 @@
       "year": "2021",
       "title": "What's new in AppKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2595,7 +2658,9 @@
       "year": "2021",
       "title": "What's new in CloudKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2608,7 +2673,8 @@
       "year": "2021",
       "title": "What's new in Foundation",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2637,7 +2703,8 @@
       "year": "2021",
       "title": "What's new in Mac Catalyst",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2665,7 +2732,8 @@
       "title": "What’s new in SF Symbols",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2678,7 +2746,8 @@
       "year": "2021",
       "title": "What‘s new in Swift",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2691,7 +2760,8 @@
       "year": "2021",
       "title": "What's new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2704,7 +2774,8 @@
       "year": "2021",
       "title": "What's new in UIKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2719,7 +2790,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -2732,7 +2804,10 @@
       "year": "2021",
       "title": "What's new in watchOS 8",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2784,7 +2859,8 @@
       "year": "2021",
       "title": "Your guide to keyboard layout",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -23,24 +24,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10093/4/D52AC313-8624-4177-BB94-C2F64F591723/downloads/wwdc2023-10093_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10093/4/D52AC313-8624-4177-BB94-C2F64F591723/downloads/wwdc2023-10093_sd.mp4?dl=1"
   },
@@ -56,7 +40,19 @@
       "year": "2023",
       "title": "Create immersive Unity apps",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10088"
+    },
+    {
+      "id": "111289",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111289"
+    },
+    {
+      "id": "111290",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111290"
     }
   ],
-  "extractedAt": "2025-07-18T10:29:55.878Z"
+  "extractedAt": "2026-10-11T16:36:59.574Z"
 }

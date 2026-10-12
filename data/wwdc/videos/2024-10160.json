@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Machine Learning and AI",
         "url": "https://developer.apple.com/forums/topics/machine-learning-and-ai?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10160/4/1EF78DEB-091E-49EE-93FE-D764F58D45C2/downloads/wwdc2024-10160_hd.mp4?dl=1",
@@ -66,5 +51,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10152"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:48.747Z"
+  "extractedAt": "2026-10-11T16:35:45.803Z"
 }

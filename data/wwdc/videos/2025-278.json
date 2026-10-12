@@ -85,12 +85,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Updating widgets with WidgetKit push notifications",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Updating-widgets-with-widgetkit-push-notifications"
       },
       {
-        "title": "Increasing the visibility of widgets in Smart Stacks",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks"
+        "title": "Updating your widgets for visionOS",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Updating-your-widgets-for-visionOS"
       },
       {
         "title": "Optimizing your widget for accented rendering mode and Liquid Glass",
@@ -101,24 +101,8 @@
         "url": "https://developer.apple.com/documentation/RelevanceKit"
       },
       {
-        "title": "Updating widgets with WidgetKit push notifications",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Updating-widgets-with-widgetkit-push-notifications"
-      },
-      {
-        "title": "Updating your widgets for visionOS",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Updating-your-widgets-for-visionOS"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Increasing the visibility of widgets in Smart Stacks",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/278/6/2b85cabe-2b0a-4290-a667-9170e4b5ae18/downloads/wwdc2025-278_hd.mp4?dl=1",
@@ -174,5 +158,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10095"
     }
   ],
-  "extractedAt": "2025-07-18T10:51:31.492Z"
+  "extractedAt": "2026-10-11T16:34:30.473Z"
 }

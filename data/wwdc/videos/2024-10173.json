@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -157,28 +158,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Developer Tools & Services",
-        "url": "https://developer.apple.com/forums/topics/developer-tools-and-services?cid=vf-a-0010"
-      },
-      {
         "title": "The Swift Programming Language: Automatic Reference Counting",
         "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: Developer Tools & Services",
+        "url": "https://developer.apple.com/forums/topics/developer-tools-and-services?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10173/4/5ADD00F7-AAD5-4C66-A3ED-9FC7E27C7720/downloads/wwdc2024-10173_hd.mp4?dl=1",
@@ -216,5 +201,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/416"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:22.457Z"
+  "extractedAt": "2026-10-11T16:35:41.459Z"
 }

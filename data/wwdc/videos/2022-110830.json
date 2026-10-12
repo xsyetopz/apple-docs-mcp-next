@@ -1,0 +1,73 @@
+{
+  "id": "110830",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110830/",
+  "title": "Q&A: UI Frameworks",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10071",
+      "year": "2022",
+      "title": "Adopt desktop-class editing interactions",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10071"
+    },
+    {
+      "id": "10076",
+      "year": "2022",
+      "title": "Bring your iOS app to the Mac",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10076"
+    },
+    {
+      "id": "10070",
+      "year": "2022",
+      "title": "Build a desktop-class iPad app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10070"
+    },
+    {
+      "id": "10069",
+      "year": "2022",
+      "title": "Meet desktop-class iPad",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10069"
+    },
+    {
+      "id": "10075",
+      "year": "2022",
+      "title": "Use SwiftUI with AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10075"
+    },
+    {
+      "id": "10072",
+      "year": "2022",
+      "title": "Use SwiftUI with UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10072"
+    },
+    {
+      "id": "10074",
+      "year": "2022",
+      "title": "What's new in AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10074"
+    },
+    {
+      "id": "10090",
+      "year": "2022",
+      "title": "What's new in TextKit and text views",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10090"
+    },
+    {
+      "id": "10068",
+      "year": "2022",
+      "title": "What's new in UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10068"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:06.120Z"
+}

@@ -18,8 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
+        "url": "https://developer.apple.com/documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts"
       },
       {
         "title": "Donating Shortcuts",
@@ -28,22 +28,6 @@
       {
         "title": "SiriKit",
         "url": "https://developer.apple.com/documentation/SiriKit"
-      },
-      {
-        "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
-        "url": "https://developer.apple.com/documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/805fgsgar5ertqwh8k/805/805_hd_building_great_shortcuts.mp4?dl=1",
@@ -63,5 +47,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/213"
     }
   ],
-  "extractedAt": "2025-07-18T09:18:20.518Z"
+  "extractedAt": "2026-10-11T16:48:16.448Z"
 }

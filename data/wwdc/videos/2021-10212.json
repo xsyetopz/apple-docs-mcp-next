@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Privacy & Security",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Analyzing HTTP traffic with Instruments",
         "url": "https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10212/4/20646031-B78D-4268-9B08-A74EC6ABB639/downloads/wwdc2021-10212_hd.mp4?dl=1",
@@ -78,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/411"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:50.543Z"
+  "extractedAt": "2026-10-11T16:42:47.215Z"
 }

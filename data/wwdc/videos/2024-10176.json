@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,16 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accelerating app interactions with App Intents",
         "url": "https://developer.apple.com/documentation/AppIntents/AcceleratingAppInteractionsWithAppIntents"
-      },
-      {
-        "title": "App Intents",
-        "url": "https://developer.apple.com/documentation/AppIntents"
       },
       {
         "title": "Creating your first app intent",
@@ -37,24 +30,8 @@
         "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
       },
       {
-        "title": "Integrating actions with Siri and Apple Intelligence",
-        "url": "https://developer.apple.com/documentation/AppIntents/Integrating-actions-with-siri-and-apple-intelligence"
-      },
-      {
-        "title": "Making actions and content discoverable and widely available",
-        "url": "https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Intents",
+        "url": "https://developer.apple.com/documentation/AppIntents"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10176/4/A71031F6-5E78-4CA6-87CC-F203DCA5A133/downloads/wwdc2024-10176_hd.mp4?dl=1",
@@ -80,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10134"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:54.519Z"
+  "extractedAt": "2026-10-11T16:35:33.456Z"
 }

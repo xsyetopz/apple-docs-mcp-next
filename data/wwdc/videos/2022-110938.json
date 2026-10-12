@@ -1,0 +1,25 @@
+{
+  "id": "110938",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110938/",
+  "title": "Meet the presenter: Meet Swift Async Algorithms",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Swift"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110355",
+      "year": "2022",
+      "title": "Meet Swift Async Algorithms",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110355"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:06.294Z"
+}

@@ -17,34 +17,30 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Implementing an inline Photos picker",
         "url": "https://developer.apple.com/documentation/PhotoKit/implementing-an-inline-photos-picker"
       },
       {
         "title": "Selecting Photos and Videos in iOS",
         "url": "https://developer.apple.com/documentation/PhotoKit/selecting-photos-and-videos-in-ios"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10107/5/62F52A2D-1C9A-4349-8D1F-03308947930A/downloads/wwdc2023-10107_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10107/5/62F52A2D-1C9A-4349-8D1F-03308947930A/downloads/wwdc2023-10107_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "111481",
+      "year": "2023",
+      "title": "Meet the presenter: Embed the Photos Picker in your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111481"
+    },
+    {
+      "id": "111480",
+      "year": "2023",
+      "title": "Q&A: Photo Picker",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111480"
+    },
     {
       "id": "10053",
       "year": "2023",
@@ -70,5 +66,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10652"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:33.644Z"
+  "extractedAt": "2026-10-11T16:38:23.829Z"
 }

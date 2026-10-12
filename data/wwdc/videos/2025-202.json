@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Wallet",
         "url": "https://developer.apple.com/design/human-interface-guidelines/wallet"
       },
       {
         "title": "PassKit (Apple Pay and Wallet)",
         "url": "https://developer.apple.com/documentation/PassKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/202/5/8fe1fffa-e36b-4be6-a752-5ac3a921f7fa/downloads/wwdc2025-202_hd.mp4?dl=1",
@@ -58,5 +42,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10108"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:01.438Z"
+  "extractedAt": "2026-10-11T16:34:29.651Z"
 }

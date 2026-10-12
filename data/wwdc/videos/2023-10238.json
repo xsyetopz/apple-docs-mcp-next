@@ -43,28 +43,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVQueuePlayer",
-        "url": "https://developer.apple.com/documentation/AVFoundation/AVQueuePlayer"
-      },
-      {
         "title": "Playing custom audio with your own player",
         "url": "https://developer.apple.com/documentation/AVFAudio/playing-custom-audio-with-your-own-player"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AVQueuePlayer",
+        "url": "https://developer.apple.com/documentation/AVFoundation/AVQueuePlayer"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10238/4/5BA02CFE-52D4-497B-BD99-75E591F41885/downloads/wwdc2023-10238_hd.mp4?dl=1",
@@ -90,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10150"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:26.512Z"
+  "extractedAt": "2026-10-11T16:36:13.979Z"
 }

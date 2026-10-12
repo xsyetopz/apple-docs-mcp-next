@@ -55,28 +55,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adopting SwiftData for a Core Data app",
-        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
-      },
-      {
         "title": "SwiftData",
         "url": "https://developer.apple.com/documentation/SwiftData"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adopting SwiftData for a Core Data app",
+        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10189/4/87485DA7-96D9-41FA-979E-1D0224B540C2/downloads/wwdc2023-10189_hd.mp4?dl=1",
@@ -112,7 +96,19 @@
       "year": "2023",
       "title": "Model your schema with SwiftData",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10195"
+    },
+    {
+      "id": "10331",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10331"
+    },
+    {
+      "id": "111543",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111543"
     }
   ],
-  "extractedAt": "2025-07-18T10:47:53.492Z"
+  "extractedAt": "2026-10-11T16:38:04.368Z"
 }

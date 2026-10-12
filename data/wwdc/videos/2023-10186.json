@@ -73,28 +73,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core Data",
-        "url": "https://developer.apple.com/documentation/CoreData"
-      },
-      {
         "title": "Migrating your data model automatically",
         "url": "https://developer.apple.com/documentation/CoreData/migrating-your-data-model-automatically"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core Data",
+        "url": "https://developer.apple.com/documentation/CoreData"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10186/4/169A3CA9-FA4A-40D0-A3A5-3635916BBCCE/downloads/wwdc2023-10186_hd.mp4?dl=1",
@@ -102,11 +86,23 @@
   },
   "relatedVideos": [
     {
+      "id": "10330",
+      "year": "2023",
+      "title": "Meet the presenter: What’s new in Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10330"
+    },
+    {
+      "id": "111450",
+      "year": "2023",
+      "title": "Q&A: Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111450"
+    },
+    {
       "id": "10120",
       "year": "2022",
       "title": "Evolve your Core Data schema",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10120"
     }
   ],
-  "extractedAt": "2025-07-18T11:01:36.070Z"
+  "extractedAt": "2026-10-11T16:38:08.371Z"
 }

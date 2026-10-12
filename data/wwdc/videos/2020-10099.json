@@ -17,10 +17,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building a feature-rich app for sports analysis",
         "url": "https://developer.apple.com/documentation/Vision/building-a-feature-rich-app-for-sports-analysis"
       },
@@ -31,18 +27,6 @@
       {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/ml/sample-mov.zip",
@@ -68,5 +52,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10673"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:47.490Z"
+  "extractedAt": "2026-10-11T16:45:50.171Z"
 }

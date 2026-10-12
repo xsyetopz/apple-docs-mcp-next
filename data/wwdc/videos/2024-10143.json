@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Device Management",
-        "url": "https://developer.apple.com/documentation/DeviceManagement"
-      },
-      {
         "title": "Forum: Business & Education",
         "url": "https://developer.apple.com/forums/topics/business-and-education-topic?cid=vf-a-0010"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Device Management",
+        "url": "https://developer.apple.com/documentation/DeviceManagement"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10143/4/DCF6DCB6-97B8-43FA-9BA4-4E73784D672E/downloads/wwdc2024-10143_hd.mp4?dl=1",
@@ -52,5 +36,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10139"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:26.418Z"
+  "extractedAt": "2026-10-11T16:35:47.113Z"
 }

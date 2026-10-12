@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Machine Learning & AI",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Photos & Camera",
         "url": "https://developer.apple.com/forums/topics/media-technologies/photos-and-camera?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10177/4/5F09C774-7C5B-4605-98F5-8C70C4A56CF0/downloads/wwdc2024-10177_hd.mp4?dl=1",
@@ -54,5 +40,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10114"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:11.248Z"
+  "extractedAt": "2026-10-11T16:35:46.503Z"
 }

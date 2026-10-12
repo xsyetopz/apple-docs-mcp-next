@@ -26,32 +26,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Configuring your first Xcode Cloud workflow",
+        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
       },
       {
         "title": "About continuous integration and delivery with Xcode Cloud",
         "url": "https://developer.apple.com/documentation/Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud"
       },
       {
-        "title": "Configuring your first Xcode Cloud workflow",
-        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
-      },
-      {
         "title": "Xcode Cloud",
         "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10267/5/84238A0B-FE43-4CCA-9D0B-2643A5E3A5B5/downloads/wwdc2021-10267_hd.mp4?dl=1",
@@ -83,17 +67,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10268"
     },
     {
-      "id": "10325",
-      "year": "2021",
-      "title": "Friday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10325"
-    },
-    {
       "id": "10205",
       "year": "2021",
       "title": "Review code and collaborate in Xcode",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10205"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:48.083Z"
+  "extractedAt": "2026-10-11T16:42:38.339Z"
 }

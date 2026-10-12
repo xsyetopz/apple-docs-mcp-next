@@ -56,24 +56,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Localizing Landmarks",
         "url": "https://developer.apple.com/documentation/Xcode/localizing-landmarks"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/225/5/24973a20-a8c9-4ec6-ad29-6adfde87ea5c/downloads/wwdc2025-225_hd.mp4?dl=1",
@@ -87,5 +71,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10155"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:25.701Z"
+  "extractedAt": "2026-10-11T16:33:25.829Z"
 }

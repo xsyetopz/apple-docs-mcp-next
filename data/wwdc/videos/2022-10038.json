@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SKAdNetwork",
         "url": "https://developer.apple.com/documentation/StoreKit/SKAdNetwork"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10038/4/42910CBB-36EB-4C09-9234-DAB67E71BAA6/downloads/wwdc2022-10038_hd.mp4?dl=1",
@@ -47,6 +31,18 @@
       "year": "2022",
       "title": "Explore App Tracking Transparency",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10166"
+    },
+    {
+      "id": "110758",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110758"
+    },
+    {
+      "id": "110759",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110759"
     },
     {
       "id": "10039",
@@ -61,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10033"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:09.192Z"
+  "extractedAt": "2026-10-11T16:40:26.346Z"
 }

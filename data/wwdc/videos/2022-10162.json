@@ -25,7 +25,7 @@
       "timestamp": "8:35",
       "title": "Initializing object stage",
       "language": "swift",
-      "code": "let meshPipelineDesc = MTLMeshRenderPipelineDescriptor()\nmeshPipelineDesc.objectFunction = objectFunc\nmeshPipelineDesc.payloadMemoryLength = kPayloadLength\nmeshPipelineDesc.maxTotalThreadsPerObjectThreadgroup = kHairsPerBlock"
+      "code": "let meshPipelineDescriptor = MTLMeshRenderPipelineDescriptor()\nmeshPipelineDescriptor.objectFunction = objectFunction\nmeshPipelineDescriptor.payloadMemoryLength = payloadLength\nmeshPipelineDescriptor.maxTotalThreadsPerObjectThreadgroup = hairsPerBlock"
     },
     {
       "timestamp": "9:26",
@@ -43,33 +43,29 @@
       "timestamp": "11:35",
       "title": "Initializing the mesh stage",
       "language": "swift",
-      "code": "meshPipelineDesc.meshFunction = meshFunc\nmeshPipelineDesc.maxTotalThreadsPerMeshThreadgroup = kVertexCountPerHair"
+      "code": "meshPipelineDescriptor.meshFunction = meshFunction\nmeshPipelineDescriptor.maxTotalThreadsPerMeshThreadgroup = vertexCountPerHair"
     },
     {
       "timestamp": "12:08",
       "title": "Initializing the fragment stage",
       "language": "swift",
-      "code": "meshPipelineDesc.fragmentFunction = fragmentFunc"
+      "code": "meshPipelineDescriptor.maxTotalThreadsPerMeshThreadgroup = vertexCountPerHair"
     },
     {
       "timestamp": "12:14",
       "title": "Creating a mesh render pipeline",
       "language": "swift",
-      "code": "// initialize pipeline state object\nvar meshPipeline: MTLRenderPipelineState! \ndo {\n    meshPipeline = try device.makeRenderPipelineState(descriptor: meshPipelineDescriptor)\n} catch {\n    print(“Error when creating pipeline state: \\(error)\\”) }"
+      "code": "/// A mesh pipeline state the device creates from a mesh render pipeline descriptor.\nlet meshPipeline: MTLRenderPipelineState\n\ndo {\n    /// A tuple of the mesh pipeline and its reflection information, if applicable.\n    let (pipeline, reflection) = try device.makeRenderPipelineState(descriptor: meshRenderPipelineDescriptor,\n                                                                    options: [])\n    meshPipeline = pipeline\n} catch {\n    print(\"The device can't create a mesh pipeline state: \\(error)\")\n    return\n}"
     },
     {
       "timestamp": "12:25",
       "title": "Encoding a mesh pipeline",
       "language": "swift",
-      "code": "var encoder = commandBuffer.makeRenderCommandEncoder(descriptor: desc)!\n\nencoder.setRenderPipelineState(meshPipeline)\n\nencoder.setObjectBuffer(objectBuffer, offset: 0, atIndex: 0)\nencoder.setMeshTexture(meshTexture, atIndex: 2)\nencoder.setFragmentBuffer(fragmentBuffer, offset: 0, atIndex: 0)\n\nlet oGroups   = MTLSize(width: kTrianglesPerModel, height: 1, depth: 1)\nlet oThreads  = MTLSize(width: kHairsPerBlock, height: 1, depth: 1)\nlet mThreads  = MTLSize(width: kThreadsPerHair, height: 1, depth: 1)\nencoder.drawMeshThreadgroups(oGroups, threadsPerObjectThreadgroup: oThreads, threadsPerMeshThreadgroup: mThreads)\n\nencoder.endEncoding()"
+      "code": "// Create a encoder for a render pass from the command buffer.\nlet encoder: MTLRenderCommandEncoder!\nencoder = commandBuffer.makeRenderCommandEncoder(descriptor: descriptor)\n\n// Apply the mesh pipeline to the render pass.\nencoder.setRenderPipelineState(meshPipeline)\n\n// Bind the resources for the render pass.\nencoder.setObjectBuffer(objectBuffer, offset: 0, index: 0)\nencoder.setMeshTexture(meshTexture, index: 2)\nencoder.setFragmentBuffer(fragmentBuffer, offset: 0, index: 0)\n\n// Create the size instances for the mesh threadgroups.\nlet objectGridDimensions = MTLSize(width: trianglesPerModel, height: 1, depth: 1)\nlet threadsPerObject = MTLSize(width: hairsPerBlock, height: 1, depth: 1)\nlet threadsPerMesh = MTLSize(width: threadsPerHair, height: 1, depth: 1)\n\n// Encode the draw command for the render pass.\nencoder.drawMeshThreadgroups(objectGridDimensions,\n                             threadsPerObjectThreadgroup: threadsPerObject,\n                             threadsPerMeshThreadgroup: threadsPerMesh)\n\n// Finish encoding the render pass.\nencoder.endEncoding()"
     }
   ],
   "resources": {
     "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
       {
         "title": "Adjusting the level of detail using Metal mesh shaders",
         "url": "https://developer.apple.com/documentation/Metal/adjusting-the-level-of-detail-using-metal-mesh-shaders"
@@ -77,18 +73,6 @@
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10162/5/9408DC15-0B03-4DD9-8ADE-161821D0E7FC/downloads/wwdc2022-10162_hd.mp4?dl=1",
@@ -102,11 +86,29 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10066"
     },
     {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
+    },
+    {
       "id": "110931",
       "year": "2022",
       "title": "WWDC22 Day 3 recap",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110931"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:22.376Z"
+  "extractedAt": "2026-10-11T16:41:22.130Z"
 }

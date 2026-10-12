@@ -62,28 +62,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Creating a Metal Dynamic Library",
+        "title": "Creating a Metal dynamic library",
         "url": "https://developer.apple.com/documentation/Metal/creating-a-metal-dynamic-library"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10615/4/E619263D-7298-4BD0-B998-1954AF02BEB2/wwdc2020_10615_hd.mp4?dl=1",
@@ -127,5 +111,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10632"
     }
   ],
-  "extractedAt": "2025-07-18T10:14:38.181Z"
+  "extractedAt": "2026-10-11T16:45:03.035Z"
 }

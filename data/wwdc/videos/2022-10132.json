@@ -67,24 +67,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "PhotoKit",
         "url": "https://developer.apple.com/documentation/photokit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10132/3/E1001357-38F4-429C-A7E2-495996D84893/downloads/wwdc2022-10132_hd.mp4?dl=1",
@@ -96,6 +80,12 @@
       "year": "2023",
       "title": "Embed the Photos Picker in your app",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10107"
+    },
+    {
+      "id": "110913",
+      "year": "2022",
+      "title": "Q&A: Photos and PhotoKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110913"
     },
     {
       "id": "10023",
@@ -110,5 +100,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10046"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:41.285Z"
+  "extractedAt": "2026-10-11T16:41:12.369Z"
 }

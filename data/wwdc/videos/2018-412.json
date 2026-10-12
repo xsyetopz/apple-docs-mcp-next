@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2018/UseScriptsToAddCustomCommandsToLLDB.zip",
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/412zw88j5aa4mr9/412/412_hd_advanced_debugging_with_xcode_and_lldb.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/412zw88j5aa4mr9/412/412_sd_advanced_debugging_with_xcode_and_lldb.mp4?dl=1"
@@ -75,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/414"
     }
   ],
-  "extractedAt": "2025-07-18T10:18:27.921Z"
+  "extractedAt": "2026-10-11T16:48:33.833Z"
 }

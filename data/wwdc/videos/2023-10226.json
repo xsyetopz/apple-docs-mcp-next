@@ -103,30 +103,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Logging",
         "url": "https://developer.apple.com/documentation/os/logging"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10226/5/FFFDC5A2-A309-4C9B-B908-B19B51F18FB0/downloads/wwdc2023-10226_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10226/5/FFFDC5A2-A309-4C9B-B908-B19B51F18FB0/downloads/wwdc2023-10226_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "10297",
+      "year": "2023",
+      "title": "Meet the presenter: Debug with structured logging",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10297"
+    },
     {
       "id": "10165",
       "year": "2023",
@@ -146,5 +136,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/405"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:43.302Z"
+  "extractedAt": "2026-10-11T16:36:00.403Z"
 }

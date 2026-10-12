@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Apple Maps Server API",
         "url": "https://developer.apple.com/documentation/AppleMapsServerAPI"
-      },
-      {
-        "title": "Creating a Maps identifier and a private key",
-        "url": "https://developer.apple.com/documentation/AppleMapsServerAPI/creating-a-maps-identifier-and-a-private-key"
       },
       {
         "title": "Creating and using tokens with Maps Server API",
         "url": "https://developer.apple.com/documentation/AppleMapsServerAPI/creating-and-using-tokens-with-maps-server-api"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Creating a Maps identifier and a private key",
+        "url": "https://developer.apple.com/documentation/AppleMapsServerAPI/creating-a-maps-identifier-and-a-private-key"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10006/3/30C45DFC-CD54-4D31-894F-9954C9A58C93/downloads/wwdc2022-10006_hd.mp4?dl=1",
@@ -57,11 +41,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10043"
     },
     {
+      "id": "110527",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110527"
+    },
+    {
+      "id": "110747",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110747"
+    },
+    {
       "id": "10035",
       "year": "2022",
       "title": "What's new in MapKit",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10035"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:34.374Z"
+  "extractedAt": "2026-10-11T16:39:27.526Z"
 }

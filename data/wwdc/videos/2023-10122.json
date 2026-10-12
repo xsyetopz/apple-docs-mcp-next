@@ -17,30 +17,26 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Enabling Low-Latency HTTP Live Streaming (HLS)",
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/enabling-low-latency-http-live-streaming-hls"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10122/6/8D4F2F56-BA71-41C2-987B-9C8D656D60AF/downloads/wwdc2023-10122_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10122/6/8D4F2F56-BA71-41C2-987B-9C8D656D60AF/downloads/wwdc2023-10122_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "10320",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10320"
+    },
+    {
+      "id": "10326",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10326"
+    },
     {
       "id": "10262",
       "year": "2023",
@@ -66,5 +62,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10031"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:08.800Z"
+  "extractedAt": "2026-10-11T16:38:01.213Z"
 }

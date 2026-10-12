@@ -17,8 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "AVMultiCamPiP: Capturing from Multiple Cameras",
+        "url": "https://developer.apple.com/documentation/AVFoundation/avmulticampip-capturing-from-multiple-cameras"
       },
       {
         "title": "AVCam: Building a camera app",
@@ -29,24 +29,8 @@
         "url": "https://developer.apple.com/documentation/AVFoundation"
       },
       {
-        "title": "AVMultiCamPiP: Capturing from Multiple Cameras",
-        "url": "https://developer.apple.com/documentation/AVFoundation/avmulticampip-capturing-from-multiple-cameras"
-      },
-      {
         "title": "Capture setup",
         "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/249a0jw909n3uq0/249/249_hd_introducing_multicamera_capture_for_ios.mp4?dl=1",
@@ -66,5 +50,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2017/507"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:06.855Z"
+  "extractedAt": "2026-10-11T16:47:49.002Z"
 }

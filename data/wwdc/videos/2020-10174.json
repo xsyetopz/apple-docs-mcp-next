@@ -17,40 +17,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Clips",
         "url": "https://developer.apple.com/documentation/AppClip"
-      },
-      {
-        "title": "Choosing the right functionality for your App Clip",
-        "url": "https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip"
       },
       {
         "title": "Creating an App Clip with Xcode",
         "url": "https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode"
       },
       {
-        "title": "Fruta: Building a Feature-Rich App with SwiftUI",
-        "url": "https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui"
+        "title": "Fruta: Building a feature-rich app with SwiftUI",
+        "url": "https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui"
       },
       {
         "title": "Human Interface Guidelines: App Clips",
         "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Choosing the right functionality for your App Clip",
+        "url": "https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10174/3/75396F5A-4285-498E-9ED5-29F194CE11AA/wwdc2020_10174_hd.mp4?dl=1",
@@ -100,5 +84,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/516"
     }
   ],
-  "extractedAt": "2025-07-18T10:56:22.011Z"
+  "extractedAt": "2026-10-11T16:44:48.064Z"
 }

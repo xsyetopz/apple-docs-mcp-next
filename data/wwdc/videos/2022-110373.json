@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,28 +26,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Communicating between a DriverKit extension and a client app",
         "url": "https://developer.apple.com/documentation/DriverKit/communicating-between-a-driverkit-extension-and-a-client-app"
       },
       {
         "title": "Implementing drivers, system extensions, and kexts",
         "url": "https://developer.apple.com/documentation/kernel/implementing_drivers_system_extensions_and_kexts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110373/5/9E0B243C-9E0C-4E4E-91FF-AACD903146B2/downloads/wwdc2022-110373_hd.mp4?dl=1",
@@ -66,5 +51,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10210"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:14.383Z"
+  "extractedAt": "2026-10-11T16:39:19.656Z"
 }

@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Forum: Safari & Web",
+        "url": "https://developer.apple.com/forums/topics/safari-and-web?cid=vf-a-0010"
       },
       {
         "title": "Adding a web development tool to Safari Web Inspector",
         "url": "https://developer.apple.com/documentation/SafariServices/adding-a-web-development-tool-to-safari-web-inspector"
       },
       {
-        "title": "Forum: Safari & Web",
-        "url": "https://developer.apple.com/forums/topics/safari-and-web?cid=vf-a-0010"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10065/7/3AFDD2F6-B764-49D8-AEAB-D5319918AD90/downloads/wwdc2024-10065_hd.mp4?dl=1",
@@ -63,5 +47,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10066"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:00.927Z"
+  "extractedAt": "2026-10-11T16:34:58.381Z"
 }

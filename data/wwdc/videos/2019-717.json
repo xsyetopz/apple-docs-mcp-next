@@ -18,36 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Allowing apps and websites to link to your content",
-        "url": "https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content"
+        "title": "Supporting Associated Domains",
+        "url": "https://developer.apple.com/documentation/xcode/supporting-associated-domains"
       },
       {
         "title": "Associated Domains Entitlement",
         "url": "https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains"
       },
       {
+        "title": "Allowing apps and websites to link to your content",
+        "url": "https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content"
+      },
+      {
         "title": "Shared Web Credentials",
         "url": "https://developer.apple.com/documentation/Security/shared-web-credentials"
-      },
-      {
-        "title": "Supporting Associated Domains",
-        "url": "https://developer.apple.com/documentation/xcode/supporting-associated-domains"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/717b3lem5m2glj/717/717_hd_whats_new_in_universal_links.mp4?dl=1",
@@ -79,5 +63,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/515"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:54.666Z"
+  "extractedAt": "2026-10-11T16:47:07.895Z"
 }

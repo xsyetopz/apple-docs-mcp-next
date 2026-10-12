@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Swift",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building Widgets Using WidgetKit and SwiftUI",
-        "url": "https://developer.apple.com/documentation/widgetkit/building_widgets_using_widgetkit_and_swiftui"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "url": "https://developer.apple.com/documentation/WidgetKit/building-widgets-using-widgetkit-and-swiftui"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10034/3/D86D9B81-6A8A-4015-86B1-7784AB7B3731/wwdc2020_10034_hd.mp4?dl=1",
@@ -78,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10036"
     }
   ],
-  "extractedAt": "2025-07-18T09:17:12.437Z"
+  "extractedAt": "2026-10-11T16:45:41.014Z"
 }

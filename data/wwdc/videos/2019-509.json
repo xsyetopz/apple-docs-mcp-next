@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Creating Custom Audio Effects",
-        "url": "https://developer.apple.com/documentation/avfoundation/creating_custom_audio_effects"
-      },
-      {
         "title": "Incorporating Audio Effects and Instruments",
         "url": "https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Creating custom audio effects",
+        "url": "https://developer.apple.com/documentation/AVFAudio/creating-custom-audio-effects"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/509tdjld4pedsigr9/509/509_hd_auv3_extensions_user_presets.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/509tdjld4pedsigr9/509/509_sd_auv3_extensions_user_presets.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:25:31.792Z"
+  "extractedAt": "2026-10-11T16:47:01.078Z"
 }

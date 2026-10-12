@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -61,18 +62,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ARKit",
-        "url": "https://developer.apple.com/documentation/ARKit"
-      },
-      {
-        "title": "Creating a fog effect using scene depth",
-        "url": "https://developer.apple.com/documentation/ARKit/creating-a-fog-effect-using-scene-depth"
-      },
-      {
         "title": "Displaying a point cloud using scene depth",
         "url": "https://developer.apple.com/documentation/ARKit/displaying-a-point-cloud-using-scene-depth"
       },
@@ -81,16 +70,12 @@
         "url": "https://developer.apple.com/documentation/ARKit/tracking-geographic-locations-in-ar"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Creating a fog effect using scene depth",
+        "url": "https://developer.apple.com/documentation/ARKit/creating-a-fog-effect-using-scene-depth"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "ARKit",
+        "url": "https://developer.apple.com/documentation/ARKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10611/8/203AC69C-0F17-4709-B622-08C2740C7539/wwdc2020_10611_hd.mp4?dl=1",
@@ -134,5 +119,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/603"
     }
   ],
-  "extractedAt": "2025-07-18T10:34:30.544Z"
+  "extractedAt": "2026-10-11T16:44:48.471Z"
 }

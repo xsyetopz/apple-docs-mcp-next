@@ -1,0 +1,38 @@
+{
+  "id": "110927",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110927/",
+  "title": "Q&A: Xcode",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "Essentials"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110364",
+      "year": "2022",
+      "title": "Demystify parallelization in Xcode builds",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110364"
+    },
+    {
+      "id": "110371",
+      "year": "2022",
+      "title": "Use Xcode to develop a multiplatform app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110371"
+    },
+    {
+      "id": "110427",
+      "year": "2022",
+      "title": "What's new in Xcode",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110427"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:15.877Z"
+}

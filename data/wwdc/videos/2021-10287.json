@@ -67,44 +67,28 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "appleWalkingSteadiness",
-        "url": "https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/appleWalkingSteadiness"
+        "title": "HKAppleWalkingSteadinessClassification",
+        "url": "https://developer.apple.com/documentation/HealthKit/HKAppleWalkingSteadinessClassification"
       },
       {
         "title": "appleWalkingSteadinessEvent",
         "url": "https://developer.apple.com/documentation/HealthKit/HKCategoryTypeIdentifier/appleWalkingSteadinessEvent"
       },
       {
-        "title": "CMFallDetectionManager",
-        "url": "https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager"
+        "title": "appleWalkingSteadiness",
+        "url": "https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/appleWalkingSteadiness"
       },
       {
-        "title": "Core Motion",
-        "url": "https://developer.apple.com/documentation/CoreMotion"
+        "title": "CMFallDetectionManager",
+        "url": "https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager"
       },
       {
         "title": "Getting movement disorder symptom data",
         "url": "https://developer.apple.com/documentation/CoreMotion/getting-movement-disorder-symptom-data"
       },
       {
-        "title": "HKAppleWalkingSteadinessClassification",
-        "url": "https://developer.apple.com/documentation/HealthKit/HKAppleWalkingSteadinessClassification"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core Motion",
+        "url": "https://developer.apple.com/documentation/CoreMotion"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10287/5/C117695D-C24C-4B2E-B6A4-C87244FC08AC/downloads/wwdc2021-10287_hd.mp4?dl=1",
@@ -124,5 +108,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10664"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:55.676Z"
+  "extractedAt": "2026-10-11T16:43:29.521Z"
 }

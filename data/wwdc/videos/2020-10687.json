@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -41,24 +42,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10687/4/9416FDA9-FC21-48ED-BBCC-ABF5C5A9B0DA/wwdc2020_10687_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10687/4/9416FDA9-FC21-48ED-BBCC-ABF5C5A9B0DA/wwdc2020_10687_sd.mp4?dl=1"
   },
@@ -94,5 +78,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10164"
     }
   ],
-  "extractedAt": "2025-07-18T10:15:48.843Z"
+  "extractedAt": "2026-10-11T16:45:55.730Z"
 }

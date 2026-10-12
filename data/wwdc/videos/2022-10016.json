@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -31,24 +32,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: CarPlay",
         "url": "https://developer.apple.com/design/human-interface-guidelines/carplay"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10016/4/4A58011C-EB98-4462-A8F7-8EDB8A69BBE7/downloads/wwdc2022-10016_hd.mp4?dl=1",
@@ -60,6 +45,12 @@
       "year": "2023",
       "title": "Optimize CarPlay for vehicle systems",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10150"
+    },
+    {
+      "id": "110465",
+      "year": "2022",
+      "title": "Q&A: CarPlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110465"
     },
     {
       "id": "10635",
@@ -74,5 +65,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/213"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:26.147Z"
+  "extractedAt": "2026-10-11T16:39:24.831Z"
 }

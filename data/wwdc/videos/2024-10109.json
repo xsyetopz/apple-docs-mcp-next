@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -73,8 +74,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Visualizing HealthKit State of Mind in visionOS",
+        "url": "https://developer.apple.com/documentation/HealthKit/visualizing-healthkit-state-of-mind-in-visionos"
       },
       {
         "title": "Forum: Health & Fitness",
@@ -83,22 +84,6 @@
       {
         "title": "HealthKit",
         "url": "https://developer.apple.com/documentation/HealthKit"
-      },
-      {
-        "title": "Visualizing HealthKit State of Mind in visionOS",
-        "url": "https://developer.apple.com/documentation/HealthKit/visualizing-healthkit-state-of-mind-in-visionos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10109/4/C6E12E83-F007-47F9-A74C-6DDC86BEE5AB/downloads/wwdc2024-10109_hd.mp4?dl=1",
@@ -124,5 +109,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10664"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:05.564Z"
+  "extractedAt": "2026-10-11T16:34:55.240Z"
 }

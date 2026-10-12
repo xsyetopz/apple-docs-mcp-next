@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -16,10 +18,6 @@
   },
   "resources": {
     "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
       {
         "title": "Enabling the double-tap gesture on Apple Watch",
         "url": "https://developer.apple.com/documentation/watchOS-Apps/enabling-double-tap"
@@ -33,24 +31,12 @@
         "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos"
       },
       {
-        "title": "Human Interface Guidelines: Widgets",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
-      },
-      {
         "title": "WidgetKit",
         "url": "https://developer.apple.com/documentation/WidgetKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Widgets",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10205/4/01F99B0C-DA17-41F9-854B-7C36FA9FD965/downloads/wwdc2024-10205_hd.mp4?dl=1",
@@ -82,5 +68,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10144"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:03.262Z"
+  "extractedAt": "2026-10-11T16:34:49.651Z"
 }

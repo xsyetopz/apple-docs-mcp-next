@@ -1,0 +1,25 @@
+{
+  "id": "111244",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111244/",
+  "title": "Q&A: Create ML",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10044",
+      "year": "2023",
+      "title": "Discover machine learning enhancements in Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10044"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:19.379Z"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "711",
+  "year": "2019",
+  "url": "https://developer.apple.com/videos/play/wwdc2019/711/",
+  "title": "Introducing Combine and Advances in Foundation",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "System Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "723",
+      "year": "2019",
+      "title": "Advances in Foundation",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/723"
+    },
+    {
+      "id": "712",
+      "year": "2019",
+      "title": "Advances in Networking, Part 1",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/712"
+    },
+    {
+      "id": "721",
+      "year": "2019",
+      "title": "Combine in Practice",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/721"
+    },
+    {
+      "id": "722",
+      "year": "2019",
+      "title": "Introducing Combine",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/722"
+    },
+    {
+      "id": "230",
+      "year": "2019",
+      "title": "Making Apps with Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/230"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:47:54.696Z"
+}

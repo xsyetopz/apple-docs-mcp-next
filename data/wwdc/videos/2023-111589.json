@@ -1,0 +1,25 @@
+{
+  "id": "111589",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111589/",
+  "title": "Meet the presenters: Meet mergeable libraries",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10268",
+      "year": "2023",
+      "title": "Meet mergeable libraries",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10268"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:51.096Z"
+}

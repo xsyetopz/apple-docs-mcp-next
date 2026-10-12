@@ -121,36 +121,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Developing a Safari Web Extension",
-        "url": "https://developer.apple.com/documentation/SafariServices/developing-a-safari-web-extension"
+        "title": "Modernizing Safari Web Extensions",
+        "url": "https://developer.apple.com/documentation/SafariServices/modernizing-safari-web-extensions"
       },
       {
         "title": "Messaging a Web Extension’s Native App",
         "url": "https://developer.apple.com/documentation/SafariServices/messaging-a-web-extension-s-native-app"
       },
       {
-        "title": "Modernizing Safari Web Extensions",
-        "url": "https://developer.apple.com/documentation/SafariServices/modernizing-safari-web-extensions"
+        "title": "Developing a Safari Web Extension",
+        "url": "https://developer.apple.com/documentation/SafariServices/developing-a-safari-web-extension"
       },
       {
         "title": "Safari web extensions",
         "url": "https://developer.apple.com/documentation/SafariServices/safari-web-extensions"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10099/5/AE8329C9-B427-49CF-95BE-71C9B5F49627/downloads/wwdc2022-10099_hd.mp4?dl=1",
@@ -170,6 +154,18 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10100"
     },
     {
+      "id": "110485",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110485"
+    },
+    {
+      "id": "110535",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110535"
+    },
+    {
       "id": "10048",
       "year": "2022",
       "title": "What's new in Safari and WebKit",
@@ -182,5 +178,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10027"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:19.215Z"
+  "extractedAt": "2026-10-11T16:40:28.313Z"
 }

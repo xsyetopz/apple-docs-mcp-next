@@ -1,0 +1,33 @@
+{
+  "id": "110432",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110432/",
+  "title": "Q&A: WidgetKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services",
+    "Essentials",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10050",
+      "year": "2022",
+      "title": "Complications and widgets: Reloaded",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10050"
+    },
+    {
+      "id": "10051",
+      "year": "2022",
+      "title": "Go further with Complications in WidgetKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10051"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:15.573Z"
+}

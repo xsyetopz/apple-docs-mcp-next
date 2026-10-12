@@ -1,0 +1,79 @@
+{
+  "id": "110663",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110663/",
+  "title": "Q&A: Games technologies",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Graphics & Games"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10151",
+      "year": "2022",
+      "title": "Add accessibility to your Unity games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10151"
+    },
+    {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110422",
+      "year": "2022",
+      "title": "Meet the Presenter: Add accessibility to your Unity games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110422"
+    },
+    {
+      "id": "110658",
+      "year": "2022",
+      "title": "Meet the Presenter: Add Apple frameworks to your Unity game projects",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110658"
+    },
+    {
+      "id": "110662",
+      "year": "2022",
+      "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110662"
+    },
+    {
+      "id": "10065",
+      "year": "2022",
+      "title": "Plug-in and play: Add Apple frameworks to your Unity game projects",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10065"
+    },
+    {
+      "id": "10106",
+      "year": "2022",
+      "title": "Profile and optimize your game's memory",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10106"
+    },
+    {
+      "id": "10160",
+      "year": "2022",
+      "title": "Program Metal in C++ with metal-cpp",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10160"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664"
+    },
+    {
+      "id": "10064",
+      "year": "2022",
+      "title": "Reach new players with Game Center dashboard",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10064"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:09.933Z"
+}

@@ -80,24 +80,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "View Layout and Presentation",
         "url": "https://developer.apple.com/documentation/swiftui/layout-fundamentals"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10031/4/CC07F299-2B37-486D-9BA2-F305684689A2/wwdc2020_10031_hd.mp4?dl=1",
@@ -141,5 +125,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/216"
     }
   ],
-  "extractedAt": "2025-07-18T10:49:37.727Z"
+  "extractedAt": "2026-10-11T16:45:54.146Z"
 }

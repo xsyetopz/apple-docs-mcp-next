@@ -1,426 +1,256 @@
-import { technologyOverviewsCache, generateUrlCacheKey } from '../utils/cache.js';
-import { APPLE_URLS } from '../utils/constants.js';
-import { httpClient } from '../utils/http-client.js';
-import { logger } from '../utils/logger.js';
+import type {
+  RenderIndex,
+  RenderIndexNode,
+  RenderNode,
+} from "../types/docc.ts";
+import { isTopicReference } from "../types/docc.ts";
+import {
+  generateUrlCacheKey,
+  technologyOverviewsCache,
+} from "../utils/cache.ts";
+import { APPLE_URLS } from "../utils/constants.ts";
+import { httpClient } from "../utils/http-client.ts";
+import { logger } from "../utils/logger.ts";
+import { formatInlineContent } from "./doc-formatter.ts";
 
-/**
- * Interface for Technology Overviews data
- */
-interface TechnologyOverviewsData {
-  topicSections: Array<{
-    title: string;
-    identifiers: string[];
-    anchor: string;
-  }>;
-  references: Record<string, {
-    type: string;
-    title: string;
-    url: string;
-    abstract?: Array<{ text: string; type: string }>;
-    kind?: string;
-    role?: string;
-  }>;
-}
-
-/**
- * Interface for Technology Overviews Index data
- */
-interface TechnologyOverviewsIndexData {
-  interfaceLanguages: {
-    swift: TechnologyOverviewsIndexSection[];
-  };
-}
-
-interface TechnologyOverviewsIndexSection {
-  path: string;
+/** One collection or article, in the tree's order, with what encloses it */
+interface OverviewEntry {
   title: string;
+  path: string;
+  slug: string;
   type: string;
-  children?: TechnologyOverviewsIndexSection[];
+  depth: number;
+  group: string;
+  abstract: string;
+  ancestors: string[];
+  parentTitle: string;
 }
+
+interface OverviewFilters {
+  category?: string | undefined;
+  searchQuery?: string | undefined;
+  includeSubcategories: boolean;
+  limit: number;
+}
+
+const TYPE_LABELS: Record<string, string> = {
+  collection: "Collection",
+  article: "Article",
+};
+const NOTHING_FOUND =
+  "No technology overviews found matching the specified criteria.";
 
 /**
  * Handle get technology overviews
  */
 export async function handleGetTechnologyOverviews(
   category?: string,
-  platform: string = 'all',
   searchQuery?: string,
   includeSubcategories: boolean = true,
   limit: number = 50,
 ): Promise<string> {
   try {
-    logger.info('Fetching technology overviews...');
+    logger.info("Fetching technology overviews...");
 
-    // Generate cache key
-    const cacheKey = generateUrlCacheKey('technology-overviews', {
+    const cacheKey = generateUrlCacheKey("technology-overviews", {
       category,
-      platform,
       searchQuery,
       includeSubcategories,
       limit,
     });
 
-    // Try to get from cache first
-    const cachedResult = technologyOverviewsCache.get<string>(cacheKey);
+    const cachedResult = technologyOverviewsCache.get(cacheKey);
     if (cachedResult) {
-      logger.debug('Technology overviews cache hit');
+      logger.debug("Technology overviews cache hit");
       return cachedResult;
     }
 
-    // Fetch both data files
     const [overviewsData, overviewsIndex] = await Promise.all([
-      httpClient.getJson<TechnologyOverviewsData>(APPLE_URLS.TECHNOLOGY_OVERVIEWS_JSON),
-      httpClient.getJson<TechnologyOverviewsIndexData>(APPLE_URLS.TECHNOLOGY_OVERVIEWS_INDEX_JSON),
+      httpClient.getJson<RenderNode>(APPLE_URLS.TECHNOLOGY_OVERVIEWS_JSON),
+      httpClient.getJson<RenderIndex>(
+        APPLE_URLS.TECHNOLOGY_OVERVIEWS_INDEX_JSON,
+      ),
     ]);
 
-    // Parse and filter overviews
-    const overviews = parseOverviews(overviewsData, overviewsIndex);
-    const filteredOverviews = applyOverviewsFilters(overviews, {
+    const result = formatOverviews(entriesOf(overviewsData, overviewsIndex), {
       category,
-      platform,
       searchQuery,
       includeSubcategories,
       limit,
     });
 
-    // Format output
-    const result = formatOverviewsList(filteredOverviews);
-
-    // Cache the result
     technologyOverviewsCache.set(cacheKey, result);
 
     return result;
-
   } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : JSON.stringify(error);
-    logger.error('Error fetching technology overviews:', error);
+    const errorMessage =
+      error instanceof Error ? error.message : JSON.stringify(error);
+    logger.error("Error fetching technology overviews:", error);
     return `Error: Failed to fetch technology overviews: ${errorMessage}`;
   }
 }
 
 /**
- * Parse overviews data
+ * Every collection and article under the tree's root, the Technology Overviews page itself
  */
-function parseOverviews(overviewsData: TechnologyOverviewsData, overviewsIndex: TechnologyOverviewsIndexData) {
-  const overviews: OverviewItem[] = [];
-
-  // Process main overview sections
-  if (overviewsData.topicSections) {
-    overviewsData.topicSections.forEach(section => {
-      section.identifiers.forEach(identifier => {
-        const reference = overviewsData.references[identifier];
-        if (reference) {
-          // Construct description from abstract array
-          let description = '';
-          if (reference.abstract && Array.isArray(reference.abstract)) {
-            description = reference.abstract
-              .map(part => part.text || '')
-              .join('')
-              .trim();
-          }
-
-          const overviewItem: OverviewItem = {
-            title: reference.title,
-            url: reference.url ? `https://developer.apple.com${reference.url}` : '',
-            description,
-            category: extractCategoryFromUrl(reference.url),
-            type: reference.kind ?? 'overview',
-            identifier,
-            sectionTitle: section.title,
-            depth: 0,
-          };
-
-          overviews.push(overviewItem);
-        }
-      });
-    });
-  }
-
-  // Process index data for hierarchical structure
-  if (overviewsIndex.interfaceLanguages?.swift) {
-    processIndexSection(overviewsIndex.interfaceLanguages.swift, overviews, 0, null);
-  }
-
-  return overviews;
+function entriesOf(data: RenderNode, index: RenderIndex): OverviewEntry[] {
+  const abstracts = new Map(
+    Object.values(data.references ?? {})
+      .filter(isTopicReference)
+      .map((ref) => [
+        ref.url,
+        formatInlineContent(ref.abstract ?? [], data.references).trim(),
+      ]),
+  );
+  const roots = index.interfaceLanguages?.["swift"] ?? [];
+  return flatten(
+    roots.flatMap((root) => root.children ?? []),
+    0,
+    [],
+    "",
+    abstracts,
+  );
 }
 
-/**
- * Process index section recursively
- */
-function processIndexSection(sections: TechnologyOverviewsIndexSection[], overviews: OverviewItem[], depth: number, parentSection: string | null) {
-  let currentSection = parentSection;
-
-  sections.forEach(section => {
-    // Track current section from group markers
-    if (section.type === 'groupMarker') {
-      currentSection = section.title;
-      // Process children with same depth but updated section
-      if (section.children) {
-        processIndexSection(section.children, overviews, depth, currentSection);
-      }
-      return;
+function flatten(
+  nodes: RenderIndexNode[],
+  depth: number,
+  ancestors: string[],
+  parentTitle: string,
+  abstracts: Map<string, string>,
+): OverviewEntry[] {
+  let group = "";
+  return nodes.flatMap((node) => {
+    if (node.type === "groupMarker") {
+      group = node.title;
+      return [];
     }
-
-    // Check if this section already exists in overviews
-    const existingOverview = overviews.find(o =>
-      o.url.includes(section.path) || o.title === section.title,
-    );
-
-    if (existingOverview) {
-      // Update with additional info
-      existingOverview.path = section.path;
-      existingOverview.depth = depth;
-      existingOverview.type = section.type;
-      if (currentSection && !existingOverview.sectionTitle) {
-        existingOverview.sectionTitle = currentSection;
-      }
-    } else {
-      // Add new overview item
-      const newOverview: OverviewItem = {
-        title: section.title,
-        url: `https://developer.apple.com${section.path}`,
-        description: '',
-        category: extractCategoryFromUrl(section.path),
-        type: section.type,
-        identifier: section.path,
-        path: section.path,
-        depth,
-        sectionTitle: currentSection || '',
-      };
-      overviews.push(newOverview);
-    }
-
-    // Process children
-    if (section.children) {
-      processIndexSection(section.children, overviews, depth + 1, currentSection);
-    }
+    const path = node.path ?? "";
+    const entry: OverviewEntry = {
+      title: node.title,
+      path,
+      slug: path.split("/").pop() ?? "",
+      type: node.type ?? "",
+      depth,
+      group,
+      abstract: abstracts.get(path) ?? "",
+      ancestors,
+      parentTitle,
+    };
+    return [
+      entry,
+      ...flatten(
+        node.children ?? [],
+        depth + 1,
+        [...ancestors, path],
+        node.title,
+        abstracts,
+      ),
+    ];
   });
 }
 
 /**
- * Extract category from URL
+ * The entries the filters keep, at most `limit` of them: as the tree, or as a flat list when text was searched for
  */
-function extractCategoryFromUrl(url: string): string {
-  const match = url.match(/\/documentation\/technologyoverviews\/([^/]+)/i);
-  return match?.[1] ?? 'general';
+function formatOverviews(
+  all: OverviewEntry[],
+  filters: OverviewFilters,
+): string {
+  if (all.length === 0) {
+    return NOTHING_FOUND;
+  }
+  const wanted = filters.category?.toLowerCase();
+  const root = wanted
+    ? all.find(
+        (entry) =>
+          entry.slug.toLowerCase() === wanted ||
+          entry.title.toLowerCase() === wanted.replace(/-/g, " "),
+      )
+    : undefined;
+  if (wanted && !root) {
+    const categories = all
+      .filter((entry) => entry.type === "collection")
+      .map((entry) => entry.slug);
+    return `No technology overview matches category "${filters.category}". Categories: ${categories.join(", ")}.`;
+  }
+  const terms = filters.searchQuery ? [filters.searchQuery.toLowerCase()] : [];
+  const shown = all
+    .filter(
+      (entry) => !root || entry === root || entry.ancestors.includes(root.path),
+    )
+    .filter((entry) => filters.includeSubcategories || entry.type !== "article")
+    .filter((entry) =>
+      terms.every((term) =>
+        `${entry.title} ${entry.abstract} ${entry.path}`
+          .toLowerCase()
+          .includes(term),
+      ),
+    )
+    .slice(0, filters.limit);
+  if (shown.length === 0) {
+    return NOTHING_FOUND;
+  }
+  const body =
+    terms.length > 0 ? flatList(shown) : tree(shown, root?.depth ?? 0);
+  return (
+    `# Apple Developer Technology Overviews\n\n${body}\n\n---\n\n` +
+    "[Explore all Technology Overviews](https://developer.apple.com/documentation/technologyoverviews)"
+  );
 }
 
 /**
- * Apply filters to overviews
+ * Top entries as headings under their group's heading; the ones inside them as nested lists under their group's name
  */
-function applyOverviewsFilters(
-  overviews: OverviewItem[],
-  filters: {
-    category?: string;
-    platform?: string;
-    searchQuery?: string;
-    includeSubcategories?: boolean;
-    limit?: number;
-  },
-): OverviewItem[] {
-  let filtered = [...overviews];
-
-  // Category filter
-  if (filters.category) {
-    const categoryLower = filters.category.toLowerCase();
-
-    // First, find all items that match the category
-    const categoryItems = overviews.filter(overview => {
-      return overview.category.toLowerCase() === categoryLower ||
-             overview.title.toLowerCase() === categoryLower.replace(/-/g, ' ') ||
-             overview.path?.toLowerCase().includes(`/${categoryLower}`);
-    });
-
-    // If we found category items, also include their children
-    if (categoryItems.length > 0) {
-      const categoryPaths = categoryItems.map(item => item.path || item.url);
-
-      filtered = overviews.filter(overview => {
-        // Include the category items themselves
-        if (categoryItems.includes(overview)) {
-          return true;
-        }
-
-        // Include children of category items
-        if (overview.path || overview.url) {
-          const overviewPath = (overview.path || overview.url).replace('https://developer.apple.com', '');
-          return categoryPaths.some(categoryPath => {
-            const cleanCategoryPath = categoryPath.replace('https://developer.apple.com', '');
-            return overviewPath.startsWith(cleanCategoryPath) && overviewPath !== cleanCategoryPath;
-          });
-        }
-
-        return false;
-      });
-    } else {
-      // No matching category found
-      filtered = [];
+function tree(entries: OverviewEntry[], base: number): string {
+  const lines: string[] = [];
+  let heading = "";
+  let label = "";
+  for (const entry of entries) {
+    const depth = entry.depth - base;
+    if (depth === 0) {
+      if (lines.length > 0 && lines[lines.length - 1] !== "") {
+        lines.push("");
+      }
+      if (entry.group && entry.group !== heading) {
+        heading = entry.group;
+        lines.push(`## ${heading}`, "");
+      }
+      lines.push(
+        `### [${entry.title}](${urlOf(entry)})`,
+        `*${typeOf(entry)}*${entry.abstract ? ` — ${entry.abstract}` : ""}`,
+        "",
+      );
+      label = "";
+      continue;
     }
-  }
-
-  // Platform filter
-  if (filters.platform && filters.platform !== 'all') {
-    const platformLower = filters.platform.toLowerCase();
-    filtered = filtered.filter(overview =>
-      overview.title.toLowerCase().includes(platformLower) ||
-      overview.description.toLowerCase().includes(platformLower) ||
-      overview.path?.toLowerCase().includes(platformLower),
+    const indent = "  ".repeat(depth - 1);
+    const place = `${entry.ancestors.join(">")}|${entry.group}`;
+    if (entry.group && place !== label) {
+      lines.push(`${indent}**${entry.group}**`);
+    }
+    label = place;
+    lines.push(
+      `${indent}- [${entry.title}](${urlOf(entry)}) *(${typeOf(entry)})*${entry.abstract ? ` — ${entry.abstract}` : ""}`,
     );
   }
-
-  // Search query filter
-  if (filters.searchQuery) {
-    const queryLower = filters.searchQuery.toLowerCase();
-    filtered = filtered.filter(overview =>
-      overview.title.toLowerCase().includes(queryLower) ||
-      overview.description.toLowerCase().includes(queryLower),
-    );
-  }
-
-  // If not including subcategories, filter out deep items
-  if (!filters.includeSubcategories) {
-    // Keep only top-level items (depth 0 or 1)
-    filtered = filtered.filter(overview => overview.depth <= 1);
-  }
-
-  // Apply limit (limit top-level items, but include their children)
-  if (filters.limit && filters.limit > 0) {
-    // Count top-level items
-    let topLevelCount = 0;
-    const limitedResults: OverviewItem[] = [];
-
-    for (const item of filtered) {
-      if (item.depth === 0) {
-        if (topLevelCount >= filters.limit) {
-          break;
-        }
-        topLevelCount++;
-      }
-      limitedResults.push(item);
-    }
-
-    filtered = limitedResults;
-  }
-
-  return filtered;
+  return lines.join("\n").trim();
 }
 
-/**
- * Format overviews list
- */
-function formatOverviewsList(overviews: OverviewItem[]): string {
-  if (overviews.length === 0) {
-    return 'No technology overviews found matching the specified criteria.';
-  }
-
-  let content = '# Apple Developer Technology Overviews\n\n';
-  content += '*Comprehensive guides for Apple platforms and technologies*\n\n';
-
-  // Group by category and depth for better organization
-  const grouped = groupOverviewsByCategory(overviews);
-
-  // Format each category
-  Object.entries(grouped).forEach(([category, items]) => {
-    const categoryTitle = formatCategoryTitle(category);
-    content += `## ${categoryTitle}\n\n`;
-
-    // Sort items by depth and title
-    items.sort((a, b) => {
-      if (a.depth !== b.depth) {
-        return a.depth - b.depth;
-      }
-      return a.title.localeCompare(b.title);
-    });
-
-    // Format items with proper indentation
-    items.forEach(item => {
-      const indent = '  '.repeat(item.depth);
-
-      // Title with link
-      content += `${indent}### [${item.title}](${item.url})\n`;
-
-      // Type badge
-      if (item.type && item.type !== 'overview') {
-        content += `${indent}*Type: ${formatType(item.type)}*\n`;
-      }
-
-      // Description
-      if (item.description) {
-        content += `${indent}${item.description}\n`;
-      }
-
-      content += '\n';
-    });
-  });
-
-  content += '\n---\n\n[Explore all Technology Overviews](https://developer.apple.com/documentation/technologyoverviews)';
-
-  return content;
+function flatList(entries: OverviewEntry[]): string {
+  return entries
+    .map(
+      (entry) =>
+        `- [${entry.title}](${urlOf(entry)}) *(${typeOf(entry)})*` +
+        `${entry.parentTitle ? ` — in ${entry.parentTitle}` : ""}${entry.abstract ? `: ${entry.abstract}` : ""}`,
+    )
+    .join("\n");
 }
 
-/**
- * Group overviews by category
- */
-function groupOverviewsByCategory(overviews: OverviewItem[]): Record<string, OverviewItem[]> {
-  return overviews.reduce((acc, overview) => {
-    // Use sectionTitle for top-level items, otherwise use the parent category
-    let groupKey = overview.sectionTitle;
-
-    // If no section title or it's a nested item, try to group by top-level category
-    if (!groupKey && overview.depth > 0) {
-      // Extract top-level category from the path
-      const pathParts = overview.category.split('-');
-      groupKey = formatCategoryTitle(pathParts[0]);
-    }
-
-    // Default to formatted category
-    if (!groupKey) {
-      groupKey = formatCategoryTitle(overview.category);
-    }
-
-    if (!acc[groupKey]) {
-      acc[groupKey] = [];
-    }
-    acc[groupKey].push(overview);
-    return acc;
-  }, {} as Record<string, OverviewItem[]>);
+function urlOf(entry: OverviewEntry): string {
+  return `https://developer.apple.com${entry.path}`;
 }
 
-/**
- * Format category title
- */
-function formatCategoryTitle(category: string): string {
-  return category
-    .replace(/-/g, ' ')
-    .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-}
-
-/**
- * Format type
- */
-function formatType(type: string): string {
-  const typeMap: Record<string, string> = {
-    'collection': 'Collection',
-    'article': 'Article',
-    'module': 'Module',
-    'groupMarker': 'Group',
-  };
-  return typeMap[type] ?? type;
-}
-
-/**
- * Overview item interface
- */
-interface OverviewItem {
-  title: string;
-  url: string;
-  description: string;
-  category: string;
-  type: string;
-  identifier: string;
-  path?: string;
-  depth: number;
-  sectionTitle: string;
+function typeOf(entry: OverviewEntry): string {
+  return TYPE_LABELS[entry.type] ?? entry.type;
 }

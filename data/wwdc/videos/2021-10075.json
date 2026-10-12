@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -103,40 +104,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building an Immersive Experience with RealityKit",
-        "url": "https://developer.apple.com/documentation/realitykit/building_an_immersive_experience_with_realitykit"
-      },
-      {
-        "title": "Creating a fog effect using scene depth",
-        "url": "https://developer.apple.com/documentation/ARKit/creating-a-fog-effect-using-scene-depth"
-      },
-      {
-        "title": "Displaying a point cloud using scene depth",
-        "url": "https://developer.apple.com/documentation/ARKit/displaying-a-point-cloud-using-scene-depth"
+        "title": "Building an immersive experience with RealityKit",
+        "url": "https://developer.apple.com/documentation/RealityKit/building-an-immersive-experience-with-realitykit"
       },
       {
         "title": "Explore the RealityKit Developer Forums",
         "url": "https://developer.apple.com/forums/tags/realitykit"
       },
       {
+        "title": "Displaying a point cloud using scene depth",
+        "url": "https://developer.apple.com/documentation/ARKit/displaying-a-point-cloud-using-scene-depth"
+      },
+      {
+        "title": "Creating a fog effect using scene depth",
+        "url": "https://developer.apple.com/documentation/ARKit/creating-a-fog-effect-using-scene-depth"
+      },
+      {
         "title": "RealityKit",
         "url": "https://developer.apple.com/documentation/RealityKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10075/6/81A03814-3C6E-4B82-A5BB-92160CD0EF78/downloads/wwdc2021-10075_hd.mp4?dl=1",
@@ -168,5 +153,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10612"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:08.258Z"
+  "extractedAt": "2026-10-11T16:43:24.234Z"
 }

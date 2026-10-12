@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -31,28 +32,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "NSInflectionRule",
-        "url": "https://developer.apple.com/documentation/Foundation/NSInflectionRule"
-      },
-      {
         "title": "NSMorphology",
         "url": "https://developer.apple.com/documentation/Foundation/NSMorphology"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "NSInflectionRule",
+        "url": "https://developer.apple.com/documentation/Foundation/NSInflectionRule"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10153/6/A7A21FC4-917F-4A51-B18C-89DB54EBD3B7/downloads/wwdc2023-10153_hd.mp4?dl=1",
@@ -78,5 +63,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10109"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:45.067Z"
+  "extractedAt": "2026-10-11T16:36:14.675Z"
 }

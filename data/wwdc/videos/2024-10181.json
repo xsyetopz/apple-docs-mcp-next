@@ -158,8 +158,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Testing",
+        "url": "https://developer.apple.com/documentation/Xcode/testing"
       },
       {
         "title": "Forum: Developer Tools & Services",
@@ -170,24 +170,8 @@
         "url": "https://developer.apple.com/documentation/Xcode/including-notes-for-testers-with-a-beta-release-of-your-app"
       },
       {
-        "title": "Testing",
-        "url": "https://developer.apple.com/documentation/Xcode/testing"
-      },
-      {
         "title": "Xcode updates",
         "url": "https://developer.apple.com/documentation/Updates/Xcode"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10181/4/39C00926-6B07-4887-86C2-95B4CF6C8745/downloads/wwdc2024-10181_hd.mp4?dl=1",
@@ -243,5 +227,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110374"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:06.805Z"
+  "extractedAt": "2026-10-11T16:35:01.454Z"
 }

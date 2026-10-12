@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Logging",
         "url": "https://developer.apple.com/documentation/os/logging"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/414ipe55m84vk1h53/414/414_hd_developing_a_great_profiling_experience.mp4?dl=1",
@@ -54,5 +38,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/421"
     }
   ],
-  "extractedAt": "2025-07-18T10:17:00.109Z"
+  "extractedAt": "2026-10-11T16:48:10.904Z"
 }

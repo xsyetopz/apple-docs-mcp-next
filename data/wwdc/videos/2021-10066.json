@@ -58,10 +58,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Finding multiple players for a game",
         "url": "https://developer.apple.com/documentation/GameKit/finding-multiple-players-for-a-game"
       },
@@ -72,18 +68,6 @@
       {
         "title": "Human Interface Guidelines: Game Center",
         "url": "https://developer.apple.com/design/human-interface-guidelines/game-center"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10066/4/41B04DA6-0AE3-41B6-9CE1-CF48AAAF9439/downloads/wwdc2021-10066_hd.mp4?dl=1",
@@ -115,5 +99,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10619"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:37.636Z"
+  "extractedAt": "2026-10-11T16:42:45.424Z"
 }

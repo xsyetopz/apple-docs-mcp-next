@@ -1,0 +1,25 @@
+{
+  "id": "10299",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10299/",
+  "title": "Meet the presenter: Analyze hangs with Instruments",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10248",
+      "year": "2023",
+      "title": "Analyze hangs with Instruments",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10248"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:00.656Z"
+}

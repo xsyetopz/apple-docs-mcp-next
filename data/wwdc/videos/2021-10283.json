@@ -18,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Siri",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/siri"
-      },
-      {
         "title": "Offering Actions in the Shortcuts App",
         "url": "https://developer.apple.com/documentation/SiriKit/offering-actions-in-the-shortcuts-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Siri",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/siri"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10283/6/870EDB46-506F-4A85-83FE-8B90CA8A2C92/downloads/wwdc2021-10283_hd.mp4?dl=1",
@@ -89,12 +73,6 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10056"
     },
     {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
-    },
-    {
       "id": "10059",
       "year": "2021",
       "title": "What's new in UIKit",
@@ -113,5 +91,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/806"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:00.145Z"
+  "extractedAt": "2026-10-11T16:42:52.444Z"
 }

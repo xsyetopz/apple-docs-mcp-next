@@ -1,6 +1,6 @@
 {
   "year": "2023",
-  "videoCount": 181,
+  "videoCount": 316,
   "topics": [
     "Accessibility & Inclusion",
     "App Services",
@@ -13,6 +13,7 @@
     "Graphics & Games",
     "Health & Fitness",
     "Machine Learning & AI",
+    "Maps & Location",
     "Photos & Camera",
     "Privacy & Security",
     "Safari & Web",
@@ -67,7 +68,8 @@
       "title": "Animate symbols in your app",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -106,7 +108,8 @@
       "year": "2023",
       "title": "Beyond the basics of structured concurrency",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -115,12 +118,26 @@
       "dataFile": "videos/2023-10170.json"
     },
     {
+      "id": "111545",
+      "year": "2023",
+      "title": "Break the SwiftUIce",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111545/",
+      "dataFile": "videos/2023-111545.json"
+    },
+    {
       "id": "10028",
       "year": "2023",
       "title": "Bring widgets to life",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -133,7 +150,8 @@
       "year": "2023",
       "title": "Bring widgets to new places",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -189,7 +207,8 @@
       "year": "2023",
       "title": "Bring your Unity VR app to a fully immersive space",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -228,7 +247,8 @@
       "year": "2023",
       "title": "Build an app with SwiftData",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -241,7 +261,9 @@
       "year": "2023",
       "title": "Build better document-based apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -254,7 +276,8 @@
       "year": "2023",
       "title": "Build custom workouts with WorkoutKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -267,7 +290,8 @@
       "year": "2023",
       "title": "Build great games for spatial computing",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -307,7 +331,8 @@
       "year": "2023",
       "title": "Build spatial experiences with RealityKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -342,6 +367,19 @@
       "dataFile": "videos/2023-10029.json"
     },
     {
+      "id": "111306",
+      "year": "2023",
+      "title": "Community panel: What has the iPhone meant to people with disabilities?",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111306/",
+      "dataFile": "videos/2023-111306.json"
+    },
+    {
       "id": "10274",
       "year": "2023",
       "title": "Create 3D models for Quick Look spatial experiences",
@@ -373,7 +411,8 @@
       "year": "2023",
       "title": "Create a great spatial playback experience",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -386,7 +425,8 @@
       "year": "2023",
       "title": "Create a more responsive camera experience",
       "topics": [
-        "App Services"
+        "App Services",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -399,7 +439,8 @@
       "year": "2023",
       "title": "Create accessible spatial experiences",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -413,7 +454,8 @@
       "title": "Create animated symbols",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -426,7 +468,8 @@
       "year": "2023",
       "title": "Create immersive Unity apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -452,7 +495,8 @@
       "year": "2023",
       "title": "Create rich documentation with Swift-DocC",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -504,7 +548,8 @@
       "year": "2023",
       "title": "Deliver video content for spatial experiences",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -530,7 +575,8 @@
       "year": "2023",
       "title": "Deploy passkeys at work",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -543,7 +589,8 @@
       "year": "2023",
       "title": "Design and build apps for watchOS 10",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -557,7 +604,8 @@
       "title": "Design considerations for vision and motion",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -583,7 +631,8 @@
       "year": "2023",
       "title": "Design for spatial input",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -596,7 +645,8 @@
       "year": "2023",
       "title": "Design for spatial user interfaces",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -622,7 +672,8 @@
       "year": "2023",
       "title": "Design spatial SharePlay experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -635,7 +686,8 @@
       "year": "2023",
       "title": "Design widgets for the Smart Stack on Apple Watch",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -648,7 +700,9 @@
       "year": "2023",
       "title": "Design with SwiftUI",
       "topics": [
-        "Design"
+        "Design",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -670,11 +724,64 @@
       "dataFile": "videos/2023-10045.json"
     },
     {
+      "id": "10300",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10300/",
+      "dataFile": "videos/2023-10300.json"
+    },
+    {
+      "id": "10301",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10301/",
+      "dataFile": "videos/2023-10301.json"
+    },
+    {
+      "id": "10302",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10302/",
+      "dataFile": "videos/2023-10302.json"
+    },
+    {
+      "id": "10303",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10303/",
+      "dataFile": "videos/2023-10303.json"
+    },
+    {
       "id": "10203",
       "year": "2023",
       "title": "Develop your first immersive app",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -687,7 +794,8 @@
       "year": "2023",
       "title": "Discover Calendar and EventKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -700,7 +808,8 @@
       "year": "2023",
       "title": "Discover Continuity Camera for tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -726,7 +835,8 @@
       "year": "2023",
       "title": "Discover Metal for immersive apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -765,7 +875,8 @@
       "year": "2023",
       "title": "Discover streamlined location updates",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": true,
@@ -779,7 +890,8 @@
       "title": "Discover String Catalogs",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -845,7 +957,8 @@
       "year": "2023",
       "title": "Enhance your app’s audio experience with AirPods",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -858,7 +971,9 @@
       "year": "2023",
       "title": "Enhance your iPad and iPhone apps for the Shared Space",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -871,7 +986,8 @@
       "year": "2023",
       "title": "Enhance your spatial computing app with RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -898,7 +1014,8 @@
       "year": "2023",
       "title": "Expand on Swift macros",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -950,7 +1067,8 @@
       "year": "2023",
       "title": "Explore App Store Connect for spatial computing",
       "topics": [
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -990,7 +1108,8 @@
       "title": "Explore immersive sound design",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1003,7 +1122,8 @@
       "year": "2023",
       "title": "Explore materials in Reality Composer Pro",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1095,7 +1215,8 @@
       "year": "2023",
       "title": "Explore the USD ecosystem",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1134,7 +1255,8 @@
       "year": "2023",
       "title": "Generalize APIs with parameter packs",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1161,7 +1283,9 @@
       "title": "Get started with privacy manifests",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1184,6 +1308,58 @@
       "dataFile": "videos/2023-10111.json"
     },
     {
+      "id": "10316",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10316/",
+      "dataFile": "videos/2023-10316.json"
+    },
+    {
+      "id": "111328",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111328/",
+      "dataFile": "videos/2023-111328.json"
+    },
+    {
+      "id": "111329",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111329/",
+      "dataFile": "videos/2023-111329.json"
+    },
+    {
+      "id": "111330",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111330/",
+      "dataFile": "videos/2023-111330.json"
+    },
+    {
       "id": "10049",
       "year": "2023",
       "title": "Improve Core ML integration with async prediction",
@@ -1201,7 +1377,8 @@
       "year": "2023",
       "title": "Inspectors in SwiftUI: Discover the details",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1280,7 +1457,8 @@
       "year": "2023",
       "title": "Lift subjects from images in your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1348,7 +1526,9 @@
       "year": "2023",
       "title": "Meet Core Location for spatial computing",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1361,7 +1541,8 @@
       "year": "2023",
       "title": "Meet Core Location Monitor",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -1387,7 +1568,8 @@
       "year": "2023",
       "title": "Meet MapKit for SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -1400,7 +1582,8 @@
       "year": "2023",
       "title": "Meet mergeable libraries",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1439,7 +1622,8 @@
       "year": "2023",
       "title": "Meet Reality Composer Pro",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1452,7 +1636,8 @@
       "year": "2023",
       "title": "Meet RealityKit Trace",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1466,7 +1651,8 @@
       "title": "Meet Safari for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1480,7 +1666,8 @@
       "title": "Meet StoreKit for SwiftUI",
       "topics": [
         "App Services",
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1494,7 +1681,8 @@
       "title": "Meet Swift OpenAPI Generator",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1507,7 +1695,8 @@
       "year": "2023",
       "title": "Meet SwiftData",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1520,7 +1709,9 @@
       "year": "2023",
       "title": "Meet SwiftUI for spatial computing",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1543,12 +1734,380 @@
       "dataFile": "videos/2023-10143.json"
     },
     {
+      "id": "10299",
+      "year": "2023",
+      "title": "Meet the presenter: Analyze hangs with Instruments",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10299/",
+      "dataFile": "videos/2023-10299.json"
+    },
+    {
+      "id": "111302",
+      "year": "2023",
+      "title": "Meet the presenter: Build accessible apps with SwiftUI and UIKit",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111302/",
+      "dataFile": "videos/2023-111302.json"
+    },
+    {
+      "id": "111482",
+      "year": "2023",
+      "title": "Meet the presenter: Create a great ShazamKit experience",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111482/",
+      "dataFile": "videos/2023-111482.json"
+    },
+    {
+      "id": "111474",
+      "year": "2023",
+      "title": "Meet the presenter: Create a more responsive camera experience",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111474/",
+      "dataFile": "videos/2023-111474.json"
+    },
+    {
+      "id": "10297",
+      "year": "2023",
+      "title": "Meet the presenter: Debug with structured logging",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10297/",
+      "dataFile": "videos/2023-10297.json"
+    },
+    {
+      "id": "111481",
+      "year": "2023",
+      "title": "Meet the presenter: Embed the Photos Picker in your app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111481/",
+      "dataFile": "videos/2023-111481.json"
+    },
+    {
+      "id": "111301",
+      "year": "2023",
+      "title": "Meet the presenter: Extend Speech Synthesis with personal and custom voices",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111301/",
+      "dataFile": "videos/2023-111301.json"
+    },
+    {
+      "id": "111300",
+      "year": "2023",
+      "title": "Meet the presenter: Meet Assistive Access",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111300/",
+      "dataFile": "videos/2023-111300.json"
+    },
+    {
+      "id": "111518",
+      "year": "2023",
+      "title": "Meet the Presenter: Meet MapKit for SwiftUI",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111518/",
+      "dataFile": "videos/2023-111518.json"
+    },
+    {
+      "id": "10310",
+      "year": "2023",
+      "title": "Meet the presenter: Meet SwiftUI for spatial computing",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10310/",
+      "dataFile": "videos/2023-10310.json"
+    },
+    {
+      "id": "111303",
+      "year": "2023",
+      "title": "Meet the presenter: Perform accessibility audits for your app",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111303/",
+      "dataFile": "videos/2023-111303.json"
+    },
+    {
+      "id": "111476",
+      "year": "2023",
+      "title": "Meet the presenter: Support Cinematic mode videos in your app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111476/",
+      "dataFile": "videos/2023-111476.json"
+    },
+    {
+      "id": "111475",
+      "year": "2023",
+      "title": "Meet the presenter: Support external cameras in your iPadOS app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111475/",
+      "dataFile": "videos/2023-111475.json"
+    },
+    {
+      "id": "111477",
+      "year": "2023",
+      "title": "Meet the presenter: Support HDR images in your app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111477/",
+      "dataFile": "videos/2023-111477.json"
+    },
+    {
+      "id": "10311",
+      "year": "2023",
+      "title": "Meet the presenter: Take SwiftUI to the next dimension",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10311/",
+      "dataFile": "videos/2023-10311.json"
+    },
+    {
+      "id": "111228",
+      "year": "2023",
+      "title": "Meet the presenter: Update Live Activities with push notifications",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111228/",
+      "dataFile": "videos/2023-111228.json"
+    },
+    {
+      "id": "111231",
+      "year": "2023",
+      "title": "Meet the presenter: What’s new in App Store Connect",
+      "topics": [
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111231/",
+      "dataFile": "videos/2023-111231.json"
+    },
+    {
+      "id": "10330",
+      "year": "2023",
+      "title": "Meet the presenter: What’s new in Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10330/",
+      "dataFile": "videos/2023-10330.json"
+    },
+    {
+      "id": "10308",
+      "year": "2023",
+      "title": "Meet the presenter: Wind your way through advanced animations in SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10308/",
+      "dataFile": "videos/2023-10308.json"
+    },
+    {
+      "id": "10296",
+      "year": "2023",
+      "title": "Meet the presenter: Write Swift macros",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10296/",
+      "dataFile": "videos/2023-10296.json"
+    },
+    {
+      "id": "111304",
+      "year": "2023",
+      "title": "Meet the presenters: Create accessible spatial experiences",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111304/",
+      "dataFile": "videos/2023-111304.json"
+    },
+    {
+      "id": "10337",
+      "year": "2023",
+      "title": "Meet the presenters: Design with SwiftUI",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10337/",
+      "dataFile": "videos/2023-10337.json"
+    },
+    {
+      "id": "111589",
+      "year": "2023",
+      "title": "Meet the presenters: Meet mergeable libraries",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111589/",
+      "dataFile": "videos/2023-111589.json"
+    },
+    {
+      "id": "111605",
+      "year": "2023",
+      "title": "Meet the presenters: Meet RealityKit Trace",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111605/",
+      "dataFile": "videos/2023-111605.json"
+    },
+    {
+      "id": "111588",
+      "year": "2023",
+      "title": "Meet the presenters: Mix Swift and C++",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111588/",
+      "dataFile": "videos/2023-111588.json"
+    },
+    {
+      "id": "10338",
+      "year": "2023",
+      "title": "Meet the presenters: Sync to iCloud with CKSyncEngine",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10338/",
+      "dataFile": "videos/2023-10338.json"
+    },
+    {
+      "id": "10307",
+      "year": "2023",
+      "title": "Meet the presenters: What’s new in SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10307/",
+      "dataFile": "videos/2023-10307.json"
+    },
+    {
+      "id": "10295",
+      "year": "2023",
+      "title": "Meet the presenters: What’s new in Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10295/",
+      "dataFile": "videos/2023-10295.json"
+    },
+    {
       "id": "111215",
       "year": "2023",
       "title": "Meet UIKit for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1562,7 +2121,8 @@
       "title": "Meet watchOS 10",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1588,7 +2148,8 @@
       "year": "2023",
       "title": "Mix Swift and C++",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1614,7 +2175,8 @@
       "year": "2023",
       "title": "Optimize app power and performance for spatial computing",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1707,7 +2269,8 @@
       "year": "2023",
       "title": "Principles of spatial design",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1743,6 +2306,1286 @@
       "dataFile": "videos/2023-10250.json"
     },
     {
+      "id": "111216",
+      "year": "2023",
+      "title": "Q&A: Accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111216/",
+      "dataFile": "videos/2023-111216.json"
+    },
+    {
+      "id": "111217",
+      "year": "2023",
+      "title": "Q&A: Accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111217/",
+      "dataFile": "videos/2023-111217.json"
+    },
+    {
+      "id": "111224",
+      "year": "2023",
+      "title": "Q&A: ActivityKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111224/",
+      "dataFile": "videos/2023-111224.json"
+    },
+    {
+      "id": "111234",
+      "year": "2023",
+      "title": "Q&A: App Clips",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111234/",
+      "dataFile": "videos/2023-111234.json"
+    },
+    {
+      "id": "111335",
+      "year": "2023",
+      "title": "Q&A: App Intents and Shortcuts",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111335/",
+      "dataFile": "videos/2023-111335.json"
+    },
+    {
+      "id": "10322",
+      "year": "2023",
+      "title": "Q&A: App Store Connect",
+      "topics": [
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10322/",
+      "dataFile": "videos/2023-10322.json"
+    },
+    {
+      "id": "10327",
+      "year": "2023",
+      "title": "Q&A: App Store Server APIs & notifications",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10327/",
+      "dataFile": "videos/2023-10327.json"
+    },
+    {
+      "id": "111209",
+      "year": "2023",
+      "title": "Q&A: AppKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111209/",
+      "dataFile": "videos/2023-111209.json"
+    },
+    {
+      "id": "10348",
+      "year": "2023",
+      "title": "Q&A: ARKit, RealityKit, and Quick Look",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10348/",
+      "dataFile": "videos/2023-10348.json"
+    },
+    {
+      "id": "10343",
+      "year": "2023",
+      "title": "Q&A: ARKit, RealityKit, and Quick Look",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10343/",
+      "dataFile": "videos/2023-10343.json"
+    },
+    {
+      "id": "111534",
+      "year": "2023",
+      "title": "Q&A: AVFoundation",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111534/",
+      "dataFile": "videos/2023-111534.json"
+    },
+    {
+      "id": "10346",
+      "year": "2023",
+      "title": "Q&A: Bring your ARKit app to visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10346/",
+      "dataFile": "videos/2023-10346.json"
+    },
+    {
+      "id": "10350",
+      "year": "2023",
+      "title": "Q&A: Bring your ARKit app to visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10350/",
+      "dataFile": "videos/2023-10350.json"
+    },
+    {
+      "id": "111451",
+      "year": "2023",
+      "title": "Q&A: Build UIKit apps for visionOS",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111451/",
+      "dataFile": "videos/2023-111451.json"
+    },
+    {
+      "id": "111452",
+      "year": "2023",
+      "title": "Q&A: Build UIKit apps for visionOS",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111452/",
+      "dataFile": "videos/2023-111452.json"
+    },
+    {
+      "id": "111473",
+      "year": "2023",
+      "title": "Q&A: Camera",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111473/",
+      "dataFile": "videos/2023-111473.json"
+    },
+    {
+      "id": "10333",
+      "year": "2023",
+      "title": "Q&A: CarPlay",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10333/",
+      "dataFile": "videos/2023-10333.json"
+    },
+    {
+      "id": "111544",
+      "year": "2023",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111544/",
+      "dataFile": "videos/2023-111544.json"
+    },
+    {
+      "id": "10339",
+      "year": "2023",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10339/",
+      "dataFile": "videos/2023-10339.json"
+    },
+    {
+      "id": "111592",
+      "year": "2023",
+      "title": "Q&A: Connect your App Store subscriptions to Apple Podcasts",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111592/",
+      "dataFile": "videos/2023-111592.json"
+    },
+    {
+      "id": "111532",
+      "year": "2023",
+      "title": "Q&A: Continuity Camera for Apple TV",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111532/",
+      "dataFile": "videos/2023-111532.json"
+    },
+    {
+      "id": "111450",
+      "year": "2023",
+      "title": "Q&A: Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111450/",
+      "dataFile": "videos/2023-111450.json"
+    },
+    {
+      "id": "111245",
+      "year": "2023",
+      "title": "Q&A: Core ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111245/",
+      "dataFile": "videos/2023-111245.json"
+    },
+    {
+      "id": "10344",
+      "year": "2023",
+      "title": "Q&A: Create 3D content for Apple platforms",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10344/",
+      "dataFile": "videos/2023-10344.json"
+    },
+    {
+      "id": "10349",
+      "year": "2023",
+      "title": "Q&A: Create 3D content for Apple platforms",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10349/",
+      "dataFile": "videos/2023-10349.json"
+    },
+    {
+      "id": "111244",
+      "year": "2023",
+      "title": "Q&A: Create ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111244/",
+      "dataFile": "videos/2023-111244.json"
+    },
+    {
+      "id": "10321",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10321/",
+      "dataFile": "videos/2023-10321.json"
+    },
+    {
+      "id": "10329",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10329/",
+      "dataFile": "videos/2023-10329.json"
+    },
+    {
+      "id": "111285",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111285/",
+      "dataFile": "videos/2023-111285.json"
+    },
+    {
+      "id": "111286",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111286/",
+      "dataFile": "videos/2023-111286.json"
+    },
+    {
+      "id": "111289",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111289/",
+      "dataFile": "videos/2023-111289.json"
+    },
+    {
+      "id": "111290",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111290/",
+      "dataFile": "videos/2023-111290.json"
+    },
+    {
+      "id": "10318",
+      "year": "2023",
+      "title": "Q&A: Health and fitness",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10318/",
+      "dataFile": "videos/2023-10318.json"
+    },
+    {
+      "id": "10325",
+      "year": "2023",
+      "title": "Q&A: Health and fitness",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10325/",
+      "dataFile": "videos/2023-10325.json"
+    },
+    {
+      "id": "111457",
+      "year": "2023",
+      "title": "Q&A: HomeKit, Matter, and Thread",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111457/",
+      "dataFile": "videos/2023-111457.json"
+    },
+    {
+      "id": "111246",
+      "year": "2023",
+      "title": "Q&A: Image understanding and the Vision framework",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111246/",
+      "dataFile": "videos/2023-111246.json"
+    },
+    {
+      "id": "10334",
+      "year": "2023",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10334/",
+      "dataFile": "videos/2023-10334.json"
+    },
+    {
+      "id": "111579",
+      "year": "2023",
+      "title": "Q&A: Intro to Swift",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111579/",
+      "dataFile": "videos/2023-111579.json"
+    },
+    {
+      "id": "10284",
+      "year": "2023",
+      "title": "Q&A: Intro to Swift",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10284/",
+      "dataFile": "videos/2023-10284.json"
+    },
+    {
+      "id": "111211",
+      "year": "2023",
+      "title": "Q&A: iPadOS and iOS apps on Vision Pro",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111211/",
+      "dataFile": "videos/2023-111211.json"
+    },
+    {
+      "id": "111212",
+      "year": "2023",
+      "title": "Q&A: iPadOS and iOS apps on Vision Pro",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111212/",
+      "dataFile": "videos/2023-111212.json"
+    },
+    {
+      "id": "111258",
+      "year": "2023",
+      "title": "Q&A: Live Text and data scanning",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111258/",
+      "dataFile": "videos/2023-111258.json"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249/",
+      "dataFile": "videos/2023-111249.json"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250/",
+      "dataFile": "videos/2023-111250.json"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251/",
+      "dataFile": "videos/2023-111251.json"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248/",
+      "dataFile": "videos/2023-111248.json"
+    },
+    {
+      "id": "111516",
+      "year": "2023",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111516/",
+      "dataFile": "videos/2023-111516.json"
+    },
+    {
+      "id": "111517",
+      "year": "2023",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111517/",
+      "dataFile": "videos/2023-111517.json"
+    },
+    {
+      "id": "111287",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111287/",
+      "dataFile": "videos/2023-111287.json"
+    },
+    {
+      "id": "111288",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111288/",
+      "dataFile": "videos/2023-111288.json"
+    },
+    {
+      "id": "111336",
+      "year": "2023",
+      "title": "Q&A: Motorized iPhone stands and DockKit",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111336/",
+      "dataFile": "videos/2023-111336.json"
+    },
+    {
+      "id": "111531",
+      "year": "2023",
+      "title": "Q&A: MusicKit",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111531/",
+      "dataFile": "videos/2023-111531.json"
+    },
+    {
+      "id": "111247",
+      "year": "2023",
+      "title": "Q&A: Natural Language and Speech",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111247/",
+      "dataFile": "videos/2023-111247.json"
+    },
+    {
+      "id": "111219",
+      "year": "2023",
+      "title": "Q&A: Networking",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111219/",
+      "dataFile": "videos/2023-111219.json"
+    },
+    {
+      "id": "111220",
+      "year": "2023",
+      "title": "Q&A: Networking",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111220/",
+      "dataFile": "videos/2023-111220.json"
+    },
+    {
+      "id": "111210",
+      "year": "2023",
+      "title": "Q&A: Passkeys, iCloud Keychain, and authentication services",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111210/",
+      "dataFile": "videos/2023-111210.json"
+    },
+    {
+      "id": "111205",
+      "year": "2023",
+      "title": "Q&A: Passkeys, iCloud Keychain, and authentication services",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111205/",
+      "dataFile": "videos/2023-111205.json"
+    },
+    {
+      "id": "111480",
+      "year": "2023",
+      "title": "Q&A: Photo Picker",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111480/",
+      "dataFile": "videos/2023-111480.json"
+    },
+    {
+      "id": "111479",
+      "year": "2023",
+      "title": "Q&A: PhotoKit",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111479/",
+      "dataFile": "videos/2023-111479.json"
+    },
+    {
+      "id": "111213",
+      "year": "2023",
+      "title": "Q&A: Privacy, App Tracking Transparency, Privacy Manifests, SDK Signatures",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111213/",
+      "dataFile": "videos/2023-111213.json"
+    },
+    {
+      "id": "111214",
+      "year": "2023",
+      "title": "Q&A: Privacy, App Tracking Transparency, Privacy Manifests, SDK Signatures",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111214/",
+      "dataFile": "videos/2023-111214.json"
+    },
+    {
+      "id": "10320",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10320/",
+      "dataFile": "videos/2023-10320.json"
+    },
+    {
+      "id": "10326",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10326/",
+      "dataFile": "videos/2023-10326.json"
+    },
+    {
+      "id": "10335",
+      "year": "2023",
+      "title": "Q&A: Security",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10335/",
+      "dataFile": "videos/2023-10335.json"
+    },
+    {
+      "id": "111533",
+      "year": "2023",
+      "title": "Q&A: SharePlay",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111533/",
+      "dataFile": "videos/2023-111533.json"
+    },
+    {
+      "id": "10289",
+      "year": "2023",
+      "title": "Q&A: Signing and distribution",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10289/",
+      "dataFile": "videos/2023-10289.json"
+    },
+    {
+      "id": "111333",
+      "year": "2023",
+      "title": "Q&A: SiriKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111333/",
+      "dataFile": "videos/2023-111333.json"
+    },
+    {
+      "id": "111243",
+      "year": "2023",
+      "title": "Q&A: Spatial design",
+      "topics": [
+        "Design",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111243/",
+      "dataFile": "videos/2023-111243.json"
+    },
+    {
+      "id": "111324",
+      "year": "2023",
+      "title": "Q&A: Spatial design",
+      "topics": [
+        "Design",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111324/",
+      "dataFile": "videos/2023-111324.json"
+    },
+    {
+      "id": "10323",
+      "year": "2023",
+      "title": "Q&A: StoreKit and in-app purchase",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10323/",
+      "dataFile": "videos/2023-10323.json"
+    },
+    {
+      "id": "111454",
+      "year": "2023",
+      "title": "Q&A: StoreKit and in-app purchase",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111454/",
+      "dataFile": "videos/2023-111454.json"
+    },
+    {
+      "id": "111259",
+      "year": "2023",
+      "title": "Q&A: Subject lifting",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111259/",
+      "dataFile": "videos/2023-111259.json"
+    },
+    {
+      "id": "10294",
+      "year": "2023",
+      "title": "Q&A: Swift Package Manager",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10294/",
+      "dataFile": "videos/2023-10294.json"
+    },
+    {
+      "id": "111458",
+      "year": "2023",
+      "title": "Q&A: Swift Playgrounds",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111458/",
+      "dataFile": "videos/2023-111458.json"
+    },
+    {
+      "id": "10331",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10331/",
+      "dataFile": "videos/2023-10331.json"
+    },
+    {
+      "id": "111543",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111543/",
+      "dataFile": "videos/2023-111543.json"
+    },
+    {
+      "id": "10305",
+      "year": "2023",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10305/",
+      "dataFile": "videos/2023-10305.json"
+    },
+    {
+      "id": "10306",
+      "year": "2023",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10306/",
+      "dataFile": "videos/2023-10306.json"
+    },
+    {
+      "id": "10314",
+      "year": "2023",
+      "title": "Q&A: SwiftUI for visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10314/",
+      "dataFile": "videos/2023-10314.json"
+    },
+    {
+      "id": "10315",
+      "year": "2023",
+      "title": "Q&A: SwiftUI for visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10315/",
+      "dataFile": "videos/2023-10315.json"
+    },
+    {
+      "id": "10291",
+      "year": "2023",
+      "title": "Q&A: SwiftUI Previews",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10291/",
+      "dataFile": "videos/2023-10291.json"
+    },
+    {
+      "id": "10292",
+      "year": "2023",
+      "title": "Q&A: SwiftUI Previews",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10292/",
+      "dataFile": "videos/2023-10292.json"
+    },
+    {
+      "id": "111208",
+      "year": "2023",
+      "title": "Q&A: UIKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111208/",
+      "dataFile": "videos/2023-111208.json"
+    },
+    {
+      "id": "111207",
+      "year": "2023",
+      "title": "Q&A: UIKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111207/",
+      "dataFile": "videos/2023-111207.json"
+    },
+    {
+      "id": "111521",
+      "year": "2023",
+      "title": "Q&A: Update your app for watchOS 10",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111521/",
+      "dataFile": "videos/2023-111521.json"
+    },
+    {
+      "id": "111484",
+      "year": "2023",
+      "title": "Q&A: UX writing",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111484/",
+      "dataFile": "videos/2023-111484.json"
+    },
+    {
+      "id": "111520",
+      "year": "2023",
+      "title": "Q&A: watchOS 10 design",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111520/",
+      "dataFile": "videos/2023-111520.json"
+    },
+    {
+      "id": "111519",
+      "year": "2023",
+      "title": "Q&A: WeatherKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111519/",
+      "dataFile": "videos/2023-111519.json"
+    },
+    {
+      "id": "10342",
+      "year": "2023",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10342/",
+      "dataFile": "videos/2023-10342.json"
+    },
+    {
+      "id": "10341",
+      "year": "2023",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10341/",
+      "dataFile": "videos/2023-10341.json"
+    },
+    {
+      "id": "111522",
+      "year": "2023",
+      "title": "Q&A: Widgets in the Smart Stack on watchOS",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111522/",
+      "dataFile": "videos/2023-111522.json"
+    },
+    {
+      "id": "10285",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10285/",
+      "dataFile": "videos/2023-10285.json"
+    },
+    {
+      "id": "10286",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10286/",
+      "dataFile": "videos/2023-10286.json"
+    },
+    {
+      "id": "10287",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10287/",
+      "dataFile": "videos/2023-10287.json"
+    },
+    {
+      "id": "10288",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10288/",
+      "dataFile": "videos/2023-10288.json"
+    },
+    {
+      "id": "10290",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10290/",
+      "dataFile": "videos/2023-10290.json"
+    },
+    {
+      "id": "10293",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10293/",
+      "dataFile": "videos/2023-10293.json"
+    },
+    {
       "id": "10002",
       "year": "2023",
       "title": "Ready, set, relay: Protect app traffic with network relays",
@@ -1760,7 +3603,8 @@
       "year": "2023",
       "title": "Rediscover Safari developer features",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1787,7 +3631,9 @@
       "title": "Run your iPad and iPhone apps in the Shared Space",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1840,7 +3686,8 @@
       "year": "2023",
       "title": "Support Cinematic mode videos in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1933,7 +3780,9 @@
       "title": "Unleash the UIKit trait system",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1946,7 +3795,8 @@
       "year": "2023",
       "title": "Unlock the power of grammatical agreement",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1999,7 +3849,9 @@
       "title": "Verify app dependencies with digital signatures",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2093,7 +3945,9 @@
       "title": "What’s new in AppKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2133,7 +3987,8 @@
       "year": "2023",
       "title": "What’s new in Core Motion",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -2200,7 +4055,8 @@
       "title": "What’s new in ScreenCaptureKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -2213,7 +4069,8 @@
       "year": "2023",
       "title": "What’s new in SF Symbols 5",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2241,7 +4098,8 @@
       "title": "What’s new in Swift",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2254,7 +4112,8 @@
       "year": "2023",
       "title": "What’s new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2267,7 +4126,9 @@
       "year": "2023",
       "title": "What’s new in UIKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2280,7 +4141,8 @@
       "year": "2023",
       "title": "What’s new in VisionKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2332,7 +4194,8 @@
       "year": "2023",
       "title": "What’s new in Web Inspector",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -2359,7 +4222,9 @@
       "year": "2023",
       "title": "What’s new with text and text interactions",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -2398,7 +4263,8 @@
       "year": "2023",
       "title": "Write Swift macros",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,

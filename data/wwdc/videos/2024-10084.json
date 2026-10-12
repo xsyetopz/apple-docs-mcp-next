@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Health & Fitness",
         "url": "https://developer.apple.com/forums/topics/health-and-fitness?cid=vf-a-0010"
       },
       {
         "title": "WorkoutKit",
         "url": "https://developer.apple.com/documentation/WorkoutKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10084/5/B6B1BB75-9C3C-4915-9878-B181CEC0C79C/downloads/wwdc2024-10084_hd.mp4?dl=1",
@@ -52,5 +37,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10016"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:25.323Z"
+  "extractedAt": "2026-10-11T16:34:51.550Z"
 }

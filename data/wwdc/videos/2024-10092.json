@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,40 +50,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Interacting with virtual content blended with passthrough",
+        "url": "https://developer.apple.com/documentation/CompositorServices/interacting-with-virtual-content-blended-with-passthrough"
+      },
+      {
+        "title": "Improving rendering performance with vertex amplification",
+        "url": "https://developer.apple.com/documentation/Metal/improving-rendering-performance-with-vertex-amplification"
+      },
+      {
+        "title": "Rendering a scene with deferred lighting in Swift",
+        "url": "https://developer.apple.com/documentation/Metal/rendering-a-scene-with-deferred-lighting-in-swift"
       },
       {
         "title": "Forum: Graphics & Games",
         "url": "https://developer.apple.com/forums/topics/graphics-and-games?cid=vf-a-0010"
       },
       {
-        "title": "Improving Rendering Performance with Vertex Amplification",
-        "url": "https://developer.apple.com/documentation/Metal/improving-rendering-performance-with-vertex-amplification"
-      },
-      {
-        "title": "Interacting with virtual content blended with passthrough",
-        "url": "https://developer.apple.com/documentation/CompositorServices/interacting-with-virtual-content-blended-with-passthrough"
-      },
-      {
-        "title": "Rendering a Scene with Deferred Lighting in Swift",
-        "url": "https://developer.apple.com/documentation/Metal/rendering-a-scene-with-deferred-lighting-in-swift"
-      },
-      {
-        "title": "Rendering at Different Rasterization Rates",
+        "title": "Rendering at different rasterization rates",
         "url": "https://developer.apple.com/documentation/Metal/rendering-at-different-rasterization-rates"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10092/4/B9AC5FF0-C58C-4608-AC8D-7AD3A82ABD42/downloads/wwdc2024-10092_hd.mp4?dl=1",
@@ -114,5 +99,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10082"
     }
   ],
-  "extractedAt": "2025-07-18T10:29:20.079Z"
+  "extractedAt": "2026-10-11T16:34:59.006Z"
 }

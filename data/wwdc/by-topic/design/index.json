@@ -1,8 +1,9 @@
 {
   "id": "design",
   "name": "Design",
-  "videoCount": 143,
+  "videoCount": 172,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -18,11 +19,198 @@
   ],
   "videos": [
     {
+      "id": "251",
+      "year": "2026",
+      "title": "Communicate your brand identity on iOS",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/251/",
+      "dataFile": "videos/2026-251.json"
+    },
+    {
+      "id": "322",
+      "year": "2026",
+      "title": "Compose advanced graphics effects with SwiftUI",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/322/",
+      "dataFile": "videos/2026-322.json"
+    },
+    {
+      "id": "290",
+      "year": "2026",
+      "title": "Craft clear names for features and labels in your app",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/290/",
+      "dataFile": "videos/2026-290.json"
+    },
+    {
+      "id": "227",
+      "year": "2026",
+      "title": "Create UI prototypes using agents in Xcode",
+      "topics": [
+        "Design",
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/227/",
+      "dataFile": "videos/2026-227.json"
+    },
+    {
+      "id": "234",
+      "year": "2026",
+      "title": "Design immersive environments for visionOS apps and the spatial web",
+      "topics": [
+        "Design",
+        "Graphics & Games",
+        "Machine Learning & AI",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/234/",
+      "dataFile": "videos/2026-234.json"
+    },
+    {
+      "id": "292",
+      "year": "2026",
+      "title": "Design intuitive search experiences",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/292/",
+      "dataFile": "videos/2026-292.json"
+    },
+    {
+      "id": "252",
+      "year": "2026",
+      "title": "Design no-code games with Reality Composer Pro 3",
+      "topics": [
+        "Design",
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/252/",
+      "dataFile": "videos/2026-252.json"
+    },
+    {
+      "id": "321",
+      "year": "2026",
+      "title": "Dive into lazy stacks and scrolling with SwiftUI",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/321/",
+      "dataFile": "videos/2026-321.json"
+    },
+    {
+      "id": "8012",
+      "year": "2026",
+      "title": "Icon Composer for Beginners Group Lab",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8012/",
+      "dataFile": "videos/2026-8012.json"
+    },
+    {
+      "id": "314",
+      "year": "2026",
+      "title": "Learn CSS Grid Lanes",
+      "topics": [
+        "Design",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/314/",
+      "dataFile": "videos/2026-314.json"
+    },
+    {
+      "id": "250",
+      "year": "2026",
+      "title": "Principles of great design",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/250/",
+      "dataFile": "videos/2026-250.json"
+    },
+    {
+      "id": "315",
+      "year": "2026",
+      "title": "Rediscover the HTML select element",
+      "topics": [
+        "Design",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/315/",
+      "dataFile": "videos/2026-315.json"
+    },
+    {
+      "id": "269",
+      "year": "2026",
+      "title": "What’s new in SwiftUI",
+      "topics": [
+        "App Services",
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/269/",
+      "dataFile": "videos/2026-269.json"
+    },
+    {
       "id": "274",
       "year": "2025",
       "title": "Better together: SwiftUI and RealityKit",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -35,10 +223,11 @@
       "year": "2025",
       "title": "Build a SwiftUI app with the new design",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
-      "hasCode": false,
+      "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2025/323/",
       "dataFile": "videos/2025-323.json"
@@ -48,7 +237,8 @@
       "year": "2025",
       "title": "Build a UIKit app with the new design",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -61,7 +251,8 @@
       "year": "2025",
       "title": "Create icons with Icon Composer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -88,7 +279,8 @@
       "year": "2025",
       "title": "Design hover interactions for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -101,7 +293,8 @@
       "year": "2025",
       "title": "Design interactive snippets",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -114,7 +307,9 @@
       "year": "2025",
       "title": "Design widgets for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -127,7 +322,8 @@
       "year": "2025",
       "title": "Elevate the design of your iPad app",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -140,7 +336,8 @@
       "year": "2025",
       "title": "Explore prompt design & safety for on-device foundation models",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -154,7 +351,8 @@
       "title": "Explore video experiences for visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -167,7 +365,8 @@
       "year": "2025",
       "title": "Get to know the new design system",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -193,7 +392,8 @@
       "year": "2025",
       "title": "Meet Liquid Glass",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -206,7 +406,9 @@
       "year": "2025",
       "title": "Meet SwiftUI spatial layout",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -220,7 +422,8 @@
       "title": "Optimize your custom environments for visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -248,7 +451,8 @@
       "year": "2025",
       "title": "Say hello to the new look of app icons",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -261,7 +465,9 @@
       "year": "2025",
       "title": "Set the scene with SwiftUI in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -274,7 +480,8 @@
       "year": "2025",
       "title": "What’s new in SF Symbols 7",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -290,7 +497,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -304,7 +515,9 @@
       "title": "What’s new in Xcode 26",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -330,7 +543,8 @@
       "year": "2024",
       "title": "Create custom environments for your immersive apps in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -343,7 +557,9 @@
       "year": "2024",
       "title": "Create custom hover effects in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -357,7 +573,8 @@
       "title": "Create custom visual effects with SwiftUI",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -384,7 +601,8 @@
       "year": "2024",
       "title": "Design App Intents for system experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -398,7 +616,8 @@
       "title": "Design great visionOS apps",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -411,7 +630,8 @@
       "year": "2024",
       "title": "Design interactive experiences for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -438,7 +658,8 @@
       "year": "2024",
       "title": "Elevate your tab and sidebar experience in iPadOS",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -451,7 +672,8 @@
       "year": "2024",
       "title": "Enhance your UI animations and transitions",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -465,7 +687,8 @@
       "title": "Explore game input in visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -479,7 +702,8 @@
       "title": "Explore multiview video playback in visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -492,7 +716,8 @@
       "year": "2024",
       "title": "Say hello to the next generation of CarPlay design system",
       "topics": [
-        "Design"
+        "Design",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -505,7 +730,8 @@
       "year": "2024",
       "title": "What’s new in SF Symbols 6",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -519,7 +745,8 @@
       "title": "Animate symbols in your app",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -533,7 +760,8 @@
       "title": "Create animated symbols",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -546,7 +774,8 @@
       "year": "2023",
       "title": "Design and build apps for watchOS 10",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -560,7 +789,8 @@
       "title": "Design considerations for vision and motion",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -586,7 +816,8 @@
       "year": "2023",
       "title": "Design for spatial input",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -599,7 +830,8 @@
       "year": "2023",
       "title": "Design for spatial user interfaces",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -625,7 +857,8 @@
       "year": "2023",
       "title": "Design spatial SharePlay experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -638,7 +871,8 @@
       "year": "2023",
       "title": "Design widgets for the Smart Stack on Apple Watch",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -651,7 +885,9 @@
       "year": "2023",
       "title": "Design with SwiftUI",
       "topics": [
-        "Design"
+        "Design",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -665,7 +901,8 @@
       "title": "Explore immersive sound design",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -689,12 +926,27 @@
       "dataFile": "videos/2023-10229.json"
     },
     {
+      "id": "10337",
+      "year": "2023",
+      "title": "Meet the presenters: Design with SwiftUI",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10337/",
+      "dataFile": "videos/2023-10337.json"
+    },
+    {
       "id": "10026",
       "year": "2023",
       "title": "Meet watchOS 10",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -707,7 +959,8 @@
       "year": "2023",
       "title": "Principles of spatial design",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -716,11 +969,80 @@
       "dataFile": "videos/2023-10072.json"
     },
     {
+      "id": "111243",
+      "year": "2023",
+      "title": "Q&A: Spatial design",
+      "topics": [
+        "Design",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111243/",
+      "dataFile": "videos/2023-111243.json"
+    },
+    {
+      "id": "111324",
+      "year": "2023",
+      "title": "Q&A: Spatial design",
+      "topics": [
+        "Design",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111324/",
+      "dataFile": "videos/2023-111324.json"
+    },
+    {
+      "id": "111484",
+      "year": "2023",
+      "title": "Q&A: UX writing",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111484/",
+      "dataFile": "videos/2023-111484.json"
+    },
+    {
+      "id": "111520",
+      "year": "2023",
+      "title": "Q&A: watchOS 10 design",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111520/",
+      "dataFile": "videos/2023-111520.json"
+    },
+    {
+      "id": "111522",
+      "year": "2023",
+      "title": "Q&A: Widgets in the Smart Stack on watchOS",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111522/",
+      "dataFile": "videos/2023-111522.json"
+    },
+    {
       "id": "10197",
       "year": "2023",
       "title": "What’s new in SF Symbols 5",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -733,7 +1055,8 @@
       "year": "2022",
       "title": "Adopt Variable Color in SF Symbols",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -786,7 +1109,8 @@
       "year": "2022",
       "title": "Design app experiences with charts",
       "topics": [
-        "Design"
+        "Design",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -873,7 +1197,8 @@
         "App Services",
         "Audio & Video",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -886,7 +1211,8 @@
       "year": "2022",
       "title": "Meet the expanded San Francisco font family",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -895,12 +1221,100 @@
       "dataFile": "videos/2022-110381.json"
     },
     {
+      "id": "110531",
+      "year": "2022",
+      "title": "Meet the Presenter: Design app experiences with charts",
+      "topics": [
+        "Design",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110531/",
+      "dataFile": "videos/2022-110531.json"
+    },
+    {
+      "id": "110533",
+      "year": "2022",
+      "title": "Meet the Presenter: Design App Shortcuts",
+      "topics": [
+        "App Services",
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110533/",
+      "dataFile": "videos/2022-110533.json"
+    },
+    {
+      "id": "110484",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore design navigation on iOS",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110484/",
+      "dataFile": "videos/2022-110484.json"
+    },
+    {
+      "id": "110532",
+      "year": "2022",
+      "title": "Meet the Presenter: Writing for interfaces",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110532/",
+      "dataFile": "videos/2022-110532.json"
+    },
+    {
+      "id": "110530",
+      "year": "2022",
+      "title": "Q&A: Human Interface Guidelines",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110530/",
+      "dataFile": "videos/2022-110530.json"
+    },
+    {
+      "id": "10175",
+      "year": "2022",
+      "title": "Q&A: Prototyping",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10175/",
+      "dataFile": "videos/2022-10175.json"
+    },
+    {
       "id": "10131",
       "year": "2022",
       "title": "Qualities of great AR experiences",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1010,7 +1424,8 @@
       "year": "2021",
       "title": "Design for Safari 15",
       "topics": [
-        "Design"
+        "Design",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1023,7 +1438,8 @@
       "year": "2021",
       "title": "Design for spatial interaction",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1051,7 +1467,8 @@
       "title": "Discoverable design",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1065,7 +1482,8 @@
       "title": "Explore the SF Symbols 3 app",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1094,7 +1512,8 @@
       "topics": [
         "Audio & Video",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1107,7 +1526,8 @@
       "year": "2021",
       "title": "SF Symbols in SwiftUI",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1153,7 +1573,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1167,7 +1588,8 @@
       "title": "What’s new in SF Symbols",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1193,7 +1615,8 @@
       "year": "2020",
       "title": "Adopt the new look of macOS",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1207,7 +1630,8 @@
       "title": "App accessibility for Switch Control",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1220,7 +1644,8 @@
       "year": "2020",
       "title": "Build for the iPadOS pointer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1307,7 +1732,9 @@
       "year": "2020",
       "title": "Design for location privacy",
       "topics": [
-        "Design"
+        "Design",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -1320,7 +1747,8 @@
       "year": "2020",
       "title": "Design for the iPadOS pointer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1359,7 +1787,8 @@
       "year": "2020",
       "title": "Design with iOS pickers, menus and actions",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1400,7 +1829,8 @@
       "title": "Make your app visually accessible",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1413,7 +1843,8 @@
       "year": "2020",
       "title": "SF Symbols 2",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1443,7 +1874,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2020/20022/",
       "dataFile": "videos/2020-20022.json"
     },
@@ -1505,7 +1936,8 @@
       "year": "2019",
       "title": "Designing Award Winning Apps and Games",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1518,7 +1950,8 @@
       "year": "2019",
       "title": "Designing Great ML Experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1559,7 +1992,8 @@
       "title": "Expanding the Sensory Experience with Core Haptics",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1573,7 +2007,8 @@
       "title": "Great Developer Habits",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1600,7 +2035,8 @@
       "year": "2019",
       "title": "Introducing SF Symbols",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1614,7 +2050,8 @@
       "title": "Mastering the Living Room With tvOS",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1628,13 +2065,27 @@
       "title": "Visual Design and Accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2019/244/",
       "dataFile": "videos/2019-244.json"
+    },
+    {
+      "id": "801",
+      "year": "2019",
+      "title": "What’s New in iOS and macOS Design",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/801/",
+      "dataFile": "videos/2019-801.json"
     },
     {
       "id": "808",
@@ -1663,6 +2114,19 @@
       "dataFile": "videos/2018-803.json"
     },
     {
+      "id": "806",
+      "year": "2018",
+      "title": "Designing Notifications",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/806/",
+      "dataFile": "videos/2018-806.json"
+    },
+    {
       "id": "802",
       "year": "2018",
       "title": "Intentional Design",
@@ -1674,6 +2138,32 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2018/802/",
       "dataFile": "videos/2018-802.json"
+    },
+    {
+      "id": "811",
+      "year": "2018",
+      "title": "Presenting Design Work",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/811/",
+      "dataFile": "videos/2018-811.json"
+    },
+    {
+      "id": "804",
+      "year": "2018",
+      "title": "The Life of a Button",
+      "topics": [
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/804/",
+      "dataFile": "videos/2018-804.json"
     },
     {
       "id": "801",
@@ -1732,7 +2222,8 @@
       "year": "2017",
       "title": "Design Tips for Great Games",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1799,7 +2290,8 @@
       "title": "Express Yourself!",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1812,7 +2304,9 @@
       "year": "2017",
       "title": "Get Started with Display P3",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1851,7 +2345,8 @@
       "year": "2017",
       "title": "Rich Notifications",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1864,7 +2359,8 @@
       "year": "2017",
       "title": "Size Classes and Core Components",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1930,7 +2426,8 @@
       "title": "Ingredients of Great Games",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,

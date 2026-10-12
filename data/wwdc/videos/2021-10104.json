@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10104/6/CA8FE4D3-295C-4F3F-90F5-447CB81B37B7/downloads/wwdc2021-10104_hd.mp4?dl=1",
@@ -90,5 +75,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10665"
     }
   ],
-  "extractedAt": "2025-07-18T10:26:27.405Z"
+  "extractedAt": "2026-10-11T16:42:36.275Z"
 }

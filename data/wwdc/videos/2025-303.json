@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Rendering hover effects in Metal immersive apps",
         "url": "https://developer.apple.com/documentation/CompositorServices/rendering_hover_effects_in_metal_immersive_apps"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/303/4/e69ceb99-2702-4bcc-a24d-6b8b2d37ccff/downloads/wwdc2025-303_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/303/4/e69ceb99-2702-4bcc-a24d-6b8b2d37ccff/downloads/wwdc2025-303_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:35:08.117Z"
+  "extractedAt": "2026-10-11T16:33:28.764Z"
 }

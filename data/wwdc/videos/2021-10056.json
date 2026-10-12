@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Store, Distribution & Marketing",
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -38,28 +39,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building and improving your app with Mac Catalyst",
         "url": "https://developer.apple.com/documentation/UIKit/building-and-improving-your-app-with-mac-catalyst"
       },
       {
         "title": "Running your iOS apps in macOS",
         "url": "https://developer.apple.com/documentation/Apple-Silicon/running-your-ios-apps-in-macos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10056/3/6A9E120D-9217-4F54-98A5-853D65EDBCDE/downloads/wwdc2021-10056_hd.mp4?dl=1",
@@ -133,5 +118,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10662"
     }
   ],
-  "extractedAt": "2025-07-18T09:19:53.562Z"
+  "extractedAt": "2026-10-11T16:43:32.370Z"
 }

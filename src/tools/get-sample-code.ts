@@ -1,99 +1,46 @@
-import { APPLE_URLS } from '../utils/constants.js';
-import { httpClient } from '../utils/http-client.js';
-import { sampleCodeCache, generateUrlCacheKey } from '../utils/cache.js';
-import { normalizeFrameworkName } from '../utils/framework-mapper.js';
+import type {
+  RenderIndex,
+  RenderIndexNode,
+  RenderNode,
+} from "../types/docc.ts";
+import { isTopicReference } from "../types/docc.ts";
+import { generateUrlCacheKey, sampleCodeCache } from "../utils/cache.ts";
+import { APPLE_URLS } from "../utils/constants.ts";
+import { normalizeFrameworkName } from "../utils/framework-mapper.ts";
+import { httpClient } from "../utils/http-client.ts";
+import { formatInlineContent } from "./doc-formatter.ts";
+import { technologyNames } from "./list-technologies.ts";
 
 // Types for sample code responses
-interface SampleCodeMetadata {
-  role: string;
-  title: string;
-  images?: Array<{
-    type: string;
-    identifier: string;
-  }>;
-  color?: {
-    standardColorIdentifier: string;
-  };
-  customMetadata?: {
-    'show-on-this-page'?: string;
-  };
-}
-
-interface SampleCodeSection {
-  anchor: string;
-  title: string;
-  identifiers: string[];
-}
-
-interface SampleCodeContent {
-  metadata: SampleCodeMetadata;
-  abstract?: Array<{
-    type: string;
-    text: string;
-  }>;
-  primaryContentSections?: Array<{
-    kind: string;
-    content: Array<{
-      type: string;
-      text?: string;
-      anchor?: string;
-      level?: number;
-      inlineContent?: Array<{
-        type: string;
-        text: string;
-      }>;
-      items?: string[];
-      style?: string;
-    }>;
-  }>;
-  topicSections?: SampleCodeSection[];
-}
-
-interface SampleCodeIndexNode {
-  path?: string;
-  title: string;
-  type: string;
-  children?: SampleCodeIndexNode[];
-  external?: boolean;
-  beta?: boolean;
-}
-
-interface SampleCodeIndex {
-  interfaceLanguages: {
-    [key: string]: SampleCodeIndexNode[];
-  };
-}
-
 interface ParsedSampleCode {
   id: string;
   title: string;
-  framework?: string;
-  description?: string;
+  framework?: string | undefined;
+  description?: string | undefined;
   beta: boolean;
-  featured?: boolean;
+  featured?: boolean | undefined;
   url: string;
   path: string;
   depth: number;
 }
 
 interface SampleCodeFilters {
-  framework?: string;
-  beta?: 'include' | 'exclude' | 'only';
-  searchQuery?: string;
+  framework?: string | undefined;
+  beta?: "include" | "exclude" | "only" | undefined;
+  searchQuery?: string | undefined;
 }
-
 
 /**
  * Handles the get_sample_code tool request
  */
 export async function handleGetSampleCode(
   framework?: string,
-  beta: 'include' | 'exclude' | 'only' = 'include',
+  beta: "include" | "exclude" | "only" = "include",
   searchQuery?: string,
   limit: number = 50,
 ): Promise<string> {
   // Generate cache key
-  const cacheKey = generateUrlCacheKey('sample-code', {
+  const cacheKey = generateUrlCacheKey("sample-code", {
     framework,
     beta,
     searchQuery,
@@ -101,30 +48,34 @@ export async function handleGetSampleCode(
   });
 
   // Try to get from cache first
-  const cachedResult = sampleCodeCache.get<string>(cacheKey);
+  const cachedResult = sampleCodeCache.get(cacheKey);
   if (cachedResult) {
     return cachedResult;
   }
 
   // Fetch both JSON files
-  const [contentResponse, indexResponse] = await Promise.all([
+  const [contentResponse, indexResponse, names] = await Promise.all([
     httpClient.get(APPLE_URLS.SAMPLE_CODE_JSON),
     httpClient.get(APPLE_URLS.SAMPLE_CODE_INDEX_JSON),
+    technologyNames(),
   ]);
 
   if (!contentResponse.ok) {
-    throw new Error(`Failed to fetch sample code content: ${contentResponse.statusText}`);
+    throw new Error(
+      `Failed to fetch sample code content: ${contentResponse.statusText}`,
+    );
   }
   if (!indexResponse.ok) {
-    throw new Error(`Failed to fetch sample code index: ${indexResponse.statusText}`);
+    throw new Error(
+      `Failed to fetch sample code index: ${indexResponse.statusText}`,
+    );
   }
 
-  const contentData = await contentResponse.json() as SampleCodeContent;
-  const indexData = await indexResponse.json() as SampleCodeIndex;
-
+  const contentData = (await contentResponse.json()) as RenderNode;
+  const indexData = (await indexResponse.json()) as RenderIndex;
 
   // Parse the sample codes
-  const sampleCodes = parseSampleCodes(contentData, indexData);
+  const sampleCodes = parseSampleCodes(contentData, indexData, names);
 
   // Apply filters
   const filters: SampleCodeFilters = {
@@ -165,16 +116,20 @@ export async function handleGetSampleCode(
 /**
  * Parses sample codes from the content and index data
  */
-function parseSampleCodes(content: SampleCodeContent, index: SampleCodeIndex): ParsedSampleCode[] {
+function parseSampleCodes(
+  content: RenderNode,
+  index: RenderIndex,
+  names: Map<string, string>,
+): ParsedSampleCode[] {
   const sampleCodes: ParsedSampleCode[] = [];
   const featuredIds = new Set<string>();
 
   // Extract featured sample codes from primary content sections
   if (content.primaryContentSections) {
     for (const section of content.primaryContentSections) {
-      if (section.kind === 'content' && section.content) {
+      if ("kind" in section && section.kind === "content") {
         for (const contentItem of section.content) {
-          if (contentItem.type === 'links' && contentItem.items) {
+          if ("type" in contentItem && contentItem.type === "links") {
             for (const item of contentItem.items) {
               featuredIds.add(item);
             }
@@ -189,24 +144,47 @@ function parseSampleCodes(content: SampleCodeContent, index: SampleCodeIndex): P
   if (content.topicSections) {
     for (const section of content.topicSections) {
       for (const identifier of section.identifiers) {
-        frameworkMap.set(identifier, section.title);
+        frameworkMap.set(identifier, section.title ?? "");
       }
     }
   }
 
   // Process index data
   for (const [, nodes] of Object.entries(index.interfaceLanguages)) {
-    processSampleCodeNodes(nodes, sampleCodes, frameworkMap, featuredIds, '', 0);
+    processSampleCodeNodes(
+      nodes,
+      sampleCodes,
+      frameworkMap,
+      featuredIds,
+      "",
+      0,
+    );
   }
 
-  // Deduplicate sample codes based on path
-  return deduplicateSampleCodes(sampleCodes);
+  // Each sample's one-line summary, from the library page's references, keyed by its path
+  const summaries = new Map(
+    Object.values(content.references ?? {})
+      .filter(isTopicReference)
+      .map((ref) => [
+        ref.url,
+        formatInlineContent(ref.abstract ?? [], content.references).trim(),
+      ]),
+  );
+
+  // Deduplicate sample codes based on path; each framework as Apple's technologies index names it, not its URL path
+  return deduplicateSampleCodes(sampleCodes).map((code) => ({
+    ...code,
+    framework: names.get(code.path.split("/")[2] ?? "") ?? code.framework,
+    description: summaries.get(code.path),
+  }));
 }
 
 /**
  * Deduplicates sample codes based on path
  */
-function deduplicateSampleCodes(sampleCodes: ParsedSampleCode[]): ParsedSampleCode[] {
+function deduplicateSampleCodes(
+  sampleCodes: ParsedSampleCode[],
+): ParsedSampleCode[] {
   const uniqueCodes = new Map<string, ParsedSampleCode>();
 
   for (const code of sampleCodes) {
@@ -232,7 +210,7 @@ function deduplicateSampleCodes(sampleCodes: ParsedSampleCode[]): ParsedSampleCo
  * Recursively processes sample code nodes
  */
 function processSampleCodeNodes(
-  nodes: SampleCodeIndexNode[],
+  nodes: RenderIndexNode[],
   sampleCodes: ParsedSampleCode[],
   frameworkMap: Map<string, string>,
   featuredIds: Set<string>,
@@ -240,13 +218,20 @@ function processSampleCodeNodes(
   depth: number,
 ): void {
   for (const node of nodes) {
-    if (node.type === 'groupMarker') {
+    if (node.type === "groupMarker") {
       // This is a framework/category marker
       const framework = normalizeFrameworkName(node.title);
       if (node.children) {
-        processSampleCodeNodes(node.children, sampleCodes, frameworkMap, featuredIds, framework, depth + 1);
+        processSampleCodeNodes(
+          node.children,
+          sampleCodes,
+          frameworkMap,
+          featuredIds,
+          framework,
+          depth + 1,
+        );
       }
-    } else if (node.type === 'sampleCode' && node.path) {
+    } else if (node.type === "sampleCode" && node.path) {
       // Try to extract framework from path first
       const frameworkFromPath = extractFrameworkFromPath(node.path);
 
@@ -263,7 +248,6 @@ function processSampleCodeNodes(
         id: node.path,
         title: node.title,
         framework: framework || undefined,
-        description: undefined, // Could be extracted from the content if needed
         beta: node.beta || false,
         featured: featuredIds.has(docUrl),
         url: `https://developer.apple.com${node.path}`,
@@ -272,7 +256,14 @@ function processSampleCodeNodes(
       });
     } else if (node.children) {
       // Process children with the same framework
-      processSampleCodeNodes(node.children, sampleCodes, frameworkMap, featuredIds, currentFramework, depth + 1);
+      processSampleCodeNodes(
+        node.children,
+        sampleCodes,
+        frameworkMap,
+        featuredIds,
+        currentFramework,
+        depth + 1,
+      );
     }
   }
 }
@@ -282,11 +273,11 @@ function processSampleCodeNodes(
  */
 function extractFrameworkFromPath(path: string): string | null {
   // Match pattern like /documentation/framework/...
-  const match = path.match(/^\/documentation\/([^\/]+)\//);
+  const match = path.match(/^\/documentation\/([^/]+)\//);
   if (match) {
     const framework = match[1];
     // Don't return generic paths like 'samplecode'
-    if (framework === 'samplecode' || framework === 'documentation') {
+    if (framework === "samplecode" || framework === "documentation") {
       return null;
     }
     return normalizeFrameworkName(framework);
@@ -305,12 +296,19 @@ function pathToDocUrl(path: string): string {
 /**
  * Applies filters to sample codes
  */
-function applySampleCodeFilters(sampleCodes: ParsedSampleCode[], filters: SampleCodeFilters): ParsedSampleCode[] {
+function applySampleCodeFilters(
+  sampleCodes: ParsedSampleCode[],
+  filters: SampleCodeFilters,
+): ParsedSampleCode[] {
   return sampleCodes.filter((code) => {
     // Framework filter - normalize both for comparison
     if (filters.framework) {
-      const normalizedFilterFramework = normalizeFrameworkName(filters.framework);
-      const normalizedCodeFramework = normalizeFrameworkName(code.framework || '');
+      const normalizedFilterFramework = normalizeFrameworkName(
+        filters.framework,
+      );
+      const normalizedCodeFramework = normalizeFrameworkName(
+        code.framework || "",
+      );
 
       // Check for exact match or inclusion
       const frameworkLower = normalizedFilterFramework.toLowerCase();
@@ -320,10 +318,11 @@ function applySampleCodeFilters(sampleCodes: ParsedSampleCode[], filters: Sample
       const titleLower = code.title.toLowerCase();
       const pathLower = code.path.toLowerCase();
 
-      const frameworkMatch = frameworkLower === codeFrameworkLower ||
-                           codeFrameworkLower.includes(frameworkLower) ||
-                           titleLower.includes(frameworkLower) ||
-                           pathLower.includes(frameworkLower);
+      const frameworkMatch =
+        frameworkLower === codeFrameworkLower ||
+        codeFrameworkLower.includes(frameworkLower) ||
+        titleLower.includes(frameworkLower) ||
+        pathLower.includes(frameworkLower);
 
       if (!frameworkMatch) {
         return false;
@@ -331,9 +330,9 @@ function applySampleCodeFilters(sampleCodes: ParsedSampleCode[], filters: Sample
     }
 
     // Beta filter
-    if (filters.beta === 'exclude' && code.beta) {
+    if (filters.beta === "exclude" && code.beta) {
       return false;
-    } else if (filters.beta === 'only' && !code.beta) {
+    } else if (filters.beta === "only" && !code.beta) {
       return false;
     }
 
@@ -355,7 +354,7 @@ function applySampleCodeFilters(sampleCodes: ParsedSampleCode[], filters: Sample
       }
 
       // Framework match
-      const frameworkLower = (code.framework || '').toLowerCase();
+      const frameworkLower = (code.framework || "").toLowerCase();
       if (frameworkLower.includes(query)) {
         matchScore += 2;
       }
@@ -367,7 +366,7 @@ function applySampleCodeFilters(sampleCodes: ParsedSampleCode[], filters: Sample
       }
 
       // Description match (if available)
-      const descriptionLower = (code.description || '').toLowerCase();
+      const descriptionLower = (code.description || "").toLowerCase();
       if (descriptionLower.includes(query)) {
         matchScore += 1;
       }
@@ -388,9 +387,9 @@ function applySampleCodeFilters(sampleCodes: ParsedSampleCode[], filters: Sample
 function formatSampleCodeResult(
   sampleCodes: ParsedSampleCode[],
   options: {
-    framework?: string;
-    beta?: string;
-    searchQuery?: string;
+    framework?: string | undefined;
+    beta?: string | undefined;
+    searchQuery?: string | undefined;
     totalFound: number;
     showing: number;
   },
@@ -398,15 +397,15 @@ function formatSampleCodeResult(
   const lines: string[] = [];
 
   // Header
-  lines.push('# Apple Sample Code Library');
-  lines.push('');
+  lines.push("# Apple Sample Code Library");
+  lines.push("");
 
   // Filter summary
   const filterParts: string[] = [];
   if (options.framework) {
     filterParts.push(`Framework: ${normalizeFrameworkName(options.framework)}`);
   }
-  if (options.beta && options.beta !== 'include') {
+  if (options.beta && options.beta !== "include") {
     filterParts.push(`Beta: ${options.beta}`);
   }
   if (options.searchQuery) {
@@ -414,18 +413,20 @@ function formatSampleCodeResult(
   }
 
   if (filterParts.length > 0) {
-    lines.push('## Filters Applied');
-    lines.push(filterParts.join(', '));
-    lines.push('');
+    lines.push("## Filters Applied");
+    lines.push(filterParts.join(", "));
+    lines.push("");
   }
 
   // Results summary
-  lines.push(`Found ${options.totalFound} sample code projects${options.showing < options.totalFound ? `, showing ${options.showing}` : ''}`);
-  lines.push('');
+  lines.push(
+    `Found ${options.totalFound} sample code projects${options.showing < options.totalFound ? `, showing ${options.showing}` : ""}`,
+  );
+  lines.push("");
 
   if (sampleCodes.length === 0) {
-    lines.push('No sample code projects found matching your criteria.');
-    return lines.join('\n');
+    lines.push("No sample code projects found matching your criteria.");
+    return lines.join("\n");
   }
 
   // Group by framework/category with normalization
@@ -433,14 +434,15 @@ function formatSampleCodeResult(
   const noCategory: ParsedSampleCode[] = [];
 
   for (const code of sampleCodes) {
-    const category = code.framework || '';
+    const category = code.framework || "";
     if (category) {
       // Group WWDC samples together
-      const normalizedCategory = category.match(/^WWDC\d+$/i) ? category.toUpperCase() : category;
-      if (!byCategory.has(normalizedCategory)) {
-        byCategory.set(normalizedCategory, []);
-      }
-      byCategory.get(normalizedCategory)!.push(code);
+      const normalizedCategory = category.match(/^WWDC\d+$/i)
+        ? category.toUpperCase()
+        : category;
+      const group = byCategory.get(normalizedCategory) ?? [];
+      group.push(code);
+      byCategory.set(normalizedCategory, group);
     } else {
       noCategory.push(code);
     }
@@ -453,7 +455,7 @@ function formatSampleCodeResult(
 
     if (aIsWWDC && bIsWWDC) {
       // Sort WWDC by year descending
-      return parseInt(bIsWWDC[1]) - parseInt(aIsWWDC[1]);
+      return parseInt(bIsWWDC[1] ?? "", 10) - parseInt(aIsWWDC[1] ?? "", 10);
     } else if (aIsWWDC) {
       return -1; // WWDC comes first
     } else if (bIsWWDC) {
@@ -466,64 +468,63 @@ function formatSampleCodeResult(
   // Display featured samples first if any
   const featuredSamples = sampleCodes.filter((c) => c.featured);
   if (featuredSamples.length > 0) {
-    lines.push('## ⭐ Featured Samples');
-    lines.push('');
+    lines.push("## ⭐ Featured Samples");
+    lines.push("");
     for (const code of featuredSamples) {
       lines.push(formatSampleCodeItem(code, false)); // Don't show framework in featured section
     }
-    lines.push('');
+    lines.push("");
   }
 
   // Display by category
   for (const category of sortedCategories) {
-    const codes = byCategory.get(category)!;
-    const nonFeaturedCodes = codes.filter(c => !c.featured);
+    const codes = byCategory.get(category) ?? [];
+    const nonFeaturedCodes = codes.filter((c) => !c.featured);
 
     if (nonFeaturedCodes.length > 0) {
       lines.push(`## ${category}`);
-      lines.push('');
+      lines.push("");
       for (const code of nonFeaturedCodes) {
         lines.push(formatSampleCodeItem(code, false)); // Framework already shown in section header
       }
-      lines.push('');
+      lines.push("");
     }
   }
 
   // Display samples without category
   if (noCategory.length > 0) {
-    const nonFeaturedOther = noCategory.filter(c => !c.featured);
+    const nonFeaturedOther = noCategory.filter((c) => !c.featured);
     if (nonFeaturedOther.length > 0) {
-      lines.push('## Other');
-      lines.push('');
+      lines.push("## Other");
+      lines.push("");
       for (const code of nonFeaturedOther) {
         lines.push(formatSampleCodeItem(code, false));
       }
-      lines.push('');
+      lines.push("");
     }
   }
 
-  return lines.join('\n').trim();
+  return lines.join("\n").trim();
 }
 
 /**
  * Formats a single sample code item
  */
-function formatSampleCodeItem(code: ParsedSampleCode, showFramework: boolean = true): string {
+function formatSampleCodeItem(
+  code: ParsedSampleCode,
+  showFramework: boolean = true,
+): string {
   const badges: string[] = [];
   if (code.beta) {
-    badges.push('🧪 Beta');
+    badges.push("🧪 Beta");
   }
 
   // Don't duplicate the featured badge as it's already in the section header
-  const badgeStr = badges.length > 0 ? ` ${badges.join(' ')}` : '';
+  const badgeStr = badges.length > 0 ? ` ${badges.join(" ")}` : "";
 
   // Framework info (only if requested and not in a framework-specific section)
-  const frameworkStr = showFramework && code.framework ? ` (${code.framework})` : '';
+  const frameworkStr =
+    showFramework && code.framework ? ` (${code.framework})` : "";
 
-  let line = `### [${code.title}](${code.url})${badgeStr}${frameworkStr}`;
-  if (code.description) {
-    line += `\n${code.description}`;
-  }
-
-  return line;
+  return `- [${code.title}](${code.url})${badgeStr}${frameworkStr}${code.description ? `: ${code.description}` : ""}`;
 }

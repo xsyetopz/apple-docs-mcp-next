@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -79,24 +80,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Create accessible experiences for watchOS",
-        "url": "https://developer.apple.com/documentation/watchos-apps/create_accessible_experiences_for_watchos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "url": "https://developer.apple.com/documentation/watchOS-Apps/create-accessible-experiences-for-watchos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10223/6/F4C83469-5B64-46D0-9FC6-F2EC7AC47414/downloads/wwdc2021-10223_hd.mp4?dl=1",
@@ -108,12 +93,6 @@
       "year": "2021",
       "title": "SwiftUI Accessibility: Beyond the basics",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10119"
-    },
-    {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
     },
     {
       "id": "10020",
@@ -128,5 +107,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/238"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:37.145Z"
+  "extractedAt": "2026-10-11T16:42:50.379Z"
 }

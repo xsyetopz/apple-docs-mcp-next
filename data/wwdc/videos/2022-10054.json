@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,14 +50,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Bringing robust navigation structure to your SwiftUI app",
-        "url": "https://developer.apple.com/documentation/swiftui/bringing_robust_navigation_structure_to_your_swiftui_app"
-      },
-      {
         "title": "List",
         "url": "https://developer.apple.com/documentation/SwiftUI/List"
       },
@@ -73,22 +66,20 @@
         "url": "https://developer.apple.com/documentation/SwiftUI/NavigationStack"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Bringing robust navigation structure to your SwiftUI app",
+        "url": "https://developer.apple.com/documentation/swiftui/bringing_robust_navigation_structure_to_your_swiftui_app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10054/4/E85249AE-F795-40DC-BD9E-A3E385906FE6/downloads/wwdc2022-10054_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10054/4/E85249AE-F795-40DC-BD9E-A3E385906FE6/downloads/wwdc2022-10054_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110397",
+      "year": "2022",
+      "title": "Break the SwiftUIce",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110397"
+    },
     {
       "id": "10061",
       "year": "2022",
@@ -100,6 +91,18 @@
       "year": "2022",
       "title": "Build a productivity app for Apple Watch",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10133"
+    },
+    {
+      "id": "110393",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110393"
+    },
+    {
+      "id": "110442",
+      "year": "2022",
+      "title": "Study Hall: SwiftUI navigation hotdish",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110442"
     },
     {
       "id": "10058",
@@ -120,5 +123,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110930"
     }
   ],
-  "extractedAt": "2025-07-18T10:22:50.147Z"
+  "extractedAt": "2026-10-11T16:39:31.311Z"
 }

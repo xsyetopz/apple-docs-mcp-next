@@ -43,24 +43,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Rendering at Different Rasterization Rates",
+        "title": "Rendering at different rasterization rates",
         "url": "https://developer.apple.com/documentation/Metal/rendering-at-different-rasterization-rates"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10095/4/CCE7B88E-E0C4-4BA3-87E7-9C1D644FA6CB/downloads/wwdc2023-10095_hd.mp4?dl=1",
@@ -86,5 +70,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10100"
     }
   ],
-  "extractedAt": "2025-07-18T10:45:33.134Z"
+  "extractedAt": "2026-10-11T16:38:01.867Z"
 }

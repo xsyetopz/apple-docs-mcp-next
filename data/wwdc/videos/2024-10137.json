@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -121,14 +122,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adopting SwiftData for a Core Data app",
-        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
-      },
-      {
         "title": "Forum: Programming Languages",
         "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
       },
@@ -137,16 +130,8 @@
         "url": "https://developer.apple.com/documentation/SwiftData"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adopting SwiftData for a Core Data app",
+        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10137/4/44213251-C991-4280-BBF1-5CA6AFCA5222/downloads/wwdc2024-10137_hd.mp4?dl=1",
@@ -172,5 +157,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10187"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:33.757Z"
+  "extractedAt": "2026-10-11T16:34:48.539Z"
 }

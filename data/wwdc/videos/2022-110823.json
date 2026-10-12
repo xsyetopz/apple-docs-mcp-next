@@ -1,0 +1,43 @@
+{
+  "id": "110823",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110823/",
+  "title": "Q&A: AVFoundation",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110379",
+      "year": "2022",
+      "title": "Create a more responsive media app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110379"
+    },
+    {
+      "id": "110380",
+      "year": "2022",
+      "title": "Display ads and interstitials in SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110380"
+    },
+    {
+      "id": "110565",
+      "year": "2022",
+      "title": "Display HDR video in EDR with AVFoundation and Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110565"
+    },
+    {
+      "id": "110822",
+      "year": "2022",
+      "title": "Q&A: Coordinated media with SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110822"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:35.894Z"
+}

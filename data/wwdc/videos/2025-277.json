@@ -115,28 +115,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Bringing advanced speech-to-text capabilities to your app",
         "url": "https://developer.apple.com/documentation/Speech/bringing-advanced-speech-to-text-capabilities-to-your-app"
       },
       {
         "title": "Speech",
         "url": "https://developer.apple.com/documentation/Speech"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/277/4/9eedc53d-668f-48f3-9cca-4f2530bbb2ce/downloads/wwdc2025-277_hd.mp4?dl=1",
@@ -150,5 +134,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10033"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:17.547Z"
+  "extractedAt": "2026-10-11T16:33:21.882Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,16 +68,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "CardButtonStyle",
-        "url": "https://developer.apple.com/documentation/SwiftUI/CardButtonStyle"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for tvOS",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
+        "title": "Supporting Multiple Users in Your tvOS App",
+        "url": "https://developer.apple.com/documentation/TVServices/supporting-multiple-users-in-your-tvos-app"
       },
       {
         "title": "isFocused",
@@ -87,24 +80,16 @@
         "url": "https://developer.apple.com/documentation/SwiftUI/View/prefersDefaultFocus(_:in:)"
       },
       {
-        "title": "Supporting Multiple Users in Your tvOS App",
-        "url": "https://developer.apple.com/documentation/TVServices/supporting-multiple-users-in-your-tvos-app"
+        "title": "CardButtonStyle",
+        "url": "https://developer.apple.com/documentation/SwiftUI/CardButtonStyle"
       },
       {
         "title": "SwiftUI",
         "url": "https://developer.apple.com/documentation/SwiftUI"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Designing for tvOS",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10042/4/B38E5ED8-1188-4675-877A-272A47769177/wwdc2020_10042_hd.mp4?dl=1",
@@ -130,5 +115,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/240"
     }
   ],
-  "extractedAt": "2025-07-18T09:24:41.227Z"
+  "extractedAt": "2026-10-11T16:44:45.347Z"
 }

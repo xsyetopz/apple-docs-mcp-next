@@ -9,7 +9,8 @@
     "App Services",
     "Audio & Video",
     "Design",
-    "Essentials"
+    "Essentials",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -20,24 +21,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: SharePlay",
         "url": "https://developer.apple.com/design/human-interface-guidelines/shareplay/overview/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10139/5/67B2BB72-D5FC-4EAE-834D-E7D562F22A4D/downloads/wwdc2022-10139_hd.mp4?dl=1",
@@ -49,6 +34,24 @@
       "year": "2022",
       "title": "Display ads and interstitials in SharePlay",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110380"
+    },
+    {
+      "id": "110815",
+      "year": "2022",
+      "title": "Meet the Presenter: Make a great SharePlay experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110815"
+    },
+    {
+      "id": "110822",
+      "year": "2022",
+      "title": "Q&A: Coordinated media with SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110822"
+    },
+    {
+      "id": "110824",
+      "year": "2022",
+      "title": "Q&A: SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110824"
     },
     {
       "id": "10140",
@@ -69,5 +72,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10225"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:34.773Z"
+  "extractedAt": "2026-10-11T16:41:17.185Z"
 }

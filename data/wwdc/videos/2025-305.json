@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Design",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -18,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Construct an immersive environment for visionOS",
         "url": "https://developer.apple.com/documentation/RealityKit/construct-an-immersive-environment-for-visionOS"
       },
       {
         "title": "Enabling video reflections in an immersive environment",
         "url": "https://developer.apple.com/documentation/visionOS/enabling-video-reflections-in-an-immersive-environment"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/download/files/Immersive-Optimization-Toolkit.zip",
@@ -72,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10086"
     }
   ],
-  "extractedAt": "2025-07-18T09:34:56.922Z"
+  "extractedAt": "2026-10-11T16:34:16.127Z"
 }

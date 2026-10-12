@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "About Apple File System",
         "url": "https://developer.apple.com/documentation/Foundation/about-apple-file-system"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/710aunvynji5emrl/710/710_hd_whats_new_in_apple_file_systems.mp4?dl=1",
@@ -48,5 +32,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/719"
     }
   ],
-  "extractedAt": "2025-07-18T11:04:20.157Z"
+  "extractedAt": "2026-10-11T16:47:46.257Z"
 }

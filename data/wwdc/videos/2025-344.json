@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -85,32 +86,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Delivering an exceptional accessibility experience",
-        "url": "https://developer.apple.com/documentation/Accessibility/delivering_an_exceptional_accessibility_experience"
+        "title": "Performing accessibility testing for your app",
+        "url": "https://developer.apple.com/documentation/Accessibility/performing-accessibility-testing-for-your-app"
       },
       {
         "title": "Improving code assessment by organizing tests into test plans",
         "url": "https://developer.apple.com/documentation/Xcode/organizing-tests-to-improve-feedback"
       },
       {
-        "title": "Performing accessibility testing for your app",
-        "url": "https://developer.apple.com/documentation/Accessibility/performing-accessibility-testing-for-your-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Delivering an exceptional accessibility experience",
+        "url": "https://developer.apple.com/documentation/Accessibility/delivering_an_exceptional_accessibility_experience"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/344/6/d83ce906-0fb6-484b-a0f2-4f678161d5b8/downloads/wwdc2025-344_hd.mp4?dl=1",
@@ -160,5 +145,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10119"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:32.046Z"
+  "extractedAt": "2026-10-11T16:34:18.080Z"
 }

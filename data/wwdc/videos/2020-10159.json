@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Monitoring System Events with Endpoint Security",
         "url": "https://developer.apple.com/documentation/EndpointSecurity/monitoring-system-events-with-endpoint-security"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10159/7/8B7397DB-B3A9-48C8-A9B7-2F8512EFDB29/wwdc2020_10159_hd.mp4?dl=1",
@@ -61,5 +45,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/702"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:27.923Z"
+  "extractedAt": "2026-10-11T16:45:01.983Z"
 }

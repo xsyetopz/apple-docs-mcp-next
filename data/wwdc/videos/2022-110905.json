@@ -1,0 +1,37 @@
+{
+  "id": "110905",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110905/",
+  "title": "Q&A: Vision",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10026",
+      "year": "2022",
+      "title": "Add Live Text interaction to your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10026"
+    },
+    {
+      "id": "10025",
+      "year": "2022",
+      "title": "Capture machine-readable codes and text with VisionKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10025"
+    },
+    {
+      "id": "10024",
+      "year": "2022",
+      "title": "What's new in Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10024"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:32.901Z"
+}

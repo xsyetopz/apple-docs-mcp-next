@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -73,8 +74,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Migrating ClockKit complications to WidgetKit",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Converting-A-ClockKit-App"
       },
       {
         "title": "Creating accessory widgets and watch complications",
@@ -85,24 +86,8 @@
         "url": "https://developer.apple.com/documentation/WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations"
       },
       {
-        "title": "Migrating ClockKit complications to WidgetKit",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Converting-A-ClockKit-App"
-      },
-      {
         "title": "WidgetKit",
         "url": "https://developer.apple.com/documentation/WidgetKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10051/3/912F72F4-A83D-4923-A276-8B231CB7D837/downloads/wwdc2022-10051_hd.mp4?dl=1",
@@ -114,6 +99,24 @@
       "year": "2022",
       "title": "Complications and widgets: Reloaded",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10050"
+    },
+    {
+      "id": "110446",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110446"
+    },
+    {
+      "id": "110448",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110448"
+    },
+    {
+      "id": "110432",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110432"
     },
     {
       "id": "110931",
@@ -134,5 +137,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10028"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:43.258Z"
+  "extractedAt": "2026-10-11T16:41:16.652Z"
 }

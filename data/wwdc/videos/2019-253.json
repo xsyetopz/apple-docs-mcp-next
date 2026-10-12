@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "ClockKit",
         "url": "https://developer.apple.com/documentation/ClockKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/253llfvak2onhcnjf3w/253/253_hd_exploring_tinted_graphic_complications.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/253llfvak2onhcnjf3w/253/253_sd_exploring_tinted_graphic_complications.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:57:57.919Z"
+  "extractedAt": "2026-10-11T16:47:02.121Z"
 }

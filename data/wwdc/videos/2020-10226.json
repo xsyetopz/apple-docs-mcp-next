@@ -37,28 +37,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Capturing stereo audio from built-In microphones",
         "url": "https://developer.apple.com/documentation/AVFAudio/capturing-stereo-audio-from-built-in-microphones"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10226/5/C8C3C21B-7FB6-4655-A9C9-7879416D0435/wwdc2020_10226_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10226/5/C8C3C21B-7FB6-4655-A9C9-7879416D0435/wwdc2020_10226_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:25:21.753Z"
+  "extractedAt": "2026-10-11T16:44:53.922Z"
 }

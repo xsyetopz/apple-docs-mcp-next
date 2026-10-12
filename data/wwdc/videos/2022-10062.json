@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -85,30 +86,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "ShareLink",
         "url": "https://developer.apple.com/documentation/SwiftUI/ShareLink"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10062/4/004375E4-2295-45FB-9D6D-20F1B8C3834C/downloads/wwdc2022-10062_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10062/4/004375E4-2295-45FB-9D6D-20F1B8C3834C/downloads/wwdc2022-10062_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110397",
+      "year": "2022",
+      "title": "Break the SwiftUIce",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110397"
+    },
     {
       "id": "10133",
       "year": "2022",
@@ -128,11 +119,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10093"
     },
     {
+      "id": "110394",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110394"
+    },
+    {
       "id": "10052",
       "year": "2022",
       "title": "What's new in SwiftUI",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10052"
     }
   ],
-  "extractedAt": "2025-07-18T10:24:35.049Z"
+  "extractedAt": "2026-10-11T16:40:21.504Z"
 }

@@ -49,28 +49,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Running macOS in a virtual machine on Apple silicon",
         "url": "https://developer.apple.com/documentation/Virtualization/running-macos-in-a-virtual-machine-on-apple-silicon"
       },
       {
         "title": "Virtualization",
         "url": "https://developer.apple.com/documentation/Virtualization"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10007/4/ADC7900A-352D-4B06-8285-22AFB8A66356/downloads/wwdc2023-10007_hd.mp4?dl=1",
@@ -84,5 +68,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10002"
     }
   ],
-  "extractedAt": "2025-07-18T11:01:21.098Z"
+  "extractedAt": "2026-10-11T16:37:02.506Z"
 }

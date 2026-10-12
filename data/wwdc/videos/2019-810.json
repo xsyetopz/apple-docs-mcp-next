@@ -17,16 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core Haptics",
-        "url": "https://developer.apple.com/documentation/CoreHaptics"
-      },
-      {
-        "title": "Human Interface Guidelines: Playing haptics",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics"
+        "title": "Updating Continuous and Transient Haptic Parameters in Real Time",
+        "url": "https://developer.apple.com/documentation/CoreHaptics/updating-continuous-and-transient-haptic-parameters-in-real-time"
       },
       {
         "title": "Playing a Custom Haptic Pattern from a File",
@@ -37,20 +29,12 @@
         "url": "https://developer.apple.com/documentation/CoreHaptics/playing-collision-based-haptic-patterns"
       },
       {
-        "title": "Updating Continuous and Transient Haptic Parameters in Real Time",
-        "url": "https://developer.apple.com/documentation/CoreHaptics/updating-continuous-and-transient-haptic-parameters-in-real-time"
+        "title": "Core Haptics",
+        "url": "https://developer.apple.com/documentation/CoreHaptics"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Playing haptics",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/810fdftstga66w4hfadq/810/810_hd_designing_audiohaptic_experiences.mp4?dl=1",
@@ -70,5 +54,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/520"
     }
   ],
-  "extractedAt": "2025-07-18T09:38:13.685Z"
+  "extractedAt": "2026-10-11T16:47:47.527Z"
 }

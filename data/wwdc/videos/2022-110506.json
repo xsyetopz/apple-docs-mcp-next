@@ -1,0 +1,26 @@
+{
+  "id": "110506",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110506/",
+  "title": "Meet the Presenter: Build your first app in Swift Playgrounds",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "Essentials"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110348",
+      "year": "2022",
+      "title": "Build your first app in Swift Playgrounds",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110348"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:42.479Z"
+}

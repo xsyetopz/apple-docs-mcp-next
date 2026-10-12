@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building custom views in SwiftUI",
-        "url": "https://developer.apple.com/documentation/swiftui/building_custom_views_in_swiftui"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Declaring a custom view",
+        "url": "https://developer.apple.com/documentation/SwiftUI/Declaring-a-Custom-View"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/237x70rryl2b933v/237/237_hd_building_custom_views_with_swiftui.mp4?dl=1",
@@ -120,5 +104,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/402"
     }
   ],
-  "extractedAt": "2025-07-18T10:58:20.806Z"
+  "extractedAt": "2026-10-11T16:48:06.389Z"
 }

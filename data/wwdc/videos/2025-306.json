@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,8 +69,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Performance and metrics",
+        "url": "https://developer.apple.com/documentation/Xcode/performance-and-metrics"
+      },
+      {
+        "title": "Measuring your app’s power use with Power Profiler",
+        "url": "https://developer.apple.com/documentation/Xcode/measuring-your-app-s-power-use-with-power-profiler"
+      },
+      {
+        "title": "Understanding and improving SwiftUI performance",
+        "url": "https://developer.apple.com/documentation/Xcode/understanding-and-improving-swiftui-performance"
       },
       {
         "title": "Analyzing the performance of your visionOS app",
@@ -77,30 +87,6 @@
       {
         "title": "Improving app responsiveness",
         "url": "https://developer.apple.com/documentation/Xcode/improving-app-responsiveness"
-      },
-      {
-        "title": "Measuring your app’s power use with Power Profiler",
-        "url": "https://developer.apple.com/documentation/Xcode/measuring-your-app-s-power-use-with-power-profiler"
-      },
-      {
-        "title": "Performance and metrics",
-        "url": "https://developer.apple.com/documentation/Xcode/performance-and-metrics"
-      },
-      {
-        "title": "Understanding and improving SwiftUI performance",
-        "url": "https://developer.apple.com/documentation/Xcode/understanding-and-improving-swiftui-performance"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/306/4/cc55ba18-71e2-4481-8491-3473e650fdcc/downloads/wwdc2025-306_hd.mp4?dl=1",
@@ -144,5 +130,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10022"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:43.197Z"
+  "extractedAt": "2026-10-11T16:34:15.728Z"
 }

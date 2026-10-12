@@ -31,27 +31,11 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Designing for games",
         "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
-    "sampleProject": "https://developer.apple.com/metal/RaytracingWithIFB.zip",
+    "sampleProject": "https://developer.apple.com/metal/FunctionConstantsAndFramebufferFetch.zip",
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/209/4/45dc1092-c205-4dc3-8e6c-fa075886dce8/downloads/wwdc2025-209_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/209/4/45dc1092-c205-4dc3-8e6c-fa075886dce8/downloads/wwdc2025-209_sd.mp4?dl=1"
   },
@@ -111,5 +95,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10089"
     }
   ],
-  "extractedAt": "2025-07-18T10:29:14.980Z"
+  "extractedAt": "2026-10-11T16:33:44.267Z"
 }

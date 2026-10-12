@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/411jge60tmuuh7dolja/411/411_hd_system_trace_in_depth.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/411jge60tmuuh7dolja/411/411_sd_system_trace_in_depth.mp4?dl=1"
   },
@@ -50,11 +33,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10258"
     },
     {
+      "id": "407",
+      "year": "2018",
+      "title": "Practical Approaches to Great App Performance",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/407"
+    },
+    {
       "id": "720",
       "year": "2016",
       "title": "Concurrent Programming With GCD in Swift 3",
       "url": "https://developer.apple.com/videos/play/wwdc2016/720"
     }
   ],
-  "extractedAt": "2025-07-18T10:19:18.299Z"
+  "extractedAt": "2026-10-11T16:49:04.327Z"
 }

@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Delivering an exceptional accessibility experience",
         "url": "https://developer.apple.com/documentation/Accessibility/delivering_an_exceptional_accessibility_experience"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/230bqynnqagiq4p8/230/230_hd_deliver_an_exceptional_accessibility_experience.mp4?dl=1",
@@ -54,5 +38,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/238"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:47.868Z"
+  "extractedAt": "2026-10-11T16:48:34.253Z"
 }

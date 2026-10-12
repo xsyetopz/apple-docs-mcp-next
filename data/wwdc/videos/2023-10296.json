@@ -1,0 +1,25 @@
+{
+  "id": "10296",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10296/",
+  "title": "Meet the presenter: Write Swift macros",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Swift"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10166",
+      "year": "2023",
+      "title": "Write Swift macros",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10166"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:57.996Z"
+}

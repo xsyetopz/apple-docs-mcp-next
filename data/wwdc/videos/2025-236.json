@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Metal Performance Shaders",
         "url": "https://developer.apple.com/documentation/MetalPerformanceShaders"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/236/5/3eb6d0b1-48d5-46d6-bb81-a6ce4b03b8aa/downloads/wwdc2025-236_hd.mp4?dl=1",
@@ -66,5 +51,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10632"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:48.928Z"
+  "extractedAt": "2026-10-11T16:34:22.070Z"
 }

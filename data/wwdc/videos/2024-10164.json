@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Photos & Camera",
         "url": "https://developer.apple.com/forums/topics/media-technologies/photos-and-camera?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10164/6/8F2F8C99-F0C7-4729-89F5-C5DAF97A9C4A/downloads/wwdc2024-10164_hd.mp4?dl=1",
@@ -47,7 +31,13 @@
       "year": "2023",
       "title": "Integrate with motorized iPhone stands using DockKit",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10304"
+    },
+    {
+      "id": "111336",
+      "year": "2023",
+      "title": "Q&A: Motorized iPhone stands and DockKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111336"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:32.766Z"
+  "extractedAt": "2026-10-11T16:35:47.414Z"
 }

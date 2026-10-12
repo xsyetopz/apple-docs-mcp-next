@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -55,14 +56,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accessibility",
-        "url": "https://developer.apple.com/documentation/swiftui/view-accessibility"
-      },
-      {
         "title": "Diorama",
         "url": "https://developer.apple.com/documentation/visionOS/diorama"
       },
@@ -71,24 +64,16 @@
         "url": "https://developer.apple.com/documentation/visionOS/improving-accessibility-support-in-your-app"
       },
       {
-        "title": "Media Accessibility",
-        "url": "https://developer.apple.com/documentation/MediaAccessibility"
-      },
-      {
         "title": "UIAccessibility",
         "url": "https://developer.apple.com/documentation/UIKit/UIAccessibility"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Accessibility",
+        "url": "https://developer.apple.com/documentation/swiftui/view-accessibility"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Media Accessibility",
+        "url": "https://developer.apple.com/documentation/MediaAccessibility"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10034/5/DF004F28-FE27-41BB-B1BB-4CF81F3F2695/downloads/wwdc2023-10034_hd.mp4?dl=1",
@@ -144,5 +129,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/250"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:42.055Z"
+  "extractedAt": "2026-10-11T16:35:59.702Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,8 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "watchOS updates",
+        "url": "https://developer.apple.com/documentation/Updates/watchos"
       },
       {
         "title": "Accessing submersion data",
@@ -27,22 +28,6 @@
       {
         "title": "Core Motion",
         "url": "https://developer.apple.com/documentation/CoreMotion"
-      },
-      {
-        "title": "watchOS updates",
-        "url": "https://developer.apple.com/documentation/Updates/watchos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10179/4/2123E0B0-D771-4375-BE1F-9BE1AEBA4FFE/downloads/wwdc2023-10179_hd.mp4?dl=1",
@@ -62,5 +47,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10656"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:15.008Z"
+  "extractedAt": "2026-10-11T16:38:54.001Z"
 }

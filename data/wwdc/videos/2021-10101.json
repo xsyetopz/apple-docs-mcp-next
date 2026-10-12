@@ -44,28 +44,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Recording and Streaming Your macOS App",
         "url": "https://developer.apple.com/documentation/ReplayKit/recording-and-streaming-your-macos-app"
       },
       {
         "title": "ReplayKit",
         "url": "https://developer.apple.com/documentation/ReplayKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10101/7/50A5D34B-6D32-429A-B737-D3C0C9EB58B8/downloads/wwdc2021-10101_hd.mp4?dl=1",
@@ -79,17 +63,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10081"
     },
     {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
-    },
-    {
       "id": "10633",
       "year": "2020",
       "title": "Capture and stream apps on the Mac with ReplayKit",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10633"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:52.529Z"
+  "extractedAt": "2026-10-11T16:43:44.443Z"
 }

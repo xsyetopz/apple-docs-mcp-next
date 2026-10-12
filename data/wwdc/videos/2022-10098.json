@@ -55,24 +55,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Sending web push notifications in web apps and browsers",
         "url": "https://developer.apple.com/documentation/UserNotifications/sending-web-push-notifications-in-web-apps-and-browsers"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10098/4/0243E8FF-8341-4FD5-BACD-CEB81B4730DF/downloads/wwdc2022-10098_hd.mp4?dl=1",
@@ -86,11 +70,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10120"
     },
     {
+      "id": "110485",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110485"
+    },
+    {
+      "id": "110535",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110535"
+    },
+    {
       "id": "10048",
       "year": "2022",
       "title": "What's new in Safari and WebKit",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10048"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:13.835Z"
+  "extractedAt": "2026-10-11T16:39:29.904Z"
 }

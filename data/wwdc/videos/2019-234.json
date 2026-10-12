@@ -17,8 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Structuring recognized text on a document",
+        "url": "https://developer.apple.com/documentation/VisionKit/structuring-recognized-text-on-a-document"
       },
       {
         "title": "Extracting phone numbers from text in images",
@@ -27,22 +27,6 @@
       {
         "title": "Locating and displaying recognized text",
         "url": "https://developer.apple.com/documentation/Vision/locating-and-displaying-recognized-text"
-      },
-      {
-        "title": "Structuring Recognized Text on a Document",
-        "url": "https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/234rye7511ohnx5dmvl/234/234_hd_text_recognition_in_vision_framework.mp4?dl=1",
@@ -86,5 +70,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/209"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:20.906Z"
+  "extractedAt": "2026-10-11T16:48:03.310Z"
 }

@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Store, Distribution & Marketing"
+    "App Store, Distribution & Marketing",
+    "Safari & Web",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,36 +45,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Clips",
         "url": "https://developer.apple.com/documentation/AppClip"
-      },
-      {
-        "title": "Configuring App Clip experiences",
-        "url": "https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip"
-      },
-      {
-        "title": "Fruta: Building a Feature-Rich App with SwiftUI",
-        "url": "https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui"
       },
       {
         "title": "Responding to invocations",
         "url": "https://developer.apple.com/documentation/AppClip/responding-to-invocations"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Configuring App Clip experiences",
+        "url": "https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Fruta: Building a feature-rich app with SwiftUI",
+        "url": "https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10146/6/F04CF30D-7D67-44DC-83BA-E9AB09BD12F7/wwdc2020_10146_hd.mp4?dl=1",
@@ -140,5 +126,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/717"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:31.446Z"
+  "extractedAt": "2026-10-11T16:44:45.989Z"
 }

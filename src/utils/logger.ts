@@ -3,20 +3,20 @@
  */
 
 export enum LogLevel {
-  DEBUG = 'debug',
-  INFO = 'info',
-  WARN = 'warn',
-  ERROR = 'error',
+  DEBUG = "debug",
+  INFO = "info",
+  WARN = "warn",
+  ERROR = "error",
 }
 
 class Logger {
-  private enabled: boolean = process.env.MCP_DEBUG === 'true';
+  private enabled: boolean = process.env["MCP_DEBUG"] === "true";
   private level: LogLevel = LogLevel.INFO;
 
   /**
    * Log debug message
    */
-  debug(message: string, ...args: any[]): void {
+  debug(message: string, ...args: unknown[]): void {
     if (this.enabled && this.shouldLog(LogLevel.DEBUG)) {
       console.log(`[DEBUG] ${message}`, ...args);
     }
@@ -25,7 +25,7 @@ class Logger {
   /**
    * Log info message
    */
-  info(message: string, ...args: any[]): void {
+  info(message: string, ...args: unknown[]): void {
     if (this.enabled && this.shouldLog(LogLevel.INFO)) {
       console.log(`[INFO] ${message}`, ...args);
     }
@@ -34,7 +34,7 @@ class Logger {
   /**
    * Log warning message
    */
-  warn(message: string, ...args: any[]): void {
+  warn(message: string, ...args: unknown[]): void {
     if (this.shouldLog(LogLevel.WARN)) {
       console.warn(`[WARN] ${message}`, ...args);
     }
@@ -56,7 +56,12 @@ class Logger {
    * Check if should log based on level
    */
   private shouldLog(level: LogLevel): boolean {
-    const levels = [LogLevel.DEBUG, LogLevel.INFO, LogLevel.WARN, LogLevel.ERROR];
+    const levels = [
+      LogLevel.DEBUG,
+      LogLevel.INFO,
+      LogLevel.WARN,
+      LogLevel.ERROR,
+    ];
     const currentLevelIndex = levels.indexOf(this.level);
     const messageLevelIndex = levels.indexOf(level);
     return messageLevelIndex >= currentLevelIndex;

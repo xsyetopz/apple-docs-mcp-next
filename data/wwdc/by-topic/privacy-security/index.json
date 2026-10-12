@@ -1,8 +1,9 @@
 {
   "id": "privacy-security",
   "name": "Privacy & Security",
-  "videoCount": 70,
+  "videoCount": 84,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -10,10 +11,68 @@
     "2021",
     "2020",
     "2019",
+    "2018",
     "2017",
     "2015"
   ],
   "videos": [
+    {
+      "id": "379",
+      "year": "2026",
+      "title": "Meet Trust Insights",
+      "topics": [
+        "Business & Education",
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/379/",
+      "dataFile": "videos/2026-379.json"
+    },
+    {
+      "id": "8009",
+      "year": "2026",
+      "title": "Privacy and Security Group Lab",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8009/",
+      "dataFile": "videos/2026-8009.json"
+    },
+    {
+      "id": "347",
+      "year": "2026",
+      "title": "Secure your app: mitigate risks to agentic features",
+      "topics": [
+        "Machine Learning & AI",
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/347/",
+      "dataFile": "videos/2026-347.json"
+    },
+    {
+      "id": "201",
+      "year": "2026",
+      "title": "Secure your apps with App Attest",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing",
+        "Business & Education",
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/201/",
+      "dataFile": "videos/2026-201.json"
+    },
     {
       "id": "299",
       "year": "2025",
@@ -33,7 +92,8 @@
       "year": "2025",
       "title": "Enhance child safety with PermissionKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -128,7 +188,9 @@
       "year": "2024",
       "title": "Streamline sign-in with passkey upgrades and credential managers",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -168,7 +230,8 @@
       "year": "2023",
       "title": "Deploy passkeys at work",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -182,7 +245,9 @@
       "title": "Get started with privacy manifests",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -204,12 +269,79 @@
       "dataFile": "videos/2023-10266.json"
     },
     {
+      "id": "111210",
+      "year": "2023",
+      "title": "Q&A: Passkeys, iCloud Keychain, and authentication services",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111210/",
+      "dataFile": "videos/2023-111210.json"
+    },
+    {
+      "id": "111205",
+      "year": "2023",
+      "title": "Q&A: Passkeys, iCloud Keychain, and authentication services",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111205/",
+      "dataFile": "videos/2023-111205.json"
+    },
+    {
+      "id": "111213",
+      "year": "2023",
+      "title": "Q&A: Privacy, App Tracking Transparency, Privacy Manifests, SDK Signatures",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111213/",
+      "dataFile": "videos/2023-111213.json"
+    },
+    {
+      "id": "111214",
+      "year": "2023",
+      "title": "Q&A: Privacy, App Tracking Transparency, Privacy Manifests, SDK Signatures",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111214/",
+      "dataFile": "videos/2023-111214.json"
+    },
+    {
+      "id": "10335",
+      "year": "2023",
+      "title": "Q&A: Security",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10335/",
+      "dataFile": "videos/2023-10335.json"
+    },
+    {
       "id": "10061",
       "year": "2023",
       "title": "Verify app dependencies with digital signatures",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -232,21 +364,6 @@
       "dataFile": "videos/2023-10053.json"
     },
     {
-      "id": "110339",
-      "year": "2022",
-      "title": "Build device-to-device interactions with Network Framework",
-      "topics": [
-        "App Services",
-        "Audio & Video",
-        "Essentials"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2022/110339/",
-      "dataFile": "videos/2022-110339.json"
-    },
-    {
       "id": "10167",
       "year": "2022",
       "title": "Create your Privacy Nutrition Label",
@@ -265,7 +382,8 @@
       "year": "2022",
       "title": "Discover Managed Device Attestation",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -293,7 +411,9 @@
       "year": "2022",
       "title": "Explore App Tracking Transparency",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -344,6 +464,78 @@
       "dataFile": "videos/2022-10092.json"
     },
     {
+      "id": "110840",
+      "year": "2022",
+      "title": "Meet the Presenter: Enhance your Sign in with Apple experience",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110840/",
+      "dataFile": "videos/2022-110840.json"
+    },
+    {
+      "id": "110944",
+      "year": "2022",
+      "title": "Q&A: Passkeys and authentication",
+      "topics": [
+        "Developer Tools",
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110944/",
+      "dataFile": "videos/2022-110944.json"
+    },
+    {
+      "id": "110916",
+      "year": "2022",
+      "title": "Q&A: Private Access Tokens",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110916/",
+      "dataFile": "videos/2022-110916.json"
+    },
+    {
+      "id": "110842",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110842/",
+      "dataFile": "videos/2022-110842.json"
+    },
+    {
+      "id": "110841",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110841/",
+      "dataFile": "videos/2022-110841.json"
+    },
+    {
       "id": "10077",
       "year": "2022",
       "title": "Replace CAPTCHAs with Private Access Tokens",
@@ -376,7 +568,8 @@
       "year": "2022",
       "title": "What’s new in Endpoint Security",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -415,7 +608,9 @@
       "year": "2021",
       "title": "Analyze HTTP traffic in Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -428,7 +623,8 @@
       "year": "2021",
       "title": "Apple’s privacy pillars in focus",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -456,7 +652,9 @@
       "year": "2021",
       "title": "Build Mail app extensions",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -470,7 +668,8 @@
       "title": "Discover account-driven User Enrollment",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -483,7 +682,9 @@
       "year": "2021",
       "title": "Explore UWB-based car keys",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -511,7 +712,8 @@
       "title": "Faster and simpler notarization for Mac apps",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Developer Tools"
+        "Developer Tools",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -538,7 +740,9 @@
       "year": "2021",
       "title": "Meet the Location Button",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -552,7 +756,8 @@
       "title": "Meet the Screen Time API",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -632,7 +837,9 @@
       "year": "2021",
       "title": "What's new in CloudKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -647,7 +854,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -701,7 +909,9 @@
       "year": "2020",
       "title": "Design for location privacy",
       "topics": [
-        "Design"
+        "Design",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -758,7 +968,8 @@
       "year": "2020",
       "title": "Introducing Car Keys",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -828,7 +1039,8 @@
       "year": "2020",
       "title": "What's new in assessment",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -855,7 +1067,11 @@
       "year": "2019",
       "title": "Adding Indoor Maps to your App and Website",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -921,7 +1137,10 @@
       "year": "2019",
       "title": "Introducing the Indoor Maps Program",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -934,13 +1153,29 @@
       "year": "2019",
       "title": "What’s New in MapKit and MapKit JS",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2019/236/",
       "dataFile": "videos/2019-236.json"
+    },
+    {
+      "id": "204",
+      "year": "2018",
+      "title": "Automatic Strong Passwords and Security Code AutoFill",
+      "topics": [
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/204/",
+      "dataFile": "videos/2018-204.json"
     },
     {
       "id": "249",

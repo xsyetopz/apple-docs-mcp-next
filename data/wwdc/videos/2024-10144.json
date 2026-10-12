@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Spatial Computing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -247,28 +249,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: UI Frameworks",
-        "url": "https://developer.apple.com/forums/topics/ui-frameworks?cid=vf-a-0010"
-      },
-      {
         "title": "SwiftUI updates",
         "url": "https://developer.apple.com/documentation/Updates/SwiftUI"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: UI Frameworks",
+        "url": "https://developer.apple.com/forums/topics/ui-frameworks?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10144/4/8A69C683-3259-454B-9F94-5BBE98999A1B/downloads/wwdc2024-10144_hd.mp4?dl=1",
@@ -372,5 +358,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10149"
     }
   ],
-  "extractedAt": "2025-07-18T10:20:42.396Z"
+  "extractedAt": "2026-10-11T16:34:48.933Z"
 }

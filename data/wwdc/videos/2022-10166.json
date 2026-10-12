@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Privacy & Security",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Protecting the User’s Privacy",
         "url": "https://developer.apple.com/documentation/UIKit/protecting-the-user-s-privacy"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10166/3/144ECF3D-FAB1-44D1-A265-90946F21F612/downloads/wwdc2022-10166_hd.mp4?dl=1",
@@ -72,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10085"
     }
   ],
-  "extractedAt": "2025-07-18T10:23:57.187Z"
+  "extractedAt": "2026-10-11T16:41:14.680Z"
 }

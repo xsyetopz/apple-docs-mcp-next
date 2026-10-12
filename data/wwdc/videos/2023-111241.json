@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/111241/4/ABFB7CE2-6FB6-4998-BE3A-686BF10AC41E/downloads/wwdc2023-111241_hd.mp4?dl=1",
@@ -54,6 +38,36 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10176"
     },
     {
+      "id": "111246",
+      "year": "2023",
+      "title": "Q&A: Image understanding and the Vision framework",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111246"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251"
+    },
+    {
       "id": "110429",
       "year": "2022",
       "title": "Discover advancements in iOS camera capture: Depth, focus, and multitasking",
@@ -66,5 +80,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10653"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:58.904Z"
+  "extractedAt": "2026-10-11T16:37:05.882Z"
 }

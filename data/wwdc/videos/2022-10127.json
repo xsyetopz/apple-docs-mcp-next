@@ -62,28 +62,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Create a 3D model of an interior room by guiding the user through an AR experience",
         "url": "https://developer.apple.com/documentation/RoomPlan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience"
       },
       {
         "title": "RoomPlan",
         "url": "https://developer.apple.com/documentation/RoomPlan"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10127/3/C6A70FDB-501E-42BB-A50E-9794D4050C07/downloads/wwdc2022-10127_hd.mp4?dl=1",
@@ -115,5 +99,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110930"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:38.781Z"
+  "extractedAt": "2026-10-11T16:39:22.183Z"
 }

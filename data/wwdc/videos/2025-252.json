@@ -17,10 +17,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Analytics Reports",
         "url": "https://developer.apple.com/documentation/analytics-reports"
       },
@@ -31,18 +27,6 @@
       {
         "title": "StoreKit",
         "url": "https://developer.apple.com/documentation/StoreKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/252/5/adef7487-7011-47b3-8efb-93421930f6d2/downloads/wwdc2025-252_hd.mp4?dl=1",
@@ -74,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10115"
     }
   ],
-  "extractedAt": "2025-07-18T09:18:53.028Z"
+  "extractedAt": "2026-10-11T16:34:16.498Z"
 }

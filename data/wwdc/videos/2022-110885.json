@@ -1,0 +1,37 @@
+{
+  "id": "110885",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110885/",
+  "title": "Q&A: App Intents",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10032",
+      "year": "2022",
+      "title": "Dive into App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10032"
+    },
+    {
+      "id": "10170",
+      "year": "2022",
+      "title": "Implement App Shortcuts with App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10170"
+    },
+    {
+      "id": "10121",
+      "year": "2022",
+      "title": "Meet Focus filters",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10121"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:31.032Z"
+}

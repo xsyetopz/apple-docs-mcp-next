@@ -55,24 +55,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "PaperKit",
         "url": "https://developer.apple.com/documentation/PaperKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/285/4/338ce5dc-94ee-4f86-a122-4bd01d8b1239/downloads/wwdc2025-285_hd.mp4?dl=1",
@@ -98,5 +82,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10041"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:42.795Z"
+  "extractedAt": "2026-10-11T16:33:46.261Z"
 }

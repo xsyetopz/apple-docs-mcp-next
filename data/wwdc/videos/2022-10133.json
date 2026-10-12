@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -169,28 +170,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building a productivity app for Apple Watch",
-        "url": "https://developer.apple.com/documentation/watchos-apps/building_a_productivity_app_for_apple_watch"
+        "url": "https://developer.apple.com/documentation/watchOS-Apps/building-a-productivity-app-for-apple-watch"
       },
       {
         "title": "watchOS apps",
         "url": "https://developer.apple.com/documentation/watchOS-Apps"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10133/4/BBFD71DD-1E5F-4843-861E-0D333BAA1A3F/downloads/wwdc2022-10133_hd.mp4?dl=1",
@@ -204,10 +189,28 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10136"
     },
     {
+      "id": "110449",
+      "year": "2022",
+      "title": "Meet the Presenter: Build a productivity app for Apple Watch",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110449"
+    },
+    {
       "id": "10062",
       "year": "2022",
       "title": "Meet Transferable",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10062"
+    },
+    {
+      "id": "110446",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110446"
+    },
+    {
+      "id": "110448",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110448"
     },
     {
       "id": "10137",
@@ -228,5 +231,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10052"
     }
   ],
-  "extractedAt": "2025-07-18T10:24:57.849Z"
+  "extractedAt": "2026-10-11T16:40:12.745Z"
 }

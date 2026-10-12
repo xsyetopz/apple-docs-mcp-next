@@ -79,36 +79,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Maps & Location",
-        "url": "https://developer.apple.com/forums/topics/maps-and-location?cid=vf-a-0010"
+        "title": "WeatherKit REST API",
+        "url": "https://developer.apple.com/documentation/WeatherKitRESTAPI"
       },
       {
         "title": "Request authentication for WeatherKit REST API",
         "url": "https://developer.apple.com/documentation/WeatherKitRESTAPI/request-authentication-for-weatherkit-rest-api"
       },
       {
+        "title": "Forum: Maps & Location",
+        "url": "https://developer.apple.com/forums/topics/maps-and-location?cid=vf-a-0010"
+      },
+      {
         "title": "WeatherKit",
         "url": "https://developer.apple.com/documentation/WeatherKit"
-      },
-      {
-        "title": "WeatherKit REST API",
-        "url": "https://developer.apple.com/documentation/WeatherKitRESTAPI"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10067/5/24B0D3B9-2CAA-4132-B63B-EEA93B0837EF/downloads/wwdc2024-10067_hd.mp4?dl=1",
@@ -122,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10003"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:29.176Z"
+  "extractedAt": "2026-10-11T16:34:38.098Z"
 }

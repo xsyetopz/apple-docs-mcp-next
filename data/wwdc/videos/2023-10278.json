@@ -25,24 +25,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Configuring webhooks in Xcode Cloud",
-        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Webhooks-in-Xcode-Cloud"
-      },
-      {
-        "title": "Configuring your first Xcode Cloud workflow",
-        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
-      },
-      {
-        "title": "Developing a workflow strategy for Xcode Cloud",
-        "url": "https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud"
-      },
-      {
-        "title": "Environment variable reference",
-        "url": "https://developer.apple.com/documentation/Xcode/Environment-Variable-Reference"
+        "title": "Xcode Cloud Workflows and Builds",
+        "url": "https://developer.apple.com/documentation/AppStoreConnectAPI/xcode-cloud-workflows-and-builds"
       },
       {
         "title": "Improving code assessment by organizing tests into test plans",
@@ -53,6 +37,14 @@
         "url": "https://developer.apple.com/documentation/Xcode/Making-Dependencies-Available-to-Xcode-Cloud"
       },
       {
+        "title": "Configuring webhooks in Xcode Cloud",
+        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Webhooks-in-Xcode-Cloud"
+      },
+      {
+        "title": "Environment variable reference",
+        "url": "https://developer.apple.com/documentation/Xcode/Environment-Variable-Reference"
+      },
+      {
         "title": "Writing custom build scripts",
         "url": "https://developer.apple.com/documentation/Xcode/Writing-Custom-Build-Scripts"
       },
@@ -61,26 +53,30 @@
         "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud-Workflow-Reference"
       },
       {
-        "title": "Xcode Cloud Workflows and Builds",
-        "url": "https://developer.apple.com/documentation/AppStoreConnectAPI/xcode-cloud-workflows-and-builds"
+        "title": "Developing a workflow strategy for Xcode Cloud",
+        "url": "https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Configuring your first Xcode Cloud workflow",
+        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10278/4/A5414C99-EB05-48CC-B09F-9A322FBEF0C6/downloads/wwdc2023-10278_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10278/4/A5414C99-EB05-48CC-B09F-9A322FBEF0C6/downloads/wwdc2023-10278_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "10290",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10290"
+    },
+    {
+      "id": "10293",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10293"
+    },
     {
       "id": "110361",
       "year": "2022",
@@ -100,5 +96,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10269"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:09.275Z"
+  "extractedAt": "2026-10-11T16:37:59.151Z"
 }

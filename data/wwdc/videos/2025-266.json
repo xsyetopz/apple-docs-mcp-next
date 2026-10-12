@@ -56,36 +56,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Mutex",
+        "url": "https://developer.apple.com/documentation/Synchronization/Mutex"
       },
       {
         "title": "Concurrency",
         "url": "https://developer.apple.com/documentation/Swift/concurrency"
       },
       {
-        "title": "Mutex",
-        "url": "https://developer.apple.com/documentation/Synchronization/Mutex"
-      },
-      {
-        "title": "The Swift Programming Language: Concurrency",
-        "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
-      },
-      {
         "title": "Updating an App to Use Swift Concurrency",
         "url": "https://developer.apple.com/documentation/swift/updating_an_app_to_use_swift_concurrency"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "The Swift Programming Language: Concurrency",
+        "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/266/7/c7837487-ed14-4560-8c2c-a583596027ca/downloads/wwdc2025-266_hd.mp4?dl=1",
@@ -111,5 +95,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10156"
     }
   ],
-  "extractedAt": "2025-07-18T10:47:11.794Z"
+  "extractedAt": "2026-10-11T16:33:35.606Z"
 }

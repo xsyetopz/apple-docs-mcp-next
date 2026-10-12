@@ -37,28 +37,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Distributing documentation to other developers",
         "url": "https://developer.apple.com/documentation/Xcode/distributing-documentation-to-other-developers"
       },
       {
-        "title": "SlothCreator: Building DocC Documentation in Xcode",
-        "url": "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "SlothCreator: Building DocC documentation in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/slothcreator-building-docc-documentation-in-xcode"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10236/6/93E69517-B140-4720-B821-A542F64CC5C8/downloads/wwdc2021-10236_hd.mp4?dl=1",
@@ -90,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10192"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:40.527Z"
+  "extractedAt": "2026-10-11T16:42:33.103Z"
 }

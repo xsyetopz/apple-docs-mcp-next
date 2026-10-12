@@ -110,24 +110,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10156/4/EA8484C6-7456-457B-B105-A9D03C7FB92B/wwdc2020_10156_hd.mp4?dl=1",
@@ -159,5 +143,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/430"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:55.181Z"
+  "extractedAt": "2026-10-11T16:46:02.970Z"
 }

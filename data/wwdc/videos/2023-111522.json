@@ -1,0 +1,32 @@
+{
+  "id": "111522",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111522/",
+  "title": "Q&A: Widgets in the Smart Stack on watchOS",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Design",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10029",
+      "year": "2023",
+      "title": "Build widgets for the Smart Stack on Apple Watch",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10029"
+    },
+    {
+      "id": "10309",
+      "year": "2023",
+      "title": "Design widgets for the Smart Stack on Apple Watch",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10309"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:14.942Z"
+}

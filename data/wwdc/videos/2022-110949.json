@@ -1,0 +1,49 @@
+{
+  "id": "110949",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110949/",
+  "title": "Study Hall: Draw with metal-cpp",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Graphics & Games"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110657",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Metal 3",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110657"
+    },
+    {
+      "id": "10160",
+      "year": "2022",
+      "title": "Program Metal in C++ with metal-cpp",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10160"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:30.963Z"
+}

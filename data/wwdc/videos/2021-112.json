@@ -8,31 +8,10 @@
   "topics": [
     "Essentials"
   ],
-  "hasTranscript": true,
+  "hasTranscript": false,
   "hasCode": false,
-  "transcript": {
-    "fullText": "",
-    "segments": []
-  },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/112/4/FE51333C-9519-4E0C-8E8D-C8D32822AC33/downloads/wwdc2021-112_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/112/4/FE51333C-9519-4E0C-8E8D-C8D32822AC33/downloads/wwdc2021-112_sd.mp4?dl=1"
   },
@@ -50,17 +29,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/111"
     },
     {
-      "id": "10321",
-      "year": "2021",
-      "title": "Monday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10321"
-    },
-    {
       "id": "102",
       "year": "2021",
       "title": "Platforms State of the Union",
       "url": "https://developer.apple.com/videos/play/wwdc2021/102"
     }
   ],
-  "extractedAt": "2025-07-18T10:27:47.222Z"
+  "extractedAt": "2026-10-11T16:42:24.394Z"
 }

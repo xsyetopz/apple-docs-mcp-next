@@ -17,28 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Implementing User Authentication with Sign in with Apple",
-        "url": "https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple"
-      },
-      {
         "title": "Roster API",
         "url": "https://developer.apple.com/documentation/RosterAPI"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Configuring your webpage for Sign in with Apple",
+        "url": "https://developer.apple.com/documentation/signinwithapple/configuring-your-webpage-for-sign-in-with-apple"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Implementing User Authentication with Sign in with Apple",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10053/4/8898553F-A636-4C8D-AAAF-DE7463409879/downloads/wwdc2022-10053_hd.mp4?dl=1",
@@ -50,6 +38,18 @@
       "year": "2022",
       "title": "Enhance your Sign in with Apple experience",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10122"
+    },
+    {
+      "id": "110520",
+      "year": "2022",
+      "title": "Q&A: Education technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110520"
+    },
+    {
+      "id": "110641",
+      "year": "2022",
+      "title": "Q&A: Education technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110641"
     },
     {
       "id": "10045",
@@ -64,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10173"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:10.008Z"
+  "extractedAt": "2026-10-11T16:41:12.749Z"
 }

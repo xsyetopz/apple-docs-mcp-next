@@ -61,28 +61,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building local experiences with room tracking",
         "url": "https://developer.apple.com/documentation/arkit/building_local_experiences_with_room_tracking"
       },
       {
         "title": "Forum: Spatial Computing",
         "url": "https://developer.apple.com/forums/topics/spatial-computing?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10100/4/3F3285E6-7223-427A-A3AE-169CFB35EB37/downloads/wwdc2024-10100_hd.mp4?dl=1",
@@ -114,5 +98,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10082"
     }
   ],
-  "extractedAt": "2025-07-18T10:45:22.878Z"
+  "extractedAt": "2026-10-11T16:34:40.729Z"
 }

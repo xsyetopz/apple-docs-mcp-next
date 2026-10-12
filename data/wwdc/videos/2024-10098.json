@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Design",
         "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
-      },
-      {
-        "title": "Human Interface Guidelines: Live Activities",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/live-activities"
       },
       {
         "title": "Human Interface Guidelines: watchOS",
         "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Live Activities",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/live-activities"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10098/7/25EEDB0F-2C34-42C4-A647-CD4ACBF973C5/downloads/wwdc2024-10098_hd.mp4?dl=1",
@@ -69,5 +53,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10194"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:54.243Z"
+  "extractedAt": "2026-10-11T16:34:53.234Z"
 }

@@ -18,18 +18,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "App Store Server API",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI"
-      },
-      {
-        "title": "App Store Server Notifications",
-        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
-      },
-      {
         "title": "Set App Account Token",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Set-App-Account-Token"
       },
@@ -38,16 +26,12 @@
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "App Store Server API",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Store Server Notifications",
+        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/249/4/7efe7148-7440-40ff-a24c-becb06197f36/downloads/wwdc2025-249_hd.mp4?dl=1",
@@ -67,5 +51,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10062"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:34.262Z"
+  "extractedAt": "2026-10-11T16:33:31.891Z"
 }

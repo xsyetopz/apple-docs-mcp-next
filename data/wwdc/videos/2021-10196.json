@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "UIButton.Configuration",
         "url": "https://developer.apple.com/documentation/UIKit/UIButton/Configuration-swift.struct"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10196/7/D9910EC1-1CF4-47F0-B7CD-5D5CEE199F0D/downloads/wwdc2021-10196_hd.mp4?dl=1",
@@ -49,17 +33,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10064"
     },
     {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
-    },
-    {
       "id": "10097",
       "year": "2021",
       "title": "What’s new in SF Symbols",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10097"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:23.131Z"
+  "extractedAt": "2026-10-11T16:42:48.622Z"
 }

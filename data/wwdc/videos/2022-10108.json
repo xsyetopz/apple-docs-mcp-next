@@ -61,32 +61,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Local Authentication",
         "url": "https://developer.apple.com/documentation/LocalAuthentication"
       },
       {
         "title": "Protecting keys with the Secure Enclave",
         "url": "https://developer.apple.com/documentation/Security/protecting-keys-with-the-secure-enclave"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10108/4/1F8BF487-ABEF-47CD-AC84-C3AC2E35885A/downloads/wwdc2022-10108_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10108/4/1F8BF487-ABEF-47CD-AC84-C3AC2E35885A/downloads/wwdc2022-10108_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:42:57.804Z"
+  "extractedAt": "2026-10-11T16:40:22.795Z"
 }

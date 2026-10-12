@@ -17,36 +17,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Capture setup",
-        "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
-      },
-      {
-        "title": "Core Media I/O",
-        "url": "https://developer.apple.com/documentation/CoreMediaIO"
+        "title": "Overriding the default USB video class extension",
+        "url": "https://developer.apple.com/documentation/CoreMediaIO/overriding-the-default-usb-video-class-extension"
       },
       {
         "title": "Creating a camera extension with Core Media I/O",
         "url": "https://developer.apple.com/documentation/coremediaio/creating_a_camera_extension_with_core_media_i_o"
       },
       {
-        "title": "Overriding the default USB video class extension",
-        "url": "https://developer.apple.com/documentation/CoreMediaIO/overriding-the-default-usb-video-class-extension"
+        "title": "Core Media I/O",
+        "url": "https://developer.apple.com/documentation/CoreMediaIO"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Capture setup",
+        "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10022/5/62C081E5-0066-440B-BDE0-A89D5099C4B8/downloads/wwdc2022-10022_hd.mp4?dl=1",
@@ -54,11 +38,29 @@
   },
   "relatedVideos": [
     {
+      "id": "110964",
+      "year": "2022",
+      "title": "Meet the Presenter: Create camera extensions with CoreMediaIO",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110964"
+    },
+    {
+      "id": "110959",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110959"
+    },
+    {
+      "id": "110960",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110960"
+    },
+    {
       "id": "702",
       "year": "2019",
       "title": "System Extensions and DriverKit",
       "url": "https://developer.apple.com/videos/play/wwdc2019/702"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:43.879Z"
+  "extractedAt": "2026-10-11T16:41:08.612Z"
 }

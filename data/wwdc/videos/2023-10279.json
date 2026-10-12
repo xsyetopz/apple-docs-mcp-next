@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Essentials"
+    "Essentials",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -18,30 +19,26 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10279/4/6F2DFF92-4E92-4C6C-BDAA-80C7646871D6/downloads/wwdc2023-10279_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10279/4/6F2DFF92-4E92-4C6C-BDAA-80C7646871D6/downloads/wwdc2023-10279_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "10320",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10320"
+    },
+    {
+      "id": "10326",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10326"
+    },
     {
       "id": "10262",
       "year": "2023",
@@ -61,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10119"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:29.633Z"
+  "extractedAt": "2026-10-11T16:36:09.064Z"
 }

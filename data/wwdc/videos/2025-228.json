@@ -68,24 +68,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Wi-Fi Aware",
         "url": "https://developer.apple.com/documentation/WiFiAware"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/228/4/b7b10ed3-bcfe-4935-919a-1b7faef02d2b/downloads/wwdc2025-228_hd.mp4?dl=1",
@@ -99,5 +83,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10203"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:22.336Z"
+  "extractedAt": "2026-10-11T16:34:20.083Z"
 }

@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "SwiftUI & UI Frameworks",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: CarPlay",
         "url": "https://developer.apple.com/design/human-interface-guidelines/carplay"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/719d0c0vj588o/719/719_hd_enabling_your_app_for_carplay.mp4?dl=1",
@@ -66,5 +52,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/723"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:05.927Z"
+  "extractedAt": "2026-10-11T16:48:45.505Z"
 }

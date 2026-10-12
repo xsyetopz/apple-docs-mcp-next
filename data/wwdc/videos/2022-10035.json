@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Services",
-    "Essentials"
+    "Essentials",
+    "Maps & Location"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,10 +18,6 @@
   },
   "resources": {
     "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
       {
         "title": "Explore a location with a highly detailed map and Look Around",
         "url": "https://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit/explore_a_location_with_a_highly_detailed_map_and_look_around"
@@ -32,18 +29,6 @@
       {
         "title": "MapKit",
         "url": "https://developer.apple.com/documentation/MapKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10035/5/78F0B50C-C39D-4819-88A0-A1167D43FD7E/downloads/wwdc2022-10035_hd.mp4?dl=1",
@@ -55,7 +40,25 @@
       "year": "2022",
       "title": "Meet Apple Maps Server APIs",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10006"
+    },
+    {
+      "id": "110919",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in MapKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110919"
+    },
+    {
+      "id": "110527",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110527"
+    },
+    {
+      "id": "110747",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110747"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:40.526Z"
+  "extractedAt": "2026-10-11T16:41:23.404Z"
 }

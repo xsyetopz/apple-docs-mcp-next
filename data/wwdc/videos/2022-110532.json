@@ -1,0 +1,27 @@
+{
+  "id": "110532",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110532/",
+  "title": "Meet the Presenter: Writing for interfaces",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Accessibility & Inclusion",
+    "Design",
+    "Essentials"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10037",
+      "year": "2022",
+      "title": "Writing for interfaces",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10037"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:30.763Z"
+}

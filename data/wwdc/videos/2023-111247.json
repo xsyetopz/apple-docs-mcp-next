@@ -1,0 +1,31 @@
+{
+  "id": "111247",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111247/",
+  "title": "Q&A: Natural Language and Speech",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10101",
+      "year": "2023",
+      "title": "Customize on-device speech recognition",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10101"
+    },
+    {
+      "id": "10042",
+      "year": "2023",
+      "title": "Explore Natural Language multilingual models",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10042"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:59.406Z"
+}

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "Privacy & Security"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -31,24 +32,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10143/3/585D8CA2-12BF-4F97-8DDD-11A5561BD143/downloads/wwdc2022-10143_hd.mp4?dl=1",
@@ -62,11 +47,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10040"
     },
     {
+      "id": "110517",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Managed Device Attestation",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110517"
+    },
+    {
       "id": "10045",
       "year": "2022",
       "title": "What's new in managing Apple devices",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10045"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:13.210Z"
+  "extractedAt": "2026-10-11T16:42:04.850Z"
 }

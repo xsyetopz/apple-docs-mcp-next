@@ -43,32 +43,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Applying temporal antialiasing and upscaling using MetalFX",
         "url": "https://developer.apple.com/documentation/MetalFX/applying-temporal-antialiasing-and-upscaling-using-metalfx"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
       },
       {
         "title": "MetalFX",
         "url": "https://developer.apple.com/documentation/MetalFX"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10103/7/0DA14AB6-97A2-4E95-A960-E27CBC5E5012/downloads/wwdc2022-10103_hd.mp4?dl=1",
@@ -86,7 +70,31 @@
       "year": "2022",
       "title": "Discover Metal 3",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10066"
+    },
+    {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110661",
+      "year": "2022",
+      "title": "Meet the Presenter: Boost your performance with MetalFX Upscaling",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110661"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:51.895Z"
+  "extractedAt": "2026-10-11T16:40:11.535Z"
 }

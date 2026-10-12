@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Core ML",
         "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10027/3/F6386488-80EB-46AC-BFEE-23B81B5E621A/downloads/wwdc2022-10027_hd.mp4?dl=1",
@@ -52,7 +36,19 @@
       "year": "2022",
       "title": "Explore the machine learning development experience",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10017"
+    },
+    {
+      "id": "110907",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore the machine learning developer experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110907"
+    },
+    {
+      "id": "110903",
+      "year": "2022",
+      "title": "Q&A: Core ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110903"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:21.992Z"
+  "extractedAt": "2026-10-11T16:40:21.817Z"
 }

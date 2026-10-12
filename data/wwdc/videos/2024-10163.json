@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Machine Learning and AI",
         "url": "https://developer.apple.com/forums/topics/machine-learning-and-ai?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10163/4/3380F229-CDBE-487A-8ACF-708A4D32CB79/downloads/wwdc2024-10163_hd.mp4?dl=1",
@@ -54,5 +38,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/111241"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:35.312Z"
+  "extractedAt": "2026-10-11T16:35:34.930Z"
 }

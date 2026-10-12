@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/216oe5ad0gu7zw8cqfd/216/216_hd_swiftui_essentials.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/216oe5ad0gu7zw8cqfd/216/216_sd_swiftui_essentials.mp4?dl=1"
   },
@@ -116,5 +99,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/401"
     }
   ],
-  "extractedAt": "2025-07-18T10:59:45.151Z"
+  "extractedAt": "2026-10-11T16:47:14.712Z"
 }

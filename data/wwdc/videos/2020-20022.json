@@ -8,45 +8,25 @@
   "topics": [
     "Design"
   ],
-  "hasTranscript": true,
+  "hasTranscript": false,
   "hasCode": false,
-  "transcript": {
-    "fullText": "",
-    "segments": []
-  },
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Designing for watchOS",
         "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-watchos"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for iOS",
-        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ios"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for macOS",
-        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-macos"
       },
       {
         "title": "Human Interface Guidelines: Designing for tvOS",
         "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Human Interface Guidelines: Designing for macOS",
+        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-macos"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Designing for iOS",
+        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ios"
       }
     ]
   },
@@ -76,5 +56,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2017/802"
     }
   ],
-  "extractedAt": "2025-07-18T09:38:00.611Z"
+  "extractedAt": "2026-10-11T16:46:41.030Z"
 }

@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Audio & Video",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -56,24 +57,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "ScreenCaptureKit",
         "url": "https://developer.apple.com/documentation/ScreenCaptureKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10136/6/998A4D51-FB97-4CB9-959F-65B5827F9926/downloads/wwdc2023-10136_hd.mp4?dl=1",
@@ -99,5 +84,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10155"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:36.499Z"
+  "extractedAt": "2026-10-11T16:38:08.684Z"
 }

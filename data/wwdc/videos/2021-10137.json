@@ -72,28 +72,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "App and Book Management",
-        "url": "https://developer.apple.com/documentation/DeviceManagement/app-and-book-management"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10137/7/FB724053-0CDB-4228-A9A7-CA326DC41FBE/downloads/wwdc2021-10137_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10137/7/FB724053-0CDB-4228-A9A7-CA326DC41FBE/downloads/wwdc2021-10137_sd.mp4?dl=1"
   },
@@ -105,5 +84,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10130"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:02.041Z"
+  "extractedAt": "2026-10-11T16:43:48.101Z"
 }

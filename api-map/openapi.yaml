@@ -1,0 +1,84 @@
+openapi: 3.0.0
+info:
+  title: api-map/search.har Mitmproxy2Swagger
+  version: 1.0.0
+servers:
+- url: https://devintserv.msc.sbz.apple.com
+  description: The default server
+paths:
+  /ask-reachability:
+    get:
+      summary: GET ask-reachability
+      responses:
+        '200':
+          description: OK
+          content: {}
+  /api/v1/query:
+    post:
+      summary: POST query
+      responses:
+        '200':
+          description: OK
+          content: {}
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                targetResultLocale:
+                  type: string
+                includedResponses:
+                  type: array
+                  items:
+                    type: string
+                    enum: [quickSearch, search, ask]
+                searchScope:
+                  $ref: '#/components/schemas/SearchScope'
+            # Added by hand from search.har: mitmproxy2swagger keeps the first request's body per endpoint, and the
+            # first one recorded had no searchScope (the page sends it only for its filters).
+            examples:
+              unfiltered:
+                value:
+                  text: tab bars
+                  targetResultLocale: en
+                  includedResponses: [quickSearch, search, ask]
+              documentationFilter:
+                value:
+                  text: tab bars
+                  targetResultLocale: en
+                  includedResponses: [search]
+                  searchScope:
+                    kind: and
+                    scopes:
+                    - {kind: hostname, value: developer.apple.com}
+                    - {kind: pathPrefix, value: /documentation/}
+              sampleCodeFilter:
+                value:
+                  text: tab bars
+                  targetResultLocale: en
+                  includedResponses: [search]
+                  searchScope: {kind: documentationRole, value: sampleCode}
+components:
+  schemas:
+    SearchScope:
+      type: object
+      required: [kind]
+      properties:
+        kind:
+          type: string
+          enum: [and, or, hostname, pathPrefix, documentationRole]
+        value:
+          type: string
+          description: For hostname, pathPrefix and documentationRole
+        scopes:
+          type: array
+          description: For and, or
+          items:
+            $ref: '#/components/schemas/SearchScope'
+x-path-templates:
+# Remove the ignore: prefix to generate an endpoint with its URL
+# Lines that are closer to the top take precedence, the matching is greedy
+  []

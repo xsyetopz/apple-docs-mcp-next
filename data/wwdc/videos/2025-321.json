@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,8 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "requiresPerObjectAuthorization()",
+        "url": "https://developer.apple.com/documentation/HealthKit/HKObjectType/requiresPerObjectAuthorization()"
       },
       {
         "title": "Authorizing access to health data",
@@ -35,22 +36,6 @@
       {
         "title": "Logging symptoms associated with a medication",
         "url": "https://developer.apple.com/documentation/HealthKit/logging-symptoms-associated-with-a-medication"
-      },
-      {
-        "title": "requiresPerObjectAuthorization()",
-        "url": "https://developer.apple.com/documentation/HealthKit/HKObjectType/requiresPerObjectAuthorization()"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/321/6/70a69650-e4ac-44fc-ac42-cb7ca679de9d/downloads/wwdc2025-321_hd.mp4?dl=1",
@@ -70,5 +55,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10664"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:07.890Z"
+  "extractedAt": "2026-10-11T16:33:47.333Z"
 }

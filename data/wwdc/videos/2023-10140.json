@@ -86,12 +86,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Testing failing subscription renewals and In-App Purchases",
+        "url": "https://developer.apple.com/documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases"
       },
       {
         "title": "Message",
         "url": "https://developer.apple.com/documentation/StoreKit/Message"
+      },
+      {
+        "title": "Supporting promoted In-App Purchases in your app",
+        "url": "https://developer.apple.com/documentation/StoreKit/supporting-promoted-in-app-purchases-in-your-app"
       },
       {
         "title": "Setting up StoreKit Testing in Xcode",
@@ -100,26 +104,6 @@
       {
         "title": "StoreKit",
         "url": "https://developer.apple.com/documentation/StoreKit"
-      },
-      {
-        "title": "Supporting promoted In-App Purchases in your app",
-        "url": "https://developer.apple.com/documentation/StoreKit/supporting-promoted-in-app-purchases-in-your-app"
-      },
-      {
-        "title": "Testing failing subscription renewals and In-App Purchases",
-        "url": "https://developer.apple.com/documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10140/4/F65F9FA7-3629-45A5-A4D6-A90BE40BE5E9/downloads/wwdc2023-10140_hd.mp4?dl=1",
@@ -163,5 +147,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10114"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:42.123Z"
+  "extractedAt": "2026-10-11T16:36:15.491Z"
 }

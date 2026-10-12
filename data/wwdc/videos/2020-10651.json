@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Store Connect API",
         "url": "https://developer.apple.com/documentation/AppStoreConnectAPI"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10651/7/19F5D15D-9CF8-4C8F-8F72-35C38DB269F6/wwdc2020_10651_hd.mp4?dl=1",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10098"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:00.213Z"
+  "extractedAt": "2026-10-11T16:44:55.492Z"
 }

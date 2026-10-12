@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core ML",
-        "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
         "title": "Core ML Tools PyTorch Conversion Documentation",
         "url": "https://coremltools.readme.io/docs/pytorch-conversion"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core ML",
+        "url": "https://developer.apple.com/documentation/CoreML"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10047/4/E4F2FB98-2605-4693-8FA8-978D1AD634F4/downloads/wwdc2023-10047_hd.mp4?dl=1",
@@ -46,11 +30,41 @@
   },
   "relatedVideos": [
     {
+      "id": "111245",
+      "year": "2023",
+      "title": "Q&A: Core ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111245"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251"
+    },
+    {
       "id": "10153",
       "year": "2020",
       "title": "Get models on device using Core ML Converters",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10153"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:07.027Z"
+  "extractedAt": "2026-10-11T16:38:07.075Z"
 }

@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Audio & Video",
-    "Design"
+    "Design",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -38,24 +39,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Media Technologies",
         "url": "https://developer.apple.com/forums/topics/media-technologies?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10116/4/E50DFC91-1CB7-4E9B-B204-72EA322434D8/downloads/wwdc2024-10116_hd.mp4?dl=1",
@@ -69,5 +54,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10070"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:58.374Z"
+  "extractedAt": "2026-10-11T16:34:43.628Z"
 }

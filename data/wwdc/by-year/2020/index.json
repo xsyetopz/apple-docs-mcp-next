@@ -17,6 +17,7 @@
     "Photos & Camera",
     "Privacy & Security",
     "Safari & Web",
+    "Spatial Computing",
     "Swift",
     "SwiftUI & UI Frameworks",
     "System Services"
@@ -66,7 +67,8 @@
       "year": "2020",
       "title": "Accessibility design for Mac Catalyst",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -118,7 +120,8 @@
       "year": "2020",
       "title": "Adopt the new look of macOS",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -131,7 +134,8 @@
       "year": "2020",
       "title": "Advancements in Game Controllers",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -184,7 +188,8 @@
       "title": "App accessibility for Switch Control",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -290,7 +295,8 @@
       "year": "2020",
       "title": "Bring keyboard and mouse gaming to iPad",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -317,7 +323,9 @@
       "title": "Broaden your reach with Siri Event Suggestions",
       "topics": [
         "App Services",
-        "Developer Tools"
+        "Developer Tools",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -343,7 +351,8 @@
       "year": "2020",
       "title": "Build an Action Classifier with Create ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -424,7 +433,8 @@
       "year": "2020",
       "title": "Build for the iPadOS pointer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -451,7 +461,8 @@
       "year": "2020",
       "title": "Build Image and Video Style Transfer models in Create ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -492,7 +503,8 @@
       "title": "Build location-aware enterprise apps",
       "topics": [
         "Accessibility & Inclusion",
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": true,
@@ -507,7 +519,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -533,7 +546,8 @@
       "year": "2020",
       "title": "Build SwiftUI apps for tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -546,7 +560,9 @@
       "year": "2020",
       "title": "Build SwiftUI views for widgets",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -586,7 +602,8 @@
       "title": "Capture and stream apps on the Mac with ReplayKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -599,7 +616,9 @@
       "year": "2020",
       "title": "Configure and link your App Clips",
       "topics": [
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -626,7 +645,9 @@
       "year": "2020",
       "title": "Core Data: Sundries and maxims",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -691,7 +712,8 @@
       "year": "2020",
       "title": "Create great enterprise apps: A chat with Box's Aaron Levie",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -902,7 +924,9 @@
       "year": "2020",
       "title": "Design for location privacy",
       "topics": [
-        "Design"
+        "Design",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -915,7 +939,8 @@
       "year": "2020",
       "title": "Design for the iPadOS pointer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -969,7 +994,8 @@
       "year": "2020",
       "title": "Design with iOS pickers, menus and actions",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1037,7 +1063,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1089,7 +1116,8 @@
       "year": "2020",
       "title": "Discover search suggestions for Apple TV",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1248,7 +1276,8 @@
       "year": "2020",
       "title": "Explore ARKit 4",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1302,7 +1331,8 @@
       "year": "2020",
       "title": "Explore Packages and Projects with Xcode Playgrounds",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1328,7 +1358,8 @@
       "year": "2020",
       "title": "Explore the new system architecture of Apple silicon Macs",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1436,7 +1467,8 @@
       "year": "2020",
       "title": "Get your test results faster",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1462,7 +1494,8 @@
       "year": "2020",
       "title": "Handle interruptions and alerts in UI tests",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1569,7 +1602,8 @@
       "year": "2020",
       "title": "Integrate your app with Wind Down",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1582,7 +1616,8 @@
       "year": "2020",
       "title": "Introducing Car Keys",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -1609,7 +1644,9 @@
       "year": "2020",
       "title": "Introduction to SwiftUI",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1654,7 +1691,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2020/101/",
       "dataFile": "videos/2020-101.json"
     },
@@ -1704,7 +1741,8 @@
       "title": "Make your app visually accessible",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1717,7 +1755,8 @@
       "year": "2020",
       "title": "Master Picture in Picture on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1826,7 +1865,9 @@
       "year": "2020",
       "title": "Meet WidgetKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1922,7 +1963,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1935,7 +1977,8 @@
       "year": "2020",
       "title": "Optimize the interface of your Mac Catalyst app",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1952,7 +1995,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2020/102/",
       "dataFile": "videos/2020-102.json"
     },
@@ -2000,7 +2043,8 @@
       "year": "2020",
       "title": "Refine Objective-C frameworks for Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2039,7 +2083,8 @@
       "year": "2020",
       "title": "SF Symbols 2",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2053,7 +2098,9 @@
       "title": "Shop online with AR Quick Look",
       "topics": [
         "App Services",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -2093,7 +2140,9 @@
       "year": "2020",
       "title": "Structure your app for SwiftUI previews",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2160,7 +2209,8 @@
       "year": "2020",
       "title": "Swan's Quest, Chapter 1: Voices in the dark",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2199,7 +2249,8 @@
       "year": "2020",
       "title": "Swan's Quest, Chapter 4: The sequence completes",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2212,7 +2263,8 @@
       "year": "2020",
       "title": "Swift packages: Resources and localization",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2278,7 +2330,8 @@
       "year": "2020",
       "title": "The artist’s AR toolkit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -2321,7 +2374,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2020/20022/",
       "dataFile": "videos/2020-20022.json"
     },
@@ -2330,7 +2383,8 @@
       "year": "2020",
       "title": "Triage test failures with XCTIssue",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2356,7 +2410,8 @@
       "year": "2020",
       "title": "Use model deployment and security with Core ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -2434,7 +2489,8 @@
       "year": "2020",
       "title": "What's new in assessment",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -2540,7 +2596,8 @@
       "title": "What's new in Mac Catalyst",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2592,7 +2649,8 @@
       "year": "2020",
       "title": "What's new in RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -2685,7 +2743,8 @@
       "year": "2020",
       "title": "What's new in USD",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -2750,7 +2809,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 1: The adventure begins",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2763,7 +2824,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 2: Alternate timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2776,7 +2839,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 3: Advancing timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2789,7 +2854,8 @@
       "year": "2020",
       "title": "Write tests to fail",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,

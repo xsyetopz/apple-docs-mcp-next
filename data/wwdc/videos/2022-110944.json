@@ -1,0 +1,27 @@
+{
+  "id": "110944",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110944/",
+  "title": "Q&A: Passkeys and authentication",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "Privacy & Security",
+    "Safari & Web"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10092",
+      "year": "2022",
+      "title": "Meet passkeys",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10092"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:05.211Z"
+}

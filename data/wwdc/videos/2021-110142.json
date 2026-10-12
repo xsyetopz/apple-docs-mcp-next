@@ -16,24 +16,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/110142/2/7A8BFD0C-E9CB-46D3-B598-2A8EEA5F89F0/downloads/wwdc2021-110142_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/110142/2/7A8BFD0C-E9CB-46D3-B598-2A8EEA5F89F0/downloads/wwdc2021-110142_sd.mp4?dl=1"
   },
@@ -43,13 +26,7 @@
       "year": "2021",
       "title": "Accessibility by design: An Apple Watch for everyone",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10308"
-    },
-    {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:34.589Z"
+  "extractedAt": "2026-10-11T16:43:38.400Z"
 }

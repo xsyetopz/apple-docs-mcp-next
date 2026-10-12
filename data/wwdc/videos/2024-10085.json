@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Human Interface Guidelines: Designing for games",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games"
       },
       {
         "title": "Forum: Design",
         "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
       },
       {
-        "title": "Human Interface Guidelines: Designing for games",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games"
-      },
-      {
         "title": "Human Interface Guidelines: Game controls",
         "url": "https://developer.apple.com/design/human-interface-guidelines/game-controls"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10085/5/609DB92A-84CB-4E0B-A6C6-E14DB709877C/downloads/wwdc2024-10085_hd.mp4?dl=1",
@@ -57,5 +41,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10089"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:35.819Z"
+  "extractedAt": "2026-10-11T16:34:41.215Z"
 }

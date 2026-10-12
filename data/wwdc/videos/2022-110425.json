@@ -1,0 +1,25 @@
+{
+  "id": "110425",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110425/",
+  "title": "Meet the Presenter: Create accessible Single App Mode experiences",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Accessibility & Inclusion"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10152",
+      "year": "2022",
+      "title": "Create accessible Single App Mode experiences",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10152"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:16.279Z"
+}

@@ -37,28 +37,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Media Technologies",
         "url": "https://developer.apple.com/forums/topics/media-technologies?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10113/4/FADD3DD1-246C-483B-BA77-5D9BE374E39B/downloads/wwdc2024-10113_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10113/4/FADD3DD1-246C-483B-BA77-5D9BE374E39B/downloads/wwdc2024-10113_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:22:08.780Z"
+  "extractedAt": "2026-10-11T16:35:34.547Z"
 }

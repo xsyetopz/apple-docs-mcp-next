@@ -61,24 +61,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accessibility for UIKit",
         "url": "https://developer.apple.com/documentation/UIKit/accessibility-for-uikit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10022/3/286D1613-442C-41FD-A8D9-B7E7E0AC8758/wwdc2020_10022_hd.mp4?dl=1",
@@ -98,5 +82,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/248"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:03.149Z"
+  "extractedAt": "2026-10-11T16:45:03.651Z"
 }

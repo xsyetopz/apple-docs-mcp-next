@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Implementing as an identity document provider",
         "url": "https://developer.apple.com/documentation/IdentityDocumentServices/Implenting-as-an-identity-document-provider"
       },
       {
         "title": "Requesting a mobile document on the web",
         "url": "https://developer.apple.com/documentation/IdentityDocumentServices/Requesting-a-mobile-document-on-the-web"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/232/4/c1386ee3-b8b0-4086-99fe-9f05e4b1cd17/downloads/wwdc2025-232_hd.mp4?dl=1",
@@ -64,5 +49,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10041"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:54.760Z"
+  "extractedAt": "2026-10-11T16:34:22.891Z"
 }

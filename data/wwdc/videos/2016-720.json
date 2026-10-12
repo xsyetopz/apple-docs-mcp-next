@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,24 +16,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/720w6g8t9zhd23va0ai/720/720_hd_concurrent_programming_with_gcd_in_swift_3.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/720w6g8t9zhd23va0ai/720/720_sd_concurrent_programming_with_gcd_in_swift_3.mp4?dl=1"
   },
@@ -56,5 +40,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/416"
     }
   ],
-  "extractedAt": "2025-07-18T10:19:31.280Z"
+  "extractedAt": "2026-10-11T16:49:05.850Z"
 }

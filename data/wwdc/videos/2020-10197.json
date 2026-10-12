@@ -7,7 +7,9 @@
   "duration": "",
   "topics": [
     "App Services",
-    "Developer Tools"
+    "Developer Tools",
+    "Maps & Location",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -74,24 +76,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Integrating Your App with Siri Event Suggestions",
         "url": "https://developer.apple.com/documentation/SiriKit/integrating-your-app-with-siri-event-suggestions"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10197/4/FD55A473-26AA-4BE5-896E-D18F043D0EB4/wwdc2020_10197_hd.mp4?dl=1",
@@ -141,5 +127,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/243"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:58.315Z"
+  "extractedAt": "2026-10-11T16:45:01.628Z"
 }

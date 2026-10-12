@@ -62,32 +62,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Creating engaging challenges from leaderboards",
+        "url": "https://developer.apple.com/documentation/GameKit/creating-engaging-challenges-from-leaderboards"
       },
       {
         "title": "Creating activities for your game",
         "url": "https://developer.apple.com/documentation/GameKit/creating-activities-for-your-game"
       },
       {
-        "title": "Creating engaging challenges from leaderboards",
-        "url": "https://developer.apple.com/documentation/GameKit/creating-engaging-challenges-from-leaderboards"
-      },
-      {
         "title": "Human Interface Guidelines: Game Center",
         "url": "https://developer.apple.com/design/human-interface-guidelines/game-center"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/214/5/c6c0d647-5ddc-44aa-869b-d27b44774678/downloads/wwdc2025-214_hd.mp4?dl=1",
@@ -113,5 +97,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10065"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:26.475Z"
+  "extractedAt": "2026-10-11T16:33:40.034Z"
 }

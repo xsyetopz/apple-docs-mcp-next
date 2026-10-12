@@ -1,0 +1,25 @@
+{
+  "id": "111480",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111480/",
+  "title": "Q&A: Photo Picker",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10107",
+      "year": "2023",
+      "title": "Embed the Photos Picker in your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10107"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:00.034Z"
+}

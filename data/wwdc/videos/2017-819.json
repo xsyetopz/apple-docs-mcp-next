@@ -18,24 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
+        "title": "Apple Design Site",
         "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/819bp5li4iugvy222/819/819_hd_designing_for_a_global_audience.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/819bp5li4iugvy222/819/819_sd_designing_for_a_global_audience.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:09:53.094Z"
+  "extractedAt": "2026-10-11T16:48:44.308Z"
 }

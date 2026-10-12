@@ -1,0 +1,45 @@
+{
+  "id": "110813",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110813/",
+  "title": "Q&A: Right-to-left",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks",
+    "System Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10110",
+      "year": "2022",
+      "title": "Build global apps: Localization by example",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10110"
+    },
+    {
+      "id": "10034",
+      "year": "2022",
+      "title": "Design for Arabic",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10034"
+    },
+    {
+      "id": "110441",
+      "year": "2022",
+      "title": "Design for Arabic · صمّم بالعربي",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110441"
+    },
+    {
+      "id": "10107",
+      "year": "2022",
+      "title": "Get it right (to left)",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10107"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:12.527Z"
+}

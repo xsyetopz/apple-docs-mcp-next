@@ -16,24 +16,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/419lgbsyhjrmqtmq0qh/419/419_hd_protocol_and_value_oriented_programming_in_uikit_apps.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/419lgbsyhjrmqtmq0qh/419/419_sd_protocol_and_value_oriented_programming_in_uikit_apps.mp4?dl=1"
   },
@@ -43,7 +26,13 @@
       "year": "2016",
       "title": "Understanding Swift Performance",
       "url": "https://developer.apple.com/videos/play/wwdc2016/416"
+    },
+    {
+      "id": "408",
+      "year": "2015",
+      "title": "Protocol-Oriented Programming in Swift",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408"
     }
   ],
-  "extractedAt": "2025-07-18T10:51:26.381Z"
+  "extractedAt": "2026-10-11T16:49:06.200Z"
 }

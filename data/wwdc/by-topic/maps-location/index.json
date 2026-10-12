@@ -1,7 +1,7 @@
 {
   "id": "maps-location",
   "name": "Maps & Location",
-  "videoCount": 26,
+  "videoCount": 32,
   "years": [
     "2025",
     "2024",
@@ -60,7 +60,9 @@
       "year": "2024",
       "title": "Unlock the power of places with MapKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -87,7 +89,8 @@
       "year": "2023",
       "title": "Discover streamlined location updates",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": true,
@@ -100,7 +103,9 @@
       "year": "2023",
       "title": "Meet Core Location for spatial computing",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -113,7 +118,8 @@
       "year": "2023",
       "title": "Meet Core Location Monitor",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -126,13 +132,53 @@
       "year": "2023",
       "title": "Meet MapKit for SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2023/10043/",
       "dataFile": "videos/2023-10043.json"
+    },
+    {
+      "id": "111518",
+      "year": "2023",
+      "title": "Meet the Presenter: Meet MapKit for SwiftUI",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111518/",
+      "dataFile": "videos/2023-111518.json"
+    },
+    {
+      "id": "111516",
+      "year": "2023",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111516/",
+      "dataFile": "videos/2023-111516.json"
+    },
+    {
+      "id": "111517",
+      "year": "2023",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111517/",
+      "dataFile": "videos/2023-111517.json"
     },
     {
       "id": "10006",
@@ -149,11 +195,27 @@
       "dataFile": "videos/2022-10006.json"
     },
     {
+      "id": "110919",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in MapKit",
+      "topics": [
+        "App Services",
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110919/",
+      "dataFile": "videos/2022-110919.json"
+    },
+    {
       "id": "10003",
       "year": "2022",
       "title": "Meet WeatherKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -162,12 +224,39 @@
       "dataFile": "videos/2022-10003.json"
     },
     {
+      "id": "110527",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110527/",
+      "dataFile": "videos/2022-110527.json"
+    },
+    {
+      "id": "110747",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110747/",
+      "dataFile": "videos/2022-110747.json"
+    },
+    {
       "id": "10035",
       "year": "2022",
       "title": "What's new in MapKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -180,7 +269,8 @@
       "year": "2022",
       "title": "What's new in Nearby Interaction",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -207,7 +297,9 @@
       "year": "2021",
       "title": "Meet the Location Button",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -221,7 +313,9 @@
       "title": "Broaden your reach with Siri Event Suggestions",
       "topics": [
         "App Services",
-        "Developer Tools"
+        "Developer Tools",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -235,7 +329,8 @@
       "title": "Build location-aware enterprise apps",
       "topics": [
         "Accessibility & Inclusion",
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": true,
@@ -248,7 +343,9 @@
       "year": "2020",
       "title": "Design for location privacy",
       "topics": [
-        "Design"
+        "Design",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -288,7 +385,11 @@
       "year": "2019",
       "title": "Adding Indoor Maps to your App and Website",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -301,7 +402,10 @@
       "year": "2019",
       "title": "Introducing the Indoor Maps Program",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -327,7 +431,10 @@
       "year": "2019",
       "title": "What’s New in MapKit and MapKit JS",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,

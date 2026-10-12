@@ -1,0 +1,25 @@
+{
+  "id": "110888",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110888/",
+  "title": "Meet the Presenter: Dive into App Intents",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10032",
+      "year": "2022",
+      "title": "Dive into App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10032"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:05.849Z"
+}

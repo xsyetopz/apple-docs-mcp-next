@@ -43,28 +43,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "GKLocalPlayer",
         "url": "https://developer.apple.com/documentation/GameKit/GKLocalPlayer"
       },
       {
         "title": "Human Interface Guidelines: Game Center",
         "url": "https://developer.apple.com/design/human-interface-guidelines/game-center"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10064/9/B7DD74D7-2555-495C-9DA2-8A9B7D0C6D8B/downloads/wwdc2022-10064_hd.mp4?dl=1",
@@ -72,10 +56,28 @@
   },
   "relatedVideos": [
     {
+      "id": "110662",
+      "year": "2022",
+      "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110662"
+    },
+    {
       "id": "10065",
       "year": "2022",
       "title": "Plug-in and play: Add Apple frameworks to your Unity game projects",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10065"
+    },
+    {
+      "id": "110663",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110663"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664"
     },
     {
       "id": "10067",
@@ -108,5 +110,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10619"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:12.076Z"
+  "extractedAt": "2026-10-11T16:41:19.121Z"
 }

@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/424gsffe67thwyafre/424/424_hd_training_object_detection_models_in_create_ml.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/424gsffe67thwyafre/424/424_sd_training_object_detection_models_in_create_ml.mp4?dl=1"
   },
@@ -44,11 +27,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10096"
     },
     {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406"
+    },
+    {
       "id": "430",
       "year": "2019",
       "title": "Introducing the Create ML App",
       "url": "https://developer.apple.com/videos/play/wwdc2019/430"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:03.055Z"
+  "extractedAt": "2026-10-11T16:47:10.548Z"
 }

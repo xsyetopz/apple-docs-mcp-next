@@ -61,28 +61,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Focus",
         "url": "https://developer.apple.com/documentation/AppIntents/focus"
       },
       {
         "title": "User Notifications",
         "url": "https://developer.apple.com/documentation/UserNotifications"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10121/5/E497A884-24B9-4D6C-A35D-6F9BEEB985B6/downloads/wwdc2022-10121_hd.mp4?dl=1",
@@ -96,11 +80,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10032"
     },
     {
+      "id": "110885",
+      "year": "2022",
+      "title": "Q&A: App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110885"
+    },
+    {
       "id": "110929",
       "year": "2022",
       "title": "WWDC22 Day 1 recap",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110929"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:06.428Z"
+  "extractedAt": "2026-10-11T16:39:28.063Z"
 }

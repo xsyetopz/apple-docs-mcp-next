@@ -50,24 +50,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Showcase App Data in Spotlight",
         "url": "https://developer.apple.com/documentation/CoreData/showcase-app-data-in-spotlight"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10098/5/E1444CD9-0588-4D3B-8AFA-EB590BA9CD23/downloads/wwdc2021-10098_hd.mp4?dl=1",
@@ -81,5 +65,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10017"
     }
   ],
-  "extractedAt": "2025-07-18T10:55:03.208Z"
+  "extractedAt": "2026-10-11T16:43:34.302Z"
 }

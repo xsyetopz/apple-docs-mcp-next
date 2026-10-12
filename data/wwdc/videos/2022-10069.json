@@ -67,52 +67,36 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building a desktop-class iPad app",
-        "url": "https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app"
-      },
-      {
-        "title": "centerItemGroups",
-        "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/centerItemGroups"
-      },
-      {
-        "title": "searchSuggestions",
-        "url": "https://developer.apple.com/documentation/UIKit/UISearchController/searchSuggestions"
-      },
-      {
-        "title": "Supporting desktop-class features in your iPad app",
-        "url": "https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app"
-      },
-      {
         "title": "titleMenuProvider",
         "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/titleMenuProvider"
-      },
-      {
-        "title": "UIDocumentProperties",
-        "url": "https://developer.apple.com/documentation/UIKit/UIDocumentProperties"
       },
       {
         "title": "UINavigationItem.ItemStyle",
         "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/ItemStyle"
       },
       {
+        "title": "searchSuggestions",
+        "url": "https://developer.apple.com/documentation/UIKit/UISearchController/searchSuggestions"
+      },
+      {
+        "title": "centerItemGroups",
+        "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/centerItemGroups"
+      },
+      {
         "title": "UINavigationItemRenameDelegate",
         "url": "https://developer.apple.com/documentation/UIKit/UINavigationItemRenameDelegate-5j4ws"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "UIDocumentProperties",
+        "url": "https://developer.apple.com/documentation/UIKit/UIDocumentProperties"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Building a desktop-class iPad app",
+        "url": "https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Supporting desktop-class features in your iPad app",
+        "url": "https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10069/4/1646A8BA-EEFA-4533-A631-3BCDF704A4EB/downloads/wwdc2022-10069_hd.mp4?dl=1",
@@ -144,11 +128,41 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10070"
     },
     {
+      "id": "110835",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet desktop-class iPad",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110835"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830"
+    },
+    {
+      "id": "110812",
+      "year": "2022",
+      "title": "Study Hall: Go big or go home",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110812"
+    },
+    {
+      "id": "110811",
+      "year": "2022",
+      "title": "Study Hall: Toolbar transformation Tuesday",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110811"
+    },
+    {
       "id": "10068",
       "year": "2022",
       "title": "What's new in UIKit",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10068"
     }
   ],
-  "extractedAt": "2025-07-18T10:53:59.941Z"
+  "extractedAt": "2026-10-11T16:39:27.777Z"
 }

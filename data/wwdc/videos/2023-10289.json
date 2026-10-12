@@ -1,0 +1,25 @@
+{
+  "id": "10289",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10289/",
+  "title": "Q&A: Signing and distribution",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10224",
+      "year": "2023",
+      "title": "Simplify distribution in Xcode and Xcode Cloud",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10224"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:57.317Z"
+}

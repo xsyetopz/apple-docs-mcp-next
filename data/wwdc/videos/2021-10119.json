@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -115,28 +116,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accessibility",
         "url": "https://developer.apple.com/documentation/swiftui/view-accessibility"
       },
       {
-        "title": "Creating Accessible Views",
-        "url": "https://developer.apple.com/documentation/swiftui/creating_accessible_views"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Creating accessible views",
+        "url": "https://developer.apple.com/documentation/SwiftUI/creating-accessible-views"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10119/6/A3AEB1E4-C4E9-43B4-9EF6-206F6B9704E6/downloads/wwdc2021-10119_hd.mp4?dl=1",
@@ -186,5 +171,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10116"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:40.194Z"
+  "extractedAt": "2026-10-11T16:43:35.085Z"
 }

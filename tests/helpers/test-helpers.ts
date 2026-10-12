@@ -1,4 +1,4 @@
-import { jest } from '@jest/globals';
+import { type Mock, mock } from "bun:test";
 
 /**
  * Mock data for tests
@@ -9,41 +9,41 @@ export const mockData = {
     interfaceLanguages: {
       swift: [
         {
-          path: '/documentation/uikit/uiview',
-          title: 'UIView',
-          type: 'class',
+          path: "/documentation/uikit/uiview",
+          title: "UIView",
+          type: "class",
           beta: false,
           deprecated: false,
           children: [],
         },
         {
-          path: '/documentation/uikit/uiviewcontroller',
-          title: 'UIViewController',
-          type: 'class',
+          path: "/documentation/uikit/uiviewcontroller",
+          title: "UIViewController",
+          type: "class",
           beta: false,
           deprecated: false,
           children: [],
         },
         {
-          path: '/documentation/uikit/uitableview',
-          title: 'UITableView',
-          type: 'class',
+          path: "/documentation/uikit/uitableview",
+          title: "UITableView",
+          type: "class",
           beta: false,
           deprecated: false,
           children: [],
         },
         {
-          path: '/documentation/uikit/uistackview',
-          title: 'UIStackView',
-          type: 'class',
+          path: "/documentation/uikit/uistackview",
+          title: "UIStackView",
+          type: "class",
           beta: false,
           deprecated: false,
           children: [],
         },
         {
-          path: '/documentation/uikit/list',
-          title: 'List',
-          type: 'struct',
+          path: "/documentation/uikit/list",
+          title: "List",
+          type: "struct",
           beta: false,
           deprecated: false,
           children: [],
@@ -51,9 +51,9 @@ export const mockData = {
       ],
       occ: [
         {
-          path: '/documentation/uikit/uiview',
-          title: 'UIView',
-          type: 'class',
+          path: "/documentation/uikit/uiview",
+          title: "UIView",
+          type: "class",
           beta: false,
           deprecated: false,
           children: [],
@@ -92,22 +92,22 @@ export const mockData = {
   docJsonData: {
     primaryContentSections: [
       {
-        kind: 'declarations',
+        kind: "declarations",
         declarations: [
           {
             tokens: [
-              { text: 'class', kind: 'keyword' },
-              { text: ' ' },
-              { text: 'UIView', kind: 'typeIdentifier' },
+              { text: "class", kind: "keyword" },
+              { text: " " },
+              { text: "UIView", kind: "typeIdentifier" },
             ],
           },
         ],
       },
     ],
     metadata: {
-      roleHeading: 'Class',
-      title: 'UIView',
-      modules: [{ name: 'UIKit' }],
+      roleHeading: "Class",
+      title: "UIView",
+      modules: [{ name: "UIKit" }],
     },
   },
 
@@ -115,49 +115,59 @@ export const mockData = {
   technologiesData: {
     technologies: [
       {
-        name: 'UIKit',
-        path: '/documentation/uikit',
+        name: "UIKit",
+        path: "/documentation/uikit",
         beta: false,
         deprecated: false,
-        languages: ['swift', 'occ'],
+        languages: ["swift", "occ"],
       },
       {
-        name: 'SwiftUI',
-        path: '/documentation/swiftui',
+        name: "SwiftUI",
+        path: "/documentation/swiftui",
         beta: false,
         deprecated: false,
-        languages: ['swift'],
+        languages: ["swift"],
       },
     ],
   },
 };
 
 /**
+ * The type of a module object whose functions are mocks, as `mock.module` makes them.
+ */
+export type Mocked<T> = {
+  [K in keyof T]: T[K] extends (...args: infer A) => infer R
+    ? Mock<(...args: A) => R>
+    : T[K];
+};
+
+/**
  * Create a mock HTTP client
  */
 export const createMockHttpClient = () => ({
-  getJson: jest.fn(),
-  getText: jest.fn(),
-  get: jest.fn(),
+  getJson: mock(),
+  getText: mock(),
+  get: mock(),
 });
 
 /**
  * Create a mock cache
  */
 export const createMockCache = () => ({
-  get: jest.fn(),
-  set: jest.fn(),
-  has: jest.fn(),
-  delete: jest.fn(),
-  clear: jest.fn(),
-  size: jest.fn(() => 0),
-  getStats: jest.fn(() => ({ hits: 0, misses: 0, sets: 0, deletes: 0 })),
+  get: mock(),
+  set: mock(),
+  has: mock(),
+  delete: mock(),
+  clear: mock(),
+  size: mock(() => 0),
+  getStats: mock(() => ({ hits: 0, misses: 0, sets: 0, deletes: 0 })),
 });
 
 /**
  * Wait for all promises to resolve
  */
-export const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+export const flushPromises = () =>
+  new Promise((resolve) => setImmediate(resolve));
 
 /**
  * Mock MCP server response
@@ -165,7 +175,7 @@ export const flushPromises = () => new Promise(resolve => setImmediate(resolve))
 export const createMockMCPResponse = (content: string, isError = false) => ({
   content: [
     {
-      type: 'text' as const,
+      type: "text" as const,
       text: content,
     },
   ],
@@ -175,7 +185,7 @@ export const createMockMCPResponse = (content: string, isError = false) => ({
 /**
  * Create a test framework index with specific items
  */
-export const createTestFrameworkIndex = (items: any[]) => ({
+export const createTestFrameworkIndex = (items: unknown[]) => ({
   interfaceLanguages: {
     swift: items,
   },
@@ -184,9 +194,13 @@ export const createTestFrameworkIndex = (items: any[]) => ({
 /**
  * Create a test search result
  */
-export const createTestSearchResult = (title: string, url: string, description: string) => ({
+export const createTestSearchResult = (
+  title: string,
+  url: string,
+  description: string,
+) => ({
   title,
   url,
   description,
-  type: 'Documentation',
+  type: "Documentation",
 });

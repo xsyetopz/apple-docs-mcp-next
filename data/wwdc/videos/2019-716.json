@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -16,14 +17,6 @@
   },
   "resources": {
     "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVFoundation",
-        "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
       {
         "title": "Core Media",
         "url": "https://developer.apple.com/documentation/CoreMedia"
@@ -37,20 +30,12 @@
         "url": "https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html"
       },
       {
+        "title": "AVFoundation",
+        "url": "https://developer.apple.com/documentation/AVFoundation"
+      },
+      {
         "title": "WatchKit",
         "url": "https://developer.apple.com/documentation/WatchKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/716z5h7lh9mzhl/716/716_hd_streaming_audio_on_watchos_6.mp4?dl=1",
@@ -88,5 +73,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/208"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:39.450Z"
+  "extractedAt": "2026-10-11T16:47:05.322Z"
 }

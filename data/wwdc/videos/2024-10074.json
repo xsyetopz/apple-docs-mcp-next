@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -85,20 +86,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Forum: Accessibility & Inclusion",
+        "url": "https://developer.apple.com/forums/topics/accessibility-and-inclusion?cid=vf-a-0010"
       },
       {
         "title": "accessibilityShowsLargeContentViewer()",
         "url": "https://developer.apple.com/documentation/SwiftUI/View/accessibilityShowsLargeContentViewer()"
       },
       {
-        "title": "Enhancing the accessibility of your SwiftUI app",
-        "url": "https://developer.apple.com/documentation/Accessibility/enhancing-the-accessibility-of-your-swiftui-app"
-      },
-      {
-        "title": "Forum: Accessibility & Inclusion",
-        "url": "https://developer.apple.com/forums/topics/accessibility-and-inclusion?cid=vf-a-0010"
+        "title": "UILargeContentViewerInteraction",
+        "url": "https://developer.apple.com/documentation/UIKit/UILargeContentViewerInteraction"
       },
       {
         "title": "Human Interface Guidelines: Accessibility",
@@ -109,24 +106,12 @@
         "url": "https://developer.apple.com/design/human-interface-guidelines/typography"
       },
       {
-        "title": "UILargeContentViewerInteraction",
-        "url": "https://developer.apple.com/documentation/UIKit/UILargeContentViewerInteraction"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Enhancing the accessibility of your SwiftUI app",
+        "url": "https://developer.apple.com/documentation/Accessibility/enhancing-the-accessibility-of-your-swiftui-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10074/4/3CB84B8B-3CC6-4EAB-AA46-E9FD7D160048/downloads/wwdc2024-10074_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10074/4/3CB84B8B-3CC6-4EAB-AA46-E9FD7D160048/downloads/wwdc2024-10074_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:07:39.260Z"
+  "extractedAt": "2026-10-11T16:35:44.084Z"
 }

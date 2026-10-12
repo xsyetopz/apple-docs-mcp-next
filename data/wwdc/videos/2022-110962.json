@@ -1,0 +1,25 @@
+{
+  "id": "110962",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110962/",
+  "title": "Meet the Presenter: Discover advancements in iOS camera capture",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110429",
+      "year": "2022",
+      "title": "Discover advancements in iOS camera capture: Depth, focus, and multitasking",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110429"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:32.571Z"
+}

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -439,28 +440,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for iOS",
-        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ios"
-      },
-      {
         "title": "SwiftUI",
         "url": "https://developer.apple.com/documentation/SwiftUI"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Designing for iOS",
+        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ios"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10018/4/C1412BB4-40EE-418F-BCFD-09796128093C/downloads/wwdc2021-10018_hd.mp4?dl=1",
@@ -570,5 +555,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10097"
     }
   ],
-  "extractedAt": "2025-07-18T10:27:17.786Z"
+  "extractedAt": "2026-10-11T16:42:43.731Z"
 }

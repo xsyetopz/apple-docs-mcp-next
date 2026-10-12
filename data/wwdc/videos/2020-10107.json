@@ -37,24 +37,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Drawing with PencilKit",
         "url": "https://developer.apple.com/documentation/PencilKit/drawing-with-pencilkit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10107/4/91342955-14B4-436D-AE84-4FAA3BCC547F/wwdc2020_10107_hd.mp4?dl=1",
@@ -80,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/221"
     }
   ],
-  "extractedAt": "2025-07-18T10:56:04.937Z"
+  "extractedAt": "2026-10-11T16:44:57.921Z"
 }

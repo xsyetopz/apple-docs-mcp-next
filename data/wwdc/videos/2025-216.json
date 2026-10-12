@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -55,24 +56,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding StandBy and CarPlay support to your widget",
         "url": "https://developer.apple.com/documentation/WidgetKit/adding-standby-and-carplay-support-to-your-widget"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/216/4/e2928559-f686-450b-899e-329e93341e5b/downloads/wwdc2025-216_hd.mp4?dl=1",
@@ -110,5 +95,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10016"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:28.627Z"
+  "extractedAt": "2026-10-11T16:34:21.644Z"
 }

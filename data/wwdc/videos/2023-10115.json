@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Swift",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,28 +17,17 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10115/4/19F9A9B5-0463-4EA9-B5C4-E7BBFE8E1F66/downloads/wwdc2023-10115_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10115/4/19F9A9B5-0463-4EA9-B5C4-E7BBFE8E1F66/downloads/wwdc2023-10115_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "10337",
+      "year": "2023",
+      "title": "Meet the presenters: Design with SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10337"
+    },
     {
       "id": "10119",
       "year": "2020",
@@ -44,5 +35,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10119"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:24.921Z"
+  "extractedAt": "2026-10-11T16:37:03.918Z"
 }

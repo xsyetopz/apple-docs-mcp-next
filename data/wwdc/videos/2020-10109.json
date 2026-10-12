@@ -68,28 +68,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding hardware keyboard support to your app",
         "url": "https://developer.apple.com/documentation/UIKit/adding-hardware-keyboard-support-to-your-app"
       },
       {
         "title": "UIResponderStandardEditActions",
         "url": "https://developer.apple.com/documentation/UIKit/UIResponderStandardEditActions"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10109/2/B152D3FD-187C-4D34-80ED-152B996E5F6D/wwdc2020_10109_hd.mp4?dl=1",
@@ -145,5 +129,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/235"
     }
   ],
-  "extractedAt": "2025-07-18T10:56:16.808Z"
+  "extractedAt": "2026-10-11T16:45:36.560Z"
 }

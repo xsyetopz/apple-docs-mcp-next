@@ -38,32 +38,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Connecting to a service with passkeys",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/connecting-to-a-service-with-passkeys"
-      },
-      {
-        "title": "Supporting passkeys",
-        "url": "https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys"
       },
       {
         "title": "Supporting Security Key Authentication Using Physical Keys",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/supporting-security-key-authentication-using-physical-keys"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Supporting passkeys",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10106/5/CAC0BED2-732C-431A-9764-DA6A1206FE0E/downloads/wwdc2021-10106_hd.mp4?dl=1",
@@ -81,13 +65,7 @@
       "year": "2021",
       "title": "Simplify sign in for your tvOS apps",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10279"
-    },
-    {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:12.803Z"
+  "extractedAt": "2026-10-11T16:43:31.545Z"
 }

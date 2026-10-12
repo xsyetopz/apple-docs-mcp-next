@@ -1,21 +1,24 @@
+import { beforeEach, describe, expect, mock, test } from "bun:test";
+import type { Mocked } from "../../helpers/test-helpers.ts";
+import { httpClientModule } from "../../mocks/http-client.mock.ts";
+
 /**
  * Tests for WWDC content extractor
  */
 
-import { extractVideoContent as extractWWDCVideoContent } from '../../../src/tools/wwdc/content-extractor';
-import { httpClient } from '../../../src/utils/http-client';
-import { JSDOM } from 'jsdom';
+import { extractVideoContent as extractWWDCVideoContent } from "../../../src/tools/wwdc/content-extractor.ts";
+import { httpClient } from "../../../src/utils/http-client.ts";
 
 // Mock http client
-jest.mock('../../../src/utils/http-client');
-const mockHttpClient = httpClient as jest.Mocked<typeof httpClient>;
+mock.module("../../../src/utils/http-client.ts", httpClientModule);
+const mockHttpClient = httpClient as Mocked<typeof httpClient>;
 
-describe('WWDC Content Extractor', () => {
+describe("WWDC Content Extractor", () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    mock.clearAllMocks();
   });
 
-  test('should extract video metadata correctly', async () => {
+  test("should extract video metadata correctly", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -46,23 +49,25 @@ describe('WWDC Content Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
-    const videoUrl = 'https://developer.apple.com/videos/play/wwdc2025/10188/';
-    const result = await extractWWDCVideoContent(videoUrl, '10188', '2025');
+    const videoUrl = "https://developer.apple.com/videos/play/wwdc2025/10188/";
+    const result = await extractWWDCVideoContent(videoUrl, "10188", "2025", [
+      "Machine Learning & AI",
+    ]);
 
     expect(result).toMatchObject({
-      id: '10188',
-      url: 'https://developer.apple.com/videos/play/wwdc2025/10188/',
-      title: 'Meet the Translation API',
-      duration: '15 min',
-      year: '2025',
-      topics: ['Essentials'], // Default topic when no keywords match
+      id: "10188",
+      url: "https://developer.apple.com/videos/play/wwdc2025/10188/",
+      title: "Meet the Translation API",
+      duration: "15 min",
+      year: "2025",
+      topics: ["Machine Learning & AI"],
     });
   });
 
-  test('should extract transcript when available', async () => {
+  test("should extract transcript when available", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -79,22 +84,27 @@ describe('WWDC Content Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
-    const result = await extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/10001/', '10001', '2025');
+    const result = await extractWWDCVideoContent(
+      "https://developer.apple.com/videos/play/wwdc2025/10001/",
+      "10001",
+      "2025",
+      [],
+    );
 
     expect(result.hasTranscript).toBe(true);
     expect(result.transcript).toMatchObject({
       segments: [
-        { timestamp: '00:00', text: 'Welcome to WWDC' },
-        { timestamp: '00:30', text: 'Today we will discuss...' },
+        { timestamp: "00:00", text: "Welcome to WWDC" },
+        { timestamp: "00:30", text: "Today we will discuss..." },
       ],
-      fullText: expect.stringContaining('Welcome to WWDC'),
+      fullText: expect.stringContaining("Welcome to WWDC"),
     });
   });
 
-  test('should extract code examples', async () => {
+  test("should extract code examples", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -102,10 +112,11 @@ describe('WWDC Content Extractor', () => {
         <div class="video-title">
           <h1>SwiftUI Animations</h1>
         </div>
-        <div class="code-listing">
-          <div class="code-sample">
-            <pre class="language-swift">
-              <code>
+        <li class="supplement sample-code" data-supplement-id="sample-code">
+          <ul class="no-bullet">
+            <li class="sample-code-main-container">
+              <p>2:10 - <a class="jump-to-time-sample" href="/videos/play/wwdc2025/10002/?time=130">Spring a circle</a></p>
+              <pre class="code-source"><code>
 struct ContentView: View {
     @State private var isAnimating = false
     
@@ -115,29 +126,36 @@ struct ContentView: View {
             .animation(.spring(), value: isAnimating)
     }
 }
-              </code>
-            </pre>
-          </div>
-        </div>
+</code></pre>
+            </li>
+          </ul>
+        </li>
       </body>
       </html>
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
-    const result = await extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/10002/', '10002', '2025');
+    const result = await extractWWDCVideoContent(
+      "https://developer.apple.com/videos/play/wwdc2025/10002/",
+      "10002",
+      "2025",
+      [],
+    );
 
     expect(result.hasCode).toBe(true);
     expect(result.codeExamples).toHaveLength(1);
-    expect(result.codeExamples[0]).toMatchObject({
-      language: 'swift',
-      code: expect.stringContaining('struct ContentView'),
+    expect(result.codeExamples?.[0]).toMatchObject({
+      timestamp: "2:10",
+      title: "Spring a circle",
+      language: "swift",
+      code: expect.stringContaining("struct ContentView"),
     });
   });
 
-  test('should extract resources', async () => {
+  test("should extract resources", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -145,39 +163,51 @@ struct ContentView: View {
         <div class="video-title">
           <h1>Test Video</h1>
         </div>
-        <section class="resources-section">
-          <h3>Resources</h3>
-          <ul>
-            <li>
-              <a href="/documentation/translation">Translation Documentation</a>
-            </li>
-            <li>
-              <a href="/sample-code/translation-demo.zip">Download Sample Code</a>
+        <nav><a href="/forums/">Developer Forums</a><a href="/documentation/">Documentation</a></nav>
+        <li class="supplement details" data-supplement-id="details">
+          <h2>Resources</h2>
+          <ul class="links small">
+            <li class="document"><a href="/documentation/translation">Translation Documentation</a></li>
+            <li class="download">
+              <ul class="options">
+                <li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2025/10003/downloads/wwdc2025-10003_hd.mp4?dl=1">HD Video</a></li>
+                <li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2025/10003/downloads/wwdc2025-10003_sd.mp4?dl=1">SD Video</a></li>
+              </ul>
             </li>
           </ul>
-        </section>
+        </li>
       </body>
       </html>
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
-    const result = await extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/10003/', '10003', '2025');
+    const result = await extractWWDCVideoContent(
+      "https://developer.apple.com/videos/play/wwdc2025/10003/",
+      "10003",
+      "2025",
+      [],
+    );
 
     expect(result.resources).toBeDefined();
     expect(result.resources.resourceLinks).toHaveLength(1);
     expect(result.resources.resourceLinks).toEqual([
       {
-        title: 'Translation Documentation',
-        url: 'https://developer.apple.com/documentation/translation',
+        title: "Translation Documentation",
+        url: "https://developer.apple.com/documentation/translation",
       },
     ]);
-    expect(result.resources.sampleProject).toBe('https://developer.apple.com/sample-code/translation-demo.zip');
+    expect(result.resources.hdVideo).toBe(
+      "https://devstreaming-cdn.apple.com/videos/wwdc/2025/10003/downloads/wwdc2025-10003_hd.mp4?dl=1",
+    );
+    expect(result.resources.sdVideo).toBe(
+      "https://devstreaming-cdn.apple.com/videos/wwdc/2025/10003/downloads/wwdc2025-10003_sd.mp4?dl=1",
+    );
   });
 
-  test('should extract related videos', async () => {
+  test("should extract related videos", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -195,18 +225,23 @@ struct ContentView: View {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
-    const result = await extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/10004/', '10004', '2025');
+    const result = await extractWWDCVideoContent(
+      "https://developer.apple.com/videos/play/wwdc2025/10004/",
+      "10004",
+      "2025",
+      [],
+    );
 
     expect(result.relatedVideos).toBeDefined();
     expect(result.relatedVideos).toHaveLength(2);
-    expect(result.relatedVideos?.[0]).toMatchObject({ id: '10189' });
-    expect(result.relatedVideos?.[1]).toMatchObject({ id: '10055' });
+    expect(result.relatedVideos?.[0]).toMatchObject({ id: "10189" });
+    expect(result.relatedVideos?.[1]).toMatchObject({ id: "10055" });
   });
 
-  test('should handle missing elements gracefully', async () => {
+  test("should handle missing elements gracefully", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -219,38 +254,48 @@ struct ContentView: View {
     `;
 
     mockHttpClient.get.mockImplementation((url) => {
-      if (url.includes('/transcript')) {
-        return Promise.reject(new Error('No transcript'));
+      if (url.includes("/transcript")) {
+        return Promise.reject(new Error("No transcript"));
       }
       return Promise.resolve({
-        text: jest.fn().mockResolvedValue(mockHtml),
-      } as any);
+        text: mock().mockResolvedValue(mockHtml),
+      } as unknown as Response);
     });
 
-    const result = await extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/10005/', '10005', '2025');
+    const result = await extractWWDCVideoContent(
+      "https://developer.apple.com/videos/play/wwdc2025/10005/",
+      "10005",
+      "2025",
+      [],
+    );
 
     expect(result).toMatchObject({
-      id: '10005',
-      title: 'Minimal Session',
+      id: "10005",
+      title: "Minimal Session",
       hasTranscript: false,
       hasCode: false,
-      topics: ['Essentials'], // Default topic
+      topics: [],
       resources: {
-        resourceLinks: []
+        resourceLinks: [],
       },
       relatedVideos: undefined,
     });
   });
 
-  test('should handle HTTP errors', async () => {
-    mockHttpClient.get.mockRejectedValue(new Error('404 Not Found'));
+  test("should handle HTTP errors", async () => {
+    mockHttpClient.get.mockRejectedValue(new Error("404 Not Found"));
 
-    await expect(extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/99999/', '99999', '2025')).rejects.toThrow(
-      '404 Not Found'
-    );
+    await expect(
+      extractWWDCVideoContent(
+        "https://developer.apple.com/videos/play/wwdc2025/99999/",
+        "99999",
+        "2025",
+        [],
+      ),
+    ).rejects.toThrow("404 Not Found");
   });
 
-  test('should clean and format code examples', async () => {
+  test("should clean and format code examples", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -258,30 +303,38 @@ struct ContentView: View {
         <div class="video-title">
           <h1>Code Formatting Test</h1>
         </div>
-        <pre class="code-source" data-language="swift">
+        <li class="sample-code-main-container">
+          <p>0:42 - Example</p>
+          <pre class="code-source" data-language="swift">
           <code>
             // This is a comment
             func example() {
                 print("Hello")
             }
           </code>
-        </pre>
+          </pre>
+        </li>
       </body>
       </html>
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
-    const result = await extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/10006/', '10006', '2025');
+    const result = await extractWWDCVideoContent(
+      "https://developer.apple.com/videos/play/wwdc2025/10006/",
+      "10006",
+      "2025",
+      [],
+    );
 
-    expect(result.codeExamples[0].code).toBe(
-      '// This is a comment\nfunc example() {\n    print("Hello")\n}'
+    expect(result.codeExamples?.[0]?.code).toBe(
+      '// This is a comment\nfunc example() {\n    print("Hello")\n}',
     );
   });
 
-  test('should extract speakers when available', async () => {
+  test("should extract speakers when available", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -297,11 +350,16 @@ struct ContentView: View {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
-    const result = await extractWWDCVideoContent('https://developer.apple.com/videos/play/wwdc2025/10007/', '10007', '2025');
+    const result = await extractWWDCVideoContent(
+      "https://developer.apple.com/videos/play/wwdc2025/10007/",
+      "10007",
+      "2025",
+      [],
+    );
 
-    expect(result.speakers).toEqual(['John Doe', 'Jane Smith']);
+    expect(result.speakers).toEqual(["John Doe", "Jane Smith"]);
   });
 });

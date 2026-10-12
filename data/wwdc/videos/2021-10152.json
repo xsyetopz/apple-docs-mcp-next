@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -109,32 +110,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
+        "title": "Training a Neural Network with Metal Performance Shaders",
+        "url": "https://developer.apple.com/documentation/MetalPerformanceShaders/training-a-neural-network-with-metal-performance-shaders"
       },
       {
         "title": "Metal Performance Shaders",
         "url": "https://developer.apple.com/documentation/MetalPerformanceShaders"
       },
       {
-        "title": "Training a Neural Network with Metal Performance Shaders",
-        "url": "https://developer.apple.com/documentation/MetalPerformanceShaders/training-a-neural-network-with-metal-performance-shaders"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10152/6/38BC0CF8-718D-4950-9CC4-B64396F5FFDD/downloads/wwdc2021-10152_hd.mp4?dl=1",
@@ -154,5 +139,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10677"
     }
   ],
-  "extractedAt": "2025-07-18T10:33:00.386Z"
+  "extractedAt": "2026-10-11T16:43:54.640Z"
 }

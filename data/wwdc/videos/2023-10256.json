@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,30 +18,26 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Supporting Continuity Camera in your tvOS app",
         "url": "https://developer.apple.com/documentation/AVKit/supporting-continuity-camera-in-your-tvos-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10256/5/AD1AC44D-759E-4901-AE68-FC8AC41EC1BC/downloads/wwdc2023-10256_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10256/5/AD1AC44D-759E-4901-AE68-FC8AC41EC1BC/downloads/wwdc2023-10256_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "111473",
+      "year": "2023",
+      "title": "Q&A: Camera",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111473"
+    },
+    {
+      "id": "111532",
+      "year": "2023",
+      "title": "Q&A: Continuity Camera for Apple TV",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111532"
+    },
     {
       "id": "10235",
       "year": "2023",
@@ -60,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110429"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:34.036Z"
+  "extractedAt": "2026-10-11T16:37:04.694Z"
 }

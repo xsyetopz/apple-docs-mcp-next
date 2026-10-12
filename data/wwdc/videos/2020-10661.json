@@ -17,56 +17,40 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "App Store Server Notifications",
-        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
-      },
-      {
         "title": "Choosing the right functionality for your App Clip",
         "url": "https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip"
-      },
-      {
-        "title": "Enabling App Store Server Notifications",
-        "url": "https://developer.apple.com/documentation/StoreKit/enabling-app-store-server-notifications"
-      },
-      {
-        "title": "Handling refund notifications",
-        "url": "https://developer.apple.com/documentation/StoreKit/handling-refund-notifications"
       },
       {
         "title": "Handling Subscriptions Billing",
         "url": "https://developer.apple.com/documentation/StoreKit/handling-subscriptions-billing"
       },
       {
-        "title": "In-App Purchase",
-        "url": "https://developer.apple.com/documentation/StoreKit/in-app-purchase"
-      },
-      {
-        "title": "Setting up promotional offers",
-        "url": "https://developer.apple.com/documentation/StoreKit/setting-up-promotional-offers"
-      },
-      {
-        "title": "StoreKit",
-        "url": "https://developer.apple.com/documentation/StoreKit"
+        "title": "Handling refund notifications",
+        "url": "https://developer.apple.com/documentation/StoreKit/handling-refund-notifications"
       },
       {
         "title": "Validating Receipts with the App Store",
         "url": "https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "App Store Server Notifications",
+        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Setting up promotional offers",
+        "url": "https://developer.apple.com/documentation/StoreKit/setting-up-promotional-offers"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "In-App Purchase",
+        "url": "https://developer.apple.com/documentation/StoreKit/in-app-purchase"
+      },
+      {
+        "title": "Enabling App Store Server Notifications",
+        "url": "https://developer.apple.com/documentation/StoreKit/enabling-app-store-server-notifications"
+      },
+      {
+        "title": "StoreKit",
+        "url": "https://developer.apple.com/documentation/StoreKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10661/8/F8CB79D2-B53B-4C5A-A3B2-E298F3ABEE9A/wwdc2020_10661_hd.mp4?dl=1",
@@ -128,5 +112,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/305"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:48.961Z"
+  "extractedAt": "2026-10-11T16:45:40.670Z"
 }

@@ -1,180 +1,106 @@
 /**
- * Tests for HTTP client functionality
+ * The client every request to Apple goes through: fetch, retried with backoff by p-retry, paced by Bottleneck.
  */
+import { beforeEach, describe, expect, it, mock, spyOn } from "bun:test";
 
-// Mock fetch
-const mockFetch = jest.fn();
-global.fetch = mockFetch as any;
+import { httpClient, RequestError } from "../../src/utils/http-client.ts";
+import { logger } from "../../src/utils/logger.ts";
 
-describe('HTTP Client', () => {
+const answer = (status: number, body: string) => new Response(body, { status });
+
+describe("httpClient", () => {
+  const fetchMock = Object.assign(mock<typeof fetch>(), {
+    preconnect: () => {},
+  });
+
   beforeEach(() => {
-    mockFetch.mockClear();
+    fetchMock.mockReset();
+    global.fetch = fetchMock;
   });
 
-  describe('Mock HTTP Client', () => {
-    it('should handle successful requests', async () => {
-      const mockResponse = {
-        ok: true,
-        status: 200,
-        json: () => Promise.resolve({ success: true }),
-        text: () => Promise.resolve('success'),
-      };
-      
-      mockFetch.mockResolvedValueOnce(mockResponse);
+  it("retries a server error with a warning, then returns the answer", async () => {
+    const warn = spyOn(logger, "warn").mockImplementation(() => {});
+    fetchMock
+      .mockResolvedValueOnce(answer(503, "busy"))
+      .mockResolvedValueOnce(answer(200, '{"ok":true}'));
 
-      const response = await fetch('https://example.com/api');
-      const data = await response.json();
-      
-      expect(mockFetch).toHaveBeenCalledWith('https://example.com/api');
-      expect(data).toEqual({ success: true });
-    });
+    await expect(
+      httpClient.getJson<{ ok: boolean }>("https://developer.apple.com/x.json"),
+    ).resolves.toEqual({ ok: true });
 
-    it('should handle failed requests', async () => {
-      const mockResponse = {
-        ok: false,
-        status: 404,
-        statusText: 'Not Found',
-      };
-      
-      mockFetch.mockResolvedValueOnce(mockResponse);
-
-      const response = await fetch('https://example.com/api');
-      
-      expect(response.ok).toBe(false);
-      expect(response.status).toBe(404);
-    });
-
-    it('should handle network errors', async () => {
-      mockFetch.mockRejectedValueOnce(new Error('Network error'));
-
-      await expect(fetch('https://example.com/api')).rejects.toThrow('Network error');
-    });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    expect(warn).toHaveBeenCalledWith(
+      "Request failed, retrying",
+      expect.objectContaining({
+        method: "GET",
+        url: "https://developer.apple.com/x.json",
+        attempt: 1,
+      }),
+    );
+    warn.mockRestore();
   });
 
-  describe('Performance Monitoring Concepts', () => {
-    it('should track request statistics', () => {
-      const stats = {
-        totalRequests: 0,
-        successfulRequests: 0,
-        failedRequests: 0,
-        totalResponseTime: 0,
-        averageResponseTime: 0,
-        successRate: 0,
-        requestsByStatus: {} as Record<number, number>,
-        requestsByDomain: {} as Record<string, number>,
-      };
+  it("fails at once on a missing page, with an Error that callers can read", async () => {
+    fetchMock.mockResolvedValue(answer(404, "missing"));
 
-      // Simulate successful request
-      stats.totalRequests++;
-      stats.successfulRequests++;
-      stats.totalResponseTime += 100;
-      stats.averageResponseTime = stats.totalResponseTime / stats.totalRequests;
-      stats.successRate = (stats.successfulRequests / stats.totalRequests) * 100;
-      stats.requestsByStatus[200] = (stats.requestsByStatus[200] || 0) + 1;
-      stats.requestsByDomain['example.com'] = (stats.requestsByDomain['example.com'] || 0) + 1;
+    const failure = httpClient.get("https://developer.apple.com/missing.json");
 
-      expect(stats.totalRequests).toBe(1);
-      expect(stats.successfulRequests).toBe(1);
-      expect(stats.successRate).toBe(100);
-      expect(stats.averageResponseTime).toBe(100);
-      expect(stats.requestsByStatus[200]).toBe(1);
-      expect(stats.requestsByDomain['example.com']).toBe(1);
+    await expect(failure).rejects.toBeInstanceOf(RequestError);
+    await expect(failure).rejects.toMatchObject({
+      type: "NOT_FOUND",
+      cause: { status: 404, url: "https://developer.apple.com/missing.json" },
     });
-
-    it('should handle failed request statistics', () => {
-      const stats = {
-        totalRequests: 1,
-        successfulRequests: 0,
-        failedRequests: 1,
-        totalResponseTime: 50,
-        averageResponseTime: 50,
-        successRate: 0,
-        requestsByStatus: { 404: 1 } as Record<number, number>,
-        requestsByDomain: { 'example.com': 1 } as Record<string, number>,
-      };
-
-      expect(stats.totalRequests).toBe(1);
-      expect(stats.failedRequests).toBe(1);
-      expect(stats.successRate).toBe(0);
-      expect(stats.requestsByStatus[404]).toBe(1);
-    });
-
-    it('should generate performance report format', () => {
-      const stats = {
-        totalRequests: 10,
-        successfulRequests: 9,
-        failedRequests: 1,
-        averageResponseTime: 150,
-        successRate: 90,
-        requestsByStatus: { 200: 9, 404: 1 },
-        requestsByDomain: { 'developer.apple.com': 10 },
-      };
-
-      const report = `# HTTP Client Performance Report
-
-## Overall Statistics
-
-- **Total Requests:** ${stats.totalRequests}
-- **Successful Requests:** ${stats.successfulRequests}
-- **Failed Requests:** ${stats.failedRequests}
-- **Success Rate:** ${stats.successRate.toFixed(2)}%
-- **Average Response Time:** ${stats.averageResponseTime.toFixed(0)}ms
-
-## Performance Insights
-
-${stats.successRate >= 95 ? '✅ **Excellent reliability**' : 
-  stats.successRate >= 90 ? '⚠️ **Good reliability**' : 
-  '❌ **Poor reliability**'} - Success rate ${stats.successRate >= 90 ? 'above' : 'below'} 90%
-
-${stats.averageResponseTime < 1000 ? '✅ **Fast response times**' : 
-  stats.averageResponseTime < 3000 ? '⚠️ **Moderate response times**' : 
-  '❌ **Slow response times**'} - Average ${stats.averageResponseTime < 1000 ? 'under 1 second' : 
-  stats.averageResponseTime < 3000 ? 'under 3 seconds' : 'over 3 seconds'}`;
-
-      expect(report).toContain('HTTP Client Performance Report');
-      expect(report).toContain('**Total Requests:** 10');
-      expect(report).toContain('**Success Rate:** 90.00%');
-      expect(report).toContain('Good reliability');
-    });
+    expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  describe('Concurrency Control Concepts', () => {
-    it('should manage request queue', () => {
-      const queue = {
-        activeRequests: 0,
-        queuedRequests: 0,
-        maxConcurrent: 5,
-      };
+  it("retries a network error, and reports it as one when every attempt fails", async () => {
+    spyOn(logger, "warn").mockImplementation(() => {});
+    fetchMock.mockRejectedValue(new TypeError("fetch failed"));
 
-      // Simulate adding requests
-      for (let i = 0; i < 7; i++) {
-        if (queue.activeRequests < queue.maxConcurrent) {
-          queue.activeRequests++;
-        } else {
-          queue.queuedRequests++;
-        }
-      }
+    await expect(
+      httpClient.get("https://developer.apple.com/x.json", { retries: 1 }),
+    ).rejects.toMatchObject({ type: "NETWORK_ERROR" });
 
-      expect(queue.activeRequests).toBe(5);
-      expect(queue.queuedRequests).toBe(2);
-    });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
 
-    it('should process queued requests', () => {
-      const queue = {
-        activeRequests: 5,
-        queuedRequests: 3,
-        maxConcurrent: 5,
-      };
+  it("gives each attempt a timeout of its own", async () => {
+    spyOn(logger, "warn").mockImplementation(() => {});
+    fetchMock
+      .mockResolvedValueOnce(answer(500, "x"))
+      .mockResolvedValueOnce(answer(200, "done"));
 
-      // Simulate completing a request
-      queue.activeRequests--;
-      if (queue.queuedRequests > 0) {
-        queue.queuedRequests--;
-        queue.activeRequests++;
-      }
+    await httpClient.postText(
+      "https://example.com/api",
+      { text: "q" },
+      "application/jsonl",
+    );
 
-      expect(queue.activeRequests).toBe(5);
-      expect(queue.queuedRequests).toBe(2);
-    });
+    const [first, second] = fetchMock.mock.calls.map(
+      ([, init]) => init?.signal,
+    );
+    expect(first).toBeDefined();
+    expect(second).not.toBe(first);
+  });
+
+  it("sends Safari headers with its own Accept, and a search its JSON body", async () => {
+    fetchMock.mockResolvedValue(answer(200, '{"kind":"searchFinished"}'));
+
+    await expect(
+      httpClient.postText(
+        "https://example.com/api",
+        { text: "q" },
+        "application/jsonl",
+      ),
+    ).resolves.toBe('{"kind":"searchFinished"}');
+
+    const init = fetchMock.mock.calls[0]?.[1];
+    const headers = new Headers(init?.headers);
+    expect(init?.method).toBe("POST");
+    expect(init?.body).toBe('{"text":"q"}');
+    expect(headers.get("User-Agent")).toMatch(
+      /Macintosh.* Version\/[\d.]+ Safari\//,
+    );
+    expect(headers.get("Accept")).toBe("application/jsonl");
   });
 });

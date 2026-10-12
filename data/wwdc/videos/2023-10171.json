@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Essentials"
+    "Essentials",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -84,24 +85,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10171/6/B3B8830B-E039-4E13-B13E-989D45016244/downloads/wwdc2023-10171_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10171/6/B3B8830B-E039-4E13-B13E-989D45016244/downloads/wwdc2023-10171_sd.mp4?dl=1"
   },
@@ -119,5 +103,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110360"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:14.508Z"
+  "extractedAt": "2026-10-11T16:38:52.953Z"
 }

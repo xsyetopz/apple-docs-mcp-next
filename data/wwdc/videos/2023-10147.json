@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Maps & Location"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,8 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Monitoring location changes with Core Location",
+        "url": "https://developer.apple.com/documentation/CoreLocation/monitoring-location-changes-with-core-location"
       },
       {
         "title": "Adopting live updates in Core Location",
@@ -27,22 +28,6 @@
       {
         "title": "Core Location",
         "url": "https://developer.apple.com/documentation/CoreLocation"
-      },
-      {
-        "title": "Monitoring location changes with Core Location",
-        "url": "https://developer.apple.com/documentation/CoreLocation/monitoring-location-changes-with-core-location"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10147/4/D414CF50-4EF2-43CA-B57D-0FB2F054F2FA/downloads/wwdc2023-10147_hd.mp4?dl=1",
@@ -62,5 +47,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10146"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:18.740Z"
+  "extractedAt": "2026-10-11T16:38:03.600Z"
 }

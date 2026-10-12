@@ -1,0 +1,31 @@
+{
+  "id": "111533",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111533/",
+  "title": "Q&A: SharePlay",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10239",
+      "year": "2023",
+      "title": "Add SharePlay to your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10239"
+    },
+    {
+      "id": "10241",
+      "year": "2023",
+      "title": "Share files with SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10241"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:16.789Z"
+}

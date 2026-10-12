@@ -145,28 +145,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Explore more content with MusicKit",
-        "url": "https://developer.apple.com/documentation/musickit/explore_more_content_with_musickit"
+        "url": "https://developer.apple.com/documentation/MusicKit/explore-more-content-with-musickit"
       },
       {
         "title": "MusicKit",
         "url": "https://developer.apple.com/documentation/musickit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110347/3/9A5697EE-37FC-497A-AD9F-5033E026866E/downloads/wwdc2022-110347_hd.mp4?dl=1",
@@ -178,6 +162,12 @@
       "year": "2022",
       "title": "Meet Apple Music API and MusicKit",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10148"
+    },
+    {
+      "id": "110825",
+      "year": "2022",
+      "title": "Q&A: Apple Music",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110825"
     },
     {
       "id": "110354",
@@ -192,5 +182,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10294"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:46.798Z"
+  "extractedAt": "2026-10-11T16:39:24.419Z"
 }

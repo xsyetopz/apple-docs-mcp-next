@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,36 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core ML",
-        "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
-      },
-      {
-        "title": "Integrating a Core ML Model into Your App",
-        "url": "https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app"
       },
       {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Integrating a Core ML Model into Your App",
+        "url": "https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core ML",
+        "url": "https://developer.apple.com/documentation/CoreML"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/209w6qieg12bqlrpjzu/209/209_hd_whats_new_in_machine_learning.mp4?dl=1",
@@ -70,6 +55,18 @@
       "year": "2019",
       "title": "Building Activity Classification Models in Create ML",
       "url": "https://developer.apple.com/videos/play/wwdc2019/426"
+    },
+    {
+      "id": "407",
+      "year": "2019",
+      "title": "Create ML for Activity, Text, and Recommendations",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/407"
+    },
+    {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406"
     },
     {
       "id": "228",
@@ -120,5 +117,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/222"
     }
   ],
-  "extractedAt": "2025-07-18T10:16:18.550Z"
+  "extractedAt": "2026-10-11T16:46:55.334Z"
 }

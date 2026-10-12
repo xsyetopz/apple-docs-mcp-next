@@ -1,15 +1,33 @@
 node_modules/
 dist/
 coverage/
-.DS_Store
+*.tsbuildinfo
 *.log
-.env
-.env.local
-.vscode/
+
+### Editors ###
 .idea/
+.vscode/
 *.swp
 *.swo
 *~
-.claude/
+
+### Mac OS ###
+.DS_Store
+
+## Claude
+.claude
+.agents/
 .kiro/
+AGENTS.md
 CLAUDE.md
+
+# Local runtime secrets
+.env
+.env.local
+
+# Local docs/spec drafts (not part of release commits)
+ai-docs/
+issues/
+wiki/
+PRIVATE-README.md
+DEVLOG.MD

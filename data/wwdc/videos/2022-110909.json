@@ -1,0 +1,25 @@
+{
+  "id": "110909",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110909/",
+  "title": "Meet the Presenter: Adopt desktop-class editing interactions",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10071",
+      "year": "2022",
+      "title": "Adopt desktop-class editing interactions",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10071"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:35.474Z"
+}

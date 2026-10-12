@@ -1,0 +1,25 @@
+{
+  "id": "110833",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110833/",
+  "title": "Meet the Presenter: What's new in UIKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10068",
+      "year": "2022",
+      "title": "What's new in UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10068"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:39.269Z"
+}

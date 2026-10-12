@@ -79,24 +79,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Displaying Human-Friendly Content",
-        "url": "https://developer.apple.com/documentation/foundation/displaying_human-friendly_content"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "url": "https://developer.apple.com/documentation/Foundation/displaying-human-friendly-content"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10160/4/CC254390-2967-444F-B9EA-01A5DE7E8D39/wwdc2020_10160_hd.mp4?dl=1",
@@ -122,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10140"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:21.255Z"
+  "extractedAt": "2026-10-11T16:46:33.854Z"
 }

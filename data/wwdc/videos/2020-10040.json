@@ -105,24 +105,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Model data",
         "url": "https://developer.apple.com/documentation/SwiftUI/Model-data"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10040/3/76E05CA6-5C92-45FC-8DB0-0009FC6D18F0/wwdc2020_10040_hd.mp4?dl=1",
@@ -178,5 +162,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10041"
     }
   ],
-  "extractedAt": "2025-07-18T10:49:48.565Z"
+  "extractedAt": "2026-10-11T16:46:04.195Z"
 }

@@ -8,7 +8,10 @@
   "topics": [
     "App Services",
     "Audio & Video",
-    "Business & Education"
+    "Business & Education",
+    "Machine Learning & AI",
+    "Photos & Camera",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -45,28 +48,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building spatial experiences for business apps with enterprise APIs for visionOS",
         "url": "https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis"
       },
       {
         "title": "Forum: Business & Education",
         "url": "https://developer.apple.com/forums/topics/business-and-education-topic?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10139/5/6269882C-FCC9-45DB-ADB4-DAAF5297CFEF/downloads/wwdc2024-10139_hd.mp4?dl=1",
@@ -80,5 +67,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10143"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:28.190Z"
+  "extractedAt": "2026-10-11T16:34:44.271Z"
 }

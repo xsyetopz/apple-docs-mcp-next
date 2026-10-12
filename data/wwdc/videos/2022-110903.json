@@ -1,0 +1,31 @@
+{
+  "id": "110903",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110903/",
+  "title": "Q&A: Core ML",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10017",
+      "year": "2022",
+      "title": "Explore the machine learning development experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10017"
+    },
+    {
+      "id": "10027",
+      "year": "2022",
+      "title": "Optimize your Core ML usage",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10027"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:29.738Z"
+}

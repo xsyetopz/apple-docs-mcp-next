@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVFoundation",
-        "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
-      {
         "title": "Cinematic",
         "url": "https://developer.apple.com/documentation/Cinematic"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AVFoundation",
+        "url": "https://developer.apple.com/documentation/AVFoundation"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10137/5/88C7D972-0671-4705-94CB-4EF627EED532/downloads/wwdc2023-10137_hd.mp4?dl=1",
@@ -46,11 +31,17 @@
   },
   "relatedVideos": [
     {
+      "id": "111473",
+      "year": "2023",
+      "title": "Q&A: Camera",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111473"
+    },
+    {
       "id": "507",
       "year": "2017",
       "title": "Capturing Depth in iPhone Photography",
       "url": "https://developer.apple.com/videos/play/wwdc2017/507"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:16.487Z"
+  "extractedAt": "2026-10-11T16:36:12.792Z"
 }

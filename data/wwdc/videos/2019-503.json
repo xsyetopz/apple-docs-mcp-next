@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "AVPlayerViewController",
         "url": "https://developer.apple.com/documentation/AVKit/AVPlayerViewController"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/503tnc2gfty50jit92m/503/503_hd_delivering_intuitive_media_playback_with_avkit.mp4?dl=1",
@@ -66,5 +50,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/501"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:55.699Z"
+  "extractedAt": "2026-10-11T16:47:53.987Z"
 }

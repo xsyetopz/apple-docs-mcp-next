@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -73,18 +74,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ARKit",
-        "url": "https://developer.apple.com/documentation/ARKit"
-      },
-      {
-        "title": "Explore the ARKit Developer Forums",
-        "url": "https://developer.apple.com/forums/tags/arkit"
-      },
-      {
         "title": "Human Interface Guidelines: App Clip Codes",
         "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes"
       },
@@ -93,20 +82,16 @@
         "url": "https://developer.apple.com/documentation/AppClip/interacting-with-app-clip-codes-in-ar"
       },
       {
+        "title": "Explore the ARKit Developer Forums",
+        "url": "https://developer.apple.com/forums/tags/arkit"
+      },
+      {
         "title": "Tracking geographic locations in AR",
         "url": "https://developer.apple.com/documentation/ARKit/tracking-geographic-locations-in-ar"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "ARKit",
+        "url": "https://developer.apple.com/documentation/ARKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10073/7/53148F9F-7E28-46AA-AD05-CC2ABEC68EDC/downloads/wwdc2021-10073_hd.mp4?dl=1",
@@ -150,5 +135,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/607"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:40.382Z"
+  "extractedAt": "2026-10-11T16:43:46.330Z"
 }

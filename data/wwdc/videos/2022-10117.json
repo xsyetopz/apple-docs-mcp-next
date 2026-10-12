@@ -103,24 +103,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Push to Talk",
         "url": "https://developer.apple.com/documentation/PushToTalk"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10117/3/BC2A00F7-7836-4346-B4DD-143192926205/downloads/wwdc2022-10117_hd.mp4?dl=1",
@@ -146,5 +130,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110930"
     }
   ],
-  "extractedAt": "2025-07-18T11:02:37.737Z"
+  "extractedAt": "2026-10-11T16:39:24.075Z"
 }

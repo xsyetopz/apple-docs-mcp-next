@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,36 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Multitasking",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking"
+        "title": "Human Interface Guidelines: Windows",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/windows"
       },
       {
         "title": "Human Interface Guidelines: The menu bar",
         "url": "https://developer.apple.com/design/human-interface-guidelines/the-menu-bar"
       },
       {
-        "title": "Human Interface Guidelines: Windows",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/windows"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Multitasking",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/208/5/09c21eb9-8870-421d-af8e-7f152020b87b/downloads/wwdc2025-208_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/208/5/09c21eb9-8870-421d-af8e-7f152020b87b/downloads/wwdc2025-208_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:35:00.124Z"
+  "extractedAt": "2026-10-11T16:33:32.286Z"
 }

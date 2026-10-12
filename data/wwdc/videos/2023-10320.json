@@ -1,0 +1,37 @@
+{
+  "id": "10320",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10320/",
+  "title": "Q&A: Safari and web technologies",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Safari & Web"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10122",
+      "year": "2023",
+      "title": "Explore media formats for the web",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10122"
+    },
+    {
+      "id": "10279",
+      "year": "2023",
+      "title": "Meet Safari for spatial computing",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10279"
+    },
+    {
+      "id": "10262",
+      "year": "2023",
+      "title": "Rediscover Safari developer features",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10262"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:56.797Z"
+}

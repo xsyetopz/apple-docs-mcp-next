@@ -1,0 +1,32 @@
+{
+  "id": "111259",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111259/",
+  "title": "Q&A: Subject lifting",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services",
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10176",
+      "year": "2023",
+      "title": "Lift subjects from images in your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10176"
+    },
+    {
+      "id": "10048",
+      "year": "2023",
+      "title": "What’s new in VisionKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10048"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:21.363Z"
+}

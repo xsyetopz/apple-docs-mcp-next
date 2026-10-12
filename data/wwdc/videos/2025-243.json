@@ -128,28 +128,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines",
         "url": "https://developer.apple.com/design/human-interface-guidelines"
       },
       {
         "title": "UIKit updates",
         "url": "https://developer.apple.com/documentation/Updates/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/243/4/9d493d7f-4ae0-47d2-9b97-c3ad66cdf3c4/downloads/wwdc2025-243_hd.mp4?dl=1",
@@ -211,5 +195,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10057"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:17.347Z"
+  "extractedAt": "2026-10-11T16:34:28.972Z"
 }

@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Creating custom modelers for intelligent instruments",
         "url": "https://developer.apple.com/documentation/Xcode/creating-custom-modelers-for-intelligent-instruments"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/421pew36g0j6fv4jm/421/421_hd_modeling_in_custom_instruments.mp4?dl=1",
@@ -60,5 +44,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/410"
     }
   ],
-  "extractedAt": "2025-07-18T10:16:53.932Z"
+  "extractedAt": "2026-10-11T16:48:13.327Z"
 }

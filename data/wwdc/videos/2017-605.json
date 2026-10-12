@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "Graphics & Games",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SceneKit",
         "url": "https://developer.apple.com/documentation/SceneKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/605al19s0mq8dhrdv/605/605_hd_scenekit_in_swift_playgrounds.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/605al19s0mq8dhrdv/605/605_sd_scenekit_in_swift_playgrounds.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:34:30.627Z"
+  "extractedAt": "2026-10-11T16:48:55.060Z"
 }

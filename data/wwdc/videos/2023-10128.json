@@ -157,34 +157,30 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accelerating ray tracing using Metal",
-        "url": "https://developer.apple.com/documentation/metal/metal_sample_code_library/accelerating_ray_tracing_using_metal"
-      },
-      {
         "title": "Rendering reflections in real time using ray tracing",
         "url": "https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accelerating ray tracing using Metal",
+        "url": "https://developer.apple.com/documentation/metal/metal_sample_code_library/accelerating_ray_tracing_using_metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10128/5/D57CE53D-520E-44FB-99BA-4E63AA58C47C/downloads/wwdc2023-10128_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10128/5/D57CE53D-520E-44FB-99BA-4E63AA58C47C/downloads/wwdc2023-10128_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "111287",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111287"
+    },
+    {
+      "id": "111288",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111288"
+    },
     {
       "id": "10105",
       "year": "2022",
@@ -210,5 +206,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10012"
     }
   ],
-  "extractedAt": "2025-07-18T10:30:03.150Z"
+  "extractedAt": "2026-10-11T16:37:18.127Z"
 }

@@ -1,0 +1,25 @@
+{
+  "id": "111333",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111333/",
+  "title": "Q&A: SiriKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10104",
+      "year": "2023",
+      "title": "Integrate your media app with HomePod",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10104"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:52.682Z"
+}

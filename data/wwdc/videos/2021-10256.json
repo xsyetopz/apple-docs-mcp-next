@@ -157,10 +157,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Collection",
         "url": "https://developer.apple.com/documentation/Swift/Collection"
       },
@@ -171,18 +167,6 @@
       {
         "title": "Swift Forums",
         "url": "https://forums.swift.org"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10256/8/389DAED7-3871-4195-95B0-59E7F10A5E52/downloads/wwdc2021-10256_hd.mp4?dl=1",
@@ -212,7 +196,13 @@
       "year": "2020",
       "title": "Explore numerical computing in Swift",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10217"
+    },
+    {
+      "id": "223",
+      "year": "2018",
+      "title": "Embracing Algorithms",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/223"
     }
   ],
-  "extractedAt": "2025-07-18T10:49:05.984Z"
+  "extractedAt": "2026-10-11T16:43:31.120Z"
 }

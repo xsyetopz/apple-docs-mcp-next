@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10159/5/4B824E2A-E99A-492A-84EA-6F6ECC279EB3/downloads/wwdc2022-10159_hd.mp4?dl=1",
@@ -52,7 +36,19 @@
       "year": "2022",
       "title": "Discover Metal 3",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10066"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
     }
   ],
-  "extractedAt": "2025-07-18T10:30:52.097Z"
+  "extractedAt": "2026-10-11T16:42:08.578Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -211,24 +212,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Playing haptics",
         "url": "https://developer.apple.com/design/Human-Interface-Guidelines/playing-haptics"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10148/5/670CE43A-A151-47A9-BBFA-32FE5E86C679/downloads/wwdc2023-10148_hd.mp4?dl=1",
@@ -344,5 +329,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10157"
     }
   ],
-  "extractedAt": "2025-07-18T10:22:15.476Z"
+  "extractedAt": "2026-10-11T16:36:16.247Z"
 }

@@ -1,0 +1,31 @@
+{
+  "id": "111520",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111520/",
+  "title": "Q&A: watchOS 10 design",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Design"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10138",
+      "year": "2023",
+      "title": "Design and build apps for watchOS 10",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10138"
+    },
+    {
+      "id": "10026",
+      "year": "2023",
+      "title": "Meet watchOS 10",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10026"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:52.038Z"
+}

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -143,24 +144,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10166/5/58425163-99DA-4506-A86E-A2D794244136/downloads/wwdc2023-10166_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10166/5/58425163-99DA-4506-A86E-A2D794244136/downloads/wwdc2023-10166_sd.mp4?dl=1"
   },
@@ -178,6 +162,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10167"
     },
     {
+      "id": "10296",
+      "year": "2023",
+      "title": "Meet the presenter: Write Swift macros",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10296"
+    },
+    {
       "id": "10164",
       "year": "2023",
       "title": "What’s new in Swift",
@@ -190,5 +180,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10165"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:19.536Z"
+  "extractedAt": "2026-10-11T16:36:18.380Z"
 }

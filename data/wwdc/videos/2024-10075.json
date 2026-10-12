@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,10 +50,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Fetching and filtering time-based model changes",
         "url": "https://developer.apple.com/documentation/SwiftData/Fetching-and-filtering-time-based-model-changes"
       },
@@ -63,18 +60,6 @@
       {
         "title": "SwiftData",
         "url": "https://developer.apple.com/documentation/SwiftData"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10075/4/0F3D64B6-B594-42E8-8B59-2088D1B251F8/downloads/wwdc2024-10075_hd.mp4?dl=1",
@@ -88,5 +73,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10138"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:37.590Z"
+  "extractedAt": "2026-10-11T16:35:45.463Z"
 }

@@ -1,26 +1,17 @@
-import { convertToJsonApiUrl } from '../utils/url-converter.js';
-import { httpClient } from '../utils/http-client.js';
-import { logger } from '../utils/logger.js';
-import { PROCESSING_LIMITS } from '../utils/constants.js';
+import type { PlatformAvailability, RenderNode } from "../types/docc.ts";
+import { isDeprecated, isTopicReference } from "../types/docc.ts";
+import { PROCESSING_LIMITS } from "../utils/constants.ts";
+import { httpClient } from "../utils/http-client.ts";
+import { logger } from "../utils/logger.ts";
+import { convertToJsonApiUrl } from "../utils/url-converter.ts";
 
 /**
  * 平台兼容性信息接口
  */
-interface PlatformInfo {
-  name: string;
-  introducedAt?: string;
-  deprecatedAt?: string;
-  obsoletedAt?: string;
-  beta?: boolean;
-  deprecated?: boolean;
-  unavailable?: boolean;
-  message?: string;
-}
-
 interface CompatibilityAnalysis {
   apiName: string;
   apiUrl: string;
-  platforms: PlatformInfo[];
+  platforms: PlatformAvailability[];
   supportedPlatforms: string[];
   betaPlatforms: string[];
   deprecatedPlatforms: string[];
@@ -28,37 +19,22 @@ interface CompatibilityAnalysis {
   crossPlatformSupport: boolean;
 }
 
-interface AppleDocData {
-  metadata?: {
-    title?: string;
-    platforms?: PlatformInfo[];
-    symbolKind?: string;
-    role?: string;
-  };
-  topicSections?: Array<{
-    title: string;
-    identifiers: string[];
-  }>;
-  references?: Record<string, any>;
-}
-
 /**
  * 获取平台兼容性分析
  */
 export async function handleGetPlatformCompatibility(
   apiUrl: string,
-  compareMode: string = 'single',
+  compareMode: string = "single",
   includeRelated: boolean = false,
 ): Promise<string> {
   try {
     logger.info(`Analyzing platform compatibility for: ${apiUrl}`);
 
-    if (compareMode === 'framework') {
+    if (compareMode === "framework") {
       return await analyzeFrameworkCompatibility(apiUrl, includeRelated);
     } else {
       return await analyzeSingleApiCompatibility(apiUrl, includeRelated);
     }
-
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     return `Error: Failed to analyze platform compatibility: ${errorMessage}`;
@@ -75,17 +51,17 @@ async function analyzeSingleApiCompatibility(
   const jsonApiUrl = convertToJsonApiUrl(apiUrl);
 
   if (!jsonApiUrl) {
-    throw new Error('Invalid Apple Developer Documentation URL');
+    throw new Error("Invalid Apple Developer Documentation URL");
   }
 
-  const data = await httpClient.getJson<AppleDocData>(jsonApiUrl);
+  const data = await httpClient.getJson<RenderNode>(jsonApiUrl);
 
   if (!data.metadata?.platforms) {
     return `No platform information available for: ${apiUrl}`;
   }
 
   const analysis = analyzeCompatibility(
-    data.metadata.title || 'Unknown API',
+    data.metadata.title || "Unknown API",
     apiUrl,
     data.metadata.platforms,
   );
@@ -96,9 +72,9 @@ async function analyzeSingleApiCompatibility(
   if (includeRelated && data.topicSections) {
     const relatedAnalyses = await analyzeRelatedCompatibility(data, 3); // 限制3个相关API
     if (relatedAnalyses.length > 0) {
-      result += '\n\n## Related APIs Compatibility\n\n';
+      result += "\n\n## Related APIs Compatibility\n\n";
       for (const relatedAnalysis of relatedAnalyses) {
-        result += formatCompatibilityAnalysis(relatedAnalysis, true) + '\n';
+        result += `${formatCompatibilityAnalysis(relatedAnalysis, true)}\n`;
       }
     }
   }
@@ -115,14 +91,17 @@ async function analyzeFrameworkCompatibility(
 ): Promise<string> {
   // 这里可以扩展为分析整个框架的兼容性
   // 暂时使用单API分析作为基础
-  return await analyzeSingleApiCompatibility(frameworkUrl, includeRelated || true);
+  return await analyzeSingleApiCompatibility(
+    frameworkUrl,
+    includeRelated || true,
+  );
 }
 
 /**
  * 分析相关API的兼容性
  */
 async function analyzeRelatedCompatibility(
-  data: AppleDocData,
+  data: RenderNode,
   maxRelated: number = 3,
 ): Promise<CompatibilityAnalysis[]> {
   const analyses: CompatibilityAnalysis[] = [];
@@ -137,13 +116,17 @@ async function analyzeRelatedCompatibility(
       break;
     }
 
-    for (const identifier of section.identifiers.slice(0, PROCESSING_LIMITS.MAX_PLATFORM_COMPATIBILITY_ITEMS)) { // 每个section最多2个
+    for (const identifier of section.identifiers.slice(
+      0,
+      PROCESSING_LIMITS.MAX_PLATFORM_COMPATIBILITY_ITEMS,
+    )) {
+      // 每个section最多2个
       if (count >= maxRelated) {
         break;
       }
 
       const ref = data.references[identifier];
-      if (ref?.url) {
+      if (isTopicReference(ref)) {
         try {
           const relatedUrl = `https://developer.apple.com${ref.url}`;
           const relatedJsonUrl = convertToJsonApiUrl(relatedUrl);
@@ -153,10 +136,11 @@ async function analyzeRelatedCompatibility(
             continue;
           }
 
-          const relatedData = await httpClient.getJson<AppleDocData>(relatedJsonUrl);
+          const relatedData =
+            await httpClient.getJson<RenderNode>(relatedJsonUrl);
           if (relatedData.metadata?.platforms) {
             const analysis = analyzeCompatibility(
-              ref.title || 'Unknown',
+              ref.title || "Unknown",
               relatedUrl,
               relatedData.metadata.platforms,
             );
@@ -180,7 +164,7 @@ async function analyzeRelatedCompatibility(
 function analyzeCompatibility(
   apiName: string,
   apiUrl: string,
-  platforms: PlatformInfo[],
+  platforms: PlatformAvailability[],
 ): CompatibilityAnalysis {
   const supportedPlatforms: string[] = [];
   const betaPlatforms: string[] = [];
@@ -188,18 +172,22 @@ function analyzeCompatibility(
   const minVersions: Record<string, string> = {};
 
   for (const platform of platforms) {
-    supportedPlatforms.push(platform.name);
+    const name = platform.name;
+    if (!name) {
+      continue;
+    }
+    supportedPlatforms.push(name);
 
     if (platform.beta) {
-      betaPlatforms.push(platform.name);
+      betaPlatforms.push(name);
     }
 
-    if (platform.deprecated) {
-      deprecatedPlatforms.push(platform.name);
+    if (isDeprecated(platform)) {
+      deprecatedPlatforms.push(name);
     }
 
     if (platform.introducedAt) {
-      minVersions[platform.name] = platform.introducedAt;
+      minVersions[name] = platform.introducedAt;
     }
   }
 
@@ -215,13 +203,14 @@ function analyzeCompatibility(
   };
 }
 
-
-
 /**
  * 格式化兼容性分析结果
  */
-function formatCompatibilityAnalysis(analysis: CompatibilityAnalysis, isRelated: boolean = false): string {
-  const prefix = isRelated ? '### ' : '# ';
+function formatCompatibilityAnalysis(
+  analysis: CompatibilityAnalysis,
+  isRelated: boolean = false,
+): string {
+  const prefix = isRelated ? "### " : "# ";
   let content = `${prefix}Platform Compatibility: ${analysis.apiName}\n\n`;
 
   if (!isRelated) {
@@ -229,22 +218,22 @@ function formatCompatibilityAnalysis(analysis: CompatibilityAnalysis, isRelated:
   }
 
   // 平台支持概览
-  content += '## Platform Support Summary\n\n';
-  content += `**Supported Platforms:** ${analysis.supportedPlatforms.join(', ')}\n`;
-  content += `**Cross-Platform:** ${analysis.crossPlatformSupport ? 'Yes' : 'No'}\n`;
+  content += "## Platform Support Summary\n\n";
+  content += `**Supported Platforms:** ${analysis.supportedPlatforms.join(", ")}\n`;
+  content += `**Cross-Platform:** ${analysis.crossPlatformSupport ? "Yes" : "No"}\n`;
 
   if (analysis.betaPlatforms.length > 0) {
-    content += `**Beta Platforms:** ${analysis.betaPlatforms.join(', ')}\n`;
+    content += `**Beta Platforms:** ${analysis.betaPlatforms.join(", ")}\n`;
   }
 
   if (analysis.deprecatedPlatforms.length > 0) {
-    content += `**Deprecated Platforms:** ${analysis.deprecatedPlatforms.join(', ')}\n`;
+    content += `**Deprecated Platforms:** ${analysis.deprecatedPlatforms.join(", ")}\n`;
   }
 
-  content += '\n';
+  content += "\n";
 
   // 详细平台信息
-  content += '## Detailed Platform Information\n\n';
+  content += "## Detailed Platform Information\n\n";
 
   for (const platform of analysis.platforms) {
     content += `**${platform.name}**\n`;
@@ -257,56 +246,59 @@ function formatCompatibilityAnalysis(analysis: CompatibilityAnalysis, isRelated:
       content += `- Deprecated: ${platform.deprecatedAt}\n`;
     }
 
-    if (platform.obsoletedAt) {
-      content += `- Obsoleted: ${platform.obsoletedAt}\n`;
-    }
-
     const status = [];
     if (platform.beta) {
-      status.push('Beta');
+      status.push("Beta");
     }
-    if (platform.deprecated) {
-      status.push('Deprecated');
+    if (isDeprecated(platform)) {
+      status.push("Deprecated");
     }
     if (platform.unavailable) {
-      status.push('Unavailable');
+      status.push("Unavailable");
     }
 
     if (status.length > 0) {
-      content += `- Status: ${status.join(', ')}\n`;
+      content += `- Status: ${status.join(", ")}\n`;
     }
 
     if (platform.message) {
       content += `- Note: ${platform.message}\n`;
     }
 
-    content += '\n';
+    content += "\n";
   }
 
   // 兼容性建议
-  content += '## Compatibility Recommendations\n\n';
+  content += "## Compatibility Recommendations\n\n";
 
-  if (analysis.crossPlatformSupport) {
+  const deprecatedEverywhere =
+    analysis.supportedPlatforms.length > 0 &&
+    analysis.deprecatedPlatforms.length === analysis.supportedPlatforms.length;
+  if (deprecatedEverywhere) {
+    content +=
+      "⚠️ **Deprecated** on every platform it supports - find_similar_apis lists the replacements Apple names\n\n";
+  } else if (analysis.crossPlatformSupport) {
     content += `✅ **Cross-platform compatible** - This API works across ${analysis.supportedPlatforms.length} platforms\n\n`;
   } else {
     content += `⚠️ **Platform-specific** - This API is only available on ${analysis.supportedPlatforms[0]}\n\n`;
   }
 
   if (analysis.betaPlatforms.length > 0) {
-    content += '🚧 **Beta platforms** - Some platforms are in beta, expect changes\n\n';
+    content +=
+      "🚧 **Beta platforms** - Some platforms are in beta, expect changes\n\n";
   }
 
-  if (analysis.deprecatedPlatforms.length > 0) {
-    content += '⚠️ **Deprecated platforms** - Consider migration plans for deprecated platforms\n\n';
+  if (analysis.deprecatedPlatforms.length > 0 && !deprecatedEverywhere) {
+    content += `⚠️ **Deprecated on** ${analysis.deprecatedPlatforms.join(", ")} - Consider migration plans for those platforms\n\n`;
   }
 
   // 最低版本要求
   if (Object.keys(analysis.minVersions).length > 0) {
-    content += '## Minimum Version Requirements\n\n';
+    content += "## Minimum Version Requirements\n\n";
     for (const [platform, version] of Object.entries(analysis.minVersions)) {
       content += `- **${platform}:** ${version}+\n`;
     }
-    content += '\n';
+    content += "\n";
   }
 
   return content;

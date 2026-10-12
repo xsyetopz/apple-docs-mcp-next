@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adopting system selection UI in custom text views",
         "url": "https://developer.apple.com/documentation/UIKit/adopting-system-selection-ui-in-custom-text-views"
       },
       {
         "title": "Adopting the system text cursor in custom text views",
         "url": "https://developer.apple.com/documentation/AppKit/adopting-the-system-text-cursor-in-custom-text-views"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10058/4/8038A20C-9E59-409E-9C2A-02B517C649A7/downloads/wwdc2023-10058_hd.mp4?dl=1",
@@ -58,5 +44,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10055"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:30.171Z"
+  "extractedAt": "2026-10-11T16:38:09.408Z"
 }

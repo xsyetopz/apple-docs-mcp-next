@@ -1,0 +1,25 @@
+{
+  "id": "111336",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111336/",
+  "title": "Q&A: Motorized iPhone stands and DockKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10304",
+      "year": "2023",
+      "title": "Integrate with motorized iPhone stands using DockKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10304"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:56.808Z"
+}

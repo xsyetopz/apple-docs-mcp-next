@@ -1,0 +1,31 @@
+{
+  "id": "110826",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110826/",
+  "title": "Q&A: AVKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10147",
+      "year": "2022",
+      "title": "Create a great video playback experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10147"
+    },
+    {
+      "id": "110817",
+      "year": "2022",
+      "title": "Meet the Presenter: Create a great video playback experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110817"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:17.872Z"
+}

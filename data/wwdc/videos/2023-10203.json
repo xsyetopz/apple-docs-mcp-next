@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -59,24 +60,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10203/6/469019B0-281D-4B3E-BAE3-B9302B204739/downloads/wwdc2023-10203_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10203/6/469019B0-281D-4B3E-BAE3-B9302B204739/downloads/wwdc2023-10203_sd.mp4?dl=1"
   },
@@ -130,5 +114,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10273"
     }
   ],
-  "extractedAt": "2025-07-18T10:21:42.651Z"
+  "extractedAt": "2026-10-11T16:36:02.613Z"
 }

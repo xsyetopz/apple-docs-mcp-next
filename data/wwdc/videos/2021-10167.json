@@ -26,40 +26,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Adding supplemental content to a documentation catalog",
+        "url": "https://developer.apple.com/documentation/Xcode/adding-supplemental-content-to-a-documentation-catalog"
       },
       {
         "title": "Adding structure to your documentation pages",
         "url": "https://developer.apple.com/documentation/Xcode/adding-structure-to-your-documentation-pages"
       },
       {
-        "title": "Adding supplemental content to a documentation catalog",
-        "url": "https://developer.apple.com/documentation/Xcode/adding-supplemental-content-to-a-documentation-catalog"
-      },
-      {
-        "title": "Documenting a Swift Framework or Package",
-        "url": "https://www.swift.org/documentation/docc/documenting-a-swift-framework-or-package"
-      },
-      {
         "title": "Formatting your documentation",
         "url": "https://developer.apple.com/documentation/docc"
       },
       {
-        "title": "SlothCreator: Building DocC Documentation in Xcode",
-        "url": "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode"
+        "title": "SlothCreator: Building DocC documentation in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/slothcreator-building-docc-documentation-in-xcode"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Documenting a Swift Framework or Package",
+        "url": "https://www.swift.org/documentation/docc/documenting-a-swift-framework-or-package"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10167/4/AEC81BAD-B21A-40F5-A726-C53C1185192A/downloads/wwdc2021-10167_hd.mp4?dl=1",
@@ -97,5 +81,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10192"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:15.583Z"
+  "extractedAt": "2026-10-11T16:43:23.385Z"
 }

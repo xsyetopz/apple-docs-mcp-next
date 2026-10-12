@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "AVCam: Building a camera app",
         "url": "https://developer.apple.com/documentation/AVFoundation/avcam-building-a-camera-app"
       },
       {
         "title": "Capture setup",
         "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/Using-Depth-Data.zip",
@@ -71,5 +55,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2017/513"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:09.501Z"
+  "extractedAt": "2026-10-11T16:48:54.642Z"
 }

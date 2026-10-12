@@ -1,8 +1,9 @@
 {
   "id": "audio-video",
   "name": "Audio & Video",
-  "videoCount": 124,
+  "videoCount": 152,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -16,11 +17,109 @@
   ],
   "videos": [
     {
+      "id": "303",
+      "year": "2026",
+      "title": "Build a responsive camera app that launches quickly",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/303/",
+      "dataFile": "videos/2026-303.json"
+    },
+    {
+      "id": "338",
+      "year": "2026",
+      "title": "Build live production tools for Apple Immersive Video",
+      "topics": [
+        "Audio & Video",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/338/",
+      "dataFile": "videos/2026-338.json"
+    },
+    {
+      "id": "256",
+      "year": "2026",
+      "title": "Discover generated subtitles and subtitle styles",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/256/",
+      "dataFile": "videos/2026-256.json"
+    },
+    {
+      "id": "254",
+      "year": "2026",
+      "title": "Integrate MusicKit into your app",
+      "topics": [
+        "Audio & Video",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/254/",
+      "dataFile": "videos/2026-254.json"
+    },
+    {
+      "id": "253",
+      "year": "2026",
+      "title": "Meet the Music Understanding framework",
+      "topics": [
+        "Audio & Video",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/253/",
+      "dataFile": "videos/2026-253.json"
+    },
+    {
+      "id": "312",
+      "year": "2026",
+      "title": "Meet the Now Playing framework",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/312/",
+      "dataFile": "videos/2026-312.json"
+    },
+    {
+      "id": "221",
+      "year": "2026",
+      "title": "Prepare your tvOS apps for Dynamic Type",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/221/",
+      "dataFile": "videos/2026-221.json"
+    },
+    {
       "id": "319",
       "year": "2025",
       "title": "Capture cinematic video in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -46,7 +145,8 @@
       "year": "2025",
       "title": "Enhance your app with machine-learning-based video effects",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -59,7 +159,9 @@
       "year": "2025",
       "title": "Enhance your app’s audio recording capabilities",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -73,7 +175,8 @@
       "title": "Explore video experiences for visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -86,7 +189,8 @@
       "year": "2025",
       "title": "Learn about Apple Immersive Video technologies",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -99,7 +203,8 @@
       "year": "2025",
       "title": "Learn about the Apple Projected Media Profile",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -112,7 +217,8 @@
       "year": "2025",
       "title": "Share visionOS experiences with nearby people",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -125,7 +231,8 @@
       "year": "2025",
       "title": "Support immersive video playback in visionOS apps",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -141,7 +248,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -169,7 +280,8 @@
       "title": "Customize spatial Persona templates in SharePlay",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -208,7 +320,8 @@
       "year": "2024",
       "title": "Enhance the immersion of media viewing in custom environments",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -222,7 +335,8 @@
       "title": "Explore multiview video playback in visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -237,7 +351,10 @@
       "topics": [
         "App Services",
         "Audio & Video",
-        "Business & Education"
+        "Business & Education",
+        "Machine Learning & AI",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -250,7 +367,8 @@
       "year": "2024",
       "title": "Migrate your TVML app to SwiftUI",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -263,7 +381,9 @@
       "year": "2024",
       "title": "Use HDR for dynamic image experiences in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -303,7 +423,8 @@
       "year": "2023",
       "title": "Create a great spatial playback experience",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -316,7 +437,8 @@
       "year": "2023",
       "title": "Deliver video content for spatial experiences",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -329,7 +451,8 @@
       "year": "2023",
       "title": "Discover Continuity Camera for tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -342,7 +465,8 @@
       "year": "2023",
       "title": "Enhance your app’s audio experience with AirPods",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -369,13 +493,93 @@
       "title": "Explore immersive sound design",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2023/10271/",
       "dataFile": "videos/2023-10271.json"
+    },
+    {
+      "id": "111482",
+      "year": "2023",
+      "title": "Meet the presenter: Create a great ShazamKit experience",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111482/",
+      "dataFile": "videos/2023-111482.json"
+    },
+    {
+      "id": "111534",
+      "year": "2023",
+      "title": "Q&A: AVFoundation",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111534/",
+      "dataFile": "videos/2023-111534.json"
+    },
+    {
+      "id": "111592",
+      "year": "2023",
+      "title": "Q&A: Connect your App Store subscriptions to Apple Podcasts",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111592/",
+      "dataFile": "videos/2023-111592.json"
+    },
+    {
+      "id": "111532",
+      "year": "2023",
+      "title": "Q&A: Continuity Camera for Apple TV",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111532/",
+      "dataFile": "videos/2023-111532.json"
+    },
+    {
+      "id": "111531",
+      "year": "2023",
+      "title": "Q&A: MusicKit",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111531/",
+      "dataFile": "videos/2023-111531.json"
+    },
+    {
+      "id": "111533",
+      "year": "2023",
+      "title": "Q&A: SharePlay",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111533/",
+      "dataFile": "videos/2023-111533.json"
     },
     {
       "id": "10241",
@@ -395,7 +599,8 @@
       "year": "2023",
       "title": "Support Cinematic mode videos in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -422,7 +627,8 @@
       "title": "What’s new in ScreenCaptureKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -448,7 +654,8 @@
       "year": "2022",
       "title": "Bring your driver to iPad with DriverKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -476,7 +683,8 @@
       "year": "2022",
       "title": "Create a great video playback experience",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -543,7 +751,9 @@
       "title": "Display EDR content with Core Image, Metal, and SwiftUI",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -557,7 +767,9 @@
       "title": "Display HDR video in EDR with AVFoundation and Metal",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -571,7 +783,9 @@
       "title": "Explore EDR on iOS",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -613,7 +827,8 @@
         "App Services",
         "Audio & Video",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -650,12 +865,223 @@
       "dataFile": "videos/2022-10156.json"
     },
     {
+      "id": "110658",
+      "year": "2022",
+      "title": "Meet the Presenter: Add Apple frameworks to your Unity game projects",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110658/",
+      "dataFile": "videos/2022-110658.json"
+    },
+    {
+      "id": "110821",
+      "year": "2022",
+      "title": "Meet the Presenter: Building Device-to-Device Experiences with Network Framework",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110821/",
+      "dataFile": "videos/2022-110821.json"
+    },
+    {
+      "id": "110817",
+      "year": "2022",
+      "title": "Meet the Presenter: Create a great video playback experience",
+      "topics": [
+        "Audio & Video",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110817/",
+      "dataFile": "videos/2022-110817.json"
+    },
+    {
+      "id": "110908",
+      "year": "2022",
+      "title": "Meet the Presenter: Create custom catalogs at scale with ShazamKit",
+      "topics": [
+        "Audio & Video",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110908/",
+      "dataFile": "videos/2022-110908.json"
+    },
+    {
+      "id": "110815",
+      "year": "2022",
+      "title": "Meet the Presenter: Make a great SharePlay experience",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Essentials",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110815/",
+      "dataFile": "videos/2022-110815.json"
+    },
+    {
+      "id": "110660",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet ScreenCaptureKit",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110660/",
+      "dataFile": "videos/2022-110660.json"
+    },
+    {
+      "id": "110662",
+      "year": "2022",
+      "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110662/",
+      "dataFile": "videos/2022-110662.json"
+    },
+    {
+      "id": "110659",
+      "year": "2022",
+      "title": "Meet the Presenter: Take ScreenCaptureKit to the next level",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110659/",
+      "dataFile": "videos/2022-110659.json"
+    },
+    {
+      "id": "110825",
+      "year": "2022",
+      "title": "Q&A: Apple Music",
+      "topics": [
+        "Audio & Video",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110825/",
+      "dataFile": "videos/2022-110825.json"
+    },
+    {
+      "id": "110823",
+      "year": "2022",
+      "title": "Q&A: AVFoundation",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110823/",
+      "dataFile": "videos/2022-110823.json"
+    },
+    {
+      "id": "110826",
+      "year": "2022",
+      "title": "Q&A: AVKit",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110826/",
+      "dataFile": "videos/2022-110826.json"
+    },
+    {
+      "id": "110822",
+      "year": "2022",
+      "title": "Q&A: Coordinated media with SharePlay",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110822/",
+      "dataFile": "videos/2022-110822.json"
+    },
+    {
+      "id": "110954",
+      "year": "2022",
+      "title": "Q&A: Core Image",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110954/",
+      "dataFile": "videos/2022-110954.json"
+    },
+    {
+      "id": "110669",
+      "year": "2022",
+      "title": "Q&A: ScreenCaptureKit",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110669/",
+      "dataFile": "videos/2022-110669.json"
+    },
+    {
+      "id": "110824",
+      "year": "2022",
+      "title": "Q&A: SharePlay",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110824/",
+      "dataFile": "videos/2022-110824.json"
+    },
+    {
       "id": "110384",
       "year": "2022",
       "title": "Support multiple users in tvOS apps",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -748,7 +1174,8 @@
       "year": "2021",
       "title": "Coordinate media playback in Safari with Group Activities",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -761,7 +1188,8 @@
       "year": "2021",
       "title": "Create audio drivers with DriverKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -788,7 +1216,8 @@
       "year": "2021",
       "title": "Deliver a great playback experience on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -816,7 +1245,9 @@
       "year": "2021",
       "title": "Discover built-in sound classification in SoundAnalysis",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -872,7 +1303,8 @@
       "title": "Explore Core Image kernel improvements",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -899,7 +1331,8 @@
       "title": "Explore HDR rendering with EDR",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -925,7 +1358,8 @@
       "year": "2021",
       "title": "Explore low-latency video encoding with VideoToolbox",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -938,7 +1372,8 @@
       "year": "2021",
       "title": "Explore ShazamKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1019,7 +1454,8 @@
       "topics": [
         "Audio & Video",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1100,7 +1536,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1113,7 +1550,8 @@
       "year": "2020",
       "title": "Build SwiftUI apps for tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1127,7 +1565,8 @@
       "title": "Capture and stream apps on the Mac with ReplayKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1185,7 +1624,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1224,7 +1664,8 @@
       "year": "2020",
       "title": "Discover search suggestions for Apple TV",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1292,7 +1733,8 @@
       "year": "2020",
       "title": "Master Picture in Picture on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1333,7 +1775,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1438,7 +1881,8 @@
       "title": "Expanding the Sensory Experience with Core Haptics",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1518,7 +1962,8 @@
       "year": "2019",
       "title": "Metal for Pro Apps",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1557,7 +2002,8 @@
       "year": "2019",
       "title": "Streaming Audio on watchOS 6",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1596,7 +2042,9 @@
       "year": "2017",
       "title": "Enabling Your App for CarPlay",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1635,7 +2083,8 @@
       "year": "2017",
       "title": "Now Playing and Remote Commands on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,

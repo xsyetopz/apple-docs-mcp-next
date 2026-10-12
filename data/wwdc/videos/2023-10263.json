@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "Privacy & Security"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -29,24 +30,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10263/6/31A324CE-DD40-456B-A7DB-8660EF139277/downloads/wwdc2023-10263_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10263/6/31A324CE-DD40-456B-A7DB-8660EF139277/downloads/wwdc2023-10263_sd.mp4?dl=1"
   },
@@ -76,5 +60,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10092"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:39.464Z"
+  "extractedAt": "2026-10-11T16:37:03.151Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -97,24 +98,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Hello World",
         "url": "https://developer.apple.com/documentation/visionOS/World"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10080/4/285DEB34-9EE6-466F-8F33-BF04E334E215/downloads/wwdc2023-10080_hd.mp4?dl=1",
@@ -194,5 +179,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10273"
     }
   ],
-  "extractedAt": "2025-07-18T10:21:47.347Z"
+  "extractedAt": "2026-10-11T16:35:58.894Z"
 }

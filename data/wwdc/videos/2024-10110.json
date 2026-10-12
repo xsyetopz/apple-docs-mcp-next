@@ -44,68 +44,52 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: App Store Distribution & Marketing",
-        "url": "https://developer.apple.com/forums/topics/app-store-distribution-and-marketing?cid=vf-a-0010"
-      },
-      {
-        "title": "Generating a signature for promotional offers",
-        "url": "https://developer.apple.com/documentation/StoreKit/generating-a-signature-for-promotional-offers"
+        "title": "Testing win-back offers in the sandbox environment",
+        "url": "https://developer.apple.com/documentation/StoreKit/testing-win-back-offers-in-the-sandbox-environment"
       },
       {
         "title": "Merchandising win-back offers in your app",
         "url": "https://developer.apple.com/documentation/StoreKit/merchandising-win-back-offers-in-your-app"
       },
       {
-        "title": "Message",
-        "url": "https://developer.apple.com/documentation/StoreKit/Message"
-      },
-      {
-        "title": "offer",
-        "url": "https://developer.apple.com/documentation/StoreKit/Transaction/offer-swift.property"
-      },
-      {
-        "title": "PurchaseIntent",
-        "url": "https://developer.apple.com/documentation/StoreKit/PurchaseIntent"
-      },
-      {
-        "title": "Setting up StoreKit Testing in Xcode",
-        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
-      },
-      {
-        "title": "StoreKit views",
-        "url": "https://developer.apple.com/documentation/StoreKit/storekit-views"
-      },
-      {
-        "title": "Supporting subscription offer codes in your app",
-        "url": "https://developer.apple.com/documentation/StoreKit/supporting-subscription-offer-codes-in-your-app"
-      },
-      {
         "title": "Supporting win-back offers in your app",
         "url": "https://developer.apple.com/documentation/StoreKit/supporting-win-back-offers-in-your-app"
-      },
-      {
-        "title": "Testing win-back offers in the sandbox environment",
-        "url": "https://developer.apple.com/documentation/StoreKit/testing-win-back-offers-in-the-sandbox-environment"
       },
       {
         "title": "Testing win-back offers in Xcode",
         "url": "https://developer.apple.com/documentation/StoreKit/testing-win-back-offers-in-xcode"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "PurchaseIntent",
+        "url": "https://developer.apple.com/documentation/StoreKit/PurchaseIntent"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Supporting offer codes in your app",
+        "url": "https://developer.apple.com/documentation/StoreKit/supporting-offer-codes-in-your-app"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "offer",
+        "url": "https://developer.apple.com/documentation/StoreKit/Transaction/offer-swift.property"
+      },
+      {
+        "title": "Forum: App Store Distribution & Marketing",
+        "url": "https://developer.apple.com/forums/topics/app-store-distribution-and-marketing?cid=vf-a-0010"
+      },
+      {
+        "title": "Message",
+        "url": "https://developer.apple.com/documentation/StoreKit/Message"
+      },
+      {
+        "title": "StoreKit views",
+        "url": "https://developer.apple.com/documentation/StoreKit/storekit-views"
+      },
+      {
+        "title": "Setting up StoreKit Testing in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
+      },
+      {
+        "title": "Generating a signature for promotional offers",
+        "url": "https://developer.apple.com/documentation/StoreKit/generating-a-signature-for-promotional-offers"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10110/4/D12EC56F-E036-4B66-BC08-8F01A5D49690/downloads/wwdc2024-10110_hd.mp4?dl=1",
@@ -143,5 +127,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10140"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:34.795Z"
+  "extractedAt": "2026-10-11T16:35:44.409Z"
 }

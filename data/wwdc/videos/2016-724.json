@@ -15,26 +15,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/724x4wbpmrtkjpgfdlj/724/724_hd_whats_new_in_the_apple_push_notification_service.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2016/724x4wbpmrtkjpgfdlj/724/724_sd_whats_new_in_the_apple_push_notification_service.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T11:04:45.071Z"
+  "extractedAt": "2026-10-11T16:49:03.041Z"
 }

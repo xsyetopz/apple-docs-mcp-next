@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -181,8 +182,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Capturing Cinematic video",
+        "url": "https://developer.apple.com/documentation/AVFoundation/capturing-cinematic-video"
+      },
+      {
+        "title": "Cinematic",
+        "url": "https://developer.apple.com/documentation/Cinematic"
       },
       {
         "title": "AVCam: Building a camera app",
@@ -191,26 +196,6 @@
       {
         "title": "AVFoundation",
         "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
-      {
-        "title": "Capturing cinematic video",
-        "url": "https://developer.apple.com/documentation/AVFoundation/capturing-cinematic-video"
-      },
-      {
-        "title": "Cinematic",
-        "url": "https://developer.apple.com/documentation/Cinematic"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/319/4/55797f51-c074-44e8-85fe-5aaa0780ba91/downloads/wwdc2025-319_hd.mp4?dl=1",
@@ -248,5 +233,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10106"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:50.848Z"
+  "extractedAt": "2026-10-11T16:33:24.260Z"
 }

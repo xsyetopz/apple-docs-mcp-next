@@ -37,24 +37,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10019/4/CA2236CA-EAD0-454F-8556-FA583BA70590/downloads/wwdc2022-10019_hd.mp4?dl=1",
@@ -72,6 +56,24 @@
       "year": "2022",
       "title": "Compose advanced models with Create ML Components",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10020"
+    },
+    {
+      "id": "110904",
+      "year": "2022",
+      "title": "Meet the Presenter: Compose advanced models with Create ML Components",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110904"
+    },
+    {
+      "id": "110902",
+      "year": "2022",
+      "title": "Meet the Presenter: Get to know Create ML Components",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110902"
+    },
+    {
+      "id": "110901",
+      "year": "2022",
+      "title": "Q&A: Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110901"
     },
     {
       "id": "110332",
@@ -104,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/222"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:16.947Z"
+  "extractedAt": "2026-10-11T16:39:25.876Z"
 }

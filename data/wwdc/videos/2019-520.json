@@ -18,16 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core Haptics",
-        "url": "https://developer.apple.com/documentation/CoreHaptics"
-      },
-      {
-        "title": "Human Interface Guidelines: Playing haptics",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics"
+        "title": "Updating Continuous and Transient Haptic Parameters in Real Time",
+        "url": "https://developer.apple.com/documentation/CoreHaptics/updating-continuous-and-transient-haptic-parameters-in-real-time"
       },
       {
         "title": "Playing a Custom Haptic Pattern from a File",
@@ -38,20 +30,12 @@
         "url": "https://developer.apple.com/documentation/CoreHaptics/playing-collision-based-haptic-patterns"
       },
       {
-        "title": "Updating Continuous and Transient Haptic Parameters in Real Time",
-        "url": "https://developer.apple.com/documentation/CoreHaptics/updating-continuous-and-transient-haptic-parameters-in-real-time"
+        "title": "Core Haptics",
+        "url": "https://developer.apple.com/documentation/CoreHaptics"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Playing haptics",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/520gfafwrte8ytre/520/520_hd_introducing_core_haptics.mp4?dl=1",
@@ -77,5 +61,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/223"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:47.741Z"
+  "extractedAt": "2026-10-11T16:47:48.481Z"
 }

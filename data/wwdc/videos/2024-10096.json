@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Forum: Design",
+        "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
       },
       {
         "title": "Designing for visionOS",
         "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-visionos"
       },
       {
-        "title": "Forum: Design",
-        "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
-      },
-      {
         "title": "Incorporating real-world surroundings in an immersive experience",
         "url": "https://developer.apple.com/documentation/visionOS/incorporating-real-world-surroundings-in-an-immersive-experience"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10096/4/493AE4D4-4D20-4746-BDD1-EC9EFC0DE948/downloads/wwdc2024-10096_hd.mp4?dl=1",
@@ -86,5 +71,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10072"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:46.415Z"
+  "extractedAt": "2026-10-11T16:35:33.807Z"
 }

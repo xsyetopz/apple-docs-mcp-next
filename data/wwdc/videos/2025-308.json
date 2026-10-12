@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -80,8 +81,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Performance and metrics",
+        "url": "https://developer.apple.com/documentation/Xcode/performance-and-metrics"
       },
       {
         "title": "Analyzing CPU usage with the Processor Trace instrument",
@@ -92,24 +93,8 @@
         "url": "https://developer.apple.com/documentation/Apple-Silicon/cpu-optimization-guide"
       },
       {
-        "title": "Performance and metrics",
-        "url": "https://developer.apple.com/documentation/Xcode/performance-and-metrics"
-      },
-      {
         "title": "Tuning your code’s performance for Apple silicon",
         "url": "https://developer.apple.com/documentation/Apple-Silicon/tuning-your-code-s-performance-for-apple-silicon"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/308/4/5c144645-dea8-4f16-97ac-a6dd76cf72d8/downloads/wwdc2025-308_hd.mp4?dl=1",
@@ -153,5 +138,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110350"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:37.452Z"
+  "extractedAt": "2026-10-11T16:33:48.632Z"
 }

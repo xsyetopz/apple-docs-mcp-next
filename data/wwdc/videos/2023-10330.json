@@ -1,0 +1,25 @@
+{
+  "id": "10330",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10330/",
+  "title": "Meet the presenter: What’s new in Core Data",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "System Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10186",
+      "year": "2023",
+      "title": "What’s new in Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10186"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:18.309Z"
+}

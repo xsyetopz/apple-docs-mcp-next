@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Vision",
-        "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
         "title": "VisionKit",
         "url": "https://developer.apple.com/documentation/VisionKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Vision",
+        "url": "https://developer.apple.com/documentation/Vision"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10176/4/85EF7B31-0252-4567-AEBB-723298444C56/downloads/wwdc2023-10176_hd.mp4?dl=1",
@@ -52,11 +37,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/111241"
     },
     {
+      "id": "111246",
+      "year": "2023",
+      "title": "Q&A: Image understanding and the Vision framework",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111246"
+    },
+    {
+      "id": "111259",
+      "year": "2023",
+      "title": "Q&A: Subject lifting",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111259"
+    },
+    {
       "id": "10048",
       "year": "2023",
       "title": "What’s new in VisionKit",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10048"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:39.303Z"
+  "extractedAt": "2026-10-11T16:36:06.954Z"
 }

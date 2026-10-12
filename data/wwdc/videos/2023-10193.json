@@ -17,8 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Human Interface Guidelines: App Shortcuts",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/app-shortcuts"
       },
       {
         "title": "App Shortcuts",
@@ -27,22 +27,6 @@
       {
         "title": "Apple Design Resources",
         "url": "https://developer.apple.com/design/resources/"
-      },
-      {
-        "title": "Human Interface Guidelines: App Shortcuts",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/app-shortcuts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10193/4/A4E5EF33-9EA3-4609-AB6E-A3E7DF0923FA/downloads/wwdc2023-10193_hd.mp4?dl=1",
@@ -60,6 +44,12 @@
       "year": "2023",
       "title": "Explore enhancements to App Intents",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10103"
+    },
+    {
+      "id": "111335",
+      "year": "2023",
+      "title": "Q&A: App Intents and Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111335"
     },
     {
       "id": "10102",
@@ -86,5 +76,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/806"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:29.925Z"
+  "extractedAt": "2026-10-11T16:38:00.186Z"
 }

@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Services",
-    "Business & Education"
+    "Business & Education",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -56,28 +57,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Implementing object tracking in your app",
+        "url": "https://developer.apple.com/documentation/visionOS/implementing-object-tracking-in-your-app"
       },
       {
         "title": "Building spatial experiences for business apps with enterprise APIs for visionOS",
         "url": "https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis"
-      },
-      {
-        "title": "Implementing object tracking in your visionOS app",
-        "url": "https://developer.apple.com/documentation/visionOS/implementing-object-tracking-in-your-visionOS-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/223/4/5af51454-839b-4a10-9b09-2f7018e9e3af/downloads/wwdc2025-223_hd.mp4?dl=1",
@@ -109,5 +94,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10139"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:31.457Z"
+  "extractedAt": "2026-10-11T16:33:35.944Z"
 }

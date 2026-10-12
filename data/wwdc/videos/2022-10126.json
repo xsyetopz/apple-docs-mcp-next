@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,36 +50,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ARKit",
-        "url": "https://developer.apple.com/documentation/ARKit"
+        "title": "Human Interface Guidelines: Augmented reality",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/augmented-reality"
       },
       {
         "title": "Explore the ARKit Developer Forums",
         "url": "https://developer.apple.com/forums/tags/arkit"
       },
       {
-        "title": "Human Interface Guidelines: Augmented reality",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/augmented-reality"
-      },
-      {
         "title": "Tracking geographic locations in AR",
         "url": "https://developer.apple.com/documentation/ARKit/tracking-geographic-locations-in-ar"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "ARKit",
+        "url": "https://developer.apple.com/documentation/ARKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10126/4/042EC236-E96E-4969-A68A-1D379C84D647/downloads/wwdc2022-10126_hd.mp4?dl=1",
@@ -110,5 +95,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10073"
     }
   ],
-  "extractedAt": "2025-07-18T10:23:50.713Z"
+  "extractedAt": "2026-10-11T16:41:11.914Z"
 }

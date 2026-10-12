@@ -1,0 +1,31 @@
+{
+  "id": "110926",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110926/",
+  "title": "Q&A: Performance, power, and stability",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10083",
+      "year": "2022",
+      "title": "Power down: Improve battery consumption",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10083"
+    },
+    {
+      "id": "10082",
+      "year": "2022",
+      "title": "Track down hangs with Xcode and on-device detection",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10082"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:29.969Z"
+}

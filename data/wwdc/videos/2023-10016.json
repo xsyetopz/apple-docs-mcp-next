@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,16 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Customizing workouts with WorkoutKit",
         "url": "https://developer.apple.com/documentation/WorkoutKit/customizing-workouts-with-workoutkit"
-      },
-      {
-        "title": "HealthKit",
-        "url": "https://developer.apple.com/documentation/HealthKit"
       },
       {
         "title": "watchOS updates",
@@ -37,16 +30,8 @@
         "url": "https://developer.apple.com/documentation/WorkoutKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "HealthKit",
+        "url": "https://developer.apple.com/documentation/HealthKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10016/5/CD68A862-7DFB-45FF-B1A6-B18140FDED96/downloads/wwdc2023-10016_hd.mp4?dl=1",
@@ -60,11 +45,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10023"
     },
     {
+      "id": "10318",
+      "year": "2023",
+      "title": "Q&A: Health and fitness",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10318"
+    },
+    {
+      "id": "10325",
+      "year": "2023",
+      "title": "Q&A: Health and fitness",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10325"
+    },
+    {
       "id": "10179",
       "year": "2023",
       "title": "What’s new in Core Motion",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10179"
     }
   ],
-  "extractedAt": "2025-07-18T10:22:09.810Z"
+  "extractedAt": "2026-10-11T16:35:58.034Z"
 }

@@ -37,24 +37,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Bringing your SceneKit projects to RealityKit",
         "url": "https://developer.apple.com/documentation/RealityKit/bringing-your-scenekit-projects-to-realitykit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/288/5/810e7d3c-54d7-43e5-82ba-d0f45b804193/downloads/wwdc2025-288_hd.mp4?dl=1",
@@ -86,5 +70,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10083"
     }
   ],
-  "extractedAt": "2025-07-18T10:28:53.969Z"
+  "extractedAt": "2026-10-11T16:33:22.690Z"
 }

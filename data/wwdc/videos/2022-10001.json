@@ -18,28 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Explore the Human Interface Guidelines",
         "url": "https://developer.apple.com/design/human-interface-guidelines/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10001/4/8F64C0B4-8E12-4C78-A0CB-8B7239AA5D4B/downloads/wwdc2022-10001_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10001/4/8F64C0B4-8E12-4C78-A0CB-8B7239AA5D4B/downloads/wwdc2022-10001_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:36:55.672Z"
+  "relatedVideos": [
+    {
+      "id": "110484",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore design navigation on iOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110484"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:15.369Z"
 }

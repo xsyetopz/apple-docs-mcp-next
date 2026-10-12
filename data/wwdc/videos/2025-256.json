@@ -7,7 +7,9 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Essentials"
+    "Essentials",
+    "Spatial Computing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -134,44 +136,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adopting Liquid Glass",
-        "url": "https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass"
-      },
-      {
         "title": "Applying Liquid Glass to custom views",
         "url": "https://developer.apple.com/documentation/SwiftUI/Applying-Liquid-Glass-to-custom-views"
-      },
-      {
-        "title": "dragContainer(for:in:selection:_:)",
-        "url": "https://developer.apple.com/documentation/SwiftUI/View/dragContainer(for:in:selection:_:)"
-      },
-      {
-        "title": "draggable(containerItemID:)",
-        "url": "https://developer.apple.com/documentation/SwiftUI/View/draggable(containerItemID:)"
-      },
-      {
-        "title": "Human Interface Guidelines",
-        "url": "https://developer.apple.com/design/human-interface-guidelines"
       },
       {
         "title": "Populating SwiftUI menus with adaptive controls",
         "url": "https://developer.apple.com/documentation/SwiftUI/Populating-SwiftUI-menus-with-adaptive-controls"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Adopting Liquid Glass",
+        "url": "https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines",
+        "url": "https://developer.apple.com/design/human-interface-guidelines"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/256/4/353ed635-9639-48db-8c8c-69b2b7e499c1/downloads/wwdc2025-256_hd.mp4?dl=1",
@@ -275,5 +253,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/278"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:40.274Z"
+  "extractedAt": "2026-10-11T16:34:28.633Z"
 }

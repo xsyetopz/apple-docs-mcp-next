@@ -1,0 +1,61 @@
+{
+  "id": "111248",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111248/",
+  "title": "Q&A: Machine learning open forum",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10101",
+      "year": "2023",
+      "title": "Customize on-device speech recognition",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10101"
+    },
+    {
+      "id": "10045",
+      "year": "2023",
+      "title": "Detect animal poses in Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10045"
+    },
+    {
+      "id": "10044",
+      "year": "2023",
+      "title": "Discover machine learning enhancements in Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10044"
+    },
+    {
+      "id": "111241",
+      "year": "2023",
+      "title": "Explore 3D body pose and person segmentation in Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111241"
+    },
+    {
+      "id": "10042",
+      "year": "2023",
+      "title": "Explore Natural Language multilingual models",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10042"
+    },
+    {
+      "id": "10049",
+      "year": "2023",
+      "title": "Improve Core ML integration with async prediction",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10049"
+    },
+    {
+      "id": "10047",
+      "year": "2023",
+      "title": "Use Core ML Tools for machine learning model compression",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10047"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:00.990Z"
+}

@@ -61,28 +61,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Programming Languages",
-        "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
-      },
-      {
         "title": "Swift Forums Embedded Discussion",
         "url": "https://forums.swift.org/c/development/embedded/107"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: Programming Languages",
+        "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10197/4/61F8D9DD-2B91-4545-AA09-253E16642E98/downloads/wwdc2024-10197_hd.mp4?dl=1",
@@ -96,5 +80,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10298"
     }
   ],
-  "extractedAt": "2025-07-18T10:47:24.012Z"
+  "extractedAt": "2026-10-11T16:34:56.666Z"
 }

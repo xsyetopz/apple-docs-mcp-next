@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Protecting the User’s Privacy",
         "url": "https://developer.apple.com/documentation/UIKit/protecting-the-user-s-privacy"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10167/5/043ACD7F-3BC9-4AA1-A5BC-7DCCF91098EA/downloads/wwdc2022-10167_hd.mp4?dl=1",
@@ -61,5 +45,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10096"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:47.725Z"
+  "extractedAt": "2026-10-11T16:40:14.708Z"
 }

@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
+        "title": "Training a Neural Network with Metal Performance Shaders",
+        "url": "https://developer.apple.com/documentation/MetalPerformanceShaders/training-a-neural-network-with-metal-performance-shaders"
       },
       {
         "title": "Metal Performance Shaders",
         "url": "https://developer.apple.com/documentation/MetalPerformanceShaders"
       },
       {
-        "title": "Training a Neural Network with Metal Performance Shaders",
-        "url": "https://developer.apple.com/documentation/MetalPerformanceShaders/training-a-neural-network-with-metal-performance-shaders"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/614o3sph3xudzgm6/614/614_hd_metal_for_machine_learning.mp4?dl=1",
@@ -93,5 +77,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/209"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:04.725Z"
+  "extractedAt": "2026-10-11T16:48:12.847Z"
 }

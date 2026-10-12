@@ -8,7 +8,8 @@
   "topics": [
     "Business & Education",
     "Developer Tools",
-    "Essentials"
+    "Essentials",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -127,24 +128,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110349/4/767821EC-6C4C-4F9E-8C8D-1B231B8E1226/downloads/wwdc2022-110349_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110349/4/767821EC-6C4C-4F9E-8C8D-1B231B8E1226/downloads/wwdc2022-110349_sd.mp4?dl=1"
   },
@@ -156,11 +140,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110348"
     },
     {
+      "id": "110490",
+      "year": "2022",
+      "title": "Q&A: Swift Playgrounds",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110490"
+    },
+    {
       "id": "110930",
       "year": "2022",
       "title": "WWDC22 Day 2 recap",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110930"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:04.524Z"
+  "extractedAt": "2026-10-11T16:40:14.404Z"
 }

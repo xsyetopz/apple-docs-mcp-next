@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -107,24 +108,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10190/5/C1305D2C-3534-4C07-A3D7-3A70DA9FCAE2/downloads/wwdc2021-10190_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10190/5/C1305D2C-3534-4C07-A3D7-3A70DA9FCAE2/downloads/wwdc2021-10190_sd.mp4?dl=1"
   },
@@ -148,5 +132,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/702"
     }
   ],
-  "extractedAt": "2025-07-18T09:24:05.124Z"
+  "extractedAt": "2026-10-11T16:42:50.715Z"
 }

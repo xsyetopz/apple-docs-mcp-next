@@ -73,24 +73,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Media Player",
         "url": "https://developer.apple.com/documentation/MediaPlayer"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110338/3/BCB38F17-7908-4BD8-8A7A-767EC8C59367/downloads/wwdc2022-110338_hd.mp4?dl=1",
@@ -104,5 +88,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10147"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:11.946Z"
+  "extractedAt": "2026-10-11T16:42:05.729Z"
 }

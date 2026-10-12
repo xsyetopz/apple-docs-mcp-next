@@ -1,0 +1,26 @@
+{
+  "id": "10337",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10337/",
+  "title": "Meet the presenters: Design with SwiftUI",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Design",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10115",
+      "year": "2023",
+      "title": "Design with SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10115"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:55.876Z"
+}

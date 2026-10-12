@@ -7,7 +7,9 @@
   "duration": "",
   "topics": [
     "App Services",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Safari & Web",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -62,28 +64,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding an Apple Pay Button or a Custom Action in AR Quick Look",
         "url": "https://developer.apple.com/documentation/ARKit/adding-an-apple-pay-button-or-a-custom-action-in-ar-quick-look"
       },
       {
         "title": "ARKit",
         "url": "https://developer.apple.com/documentation/ARKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10604/7/5565A027-6950-4B1D-804F-2A555245FBA3/wwdc2020_10604_hd.mp4?dl=1",
@@ -121,5 +107,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/612"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:41.500Z"
+  "extractedAt": "2026-10-11T16:45:53.802Z"
 }

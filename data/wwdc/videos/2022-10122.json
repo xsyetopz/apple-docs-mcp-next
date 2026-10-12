@@ -81,28 +81,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Token revocation",
+        "url": "https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Revoke-tokens"
       },
       {
         "title": "Implementing User Authentication with Sign in with Apple",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple"
-      },
-      {
-        "title": "Revoke tokens",
-        "url": "https://developer.apple.com/documentation/signinwithapplerestapi/revoke_tokens"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10122/5/F35FC4AA-E76F-444D-85D0-77A76E7D3E15/downloads/wwdc2022-10122_hd.mp4?dl=1",
@@ -122,6 +106,24 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10092"
     },
     {
+      "id": "110840",
+      "year": "2022",
+      "title": "Meet the Presenter: Enhance your Sign in with Apple experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110840"
+    },
+    {
+      "id": "110841",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110841"
+    },
+    {
+      "id": "110842",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110842"
+    },
+    {
       "id": "10173",
       "year": "2020",
       "title": "Get the most out of Sign in with Apple",
@@ -134,5 +136,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10666"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:00.426Z"
+  "extractedAt": "2026-10-11T16:41:13.940Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -79,28 +80,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adopting SwiftData for a Core Data app",
-        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
-      },
-      {
         "title": "SwiftData",
         "url": "https://developer.apple.com/documentation/SwiftData"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adopting SwiftData for a Core Data app",
+        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10187/5/1D820D6D-4F01-48EB-8F22-901F4A4B69FE/downloads/wwdc2023-10187_hd.mp4?dl=1",
@@ -138,6 +123,18 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10195"
     },
     {
+      "id": "10331",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10331"
+    },
+    {
+      "id": "111543",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111543"
+    },
+    {
       "id": "10164",
       "year": "2023",
       "title": "What’s new in Swift",
@@ -150,5 +147,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10148"
     }
   ],
-  "extractedAt": "2025-07-18T10:21:59.924Z"
+  "extractedAt": "2026-10-11T16:36:09.813Z"
 }

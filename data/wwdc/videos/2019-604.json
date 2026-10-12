@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ARKit",
-        "url": "https://developer.apple.com/documentation/ARKit"
+        "title": "RealityKit",
+        "url": "https://developer.apple.com/documentation/RealityKit"
       },
       {
         "title": "Occluding virtual content with people",
         "url": "https://developer.apple.com/documentation/ARKit/occluding-virtual-content-with-people"
       },
       {
-        "title": "RealityKit",
-        "url": "https://developer.apple.com/documentation/RealityKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "ARKit",
+        "url": "https://developer.apple.com/documentation/ARKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/604o2yt9ky18mbyd/604/604_hd_introducing_arkit_3.mp4?dl=1",
@@ -105,5 +89,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/602"
     }
   ],
-  "extractedAt": "2025-07-18T10:36:47.399Z"
+  "extractedAt": "2026-10-11T16:46:58.201Z"
 }

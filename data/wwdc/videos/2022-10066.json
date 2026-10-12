@@ -25,24 +25,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10066/5/E8711A5F-B118-4630-BC5C-BEDA558FE370/downloads/wwdc2022-10066_hd.mp4?dl=1",
@@ -68,6 +52,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10101"
     },
     {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
       "id": "10104",
       "year": "2022",
       "title": "Load resources faster with Metal 3",
@@ -80,10 +70,28 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10105"
     },
     {
+      "id": "110657",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Metal 3",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110657"
+    },
+    {
       "id": "10160",
       "year": "2022",
       "title": "Program Metal in C++ with metal-cpp",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10160"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
     },
     {
       "id": "10159",
@@ -110,5 +118,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110929"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:02.357Z"
+  "extractedAt": "2026-10-11T16:39:22.793Z"
 }

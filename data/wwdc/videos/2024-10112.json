@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Design",
         "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10112/5/AD039C5C-EB45-47FB-887E-3DCDABC70719/downloads/wwdc2024-10112_hd.mp4?dl=1",
@@ -48,5 +33,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10111"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:33.327Z"
+  "extractedAt": "2026-10-11T16:34:46.351Z"
 }

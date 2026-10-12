@@ -31,32 +31,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Drawing content in a group session",
+        "url": "https://developer.apple.com/documentation/GroupActivities/drawing-content-in-a-group-session"
       },
       {
-        "title": "Drawing content in a group session",
-        "url": "https://developer.apple.com/documentation/groupactivities/drawing_content_in_a_group_session"
+        "title": "Supporting coordinated media playback",
+        "url": "https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback"
       },
       {
         "title": "Group Activities",
         "url": "https://developer.apple.com/documentation/GroupActivities"
-      },
-      {
-        "title": "Supporting Coordinated Media Playback",
-        "url": "https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10187/3/53AD885C-179C-4013-A2D3-D985CE932C87/downloads/wwdc2021-10187_hd.mp4?dl=1",
@@ -88,5 +72,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10183"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:47.491Z"
+  "extractedAt": "2026-10-11T16:43:39.664Z"
 }

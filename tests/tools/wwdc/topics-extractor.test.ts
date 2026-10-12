@@ -1,20 +1,23 @@
+import { beforeEach, describe, expect, mock, test } from "bun:test";
+import type { Mocked } from "../../helpers/test-helpers.ts";
+import { httpClientModule } from "../../mocks/http-client.mock.ts";
 /**
  * Tests for WWDC topics extractor
  */
 
-import { extractAllTopics as extractWWDCTopics } from '../../../src/tools/wwdc/topics-extractor';
-import { httpClient } from '../../../src/utils/http-client';
+import { extractAllTopics as extractWWDCTopics } from "../../../src/tools/wwdc/topics-extractor.ts";
+import { httpClient } from "../../../src/utils/http-client.ts";
 
 // Mock http client
-jest.mock('../../../src/utils/http-client');
-const mockHttpClient = httpClient as jest.Mocked<typeof httpClient>;
+mock.module("../../../src/utils/http-client.ts", httpClientModule);
+const mockHttpClient = httpClient as Mocked<typeof httpClient>;
 
-describe('WWDC Topics Extractor', () => {
+describe("WWDC Topics Extractor", () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    mock.clearAllMocks();
   });
 
-  test('should extract all topics', async () => {
+  test("should extract all topics", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -44,32 +47,32 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
     expect(result).toHaveLength(3);
     // Results are sorted alphabetically
     expect(result[0]).toMatchObject({
-      id: 'app-store-distribution',
-      name: 'App Store & Distribution',
-      url: 'https://developer.apple.com/videos/topics/app-store-distribution',
+      id: "app-store-distribution",
+      name: "App Store & Distribution",
+      url: "https://developer.apple.com/videos/topics/app-store-distribution",
       videoCount: 15,
     });
     expect(result[1]).toMatchObject({
-      id: 'machine-learning-ai',
-      name: 'Machine Learning & AI',
+      id: "machine-learning-ai",
+      name: "Machine Learning & AI",
       videoCount: 30,
     });
     expect(result[2]).toMatchObject({
-      id: 'swiftui-ui-frameworks',
-      name: 'SwiftUI & UI Frameworks',
+      id: "swiftui-ui-frameworks",
+      name: "SwiftUI & UI Frameworks",
       videoCount: 50,
     });
   });
 
-  test('should handle topics without video count', async () => {
+  test("should handle topics without video count", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -86,19 +89,19 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
     expect(result[0]).toMatchObject({
-      id: 'new-topic',
-      name: 'New Topic',
+      id: "new-topic",
+      name: "New Topic",
       videoCount: 0,
     });
   });
 
-  test('should extract topic ID from URL correctly', async () => {
+  test("should extract topic ID from URL correctly", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -120,15 +123,18 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
-    expect(result.map(t => t.id)).toEqual(['swift-language', 'testing-debugging']);
+    expect(result.map((t) => t.id)).toEqual([
+      "swift-language",
+      "testing-debugging",
+    ]);
   });
 
-  test('should handle empty topics list', async () => {
+  test("should handle empty topics list", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -141,15 +147,15 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
     expect(result).toEqual([]);
   });
 
-  test('should handle malformed video count', async () => {
+  test("should handle malformed video count", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -167,21 +173,23 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
-    expect(result[0].videoCount).toBe(0);
+    expect(result[0]?.videoCount).toBe(0);
   });
 
-  test('should handle HTTP errors', async () => {
-    mockHttpClient.get.mockRejectedValue(new Error('404 Not Found'));
+  test("should handle HTTP errors", async () => {
+    mockHttpClient.get.mockRejectedValue(new Error("404 Not Found"));
 
-    await expect(extractWWDCTopics()).rejects.toThrow('Failed to extract topics');
+    await expect(extractWWDCTopics()).rejects.toThrow(
+      "Failed to extract topics",
+    );
   });
 
-  test('should sort topics alphabetically', async () => {
+  test("should sort topics alphabetically", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -208,15 +216,19 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
-    expect(result.map(t => t.name)).toEqual(['A Topic', 'M Topic', 'Z Topic']);
+    expect(result.map((t) => t.name)).toEqual([
+      "A Topic",
+      "M Topic",
+      "Z Topic",
+    ]);
   });
 
-  test('should handle special characters in topic names', async () => {
+  test("should handle special characters in topic names", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -238,17 +250,17 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
     // Results are sorted alphabetically
-    expect(result[0].name).toBe('AR/VR Technologies');
-    expect(result[1].name).toBe('Privacy & Security');
+    expect(result[0]?.name).toBe("AR/VR Technologies");
+    expect(result[1]?.name).toBe("Privacy & Security");
   });
 
-  test('should skip invalid topic entries', async () => {
+  test("should skip invalid topic entries", async () => {
     const mockHtml = `
       <!DOCTYPE html>
       <html>
@@ -277,12 +289,12 @@ describe('WWDC Topics Extractor', () => {
     `;
 
     mockHttpClient.get.mockResolvedValue({
-      text: jest.fn().mockResolvedValue(mockHtml),
-    } as any);
+      text: mock().mockResolvedValue(mockHtml),
+    } as unknown as Response);
 
     const result = await extractWWDCTopics();
 
     expect(result).toHaveLength(1);
-    expect(result[0].id).toBe('valid-topic');
+    expect(result[0]?.id).toBe("valid-topic");
   });
 });

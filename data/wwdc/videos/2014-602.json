@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Design",
-    "Developer Tools"
+    "Developer Tools",
+    "Graphics & Games"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -16,26 +17,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2014/602xx0qpmdkc2ki/602/602_hd_ingredients_of_great_games.mov?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2014/602xx0qpmdkc2ki/602/602_sd_ingredients_of_great_games.mov?dl=1"
   },
-  "extractedAt": "2025-07-18T09:39:13.042Z"
+  "extractedAt": "2026-10-11T16:49:19.542Z"
 }

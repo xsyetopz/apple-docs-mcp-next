@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Generating content and performing tasks with Foundation Models",
+        "url": "https://developer.apple.com/documentation/FoundationModels/generating-content-and-performing-tasks-with-foundation-models"
       },
       {
         "title": "Adding intelligent app features with generative models",
         "url": "https://developer.apple.com/documentation/FoundationModels/adding-intelligent-app-features-with-generative-models"
       },
       {
-        "title": "Generating content and performing tasks with Foundation Models",
-        "url": "https://developer.apple.com/documentation/FoundationModels/generating-content-and-performing-tasks-with-foundation-models"
-      },
-      {
         "title": "Human Interface Guidelines: Generative AI",
         "url": "https://developer.apple.com/design/human-interface-guidelines/generative-ai"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/259/5/907f1051-5d00-46a2-bc67-53764270104f/downloads/wwdc2025-259_hd.mp4?dl=1",
@@ -74,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/286"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:54.459Z"
+  "extractedAt": "2026-10-11T16:33:24.656Z"
 }

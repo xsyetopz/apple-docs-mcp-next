@@ -18,16 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Testing failing subscription renewals and In-App Purchases",
+        "url": "https://developer.apple.com/documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases"
+      },
+      {
+        "title": "Message",
+        "url": "https://developer.apple.com/documentation/StoreKit/Message"
       },
       {
         "title": "App Store Server Notifications",
         "url": "https://developer.apple.com/documentation/appstoreservernotifications"
       },
       {
-        "title": "Message",
-        "url": "https://developer.apple.com/documentation/StoreKit/Message"
+        "title": "Testing In-App Purchases with sandbox",
+        "url": "https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox"
       },
       {
         "title": "Setting up StoreKit Testing in Xcode",
@@ -36,26 +40,6 @@
       {
         "title": "Testing at all stages of development with Xcode and the sandbox",
         "url": "https://developer.apple.com/documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox"
-      },
-      {
-        "title": "Testing failing subscription renewals and In-App Purchases",
-        "url": "https://developer.apple.com/documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases"
-      },
-      {
-        "title": "Testing In-App Purchases with sandbox",
-        "url": "https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10142/4/D77D9908-4DAF-4E7C-92F7-0FC31264D914/downloads/wwdc2023-10142_hd.mp4?dl=1",
@@ -67,6 +51,18 @@
       "year": "2023",
       "title": "Meet the App Store Server Library",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10143"
+    },
+    {
+      "id": "10323",
+      "year": "2023",
+      "title": "Q&A: StoreKit and in-app purchase",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10323"
+    },
+    {
+      "id": "111454",
+      "year": "2023",
+      "title": "Q&A: StoreKit and in-app purchase",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111454"
     },
     {
       "id": "10117",
@@ -93,5 +89,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10007"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:58.953Z"
+  "extractedAt": "2026-10-11T16:38:51.083Z"
 }

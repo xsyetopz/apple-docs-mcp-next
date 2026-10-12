@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -259,12 +260,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Running tests and interpreting results",
+        "url": "https://developer.apple.com/documentation/Xcode/running-tests-and-interpreting-results"
       },
       {
         "title": "Adding tests to your Xcode project",
         "url": "https://developer.apple.com/documentation/Xcode/adding-tests-to-your-xcode-project"
+      },
+      {
+        "title": "Swift Testing",
+        "url": "https://developer.apple.com/documentation/Testing"
       },
       {
         "title": "Forum: Developer Tools & Services",
@@ -273,26 +278,6 @@
       {
         "title": "Improving code assessment by organizing tests into test plans",
         "url": "https://developer.apple.com/documentation/Xcode/organizing-tests-to-improve-feedback"
-      },
-      {
-        "title": "Running tests and interpreting results",
-        "url": "https://developer.apple.com/documentation/Xcode/running-tests-and-interpreting-results"
-      },
-      {
-        "title": "Swift Testing",
-        "url": "https://developer.apple.com/documentation/Testing"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10195/4/7FBA1EC9-FB05-46DA-852F-C090FB5A53E6/downloads/wwdc2024-10195_hd.mp4?dl=1",
@@ -312,5 +297,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10132"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:27.561Z"
+  "extractedAt": "2026-10-11T16:34:56.373Z"
 }

@@ -19,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Achieving smooth frame rates with a Metal display link",
         "url": "https://developer.apple.com/documentation/Metal/achieving-smooth-frame-rates-with-a-metal-display-link"
       },
       {
         "title": "Game Controller",
         "url": "https://developer.apple.com/documentation/GameController"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10123/4/204C6242-388E-4884-864A-CCCBF869D651/downloads/wwdc2023-10123_hd.mp4?dl=1",
@@ -58,6 +42,18 @@
       "year": "2023",
       "title": "Bring your game to Mac, Part 3: Render with Metal",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10125"
+    },
+    {
+      "id": "111285",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111285"
+    },
+    {
+      "id": "111286",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111286"
     },
     {
       "id": "10113",
@@ -96,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10614"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:45.028Z"
+  "extractedAt": "2026-10-11T16:35:56.988Z"
 }

@@ -1,0 +1,44 @@
+{
+  "id": "110419",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110419/",
+  "title": "Q&A: Accessibility in UIKit and AppKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10075",
+      "year": "2022",
+      "title": "Use SwiftUI with AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10075"
+    },
+    {
+      "id": "10072",
+      "year": "2022",
+      "title": "Use SwiftUI with UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10072"
+    },
+    {
+      "id": "10074",
+      "year": "2022",
+      "title": "What's new in AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10074"
+    },
+    {
+      "id": "10068",
+      "year": "2022",
+      "title": "What's new in UIKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10068"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:26.076Z"
+}

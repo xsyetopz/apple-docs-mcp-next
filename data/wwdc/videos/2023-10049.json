@@ -17,30 +17,44 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Core ML",
         "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10049/4/2E4BF7CE-8624-47ED-90A6-AFF972EEF0D8/downloads/wwdc2023-10049_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10049/4/2E4BF7CE-8624-47ED-90A6-AFF972EEF0D8/downloads/wwdc2023-10049_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "111245",
+      "year": "2023",
+      "title": "Q&A: Core ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111245"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251"
+    },
     {
       "id": "10017",
       "year": "2022",
@@ -60,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10038"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:03.915Z"
+  "extractedAt": "2026-10-11T16:38:03.023Z"
 }

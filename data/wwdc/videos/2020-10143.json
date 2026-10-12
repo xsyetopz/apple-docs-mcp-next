@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Store, Distribution & Marketing",
-    "Developer Tools"
+    "Developer Tools",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -16,24 +17,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10143/4/EBC484F8-F255-4FC2-8604-1EA888EF5523/wwdc2020_10143_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10143/4/EBC484F8-F255-4FC2-8604-1EA888EF5523/wwdc2020_10143_sd.mp4?dl=1"
   },
@@ -87,5 +71,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/235"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:03.083Z"
+  "extractedAt": "2026-10-11T16:44:57.281Z"
 }

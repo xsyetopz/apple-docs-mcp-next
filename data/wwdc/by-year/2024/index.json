@@ -42,7 +42,8 @@
       "title": "A Swift Tour: Explore Swift’s features and design",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -55,7 +56,8 @@
       "year": "2024",
       "title": "Accelerate machine learning with Metal",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -81,7 +83,8 @@
       "year": "2024",
       "title": "Analyze heap memory",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -95,7 +98,8 @@
       "title": "Break into the RealityKit debugger",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -134,7 +138,8 @@
       "year": "2024",
       "title": "Bring your app to Siri",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -147,7 +152,8 @@
       "year": "2024",
       "title": "Bring your app’s core features to users with App Intents",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -160,7 +166,8 @@
       "year": "2024",
       "title": "Bring your iOS or iPadOS game to visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -227,7 +234,8 @@
       "title": "Build a spatial drawing app with RealityKit",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -254,7 +262,8 @@
       "year": "2024",
       "title": "Build custom swimming workouts with WorkoutKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -267,7 +276,9 @@
       "year": "2024",
       "title": "Build immersive web experiences with WebXR",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -280,7 +291,8 @@
       "year": "2024",
       "title": "Build multilingual-ready apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -307,7 +319,8 @@
       "year": "2024",
       "title": "Catch up on accessibility in SwiftUI",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -320,7 +333,8 @@
       "year": "2024",
       "title": "Compose interactive 3D content in Reality Composer Pro",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -346,7 +360,8 @@
       "year": "2024",
       "title": "Create a custom data store with SwiftData",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -359,7 +374,8 @@
       "year": "2024",
       "title": "Create custom environments for your immersive apps in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -372,7 +388,9 @@
       "year": "2024",
       "title": "Create custom hover effects in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -386,7 +404,8 @@
       "title": "Create custom visual effects with SwiftUI",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -426,7 +445,8 @@
       "title": "Customize spatial Persona templates in SharePlay",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -492,7 +512,8 @@
       "year": "2024",
       "title": "Design App Intents for system experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -506,7 +527,8 @@
       "title": "Design great visionOS apps",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -519,7 +541,8 @@
       "year": "2024",
       "title": "Design interactive experiences for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -547,7 +570,8 @@
       "title": "Discover area mode for Object Capture",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -574,7 +598,8 @@
       "title": "Discover RealityKit APIs for iOS, macOS, and visionOS",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -614,7 +639,8 @@
       "year": "2024",
       "title": "Elevate your tab and sidebar experience in iPadOS",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -640,7 +666,8 @@
       "year": "2024",
       "title": "Enhance the immersion of media viewing in custom environments",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -654,7 +681,8 @@
       "title": "Enhance your spatial computing app with RealityKit audio",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -667,7 +695,8 @@
       "year": "2024",
       "title": "Enhance your UI animations and transitions",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -680,7 +709,8 @@
       "year": "2024",
       "title": "Enhanced suggestions for your journaling app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -720,7 +750,8 @@
       "title": "Explore game input in visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -747,7 +778,8 @@
       "title": "Explore multiview video playback in visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -800,7 +832,8 @@
       "year": "2024",
       "title": "Explore wellbeing APIs in HealthKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -813,7 +846,8 @@
       "year": "2024",
       "title": "Extend your app’s controls across the system",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -840,7 +874,8 @@
       "year": "2024",
       "title": "Get started with Dynamic Type",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -881,7 +916,8 @@
       "year": "2024",
       "title": "Go further with Swift Testing",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -923,7 +959,10 @@
       "topics": [
         "App Services",
         "Audio & Video",
-        "Business & Education"
+        "Business & Education",
+        "Machine Learning & AI",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1018,7 +1057,8 @@
       "title": "Meet Swift Testing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1031,7 +1071,8 @@
       "year": "2024",
       "title": "Meet TabletopKit for visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1044,7 +1085,8 @@
       "year": "2024",
       "title": "Meet the Contact Access Button",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1070,7 +1112,8 @@
       "year": "2024",
       "title": "Meet the Translation API",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1083,7 +1126,8 @@
       "year": "2024",
       "title": "Migrate your app to Swift 6",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1096,7 +1140,8 @@
       "year": "2024",
       "title": "Migrate your TVML app to SwiftUI",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1123,7 +1168,8 @@
       "year": "2024",
       "title": "Optimize your 3D assets for spatial computing",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1189,7 +1235,8 @@
       "year": "2024",
       "title": "Render Metal with passthrough in visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1202,7 +1249,8 @@
       "year": "2024",
       "title": "Run, Break, Inspect: Explore effective debugging in LLDB",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1215,7 +1263,8 @@
       "year": "2024",
       "title": "Say hello to the next generation of CarPlay design system",
       "topics": [
-        "Design"
+        "Design",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1228,7 +1277,8 @@
       "year": "2024",
       "title": "Squeeze the most out of Apple Pencil",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1241,7 +1291,9 @@
       "year": "2024",
       "title": "Streamline sign-in with passkey upgrades and credential managers",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1267,7 +1319,9 @@
       "year": "2024",
       "title": "Support semantic search with Core Spotlight",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1280,7 +1334,8 @@
       "year": "2024",
       "title": "Swift Charts: Vectorized and function plots",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1293,7 +1348,8 @@
       "year": "2024",
       "title": "SwiftUI essentials",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1319,7 +1375,8 @@
       "year": "2024",
       "title": "Track model changes with SwiftData history",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1332,7 +1389,8 @@
       "year": "2024",
       "title": "Train your machine learning and AI models on Apple GPUs",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1345,7 +1403,9 @@
       "year": "2024",
       "title": "Unlock the power of places with MapKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1371,7 +1431,9 @@
       "year": "2024",
       "title": "Use HDR for dynamic image experiences in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1384,7 +1446,8 @@
       "year": "2024",
       "title": "What’s new in App Intents",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1410,7 +1473,8 @@
       "year": "2024",
       "title": "What’s new in AppKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1490,7 +1554,9 @@
       "year": "2024",
       "title": "What’s new in Quick Look for visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1503,7 +1569,8 @@
       "year": "2024",
       "title": "What’s new in SF Symbols 6",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1517,7 +1584,8 @@
       "title": "What’s new in StoreKit and In-App Purchase",
       "topics": [
         "App Services",
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1530,7 +1598,8 @@
       "year": "2024",
       "title": "What’s new in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1543,7 +1612,8 @@
       "year": "2024",
       "title": "What’s new in SwiftData",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1556,7 +1626,9 @@
       "year": "2024",
       "title": "What’s new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1569,7 +1641,8 @@
       "year": "2024",
       "title": "What’s new in UIKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1583,7 +1656,8 @@
       "title": "What’s new in USD and MaterialX",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1609,7 +1683,9 @@
       "year": "2024",
       "title": "What’s new in watchOS 11",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1623,7 +1699,9 @@
       "title": "What’s new in Xcode 16",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,

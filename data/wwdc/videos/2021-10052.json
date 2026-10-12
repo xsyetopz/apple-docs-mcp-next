@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -151,10 +152,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building and improving your app with Mac Catalyst",
         "url": "https://developer.apple.com/documentation/UIKit/building-and-improving-your-app-with-mac-catalyst"
       },
@@ -165,18 +162,6 @@
       {
         "title": "Mac Catalyst",
         "url": "https://developer.apple.com/documentation/UIKit/mac-catalyst"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10052/3/AEC7031C-E8E6-4F09-B845-F0DE96310C4D/downloads/wwdc2021-10052_hd.mp4?dl=1",
@@ -220,5 +205,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/205"
     }
   ],
-  "extractedAt": "2025-07-18T10:27:07.286Z"
+  "extractedAt": "2026-10-11T16:43:36.583Z"
 }

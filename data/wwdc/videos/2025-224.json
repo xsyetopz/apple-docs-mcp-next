@@ -25,28 +25,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accessibility",
-        "url": "https://developer.apple.com/documentation/swiftui/view-accessibility"
-      },
-      {
         "title": "Human Interface Guidelines: Accessibility",
         "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accessibility",
+        "url": "https://developer.apple.com/documentation/swiftui/view-accessibility"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/224/5/da32cbb0-5f05-4589-8055-fe7a473056e9/downloads/wwdc2025-224_hd.mp4?dl=1",
@@ -60,5 +44,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10074"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:28.853Z"
+  "extractedAt": "2026-10-11T16:33:35.190Z"
 }

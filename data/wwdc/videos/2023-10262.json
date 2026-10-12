@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,24 +50,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding a web development tool to Safari Web Inspector",
         "url": "https://developer.apple.com/documentation/SafariServices/adding-a-web-development-tool-to-safari-web-inspector"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10262/4/5A68BE0E-CC0F-4DF7-8982-F315B0ED6A2D/downloads/wwdc2023-10262_hd.mp4?dl=1",
@@ -84,6 +69,18 @@
       "year": "2023",
       "title": "Meet Safari for spatial computing",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10279"
+    },
+    {
+      "id": "10320",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10320"
+    },
+    {
+      "id": "10326",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10326"
     },
     {
       "id": "10121",
@@ -110,5 +107,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10031"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:37.244Z"
+  "extractedAt": "2026-10-11T16:37:12.697Z"
 }

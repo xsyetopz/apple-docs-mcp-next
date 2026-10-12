@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,36 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accelerating app interactions with App Intents",
         "url": "https://developer.apple.com/documentation/AppIntents/AcceleratingAppInteractionsWithAppIntents"
-      },
-      {
-        "title": "App Intents",
-        "url": "https://developer.apple.com/documentation/AppIntents"
       },
       {
         "title": "Forum: Machine Learning and AI",
         "url": "https://developer.apple.com/forums/topics/machine-learning-and-ai?cid=vf-a-0010"
       },
       {
-        "title": "Making actions and content discoverable and widely available",
-        "url": "https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Intents",
+        "url": "https://developer.apple.com/documentation/AppIntents"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10134/4/E85B53EC-BD7E-4A59-BCB5-4CECA88B76DE/downloads/wwdc2024-10134_hd.mp4?dl=1",
@@ -96,5 +77,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10098"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:20.329Z"
+  "extractedAt": "2026-10-11T16:35:00.426Z"
 }

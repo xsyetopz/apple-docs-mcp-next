@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -16,10 +17,6 @@
   },
   "resources": {
     "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
       {
         "title": "Adopting Liquid Glass",
         "url": "https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass"
@@ -31,18 +28,6 @@
       {
         "title": "Human Interface Guidelines: Materials",
         "url": "https://developer.apple.com/design/human-interface-guidelines/materials"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/219/4/476dabc8-f3bb-4190-8929-4ba7131c939d/downloads/wwdc2025-219_hd.mp4?dl=1",
@@ -68,5 +53,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/220"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:21.895Z"
+  "extractedAt": "2026-10-11T16:33:45.945Z"
 }

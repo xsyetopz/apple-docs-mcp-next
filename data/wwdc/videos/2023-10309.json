@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,36 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Apple Design Resources",
-        "url": "https://developer.apple.com/design/resources/"
-      },
-      {
-        "title": "Human Interface Guidelines: Widgets",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
+        "title": "WidgetKit",
+        "url": "https://developer.apple.com/documentation/WidgetKit"
       },
       {
         "title": "Keeping a widget up to date",
         "url": "https://developer.apple.com/documentation/WidgetKit/Keeping-a-Widget-Up-To-Date"
       },
       {
-        "title": "WidgetKit",
-        "url": "https://developer.apple.com/documentation/WidgetKit"
+        "title": "Human Interface Guidelines: Widgets",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Apple Design Resources",
+        "url": "https://developer.apple.com/design/resources/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10309/4/21D925C8-2EE0-4C96-9C68-96174159990A/downloads/wwdc2023-10309_hd.mp4?dl=1",
@@ -64,7 +49,13 @@
       "year": "2023",
       "title": "Meet watchOS 10",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10026"
+    },
+    {
+      "id": "111522",
+      "year": "2023",
+      "title": "Q&A: Widgets in the Smart Stack on watchOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111522"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:19.687Z"
+  "extractedAt": "2026-10-11T16:37:03.556Z"
 }

@@ -1,0 +1,25 @@
+{
+  "id": "110751",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110751/",
+  "title": "Q&A: App Store Connect",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Store, Distribution & Marketing"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10043",
+      "year": "2022",
+      "title": "What's new in App Store Connect",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10043"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:04.927Z"
+}

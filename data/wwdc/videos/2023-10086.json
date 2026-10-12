@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,24 +16,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10086/5/5ABD74BE-D973-47C9-9A9F-1F5AABE02C1A/downloads/wwdc2023-10086_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10086/5/5ABD74BE-D973-47C9-9A9F-1F5AABE02C1A/downloads/wwdc2023-10086_sd.mp4?dl=1"
   },
@@ -62,5 +46,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10083"
     }
   ],
-  "extractedAt": "2025-07-18T10:30:38.181Z"
+  "extractedAt": "2026-10-11T16:38:51.448Z"
 }

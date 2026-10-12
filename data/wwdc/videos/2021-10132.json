@@ -85,24 +85,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "The Swift Programming Language: Concurrency",
         "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10132/5/33A0E99C-1E53-4143-8A63-809D2E6CBA66/downloads/wwdc2021-10132_hd.mp4?dl=1",
@@ -158,22 +142,10 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10134"
     },
     {
-      "id": "10325",
-      "year": "2021",
-      "title": "Friday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10325"
-    },
-    {
       "id": "10058",
       "year": "2021",
       "title": "Meet AsyncSequence",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10058"
-    },
-    {
-      "id": "10321",
-      "year": "2021",
-      "title": "Monday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10321"
     },
     {
       "id": "10133",
@@ -224,5 +196,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10146"
     }
   ],
-  "extractedAt": "2025-07-18T10:48:27.897Z"
+  "extractedAt": "2026-10-11T16:42:33.953Z"
 }

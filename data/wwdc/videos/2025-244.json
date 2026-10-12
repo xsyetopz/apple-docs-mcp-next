@@ -145,56 +145,32 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accelerating app interactions with App Intents",
-        "url": "https://developer.apple.com/documentation/AppIntents/AcceleratingAppInteractionsWithAppIntents"
-      },
-      {
         "title": "Adopting App Intents to support system experiences",
         "url": "https://developer.apple.com/documentation/AppIntents/adopting-app-intents-to-support-system-experiences"
-      },
-      {
-        "title": "App intent domains",
-        "url": "https://developer.apple.com/documentation/AppIntents/app-intent-domains"
-      },
-      {
-        "title": "App Intents",
-        "url": "https://developer.apple.com/documentation/AppIntents"
-      },
-      {
-        "title": "App Shortcuts",
-        "url": "https://developer.apple.com/documentation/AppIntents/app-shortcuts"
       },
       {
         "title": "Building a workout app for iPhone and iPad",
         "url": "https://developer.apple.com/documentation/HealthKit/building-a-workout-app-for-iphone-and-ipad"
       },
       {
+        "title": "Accelerating app interactions with App Intents",
+        "url": "https://developer.apple.com/documentation/AppIntents/AcceleratingAppInteractionsWithAppIntents"
+      },
+      {
+        "title": "App schema domains",
+        "url": "https://developer.apple.com/documentation/AppIntents/app-schema-domains"
+      },
+      {
         "title": "Creating your first app intent",
         "url": "https://developer.apple.com/documentation/AppIntents/Creating-your-first-app-intent"
       },
       {
-        "title": "Integrating actions with Siri and Apple Intelligence",
-        "url": "https://developer.apple.com/documentation/AppIntents/Integrating-actions-with-siri-and-apple-intelligence"
+        "title": "App Shortcuts",
+        "url": "https://developer.apple.com/documentation/AppIntents/app-shortcuts"
       },
       {
-        "title": "Making actions and content discoverable and widely available",
-        "url": "https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Intents",
+        "url": "https://developer.apple.com/documentation/AppIntents"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/244/5/54cb9dae-53ff-4b7a-9091-2e1d6b3d779e/downloads/wwdc2025-244_hd.mp4?dl=1",
@@ -238,5 +214,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10134"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:57.040Z"
+  "extractedAt": "2026-10-11T16:33:40.692Z"
 }

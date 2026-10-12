@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "HealthKit",
-        "url": "https://developer.apple.com/documentation/HealthKit"
-      },
-      {
         "title": "Reading and Writing HealthKit Series Data",
         "url": "https://developer.apple.com/documentation/HealthKit/reading-and-writing-healthkit-series-data"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "HealthKit",
+        "url": "https://developer.apple.com/documentation/HealthKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/218cnjfazt0v1am/218/218_hd_exploring_new_data_representations_in_healthkit.mp4?dl=1",
@@ -50,7 +34,13 @@
       "year": "2019",
       "title": "ResearchKit and CareKit Reimagined",
       "url": "https://developer.apple.com/videos/play/wwdc2019/217"
+    },
+    {
+      "id": "706",
+      "year": "2018",
+      "title": "Accessing Health Records with HealthKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/706"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:21.161Z"
+  "extractedAt": "2026-10-11T16:47:15.979Z"
 }

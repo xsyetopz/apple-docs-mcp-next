@@ -1,0 +1,26 @@
+{
+  "id": "110443",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110443/",
+  "title": "Study Hall: Throwback Thursday",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Essentials",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10052",
+      "year": "2022",
+      "title": "What's new in SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10052"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:27.533Z"
+}

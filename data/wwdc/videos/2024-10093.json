@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,28 +68,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Graphics & Games",
-        "url": "https://developer.apple.com/forums/topics/graphics-and-games?cid=vf-a-0010"
-      },
-      {
         "title": "Rendering a windowed game in stereo",
         "url": "https://developer.apple.com/documentation/RealityKit/rendering-a-windowed-game-in-stereo"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: Graphics & Games",
+        "url": "https://developer.apple.com/forums/topics/graphics-and-games?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10093/4/5B27E6E6-BA2A-4D7E-99D7-E3B10B2074D2/downloads/wwdc2024-10093_hd.mp4?dl=1",
@@ -132,5 +117,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10080"
     }
   ],
-  "extractedAt": "2025-07-18T10:29:30.735Z"
+  "extractedAt": "2026-10-11T16:35:02.188Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10027/10/09685846-0B04-4BFA-968E-000447422A11/downloads/wwdc2021-10027_hd.mp4?dl=1",
@@ -90,5 +75,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10665"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:46.001Z"
+  "extractedAt": "2026-10-11T16:43:25.784Z"
 }

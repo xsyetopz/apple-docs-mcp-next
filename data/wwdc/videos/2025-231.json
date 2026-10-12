@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Safari & Web",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SwiftUI",
         "url": "https://developer.apple.com/documentation/SwiftUI"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/231/5/b6c4d9dc-8351-437b-bc3b-95372381cf23/downloads/wwdc2025-231_hd.mp4?dl=1",
@@ -72,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/256"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:04.821Z"
+  "extractedAt": "2026-10-11T16:33:47.900Z"
 }

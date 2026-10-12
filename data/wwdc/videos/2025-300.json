@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,36 +44,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Frame processing",
+        "url": "https://developer.apple.com/documentation/VideoToolbox/frame-processing"
       },
       {
         "title": "Enhancing your app with machine learning-based video effects",
         "url": "https://developer.apple.com/documentation/VideoToolbox/enhancing-your-app-with-machine-learning-based-video-effects"
       },
       {
-        "title": "Frame processing",
-        "url": "https://developer.apple.com/documentation/VideoToolbox/frame-processing"
-      },
-      {
         "title": "Video Toolbox",
         "url": "https://developer.apple.com/documentation/VideoToolbox"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/300/4/be89fd99-ba12-4e24-96ed-a626da355488/downloads/wwdc2025-300_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/300/4/be89fd99-ba12-4e24-96ed-a626da355488/downloads/wwdc2025-300_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:21:55.857Z"
+  "extractedAt": "2026-10-11T16:33:33.791Z"
 }

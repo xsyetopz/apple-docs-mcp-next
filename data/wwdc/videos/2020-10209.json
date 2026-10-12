@@ -31,24 +31,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Creating NFC Tags from Your iPhone",
         "url": "https://developer.apple.com/documentation/CoreNFC/creating-nfc-tags-from-your-iphone"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10209/4/A0EF8CFC-5168-44DA-9F88-3ECE05F82ACE/wwdc2020_10209_hd.mp4?dl=1",
@@ -62,5 +46,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/715"
     }
   ],
-  "extractedAt": "2025-07-18T10:55:35.076Z"
+  "extractedAt": "2026-10-11T16:45:56.748Z"
 }

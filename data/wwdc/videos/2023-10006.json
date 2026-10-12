@@ -91,10 +91,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building a resumable upload server with SwiftNIO",
         "url": "https://developer.apple.com/documentation/Foundation/building-a-resumable-upload-server-with-swiftnio"
       },
@@ -105,18 +101,6 @@
       {
         "title": "URLSession",
         "url": "https://developer.apple.com/documentation/Foundation/URLSession"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10006/4/62804C33-C167-4D42-9E12-390AED4A4EE1/downloads/wwdc2023-10006_hd.mp4?dl=1",
@@ -130,5 +114,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/712"
     }
   ],
-  "extractedAt": "2025-07-18T11:01:41.000Z"
+  "extractedAt": "2026-10-11T16:37:57.660Z"
 }

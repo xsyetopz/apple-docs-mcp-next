@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Dispatch",
-        "url": "https://developer.apple.com/documentation/Dispatch"
-      },
-      {
         "title": "MetricKit",
         "url": "https://developer.apple.com/documentation/MetricKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Dispatch",
+        "url": "https://developer.apple.com/documentation/Dispatch"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10258/4/ADC12B98-365A-47E7-9A42-952847271DEF/downloads/wwdc2021-10258_hd.mp4?dl=1",
@@ -94,5 +78,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/411"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:13.062Z"
+  "extractedAt": "2026-10-11T16:43:52.497Z"
 }

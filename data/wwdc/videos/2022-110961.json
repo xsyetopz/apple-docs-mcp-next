@@ -1,0 +1,25 @@
+{
+  "id": "110961",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110961/",
+  "title": "Meet the Presenter: Bring Continuity Camera to your macOS app",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10018",
+      "year": "2022",
+      "title": "Bring Continuity Camera to your macOS app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10018"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:40.572Z"
+}

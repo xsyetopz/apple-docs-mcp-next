@@ -17,24 +17,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10077/4/C35119F9-FA1E-478C-9638-E90C1153FACD/downloads/wwdc2022-10077_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10077/4/C35119F9-FA1E-478C-9638-E90C1153FACD/downloads/wwdc2022-10077_sd.mp4?dl=1"
   },
@@ -46,11 +29,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10053"
     },
     {
+      "id": "110916",
+      "year": "2022",
+      "title": "Q&A: Private Access Tokens",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110916"
+    },
+    {
       "id": "10096",
       "year": "2022",
       "title": "What’s new in privacy",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10096"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:55.302Z"
+  "extractedAt": "2026-10-11T16:40:22.484Z"
 }

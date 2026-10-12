@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -55,16 +56,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVFoundation",
-        "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
-      {
         "title": "Converting projected video to Apple Projected Media Profile",
         "url": "https://developer.apple.com/documentation/AVFoundation/converting-projected-video-to-apple-projected-media-profile"
+      },
+      {
+        "title": "Using Apple’s HTTP Live Streaming (HLS) Tools",
+        "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/using-apple-s-http-live-streaming-hls-tools"
       },
       {
         "title": "Core Media",
@@ -79,20 +76,8 @@
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices"
       },
       {
-        "title": "Using Apple’s HTTP Live Streaming (HLS) Tools",
-        "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/using-apple-s-http-live-streaming-hls-tools"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AVFoundation",
+        "url": "https://developer.apple.com/documentation/AVFoundation"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/297/5/331d65eb-4973-4be1-a3b2-c1ae3ec8703a/downloads/wwdc2025-297_hd.mp4?dl=1",
@@ -136,5 +121,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10145"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:45.501Z"
+  "extractedAt": "2026-10-11T16:33:43.585Z"
 }

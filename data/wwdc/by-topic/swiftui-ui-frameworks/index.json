@@ -1,8 +1,9 @@
 {
   "id": "swiftui-ui-frameworks",
   "name": "SwiftUI & UI Frameworks",
-  "videoCount": 280,
+  "videoCount": 361,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -17,11 +18,319 @@
   ],
   "videos": [
     {
+      "id": "275",
+      "year": "2026",
+      "title": "Code-along: Add persistence with SwiftData",
+      "topics": [
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/275/",
+      "dataFile": "videos/2026-275.json"
+    },
+    {
+      "id": "271",
+      "year": "2026",
+      "title": "Code-along: Build powerful drag and drop in SwiftUI",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/271/",
+      "dataFile": "videos/2026-271.json"
+    },
+    {
+      "id": "322",
+      "year": "2026",
+      "title": "Compose advanced graphics effects with SwiftUI",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/322/",
+      "dataFile": "videos/2026-322.json"
+    },
+    {
+      "id": "207",
+      "year": "2026",
+      "title": "Deliver workout insights with HealthKit workout zones",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/207/",
+      "dataFile": "videos/2026-207.json"
+    },
+    {
+      "id": "321",
+      "year": "2026",
+      "title": "Dive into lazy stacks and scrolling with SwiftUI",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/321/",
+      "dataFile": "videos/2026-321.json"
+    },
+    {
+      "id": "370",
+      "year": "2026",
+      "title": "Elevate your app’s text experience with TextKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/370/",
+      "dataFile": "videos/2026-370.json"
+    },
+    {
+      "id": "219",
+      "year": "2026",
+      "title": "Enhance the accessibility of your reading app",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/219/",
+      "dataFile": "videos/2026-219.json"
+    },
+    {
+      "id": "223",
+      "year": "2026",
+      "title": "Live Activities essentials",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/223/",
+      "dataFile": "videos/2026-223.json"
+    },
+    {
+      "id": "289",
+      "year": "2026",
+      "title": "Modernize your AppKit app",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/289/",
+      "dataFile": "videos/2026-289.json"
+    },
+    {
+      "id": "278",
+      "year": "2026",
+      "title": "Modernize your UIKit app",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/278/",
+      "dataFile": "videos/2026-278.json"
+    },
+    {
+      "id": "203",
+      "year": "2026",
+      "title": "Read between the strokes with PencilKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/203/",
+      "dataFile": "videos/2026-203.json"
+    },
+    {
+      "id": "220",
+      "year": "2026",
+      "title": "Refine accessibility for custom controls",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/220/",
+      "dataFile": "videos/2026-220.json"
+    },
+    {
+      "id": "8002",
+      "year": "2026",
+      "title": "SwiftUI for Beginners Group Lab",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8002/",
+      "dataFile": "videos/2026-8002.json"
+    },
+    {
+      "id": "8006",
+      "year": "2026",
+      "title": "SwiftUI Group Lab",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8006/",
+      "dataFile": "videos/2026-8006.json"
+    },
+    {
+      "id": "8120",
+      "year": "2026",
+      "title": "SwiftUI Group Lab",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8120/",
+      "dataFile": "videos/2026-8120.json"
+    },
+    {
+      "id": "372",
+      "year": "2026",
+      "title": "Unwrap PaperKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/372/",
+      "dataFile": "videos/2026-372.json"
+    },
+    {
+      "id": "272",
+      "year": "2026",
+      "title": "Use SwiftUI with AppKit and UIKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/272/",
+      "dataFile": "videos/2026-272.json"
+    },
+    {
+      "id": "8014",
+      "year": "2026",
+      "title": "watchOS Group Lab",
+      "topics": [
+        "App Services",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8014/",
+      "dataFile": "videos/2026-8014.json"
+    },
+    {
+      "id": "274",
+      "year": "2026",
+      "title": "What’s new in SwiftData",
+      "topics": [
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/274/",
+      "dataFile": "videos/2026-274.json"
+    },
+    {
+      "id": "269",
+      "year": "2026",
+      "title": "What’s new in SwiftUI",
+      "topics": [
+        "App Services",
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/269/",
+      "dataFile": "videos/2026-269.json"
+    },
+    {
+      "id": "204",
+      "year": "2026",
+      "title": "What’s new in WebKit for Safari 27",
+      "topics": [
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/204/",
+      "dataFile": "videos/2026-204.json"
+    },
+    {
+      "id": "277",
+      "year": "2026",
+      "title": "WidgetKit foundations",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/277/",
+      "dataFile": "videos/2026-277.json"
+    },
+    {
       "id": "274",
       "year": "2025",
       "title": "Better together: SwiftUI and RealityKit",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -47,10 +356,11 @@
       "year": "2025",
       "title": "Build a SwiftUI app with the new design",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
-      "hasCode": false,
+      "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2025/323/",
       "dataFile": "videos/2025-323.json"
@@ -60,7 +370,8 @@
       "year": "2025",
       "title": "Build a UIKit app with the new design",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -100,7 +411,8 @@
       "year": "2025",
       "title": "Create icons with Icon Composer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -113,7 +425,9 @@
       "year": "2025",
       "title": "Design widgets for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -126,7 +440,8 @@
       "year": "2025",
       "title": "Elevate the design of your iPad app",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -139,7 +454,8 @@
       "year": "2025",
       "title": "Enhance your app’s multilingual experience",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -166,7 +482,8 @@
       "year": "2025",
       "title": "Get to know the new design system",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -192,7 +509,8 @@
       "year": "2025",
       "title": "Meet Liquid Glass",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -205,7 +523,9 @@
       "year": "2025",
       "title": "Meet SwiftUI spatial layout",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -218,7 +538,9 @@
       "year": "2025",
       "title": "Meet WebKit for SwiftUI",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -231,7 +553,9 @@
       "year": "2025",
       "title": "Optimize SwiftUI performance with Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -244,7 +568,8 @@
       "year": "2025",
       "title": "Say hello to the new look of app icons",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -257,7 +582,9 @@
       "year": "2025",
       "title": "Set the scene with SwiftUI in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -270,7 +597,8 @@
       "year": "2025",
       "title": "What’s new in SF Symbols 7",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -284,7 +612,9 @@
       "title": "What’s new in SwiftUI",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -314,7 +644,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -356,7 +690,9 @@
       "title": "What’s new in Xcode 26",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -382,7 +718,8 @@
       "year": "2024",
       "title": "Build multilingual-ready apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -395,7 +732,8 @@
       "year": "2024",
       "title": "Catch up on accessibility in SwiftUI",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -408,7 +746,9 @@
       "year": "2024",
       "title": "Create custom hover effects in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -422,7 +762,8 @@
       "title": "Create custom visual effects with SwiftUI",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -462,7 +803,8 @@
       "year": "2024",
       "title": "Elevate your tab and sidebar experience in iPadOS",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -475,7 +817,8 @@
       "year": "2024",
       "title": "Enhance your UI animations and transitions",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -501,7 +844,8 @@
       "year": "2024",
       "title": "Extend your app’s controls across the system",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -514,7 +858,8 @@
       "year": "2024",
       "title": "Get started with Dynamic Type",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -541,7 +886,8 @@
       "year": "2024",
       "title": "Meet the Contact Access Button",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -554,7 +900,8 @@
       "year": "2024",
       "title": "Migrate your TVML app to SwiftUI",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -567,7 +914,8 @@
       "year": "2024",
       "title": "Squeeze the most out of Apple Pencil",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -580,7 +928,9 @@
       "year": "2024",
       "title": "Support semantic search with Core Spotlight",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -593,7 +943,8 @@
       "year": "2024",
       "title": "Swift Charts: Vectorized and function plots",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -606,7 +957,8 @@
       "year": "2024",
       "title": "SwiftUI essentials",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -632,7 +984,8 @@
       "year": "2024",
       "title": "What’s new in AppKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -645,7 +998,8 @@
       "year": "2024",
       "title": "What’s new in SF Symbols 6",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -659,7 +1013,8 @@
       "title": "What’s new in StoreKit and In-App Purchase",
       "topics": [
         "App Services",
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -672,7 +1027,9 @@
       "year": "2024",
       "title": "What’s new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -685,7 +1042,8 @@
       "year": "2024",
       "title": "What’s new in UIKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -698,7 +1056,9 @@
       "year": "2024",
       "title": "What’s new in watchOS 11",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -712,7 +1072,9 @@
       "title": "What’s new in Xcode 16",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -740,7 +1102,8 @@
       "title": "Animate symbols in your app",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -775,12 +1138,26 @@
       "dataFile": "videos/2023-10159.json"
     },
     {
+      "id": "111545",
+      "year": "2023",
+      "title": "Break the SwiftUIce",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111545/",
+      "dataFile": "videos/2023-111545.json"
+    },
+    {
       "id": "10028",
       "year": "2023",
       "title": "Bring widgets to life",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -793,7 +1170,8 @@
       "year": "2023",
       "title": "Bring widgets to new places",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -806,7 +1184,8 @@
       "year": "2023",
       "title": "Build an app with SwiftData",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -819,7 +1198,9 @@
       "year": "2023",
       "title": "Build better document-based apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -846,7 +1227,8 @@
       "title": "Create animated symbols",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -872,7 +1254,8 @@
       "year": "2023",
       "title": "Design and build apps for watchOS 10",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -885,7 +1268,8 @@
       "year": "2023",
       "title": "Design widgets for the Smart Stack on Apple Watch",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -898,7 +1282,9 @@
       "year": "2023",
       "title": "Design with SwiftUI",
       "topics": [
-        "Design"
+        "Design",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -925,7 +1311,8 @@
       "title": "Discover String Catalogs",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -952,7 +1339,9 @@
       "year": "2023",
       "title": "Enhance your iPad and iPhone apps for the Shared Space",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1019,7 +1408,8 @@
       "year": "2023",
       "title": "Inspectors in SwiftUI: Discover the details",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1033,7 +1423,8 @@
       "title": "Meet StoreKit for SwiftUI",
       "topics": [
         "App Services",
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1046,7 +1437,9 @@
       "year": "2023",
       "title": "Meet SwiftUI for spatial computing",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1055,12 +1448,54 @@
       "dataFile": "videos/2023-10109.json"
     },
     {
+      "id": "10308",
+      "year": "2023",
+      "title": "Meet the presenter: Wind your way through advanced animations in SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10308/",
+      "dataFile": "videos/2023-10308.json"
+    },
+    {
+      "id": "10337",
+      "year": "2023",
+      "title": "Meet the presenters: Design with SwiftUI",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10337/",
+      "dataFile": "videos/2023-10337.json"
+    },
+    {
+      "id": "10307",
+      "year": "2023",
+      "title": "Meet the presenters: What’s new in SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10307/",
+      "dataFile": "videos/2023-10307.json"
+    },
+    {
       "id": "111215",
       "year": "2023",
       "title": "Meet UIKit for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1074,7 +1509,8 @@
       "title": "Meet watchOS 10",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1083,12 +1519,233 @@
       "dataFile": "videos/2023-10026.json"
     },
     {
+      "id": "111216",
+      "year": "2023",
+      "title": "Q&A: Accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111216/",
+      "dataFile": "videos/2023-111216.json"
+    },
+    {
+      "id": "111217",
+      "year": "2023",
+      "title": "Q&A: Accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111217/",
+      "dataFile": "videos/2023-111217.json"
+    },
+    {
+      "id": "111209",
+      "year": "2023",
+      "title": "Q&A: AppKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111209/",
+      "dataFile": "videos/2023-111209.json"
+    },
+    {
+      "id": "111451",
+      "year": "2023",
+      "title": "Q&A: Build UIKit apps for visionOS",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111451/",
+      "dataFile": "videos/2023-111451.json"
+    },
+    {
+      "id": "111452",
+      "year": "2023",
+      "title": "Q&A: Build UIKit apps for visionOS",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111452/",
+      "dataFile": "videos/2023-111452.json"
+    },
+    {
+      "id": "10333",
+      "year": "2023",
+      "title": "Q&A: CarPlay",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10333/",
+      "dataFile": "videos/2023-10333.json"
+    },
+    {
+      "id": "10334",
+      "year": "2023",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10334/",
+      "dataFile": "videos/2023-10334.json"
+    },
+    {
+      "id": "111211",
+      "year": "2023",
+      "title": "Q&A: iPadOS and iOS apps on Vision Pro",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111211/",
+      "dataFile": "videos/2023-111211.json"
+    },
+    {
+      "id": "111212",
+      "year": "2023",
+      "title": "Q&A: iPadOS and iOS apps on Vision Pro",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111212/",
+      "dataFile": "videos/2023-111212.json"
+    },
+    {
+      "id": "10305",
+      "year": "2023",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10305/",
+      "dataFile": "videos/2023-10305.json"
+    },
+    {
+      "id": "10306",
+      "year": "2023",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10306/",
+      "dataFile": "videos/2023-10306.json"
+    },
+    {
+      "id": "111208",
+      "year": "2023",
+      "title": "Q&A: UIKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111208/",
+      "dataFile": "videos/2023-111208.json"
+    },
+    {
+      "id": "111207",
+      "year": "2023",
+      "title": "Q&A: UIKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111207/",
+      "dataFile": "videos/2023-111207.json"
+    },
+    {
+      "id": "111521",
+      "year": "2023",
+      "title": "Q&A: Update your app for watchOS 10",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111521/",
+      "dataFile": "videos/2023-111521.json"
+    },
+    {
+      "id": "10342",
+      "year": "2023",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10342/",
+      "dataFile": "videos/2023-10342.json"
+    },
+    {
+      "id": "111522",
+      "year": "2023",
+      "title": "Q&A: Widgets in the Smart Stack on watchOS",
+      "topics": [
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111522/",
+      "dataFile": "videos/2023-111522.json"
+    },
+    {
       "id": "10090",
       "year": "2023",
       "title": "Run your iPad and iPhone apps in the Shared Space",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1129,7 +1786,9 @@
       "title": "Unleash the UIKit trait system",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1142,7 +1801,8 @@
       "year": "2023",
       "title": "Unlock the power of grammatical agreement",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1169,7 +1829,9 @@
       "title": "What’s new in AppKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1182,7 +1844,8 @@
       "year": "2023",
       "title": "What’s new in SF Symbols 5",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1195,7 +1858,8 @@
       "year": "2023",
       "title": "What’s new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1208,7 +1872,9 @@
       "year": "2023",
       "title": "What’s new in UIKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1221,7 +1887,9 @@
       "year": "2023",
       "title": "What’s new with text and text interactions",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1247,7 +1915,9 @@
       "year": "2022",
       "title": "Add Shared with You to your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1273,13 +1943,28 @@
       "year": "2022",
       "title": "Adopt Variable Color in SF Symbols",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10158/",
       "dataFile": "videos/2022-10158.json"
+    },
+    {
+      "id": "110397",
+      "year": "2022",
+      "title": "Break the SwiftUIce",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110397/",
+      "dataFile": "videos/2022-110397.json"
     },
     {
       "id": "10061",
@@ -1299,7 +1984,8 @@
       "year": "2022",
       "title": "Bring your iOS app to the Mac",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1325,7 +2011,8 @@
       "year": "2022",
       "title": "Build a productivity app for Apple Watch",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1338,7 +2025,8 @@
       "year": "2022",
       "title": "Build global apps: Localization by example",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1352,7 +2040,8 @@
       "title": "Complications and widgets: Reloaded",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1380,7 +2069,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1394,7 +2084,9 @@
       "title": "Display EDR content with Core Image, Metal, and SwiftUI",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1408,7 +2100,9 @@
       "title": "Display HDR video in EDR with AVFoundation and Metal",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1421,7 +2115,8 @@
       "year": "2022",
       "title": "Efficiency awaits: Background tasks in SwiftUI",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1434,7 +2129,9 @@
       "year": "2022",
       "title": "Enhance collaboration experiences with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1448,7 +2145,9 @@
       "title": "Explore EDR on iOS",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1461,7 +2160,8 @@
       "year": "2022",
       "title": "Get it right (to left)",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1474,7 +2174,8 @@
       "year": "2022",
       "title": "Get more mileage out of your app with CarPlay",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1487,7 +2188,8 @@
       "year": "2022",
       "title": "Go further with Complications in WidgetKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1500,7 +2202,9 @@
       "year": "2022",
       "title": "Hello Swift Charts",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1513,7 +2217,9 @@
       "year": "2022",
       "title": "Integrate your custom collaboration app with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1539,7 +2245,8 @@
       "year": "2022",
       "title": "Meet the expanded San Francisco font family",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1548,17 +2255,466 @@
       "dataFile": "videos/2022-110381.json"
     },
     {
+      "id": "110909",
+      "year": "2022",
+      "title": "Meet the Presenter: Adopt desktop-class editing interactions",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110909/",
+      "dataFile": "videos/2022-110909.json"
+    },
+    {
+      "id": "110839",
+      "year": "2022",
+      "title": "Meet the Presenter: Bring your iOS app to the Mac",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110839/",
+      "dataFile": "videos/2022-110839.json"
+    },
+    {
+      "id": "110837",
+      "year": "2022",
+      "title": "Meet the Presenter: Build a desktop-class iPad app",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110837/",
+      "dataFile": "videos/2022-110837.json"
+    },
+    {
+      "id": "110449",
+      "year": "2022",
+      "title": "Meet the Presenter: Build a productivity app for Apple Watch",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110449/",
+      "dataFile": "videos/2022-110449.json"
+    },
+    {
+      "id": "110433",
+      "year": "2022",
+      "title": "Meet the Presenter: Complications and widgets: Reloaded",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110433/",
+      "dataFile": "videos/2022-110433.json"
+    },
+    {
+      "id": "110392",
+      "year": "2022",
+      "title": "Meet the Presenter: Compose custom layouts with SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110392/",
+      "dataFile": "videos/2022-110392.json"
+    },
+    {
+      "id": "110835",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet desktop-class iPad",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110835/",
+      "dataFile": "videos/2022-110835.json"
+    },
+    {
+      "id": "110947",
+      "year": "2022",
+      "title": "Meet The Presenter: What's new in AppKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110947/",
+      "dataFile": "videos/2022-110947.json"
+    },
+    {
+      "id": "110391",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in SwiftUI",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110391/",
+      "dataFile": "videos/2022-110391.json"
+    },
+    {
+      "id": "110833",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in UIKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110833/",
+      "dataFile": "videos/2022-110833.json"
+    },
+    {
       "id": "10062",
       "year": "2022",
       "title": "Meet Transferable",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10062/",
       "dataFile": "videos/2022-10062.json"
+    },
+    {
+      "id": "110418",
+      "year": "2022",
+      "title": "Q&A: Accessibility in SwiftUI",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110418/",
+      "dataFile": "videos/2022-110418.json"
+    },
+    {
+      "id": "110419",
+      "year": "2022",
+      "title": "Q&A: Accessibility in UIKit and AppKit",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110419/",
+      "dataFile": "videos/2022-110419.json"
+    },
+    {
+      "id": "110446",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110446/",
+      "dataFile": "videos/2022-110446.json"
+    },
+    {
+      "id": "110448",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110448/",
+      "dataFile": "videos/2022-110448.json"
+    },
+    {
+      "id": "110465",
+      "year": "2022",
+      "title": "Q&A: CarPlay",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110465/",
+      "dataFile": "videos/2022-110465.json"
+    },
+    {
+      "id": "110540",
+      "year": "2022",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110540/",
+      "dataFile": "videos/2022-110540.json"
+    },
+    {
+      "id": "110813",
+      "year": "2022",
+      "title": "Q&A: Right-to-left",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110813/",
+      "dataFile": "videos/2022-110813.json"
+    },
+    {
+      "id": "110407",
+      "year": "2022",
+      "title": "Q&A: Swift Charts",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110407/",
+      "dataFile": "videos/2022-110407.json"
+    },
+    {
+      "id": "110393",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110393/",
+      "dataFile": "videos/2022-110393.json"
+    },
+    {
+      "id": "110394",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110394/",
+      "dataFile": "videos/2022-110394.json"
+    },
+    {
+      "id": "110395",
+      "year": "2022",
+      "title": "Q&A: SwiftUI and UI Frameworks",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110395/",
+      "dataFile": "videos/2022-110395.json"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829/",
+      "dataFile": "videos/2022-110829.json"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830/",
+      "dataFile": "videos/2022-110830.json"
+    },
+    {
+      "id": "110431",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110431/",
+      "dataFile": "videos/2022-110431.json"
+    },
+    {
+      "id": "110432",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110432/",
+      "dataFile": "videos/2022-110432.json"
+    },
+    {
+      "id": "110945",
+      "year": "2022",
+      "title": "Q&A: Xcode Previews",
+      "topics": [
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110945/",
+      "dataFile": "videos/2022-110945.json"
+    },
+    {
+      "id": "110812",
+      "year": "2022",
+      "title": "Study Hall: Go big or go home",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110812/",
+      "dataFile": "videos/2022-110812.json"
+    },
+    {
+      "id": "110828",
+      "year": "2022",
+      "title": "Study Hall: Menu bar extras with SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110828/",
+      "dataFile": "videos/2022-110828.json"
+    },
+    {
+      "id": "110442",
+      "year": "2022",
+      "title": "Study Hall: SwiftUI navigation hotdish",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110442/",
+      "dataFile": "videos/2022-110442.json"
+    },
+    {
+      "id": "110519",
+      "year": "2022",
+      "title": "Study Hall: SwiftUI science fiction!",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110519/",
+      "dataFile": "videos/2022-110519.json"
+    },
+    {
+      "id": "110443",
+      "year": "2022",
+      "title": "Study Hall: Throwback Thursday",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110443/",
+      "dataFile": "videos/2022-110443.json"
+    },
+    {
+      "id": "110811",
+      "year": "2022",
+      "title": "Study Hall: Toolbar transformation Tuesday",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110811/",
+      "dataFile": "videos/2022-110811.json"
+    },
+    {
+      "id": "110452",
+      "year": "2022",
+      "title": "Study Hall: WidgetKit workshop",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110452/",
+      "dataFile": "videos/2022-110452.json"
     },
     {
       "id": "10137",
@@ -1618,7 +2774,8 @@
       "year": "2022",
       "title": "The SwiftUI cookbook for navigation",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1631,7 +2788,8 @@
       "year": "2022",
       "title": "Use SwiftUI with AppKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1644,7 +2802,8 @@
       "year": "2022",
       "title": "Use SwiftUI with UIKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1683,7 +2842,8 @@
       "year": "2022",
       "title": "What's new in TextKit and text views",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1710,7 +2870,9 @@
       "title": "What's new in web accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1723,7 +2885,8 @@
       "year": "2021",
       "title": "Add intelligence to your widgets",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1736,7 +2899,8 @@
       "year": "2021",
       "title": "Add rich graphics to your SwiftUI app",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1819,7 +2983,8 @@
       "year": "2021",
       "title": "Create accessible experiences for watchOS",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1845,7 +3010,8 @@
       "year": "2021",
       "title": "Deliver a great playback experience on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1884,7 +3050,9 @@
       "year": "2021",
       "title": "Discover built-in sound classification in SoundAnalysis",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1912,7 +3080,8 @@
       "title": "Explore the SF Symbols 3 app",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1939,7 +3108,8 @@
       "title": "Localize your SwiftUI app",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1978,7 +3148,8 @@
       "year": "2021",
       "title": "Meet the UIKit button system",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1992,7 +3163,8 @@
       "title": "Principles of great widgets",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2005,7 +3177,8 @@
       "year": "2021",
       "title": "Qualities of a great Mac Catalyst app",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2019,7 +3192,8 @@
       "title": "Qualities of great iPad and iPhone apps on Macs with M1",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2032,7 +3206,8 @@
       "year": "2021",
       "title": "SF Symbols in SwiftUI",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2073,7 +3248,9 @@
       "title": "Streamline your localized strings",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2086,7 +3263,8 @@
       "year": "2021",
       "title": "SwiftUI Accessibility: Beyond the basics",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2099,7 +3277,8 @@
       "year": "2021",
       "title": "SwiftUI on the Mac: Build the fundamentals",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2112,7 +3291,8 @@
       "year": "2021",
       "title": "SwiftUI on the Mac: The finishing touches",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2125,7 +3305,8 @@
       "year": "2021",
       "title": "Take your iPad apps to the next level",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2138,7 +3319,8 @@
       "year": "2021",
       "title": "What's new in AppKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2151,7 +3333,8 @@
       "year": "2021",
       "title": "What's new in Mac Catalyst",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2165,7 +3348,8 @@
       "title": "What’s new in SF Symbols",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2178,7 +3362,8 @@
       "year": "2021",
       "title": "What's new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2191,7 +3376,8 @@
       "year": "2021",
       "title": "What's new in UIKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2204,7 +3390,10 @@
       "year": "2021",
       "title": "What's new in watchOS 8",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2217,7 +3406,8 @@
       "year": "2021",
       "title": "Your guide to keyboard layout",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2230,7 +3420,8 @@
       "year": "2020",
       "title": "Accessibility design for Mac Catalyst",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2243,7 +3434,8 @@
       "year": "2020",
       "title": "Adopt the new look of macOS",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2283,7 +3475,8 @@
       "title": "App accessibility for Switch Control",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2324,7 +3517,8 @@
       "year": "2020",
       "title": "Bring keyboard and mouse gaming to iPad",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2377,7 +3571,8 @@
       "year": "2020",
       "title": "Build for the iPadOS pointer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2390,7 +3585,8 @@
       "year": "2020",
       "title": "Build SwiftUI apps for tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2403,7 +3599,9 @@
       "year": "2020",
       "title": "Build SwiftUI views for widgets",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2429,7 +3627,9 @@
       "year": "2020",
       "title": "Configure and link your App Clips",
       "topics": [
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2442,7 +3642,9 @@
       "year": "2020",
       "title": "Core Data: Sundries and maxims",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2496,7 +3698,8 @@
       "year": "2020",
       "title": "Design for the iPadOS pointer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2509,7 +3712,8 @@
       "year": "2020",
       "title": "Design with iOS pickers, menus and actions",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2522,7 +3726,8 @@
       "year": "2020",
       "title": "Discover search suggestions for Apple TV",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2589,7 +3794,9 @@
       "year": "2020",
       "title": "Introduction to SwiftUI",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2630,7 +3837,8 @@
       "title": "Make your app visually accessible",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2643,7 +3851,8 @@
       "year": "2020",
       "title": "Master Picture in Picture on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2712,7 +3921,9 @@
       "year": "2020",
       "title": "Meet WidgetKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2753,7 +3964,8 @@
       "year": "2020",
       "title": "Optimize the interface of your Mac Catalyst app",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2766,7 +3978,8 @@
       "year": "2020",
       "title": "SF Symbols 2",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2806,7 +4019,9 @@
       "year": "2020",
       "title": "Structure your app for SwiftUI previews",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2861,7 +4076,8 @@
       "title": "What's new in Mac Catalyst",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2901,7 +4117,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 1: The adventure begins",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2914,7 +4132,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 2: Alternate timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2927,7 +4147,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 3: Advancing timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2940,7 +4162,8 @@
       "year": "2019",
       "title": "Accessibility in SwiftUI",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2954,7 +4177,8 @@
       "title": "Accessibility Inspector",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2967,7 +4191,11 @@
       "year": "2019",
       "title": "Adding Indoor Maps to your App and Website",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3046,7 +4274,8 @@
       "year": "2019",
       "title": "Creating an Accessible Reading Experience",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3107,12 +4336,26 @@
       "dataFile": "videos/2019-227.json"
     },
     {
+      "id": "242",
+      "year": "2019",
+      "title": "Getting the Most out of Multitasking",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/242/",
+      "dataFile": "videos/2019-242.json"
+    },
+    {
       "id": "239",
       "year": "2019",
       "title": "Great Developer Habits",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3204,7 +4447,8 @@
       "year": "2019",
       "title": "Introducing SF Symbols",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3230,7 +4474,10 @@
       "year": "2019",
       "title": "Introducing the Indoor Maps Program",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3243,7 +4490,8 @@
       "year": "2019",
       "title": "Large Content Viewer - Ensuring Readability for Everyone",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3256,7 +4504,8 @@
       "year": "2019",
       "title": "Making Apps More Accessible With Custom Actions",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3283,7 +4532,8 @@
       "title": "Mastering the Living Room With tvOS",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3296,7 +4546,8 @@
       "year": "2019",
       "title": "Mastering Xcode Previews",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3416,7 +4667,8 @@
       "title": "Visual Design and Accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3456,7 +4708,10 @@
       "year": "2019",
       "title": "What’s New in MapKit and MapKit JS",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3482,7 +4737,8 @@
       "year": "2019",
       "title": "Writing Great Accessibility Labels",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3491,11 +4747,25 @@
       "dataFile": "videos/2019-254.json"
     },
     {
+      "id": "225",
+      "year": "2018",
+      "title": "A Tour of UICollectionView",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/225/",
+      "dataFile": "videos/2018-225.json"
+    },
+    {
       "id": "213",
       "year": "2018",
       "title": "CarPlay Audio and Navigation Apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3508,7 +4778,8 @@
       "year": "2018",
       "title": "Introduction to Siri Shortcuts",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3521,13 +4792,55 @@
       "year": "2018",
       "title": "Optimizing App Assets",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2018/227/",
       "dataFile": "videos/2018-227.json"
+    },
+    {
+      "id": "221",
+      "year": "2018",
+      "title": "TextKit Best Practices",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/221/",
+      "dataFile": "videos/2018-221.json"
+    },
+    {
+      "id": "711",
+      "year": "2018",
+      "title": "Using Grouped Notifications",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/711/",
+      "dataFile": "videos/2018-711.json"
+    },
+    {
+      "id": "209",
+      "year": "2018",
+      "title": "What's New in Cocoa for macOS",
+      "topics": [
+        "Developer Tools",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/209/",
+      "dataFile": "videos/2018-209.json"
     },
     {
       "id": "246",
@@ -3547,7 +4860,9 @@
       "year": "2017",
       "title": "Developing Wireless CarPlay Systems",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -3560,7 +4875,9 @@
       "year": "2017",
       "title": "Enabling Your App for CarPlay",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -3574,7 +4891,8 @@
       "title": "Express Yourself!",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3600,7 +4918,8 @@
       "year": "2017",
       "title": "Extend Your App's Presence With Sharing",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3613,7 +4932,9 @@
       "year": "2017",
       "title": "Get Started with Display P3",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3626,7 +4947,8 @@
       "year": "2017",
       "title": "Localization Best Practices on tvOS",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3639,7 +4961,8 @@
       "year": "2017",
       "title": "Now Playing and Remote Commands on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3652,7 +4975,8 @@
       "year": "2017",
       "title": "Rich Notifications",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -3665,7 +4989,8 @@
       "year": "2017",
       "title": "Size Classes and Core Components",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,

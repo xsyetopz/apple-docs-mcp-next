@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -109,32 +110,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Internationalization and Localization Guide",
-        "url": "https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html"
+        "title": "Localizing package resources",
+        "url": "https://developer.apple.com/documentation/Xcode/localizing-package-resources"
       },
       {
         "title": "Localization",
         "url": "https://developer.apple.com/documentation/Xcode/localization"
       },
       {
-        "title": "Localizing package resources",
-        "url": "https://developer.apple.com/documentation/Xcode/localizing-package-resources"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Internationalization and Localization Guide",
+        "url": "https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10110/3/9DDED4EB-547B-46DD-AEE5-9D3F2C60CFF8/downloads/wwdc2022-10110_hd.mp4?dl=1",
@@ -166,6 +151,18 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10107"
     },
     {
+      "id": "110540",
+      "year": "2022",
+      "title": "Q&A: Internationalization and localization",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110540"
+    },
+    {
+      "id": "110813",
+      "year": "2022",
+      "title": "Q&A: Right-to-left",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110813"
+    },
+    {
       "id": "110427",
       "year": "2022",
       "title": "What's new in Xcode",
@@ -190,5 +187,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10169"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:04.076Z"
+  "extractedAt": "2026-10-11T16:40:13.140Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Graphics & Games"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
+        "title": "Apple Design Site",
         "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/811evqx1dsujdj5222/811/811_hd_design_tips_for_great_games.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/811evqx1dsujdj5222/811/811_sd_design_tips_for_great_games.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:38:44.994Z"
+  "extractedAt": "2026-10-11T16:48:44.007Z"
 }

@@ -1,0 +1,31 @@
+{
+  "id": "110527",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110527/",
+  "title": "Q&A: Maps technologies",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Maps & Location"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10006",
+      "year": "2022",
+      "title": "Meet Apple Maps Server APIs",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10006"
+    },
+    {
+      "id": "10035",
+      "year": "2022",
+      "title": "What's new in MapKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10035"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:30.079Z"
+}

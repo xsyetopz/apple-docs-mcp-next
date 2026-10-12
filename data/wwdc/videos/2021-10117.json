@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "CloudKit",
-        "url": "https://developer.apple.com/documentation/CloudKit"
-      },
-      {
         "title": "Managing iCloud Containers with CloudKit Database App",
         "url": "https://developer.apple.com/documentation/CloudKit/managing-icloud-containers-with-cloudkit-database-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "CloudKit",
+        "url": "https://developer.apple.com/documentation/CloudKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10117/4/091FF0B0-A3E5-4269-856E-692465CE5E15/downloads/wwdc2021-10117_hd.mp4?dl=1",
@@ -64,17 +48,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10118"
     },
     {
-      "id": "10325",
-      "year": "2021",
-      "title": "Friday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10325"
-    },
-    {
       "id": "10086",
       "year": "2021",
       "title": "What's new in CloudKit",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10086"
     }
   ],
-  "extractedAt": "2025-07-18T11:03:02.702Z"
+  "extractedAt": "2026-10-11T16:44:23.425Z"
 }

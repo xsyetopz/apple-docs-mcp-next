@@ -103,28 +103,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accelerating ray tracing using Metal",
         "url": "https://developer.apple.com/documentation/metal/metal_sample_code_library/accelerating_ray_tracing_using_metal"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10105/7/A0348CEB-F711-422B-9FA4-D1A0E1DB8BF8/downloads/wwdc2022-10105_hd.mp4?dl=1",
@@ -150,6 +134,24 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10101"
     },
     {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
+    },
+    {
       "id": "10157",
       "year": "2021",
       "title": "Discover Metal debugging, profiling, and asset creation tools",
@@ -162,5 +164,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10616"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:27.952Z"
+  "extractedAt": "2026-10-11T16:41:17.595Z"
 }

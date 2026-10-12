@@ -127,28 +127,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Bringing multiple windows to your SwiftUI app",
-        "url": "https://developer.apple.com/documentation/swiftui/bringing_multiple_windows_to_your_swiftui_app"
-      },
-      {
-        "title": "DocumentGroup",
-        "url": "https://developer.apple.com/documentation/SwiftUI/DocumentGroup"
-      },
-      {
-        "title": "MenuBarExtra",
-        "url": "https://developer.apple.com/documentation/SwiftUI/MenuBarExtra"
-      },
-      {
-        "title": "NewDocumentAction",
-        "url": "https://developer.apple.com/documentation/SwiftUI/NewDocumentAction"
+        "url": "https://developer.apple.com/documentation/SwiftUI/bringing-multiple-windows-to-your-swiftui-app"
       },
       {
         "title": "OpenDocumentAction",
         "url": "https://developer.apple.com/documentation/SwiftUI/OpenDocumentAction"
+      },
+      {
+        "title": "NewDocumentAction",
+        "url": "https://developer.apple.com/documentation/SwiftUI/NewDocumentAction"
       },
       {
         "title": "OpenWindowAction",
@@ -159,26 +147,28 @@
         "url": "https://developer.apple.com/documentation/SwiftUI/Window"
       },
       {
+        "title": "MenuBarExtra",
+        "url": "https://developer.apple.com/documentation/SwiftUI/MenuBarExtra"
+      },
+      {
+        "title": "DocumentGroup",
+        "url": "https://developer.apple.com/documentation/SwiftUI/DocumentGroup"
+      },
+      {
         "title": "WindowGroup",
         "url": "https://developer.apple.com/documentation/SwiftUI/WindowGroup"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10061/4/012AFD7A-B26E-4C25-9C6C-AB01D5336EA7/downloads/wwdc2022-10061_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10061/4/012AFD7A-B26E-4C25-9C6C-AB01D5336EA7/downloads/wwdc2022-10061_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110828",
+      "year": "2022",
+      "title": "Study Hall: Menu bar extras with SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110828"
+    },
     {
       "id": "110343",
       "year": "2022",
@@ -204,5 +194,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10052"
     }
   ],
-  "extractedAt": "2025-07-18T10:53:25.811Z"
+  "extractedAt": "2026-10-11T16:41:37.601Z"
 }

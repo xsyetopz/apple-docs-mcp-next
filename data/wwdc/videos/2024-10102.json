@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,28 +68,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Composing interactive 3D content with RealityKit and Reality Composer Pro",
         "url": "https://developer.apple.com/documentation/RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro"
       },
       {
         "title": "Forum: Spatial Computing",
         "url": "https://developer.apple.com/forums/topics/spatial-computing?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10102/4/5895A2B6-4F9A-4D45-A5F6-C7689F50F571/downloads/wwdc2024-10102_hd.mp4?dl=1",
@@ -132,5 +117,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10083"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:09.335Z"
+  "extractedAt": "2026-10-11T16:34:40.356Z"
 }

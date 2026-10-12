@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -79,28 +80,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Customizing a PyTorch operation",
         "url": "https://developer.apple.com/documentation/Metal/customizing-a-pytorch-operation"
       },
       {
         "title": "Metal Performance Shaders",
         "url": "https://developer.apple.com/documentation/MetalPerformanceShaders"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/262/4/bd3b9963-4a16-4a43-8b3d-e7f17cb31f3c/downloads/wwdc2025-262_hd.mp4?dl=1",
@@ -144,5 +129,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10160"
     }
   ],
-  "extractedAt": "2025-07-18T10:29:05.190Z"
+  "extractedAt": "2026-10-11T16:33:26.240Z"
 }

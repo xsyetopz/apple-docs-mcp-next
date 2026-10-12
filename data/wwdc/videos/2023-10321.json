@@ -1,0 +1,43 @@
+{
+  "id": "10321",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10321/",
+  "title": "Q&A: Device management",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Business & Education"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10254",
+      "year": "2023",
+      "title": "Do more with Managed Apple IDs",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10254"
+    },
+    {
+      "id": "10041",
+      "year": "2023",
+      "title": "Explore advances in declarative device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10041"
+    },
+    {
+      "id": "10039",
+      "year": "2023",
+      "title": "Meet device management for Apple Watch",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10039"
+    },
+    {
+      "id": "10040",
+      "year": "2023",
+      "title": "What’s new in managing Apple devices",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10040"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:20.643Z"
+}

@@ -79,12 +79,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ActivityKit",
-        "url": "https://developer.apple.com/documentation/ActivityKit"
+        "title": "Sending push notifications using command-line tools",
+        "url": "https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools"
       },
       {
         "title": "Establishing a token-based connection to APNs",
@@ -95,28 +91,16 @@
         "url": "https://developer.apple.com/design/human-interface-guidelines/live-activities"
       },
       {
-        "title": "Sending notification requests to APNs",
-        "url": "https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns"
-      },
-      {
-        "title": "Sending push notifications using command-line tools",
-        "url": "https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools"
-      },
-      {
         "title": "Starting and updating Live Activities with ActivityKit push notifications",
         "url": "https://developer.apple.com/documentation/ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "ActivityKit",
+        "url": "https://developer.apple.com/documentation/ActivityKit"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Sending notification requests to APNs",
+        "url": "https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10185/4/1867F512-50A9-4907-A90A-34A7E198BDB7/downloads/wwdc2023-10185_hd.mp4?dl=1",
@@ -146,7 +130,19 @@
       "year": "2023",
       "title": "Meet ActivityKit",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10184"
+    },
+    {
+      "id": "111228",
+      "year": "2023",
+      "title": "Meet the presenter: Update Live Activities with push notifications",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111228"
+    },
+    {
+      "id": "111224",
+      "year": "2023",
+      "title": "Q&A: ActivityKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111224"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:01.757Z"
+  "extractedAt": "2026-10-11T16:38:06.741Z"
 }

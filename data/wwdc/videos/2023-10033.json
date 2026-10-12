@@ -115,10 +115,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Audio Unit",
         "url": "https://developer.apple.com/documentation/AudioUnit"
       },
@@ -129,18 +125,6 @@
       {
         "title": "Speech synthesis",
         "url": "https://developer.apple.com/documentation/AVFoundation/speech-synthesis"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10033/4/2BED83CA-28F2-4B53-ACB4-EF89AB371676/downloads/wwdc2023-10033_hd.mp4?dl=1",
@@ -154,5 +138,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10022"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:53.373Z"
+  "extractedAt": "2026-10-11T16:38:02.287Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -55,16 +56,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Immersive Media Support",
+        "url": "https://developer.apple.com/documentation/ImmersiveMediaSupport"
       },
       {
         "title": "Authoring Apple Immersive Video",
         "url": "https://developer.apple.com/documentation/ImmersiveMediaSupport/authoring-apple-immersive-video"
-      },
-      {
-        "title": "AVFoundation",
-        "url": "https://developer.apple.com/documentation/AVFoundation"
       },
       {
         "title": "AVPlayerItemMetadataOutput",
@@ -79,20 +76,8 @@
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices"
       },
       {
-        "title": "Immersive Media Support",
-        "url": "https://developer.apple.com/documentation/ImmersiveMediaSupport"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AVFoundation",
+        "url": "https://developer.apple.com/documentation/AVFoundation"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/403/4/ef519281-1213-4ddf-892a-ca33ae288ef1/downloads/wwdc2025-403_hd.mp4?dl=1",
@@ -124,5 +109,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/237"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:48.298Z"
+  "extractedAt": "2026-10-11T16:33:43.440Z"
 }

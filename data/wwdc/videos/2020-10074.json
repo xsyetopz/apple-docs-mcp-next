@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
         "url": "https://developer.apple.com/documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10074/3/8D3993B6-C13D-4BD2-A35A-D5F6D820C45B/wwdc2020_10074_hd.mp4?dl=1",
@@ -109,5 +93,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10068"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:52.790Z"
+  "extractedAt": "2026-10-11T16:46:04.605Z"
 }

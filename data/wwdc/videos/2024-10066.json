@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Safari & Web",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,32 +19,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Forum: Safari & Web",
+        "url": "https://developer.apple.com/forums/topics/safari-and-web?cid=vf-a-0010"
       },
       {
         "title": "Adding a web development tool to Safari Web Inspector",
         "url": "https://developer.apple.com/documentation/SafariServices/adding-a-web-development-tool-to-safari-web-inspector"
       },
       {
-        "title": "Forum: Safari & Web",
-        "url": "https://developer.apple.com/forums/topics/safari-and-web?cid=vf-a-0010"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10066/4/688EE2E3-325B-40BE-B36E-7067500DE40B/downloads/wwdc2024-10066_hd.mp4?dl=1",
@@ -56,5 +42,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10065"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:02.801Z"
+  "extractedAt": "2026-10-11T16:35:03.203Z"
 }

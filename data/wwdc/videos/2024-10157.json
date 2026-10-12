@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -97,44 +98,28 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adding refinements and configuration to controls",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Adding-refinements-and-configuration-to-controls"
-      },
-      {
         "title": "Creating a camera experience for the Lock Screen",
         "url": "https://developer.apple.com/documentation/LockedCameraCapture/Creating-a-camera-experience-for-the-Lock-Screen"
-      },
-      {
-        "title": "Creating controls to perform actions across the system",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Creating-controls-to-perform-actions-across-the-system"
-      },
-      {
-        "title": "Forum: App & System Services",
-        "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
-      },
-      {
-        "title": "Human Interface Guidelines: Controls",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/controls"
       },
       {
         "title": "Updating controls locally and remotely",
         "url": "https://developer.apple.com/documentation/WidgetKit/Updating-controls-locally-and-remotely"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Adding refinements and configuration to controls",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Adding-refinements-and-configuration-to-controls"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Creating controls to perform actions across the system",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Creating-controls-to-perform-actions-across-the-system"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Controls",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/controls"
+      },
+      {
+        "title": "Forum: App & System Services",
+        "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10157/5/5DC0FBFA-B601-4A2F-BE3D-40FBF3757522/downloads/wwdc2024-10157_hd.mp4?dl=1",
@@ -148,5 +133,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10204"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:14.000Z"
+  "extractedAt": "2026-10-11T16:34:55.654Z"
 }

@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Services",
-    "App Store, Distribution & Marketing"
+    "App Store, Distribution & Marketing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -44,56 +45,40 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: App Store Distribution & Marketing",
-        "url": "https://developer.apple.com/forums/topics/app-store-distribution-and-marketing?cid=vf-a-0010"
-      },
-      {
-        "title": "In-App Purchase",
-        "url": "https://developer.apple.com/documentation/StoreKit/in-app-purchase"
-      },
-      {
-        "title": "Message",
-        "url": "https://developer.apple.com/documentation/StoreKit/Message"
-      },
-      {
-        "title": "Original API for In-App Purchase",
-        "url": "https://developer.apple.com/documentation/StoreKit/original-api-for-in-app-purchase"
+        "title": "Testing in-app purchases with StoreKit transaction manager in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code"
       },
       {
         "title": "Product.SubscriptionInfo.RenewalInfo",
         "url": "https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo"
       },
       {
-        "title": "Setting up StoreKit Testing in Xcode",
-        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
+        "title": "Transaction properties",
+        "url": "https://developer.apple.com/documentation/StoreKit/transaction-properties"
+      },
+      {
+        "title": "Forum: App Store Distribution & Marketing",
+        "url": "https://developer.apple.com/forums/topics/app-store-distribution-and-marketing?cid=vf-a-0010"
+      },
+      {
+        "title": "Message",
+        "url": "https://developer.apple.com/documentation/StoreKit/Message"
       },
       {
         "title": "StoreKit views",
         "url": "https://developer.apple.com/documentation/StoreKit/storekit-views"
       },
       {
-        "title": "Testing in-app purchases with StoreKit transaction manager in Xcode",
-        "url": "https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code"
+        "title": "Setting up StoreKit Testing in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
       },
       {
-        "title": "Transaction properties",
-        "url": "https://developer.apple.com/documentation/StoreKit/transaction-properties"
+        "title": "In-App Purchase",
+        "url": "https://developer.apple.com/documentation/StoreKit/in-app-purchase"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Original API for In-App Purchase",
+        "url": "https://developer.apple.com/documentation/StoreKit/original-api-for-in-app-purchase"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10061/4/283D5AFD-5540-405F-A385-1B9CBB0474D4/downloads/wwdc2024-10061_hd.mp4?dl=1",
@@ -137,5 +122,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10659"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:43.145Z"
+  "extractedAt": "2026-10-11T16:34:47.855Z"
 }

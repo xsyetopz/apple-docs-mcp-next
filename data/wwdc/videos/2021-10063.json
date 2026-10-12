@@ -109,28 +109,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Customizing and resizing sheets in UIKit",
         "url": "https://developer.apple.com/documentation/UIKit/customizing-and-resizing-sheets-in-uikit"
       },
       {
         "title": "UIKit",
         "url": "https://developer.apple.com/documentation/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10063/8/0D794296-1707-4A1D-8CBB-B2CAFEA82AAC/downloads/wwdc2021-10063_hd.mp4?dl=1",
@@ -156,5 +140,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/224"
     }
   ],
-  "extractedAt": "2025-07-18T10:54:57.095Z"
+  "extractedAt": "2026-10-11T16:42:51.437Z"
 }

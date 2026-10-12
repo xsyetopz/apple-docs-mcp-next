@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SMS and Call Reporting",
         "url": "https://developer.apple.com/documentation/IdentityLookup"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/249alewpia5158ow5k/249/249_hd_filtering_unwanted_messages_with_identity_lookup.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/249alewpia5158ow5k/249/249_sd_filtering_unwanted_messages_with_identity_lookup.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:43:50.855Z"
+  "extractedAt": "2026-10-11T16:48:47.207Z"
 }

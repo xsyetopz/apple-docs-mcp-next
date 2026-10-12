@@ -31,32 +31,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for tvOS",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
+        "title": "Supporting Multiple Users in Your tvOS App",
+        "url": "https://developer.apple.com/documentation/TVServices/supporting-multiple-users-in-your-tvos-app"
       },
       {
         "title": "Personalizing Your App for Each User on Apple TV",
         "url": "https://developer.apple.com/documentation/TVServices/personalizing-your-app-for-each-user-on-apple-tv"
       },
       {
-        "title": "Supporting Multiple Users in Your tvOS App",
-        "url": "https://developer.apple.com/documentation/TVServices/supporting-multiple-users-in-your-tvos-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Designing for tvOS",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10645/5/2E2B228F-1C9A-450E-927C-0FC486316517/wwdc2020_10645_hd.mp4?dl=1",
@@ -70,5 +54,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110384"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:11.693Z"
+  "extractedAt": "2026-10-11T16:44:54.219Z"
 }

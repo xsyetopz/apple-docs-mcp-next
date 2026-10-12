@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: App icons",
         "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/220/4/eb340303-3d49-4fcc-84c9-9dc98543ddaf/downloads/wwdc2025-220_hd.mp4?dl=1",
@@ -60,5 +45,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/219"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:05.124Z"
+  "extractedAt": "2026-10-11T16:34:18.917Z"
 }

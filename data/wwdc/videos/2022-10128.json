@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -55,44 +56,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Using object capture assets in RealityKit",
+        "url": "https://developer.apple.com/documentation/RealityKit/using-object-capture-assets-in-realitykit"
       },
       {
-        "title": "Building an Immersive Experience with RealityKit",
-        "url": "https://developer.apple.com/documentation/realitykit/building_an_immersive_experience_with_realitykit"
+        "title": "Creating a photogrammetry command-line app",
+        "url": "https://developer.apple.com/documentation/RealityKit/creating-a-photogrammetry-command-line-app"
       },
       {
         "title": "Capturing photographs for RealityKit Object Capture",
         "url": "https://developer.apple.com/documentation/RealityKit/capturing-photographs-for-realitykit-object-capture"
       },
       {
-        "title": "Creating a Photogrammetry Command-Line App",
-        "url": "https://developer.apple.com/documentation/realitykit/creating_a_photogrammetry_command-line_app"
+        "title": "Building an immersive experience with RealityKit",
+        "url": "https://developer.apple.com/documentation/RealityKit/building-an-immersive-experience-with-realitykit"
       },
       {
         "title": "RealityKit",
         "url": "https://developer.apple.com/documentation/RealityKit"
-      },
-      {
-        "title": "Taking Pictures for 3D Object Capture",
-        "url": "https://developer.apple.com/documentation/realitykit/taking_pictures_for_3d_object_capture"
-      },
-      {
-        "title": "Using object capture assets in RealityKit",
-        "url": "https://developer.apple.com/documentation/realitykit/using_object_capture_assets_in_realitykit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10128/3/A48642CC-4EA4-478D-BC86-9AD9FE213885/downloads/wwdc2022-10128_hd.mp4?dl=1",
@@ -130,5 +111,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10075"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:56.843Z"
+  "extractedAt": "2026-10-11T16:39:20.007Z"
 }

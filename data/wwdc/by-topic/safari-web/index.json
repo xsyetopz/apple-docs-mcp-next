@@ -1,8 +1,9 @@
 {
   "id": "safari-web",
   "name": "Safari & Web",
-  "videoCount": 67,
+  "videoCount": 87,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -10,9 +11,107 @@
     "2021",
     "2020",
     "2019",
+    "2018",
     "2015"
   ],
   "videos": [
+    {
+      "id": "216",
+      "year": "2026",
+      "title": "Create web extensions for Safari",
+      "topics": [
+        "App Store, Distribution & Marketing",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/216/",
+      "dataFile": "videos/2026-216.json"
+    },
+    {
+      "id": "320",
+      "year": "2026",
+      "title": "Explore immersive website environments in visionOS",
+      "topics": [
+        "Safari & Web",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/320/",
+      "dataFile": "videos/2026-320.json"
+    },
+    {
+      "id": "215",
+      "year": "2026",
+      "title": "Get started with the HTML Model Element",
+      "topics": [
+        "Safari & Web",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/215/",
+      "dataFile": "videos/2026-215.json"
+    },
+    {
+      "id": "314",
+      "year": "2026",
+      "title": "Learn CSS Grid Lanes",
+      "topics": [
+        "Design",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/314/",
+      "dataFile": "videos/2026-314.json"
+    },
+    {
+      "id": "315",
+      "year": "2026",
+      "title": "Rediscover the HTML select element",
+      "topics": [
+        "Design",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/315/",
+      "dataFile": "videos/2026-315.json"
+    },
+    {
+      "id": "8015",
+      "year": "2026",
+      "title": "Safari and Web Technologies Group Lab",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8015/",
+      "dataFile": "videos/2026-8015.json"
+    },
+    {
+      "id": "204",
+      "year": "2026",
+      "title": "What’s new in WebKit for Safari 27",
+      "topics": [
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/204/",
+      "dataFile": "videos/2026-204.json"
+    },
     {
       "id": "235",
       "year": "2025",
@@ -31,7 +130,9 @@
       "year": "2025",
       "title": "Meet WebKit for SwiftUI",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -44,7 +145,8 @@
       "year": "2025",
       "title": "Unlock GPU computing with WebGPU",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -57,7 +159,8 @@
       "year": "2025",
       "title": "Verify identity documents on the web",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -84,7 +187,8 @@
       "year": "2025",
       "title": "What’s new in Safari and WebKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -100,7 +204,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -113,7 +221,9 @@
       "year": "2024",
       "title": "Build immersive web experiences with WebXR",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -140,7 +250,9 @@
       "year": "2024",
       "title": "Unlock the power of places with MapKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -153,7 +265,9 @@
       "year": "2024",
       "title": "What’s new in Quick Look for visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -180,7 +294,8 @@
       "title": "Meet Safari for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -189,11 +304,38 @@
       "dataFile": "videos/2023-10279.json"
     },
     {
+      "id": "10320",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10320/",
+      "dataFile": "videos/2023-10320.json"
+    },
+    {
+      "id": "10326",
+      "year": "2023",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10326/",
+      "dataFile": "videos/2023-10326.json"
+    },
+    {
       "id": "10262",
       "year": "2023",
       "title": "Rediscover Safari developer features",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -245,7 +387,8 @@
       "year": "2023",
       "title": "What’s new in Web Inspector",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -325,11 +468,56 @@
       "dataFile": "videos/2022-10092.json"
     },
     {
+      "id": "110840",
+      "year": "2022",
+      "title": "Meet the Presenter: Enhance your Sign in with Apple experience",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110840/",
+      "dataFile": "videos/2022-110840.json"
+    },
+    {
+      "id": "110832",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet CKTool JS",
+      "topics": [
+        "Safari & Web",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110832/",
+      "dataFile": "videos/2022-110832.json"
+    },
+    {
+      "id": "110424",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in web accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Essentials",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110424/",
+      "dataFile": "videos/2022-110424.json"
+    },
+    {
       "id": "10003",
       "year": "2022",
       "title": "Meet WeatherKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -349,6 +537,104 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10098/",
       "dataFile": "videos/2022-10098.json"
+    },
+    {
+      "id": "110825",
+      "year": "2022",
+      "title": "Q&A: Apple Music",
+      "topics": [
+        "Audio & Video",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110825/",
+      "dataFile": "videos/2022-110825.json"
+    },
+    {
+      "id": "110944",
+      "year": "2022",
+      "title": "Q&A: Passkeys and authentication",
+      "topics": [
+        "Developer Tools",
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110944/",
+      "dataFile": "videos/2022-110944.json"
+    },
+    {
+      "id": "110916",
+      "year": "2022",
+      "title": "Q&A: Private Access Tokens",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110916/",
+      "dataFile": "videos/2022-110916.json"
+    },
+    {
+      "id": "110485",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110485/",
+      "dataFile": "videos/2022-110485.json"
+    },
+    {
+      "id": "110535",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110535/",
+      "dataFile": "videos/2022-110535.json"
+    },
+    {
+      "id": "110842",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110842/",
+      "dataFile": "videos/2022-110842.json"
+    },
+    {
+      "id": "110841",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110841/",
+      "dataFile": "videos/2022-110841.json"
     },
     {
       "id": "10077",
@@ -397,7 +683,9 @@
       "title": "What's new in web accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -411,7 +699,8 @@
       "title": "What's new in WKWebView",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -452,7 +741,9 @@
       "year": "2021",
       "title": "Build Mail app extensions",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -465,7 +756,8 @@
       "year": "2021",
       "title": "Coordinate media playback in Safari with Group Activities",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -478,7 +770,8 @@
       "year": "2021",
       "title": "Design for Safari 15",
       "topics": [
-        "Design"
+        "Design",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -504,7 +797,8 @@
       "year": "2021",
       "title": "Discover Web Inspector improvements",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -517,7 +811,8 @@
       "year": "2021",
       "title": "Explore Safari Web Extension improvements",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -543,7 +838,8 @@
       "year": "2021",
       "title": "Meet privacy-preserving ad attribution",
       "topics": [
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -556,7 +852,8 @@
       "year": "2021",
       "title": "Meet Safari Web Extensions on iOS",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -598,7 +895,9 @@
       "title": "Broaden your reach with Siri Event Suggestions",
       "topics": [
         "App Services",
-        "Developer Tools"
+        "Developer Tools",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -611,7 +910,9 @@
       "year": "2020",
       "title": "Configure and link your App Clips",
       "topics": [
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -710,7 +1011,9 @@
       "title": "Shop online with AR Quick Look",
       "topics": [
         "App Services",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -763,7 +1066,11 @@
       "year": "2019",
       "title": "Adding Indoor Maps to your App and Website",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -902,6 +1209,19 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2019/717/",
       "dataFile": "videos/2019-717.json"
+    },
+    {
+      "id": "234",
+      "year": "2018",
+      "title": "What’s New in Safari and WebKit",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/234/",
+      "dataFile": "videos/2018-234.json"
     },
     {
       "id": "504",

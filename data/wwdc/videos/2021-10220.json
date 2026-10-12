@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Accessibility & Inclusion",
-    "Developer Tools"
+    "Developer Tools",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -80,28 +81,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Fruta: Building a Feature-Rich App with SwiftUI",
-        "url": "https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui"
-      },
-      {
         "title": "Localization",
         "url": "https://developer.apple.com/documentation/Xcode/localization"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Fruta: Building a feature-rich app with SwiftUI",
+        "url": "https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10220/6/3866585A-3920-44B4-AB3F-03A446FCDE3A/downloads/wwdc2021-10220_hd.mp4?dl=1",
@@ -133,5 +118,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10018"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:45.228Z"
+  "extractedAt": "2026-10-11T16:43:48.444Z"
 }

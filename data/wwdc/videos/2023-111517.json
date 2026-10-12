@@ -1,0 +1,25 @@
+{
+  "id": "111517",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111517/",
+  "title": "Q&A: Maps technologies",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Maps & Location"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10043",
+      "year": "2023",
+      "title": "Meet MapKit for SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10043"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:11.707Z"
+}

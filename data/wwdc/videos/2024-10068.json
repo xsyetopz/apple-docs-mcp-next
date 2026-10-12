@@ -61,14 +61,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Displaying live data with Live Activities",
-        "url": "https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities"
-      },
-      {
         "title": "Forum: App & System Services",
         "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
       },
@@ -77,20 +69,12 @@
         "url": "https://developer.apple.com/documentation/ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Displaying live data with Live Activities",
+        "url": "https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10068/4/C621DA91-3F64-481C-8D10-25A5C5FCD587/downloads/wwdc2024-10068_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10068/4/C621DA91-3F64-481C-8D10-25A5C5FCD587/downloads/wwdc2024-10068_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:11:06.027Z"
+  "extractedAt": "2026-10-11T16:34:39.165Z"
 }

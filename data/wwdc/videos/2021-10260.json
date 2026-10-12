@@ -109,8 +109,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Navigating an app’s user interface using a keyboard",
+        "url": "https://developer.apple.com/documentation/UIKit/navigating-an-app-s-user-interface-using-a-keyboard"
+      },
+      {
+        "title": "Adjusting your layout with keyboard layout guide",
+        "url": "https://developer.apple.com/documentation/UIKit/adjusting-your-layout-with-keyboard-layout-guide"
       },
       {
         "title": "About focus interactions for Apple TV",
@@ -121,32 +125,12 @@
         "url": "https://developer.apple.com/documentation/UIKit/adding-hardware-keyboard-support-to-your-app"
       },
       {
-        "title": "Adding Menus and Shortcuts to the Menu Bar and User Interface",
-        "url": "https://developer.apple.com/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
-      },
-      {
-        "title": "Adjusting your layout with keyboard layout guide",
-        "url": "https://developer.apple.com/documentation/UIKit/adjusting-your-layout-with-keyboard-layout-guide"
-      },
-      {
-        "title": "Navigating an app’s user interface using a keyboard",
-        "url": "https://developer.apple.com/documentation/UIKit/navigating-an-app-s-user-interface-using-a-keyboard"
+        "title": "Adding menus and shortcuts to the menu bar and user interface",
+        "url": "https://developer.apple.com/documentation/UIKit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface"
       },
       {
         "title": "UIKit",
         "url": "https://developer.apple.com/documentation/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/Implementing-Advanced-Text-Input-Features.zip",
@@ -191,5 +175,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10027"
     }
   ],
-  "extractedAt": "2025-07-18T10:54:10.747Z"
+  "extractedAt": "2026-10-11T16:42:32.394Z"
 }

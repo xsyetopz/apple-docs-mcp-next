@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Game Center",
         "url": "https://developer.apple.com/design/human-interface-guidelines/game-center"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10145/4/4CE0B7D8-290B-4983-B7DE-0FD504DC54C9/wwdc2020_10145_hd.mp4?dl=1",
@@ -91,5 +75,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10619"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:41.905Z"
+  "extractedAt": "2026-10-11T16:45:05.180Z"
 }

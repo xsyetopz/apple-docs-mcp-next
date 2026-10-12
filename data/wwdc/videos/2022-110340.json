@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Swift Charts",
+        "url": "https://developer.apple.com/documentation/Charts"
       },
       {
         "title": "Creating a chart using Swift Charts",
         "url": "https://developer.apple.com/documentation/Charts/Creating-a-chart-using-Swift-Charts"
       },
       {
-        "title": "Swift Charts",
-        "url": "https://developer.apple.com/documentation/Charts"
-      },
-      {
         "title": "Visualizing your app’s data",
-        "url": "https://developer.apple.com/documentation/charts/visualizing_your_app_s_data"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "url": "https://developer.apple.com/documentation/Charts/visualizing-your-app-s-data"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110340/3/B5BDA6B6-597F-460B-A88C-959265B6715D/downloads/wwdc2022-110340_hd.mp4?dl=1",
@@ -63,11 +47,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10136"
     },
     {
+      "id": "110531",
+      "year": "2022",
+      "title": "Meet the Presenter: Design app experiences with charts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110531"
+    },
+    {
       "id": "10137",
       "year": "2022",
       "title": "Swift Charts: Raise the bar",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10137"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:53.017Z"
+  "extractedAt": "2026-10-11T16:40:14.793Z"
 }

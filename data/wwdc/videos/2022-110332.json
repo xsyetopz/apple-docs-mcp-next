@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Counting human body action repetitions in a live video feed",
-        "url": "https://developer.apple.com/documentation/createmlcomponents/counting_human_body_action_repetitions_in_a_live_video_feed"
+        "url": "https://developer.apple.com/documentation/CreateMLComponents/counting-human-body-action-repetitions-in-a-live-video-feed"
       },
       {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110332/5/6B7CFC73-E018-439B-8755-EA807A72DEA3/downloads/wwdc2022-110332_hd.mp4?dl=1",
@@ -64,6 +48,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10019"
     },
     {
+      "id": "110901",
+      "year": "2022",
+      "title": "Q&A: Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110901"
+    },
+    {
       "id": "10037",
       "year": "2021",
       "title": "Build dynamic iOS apps with the Create ML framework",
@@ -76,5 +66,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10039"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:14.336Z"
+  "extractedAt": "2026-10-11T16:39:32.596Z"
 }

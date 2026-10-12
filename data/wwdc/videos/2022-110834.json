@@ -1,0 +1,31 @@
+{
+  "id": "110834",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110834/",
+  "title": "Q&A: CloudKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "System Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10116",
+      "year": "2022",
+      "title": "Meet CKTool JS",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10116"
+    },
+    {
+      "id": "10115",
+      "year": "2022",
+      "title": "What’s new in CloudKit Console",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10115"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:31.322Z"
+}

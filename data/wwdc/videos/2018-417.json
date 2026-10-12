@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/417j8ucs9p8w7seip/417/417_hd_testing_tips__tricks.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/417j8ucs9p8w7seip/417/417_sd_testing_tips__tricks.mp4?dl=1"
   },
@@ -48,7 +31,13 @@
       "year": "2020",
       "title": "Build scalable enterprise app suites",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10142"
+    },
+    {
+      "id": "407",
+      "year": "2018",
+      "title": "Practical Approaches to Great App Performance",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/407"
     }
   ],
-  "extractedAt": "2025-07-18T10:19:02.110Z"
+  "extractedAt": "2026-10-11T16:48:37.632Z"
 }

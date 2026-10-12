@@ -37,28 +37,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building a watchOS app",
         "url": "https://developer.apple.com/documentation/watchOS-Apps/building_a_watchos_app"
       },
       {
         "title": "Designing for watchOS",
         "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-watchos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10171/7/6847699B-2742-45B0-8651-9D832223ACFA/wwdc2020_10171_hd.mp4?dl=1",
@@ -72,5 +56,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/219"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:31.461Z"
+  "extractedAt": "2026-10-11T16:45:40.326Z"
 }

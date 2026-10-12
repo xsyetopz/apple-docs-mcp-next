@@ -25,10 +25,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: App & System Services",
         "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
       },
@@ -47,18 +43,6 @@
       {
         "title": "Starting and updating Live Activities with ActivityKit push notifications",
         "url": "https://developer.apple.com/documentation/ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10069/4/4BD768EC-9A6C-492A-ADB0-C17EF9F7110C/downloads/wwdc2024-10069_hd.mp4?dl=1",
@@ -72,5 +56,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10185"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:08.354Z"
+  "extractedAt": "2026-10-11T16:35:02.503Z"
 }

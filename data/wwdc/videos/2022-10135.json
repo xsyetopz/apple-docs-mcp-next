@@ -32,24 +32,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Core Bluetooth",
         "url": "https://developer.apple.com/documentation/CoreBluetooth"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10135/4/B6405ED7-98EE-473C-8174-144D5E72CA02/downloads/wwdc2022-10135_hd.mp4?dl=1",
@@ -57,11 +41,23 @@
   },
   "relatedVideos": [
     {
+      "id": "110446",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110446"
+    },
+    {
+      "id": "110448",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110448"
+    },
+    {
       "id": "10005",
       "year": "2021",
       "title": "Connect Bluetooth devices to Apple Watch",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10005"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:45.081Z"
+  "extractedAt": "2026-10-11T16:39:25.493Z"
 }

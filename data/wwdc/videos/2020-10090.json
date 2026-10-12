@@ -81,28 +81,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "AVFoundation",
         "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10090/6/EA16694F-BEEC-44FF-A129-12336E5390B9/wwdc2020_10090_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10090/6/EA16694F-BEEC-44FF-A129-12336E5390B9/wwdc2020_10090_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:24:51.335Z"
+  "extractedAt": "2026-10-11T16:45:46.846Z"
 }

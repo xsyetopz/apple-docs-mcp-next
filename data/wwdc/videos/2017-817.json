@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Notifications",
         "url": "https://developer.apple.com/design/human-interface-guidelines/notifications/"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Apple Design Site",
+        "url": "https://developer.apple.com/design/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/817p12uvpl9vgt/817/817_hd_rich_notifications.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/817p12uvpl9vgt/817/817_sd_rich_notifications.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:38:39.817Z"
+  "extractedAt": "2026-10-11T16:48:50.608Z"
 }

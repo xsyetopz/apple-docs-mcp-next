@@ -15,28 +15,17 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/427quw6yo5agrbit/427/427_hd_training_recommendation_models_in_create_ml.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/427quw6yo5agrbit/427/427_sd_training_recommendation_models_in_create_ml.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "407",
+      "year": "2019",
+      "title": "Create ML for Activity, Text, and Recommendations",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/407"
+    },
     {
       "id": "430",
       "year": "2019",
@@ -44,5 +33,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/430"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:10.688Z"
+  "extractedAt": "2026-10-11T16:47:59.729Z"
 }

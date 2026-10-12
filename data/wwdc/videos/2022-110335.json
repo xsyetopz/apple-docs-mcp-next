@@ -15,28 +15,23 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110335/4/0F40B105-473E-42E2-A5BD-C33EE3C6B743/downloads/wwdc2022-110335_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110335/4/0F40B105-473E-42E2-A5BD-C33EE3C6B743/downloads/wwdc2022-110335_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110515",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110515"
+    },
+    {
+      "id": "110516",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110516"
+    },
     {
       "id": "10045",
       "year": "2022",
@@ -44,5 +39,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10045"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:07.234Z"
+  "extractedAt": "2026-10-11T16:41:15.005Z"
 }

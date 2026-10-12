@@ -73,24 +73,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10045/3/F899BEB5-EBE4-422E-AE52-AEF752A194A0/downloads/wwdc2022-10045_hd.mp4?dl=1",
@@ -122,6 +106,18 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110335"
     },
     {
+      "id": "110515",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110515"
+    },
+    {
+      "id": "110516",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110516"
+    },
+    {
       "id": "10297",
       "year": "2021",
       "title": "Manage devices with Apple Configurator",
@@ -134,5 +130,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10129"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:46.017Z"
+  "extractedAt": "2026-10-11T16:39:33.014Z"
 }

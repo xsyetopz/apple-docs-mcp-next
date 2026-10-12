@@ -7,7 +7,9 @@
   "duration": "",
   "topics": [
     "Audio & Video",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Photos & Camera",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -56,24 +58,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "CAEDRMetadata",
         "url": "https://developer.apple.com/documentation/QuartzCore/CAEDRMetadata"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ]
   },
@@ -103,5 +89,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110565"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:01.945Z"
+  "extractedAt": "2026-10-11T16:40:17.443Z"
 }

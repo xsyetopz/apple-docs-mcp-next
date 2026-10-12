@@ -61,28 +61,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Float16",
         "url": "https://developer.apple.com/documentation/Swift/Float16"
       },
       {
         "title": "Numeric Protocols",
         "url": "https://developer.apple.com/documentation/Swift/numeric-protocols"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10217/6/608C3CB1-C8BD-4B19-B5F3-5ADA44E200E3/wwdc2020_10217_hd.mp4?dl=1",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10170"
     }
   ],
-  "extractedAt": "2025-07-18T10:50:36.402Z"
+  "extractedAt": "2026-10-11T16:45:49.811Z"
 }

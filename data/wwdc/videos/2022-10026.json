@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,24 +26,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Enabling Live Text interactions with images",
         "url": "https://developer.apple.com/documentation/VisionKit/enabling-live-text-interactions-with-images"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10026/3/346C760E-A60C-4D64-89A7-26C888CBBE0E/downloads/wwdc2022-10026_hd.mp4?dl=1",
@@ -66,7 +51,13 @@
       "year": "2022",
       "title": "Create a great video playback experience",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10147"
+    },
+    {
+      "id": "110905",
+      "year": "2022",
+      "title": "Q&A: Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110905"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:14.842Z"
+  "extractedAt": "2026-10-11T16:40:10.292Z"
 }

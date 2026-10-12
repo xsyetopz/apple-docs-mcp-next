@@ -103,14 +103,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Handling Subscriptions Billing",
-        "url": "https://developer.apple.com/documentation/StoreKit/handling-subscriptions-billing"
-      },
-      {
         "title": "Implementing offer codes in your app",
         "url": "https://developer.apple.com/documentation/StoreKit/implementing-offer-codes-in-your-app"
       },
@@ -119,24 +111,16 @@
         "url": "https://developer.apple.com/documentation/StoreKit/reducing-involuntary-subscriber-churn"
       },
       {
-        "title": "Setting up StoreKit Testing in Xcode",
-        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
-      },
-      {
         "title": "Testing In-App Purchases with sandbox",
         "url": "https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Setting up StoreKit Testing in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Handling Subscriptions Billing",
+        "url": "https://developer.apple.com/documentation/StoreKit/handling-subscriptions-billing"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10039/5/38FCCB56-38F1-4E4D-B7D0-CF031642775A/downloads/wwdc2022-10039_hd.mp4?dl=1",
@@ -160,6 +144,18 @@
       "year": "2023",
       "title": "What’s new in StoreKit 2 and StoreKit Testing in Xcode",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10140"
+    },
+    {
+      "id": "110758",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110758"
+    },
+    {
+      "id": "110759",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110759"
     },
     {
       "id": "10007",
@@ -192,5 +188,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10659"
     }
   ],
-  "extractedAt": "2025-07-18T09:19:23.913Z"
+  "extractedAt": "2026-10-11T16:41:23.729Z"
 }

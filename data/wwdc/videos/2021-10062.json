@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building a Great Mac App with SwiftUI",
-        "url": "https://developer.apple.com/documentation/swiftui/building_a_great_mac_app_with_swiftui"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Building a great Mac app with SwiftUI",
+        "url": "https://developer.apple.com/documentation/SwiftUI/building-a-great-mac-app-with-swiftui"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10062/4/9B92BC78-A602-46D4-BABD-38CFE255CCDE/downloads/wwdc2021-10062_hd.mp4?dl=1",
@@ -48,5 +33,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10058"
     }
   ],
-  "extractedAt": "2025-07-18T10:27:52.463Z"
+  "extractedAt": "2026-10-11T16:44:26.583Z"
 }

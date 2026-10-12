@@ -1,0 +1,25 @@
+{
+  "id": "111482",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111482/",
+  "title": "Meet the presenter: Create a great ShazamKit experience",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10051",
+      "year": "2023",
+      "title": "Create a great ShazamKit experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10051"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:21.481Z"
+}

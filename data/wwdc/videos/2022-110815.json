@@ -1,0 +1,52 @@
+{
+  "id": "110815",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110815/",
+  "title": "Meet the Presenter: Make a great SharePlay experience",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services",
+    "Audio & Video",
+    "Essentials",
+    "Health & Fitness"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110380",
+      "year": "2022",
+      "title": "Display ads and interstitials in SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110380"
+    },
+    {
+      "id": "10139",
+      "year": "2022",
+      "title": "Make a great SharePlay experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10139"
+    },
+    {
+      "id": "110822",
+      "year": "2022",
+      "title": "Q&A: Coordinated media with SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110822"
+    },
+    {
+      "id": "110824",
+      "year": "2022",
+      "title": "Q&A: SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110824"
+    },
+    {
+      "id": "10140",
+      "year": "2022",
+      "title": "What's new in SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10140"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:35.809Z"
+}

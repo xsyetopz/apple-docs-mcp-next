@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Spatial Computing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -151,28 +153,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Canyon Crosser: Building a volumetric hike-planning app",
-        "url": "https://developer.apple.com/documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app"
-      },
-      {
         "title": "Rendering hover effects in Metal immersive apps",
         "url": "https://developer.apple.com/documentation/CompositorServices/rendering_hover_effects_in_metal_immersive_apps"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Canyon Crosser: Building a volumetric hike-planning app",
+        "url": "https://developer.apple.com/documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/274/4/af6a131e-f3ee-4d68-8371-4f52e9c4a3d6/downloads/wwdc2025-274_hd.mp4?dl=1",
@@ -204,5 +190,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10040"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:13.988Z"
+  "extractedAt": "2026-10-11T16:33:21.477Z"
 }

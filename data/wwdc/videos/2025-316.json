@@ -19,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Accessibility",
         "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
       },
       {
         "title": "Human Interface Guidelines: Inclusion",
         "url": "https://developer.apple.com/design/human-interface-guidelines/inclusion/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/316/6/59b25911-3ac3-41d5-a2db-2175a37a118f/downloads/wwdc2025-316_hd.mp4?dl=1",
@@ -66,5 +50,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10304"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:30.505Z"
+  "extractedAt": "2026-10-11T16:34:16.913Z"
 }

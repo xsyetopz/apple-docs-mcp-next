@@ -253,30 +253,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SwiftUI",
         "url": "https://developer.apple.com/documentation/SwiftUI"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10052/5/241B4005-877E-40CD-91AA-4CE0714BB2E6/downloads/wwdc2022-10052_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10052/5/241B4005-877E-40CD-91AA-4CE0714BB2E6/downloads/wwdc2022-10052_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110397",
+      "year": "2022",
+      "title": "Break the SwiftUIce",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110397"
+    },
     {
       "id": "10061",
       "year": "2022",
@@ -314,10 +304,28 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10093"
     },
     {
+      "id": "110391",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110391"
+    },
+    {
       "id": "10062",
       "year": "2022",
       "title": "Meet Transferable",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10062"
+    },
+    {
+      "id": "110393",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110393"
+    },
+    {
+      "id": "110443",
+      "year": "2022",
+      "title": "Study Hall: Throwback Thursday",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110443"
     },
     {
       "id": "10137",
@@ -368,5 +376,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110929"
     }
   ],
-  "extractedAt": "2025-07-18T10:53:32.067Z"
+  "extractedAt": "2026-10-11T16:39:35.480Z"
 }

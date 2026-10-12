@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Graphics & Games"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Capturing Metal Commands Programmatically",
+        "title": "Capturing Metal commands programmatically",
         "url": "https://developer.apple.com/documentation/Metal/capturing-metal-commands-programmatically"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/606j537qmnh6o6/606/606_hd_delivering_optimized_metal_apps_and_games.mp4?dl=1",
@@ -112,5 +97,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/613"
     }
   ],
-  "extractedAt": "2025-07-18T10:17:05.181Z"
+  "extractedAt": "2026-10-11T16:47:13.893Z"
 }

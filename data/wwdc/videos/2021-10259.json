@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,24 +44,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adjusting your layout with keyboard layout guide",
         "url": "https://developer.apple.com/documentation/UIKit/adjusting-your-layout-with-keyboard-layout-guide"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10259/4/F6B7B6EB-8577-4034-9EE3-67BADA64041D/downloads/wwdc2021-10259_hd.mp4?dl=1",
@@ -80,5 +65,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10276"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:26.227Z"
+  "extractedAt": "2026-10-11T16:42:46.180Z"
 }

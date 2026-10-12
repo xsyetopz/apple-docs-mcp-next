@@ -18,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Allowing apps and websites to link to your content",
-        "url": "https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content"
-      },
-      {
         "title": "Supporting universal links in your app",
         "url": "https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Allowing apps and websites to link to your content",
+        "url": "https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10098/3/E024AF2B-1DDA-4974-AA48-4186E6F9E22D/wwdc2020_10098_hd.mp4?dl=1",
@@ -89,5 +73,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/717"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:44.671Z"
+  "extractedAt": "2026-10-11T16:46:40.305Z"
 }

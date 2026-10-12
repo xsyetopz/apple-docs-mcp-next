@@ -61,28 +61,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Swift Forums: Distributed Actors",
-        "url": "https://forums.swift.org/c/server/distributed-actors/79"
-      },
-      {
         "title": "TicTacFish: Implementing a game using distributed actors",
         "url": "https://developer.apple.com/documentation/swift/tictacfish_implementing_a_game_using_distributed_actors"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Swift Forums: Distributed Actors",
+        "url": "https://forums.swift.org/c/server/distributed-actors/79"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110356/6/AAC6A083-0D2D-4FFF-B60E-86EF01E37EE2/downloads/wwdc2022-110356_hd.mp4?dl=1",
@@ -94,6 +78,12 @@
       "year": "2022",
       "title": "Eliminate data races using Swift Concurrency",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110351"
+    },
+    {
+      "id": "110480",
+      "year": "2022",
+      "title": "Q&A: Swift concurrency",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110480"
     },
     {
       "id": "110360",
@@ -126,5 +116,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/713"
     }
   ],
-  "extractedAt": "2025-07-18T10:48:11.985Z"
+  "extractedAt": "2026-10-11T16:40:20.457Z"
 }

@@ -44,32 +44,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Background execution",
         "url": "https://developer.apple.com/documentation/WatchKit/background-execution"
-      },
-      {
-        "title": "Core Bluetooth",
-        "url": "https://developer.apple.com/documentation/CoreBluetooth"
       },
       {
         "title": "Interacting with Bluetooth peripherals during background app refresh",
         "url": "https://developer.apple.com/documentation/WatchKit/interacting-with-bluetooth-peripherals-during-background-app-refresh"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core Bluetooth",
+        "url": "https://developer.apple.com/documentation/CoreBluetooth"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10005/6/F54416C7-9591-4AE8-AE9D-365C4BAC2D7E/downloads/wwdc2021-10005_hd.mp4?dl=1",
@@ -89,5 +73,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10002"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:58.365Z"
+  "extractedAt": "2026-10-11T16:42:26.316Z"
 }

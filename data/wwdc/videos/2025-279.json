@@ -61,8 +61,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Performing fast account creation with passkeys",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices/performing-fast-account-creation-with-passkeys"
       },
       {
         "title": "ASCredentialExportManager",
@@ -71,22 +71,6 @@
       {
         "title": "ASCredentialProviderViewController",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/ASCredentialProviderViewController"
-      },
-      {
-        "title": "Performing fast account creation with passkeys",
-        "url": "https://developer.apple.com/documentation/AuthenticationServices/performing-fast-account-creation-with-passkeys"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/279/5/39c2b950-9bc8-4e0a-a336-98ec2ed224a2/downloads/wwdc2025-279_hd.mp4?dl=1",
@@ -106,5 +90,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10092"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:27.429Z"
+  "extractedAt": "2026-10-11T16:34:26.498Z"
 }

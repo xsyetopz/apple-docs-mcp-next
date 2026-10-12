@@ -1,6 +1,6 @@
 {
   "year": "2015",
-  "videoCount": 10,
+  "videoCount": 12,
   "topics": [
     "Design",
     "Developer Tools",
@@ -9,10 +9,24 @@
     "Maps & Location",
     "Privacy & Security",
     "Safari & Web",
+    "Swift",
     "SwiftUI & UI Frameworks",
     "System Services"
   ],
   "videos": [
+    {
+      "id": "413",
+      "year": "2015",
+      "title": "Advanced Debugging and the Address Sanitizer",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2015/413/",
+      "dataFile": "videos/2015-413.json"
+    },
     {
       "id": "805",
       "year": "2015",
@@ -80,11 +94,25 @@
       "dataFile": "videos/2015-703.json"
     },
     {
+      "id": "408",
+      "year": "2015",
+      "title": "Protocol-Oriented Programming in Swift",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "dataFile": "videos/2015-408.json"
+    },
+    {
       "id": "401",
       "year": "2015",
       "title": "Swift and Objective-C Interoperability",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,

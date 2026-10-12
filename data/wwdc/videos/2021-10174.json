@@ -17,36 +17,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Store Server API",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI"
-      },
-      {
-        "title": "App Store Server Notifications",
-        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
       },
       {
         "title": "Human Interface Guidelines: In-app purchase",
         "url": "https://developer.apple.com/design/human-interface-guidelines/in-app-purchase"
       },
       {
+        "title": "App Store Server Notifications",
+        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
+      },
+      {
         "title": "StoreKit",
         "url": "https://developer.apple.com/documentation/StoreKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10174/3/CF8F96B8-0719-405C-815A-25E67736D5F4/downloads/wwdc2021-10174_hd.mp4?dl=1",
@@ -96,5 +80,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/302"
     }
   ],
-  "extractedAt": "2025-07-18T09:19:41.707Z"
+  "extractedAt": "2026-10-11T16:43:29.200Z"
 }

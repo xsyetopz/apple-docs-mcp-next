@@ -73,24 +73,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Customizing Scribble with Interactions",
         "url": "https://developer.apple.com/documentation/PencilKit/customizing-scribble-with-interactions"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10106/4/AD9A0416-4A7E-4ED7-86AD-8EEEF7199216/wwdc2020_10106_hd.mp4?dl=1",
@@ -102,7 +86,13 @@
       "year": "2020",
       "title": "Support hardware keyboards in your app",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10109"
+    },
+    {
+      "id": "221",
+      "year": "2018",
+      "title": "TextKit Best Practices",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/221"
     }
   ],
-  "extractedAt": "2025-07-18T10:55:14.188Z"
+  "extractedAt": "2026-10-11T16:44:51.744Z"
 }

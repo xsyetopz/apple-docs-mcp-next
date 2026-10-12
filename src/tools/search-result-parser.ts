@@ -1,53 +1,63 @@
+import type { Result } from "../types/captured/search-document.ts";
+
 /**
  * Search result parsing utilities
  */
-
-import type * as cheerio from 'cheerio';
 
 export interface SearchResult {
   title: string;
   url: string;
   type: string;
   description: string;
-  framework?: string;
-  beta?: boolean;
+  framework?: string | undefined;
+  beta?: boolean | undefined;
+  /** A WWDC session's year and number in the bundled WWDC data, which `get_wwdc_video` reads */
+  wwdc?: { year: string; videoId: string };
 }
 
 /**
  * Type mapping for search filters
  */
 export const typeMapping: Record<string, string[]> = {
-  all: ['documentation', 'documentation-article', 'documentation-tutorial', 'sample-code'],
-  documentation: ['documentation', 'documentation-article'],
-  sample: ['sample-code'],
+  all: [
+    "documentation",
+    "documentation-article",
+    "documentation-tutorial",
+    "sample-code",
+    "design-guideline",
+    "wwdc-session",
+    "help",
+  ],
+  documentation: ["documentation", "documentation-article"],
+  design: ["design-guideline"],
+  sample: ["sample-code"],
+  help: ["help"],
 };
+
+/**
+ * Where the Human Interface Guidelines live on developer.apple.com
+ */
+export const DESIGN_GUIDELINES_PATH = "/design/human-interface-guidelines/";
+
+/**
+ * Where App Store Connect Help lives: web pages, which Apple's search reports by `sourceURL`
+ */
+export const HELP_PATH = "/help/app-store-connect/";
 
 /**
  * Unsupported document types
  */
-const UNSUPPORTED_TYPES = ['general', 'video', 'forums', 'news'];
-
-/**
- * Extract search result type from element classes
- */
-export function extractResultType(element: cheerio.Cheerio<any>): string {
-  const classes = element.attr('class')?.split(' ') ?? [];
-
-  for (const className of classes) {
-    if (className !== 'search-result' && className.trim()) {
-      return className;
-    }
-  }
-
-  return 'other';
-}
+const UNSUPPORTED_TYPES = ["general", "video", "forums", "news"];
 
 /**
  * Check if result type is supported
  */
-export function isResultTypeSupported(resultType: string, filterType: string): boolean {
+export function isResultTypeSupported(
+  resultType: string,
+  filterType: string,
+): boolean {
   // Apply type filter
-  const allowedTypes = typeMapping[filterType] ?? typeMapping['all'];
+  const allowedTypes = typeMapping[filterType] ?? typeMapping["all"] ?? [];
   if (!allowedTypes.includes(resultType)) {
     return false;
   }
@@ -61,23 +71,6 @@ export function isResultTypeSupported(resultType: string, filterType: string): b
 }
 
 /**
- * Extract result title and URL
- */
-export function extractTitleAndUrl(resultItem: cheerio.Cheerio<any>): { title: string; url: string } {
-  const titleElement = resultItem.find('.result-title');
-  const title = titleElement.text().trim();
-
-  const urlElement = titleElement.find('a');
-  let url = urlElement.attr('href') ?? '';
-
-  if (url && url.startsWith('/')) {
-    url = `https://developer.apple.com${url}`;
-  }
-
-  return { title, url };
-}
-
-/**
  * Check if URL is supported
  */
 export function isUrlSupported(url: string): boolean {
@@ -85,18 +78,17 @@ export function isUrlSupported(url: string): boolean {
     return false;
   }
 
-  // Skip non-documentation URLs
-  if (!url.includes('/documentation/')) {
+  // Skip everything but the documentation, the design guidelines and App Store Connect Help
+  if (
+    !url.includes("/documentation/") &&
+    !url.includes(DESIGN_GUIDELINES_PATH) &&
+    !url.includes(HELP_PATH)
+  ) {
     return false;
   }
 
   // Skip download links and zip files
-  if (url.includes('download.apple.com') || url.includes('.zip')) {
-    return false;
-  }
-
-  // Skip human interface guidelines
-  if (url.includes('/design/human-interface-guidelines/')) {
+  if (url.includes("download.apple.com") || url.includes(".zip")) {
     return false;
   }
 
@@ -104,77 +96,121 @@ export function isUrlSupported(url: string): boolean {
 }
 
 /**
- * Extract result description
+ * A result as Apple's search API streams it
  */
-export function extractDescription(resultItem: cheerio.Cheerio<any>): string {
-  const descriptionElement = resultItem.find('.result-description');
-  return descriptionElement.text().trim();
-}
+/** One result of Apple's search API, typed by quicktype from captured responses (`npm run types:search`) */
+export type ApiSearchResult = Result;
 
 /**
- * Extract framework information
+ * Result types by the API's `kind`; every other kind (a symbol, an overview) is API reference
  */
-export function extractFramework(resultItem: cheerio.Cheerio<any>, url: string): string | undefined {
-  // Try to extract from link text
-  const linkText = resultItem.find('.result-link').text().trim();
-  const frameworkMatch = linkText.match(/^([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)*)\s+[>›]/);
-
-  if (frameworkMatch) {
-    return frameworkMatch[1];
-  }
-
-  // Try to extract from URL
-  const urlMatch = url.match(/\/documentation\/([^\/]+)/);
-  if (urlMatch) {
-    const framework = urlMatch[1];
-    // Convert underscore to space and capitalize
-    return framework.split('_')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  }
-
-  return undefined;
-}
-
-/**
- * Extract beta status
- */
-export function extractBetaStatus(resultItem: cheerio.Cheerio<any>): boolean {
-  const titleText = resultItem.find('.result-title').text();
-  const descriptionText = resultItem.find('.result-description').text();
-
-  return titleText.includes('Beta') || descriptionText.includes('Beta');
-}
+const KIND_TYPES: Record<string, string> = {
+  article: "documentation-article",
+  tutorial: "documentation-tutorial",
+  sampleCode: "sample-code",
+};
 
 /**
  * Parse a single search result
  */
 export function parseSearchResult(
-  element: cheerio.Cheerio<any>,
+  result: ApiSearchResult,
   filterType: string,
 ): SearchResult | null {
-  const resultType = extractResultType(element);
+  const metadata = result.value?.metadata ?? {};
+  if (metadata.itemTypes?.includes("Video")) {
+    return parseWWDCSession(metadata, filterType);
+  }
+  if (metadata.sourceURL?.includes(HELP_PATH)) {
+    return parseHelpPage(metadata, filterType);
+  }
+  return parseDocumentationPage(metadata, filterType);
+}
 
-  if (!isResultTypeSupported(resultType, filterType)) {
+/**
+ * A documentation, guideline or sample-code page
+ */
+function parseDocumentationPage(
+  metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
+  filterType: string,
+): SearchResult | null {
+  const { title, permalink, kind, description, hierarchy } = metadata;
+  // A guideline page reports itself as an article, so its place on the site is what tells it apart
+  const type = permalink?.includes(DESIGN_GUIDELINES_PATH)
+    ? "design-guideline"
+    : (KIND_TYPES[kind ?? ""] ?? "documentation");
+
+  if (
+    !title ||
+    !permalink ||
+    !isResultTypeSupported(type, filterType) ||
+    !isUrlSupported(permalink)
+  ) {
     return null;
   }
-
-  const { title, url } = extractTitleAndUrl(element);
-
-  if (!isUrlSupported(url)) {
-    return null;
-  }
-
-  const description = extractDescription(element);
-  const framework = extractFramework(element, url);
-  const beta = extractBetaStatus(element);
 
   return {
     title,
+    url: permalink,
+    type,
+    description: description ?? "",
+    framework: hierarchy?.split(" > ")[0],
+  };
+}
+
+/**
+ * An App Store Connect Help page, whose title carries its place: "Platform version information - App information -
+ * Reference - App Store Connect - Help"
+ */
+function parseHelpPage(
+  metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
+  filterType: string,
+): SearchResult | null {
+  const [title, section] = (metadata.title ?? "").split(" - ");
+  if (
+    !title ||
+    !metadata.sourceURL ||
+    !isResultTypeSupported("help", filterType)
+  ) {
+    return null;
+  }
+  return {
+    title,
+    url: metadata.sourceURL.replace(/\/$/, ""),
+    type: "help",
+    description: metadata.description ?? "",
+    framework: section
+      ? `App Store Connect Help › ${section}`
+      : "App Store Connect Help",
+  };
+}
+
+/**
+ * A video result, kept when it is a WWDC session: those the bundled WWDC data holds, transcript and code
+ */
+function parseWWDCSession(
+  metadata: NonNullable<NonNullable<ApiSearchResult["value"]>["metadata"]>,
+  filterType: string,
+): SearchResult | null {
+  const session = /^wwdc(\d{4})-(\d+)$/.exec(metadata.ids?.[0] ?? "");
+  const year = session?.[1];
+  const videoId = session?.[2];
+  const title = metadata.titles?.[0];
+  const url = metadata.permalinks?.[0];
+  if (
+    !year ||
+    !videoId ||
+    !title ||
+    !url ||
+    !isResultTypeSupported("wwdc-session", filterType)
+  ) {
+    return null;
+  }
+  return {
+    title,
     url,
-    type: resultType,
-    description,
-    framework,
-    beta,
+    type: "wwdc-session",
+    description: metadata.descriptions?.[0] ?? "",
+    wwdc: { year, videoId },
   };
 }

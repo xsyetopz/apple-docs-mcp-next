@@ -38,24 +38,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10124/4/8043B2FD-2363-4733-85E6-CCDF0BEE783F/downloads/wwdc2023-10124_hd.mp4?dl=1",
@@ -73,6 +57,30 @@
       "year": "2023",
       "title": "Bring your game to Mac, Part 3: Render with Metal",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10125"
+    },
+    {
+      "id": "111285",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111285"
+    },
+    {
+      "id": "111286",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111286"
+    },
+    {
+      "id": "111287",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111287"
+    },
+    {
+      "id": "111288",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111288"
     },
     {
       "id": "10101",
@@ -99,5 +107,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10615"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:48.774Z"
+  "extractedAt": "2026-10-11T16:35:57.293Z"
 }

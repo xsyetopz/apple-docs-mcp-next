@@ -247,24 +247,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Programming Languages",
         "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10217/5/8228D59A-1164-48DA-86CD-79F2191061DC/downloads/wwdc2024-10217_hd.mp4?dl=1",
@@ -290,5 +274,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/416"
     }
   ],
-  "extractedAt": "2025-07-18T10:47:36.671Z"
+  "extractedAt": "2026-10-11T16:35:43.386Z"
 }

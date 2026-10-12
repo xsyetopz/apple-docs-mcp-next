@@ -17,10 +17,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Generating a Promotional Offer Signature on the Server",
         "url": "https://developer.apple.com/documentation/StoreKit/generating-a-promotional-offer-signature-on-the-server"
       },
@@ -29,28 +25,16 @@
         "url": "https://developer.apple.com/documentation/StoreKit/generating-a-signature-for-promotional-offers"
       },
       {
+        "title": "Setting up promotional offers",
+        "url": "https://developer.apple.com/documentation/StoreKit/setting-up-promotional-offers"
+      },
+      {
         "title": "Implementing promotional offers in your app",
         "url": "https://developer.apple.com/documentation/StoreKit/implementing-promotional-offers-in-your-app"
       },
       {
         "title": "Learn more about designing subscriptions",
         "url": "https://developer.apple.com/design/human-interface-guidelines/subscriptions/overview/"
-      },
-      {
-        "title": "Setting up promotional offers",
-        "url": "https://developer.apple.com/documentation/StoreKit/setting-up-promotional-offers"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/305k64jjy5srpt9o/305/305_hd_subscription_offers_best_practices.mp4?dl=1",
@@ -94,5 +78,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/301"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:18.252Z"
+  "extractedAt": "2026-10-11T16:48:11.290Z"
 }

@@ -1,0 +1,49 @@
+{
+  "id": "110535",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110535/",
+  "title": "Q&A: Safari and web technologies",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Safari & Web"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10100",
+      "year": "2022",
+      "title": "Create Safari Web Inspector Extensions",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10100"
+    },
+    {
+      "id": "10098",
+      "year": "2022",
+      "title": "Meet Web Push for Safari",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10098"
+    },
+    {
+      "id": "10048",
+      "year": "2022",
+      "title": "What's new in Safari and WebKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10048"
+    },
+    {
+      "id": "10049",
+      "year": "2022",
+      "title": "What's new in WKWebView",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10049"
+    },
+    {
+      "id": "10099",
+      "year": "2022",
+      "title": "What’s new in Safari Web Extensions",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10099"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:34.829Z"
+}

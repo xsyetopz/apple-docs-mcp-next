@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Spatial Computing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -97,36 +99,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adopting best practices for persistent UI",
         "url": "https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-scene-restoration"
-      },
-      {
-        "title": "Canyon Crosser: Building a volumetric hike-planning app",
-        "url": "https://developer.apple.com/documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app"
-      },
-      {
-        "title": "Petite Asteroids: Building a volumetric visionOS game",
-        "url": "https://developer.apple.com/documentation/visionOS/petite-asteroids-building-a-volumetric-visionos-game"
       },
       {
         "title": "Tracking accessories in volumetric windows",
         "url": "https://developer.apple.com/documentation/ARKit/tracking-accessories-in-volumetric-windows"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Petite Asteroids: Building a volumetric visionOS game",
+        "url": "https://developer.apple.com/documentation/visionOS/petite-asteroids-building-a-volumetric-visionos-game"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Canyon Crosser: Building a volumetric hike-planning app",
+        "url": "https://developer.apple.com/documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/290/4/fb07fe18-8745-4cfd-8448-1879b8f207dc/downloads/wwdc2025-290_hd.mp4?dl=1",
@@ -152,5 +138,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/278"
     }
   ],
-  "extractedAt": "2025-07-18T09:34:53.524Z"
+  "extractedAt": "2026-10-11T16:34:19.299Z"
 }

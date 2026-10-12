@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,20 +44,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Playing haptic feedback in your app",
+        "url": "https://developer.apple.com/documentation/ApplePencil/playing-haptic-feedback-in-your-app"
       },
       {
         "title": "Apple Pencil",
         "url": "https://developer.apple.com/documentation/ApplePencil"
       },
       {
-        "title": "Apple Pencil updates",
-        "url": "https://developer.apple.com/documentation/Updates/ApplePencil"
-      },
-      {
         "title": "Configuring the PencilKit tool picker",
         "url": "https://developer.apple.com/documentation/PencilKit/configuring-the-pencilkit-tool-picker"
+      },
+      {
+        "title": "Apple Pencil updates",
+        "url": "https://developer.apple.com/documentation/Updates/ApplePencil"
       },
       {
         "title": "Forum: UI Frameworks",
@@ -65,22 +66,6 @@
       {
         "title": "Human Interface Guidelines: Apple Pencil and Scribble",
         "url": "https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble"
-      },
-      {
-        "title": "Playing haptic feedback in your app",
-        "url": "https://developer.apple.com/documentation/ApplePencil/playing-haptic-feedback-in-your-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10214/4/AFB648F1-CAD7-4F62-8916-9DF4372C33C4/downloads/wwdc2024-10214_hd.mp4?dl=1",
@@ -106,5 +91,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/221"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:30.961Z"
+  "extractedAt": "2026-10-11T16:34:59.447Z"
 }

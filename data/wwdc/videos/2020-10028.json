@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Swift",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,12 +45,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "WidgetKit",
+        "url": "https://developer.apple.com/documentation/WidgetKit"
       },
       {
-        "title": "Building Widgets Using WidgetKit and SwiftUI",
-        "url": "https://developer.apple.com/documentation/widgetkit/building_widgets_using_widgetkit_and_swiftui"
+        "title": "Keeping a widget up to date",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Keeping-a-Widget-Up-To-Date"
       },
       {
         "title": "Creating a widget extension",
@@ -59,24 +61,8 @@
         "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
       },
       {
-        "title": "Keeping a widget up to date",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Keeping-a-Widget-Up-To-Date"
-      },
-      {
-        "title": "WidgetKit",
-        "url": "https://developer.apple.com/documentation/WidgetKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Building Widgets Using WidgetKit and SwiftUI",
+        "url": "https://developer.apple.com/documentation/WidgetKit/building-widgets-using-widgetkit-and-swiftui"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10028/5/0329D737-A170-472B-97B9-BFD031C7CD41/wwdc2020_10028_hd.mp4?dl=1",
@@ -162,5 +148,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10036"
     }
   ],
-  "extractedAt": "2025-07-18T09:17:20.913Z"
+  "extractedAt": "2026-10-11T16:44:52.092Z"
 }

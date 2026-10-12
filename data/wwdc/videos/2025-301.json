@@ -115,28 +115,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Generate dynamic game content with guided generation and tools",
         "url": "https://developer.apple.com/documentation/FoundationModels/generate-dynamic-game-content-with-guided-generation-and-tools"
       },
       {
         "title": "Human Interface Guidelines: Generative AI",
         "url": "https://developer.apple.com/design/human-interface-guidelines/generative-ai"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/301/4/955589c1-ae33-47db-9e86-2b87311dedb5/downloads/wwdc2025-301_hd.mp4?dl=1",
@@ -162,5 +146,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/286"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:02.136Z"
+  "extractedAt": "2026-10-11T16:33:27.597Z"
 }

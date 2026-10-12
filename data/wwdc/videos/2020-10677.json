@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adding Custom Functions to a Shader Graph",
-        "url": "https://developer.apple.com/documentation/metalperformanceshadersgraph/adding_custom_functions_to_a_shader_graph"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
+        "title": "Adding custom functions to a shader graph",
+        "url": "https://developer.apple.com/documentation/MetalPerformanceShadersGraph/adding-custom-functions-to-a-shader-graph"
       },
       {
         "title": "Metal Performance Shaders",
         "url": "https://developer.apple.com/documentation/MetalPerformanceShaders"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10677/2/C6396D39-7970-4E1A-A045-BC5A85B9AC36/wwdc2020_10677_hd.mp4?dl=1",
@@ -63,5 +47,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/614"
     }
   ],
-  "extractedAt": "2025-07-18T10:36:35.949Z"
+  "extractedAt": "2026-10-11T16:46:01.349Z"
 }

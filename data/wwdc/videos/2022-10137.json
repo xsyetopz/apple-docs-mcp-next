@@ -98,38 +98,28 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Swift Charts",
+        "url": "https://developer.apple.com/documentation/Charts"
       },
       {
         "title": "Creating a chart using Swift Charts",
         "url": "https://developer.apple.com/documentation/Charts/Creating-a-chart-using-Swift-Charts"
       },
       {
-        "title": "Swift Charts",
-        "url": "https://developer.apple.com/documentation/Charts"
-      },
-      {
         "title": "Visualizing your app’s data",
-        "url": "https://developer.apple.com/documentation/charts/visualizing_your_app_s_data"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "url": "https://developer.apple.com/documentation/Charts/visualizing-your-app-s-data"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10137/3/AB0A9BA9-E0B1-440B-98E6-E9C8A395FF34/downloads/wwdc2022-10137_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10137/3/AB0A9BA9-E0B1-440B-98E6-E9C8A395FF34/downloads/wwdc2022-10137_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110397",
+      "year": "2022",
+      "title": "Break the SwiftUIce",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110397"
+    },
     {
       "id": "10133",
       "year": "2022",
@@ -155,6 +145,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10136"
     },
     {
+      "id": "110407",
+      "year": "2022",
+      "title": "Q&A: Swift Charts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110407"
+    },
+    {
       "id": "10052",
       "year": "2022",
       "title": "What's new in SwiftUI",
@@ -167,5 +163,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110929"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:48.038Z"
+  "extractedAt": "2026-10-11T16:40:23.697Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Analyzing the performance of your visionOS app",
         "url": "https://developer.apple.com/documentation/visionOS/analyzing-the-performance-of-your-visionOS-app"
       },
       {
         "title": "Creating a performance plan for your visionOS app",
         "url": "https://developer.apple.com/documentation/visionOS/creating-a-performance-plan-for-visionos-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10100/4/174B83C9-684A-4C6F-832F-54135856AE47/downloads/wwdc2023-10100_hd.mp4?dl=1",
@@ -130,5 +115,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/612"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:42.557Z"
+  "extractedAt": "2026-10-11T16:37:11.958Z"
 }

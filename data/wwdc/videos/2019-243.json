@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Integrating Your App with Siri Event Suggestions",
+        "url": "https://developer.apple.com/documentation/SiriKit/integrating-your-app-with-siri-event-suggestions"
       },
       {
         "title": "Donating Shortcuts",
         "url": "https://developer.apple.com/documentation/SiriKit/donating-shortcuts"
       },
       {
-        "title": "Integrating Your App with Siri Event Suggestions",
-        "url": "https://developer.apple.com/documentation/SiriKit/integrating-your-app-with-siri-event-suggestions"
-      },
-      {
         "title": "SiriKit",
         "url": "https://developer.apple.com/documentation/SiriKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/243ce6ir170wt9zmal/243/243_hd_integrating_with_siri_event_suggestions.mp4?dl=1",
@@ -56,5 +40,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10197"
     }
   ],
-  "extractedAt": "2025-07-18T09:18:14.868Z"
+  "extractedAt": "2026-10-11T16:48:15.760Z"
 }

@@ -37,32 +37,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adopting the Verifier API in your iPhone app",
-        "url": "https://developer.apple.com/documentation/ProximityReader/adopting-the-verifier-api-in-your-iphone-app"
+        "title": "Generating reader tokens for the Verifier API",
+        "url": "https://developer.apple.com/documentation/ProximityReader/generating-reader-tokens-for-the-verifier-api"
       },
       {
         "title": "Checking IDs with the Verifier API",
         "url": "https://developer.apple.com/documentation/ProximityReader/checking-ids-with-the-verifier-api"
       },
       {
-        "title": "Generating reader tokens for the Verifier API",
-        "url": "https://developer.apple.com/documentation/ProximityReader/generating-reader-tokens-for-the-verifier-api"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adopting the Verifier API in your iPhone app",
+        "url": "https://developer.apple.com/documentation/ProximityReader/adopting-the-verifier-api-in-your-iphone-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10114/5/208CF134-3A8A-417E-8DF3-0B8A1F60B130/downloads/wwdc2023-10114_hd.mp4?dl=1",
@@ -76,5 +60,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10041"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:07.402Z"
+  "extractedAt": "2026-10-11T16:38:09.103Z"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "110812",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110812/",
+  "title": "Study Hall: Go big or go home",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10076",
+      "year": "2022",
+      "title": "Bring your iOS app to the Mac",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10076"
+    },
+    {
+      "id": "10070",
+      "year": "2022",
+      "title": "Build a desktop-class iPad app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10070"
+    },
+    {
+      "id": "10069",
+      "year": "2022",
+      "title": "Meet desktop-class iPad",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10069"
+    },
+    {
+      "id": "10009",
+      "year": "2022",
+      "title": "What’s new in iPad app design",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10009"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:31.241Z"
+}

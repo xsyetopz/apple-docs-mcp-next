@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Spatial Computing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -41,24 +43,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10094/4/701039CD-C751-471F-A029-A2407B622C61/downloads/wwdc2023-10094_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10094/4/701039CD-C751-471F-A029-A2407B622C61/downloads/wwdc2023-10094_sd.mp4?dl=1"
   },
@@ -88,5 +73,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10614"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:54.121Z"
+  "extractedAt": "2026-10-11T16:36:04.395Z"
 }

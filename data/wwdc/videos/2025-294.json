@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -109,32 +110,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Analyzing the performance of your Metal app",
         "url": "https://developer.apple.com/documentation/Xcode/Analyzing-the-performance-of-your-Metal-app"
-      },
-      {
-        "title": "Optimizing GPU performance",
-        "url": "https://developer.apple.com/documentation/Xcode/Optimizing-GPU-performance"
       },
       {
         "title": "Rendering hover effects in Metal immersive apps",
         "url": "https://developer.apple.com/documentation/CompositorServices/rendering_hover_effects_in_metal_immersive_apps"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Optimizing GPU performance",
+        "url": "https://developer.apple.com/documentation/Xcode/Optimizing-GPU-performance"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/294/4/e0a53a43-a861-4846-9d3a-45232b5e959a/downloads/wwdc2025-294_hd.mp4?dl=1",
@@ -190,5 +175,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10089"
     }
   ],
-  "extractedAt": "2025-07-18T10:28:26.817Z"
+  "extractedAt": "2026-10-11T16:34:26.094Z"
 }

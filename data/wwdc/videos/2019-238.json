@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Creating Accessible Views",
-        "url": "https://developer.apple.com/documentation/swiftui/creating_accessible_views"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Creating accessible views",
+        "url": "https://developer.apple.com/documentation/SwiftUI/creating-accessible-views"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/238w8avpcuaf5ox/238/238_hd_accessibility_in_swiftui.mp4?dl=1",
@@ -64,6 +49,12 @@
       "year": "2019",
       "title": "Accessibility Inspector",
       "url": "https://developer.apple.com/videos/play/wwdc2019/257"
+    },
+    {
+      "id": "201",
+      "year": "2019",
+      "title": "Accessibility Lessons",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/201"
     },
     {
       "id": "237",
@@ -96,5 +87,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/230"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:45.128Z"
+  "extractedAt": "2026-10-11T16:48:07.609Z"
 }

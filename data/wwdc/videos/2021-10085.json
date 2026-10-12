@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Privacy & Security"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,24 +26,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Accessing User Data",
         "url": "https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10085/7/588BAC34-15EB-4FCE-AF4F-5934A7DD4024/downloads/wwdc2021-10085_hd.mp4?dl=1",
@@ -80,17 +65,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10102"
     },
     {
-      "id": "10321",
-      "year": "2021",
-      "title": "Monday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10321"
-    },
-    {
       "id": "10059",
       "year": "2021",
       "title": "What's new in UIKit",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10059"
     }
   ],
-  "extractedAt": "2025-07-18T10:26:00.712Z"
+  "extractedAt": "2026-10-11T16:42:25.490Z"
 }

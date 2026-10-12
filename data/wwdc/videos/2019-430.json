@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,24 +16,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/430tw6e8xtxo3btga2/430/430_hd_introducing_the_create_ml_app.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/430tw6e8xtxo3btga2/430/430_sd_introducing_the_create_ml_app.mp4?dl=1"
   },
@@ -66,6 +50,18 @@
       "year": "2019",
       "title": "Building Activity Classification Models in Create ML",
       "url": "https://developer.apple.com/videos/play/wwdc2019/426"
+    },
+    {
+      "id": "407",
+      "year": "2019",
+      "title": "Create ML for Activity, Text, and Recommendations",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/407"
+    },
+    {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406"
     },
     {
       "id": "228",
@@ -104,5 +100,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/209"
     }
   ],
-  "extractedAt": "2025-07-18T10:17:54.790Z"
+  "extractedAt": "2026-10-11T16:46:55.088Z"
 }

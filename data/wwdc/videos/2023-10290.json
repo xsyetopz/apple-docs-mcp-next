@@ -1,0 +1,37 @@
+{
+  "id": "10290",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10290/",
+  "title": "Q&A: Xcode Cloud and testing",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10278",
+      "year": "2023",
+      "title": "Create practical workflows in Xcode Cloud",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10278"
+    },
+    {
+      "id": "10175",
+      "year": "2023",
+      "title": "Fix failures faster with Xcode test reports",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10175"
+    },
+    {
+      "id": "10224",
+      "year": "2023",
+      "title": "Simplify distribution in Xcode and Xcode Cloud",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10224"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:19.046Z"
+}

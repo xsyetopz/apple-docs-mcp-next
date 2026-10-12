@@ -15,28 +15,23 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10175/6/2DA62902-FA90-4651-8713-E60599F43E83/downloads/wwdc2023-10175_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10175/6/2DA62902-FA90-4651-8713-E60599F43E83/downloads/wwdc2023-10175_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "10290",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10290"
+    },
+    {
+      "id": "10293",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10293"
+    },
     {
       "id": "10165",
       "year": "2023",
@@ -44,5 +39,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10165"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:56.631Z"
+  "extractedAt": "2026-10-11T16:37:08.293Z"
 }

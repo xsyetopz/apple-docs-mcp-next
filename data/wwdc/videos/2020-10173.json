@@ -57,28 +57,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Sign in with Apple",
         "url": "https://developer.apple.com/design/Human-Interface-Guidelines/sign-in-with-apple"
       },
       {
         "title": "Implementing User Authentication with Sign in with Apple",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10173/3/4C9B78F1-0F45-456A-83FF-83624AE95E25/wwdc2020_10173_hd.mp4?dl=1",
@@ -122,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/706"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:35.474Z"
+  "extractedAt": "2026-10-11T16:45:50.807Z"
 }

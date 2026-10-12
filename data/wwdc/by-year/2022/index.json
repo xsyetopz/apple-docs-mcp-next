@@ -1,6 +1,6 @@
 {
   "year": "2022",
-  "videoCount": 185,
+  "videoCount": 317,
   "topics": [
     "Accessibility & Inclusion",
     "App Services",
@@ -28,13 +28,41 @@
       "year": "2022",
       "title": "Accelerate machine learning with Metal",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10063/",
       "dataFile": "videos/2022-10063.json"
+    },
+    {
+      "id": "110421",
+      "year": "2022",
+      "title": "Accessibility community panel",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110421/",
+      "dataFile": "videos/2022-110421.json"
+    },
+    {
+      "id": "110420",
+      "year": "2022",
+      "title": "Accessibility icebreaker",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110420/",
+      "dataFile": "videos/2022-110420.json"
     },
     {
       "id": "10151",
@@ -55,7 +83,8 @@
       "year": "2022",
       "title": "Add Live Text interaction to your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -68,7 +97,9 @@
       "year": "2022",
       "title": "Add Shared with You to your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -107,7 +138,8 @@
       "year": "2022",
       "title": "Adopt Variable Color in SF Symbols",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -169,11 +201,26 @@
       "dataFile": "videos/2022-10103.json"
     },
     {
+      "id": "110397",
+      "year": "2022",
+      "title": "Break the SwiftUIce",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110397/",
+      "dataFile": "videos/2022-110397.json"
+    },
+    {
       "id": "10018",
       "year": "2022",
       "title": "Bring Continuity Camera to your macOS app",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -199,7 +246,8 @@
       "year": "2022",
       "title": "Bring your driver to iPad with DriverKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -212,7 +260,8 @@
       "year": "2022",
       "title": "Bring your iOS app to the Mac",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -225,7 +274,8 @@
       "year": "2022",
       "title": "Bring your world into augmented reality",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -251,7 +301,8 @@
       "year": "2022",
       "title": "Build a productivity app for Apple Watch",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -279,7 +330,8 @@
       "year": "2022",
       "title": "Build global apps: Localization by example",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -294,7 +346,9 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -322,7 +376,8 @@
       "title": "Complications and widgets: Reloaded",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -361,7 +416,8 @@
       "year": "2022",
       "title": "Create a great video playback experience",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -389,7 +445,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -430,7 +487,8 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -443,7 +501,8 @@
       "year": "2022",
       "title": "Create macOS or Linux virtual machines",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -483,7 +542,8 @@
       "year": "2022",
       "title": "Create Swift Package plugins",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -510,7 +570,8 @@
       "year": "2022",
       "title": "Debug Swift debugging with LLDB",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -576,7 +637,8 @@
       "year": "2022",
       "title": "Design app experiences with charts",
       "topics": [
-        "Design"
+        "Design",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -672,7 +734,8 @@
       "year": "2022",
       "title": "Discover ARKit 6",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -698,7 +761,8 @@
       "year": "2022",
       "title": "Discover Managed Device Attestation",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -765,7 +829,9 @@
       "title": "Display EDR content with Core Image, Metal, and SwiftUI",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -779,7 +845,9 @@
       "title": "Display HDR video in EDR with AVFoundation and Metal",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -805,7 +873,8 @@
       "year": "2022",
       "title": "Efficiency awaits: Background tasks in SwiftUI",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -818,7 +887,8 @@
       "year": "2022",
       "title": "Eliminate data races using Swift Concurrency",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -831,7 +901,8 @@
       "year": "2022",
       "title": "Embrace Swift generics",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -844,7 +915,9 @@
       "year": "2022",
       "title": "Enhance collaboration experiences with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -898,7 +971,9 @@
       "year": "2022",
       "title": "Explore App Tracking Transparency",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -925,7 +1000,9 @@
       "title": "Explore EDR on iOS",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1017,7 +1094,8 @@
       "year": "2022",
       "title": "Explore USD tools and rendering",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1030,7 +1108,8 @@
       "year": "2022",
       "title": "Get it right (to left)",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1043,7 +1122,8 @@
       "year": "2022",
       "title": "Get more mileage out of your app with CarPlay",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1122,7 +1202,8 @@
       "year": "2022",
       "title": "Go further with Complications in WidgetKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1135,13 +1216,28 @@
       "year": "2022",
       "title": "Hello Swift Charts",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10136/",
       "dataFile": "videos/2022-10136.json"
+    },
+    {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670/",
+      "dataFile": "videos/2022-110670.json"
     },
     {
       "id": "10170",
@@ -1214,7 +1310,9 @@
       "year": "2022",
       "title": "Integrate your custom collaboration app with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1282,7 +1380,8 @@
         "App Services",
         "Audio & Video",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1431,7 +1530,8 @@
       "year": "2022",
       "title": "Meet Swift Async Algorithms",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1444,7 +1544,8 @@
       "year": "2022",
       "title": "Meet Swift Package plugins",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1457,7 +1558,8 @@
       "year": "2022",
       "title": "Meet Swift Regex",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1470,7 +1572,8 @@
       "year": "2022",
       "title": "Meet the expanded San Francisco font family",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1479,11 +1582,597 @@
       "dataFile": "videos/2022-110381.json"
     },
     {
+      "id": "110906",
+      "year": "2022",
+      "title": "Meet the Presenter: Accelerate machine learning with Metal",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110906/",
+      "dataFile": "videos/2022-110906.json"
+    },
+    {
+      "id": "110422",
+      "year": "2022",
+      "title": "Meet the Presenter: Add accessibility to your Unity games",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110422/",
+      "dataFile": "videos/2022-110422.json"
+    },
+    {
+      "id": "110658",
+      "year": "2022",
+      "title": "Meet the Presenter: Add Apple frameworks to your Unity game projects",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110658/",
+      "dataFile": "videos/2022-110658.json"
+    },
+    {
+      "id": "110909",
+      "year": "2022",
+      "title": "Meet the Presenter: Adopt desktop-class editing interactions",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110909/",
+      "dataFile": "videos/2022-110909.json"
+    },
+    {
+      "id": "110661",
+      "year": "2022",
+      "title": "Meet the Presenter: Boost your performance with MetalFX Upscaling",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110661/",
+      "dataFile": "videos/2022-110661.json"
+    },
+    {
+      "id": "110961",
+      "year": "2022",
+      "title": "Meet the Presenter: Bring Continuity Camera to your macOS app",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110961/",
+      "dataFile": "videos/2022-110961.json"
+    },
+    {
+      "id": "110839",
+      "year": "2022",
+      "title": "Meet the Presenter: Bring your iOS app to the Mac",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110839/",
+      "dataFile": "videos/2022-110839.json"
+    },
+    {
+      "id": "110837",
+      "year": "2022",
+      "title": "Meet the Presenter: Build a desktop-class iPad app",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110837/",
+      "dataFile": "videos/2022-110837.json"
+    },
+    {
+      "id": "110449",
+      "year": "2022",
+      "title": "Meet the Presenter: Build a productivity app for Apple Watch",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110449/",
+      "dataFile": "videos/2022-110449.json"
+    },
+    {
+      "id": "110506",
+      "year": "2022",
+      "title": "Meet the Presenter: Build your first app in Swift Playgrounds",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110506/",
+      "dataFile": "videos/2022-110506.json"
+    },
+    {
+      "id": "110821",
+      "year": "2022",
+      "title": "Meet the Presenter: Building Device-to-Device Experiences with Network Framework",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110821/",
+      "dataFile": "videos/2022-110821.json"
+    },
+    {
+      "id": "110433",
+      "year": "2022",
+      "title": "Meet the Presenter: Complications and widgets: Reloaded",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110433/",
+      "dataFile": "videos/2022-110433.json"
+    },
+    {
+      "id": "110904",
+      "year": "2022",
+      "title": "Meet the Presenter: Compose advanced models with Create ML Components",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110904/",
+      "dataFile": "videos/2022-110904.json"
+    },
+    {
+      "id": "110392",
+      "year": "2022",
+      "title": "Meet the Presenter: Compose custom layouts with SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110392/",
+      "dataFile": "videos/2022-110392.json"
+    },
+    {
+      "id": "110817",
+      "year": "2022",
+      "title": "Meet the Presenter: Create a great video playback experience",
+      "topics": [
+        "Audio & Video",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110817/",
+      "dataFile": "videos/2022-110817.json"
+    },
+    {
+      "id": "110425",
+      "year": "2022",
+      "title": "Meet the Presenter: Create accessible Single App Mode experiences",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110425/",
+      "dataFile": "videos/2022-110425.json"
+    },
+    {
+      "id": "110964",
+      "year": "2022",
+      "title": "Meet the Presenter: Create camera extensions with CoreMediaIO",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110964/",
+      "dataFile": "videos/2022-110964.json"
+    },
+    {
+      "id": "110908",
+      "year": "2022",
+      "title": "Meet the Presenter: Create custom catalogs at scale with ShazamKit",
+      "topics": [
+        "Audio & Video",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110908/",
+      "dataFile": "videos/2022-110908.json"
+    },
+    {
+      "id": "110531",
+      "year": "2022",
+      "title": "Meet the Presenter: Design app experiences with charts",
+      "topics": [
+        "Design",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110531/",
+      "dataFile": "videos/2022-110531.json"
+    },
+    {
+      "id": "110533",
+      "year": "2022",
+      "title": "Meet the Presenter: Design App Shortcuts",
+      "topics": [
+        "App Services",
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110533/",
+      "dataFile": "videos/2022-110533.json"
+    },
+    {
+      "id": "110962",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover advancements in iOS camera capture",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110962/",
+      "dataFile": "videos/2022-110962.json"
+    },
+    {
+      "id": "110517",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Managed Device Attestation",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110517/",
+      "dataFile": "videos/2022-110517.json"
+    },
+    {
+      "id": "110657",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Metal 3",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110657/",
+      "dataFile": "videos/2022-110657.json"
+    },
+    {
+      "id": "110888",
+      "year": "2022",
+      "title": "Meet the Presenter: Dive into App Intents",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110888/",
+      "dataFile": "videos/2022-110888.json"
+    },
+    {
+      "id": "110840",
+      "year": "2022",
+      "title": "Meet the Presenter: Enhance your Sign in with Apple experience",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110840/",
+      "dataFile": "videos/2022-110840.json"
+    },
+    {
+      "id": "110928",
+      "year": "2022",
+      "title": "Meet the Presenter: Evolve your Core Data schema",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110928/",
+      "dataFile": "videos/2022-110928.json"
+    },
+    {
+      "id": "110484",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore design navigation on iOS",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110484/",
+      "dataFile": "videos/2022-110484.json"
+    },
+    {
+      "id": "110907",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore the machine learning developer experience",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110907/",
+      "dataFile": "videos/2022-110907.json"
+    },
+    {
+      "id": "110902",
+      "year": "2022",
+      "title": "Meet the Presenter: Get to know Create ML Components",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110902/",
+      "dataFile": "videos/2022-110902.json"
+    },
+    {
+      "id": "110887",
+      "year": "2022",
+      "title": "Meet the Presenter: Implement App Shortcuts with App Intents",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110887/",
+      "dataFile": "videos/2022-110887.json"
+    },
+    {
+      "id": "110815",
+      "year": "2022",
+      "title": "Meet the Presenter: Make a great SharePlay experience",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Essentials",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110815/",
+      "dataFile": "videos/2022-110815.json"
+    },
+    {
+      "id": "110832",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet CKTool JS",
+      "topics": [
+        "Safari & Web",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110832/",
+      "dataFile": "videos/2022-110832.json"
+    },
+    {
+      "id": "110835",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet desktop-class iPad",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110835/",
+      "dataFile": "videos/2022-110835.json"
+    },
+    {
+      "id": "110660",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet ScreenCaptureKit",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110660/",
+      "dataFile": "videos/2022-110660.json"
+    },
+    {
+      "id": "110938",
+      "year": "2022",
+      "title": "Meet the presenter: Meet Swift Async Algorithms",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110938/",
+      "dataFile": "videos/2022-110938.json"
+    },
+    {
+      "id": "110662",
+      "year": "2022",
+      "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110662/",
+      "dataFile": "videos/2022-110662.json"
+    },
+    {
+      "id": "110659",
+      "year": "2022",
+      "title": "Meet the Presenter: Take ScreenCaptureKit to the next level",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110659/",
+      "dataFile": "videos/2022-110659.json"
+    },
+    {
+      "id": "110947",
+      "year": "2022",
+      "title": "Meet The Presenter: What's new in AppKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110947/",
+      "dataFile": "videos/2022-110947.json"
+    },
+    {
+      "id": "110919",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in MapKit",
+      "topics": [
+        "App Services",
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110919/",
+      "dataFile": "videos/2022-110919.json"
+    },
+    {
+      "id": "110391",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in SwiftUI",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110391/",
+      "dataFile": "videos/2022-110391.json"
+    },
+    {
+      "id": "110833",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in UIKit",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110833/",
+      "dataFile": "videos/2022-110833.json"
+    },
+    {
+      "id": "110424",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in web accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Essentials",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110424/",
+      "dataFile": "videos/2022-110424.json"
+    },
+    {
+      "id": "110532",
+      "year": "2022",
+      "title": "Meet the Presenter: Writing for interfaces",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110532/",
+      "dataFile": "videos/2022-110532.json"
+    },
+    {
       "id": "10062",
       "year": "2022",
       "title": "Meet Transferable",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1496,7 +2185,9 @@
       "year": "2022",
       "title": "Meet WeatherKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1623,12 +2314,1008 @@
       "dataFile": "videos/2022-10160.json"
     },
     {
+      "id": "110418",
+      "year": "2022",
+      "title": "Q&A: Accessibility in SwiftUI",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110418/",
+      "dataFile": "videos/2022-110418.json"
+    },
+    {
+      "id": "110419",
+      "year": "2022",
+      "title": "Q&A: Accessibility in UIKit and AppKit",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110419/",
+      "dataFile": "videos/2022-110419.json"
+    },
+    {
+      "id": "110444",
+      "year": "2022",
+      "title": "Q&A: App Clips",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110444/",
+      "dataFile": "videos/2022-110444.json"
+    },
+    {
+      "id": "110445",
+      "year": "2022",
+      "title": "Q&A: App Clips",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110445/",
+      "dataFile": "videos/2022-110445.json"
+    },
+    {
+      "id": "110885",
+      "year": "2022",
+      "title": "Q&A: App Intents",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110885/",
+      "dataFile": "videos/2022-110885.json"
+    },
+    {
+      "id": "110751",
+      "year": "2022",
+      "title": "Q&A: App Store Connect",
+      "topics": [
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110751/",
+      "dataFile": "videos/2022-110751.json"
+    },
+    {
+      "id": "110825",
+      "year": "2022",
+      "title": "Q&A: Apple Music",
+      "topics": [
+        "Audio & Video",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110825/",
+      "dataFile": "videos/2022-110825.json"
+    },
+    {
+      "id": "110446",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110446/",
+      "dataFile": "videos/2022-110446.json"
+    },
+    {
+      "id": "110448",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110448/",
+      "dataFile": "videos/2022-110448.json"
+    },
+    {
+      "id": "110823",
+      "year": "2022",
+      "title": "Q&A: AVFoundation",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110823/",
+      "dataFile": "videos/2022-110823.json"
+    },
+    {
+      "id": "110826",
+      "year": "2022",
+      "title": "Q&A: AVKit",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110826/",
+      "dataFile": "videos/2022-110826.json"
+    },
+    {
+      "id": "110922",
+      "year": "2022",
+      "title": "Q&A: C, C++, Objective-C compiler, analyzer, sanitizer, debugger, and linker",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110922/",
+      "dataFile": "videos/2022-110922.json"
+    },
+    {
+      "id": "110923",
+      "year": "2022",
+      "title": "Q&A: C, C++, Objective-C compiler, analyzer, sanitizer, debugger, and linker",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110923/",
+      "dataFile": "videos/2022-110923.json"
+    },
+    {
+      "id": "110959",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110959/",
+      "dataFile": "videos/2022-110959.json"
+    },
+    {
+      "id": "110960",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110960/",
+      "dataFile": "videos/2022-110960.json"
+    },
+    {
+      "id": "110465",
+      "year": "2022",
+      "title": "Q&A: CarPlay",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110465/",
+      "dataFile": "videos/2022-110465.json"
+    },
+    {
+      "id": "110831",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110831/",
+      "dataFile": "videos/2022-110831.json"
+    },
+    {
+      "id": "110834",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110834/",
+      "dataFile": "videos/2022-110834.json"
+    },
+    {
+      "id": "110822",
+      "year": "2022",
+      "title": "Q&A: Coordinated media with SharePlay",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110822/",
+      "dataFile": "videos/2022-110822.json"
+    },
+    {
+      "id": "110836",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110836/",
+      "dataFile": "videos/2022-110836.json"
+    },
+    {
+      "id": "110838",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "topics": [
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110838/",
+      "dataFile": "videos/2022-110838.json"
+    },
+    {
+      "id": "110954",
+      "year": "2022",
+      "title": "Q&A: Core Image",
+      "topics": [
+        "Audio & Video",
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110954/",
+      "dataFile": "videos/2022-110954.json"
+    },
+    {
+      "id": "110903",
+      "year": "2022",
+      "title": "Q&A: Core ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110903/",
+      "dataFile": "videos/2022-110903.json"
+    },
+    {
+      "id": "110901",
+      "year": "2022",
+      "title": "Q&A: Create ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110901/",
+      "dataFile": "videos/2022-110901.json"
+    },
+    {
+      "id": "110505",
+      "year": "2022",
+      "title": "Q&A: Debugging Swift debugging with LLDB",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110505/",
+      "dataFile": "videos/2022-110505.json"
+    },
+    {
+      "id": "110481",
+      "year": "2022",
+      "title": "Q&A: Declarative device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110481/",
+      "dataFile": "videos/2022-110481.json"
+    },
+    {
+      "id": "110515",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110515/",
+      "dataFile": "videos/2022-110515.json"
+    },
+    {
+      "id": "110516",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110516/",
+      "dataFile": "videos/2022-110516.json"
+    },
+    {
+      "id": "110520",
+      "year": "2022",
+      "title": "Q&A: Education technologies",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110520/",
+      "dataFile": "videos/2022-110520.json"
+    },
+    {
+      "id": "110641",
+      "year": "2022",
+      "title": "Q&A: Education technologies",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110641/",
+      "dataFile": "videos/2022-110641.json"
+    },
+    {
+      "id": "110940",
+      "year": "2022",
+      "title": "Q&A: Foundation",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110940/",
+      "dataFile": "videos/2022-110940.json"
+    },
+    {
+      "id": "110663",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110663/",
+      "dataFile": "videos/2022-110663.json"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664/",
+      "dataFile": "videos/2022-110664.json"
+    },
+    {
+      "id": "110566",
+      "year": "2022",
+      "title": "Q&A: Health and fitness technologies",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110566/",
+      "dataFile": "videos/2022-110566.json"
+    },
+    {
+      "id": "110415",
+      "year": "2022",
+      "title": "Q&A: Health and fitness technologies",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110415/",
+      "dataFile": "videos/2022-110415.json"
+    },
+    {
+      "id": "110530",
+      "year": "2022",
+      "title": "Q&A: Human Interface Guidelines",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110530/",
+      "dataFile": "videos/2022-110530.json"
+    },
+    {
+      "id": "110540",
+      "year": "2022",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110540/",
+      "dataFile": "videos/2022-110540.json"
+    },
+    {
+      "id": "110527",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110527/",
+      "dataFile": "videos/2022-110527.json"
+    },
+    {
+      "id": "110747",
+      "year": "2022",
+      "title": "Q&A: Maps technologies",
+      "topics": [
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110747/",
+      "dataFile": "videos/2022-110747.json"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666/",
+      "dataFile": "videos/2022-110666.json"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667/",
+      "dataFile": "videos/2022-110667.json"
+    },
+    {
+      "id": "110944",
+      "year": "2022",
+      "title": "Q&A: Passkeys and authentication",
+      "topics": [
+        "Developer Tools",
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110944/",
+      "dataFile": "videos/2022-110944.json"
+    },
+    {
+      "id": "110926",
+      "year": "2022",
+      "title": "Q&A: Performance, power, and stability",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110926/",
+      "dataFile": "videos/2022-110926.json"
+    },
+    {
+      "id": "110913",
+      "year": "2022",
+      "title": "Q&A: Photos and PhotoKit",
+      "topics": [
+        "Photos & Camera"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110913/",
+      "dataFile": "videos/2022-110913.json"
+    },
+    {
+      "id": "110916",
+      "year": "2022",
+      "title": "Q&A: Private Access Tokens",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110916/",
+      "dataFile": "videos/2022-110916.json"
+    },
+    {
+      "id": "10175",
+      "year": "2022",
+      "title": "Q&A: Prototyping",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10175/",
+      "dataFile": "videos/2022-10175.json"
+    },
+    {
+      "id": "110813",
+      "year": "2022",
+      "title": "Q&A: Right-to-left",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110813/",
+      "dataFile": "videos/2022-110813.json"
+    },
+    {
+      "id": "110485",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110485/",
+      "dataFile": "videos/2022-110485.json"
+    },
+    {
+      "id": "110535",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "topics": [
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110535/",
+      "dataFile": "videos/2022-110535.json"
+    },
+    {
+      "id": "110669",
+      "year": "2022",
+      "title": "Q&A: ScreenCaptureKit",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110669/",
+      "dataFile": "videos/2022-110669.json"
+    },
+    {
+      "id": "110824",
+      "year": "2022",
+      "title": "Q&A: SharePlay",
+      "topics": [
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110824/",
+      "dataFile": "videos/2022-110824.json"
+    },
+    {
+      "id": "110886",
+      "year": "2022",
+      "title": "Q&A: Shortcuts",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110886/",
+      "dataFile": "videos/2022-110886.json"
+    },
+    {
+      "id": "110842",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110842/",
+      "dataFile": "videos/2022-110842.json"
+    },
+    {
+      "id": "110841",
+      "year": "2022",
+      "title": "Q&A: Sign in with Apple",
+      "topics": [
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110841/",
+      "dataFile": "videos/2022-110841.json"
+    },
+    {
+      "id": "110920",
+      "year": "2022",
+      "title": "Q&A: Simulators and devices",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110920/",
+      "dataFile": "videos/2022-110920.json"
+    },
+    {
+      "id": "110758",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "topics": [
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110758/",
+      "dataFile": "videos/2022-110758.json"
+    },
+    {
+      "id": "110759",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "topics": [
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110759/",
+      "dataFile": "videos/2022-110759.json"
+    },
+    {
+      "id": "110407",
+      "year": "2022",
+      "title": "Q&A: Swift Charts",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110407/",
+      "dataFile": "videos/2022-110407.json"
+    },
+    {
+      "id": "110480",
+      "year": "2022",
+      "title": "Q&A: Swift concurrency",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110480/",
+      "dataFile": "videos/2022-110480.json"
+    },
+    {
+      "id": "110489",
+      "year": "2022",
+      "title": "Q&A: Swift Package Manager",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110489/",
+      "dataFile": "videos/2022-110489.json"
+    },
+    {
+      "id": "110490",
+      "year": "2022",
+      "title": "Q&A: Swift Playgrounds",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110490/",
+      "dataFile": "videos/2022-110490.json"
+    },
+    {
+      "id": "110921",
+      "year": "2022",
+      "title": "Q&A: Swift Standard Library",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110921/",
+      "dataFile": "videos/2022-110921.json"
+    },
+    {
+      "id": "110393",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110393/",
+      "dataFile": "videos/2022-110393.json"
+    },
+    {
+      "id": "110394",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110394/",
+      "dataFile": "videos/2022-110394.json"
+    },
+    {
+      "id": "110395",
+      "year": "2022",
+      "title": "Q&A: SwiftUI and UI Frameworks",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110395/",
+      "dataFile": "videos/2022-110395.json"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829/",
+      "dataFile": "videos/2022-110829.json"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830/",
+      "dataFile": "videos/2022-110830.json"
+    },
+    {
+      "id": "110905",
+      "year": "2022",
+      "title": "Q&A: Vision",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110905/",
+      "dataFile": "videos/2022-110905.json"
+    },
+    {
+      "id": "110431",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110431/",
+      "dataFile": "videos/2022-110431.json"
+    },
+    {
+      "id": "110432",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110432/",
+      "dataFile": "videos/2022-110432.json"
+    },
+    {
+      "id": "110924",
+      "year": "2022",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110924/",
+      "dataFile": "videos/2022-110924.json"
+    },
+    {
+      "id": "110927",
+      "year": "2022",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110927/",
+      "dataFile": "videos/2022-110927.json"
+    },
+    {
+      "id": "110925",
+      "year": "2022",
+      "title": "Q&A: Xcode Cloud and testing",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110925/",
+      "dataFile": "videos/2022-110925.json"
+    },
+    {
+      "id": "110945",
+      "year": "2022",
+      "title": "Q&A: Xcode Previews",
+      "topics": [
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110945/",
+      "dataFile": "videos/2022-110945.json"
+    },
+    {
       "id": "10131",
       "year": "2022",
       "title": "Qualities of great AR experiences",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1717,12 +3404,146 @@
       "dataFile": "videos/2022-10108.json"
     },
     {
+      "id": "110918",
+      "year": "2022",
+      "title": "Study Hall: Bindless ray tracing",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110918/",
+      "dataFile": "videos/2022-110918.json"
+    },
+    {
+      "id": "110949",
+      "year": "2022",
+      "title": "Study Hall: Draw with metal-cpp",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110949/",
+      "dataFile": "videos/2022-110949.json"
+    },
+    {
+      "id": "110812",
+      "year": "2022",
+      "title": "Study Hall: Go big or go home",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110812/",
+      "dataFile": "videos/2022-110812.json"
+    },
+    {
+      "id": "110456",
+      "year": "2022",
+      "title": "Study Hall: Learn Switch Control through gaming",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110456/",
+      "dataFile": "videos/2022-110456.json"
+    },
+    {
+      "id": "110828",
+      "year": "2022",
+      "title": "Study Hall: Menu bar extras with SwiftUI",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110828/",
+      "dataFile": "videos/2022-110828.json"
+    },
+    {
+      "id": "110442",
+      "year": "2022",
+      "title": "Study Hall: SwiftUI navigation hotdish",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110442/",
+      "dataFile": "videos/2022-110442.json"
+    },
+    {
+      "id": "110519",
+      "year": "2022",
+      "title": "Study Hall: SwiftUI science fiction!",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110519/",
+      "dataFile": "videos/2022-110519.json"
+    },
+    {
+      "id": "110443",
+      "year": "2022",
+      "title": "Study Hall: Throwback Thursday",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110443/",
+      "dataFile": "videos/2022-110443.json"
+    },
+    {
+      "id": "110811",
+      "year": "2022",
+      "title": "Study Hall: Toolbar transformation Tuesday",
+      "topics": [
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110811/",
+      "dataFile": "videos/2022-110811.json"
+    },
+    {
+      "id": "110452",
+      "year": "2022",
+      "title": "Study Hall: WidgetKit workshop",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110452/",
+      "dataFile": "videos/2022-110452.json"
+    },
+    {
       "id": "110384",
       "year": "2022",
       "title": "Support multiple users in tvOS apps",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -1828,7 +3649,8 @@
       "year": "2022",
       "title": "The SwiftUI cookbook for navigation",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1863,11 +3685,26 @@
       "dataFile": "videos/2022-10162.json"
     },
     {
+      "id": "110935",
+      "year": "2022",
+      "title": "Trivia Night",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110935/",
+      "dataFile": "videos/2022-110935.json"
+    },
+    {
       "id": "10129",
       "year": "2022",
       "title": "Understand USD fundamentals",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1880,7 +3717,8 @@
       "year": "2022",
       "title": "Use SwiftUI with AppKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1893,7 +3731,8 @@
       "year": "2022",
       "title": "Use SwiftUI with UIKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1906,7 +3745,8 @@
       "year": "2022",
       "title": "Use Xcode for server-side development",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1920,7 +3760,8 @@
       "title": "Use Xcode to develop a multiplatform app",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2025,7 +3866,8 @@
       "year": "2022",
       "title": "What’s new in Endpoint Security",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -2091,7 +3933,8 @@
       "title": "What's new in MapKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -2104,7 +3947,8 @@
       "year": "2022",
       "title": "What's new in Nearby Interaction",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -2185,7 +4029,8 @@
       "topics": [
         "App Services",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2239,7 +4084,8 @@
       "year": "2022",
       "title": "What's new in Swift",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2278,7 +4124,8 @@
       "year": "2022",
       "title": "What's new in TextKit and text views",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2291,7 +4138,8 @@
       "year": "2022",
       "title": "What's new in the Photos picker",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -2317,7 +4165,8 @@
       "year": "2022",
       "title": "What's new in Vision",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2344,7 +4193,9 @@
       "title": "What's new in web accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2358,7 +4209,8 @@
       "title": "What's new in WKWebView",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,

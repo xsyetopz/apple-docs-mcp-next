@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Services",
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -50,28 +51,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Keeping a widget up to date",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Keeping-a-Widget-Up-To-Date"
-      },
-      {
         "title": "Making a configurable widget",
         "url": "https://developer.apple.com/documentation/WidgetKit/Making-a-Configurable-Widget"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Keeping a widget up to date",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Keeping-a-Widget-Up-To-Date"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10048/6/DE8F1516-0148-4630-A824-44F1BA28F5AA/downloads/wwdc2021-10048_hd.mp4?dl=1",
@@ -83,12 +68,6 @@
       "year": "2022",
       "title": "Complications and widgets: Reloaded",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10050"
-    },
-    {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
     },
     {
       "id": "10018",
@@ -127,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10028"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:03.013Z"
+  "extractedAt": "2026-10-11T16:43:50.263Z"
 }

@@ -121,28 +121,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building an Interactive Tutorial",
+        "title": "DocC",
         "url": "https://developer.apple.com/documentation/docc"
       },
       {
-        "title": "SlothCreator: Building DocC Documentation in Xcode",
-        "url": "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "SlothCreator: Building DocC documentation in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/slothcreator-building-docc-documentation-in-xcode"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10235/6/D2C51374-4073-4A41-97CB-4217A096F2B3/downloads/wwdc2021-10235_hd.mp4?dl=1",
@@ -180,5 +164,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10192"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:25.718Z"
+  "extractedAt": "2026-10-11T16:43:40.114Z"
 }

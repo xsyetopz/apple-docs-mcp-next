@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -73,40 +74,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building a multidevice workout app",
-        "url": "https://developer.apple.com/documentation/HealthKit/building-a-multidevice-workout-app"
-      },
-      {
-        "title": "Building a workout app for iPhone and iPad",
-        "url": "https://developer.apple.com/documentation/HealthKit/building-a-workout-app-for-iphone-and-ipad"
-      },
-      {
         "title": "Handling Workout Requests with SiriKit",
         "url": "https://developer.apple.com/documentation/SiriKit/handling-workout-requests-with-sirikit"
-      },
-      {
-        "title": "HKWorkoutSession",
-        "url": "https://developer.apple.com/documentation/HealthKit/HKWorkoutSession"
       },
       {
         "title": "Running workout sessions",
         "url": "https://developer.apple.com/documentation/HealthKit/running-workout-sessions"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Building a workout app for iPhone and iPad",
+        "url": "https://developer.apple.com/documentation/HealthKit/building-a-workout-app-for-iphone-and-ipad"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Building a multidevice workout app",
+        "url": "https://developer.apple.com/documentation/HealthKit/building-a-multidevice-workout-app"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "HKWorkoutSession",
+        "url": "https://developer.apple.com/documentation/HealthKit/HKWorkoutSession"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/322/4/f9d00075-ebbe-458c-a1e6-597ff5d78a1b/downloads/wwdc2025-322_hd.mp4?dl=1",
@@ -138,5 +123,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10184"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:10.631Z"
+  "extractedAt": "2026-10-11T16:34:21.296Z"
 }

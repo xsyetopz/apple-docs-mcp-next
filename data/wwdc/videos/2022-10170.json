@@ -85,24 +85,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Intents",
         "url": "https://developer.apple.com/documentation/AppIntents"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10170/3/30D42D9F-AF97-4B32-B470-C0A9B4D8C279/downloads/wwdc2022-10170_hd.mp4?dl=1",
@@ -120,7 +104,25 @@
       "year": "2022",
       "title": "Dive into App Intents",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10032"
+    },
+    {
+      "id": "110887",
+      "year": "2022",
+      "title": "Meet the Presenter: Implement App Shortcuts with App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110887"
+    },
+    {
+      "id": "110885",
+      "year": "2022",
+      "title": "Q&A: App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110885"
+    },
+    {
+      "id": "110886",
+      "year": "2022",
+      "title": "Q&A: Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110886"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:23.477Z"
+  "extractedAt": "2026-10-11T16:39:26.786Z"
 }

@@ -43,36 +43,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "DocC",
-        "url": "https://developer.apple.com/documentation/docc"
-      },
-      {
         "title": "Documenting apps, frameworks, and packages",
         "url": "https://developer.apple.com/documentation/Xcode/documenting-apps-frameworks-and-packages"
-      },
-      {
-        "title": "SlothCreator: Building DocC Documentation in Xcode",
-        "url": "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode"
       },
       {
         "title": "SwiftDocCPlugin",
         "url": "https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "DocC",
+        "url": "https://developer.apple.com/documentation/docc"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "SlothCreator: Building DocC documentation in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/slothcreator-building-docc-documentation-in-xcode"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110368/6/40936E45-C4DD-4831-B7B9-146B53027E76/downloads/wwdc2022-110368_hd.mp4?dl=1",
@@ -86,5 +70,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10244"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:57.725Z"
+  "extractedAt": "2026-10-11T16:40:26.044Z"
 }

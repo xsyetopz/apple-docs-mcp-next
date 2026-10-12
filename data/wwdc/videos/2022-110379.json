@@ -61,34 +61,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Creating images from a video asset",
         "url": "https://developer.apple.com/documentation/AVFoundation/creating-images-from-a-video-asset"
       },
       {
         "title": "Loading media data asynchronously",
         "url": "https://developer.apple.com/documentation/AVFoundation/loading-media-data-asynchronously"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110379/3/072CE81E-54AA-400F-82CC-3667BB3549E1/downloads/wwdc2022-110379_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110379/3/072CE81E-54AA-400F-82CC-3667BB3549E1/downloads/wwdc2022-110379_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110823",
+      "year": "2022",
+      "title": "Q&A: AVFoundation",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110823"
+    },
     {
       "id": "10058",
       "year": "2021",
@@ -108,5 +98,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10146"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:21.963Z"
+  "extractedAt": "2026-10-11T16:39:21.429Z"
 }

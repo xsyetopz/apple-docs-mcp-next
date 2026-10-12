@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -91,36 +92,56 @@
       "timestamp": "16:13",
       "title": "Script editor representable",
       "language": "swift",
-      "code": "struct ScriptEditorRepresentable: NSViewRepresentable {\n    @Binding var sourceCode: String\n\n    func makeNSView(context: Context) -> ScriptEditorView {\n        let scriptEditor = ScriptEditorView(frame: .zero)\n        scriptEditor.delegate = context.coordinator\n        return scriptEditor\n    }\n\n    func updateNSView(_ nsView: ScriptEditorView, context: Context) {\n        if sourceCode != scriptEditor.sourceCode {\n            scriptEditor.sourceCode = sourceCode\n        }\n        scriptEditor.isEditable = context.environment.isEnabled\n        context.coordinator.representable = self\n    }\n\n    func makeCoordinator() -> Coordinator {\n        Coordinator(representable: self)\n    }\n}\n\nclass Coordinator: NSObject, ScriptEditorViewDelegate {\n    var representable: ScriptEditorRepresentable\n\n    init(representable: ScriptEditorRepresentable) { ... }\n\n    func sourceCodeDidChange(in view: ScriptEditorView) {\n        representable.sourceCode = view.sourceCode\n    }\n}"
+      "code": "struct ScriptEditorRepresentable: NSViewRepresentable {\n    @Binding var sourceCode: String\n\n    func makeNSView(context: Context) -> ScriptEditorView {\n        let scriptEditor = ScriptEditorView(frame: .zero)\n        scriptEditor.delegate = context.coordinator\n        return scriptEditor\n    }\n\n    func updateNSView(_ nsView: ScriptEditorView, context: Context) {\n        if sourceCode != scriptEditor.sourceCode {\n            scriptEditor.sourceCode = sourceCode\n        }\n        scriptEditor.isEditable = context.environment.isEnabled\n        // Make sure coordinator has a reference to the current value \n        // of the binding:\n        context.coordinator.representable = self\n    }\n\n    func makeCoordinator() -> Coordinator {\n        Coordinator(representable: self)\n    }\n}\n\nclass Coordinator: NSObject, ScriptEditorViewDelegate {\n    var representable: ScriptEditorRepresentable\n\n    init(representable: ScriptEditorRepresentable) { ... }\n\n    func sourceCodeDidChange(in view: ScriptEditorView) {\n        representable.sourceCode = view.sourceCode\n    }\n}"
     }
   ],
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "UIKit integration",
         "url": "https://developer.apple.com/documentation/SwiftUI/UIKit-integration"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10075/5/041C40B8-2F14-4B08-8406-CFCE8E85A1B0/downloads/wwdc2022-10075_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10075/5/041C40B8-2F14-4B08-8406-CFCE8E85A1B0/downloads/wwdc2022-10075_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110419",
+      "year": "2022",
+      "title": "Q&A: Accessibility in UIKit and AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110419"
+    },
+    {
+      "id": "110393",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110393"
+    },
+    {
+      "id": "110394",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110394"
+    },
+    {
+      "id": "110395",
+      "year": "2022",
+      "title": "Q&A: SwiftUI and UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110395"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830"
+    },
     {
       "id": "10074",
       "year": "2022",
@@ -134,5 +155,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10023"
     }
   ],
-  "extractedAt": "2025-07-18T10:23:24.561Z"
+  "extractedAt": "2026-10-11T16:41:22.467Z"
 }

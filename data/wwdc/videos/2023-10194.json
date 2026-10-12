@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Displaying live data with Live Activities",
-        "url": "https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities"
-      },
-      {
         "title": "Human Interface Guidelines: Live Activities",
         "url": "https://developer.apple.com/design/human-interface-guidelines/live-activities"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Displaying live data with Live Activities",
+        "url": "https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10194/5/1F92A457-3B0A-4F2A-A29C-9EC6753BEC87/downloads/wwdc2023-10194_hd.mp4?dl=1",
@@ -64,5 +48,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10185"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:27.434Z"
+  "extractedAt": "2026-10-11T16:37:59.904Z"
 }

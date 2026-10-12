@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Services",
-    "App Store, Distribution & Marketing"
+    "App Store, Distribution & Marketing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -272,28 +273,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Backyard Birds: Building an app with SwiftData and widgets",
         "url": "https://developer.apple.com/documentation/SwiftUI/Backyard-birds-sample"
       },
       {
         "title": "StoreKit views",
         "url": "https://developer.apple.com/documentation/StoreKit/storekit-views"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10013/4/451654C1-7E00-42AE-A765-A2ECE947464C/downloads/wwdc2023-10013_hd.mp4?dl=1",
@@ -343,5 +328,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10659"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:21.632Z"
+  "extractedAt": "2026-10-11T16:36:09.464Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,24 +16,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10075/4/9C508675-D44A-4BF5-80F3-5B49CF10C722/downloads/wwdc2023-10075_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10075/4/9C508675-D44A-4BF5-80F3-5B49CF10C722/downloads/wwdc2023-10075_sd.mp4?dl=1"
   },
@@ -80,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10140"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:07.201Z"
+  "extractedAt": "2026-10-11T16:36:01.803Z"
 }

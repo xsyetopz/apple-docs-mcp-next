@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/tvOS-Deep-Linking-Demo.zip",
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/246oh3k8zgxi921jxq/246/246_hd_deep_linking_on_tvos.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/246oh3k8zgxi921jxq/246/246_sd_deep_linking_on_tvos.mp4?dl=1"
@@ -45,5 +28,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2017/250"
     }
   ],
-  "extractedAt": "2025-07-18T11:00:20.214Z"
+  "extractedAt": "2026-10-11T16:48:43.629Z"
 }

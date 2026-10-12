@@ -6,7 +6,7 @@
  * Transcript段落
  */
 export interface TranscriptSegment {
-  timestamp: string;  // "00:00" 格式
+  timestamp: string; // "00:00" 格式
   text: string;
 }
 
@@ -22,11 +22,11 @@ export interface TranscriptData {
  * 代码示例
  */
 export interface CodeExample {
-  timestamp?: string;  // "05:30" 格式，可能没有
-  title?: string;      // 代码标题或描述
-  language: string;    // "swift", "objc", "javascript" 等
-  code: string;        // 代码内容
-  context?: string;    // 代码上下文说明
+  timestamp?: string | undefined; // "05:30" 格式，可能没有
+  title?: string | undefined; // 代码标题或描述
+  language: string; // "swift", "objc", "javascript" 等
+  code: string; // 代码内容
+  context?: string | undefined; // 代码上下文说明
 }
 
 /**
@@ -41,11 +41,11 @@ export interface ResourceLink {
  * 视频资源
  */
 export interface VideoResources {
-  hdVideo?: string;        // HD视频下载链接
-  sdVideo?: string;        // SD视频下载链接
-  sampleProject?: string;  // 示例项目下载链接
-  slides?: string;         // 演示文稿下载链接
-  resourceLinks?: ResourceLink[];  // 资源链接
+  hdVideo?: string; // HD视频下载链接
+  sdVideo?: string; // SD视频下载链接
+  sampleProject?: string; // 示例项目下载链接
+  slides?: string; // 演示文稿下载链接
+  resourceLinks?: ResourceLink[]; // 资源链接
 }
 
 /**
@@ -62,21 +62,21 @@ export interface RelatedVideo {
  * WWDC视频数据
  */
 export interface WWDCVideo {
-  id: string;              // 视频ID，如 "238"
-  year: string;            // 年份，如 "2025"
-  url: string;             // 完整URL
-  title: string;           // 视频标题
-  speakers?: string[];     // 演讲者列表
-  duration: string;        // 时长，如 "15:30"
-  topics: string[];        // 主题标签（标准分类）
-  hasTranscript: boolean;  // 是否有transcript
-  hasCode: boolean;        // 是否有代码示例
-  transcript?: TranscriptData;
-  codeExamples?: CodeExample[];
-  chapters?: Chapter[];    // 章节信息
+  id: string; // 视频ID，如 "238"
+  year: string; // 年份，如 "2025"
+  url: string; // 完整URL
+  title: string; // 视频标题
+  speakers?: string[] | undefined; // 演讲者列表
+  duration: string; // 时长，如 "15:30"
+  topics: string[]; // 主题标签（标准分类）
+  hasTranscript: boolean; // 是否有transcript
+  hasCode: boolean; // 是否有代码示例
+  transcript?: TranscriptData | undefined;
+  codeExamples?: CodeExample[] | undefined;
+  chapters?: Chapter[] | undefined; // 章节信息
   resources: VideoResources;
-  relatedVideos?: RelatedVideo[];  // 相关视频
-  extractedAt?: string;    // 提取时间 ISO 8601
+  relatedVideos?: RelatedVideo[] | undefined; // 相关视频
+  extractedAt?: string | undefined; // 提取时间 ISO 8601
 }
 
 /**
@@ -94,7 +94,7 @@ export interface Chapter {
 export interface YearMetadata {
   year: string;
   totalVideos: number;
-  hasCodeTab: boolean;     // 该年份是否有独立的Code标签页
+  hasCodeTab: boolean; // 该年份是否有独立的Code标签页
   extractedAt: string;
   lastUpdated?: string;
 }
@@ -125,7 +125,6 @@ export interface GlobalMetadata {
     byYear: Record<string, number>;
     videosWithCode: number;
     videosWithTranscript: number;
-    videosWithResources: number;
   };
 }
 
@@ -194,10 +193,10 @@ export interface VideoListItem {
  */
 export interface ExtractorConfig {
   year: string;
-  concurrency?: number;    // 并发数，默认5
-  retryAttempts?: number;  // 重试次数，默认3
-  timeout?: number;        // 超时时间（毫秒）
-  skipExisting?: boolean;  // 跳过已存在的视频
+  concurrency?: number; // 并发数，默认5
+  retryAttempts?: number; // 重试次数，默认3
+  timeout?: number; // 超时时间（毫秒）
+  skipExisting?: boolean; // 跳过已存在的视频
 }
 
 /**

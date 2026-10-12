@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Resolving common notarization issues",
         "url": "https://developer.apple.com/documentation/Security/resolving-common-notarization-issues"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/703yqvyjv9mi5ur6/703/703_hd_all_about_notarization.mp4?dl=1",
@@ -73,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/701"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:08.862Z"
+  "extractedAt": "2026-10-11T16:46:54.053Z"
 }

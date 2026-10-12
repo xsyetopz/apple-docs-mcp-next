@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -37,28 +38,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Supporting coordinated media playback",
+        "url": "https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback"
       },
       {
         "title": "Group Activities",
         "url": "https://developer.apple.com/documentation/GroupActivities"
-      },
-      {
-        "title": "Supporting Coordinated Media Playback",
-        "url": "https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10189/6/94D452D6-3731-4C08-8EFA-BD8F6B8853ED/downloads/wwdc2021-10189_hd.mp4?dl=1",
@@ -90,5 +75,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10183"
     }
   ],
-  "extractedAt": "2025-07-18T09:24:25.960Z"
+  "extractedAt": "2026-10-11T16:44:20.855Z"
 }

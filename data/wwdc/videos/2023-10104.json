@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Managing Audio with SiriKit",
         "url": "https://developer.apple.com/documentation/SiriKit/managing-audio-with-sirikit"
       },
       {
         "title": "SiriKit",
         "url": "https://developer.apple.com/documentation/SiriKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10104/4/5F52855D-81B2-4790-8627-C68333D4A099/downloads/wwdc2023-10104_hd.mp4?dl=1",
@@ -46,11 +30,17 @@
   },
   "relatedVideos": [
     {
+      "id": "111333",
+      "year": "2023",
+      "title": "Q&A: SiriKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111333"
+    },
+    {
       "id": "10238",
       "year": "2023",
       "title": "Tune up your AirPlay audio experience",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10238"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:06.678Z"
+  "extractedAt": "2026-10-11T16:36:06.638Z"
 }

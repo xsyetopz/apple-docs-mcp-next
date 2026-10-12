@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "DockKit",
+        "url": "https://developer.apple.com/documentation/DockKit"
       },
       {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
       },
       {
-        "title": "DockKit",
-        "url": "https://developer.apple.com/documentation/DockKit"
-      },
-      {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10304/4/F0FF6E30-0DEE-40FF-B969-616952919D33/downloads/wwdc2023-10304_hd.mp4?dl=1",
@@ -55,6 +39,12 @@
       "year": "2023",
       "title": "Detect animal poses in Vision",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10045"
+    },
+    {
+      "id": "111336",
+      "year": "2023",
+      "title": "Q&A: Motorized iPhone stands and DockKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111336"
     },
     {
       "id": "10039",
@@ -69,5 +59,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10653"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:09.505Z"
+  "extractedAt": "2026-10-11T16:38:03.302Z"
 }

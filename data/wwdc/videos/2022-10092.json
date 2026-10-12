@@ -99,28 +99,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Connecting to a service with passkeys",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/connecting-to-a-service-with-passkeys"
       },
       {
         "title": "Supporting passkeys",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10092/3/E39F623F-97FE-48C0-9987-898078EB9D8B/downloads/wwdc2022-10092_hd.mp4?dl=1",
@@ -146,6 +130,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10122"
     },
     {
+      "id": "110944",
+      "year": "2022",
+      "title": "Q&A: Passkeys and authentication",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110944"
+    },
+    {
       "id": "110384",
       "year": "2022",
       "title": "Support multiple users in tvOS apps",
@@ -164,5 +154,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10098"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:42.712Z"
+  "extractedAt": "2026-10-11T16:39:28.425Z"
 }

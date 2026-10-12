@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -109,20 +110,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Managing model data in your app",
-        "url": "https://developer.apple.com/documentation/SwiftUI/Managing-model-data-in-your-app"
-      },
-      {
         "title": "selfSizingInvalidation",
         "url": "https://developer.apple.com/documentation/uikit/uitableview/4001105-selfsizinginvalidation"
       },
       {
         "title": "selfSizingInvalidation",
         "url": "https://developer.apple.com/documentation/uikit/uicollectionview/4001100-selfsizinginvalidation"
+      },
+      {
+        "title": "Managing model data in your app",
+        "url": "https://developer.apple.com/documentation/SwiftUI/Managing-model-data-in-your-app"
       },
       {
         "title": "UIHostingConfiguration",
@@ -133,24 +130,12 @@
         "url": "https://developer.apple.com/documentation/SwiftUI/UIHostingController"
       },
       {
-        "title": "UIViewController",
-        "url": "https://developer.apple.com/documentation/UIKit/UIViewController"
-      },
-      {
         "title": "Using SwiftUI with UIKit",
         "url": "https://developer.apple.com/documentation/UIKit/using-swiftui-with-uikit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "UIViewController",
+        "url": "https://developer.apple.com/documentation/UIKit/UIViewController"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10072/4/03036EB8-1A2E-4ADD-A5A3-C50A9AFA841C/downloads/wwdc2022-10072_hd.mp4?dl=1",
@@ -162,6 +147,42 @@
       "year": "2022",
       "title": "Hello Swift Charts",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10136"
+    },
+    {
+      "id": "110419",
+      "year": "2022",
+      "title": "Q&A: Accessibility in UIKit and AppKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110419"
+    },
+    {
+      "id": "110393",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110393"
+    },
+    {
+      "id": "110394",
+      "year": "2022",
+      "title": "Q&A: SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110394"
+    },
+    {
+      "id": "110395",
+      "year": "2022",
+      "title": "Q&A: SwiftUI and UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110395"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830"
     },
     {
       "id": "10068",
@@ -188,5 +209,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10027"
     }
   ],
-  "extractedAt": "2025-07-18T10:23:14.179Z"
+  "extractedAt": "2026-10-11T16:41:22.780Z"
 }

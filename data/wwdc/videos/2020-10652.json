@@ -51,28 +51,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "PhotoKit",
-        "url": "https://developer.apple.com/documentation/photokit"
-      },
-      {
         "title": "Selecting Photos and Videos in iOS",
         "url": "https://developer.apple.com/documentation/PhotoKit/selecting-photos-and-videos-in-ios"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "PhotoKit",
+        "url": "https://developer.apple.com/documentation/photokit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10652/3/8660B6AC-4DDE-46E6-830D-1449B090978C/wwdc2020_10652_hd.mp4?dl=1",
@@ -122,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10641"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:59.037Z"
+  "extractedAt": "2026-10-11T16:45:34.379Z"
 }

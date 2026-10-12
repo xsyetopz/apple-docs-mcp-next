@@ -18,40 +18,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accessing a User’s Clinical Records",
-        "url": "https://developer.apple.com/documentation/HealthKit/accessing-a-user-s-clinical-records"
-      },
-      {
-        "title": "Accessing Data from a SMART Health Card",
-        "url": "https://developer.apple.com/documentation/HealthKit/accessing-data-from-a-smart-health-card"
-      },
-      {
-        "title": "Accessing Health Records",
-        "url": "https://developer.apple.com/documentation/HealthKit/accessing-health-records"
+        "title": "HKVerifiableClinicalRecordQuery",
+        "url": "https://developer.apple.com/documentation/HealthKit/HKVerifiableClinicalRecordQuery"
       },
       {
         "title": "HKVerifiableClinicalRecord",
         "url": "https://developer.apple.com/documentation/HealthKit/HKVerifiableClinicalRecord"
       },
       {
-        "title": "HKVerifiableClinicalRecordQuery",
-        "url": "https://developer.apple.com/documentation/HealthKit/HKVerifiableClinicalRecordQuery"
+        "title": "Accessing Data from a SMART Health Card",
+        "url": "https://developer.apple.com/documentation/HealthKit/accessing-data-from-a-smart-health-card"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Accessing a User’s Clinical Records",
+        "url": "https://developer.apple.com/documentation/HealthKit/accessing-a-user-s-clinical-records"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accessing Health Records",
+        "url": "https://developer.apple.com/documentation/HealthKit/accessing-health-records"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10089/4/9DC55E07-91AA-4A4C-860B-E447648389FB/downloads/wwdc2021-10089_hd.mp4?dl=1",
@@ -65,5 +49,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10669"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:53.156Z"
+  "extractedAt": "2026-10-11T16:42:31.462Z"
 }

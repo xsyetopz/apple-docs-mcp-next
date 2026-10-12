@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Modern rendering with Metal",
+        "url": "https://developer.apple.com/documentation/Metal/modern-rendering-with-metal"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Modern Rendering with Metal",
-        "url": "https://developer.apple.com/documentation/Metal/modern-rendering-with-metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/601fthb9otw94fg/601/601_hd_modern_rendering_with_metal.mp4?dl=1",
@@ -82,5 +66,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/613"
     }
   ],
-  "extractedAt": "2025-07-18T10:36:41.792Z"
+  "extractedAt": "2026-10-11T16:46:52.102Z"
 }

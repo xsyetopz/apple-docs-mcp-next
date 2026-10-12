@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -73,20 +74,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVPlaybackCoordinator",
-        "url": "https://developer.apple.com/documentation/AVFoundation/AVPlaybackCoordinator"
-      },
-      {
-        "title": "Building a guessing game for visionOS",
-        "url": "https://developer.apple.com/documentation/GroupActivities/building-a-guessing-game-for-visionos"
-      },
-      {
-        "title": "Configure your visionOS app for sharing with people nearby",
-        "url": "https://developer.apple.com/documentation/GroupActivities/configure-your-app-for-sharing-with-people-nearby"
+        "title": "worldAnchorSharingAvailability",
+        "url": "https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/worldAnchorSharingAvailability-swift.property"
       },
       {
         "title": "groupActivityAssociation(_:)",
@@ -97,20 +86,16 @@
         "url": "https://developer.apple.com/documentation/ARKit/WorldAnchor/init(originFromAnchorTransform:sharedWithNearbyParticipants:)"
       },
       {
-        "title": "worldAnchorSharingAvailability",
-        "url": "https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/worldAnchorSharingAvailability-swift.property"
+        "title": "Configure your visionOS app for sharing with people nearby",
+        "url": "https://developer.apple.com/documentation/GroupActivities/configure-your-app-for-sharing-with-people-nearby"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "AVPlaybackCoordinator",
+        "url": "https://developer.apple.com/documentation/AVFoundation/AVPlaybackCoordinator"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Building a guessing game for visionOS",
+        "url": "https://developer.apple.com/documentation/GroupActivities/building-a-guessing-game-for-visionos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/318/5/b5e843e6-41fc-4ddd-8aa6-91e3ede41898/downloads/wwdc2025-318_hd.mp4?dl=1",
@@ -154,5 +139,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10225"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:53.308Z"
+  "extractedAt": "2026-10-11T16:34:19.714Z"
 }

@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Logging",
         "url": "https://developer.apple.com/documentation/os/logging"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/411cbc60y12x68arcof/411/411_hd_getting_started_with_instruments.mp4?dl=1",
@@ -96,5 +80,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/401"
     }
   ],
-  "extractedAt": "2025-07-18T10:16:06.487Z"
+  "extractedAt": "2026-10-11T16:47:52.244Z"
 }

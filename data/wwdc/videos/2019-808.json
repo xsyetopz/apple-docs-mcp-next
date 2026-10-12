@@ -17,44 +17,28 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Dark Mode",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode"
-      },
-      {
         "title": "Human Interface Guidelines: Layout",
         "url": "https://developer.apple.com/design/human-interface-guidelines/layout"
-      },
-      {
-        "title": "Human Interface Guidelines: Materials",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/materials"
-      },
-      {
-        "title": "Human Interface Guidelines: Modality",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/modality"
-      },
-      {
-        "title": "Human Interface Guidelines: Multitasking",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking"
       },
       {
         "title": "Human Interface Guidelines: SF Symbols",
         "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Human Interface Guidelines: Materials",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/materials"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Human Interface Guidelines: Dark Mode",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Multitasking",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking"
+      },
+      {
+        "title": "Human Interface Guidelines: Modality",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/modality"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/808knty6w7kjssfl/808/808_hd_whats_new_in_ios_design.mp4?dl=1",
@@ -72,7 +56,13 @@
       "year": "2019",
       "title": "Modernizing Your UI for iOS 13",
       "url": "https://developer.apple.com/videos/play/wwdc2019/224"
+    },
+    {
+      "id": "801",
+      "year": "2019",
+      "title": "What’s New in iOS and macOS Design",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/801"
     }
   ],
-  "extractedAt": "2025-07-18T09:38:11.150Z"
+  "extractedAt": "2026-10-11T16:46:59.446Z"
 }

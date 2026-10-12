@@ -67,28 +67,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: watchOS",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos"
-      },
-      {
         "title": "Updating your app and widgets for watchOS 10",
         "url": "https://developer.apple.com/documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: watchOS",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10031/4/365BFCEA-3567-4F2E-85DC-D6DF144F9B5C/downloads/wwdc2023-10031_hd.mp4?dl=1",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10026"
     }
   ],
-  "extractedAt": "2025-07-18T10:52:58.498Z"
+  "extractedAt": "2026-10-11T16:37:14.103Z"
 }

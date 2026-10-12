@@ -1,8 +1,9 @@
 {
   "id": "business-education",
   "name": "Business & Education",
-  "videoCount": 51,
+  "videoCount": 65,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -10,16 +11,90 @@
     "2021",
     "2020",
     "2019",
+    "2018",
     "2017"
   ],
   "videos": [
+    {
+      "id": "379",
+      "year": "2026",
+      "title": "Meet Trust Insights",
+      "topics": [
+        "Business & Education",
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/379/",
+      "dataFile": "videos/2026-379.json"
+    },
+    {
+      "id": "391",
+      "year": "2026",
+      "title": "Offer subscriptions to groups and organizations",
+      "topics": [
+        "App Store, Distribution & Marketing",
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/391/",
+      "dataFile": "videos/2026-391.json"
+    },
+    {
+      "id": "201",
+      "year": "2026",
+      "title": "Secure your apps with App Attest",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing",
+        "Business & Education",
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/201/",
+      "dataFile": "videos/2026-201.json"
+    },
+    {
+      "id": "230",
+      "year": "2026",
+      "title": "What’s new in assessment on macOS",
+      "topics": [
+        "App Services",
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/230/",
+      "dataFile": "videos/2026-230.json"
+    },
+    {
+      "id": "206",
+      "year": "2026",
+      "title": "What’s new in managing Apple devices",
+      "topics": [
+        "App Store, Distribution & Marketing",
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/206/",
+      "dataFile": "videos/2026-206.json"
+    },
     {
       "id": "223",
       "year": "2025",
       "title": "Explore enhancements to your spatial business app",
       "topics": [
         "App Services",
-        "Business & Education"
+        "Business & Education",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -35,7 +110,7 @@
         "Business & Education"
       ],
       "duration": "",
-      "hasCode": false,
+      "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2025/203/",
       "dataFile": "videos/2025-203.json"
@@ -61,7 +136,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -76,7 +155,10 @@
       "topics": [
         "App Services",
         "Audio & Video",
-        "Business & Education"
+        "Business & Education",
+        "Machine Learning & AI",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -102,7 +184,8 @@
       "year": "2023",
       "title": "Deploy passkeys at work",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -150,6 +233,32 @@
       "dataFile": "videos/2023-10039.json"
     },
     {
+      "id": "10321",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10321/",
+      "dataFile": "videos/2023-10321.json"
+    },
+    {
+      "id": "10329",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10329/",
+      "dataFile": "videos/2023-10329.json"
+    },
+    {
       "id": "10040",
       "year": "2023",
       "title": "What’s new in managing Apple devices",
@@ -180,7 +289,8 @@
       "year": "2022",
       "title": "Bring Continuity Camera to your macOS app",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -195,7 +305,9 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -210,7 +322,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -225,7 +338,8 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -238,7 +352,8 @@
       "year": "2022",
       "title": "Create macOS or Linux virtual machines",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -251,7 +366,8 @@
       "year": "2022",
       "title": "Discover Managed Device Attestation",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -286,11 +402,90 @@
       "dataFile": "videos/2022-110335.json"
     },
     {
+      "id": "110517",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Managed Device Attestation",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110517/",
+      "dataFile": "videos/2022-110517.json"
+    },
+    {
+      "id": "110481",
+      "year": "2022",
+      "title": "Q&A: Declarative device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110481/",
+      "dataFile": "videos/2022-110481.json"
+    },
+    {
+      "id": "110515",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110515/",
+      "dataFile": "videos/2022-110515.json"
+    },
+    {
+      "id": "110516",
+      "year": "2022",
+      "title": "Q&A: Device management",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110516/",
+      "dataFile": "videos/2022-110516.json"
+    },
+    {
+      "id": "110520",
+      "year": "2022",
+      "title": "Q&A: Education technologies",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110520/",
+      "dataFile": "videos/2022-110520.json"
+    },
+    {
+      "id": "110641",
+      "year": "2022",
+      "title": "Q&A: Education technologies",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110641/",
+      "dataFile": "videos/2022-110641.json"
+    },
+    {
       "id": "110345",
       "year": "2022",
       "title": "What’s new in Endpoint Security",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -318,7 +513,8 @@
       "topics": [
         "App Services",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -346,7 +542,8 @@
       "title": "Discover account-driven User Enrollment",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -443,7 +640,8 @@
       "title": "Build location-aware enterprise apps",
       "topics": [
         "Accessibility & Inclusion",
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": true,
@@ -482,7 +680,8 @@
       "year": "2020",
       "title": "Create great enterprise apps: A chat with Box's Aaron Levie",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -550,7 +749,8 @@
       "year": "2020",
       "title": "Swan's Quest, Chapter 4: The sequence completes",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -563,7 +763,8 @@
       "year": "2020",
       "title": "What's new in assessment",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -602,7 +803,11 @@
       "year": "2019",
       "title": "Adding Indoor Maps to your App and Website",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -629,7 +834,10 @@
       "year": "2019",
       "title": "Introducing the Indoor Maps Program",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -669,13 +877,29 @@
       "year": "2019",
       "title": "What’s New in MapKit and MapKit JS",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location",
+        "Privacy & Security",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2019/236/",
       "dataFile": "videos/2019-236.json"
+    },
+    {
+      "id": "215",
+      "year": "2018",
+      "title": "Introducing ClassKit",
+      "topics": [
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/215/",
+      "dataFile": "videos/2018-215.json"
     },
     {
       "id": "716",
@@ -696,7 +920,9 @@
       "year": "2017",
       "title": "SceneKit in Swift Playgrounds",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Graphics & Games",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,

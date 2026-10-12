@@ -91,24 +91,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "The Swift Programming Language: Concurrency",
         "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10134/6/9155AF54-72F8-4BFA-BAB6-0B8830753666/downloads/wwdc2021-10134_hd.mp4?dl=1",
@@ -176,5 +160,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10192"
     }
   ],
-  "extractedAt": "2025-07-18T10:48:33.745Z"
+  "extractedAt": "2026-10-11T16:42:31.023Z"
 }

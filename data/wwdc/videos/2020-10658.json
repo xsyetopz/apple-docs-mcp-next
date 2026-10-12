@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Automatic Assessment Configuration",
         "url": "https://developer.apple.com/documentation/AutomaticAssessmentConfiguration"
       },
       {
         "title": "ClassKit",
         "url": "https://developer.apple.com/documentation/ClassKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10658/8/827B5251-1529-46D9-AFD4-274C9CECE198/wwdc2020_10658_hd.mp4?dl=1",
@@ -58,5 +42,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10672"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:21.575Z"
+  "extractedAt": "2026-10-11T16:44:55.836Z"
 }

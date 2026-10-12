@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Maps & Location"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,36 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core Bluetooth",
-        "url": "https://developer.apple.com/documentation/CoreBluetooth"
-      },
-      {
         "title": "Finding devices with precision",
         "url": "https://developer.apple.com/documentation/NearbyInteraction/finding-devices-with-precision"
-      },
-      {
-        "title": "Nearby Interaction",
-        "url": "https://developer.apple.com/documentation/NearbyInteraction"
       },
       {
         "title": "PHASE",
         "url": "https://developer.apple.com/documentation/PHASE"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Nearby Interaction",
+        "url": "https://developer.apple.com/documentation/NearbyInteraction"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core Bluetooth",
+        "url": "https://developer.apple.com/documentation/CoreBluetooth"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10008/5/BB4E3444-7C8E-42CC-B427-08DA670C9D41/downloads/wwdc2022-10008_hd.mp4?dl=1",
@@ -72,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10668"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:37.618Z"
+  "extractedAt": "2026-10-11T16:39:33.520Z"
 }

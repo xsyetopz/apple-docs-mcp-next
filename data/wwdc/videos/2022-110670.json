@@ -1,0 +1,127 @@
+{
+  "id": "110670",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110670/",
+  "title": "Icebreaker: Graphics and Games",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Graphics & Games"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10103",
+      "year": "2022",
+      "title": "Boost performance with MetalFX Upscaling",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10103"
+    },
+    {
+      "id": "10066",
+      "year": "2022",
+      "title": "Discover Metal 3",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10066"
+    },
+    {
+      "id": "10101",
+      "year": "2022",
+      "title": "Go bindless with Metal 3",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10101"
+    },
+    {
+      "id": "10104",
+      "year": "2022",
+      "title": "Load resources faster with Metal 3",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10104"
+    },
+    {
+      "id": "10105",
+      "year": "2022",
+      "title": "Maximize your Metal ray tracing performance",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10105"
+    },
+    {
+      "id": "110422",
+      "year": "2022",
+      "title": "Meet the Presenter: Add accessibility to your Unity games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110422"
+    },
+    {
+      "id": "110658",
+      "year": "2022",
+      "title": "Meet the Presenter: Add Apple frameworks to your Unity game projects",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110658"
+    },
+    {
+      "id": "110657",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Metal 3",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110657"
+    },
+    {
+      "id": "110662",
+      "year": "2022",
+      "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110662"
+    },
+    {
+      "id": "10106",
+      "year": "2022",
+      "title": "Profile and optimize your game's memory",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10106"
+    },
+    {
+      "id": "10160",
+      "year": "2022",
+      "title": "Program Metal in C++ with metal-cpp",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10160"
+    },
+    {
+      "id": "110663",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110663"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
+    },
+    {
+      "id": "110949",
+      "year": "2022",
+      "title": "Study Hall: Draw with metal-cpp",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110949"
+    },
+    {
+      "id": "10102",
+      "year": "2022",
+      "title": "Target and optimize GPU binaries with Metal 3",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10102"
+    },
+    {
+      "id": "10162",
+      "year": "2022",
+      "title": "Transform your geometry with Metal mesh shaders",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10162"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:07.386Z"
+}

@@ -15,26 +15,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2015/805yjy11epjkgmnn11/805/805_hd_apple_watch_design_tips_and_tricks.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2015/805yjy11epjkgmnn11/805/805_sd_apple_watch_design_tips_and_tricks.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:39:10.408Z"
+  "extractedAt": "2026-10-11T16:49:15.363Z"
 }

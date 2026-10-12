@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/MultipleSynchronizedliveHLSStreams.zip",
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/504op4c3001w2f222/504/504_hd_advances_in_http_live_streaming.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/504op4c3001w2f222/504/504_sd_advances_in_http_live_streaming.mp4?dl=1"
@@ -57,5 +40,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/510"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:08.598Z"
+  "extractedAt": "2026-10-11T16:48:52.046Z"
 }

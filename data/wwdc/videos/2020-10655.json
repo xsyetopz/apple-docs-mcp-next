@@ -109,24 +109,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Using AVFoundation to play and persist HTTP Live Streams",
+        "title": "Using AVFoundation to play and persist HTTP live streams",
         "url": "https://developer.apple.com/documentation/AVFoundation/using-avfoundation-to-play-and-persist-http-live-streams"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10655/3/45C0E27F-A3BA-416D-B037-9BEE7466C11F/wwdc2020_10655_hd.mp4?dl=1",
@@ -140,5 +124,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10143"
     }
   ],
-  "extractedAt": "2025-07-18T09:24:56.659Z"
+  "extractedAt": "2026-10-11T16:46:31.619Z"
 }

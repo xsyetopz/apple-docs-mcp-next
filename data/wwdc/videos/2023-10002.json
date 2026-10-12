@@ -55,28 +55,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ProxyConfiguration",
-        "url": "https://developer.apple.com/documentation/Network/ProxyConfiguration"
-      },
-      {
         "title": "Relays",
         "url": "https://developer.apple.com/documentation/NetworkExtension/relays"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "ProxyConfiguration",
+        "url": "https://developer.apple.com/documentation/Network/ProxyConfiguration"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10002/5/F08830EB-6B56-4461-837E-ADE708BAA71C/downloads/wwdc2023-10002_hd.mp4?dl=1",
@@ -102,5 +86,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10096"
     }
   ],
-  "extractedAt": "2025-07-18T11:01:10.726Z"
+  "extractedAt": "2026-10-11T16:36:11.909Z"
 }

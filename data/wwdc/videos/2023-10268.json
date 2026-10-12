@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,24 +26,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Configuring your project to use mergeable libraries",
         "url": "https://developer.apple.com/documentation/Xcode/configuring-your-project-to-use-mergeable-libraries"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10268/4/8ABBA81C-E5D8-4695-A921-FE326B1AC4E3/downloads/wwdc2023-10268_hd.mp4?dl=1",
@@ -50,11 +35,17 @@
   },
   "relatedVideos": [
     {
+      "id": "111589",
+      "year": "2023",
+      "title": "Meet the presenters: Meet mergeable libraries",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111589"
+    },
+    {
       "id": "110362",
       "year": "2022",
       "title": "Link fast: Improve build and launch times",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110362"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:22.064Z"
+  "extractedAt": "2026-10-11T16:37:09.684Z"
 }

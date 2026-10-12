@@ -1,8 +1,9 @@
 {
   "id": "machine-learning-ai",
   "name": "Machine Learning & AI",
-  "videoCount": 92,
+  "videoCount": 150,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -12,6 +13,523 @@
     "2019"
   ],
   "videos": [
+    {
+      "id": "8011",
+      "year": "2026",
+      "title": "Apple Intelligence Group Lab",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8011/",
+      "dataFile": "videos/2026-8011.json"
+    },
+    {
+      "id": "297",
+      "year": "2026",
+      "title": "Best practices for integrating visual intelligence in your app",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/297/",
+      "dataFile": "videos/2026-297.json"
+    },
+    {
+      "id": "339",
+      "year": "2026",
+      "title": "Bring an LLM provider to the Foundation Models framework",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/339/",
+      "dataFile": "videos/2026-339.json"
+    },
+    {
+      "id": "356",
+      "year": "2026",
+      "title": "Bringing Cyberpunk 2077 to Mac",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/356/",
+      "dataFile": "videos/2026-356.json"
+    },
+    {
+      "id": "242",
+      "year": "2026",
+      "title": "Build agentic app experiences with the Foundation Models framework",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/242/",
+      "dataFile": "videos/2026-242.json"
+    },
+    {
+      "id": "334",
+      "year": "2026",
+      "title": "Build AI-powered scripts with the fm CLI and Python SDK",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/334/",
+      "dataFile": "videos/2026-334.json"
+    },
+    {
+      "id": "240",
+      "year": "2026",
+      "title": "Build intelligent Siri experiences with App Schemas",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/240/",
+      "dataFile": "videos/2026-240.json"
+    },
+    {
+      "id": "359",
+      "year": "2026",
+      "title": "Build real-time neural rendering pipelines with Metal",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/359/",
+      "dataFile": "videos/2026-359.json"
+    },
+    {
+      "id": "319",
+      "year": "2026",
+      "title": "Build with the new Apple Foundation Model on Private Cloud Compute",
+      "topics": [
+        "Machine Learning & AI",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/319/",
+      "dataFile": "videos/2026-319.json"
+    },
+    {
+      "id": "344",
+      "year": "2026",
+      "title": "Code-along: Make your app available to Siri",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/344/",
+      "dataFile": "videos/2026-344.json"
+    },
+    {
+      "id": "8121",
+      "year": "2026",
+      "title": "Coding Intelligence, Machine Learning & AI Group Lab",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8121/",
+      "dataFile": "videos/2026-8121.json"
+    },
+    {
+      "id": "375",
+      "year": "2026",
+      "title": "Create high-quality images using Image Playground",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/375/",
+      "dataFile": "videos/2026-375.json"
+    },
+    {
+      "id": "299",
+      "year": "2026",
+      "title": "Create robust evaluations for agentic apps",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/299/",
+      "dataFile": "videos/2026-299.json"
+    },
+    {
+      "id": "227",
+      "year": "2026",
+      "title": "Create UI prototypes using agents in Xcode",
+      "topics": [
+        "Design",
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/227/",
+      "dataFile": "videos/2026-227.json"
+    },
+    {
+      "id": "243",
+      "year": "2026",
+      "title": "Debug and profile agentic app experiences with Instruments",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/243/",
+      "dataFile": "videos/2026-243.json"
+    },
+    {
+      "id": "234",
+      "year": "2026",
+      "title": "Design immersive environments for visionOS apps and the spatial web",
+      "topics": [
+        "Design",
+        "Graphics & Games",
+        "Machine Learning & AI",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/234/",
+      "dataFile": "videos/2026-234.json"
+    },
+    {
+      "id": "345",
+      "year": "2026",
+      "title": "Discover new capabilities in the App Intents framework",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/345/",
+      "dataFile": "videos/2026-345.json"
+    },
+    {
+      "id": "325",
+      "year": "2026",
+      "title": "Dive into Core AI model authoring and optimization",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/325/",
+      "dataFile": "videos/2026-325.json"
+    },
+    {
+      "id": "343",
+      "year": "2026",
+      "title": "Explore advanced App Intents features for Siri and Apple Intelligence",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/343/",
+      "dataFile": "videos/2026-343.json"
+    },
+    {
+      "id": "233",
+      "year": "2026",
+      "title": "Explore distributed inference and training with MLX",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/233/",
+      "dataFile": "videos/2026-233.json"
+    },
+    {
+      "id": "328",
+      "year": "2026",
+      "title": "Explore numerical computing in Swift with MLX",
+      "topics": [
+        "Machine Learning & AI",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/328/",
+      "dataFile": "videos/2026-328.json"
+    },
+    {
+      "id": "335",
+      "year": "2026",
+      "title": "Improve your prompts by hill-climbing with Evaluations",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/335/",
+      "dataFile": "videos/2026-335.json"
+    },
+    {
+      "id": "382",
+      "year": "2026",
+      "title": "Inside Apple Intelligence and Xcode: Special Presentation",
+      "topics": [
+        "Developer Tools",
+        "Essentials",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/382/",
+      "dataFile": "videos/2026-382.json"
+    },
+    {
+      "id": "326",
+      "year": "2026",
+      "title": "Integrate on-device AI models into your app using Core AI",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/326/",
+      "dataFile": "videos/2026-326.json"
+    },
+    {
+      "id": "246",
+      "year": "2026",
+      "title": "LLM search using Core Spotlight",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/246/",
+      "dataFile": "videos/2026-246.json"
+    },
+    {
+      "id": "8016",
+      "year": "2026",
+      "title": "Machine Learning & AI Group Lab",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8016/",
+      "dataFile": "videos/2026-8016.json"
+    },
+    {
+      "id": "324",
+      "year": "2026",
+      "title": "Meet Core AI",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/324/",
+      "dataFile": "videos/2026-324.json"
+    },
+    {
+      "id": "298",
+      "year": "2026",
+      "title": "Meet the Evaluations framework",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/298/",
+      "dataFile": "videos/2026-298.json"
+    },
+    {
+      "id": "253",
+      "year": "2026",
+      "title": "Meet the Music Understanding framework",
+      "topics": [
+        "Audio & Video",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/253/",
+      "dataFile": "videos/2026-253.json"
+    },
+    {
+      "id": "330",
+      "year": "2026",
+      "title": "Optimize custom machine learning operations with Metal tensors",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/330/",
+      "dataFile": "videos/2026-330.json"
+    },
+    {
+      "id": "232",
+      "year": "2026",
+      "title": "Run local agentic AI on the Mac using MLX",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/232/",
+      "dataFile": "videos/2026-232.json"
+    },
+    {
+      "id": "347",
+      "year": "2026",
+      "title": "Secure your app: mitigate risks to agentic features",
+      "topics": [
+        "Machine Learning & AI",
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/347/",
+      "dataFile": "videos/2026-347.json"
+    },
+    {
+      "id": "357",
+      "year": "2026",
+      "title": "Speedrun your game port with agentic coding",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/357/",
+      "dataFile": "videos/2026-357.json"
+    },
+    {
+      "id": "213",
+      "year": "2026",
+      "title": "Translate your app using agents in Xcode",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/213/",
+      "dataFile": "videos/2026-213.json"
+    },
+    {
+      "id": "295",
+      "year": "2026",
+      "title": "Validate your App Intents adoption with AppIntentsTesting",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/295/",
+      "dataFile": "videos/2026-295.json"
+    },
+    {
+      "id": "237",
+      "year": "2026",
+      "title": "What’s new in image understanding",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/237/",
+      "dataFile": "videos/2026-237.json"
+    },
+    {
+      "id": "310",
+      "year": "2026",
+      "title": "What’s new in Shortcuts",
+      "topics": [
+        "Machine Learning & AI",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/310/",
+      "dataFile": "videos/2026-310.json"
+    },
+    {
+      "id": "241",
+      "year": "2026",
+      "title": "What’s new in the Foundation Models framework",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/241/",
+      "dataFile": "videos/2026-241.json"
+    },
     {
       "id": "277",
       "year": "2025",
@@ -43,7 +561,8 @@
       "year": "2025",
       "title": "Combine Metal 4 machine learning and graphics",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -69,7 +588,8 @@
       "year": "2025",
       "title": "Design interactive snippets",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -95,7 +615,8 @@
       "year": "2025",
       "title": "Discover machine learning & AI frameworks on Apple platforms",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -108,7 +629,8 @@
       "year": "2025",
       "title": "Dive deeper into Writing Tools",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -147,7 +669,8 @@
       "year": "2025",
       "title": "Explore prompt design & safety for on-device foundation models",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -200,7 +723,8 @@
       "title": "Optimize CPU performance with Instruments",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -239,7 +763,8 @@
       "year": "2024",
       "title": "Accelerate machine learning with Metal",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -252,7 +777,8 @@
       "year": "2024",
       "title": "Bring your app to Siri",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -265,7 +791,8 @@
       "year": "2024",
       "title": "Bring your app’s core features to users with App Intents",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -318,7 +845,8 @@
       "year": "2024",
       "title": "Design App Intents for system experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -387,7 +915,10 @@
       "topics": [
         "App Services",
         "Audio & Video",
-        "Business & Education"
+        "Business & Education",
+        "Machine Learning & AI",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -414,7 +945,8 @@
       "year": "2024",
       "title": "Meet the Translation API",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -440,7 +972,9 @@
       "year": "2024",
       "title": "Support semantic search with Core Spotlight",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -453,7 +987,8 @@
       "year": "2024",
       "title": "Train your machine learning and AI models on Apple GPUs",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -466,7 +1001,9 @@
       "year": "2024",
       "title": "Use HDR for dynamic image experiences in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -479,7 +1016,8 @@
       "year": "2024",
       "title": "What’s new in App Intents",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -611,7 +1149,8 @@
       "year": "2023",
       "title": "Lift subjects from images in your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -633,6 +1172,138 @@
       "dataFile": "videos/2023-10050.json"
     },
     {
+      "id": "111245",
+      "year": "2023",
+      "title": "Q&A: Core ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111245/",
+      "dataFile": "videos/2023-111245.json"
+    },
+    {
+      "id": "111244",
+      "year": "2023",
+      "title": "Q&A: Create ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111244/",
+      "dataFile": "videos/2023-111244.json"
+    },
+    {
+      "id": "111246",
+      "year": "2023",
+      "title": "Q&A: Image understanding and the Vision framework",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111246/",
+      "dataFile": "videos/2023-111246.json"
+    },
+    {
+      "id": "111258",
+      "year": "2023",
+      "title": "Q&A: Live Text and data scanning",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111258/",
+      "dataFile": "videos/2023-111258.json"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249/",
+      "dataFile": "videos/2023-111249.json"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250/",
+      "dataFile": "videos/2023-111250.json"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251/",
+      "dataFile": "videos/2023-111251.json"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248/",
+      "dataFile": "videos/2023-111248.json"
+    },
+    {
+      "id": "111247",
+      "year": "2023",
+      "title": "Q&A: Natural Language and Speech",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111247/",
+      "dataFile": "videos/2023-111247.json"
+    },
+    {
+      "id": "111259",
+      "year": "2023",
+      "title": "Q&A: Subject lifting",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111259/",
+      "dataFile": "videos/2023-111259.json"
+    },
+    {
       "id": "10047",
       "year": "2023",
       "title": "Use Core ML Tools for machine learning model compression",
@@ -650,7 +1321,8 @@
       "year": "2023",
       "title": "What’s new in VisionKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -663,7 +1335,8 @@
       "year": "2022",
       "title": "Accelerate machine learning with Metal",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -725,6 +1398,72 @@
       "dataFile": "videos/2022-10019.json"
     },
     {
+      "id": "110906",
+      "year": "2022",
+      "title": "Meet the Presenter: Accelerate machine learning with Metal",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110906/",
+      "dataFile": "videos/2022-110906.json"
+    },
+    {
+      "id": "110904",
+      "year": "2022",
+      "title": "Meet the Presenter: Compose advanced models with Create ML Components",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110904/",
+      "dataFile": "videos/2022-110904.json"
+    },
+    {
+      "id": "110908",
+      "year": "2022",
+      "title": "Meet the Presenter: Create custom catalogs at scale with ShazamKit",
+      "topics": [
+        "Audio & Video",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110908/",
+      "dataFile": "videos/2022-110908.json"
+    },
+    {
+      "id": "110907",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore the machine learning developer experience",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110907/",
+      "dataFile": "videos/2022-110907.json"
+    },
+    {
+      "id": "110902",
+      "year": "2022",
+      "title": "Meet the Presenter: Get to know Create ML Components",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110902/",
+      "dataFile": "videos/2022-110902.json"
+    },
+    {
       "id": "10027",
       "year": "2022",
       "title": "Optimize your Core ML usage",
@@ -736,6 +1475,45 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10027/",
       "dataFile": "videos/2022-10027.json"
+    },
+    {
+      "id": "110903",
+      "year": "2022",
+      "title": "Q&A: Core ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110903/",
+      "dataFile": "videos/2022-110903.json"
+    },
+    {
+      "id": "110901",
+      "year": "2022",
+      "title": "Q&A: Create ML",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110901/",
+      "dataFile": "videos/2022-110901.json"
+    },
+    {
+      "id": "110905",
+      "year": "2022",
+      "title": "Q&A: Vision",
+      "topics": [
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110905/",
+      "dataFile": "videos/2022-110905.json"
     },
     {
       "id": "110332",
@@ -755,7 +1533,8 @@
       "year": "2022",
       "title": "What's new in Vision",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -768,7 +1547,8 @@
       "year": "2021",
       "title": "Accelerate machine learning with Metal Performance Shaders Graph",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -823,7 +1603,9 @@
       "year": "2021",
       "title": "Discover built-in sound classification in SoundAnalysis",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -837,7 +1619,8 @@
       "title": "Discoverable design",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -865,7 +1648,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -905,7 +1689,8 @@
       "year": "2020",
       "title": "Build an Action Classifier with Create ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -932,7 +1717,8 @@
       "year": "2020",
       "title": "Build Image and Video Style Transfer models in Create ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1025,7 +1811,8 @@
       "year": "2020",
       "title": "Use model deployment and security with Core ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -1051,7 +1838,8 @@
       "year": "2019",
       "title": "Advances in Speech Recognition",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1077,13 +1865,42 @@
       "year": "2019",
       "title": "Core ML 3 Framework",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2019/704/",
       "dataFile": "videos/2019-704.json"
+    },
+    {
+      "id": "407",
+      "year": "2019",
+      "title": "Create ML for Activity, Text, and Recommendations",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/407/",
+      "dataFile": "videos/2019-407.json"
+    },
+    {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406/",
+      "dataFile": "videos/2019-406.json"
     },
     {
       "id": "228",
@@ -1104,7 +1921,8 @@
       "year": "2019",
       "title": "Designing Great ML Experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1117,7 +1935,8 @@
       "year": "2019",
       "title": "Introducing the Create ML App",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1223,7 +2042,8 @@
       "year": "2019",
       "title": "What's New in Machine Learning",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,

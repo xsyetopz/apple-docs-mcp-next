@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -109,28 +110,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Playing immersive media with RealityKit",
-        "url": "https://developer.apple.com/documentation/visionOS/playing-immersive-media-with-realitykit"
+        "title": "Integrating virtual objects with your environment",
+        "url": "https://developer.apple.com/documentation/RealityKit/integrating-virtual-objects-with-your-environment"
       },
       {
         "title": "Presenting images in RealityKit",
         "url": "https://developer.apple.com/documentation/RealityKit/presenting-images-in-realitykit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Playing immersive media with RealityKit",
+        "url": "https://developer.apple.com/documentation/visionOS/playing-immersive-media-with-realitykit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/287/4/23ef24fe-2271-4352-b5af-b350e85dc101/downloads/wwdc2025-287_hd.mp4?dl=1",
@@ -156,5 +145,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/296"
     }
   ],
-  "extractedAt": "2025-07-18T10:28:59.308Z"
+  "extractedAt": "2026-10-11T16:34:26.855Z"
 }

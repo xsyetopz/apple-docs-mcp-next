@@ -1,8 +1,9 @@
 {
   "id": "spatial-computing",
   "name": "Spatial Computing",
-  "videoCount": 122,
+  "videoCount": 160,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -14,11 +15,240 @@
   ],
   "videos": [
     {
+      "id": "338",
+      "year": "2026",
+      "title": "Build live production tools for Apple Immersive Video",
+      "topics": [
+        "Audio & Video",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/338/",
+      "dataFile": "videos/2026-338.json"
+    },
+    {
+      "id": "287",
+      "year": "2026",
+      "title": "Build next-generation experiences with visionOS 27",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/287/",
+      "dataFile": "videos/2026-287.json"
+    },
+    {
+      "id": "284",
+      "year": "2026",
+      "title": "Collaborate on structured 3D models in visionOS",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/284/",
+      "dataFile": "videos/2026-284.json"
+    },
+    {
+      "id": "234",
+      "year": "2026",
+      "title": "Design immersive environments for visionOS apps and the spatial web",
+      "topics": [
+        "Design",
+        "Graphics & Games",
+        "Machine Learning & AI",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/234/",
+      "dataFile": "videos/2026-234.json"
+    },
+    {
+      "id": "252",
+      "year": "2026",
+      "title": "Design no-code games with Reality Composer Pro 3",
+      "topics": [
+        "Design",
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/252/",
+      "dataFile": "videos/2026-252.json"
+    },
+    {
+      "id": "282",
+      "year": "2026",
+      "title": "Discover the Spatial Preview framework",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/282/",
+      "dataFile": "videos/2026-282.json"
+    },
+    {
+      "id": "285",
+      "year": "2026",
+      "title": "Discover USDKit and what’s new in OpenUSD",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/285/",
+      "dataFile": "videos/2026-285.json"
+    },
+    {
+      "id": "279",
+      "year": "2026",
+      "title": "Explore advances in RealityKit",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/279/",
+      "dataFile": "videos/2026-279.json"
+    },
+    {
+      "id": "283",
+      "year": "2026",
+      "title": "Explore enhancements to visionOS object tracking",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/283/",
+      "dataFile": "videos/2026-283.json"
+    },
+    {
+      "id": "320",
+      "year": "2026",
+      "title": "Explore immersive website environments in visionOS",
+      "topics": [
+        "Safari & Web",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/320/",
+      "dataFile": "videos/2026-320.json"
+    },
+    {
+      "id": "281",
+      "year": "2026",
+      "title": "Extend Reality Composer Pro 3 functionality with Xcode",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/281/",
+      "dataFile": "videos/2026-281.json"
+    },
+    {
+      "id": "215",
+      "year": "2026",
+      "title": "Get started with the HTML Model Element",
+      "topics": [
+        "Safari & Web",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/215/",
+      "dataFile": "videos/2026-215.json"
+    },
+    {
+      "id": "280",
+      "year": "2026",
+      "title": "Iterate your spatial scenes faster with Reality Composer Pro 3",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/280/",
+      "dataFile": "videos/2026-280.json"
+    },
+    {
+      "id": "393",
+      "year": "2026",
+      "title": "Supercharge your spatial workflows with Reality Composer Pro 3",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/393/",
+      "dataFile": "videos/2026-393.json"
+    },
+    {
+      "id": "286",
+      "year": "2026",
+      "title": "Use foveated streaming to bring immersive content to visionOS",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/286/",
+      "dataFile": "videos/2026-286.json"
+    },
+    {
+      "id": "8004",
+      "year": "2026",
+      "title": "visionOS Group Lab",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8004/",
+      "dataFile": "videos/2026-8004.json"
+    },
+    {
       "id": "274",
       "year": "2025",
       "title": "Better together: SwiftUI and RealityKit",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -31,7 +261,8 @@
       "year": "2025",
       "title": "Design hover interactions for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -44,7 +275,9 @@
       "year": "2025",
       "title": "Design widgets for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -57,7 +290,9 @@
       "year": "2025",
       "title": "Enhance your app’s audio recording capabilities",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -71,7 +306,8 @@
       "title": "Explore enhancements to your spatial business app",
       "topics": [
         "App Services",
-        "Business & Education"
+        "Business & Education",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -84,7 +320,8 @@
       "year": "2025",
       "title": "Explore spatial accessory input on visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -98,7 +335,8 @@
       "title": "Explore video experiences for visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -111,7 +349,8 @@
       "year": "2025",
       "title": "Learn about Apple Immersive Video technologies",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -124,7 +363,8 @@
       "year": "2025",
       "title": "Learn about the Apple Projected Media Profile",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -137,7 +377,9 @@
       "year": "2025",
       "title": "Meet SwiftUI spatial layout",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -151,7 +393,8 @@
       "title": "Optimize your custom environments for visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -164,7 +407,9 @@
       "year": "2025",
       "title": "Set the scene with SwiftUI in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -177,7 +422,8 @@
       "year": "2025",
       "title": "Share visionOS experiences with nearby people",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -190,7 +436,8 @@
       "year": "2025",
       "title": "Support immersive video playback in visionOS apps",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -217,7 +464,8 @@
       "year": "2025",
       "title": "What’s new in Metal rendering for immersive apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -230,7 +478,8 @@
       "year": "2025",
       "title": "What’s new in RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -244,7 +493,9 @@
       "title": "What’s new in SwiftUI",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -260,7 +511,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -274,7 +529,8 @@
       "title": "Break into the RealityKit debugger",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -287,7 +543,8 @@
       "year": "2024",
       "title": "Bring your iOS or iPadOS game to visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -301,7 +558,8 @@
       "title": "Build a spatial drawing app with RealityKit",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -328,7 +586,9 @@
       "year": "2024",
       "title": "Build immersive web experiences with WebXR",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -341,7 +601,8 @@
       "year": "2024",
       "title": "Compose interactive 3D content in Reality Composer Pro",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -354,7 +615,8 @@
       "year": "2024",
       "title": "Create custom environments for your immersive apps in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -367,7 +629,9 @@
       "year": "2024",
       "title": "Create custom hover effects in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -394,7 +658,8 @@
       "title": "Customize spatial Persona templates in SharePlay",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -408,7 +673,8 @@
       "title": "Design great visionOS apps",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -421,7 +687,8 @@
       "year": "2024",
       "title": "Design interactive experiences for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -435,7 +702,8 @@
       "title": "Discover area mode for Object Capture",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -449,7 +717,8 @@
       "title": "Discover RealityKit APIs for iOS, macOS, and visionOS",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -476,7 +745,8 @@
       "year": "2024",
       "title": "Enhance the immersion of media viewing in custom environments",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -490,7 +760,8 @@
       "title": "Enhance your spatial computing app with RealityKit audio",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -504,7 +775,8 @@
       "title": "Explore game input in visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -518,7 +790,8 @@
       "title": "Explore multiview video playback in visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -561,7 +834,10 @@
       "topics": [
         "App Services",
         "Audio & Video",
-        "Business & Education"
+        "Business & Education",
+        "Machine Learning & AI",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -574,7 +850,8 @@
       "year": "2024",
       "title": "Meet TabletopKit for visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -601,7 +878,8 @@
       "year": "2024",
       "title": "Optimize your 3D assets for spatial computing",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -614,7 +892,8 @@
       "year": "2024",
       "title": "Render Metal with passthrough in visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -627,7 +906,9 @@
       "year": "2024",
       "title": "What’s new in Quick Look for visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -640,7 +921,9 @@
       "year": "2024",
       "title": "What’s new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -654,7 +937,8 @@
       "title": "What’s new in USD and MaterialX",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -681,7 +965,8 @@
       "year": "2023",
       "title": "Bring your Unity VR app to a fully immersive space",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -694,7 +979,8 @@
       "year": "2023",
       "title": "Build great games for spatial computing",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -707,7 +993,8 @@
       "year": "2023",
       "title": "Build spatial experiences with RealityKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -746,7 +1033,8 @@
       "year": "2023",
       "title": "Create a great spatial playback experience",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -759,7 +1047,8 @@
       "year": "2023",
       "title": "Create accessible spatial experiences",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -772,7 +1061,8 @@
       "year": "2023",
       "title": "Create immersive Unity apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -785,7 +1075,8 @@
       "year": "2023",
       "title": "Deliver video content for spatial experiences",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -799,7 +1090,8 @@
       "title": "Design considerations for vision and motion",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -812,7 +1104,8 @@
       "year": "2023",
       "title": "Design for spatial input",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -825,7 +1118,8 @@
       "year": "2023",
       "title": "Design for spatial user interfaces",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -838,7 +1132,8 @@
       "year": "2023",
       "title": "Design spatial SharePlay experiences",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -851,7 +1146,8 @@
       "year": "2023",
       "title": "Develop your first immersive app",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -864,7 +1160,8 @@
       "year": "2023",
       "title": "Discover Metal for immersive apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -904,7 +1201,8 @@
       "year": "2023",
       "title": "Enhance your app’s audio experience with AirPods",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -917,7 +1215,9 @@
       "year": "2023",
       "title": "Enhance your iPad and iPhone apps for the Shared Space",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -930,7 +1230,8 @@
       "year": "2023",
       "title": "Enhance your spatial computing app with RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -957,7 +1258,8 @@
       "year": "2023",
       "title": "Explore App Store Connect for spatial computing",
       "topics": [
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -984,7 +1286,8 @@
       "title": "Explore immersive sound design",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -997,7 +1300,8 @@
       "year": "2023",
       "title": "Explore materials in Reality Composer Pro",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1023,7 +1327,8 @@
       "year": "2023",
       "title": "Explore the USD ecosystem",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1059,6 +1364,58 @@
       "dataFile": "videos/2023-10111.json"
     },
     {
+      "id": "10316",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10316/",
+      "dataFile": "videos/2023-10316.json"
+    },
+    {
+      "id": "111328",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111328/",
+      "dataFile": "videos/2023-111328.json"
+    },
+    {
+      "id": "111329",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111329/",
+      "dataFile": "videos/2023-111329.json"
+    },
+    {
+      "id": "111330",
+      "year": "2023",
+      "title": "Immersive icebreaker",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111330/",
+      "dataFile": "videos/2023-111330.json"
+    },
+    {
       "id": "10082",
       "year": "2023",
       "title": "Meet ARKit for spatial computing",
@@ -1076,7 +1433,9 @@
       "year": "2023",
       "title": "Meet Core Location for spatial computing",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1102,7 +1461,8 @@
       "year": "2023",
       "title": "Meet Reality Composer Pro",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1115,7 +1475,8 @@
       "year": "2023",
       "title": "Meet RealityKit Trace",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1128,7 +1489,9 @@
       "year": "2023",
       "title": "Meet SwiftUI for spatial computing",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1137,12 +1500,67 @@
       "dataFile": "videos/2023-10109.json"
     },
     {
+      "id": "10310",
+      "year": "2023",
+      "title": "Meet the presenter: Meet SwiftUI for spatial computing",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10310/",
+      "dataFile": "videos/2023-10310.json"
+    },
+    {
+      "id": "10311",
+      "year": "2023",
+      "title": "Meet the presenter: Take SwiftUI to the next dimension",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10311/",
+      "dataFile": "videos/2023-10311.json"
+    },
+    {
+      "id": "111304",
+      "year": "2023",
+      "title": "Meet the presenters: Create accessible spatial experiences",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111304/",
+      "dataFile": "videos/2023-111304.json"
+    },
+    {
+      "id": "111605",
+      "year": "2023",
+      "title": "Meet the presenters: Meet RealityKit Trace",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111605/",
+      "dataFile": "videos/2023-111605.json"
+    },
+    {
       "id": "111215",
       "year": "2023",
       "title": "Meet UIKit for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1155,7 +1573,8 @@
       "year": "2023",
       "title": "Optimize app power and performance for spatial computing",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1168,7 +1587,8 @@
       "year": "2023",
       "title": "Principles of spatial design",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1177,12 +1597,202 @@
       "dataFile": "videos/2023-10072.json"
     },
     {
+      "id": "10348",
+      "year": "2023",
+      "title": "Q&A: ARKit, RealityKit, and Quick Look",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10348/",
+      "dataFile": "videos/2023-10348.json"
+    },
+    {
+      "id": "10343",
+      "year": "2023",
+      "title": "Q&A: ARKit, RealityKit, and Quick Look",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10343/",
+      "dataFile": "videos/2023-10343.json"
+    },
+    {
+      "id": "10346",
+      "year": "2023",
+      "title": "Q&A: Bring your ARKit app to visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10346/",
+      "dataFile": "videos/2023-10346.json"
+    },
+    {
+      "id": "10350",
+      "year": "2023",
+      "title": "Q&A: Bring your ARKit app to visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10350/",
+      "dataFile": "videos/2023-10350.json"
+    },
+    {
+      "id": "111451",
+      "year": "2023",
+      "title": "Q&A: Build UIKit apps for visionOS",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111451/",
+      "dataFile": "videos/2023-111451.json"
+    },
+    {
+      "id": "111452",
+      "year": "2023",
+      "title": "Q&A: Build UIKit apps for visionOS",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111452/",
+      "dataFile": "videos/2023-111452.json"
+    },
+    {
+      "id": "10344",
+      "year": "2023",
+      "title": "Q&A: Create 3D content for Apple platforms",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10344/",
+      "dataFile": "videos/2023-10344.json"
+    },
+    {
+      "id": "10349",
+      "year": "2023",
+      "title": "Q&A: Create 3D content for Apple platforms",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10349/",
+      "dataFile": "videos/2023-10349.json"
+    },
+    {
+      "id": "111211",
+      "year": "2023",
+      "title": "Q&A: iPadOS and iOS apps on Vision Pro",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111211/",
+      "dataFile": "videos/2023-111211.json"
+    },
+    {
+      "id": "111212",
+      "year": "2023",
+      "title": "Q&A: iPadOS and iOS apps on Vision Pro",
+      "topics": [
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111212/",
+      "dataFile": "videos/2023-111212.json"
+    },
+    {
+      "id": "111243",
+      "year": "2023",
+      "title": "Q&A: Spatial design",
+      "topics": [
+        "Design",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111243/",
+      "dataFile": "videos/2023-111243.json"
+    },
+    {
+      "id": "111324",
+      "year": "2023",
+      "title": "Q&A: Spatial design",
+      "topics": [
+        "Design",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111324/",
+      "dataFile": "videos/2023-111324.json"
+    },
+    {
+      "id": "10314",
+      "year": "2023",
+      "title": "Q&A: SwiftUI for visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10314/",
+      "dataFile": "videos/2023-10314.json"
+    },
+    {
+      "id": "10315",
+      "year": "2023",
+      "title": "Q&A: SwiftUI for visionOS",
+      "topics": [
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10315/",
+      "dataFile": "videos/2023-10315.json"
+    },
+    {
       "id": "10090",
       "year": "2023",
       "title": "Run your iPad and iPhone apps in the Shared Space",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1236,7 +1846,8 @@
       "year": "2022",
       "title": "Bring your world into augmented reality",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1263,7 +1874,8 @@
       "year": "2022",
       "title": "Discover ARKit 6",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1276,7 +1888,8 @@
       "year": "2022",
       "title": "Explore USD tools and rendering",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1290,7 +1903,9 @@
       "title": "Qualities of great AR experiences",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1303,7 +1918,8 @@
       "year": "2022",
       "title": "Understand USD fundamentals",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1317,7 +1933,8 @@
       "title": "AR Quick Look, meet Object Capture",
       "topics": [
         "Essentials",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1344,7 +1961,8 @@
       "year": "2021",
       "title": "Create 3D models with Object Capture",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1357,7 +1975,8 @@
       "year": "2021",
       "title": "Create 3D workflows with USD",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1370,7 +1989,8 @@
       "year": "2021",
       "title": "Design for spatial interaction",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1383,7 +2003,8 @@
       "year": "2021",
       "title": "Dive into RealityKit 2",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1396,7 +2017,8 @@
       "year": "2021",
       "title": "Explore advanced rendering with RealityKit 2",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1409,7 +2031,8 @@
       "year": "2021",
       "title": "Explore ARKit 5",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1422,7 +2045,8 @@
       "year": "2021",
       "title": "Explore ShazamKit",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1437,7 +2061,8 @@
       "topics": [
         "Audio & Video",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1450,7 +2075,8 @@
       "year": "2020",
       "title": "Explore ARKit 4",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1464,7 +2090,9 @@
       "title": "Shop online with AR Quick Look",
       "topics": [
         "App Services",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1477,7 +2105,8 @@
       "year": "2020",
       "title": "The artist’s AR toolkit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1490,7 +2119,8 @@
       "year": "2020",
       "title": "What's new in RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1503,7 +2133,8 @@
       "year": "2020",
       "title": "What's new in USD",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1642,7 +2273,9 @@
       "year": "2017",
       "title": "SceneKit: What's New",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,

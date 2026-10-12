@@ -1,0 +1,25 @@
+{
+  "id": "110828",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110828/",
+  "title": "Study Hall: Menu bar extras with SwiftUI",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10061",
+      "year": "2022",
+      "title": "Bring multiple windows to your SwiftUI app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10061"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:13.635Z"
+}

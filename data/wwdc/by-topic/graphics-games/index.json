@@ -1,8 +1,9 @@
 {
   "id": "graphics-games",
   "name": "Graphics & Games",
-  "videoCount": 155,
+  "videoCount": 194,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -17,6 +18,261 @@
     "2014"
   ],
   "videos": [
+    {
+      "id": "356",
+      "year": "2026",
+      "title": "Bringing Cyberpunk 2077 to Mac",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/356/",
+      "dataFile": "videos/2026-356.json"
+    },
+    {
+      "id": "287",
+      "year": "2026",
+      "title": "Build next-generation experiences with visionOS 27",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/287/",
+      "dataFile": "videos/2026-287.json"
+    },
+    {
+      "id": "359",
+      "year": "2026",
+      "title": "Build real-time neural rendering pipelines with Metal",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/359/",
+      "dataFile": "videos/2026-359.json"
+    },
+    {
+      "id": "284",
+      "year": "2026",
+      "title": "Collaborate on structured 3D models in visionOS",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/284/",
+      "dataFile": "videos/2026-284.json"
+    },
+    {
+      "id": "234",
+      "year": "2026",
+      "title": "Design immersive environments for visionOS apps and the spatial web",
+      "topics": [
+        "Design",
+        "Graphics & Games",
+        "Machine Learning & AI",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/234/",
+      "dataFile": "videos/2026-234.json"
+    },
+    {
+      "id": "252",
+      "year": "2026",
+      "title": "Design no-code games with Reality Composer Pro 3",
+      "topics": [
+        "Design",
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/252/",
+      "dataFile": "videos/2026-252.json"
+    },
+    {
+      "id": "282",
+      "year": "2026",
+      "title": "Discover the Spatial Preview framework",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/282/",
+      "dataFile": "videos/2026-282.json"
+    },
+    {
+      "id": "285",
+      "year": "2026",
+      "title": "Discover USDKit and what’s new in OpenUSD",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/285/",
+      "dataFile": "videos/2026-285.json"
+    },
+    {
+      "id": "279",
+      "year": "2026",
+      "title": "Explore advances in RealityKit",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/279/",
+      "dataFile": "videos/2026-279.json"
+    },
+    {
+      "id": "283",
+      "year": "2026",
+      "title": "Explore enhancements to visionOS object tracking",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/283/",
+      "dataFile": "videos/2026-283.json"
+    },
+    {
+      "id": "281",
+      "year": "2026",
+      "title": "Extend Reality Composer Pro 3 functionality with Xcode",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/281/",
+      "dataFile": "videos/2026-281.json"
+    },
+    {
+      "id": "388",
+      "year": "2026",
+      "title": "Find and fix performance issues in your Metal games",
+      "topics": [
+        "Developer Tools",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/388/",
+      "dataFile": "videos/2026-388.json"
+    },
+    {
+      "id": "280",
+      "year": "2026",
+      "title": "Iterate your spatial scenes faster with Reality Composer Pro 3",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/280/",
+      "dataFile": "videos/2026-280.json"
+    },
+    {
+      "id": "358",
+      "year": "2026",
+      "title": "Make your game great with touch",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/358/",
+      "dataFile": "videos/2026-358.json"
+    },
+    {
+      "id": "330",
+      "year": "2026",
+      "title": "Optimize custom machine learning operations with Metal tensors",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/330/",
+      "dataFile": "videos/2026-330.json"
+    },
+    {
+      "id": "357",
+      "year": "2026",
+      "title": "Speedrun your game port with agentic coding",
+      "topics": [
+        "Graphics & Games",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/357/",
+      "dataFile": "videos/2026-357.json"
+    },
+    {
+      "id": "393",
+      "year": "2026",
+      "title": "Supercharge your spatial workflows with Reality Composer Pro 3",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/393/",
+      "dataFile": "videos/2026-393.json"
+    },
+    {
+      "id": "286",
+      "year": "2026",
+      "title": "Use foveated streaming to bring immersive content to visionOS",
+      "topics": [
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/286/",
+      "dataFile": "videos/2026-286.json"
+    },
     {
       "id": "288",
       "year": "2025",
@@ -35,7 +291,8 @@
       "year": "2025",
       "title": "Combine Metal 4 machine learning and graphics",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -50,7 +307,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Graphics & Games"
+        "Graphics & Games",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -102,7 +360,8 @@
       "year": "2025",
       "title": "Explore spatial accessory input on visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -156,7 +415,8 @@
       "title": "Optimize CPU performance with Instruments",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -170,7 +430,8 @@
       "title": "Optimize your custom environments for visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -183,7 +444,8 @@
       "year": "2025",
       "title": "What’s new in Metal rendering for immersive apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -196,7 +458,8 @@
       "year": "2025",
       "title": "What’s new in RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -212,7 +475,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -225,7 +492,8 @@
       "year": "2024",
       "title": "Accelerate machine learning with Metal",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -239,7 +507,8 @@
       "title": "Break into the RealityKit debugger",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -252,7 +521,8 @@
       "year": "2024",
       "title": "Bring your iOS or iPadOS game to visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -266,7 +536,8 @@
       "title": "Build a spatial drawing app with RealityKit",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -294,7 +565,8 @@
       "title": "Create custom visual effects with SwiftUI",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -322,7 +594,8 @@
       "title": "Design great visionOS apps",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -336,7 +609,8 @@
       "title": "Discover area mode for Object Capture",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -350,7 +624,8 @@
       "title": "Discover RealityKit APIs for iOS, macOS, and visionOS",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -364,7 +639,8 @@
       "title": "Enhance your spatial computing app with RealityKit audio",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -378,7 +654,8 @@
       "title": "Explore game input in visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -391,7 +668,8 @@
       "year": "2024",
       "title": "Meet TabletopKit for visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -404,7 +682,8 @@
       "year": "2024",
       "title": "Optimize your 3D assets for spatial computing",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -431,7 +710,8 @@
       "year": "2024",
       "title": "Render Metal with passthrough in visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -444,7 +724,9 @@
       "year": "2024",
       "title": "What’s new in Quick Look for visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -458,7 +740,8 @@
       "title": "What’s new in USD and MaterialX",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -514,7 +797,8 @@
       "year": "2023",
       "title": "Bring your Unity VR app to a fully immersive space",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -527,7 +811,8 @@
       "year": "2023",
       "title": "Build great games for spatial computing",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -540,7 +825,8 @@
       "year": "2023",
       "title": "Create immersive Unity apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -553,7 +839,8 @@
       "year": "2023",
       "title": "Discover Metal for immersive apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -566,7 +853,8 @@
       "year": "2023",
       "title": "Enhance your spatial computing app with RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -579,7 +867,8 @@
       "year": "2023",
       "title": "Explore materials in Reality Composer Pro",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -592,7 +881,8 @@
       "year": "2023",
       "title": "Explore the USD ecosystem",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -615,6 +905,84 @@
       "dataFile": "videos/2023-10127.json"
     },
     {
+      "id": "111285",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111285/",
+      "dataFile": "videos/2023-111285.json"
+    },
+    {
+      "id": "111286",
+      "year": "2023",
+      "title": "Q&A: Games",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111286/",
+      "dataFile": "videos/2023-111286.json"
+    },
+    {
+      "id": "111289",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111289/",
+      "dataFile": "videos/2023-111289.json"
+    },
+    {
+      "id": "111290",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111290/",
+      "dataFile": "videos/2023-111290.json"
+    },
+    {
+      "id": "111287",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111287/",
+      "dataFile": "videos/2023-111287.json"
+    },
+    {
+      "id": "111288",
+      "year": "2023",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111288/",
+      "dataFile": "videos/2023-111288.json"
+    },
+    {
       "id": "10108",
       "year": "2023",
       "title": "What’s new in Background Assets",
@@ -634,7 +1002,8 @@
       "title": "What’s new in ScreenCaptureKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -660,7 +1029,8 @@
       "year": "2022",
       "title": "Accelerate machine learning with Metal",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -700,7 +1070,8 @@
       "year": "2022",
       "title": "Bring your world into augmented reality",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -727,7 +1098,9 @@
       "title": "Display EDR content with Core Image, Metal, and SwiftUI",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -741,7 +1114,9 @@
       "title": "Display HDR video in EDR with AVFoundation and Metal",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -755,7 +1130,9 @@
       "title": "Explore EDR on iOS",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -768,7 +1145,8 @@
       "year": "2022",
       "title": "Explore USD tools and rendering",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -788,6 +1166,19 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10101/",
       "dataFile": "videos/2022-10101.json"
+    },
+    {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670/",
+      "dataFile": "videos/2022-110670.json"
     },
     {
       "id": "10104",
@@ -830,6 +1221,103 @@
       "dataFile": "videos/2022-10156.json"
     },
     {
+      "id": "110422",
+      "year": "2022",
+      "title": "Meet the Presenter: Add accessibility to your Unity games",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110422/",
+      "dataFile": "videos/2022-110422.json"
+    },
+    {
+      "id": "110658",
+      "year": "2022",
+      "title": "Meet the Presenter: Add Apple frameworks to your Unity game projects",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110658/",
+      "dataFile": "videos/2022-110658.json"
+    },
+    {
+      "id": "110661",
+      "year": "2022",
+      "title": "Meet the Presenter: Boost your performance with MetalFX Upscaling",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110661/",
+      "dataFile": "videos/2022-110661.json"
+    },
+    {
+      "id": "110657",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover Metal 3",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110657/",
+      "dataFile": "videos/2022-110657.json"
+    },
+    {
+      "id": "110660",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet ScreenCaptureKit",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110660/",
+      "dataFile": "videos/2022-110660.json"
+    },
+    {
+      "id": "110662",
+      "year": "2022",
+      "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110662/",
+      "dataFile": "videos/2022-110662.json"
+    },
+    {
+      "id": "110659",
+      "year": "2022",
+      "title": "Meet the Presenter: Take ScreenCaptureKit to the next level",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110659/",
+      "dataFile": "videos/2022-110659.json"
+    },
+    {
       "id": "10065",
       "year": "2022",
       "title": "Plug-in and play: Add Apple frameworks to your Unity game projects",
@@ -870,6 +1358,72 @@
       "dataFile": "videos/2022-10160.json"
     },
     {
+      "id": "110663",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110663/",
+      "dataFile": "videos/2022-110663.json"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664/",
+      "dataFile": "videos/2022-110664.json"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666/",
+      "dataFile": "videos/2022-110666.json"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667/",
+      "dataFile": "videos/2022-110667.json"
+    },
+    {
+      "id": "110669",
+      "year": "2022",
+      "title": "Q&A: ScreenCaptureKit",
+      "topics": [
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110669/",
+      "dataFile": "videos/2022-110669.json"
+    },
+    {
       "id": "10064",
       "year": "2022",
       "title": "Reach new players with Game Center dashboard",
@@ -894,6 +1448,32 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10159/",
       "dataFile": "videos/2022-10159.json"
+    },
+    {
+      "id": "110918",
+      "year": "2022",
+      "title": "Study Hall: Bindless ray tracing",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110918/",
+      "dataFile": "videos/2022-110918.json"
+    },
+    {
+      "id": "110949",
+      "year": "2022",
+      "title": "Study Hall: Draw with metal-cpp",
+      "topics": [
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110949/",
+      "dataFile": "videos/2022-110949.json"
     },
     {
       "id": "10155",
@@ -940,7 +1520,8 @@
       "year": "2022",
       "title": "Understand USD fundamentals",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -953,7 +1534,8 @@
       "year": "2021",
       "title": "Accelerate machine learning with Metal Performance Shaders Graph",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -966,7 +1548,8 @@
       "year": "2021",
       "title": "Add rich graphics to your SwiftUI app",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -980,7 +1563,8 @@
       "title": "AR Quick Look, meet Object Capture",
       "topics": [
         "Essentials",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1006,7 +1590,8 @@
       "year": "2021",
       "title": "Capture and process ProRAW images",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1019,7 +1604,8 @@
       "year": "2021",
       "title": "Create 3D models with Object Capture",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1032,7 +1618,8 @@
       "year": "2021",
       "title": "Create 3D workflows with USD",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1113,7 +1700,8 @@
       "year": "2021",
       "title": "Dive into RealityKit 2",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1139,7 +1727,8 @@
       "year": "2021",
       "title": "Explore advanced rendering with RealityKit 2",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1152,7 +1741,8 @@
       "year": "2021",
       "title": "Explore ARKit 5",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1179,7 +1769,8 @@
       "title": "Explore Core Image kernel improvements",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1193,7 +1784,8 @@
       "title": "Explore HDR rendering with EDR",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1248,7 +1840,8 @@
       "topics": [
         "Audio & Video",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1292,7 +1885,8 @@
       "year": "2020",
       "title": "Advancements in Game Controllers",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1305,7 +1899,8 @@
       "year": "2020",
       "title": "Bring keyboard and mouse gaming to iPad",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1361,7 +1956,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1375,7 +1971,8 @@
       "title": "Capture and stream apps on the Mac with ReplayKit",
       "topics": [
         "Audio & Video",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1433,7 +2030,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1459,7 +2057,8 @@
       "year": "2020",
       "title": "Explore ARKit 4",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1541,7 +2140,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1555,7 +2155,9 @@
       "title": "Shop online with AR Quick Look",
       "topics": [
         "App Services",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1608,7 +2210,8 @@
       "year": "2020",
       "title": "The artist’s AR toolkit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1621,7 +2224,8 @@
       "year": "2020",
       "title": "What's new in RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1634,7 +2238,8 @@
       "year": "2020",
       "title": "What's new in USD",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1730,7 +2335,8 @@
       "year": "2019",
       "title": "Debugging in Xcode 11",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1743,7 +2349,8 @@
       "year": "2019",
       "title": "Delivering Optimized Metal Apps and Games",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1756,7 +2363,8 @@
       "year": "2019",
       "title": "Designing Award Winning Apps and Games",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1770,7 +2378,8 @@
       "title": "Expanding the Sensory Experience with Core Haptics",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1796,7 +2405,8 @@
       "year": "2019",
       "title": "Getting the Most Out of Simulator",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1851,7 +2461,8 @@
       "year": "2019",
       "title": "Metal for Pro Apps",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1918,7 +2529,8 @@
       "year": "2018",
       "title": "Metal Game Performance Optimization",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1931,7 +2543,8 @@
       "year": "2018",
       "title": "Metal Shader Debugging and Profiling",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1944,7 +2557,8 @@
       "year": "2017",
       "title": "Design Tips for Great Games",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -1957,7 +2571,9 @@
       "year": "2017",
       "title": "Get Started with Display P3",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1998,7 +2614,9 @@
       "year": "2017",
       "title": "SceneKit in Swift Playgrounds",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Graphics & Games",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -2011,7 +2629,9 @@
       "year": "2017",
       "title": "SceneKit: What's New",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -2024,7 +2644,8 @@
       "year": "2016",
       "title": "Advanced Metal Shader Optimization",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -2065,7 +2686,8 @@
       "title": "Ingredients of Great Games",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,

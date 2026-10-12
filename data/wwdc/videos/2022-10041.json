@@ -79,60 +79,44 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Apple Pay",
-        "url": "https://developer.apple.com/documentation/passkit/apple_pay"
-      },
-      {
-        "title": "Apple Pay Merchant Token Management API",
-        "url": "https://developer.apple.com/documentation/MerchantTokenNotificationServices"
-      },
-      {
-        "title": "Apple Pay on the Web",
-        "url": "https://developer.apple.com/documentation/apple_pay_on_the_web"
+        "title": "Example Order Packages",
+        "url": "https://developer.apple.com/documentation/WalletOrders/example-order-packages"
       },
       {
         "title": "ApplePayPaymentRequest",
         "url": "https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentRequest"
       },
       {
-        "title": "Example Order Packages",
-        "url": "https://developer.apple.com/documentation/WalletOrders/example-order-packages"
-      },
-      {
-        "title": "Human Interface Guidelines: Wallet",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/wallet"
-      },
-      {
-        "title": "PassKit (Apple Pay and Wallet)",
-        "url": "https://developer.apple.com/documentation/PassKit"
-      },
-      {
-        "title": "Requesting identity data from a Wallet pass",
-        "url": "https://developer.apple.com/documentation/PassKit/requesting-identity-data-from-a-wallet-pass"
-      },
-      {
-        "title": "Verifying Wallet identity requests",
-        "url": "https://developer.apple.com/documentation/PassKit/verifying-wallet-identity-requests"
+        "title": "Apple Pay Merchant Token Management API",
+        "url": "https://developer.apple.com/documentation/MerchantTokenNotificationServices"
       },
       {
         "title": "Wallet Orders",
         "url": "https://developer.apple.com/documentation/WalletOrders"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Human Interface Guidelines: Wallet",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/wallet"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Verifying Wallet identity requests",
+        "url": "https://developer.apple.com/documentation/PassKit/verifying-wallet-identity-requests"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Requesting identity data from a Wallet pass",
+        "url": "https://developer.apple.com/documentation/PassKit/requesting-identity-data-from-a-wallet-pass"
+      },
+      {
+        "title": "Apple Pay on the Web",
+        "url": "https://developer.apple.com/documentation/apple_pay_on_the_web"
+      },
+      {
+        "title": "PassKit (Apple Pay and Wallet)",
+        "url": "https://developer.apple.com/documentation/PassKit"
+      },
+      {
+        "title": "Apple Pay",
+        "url": "https://developer.apple.com/documentation/passkit/apple_pay"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10041/4/A173FAFA-9D08-4E7F-9154-7B821167B78E/downloads/wwdc2022-10041_hd.mp4?dl=1",
@@ -146,5 +130,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10114"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:03.482Z"
+  "extractedAt": "2026-10-11T16:40:28.676Z"
 }

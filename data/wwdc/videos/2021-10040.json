@@ -55,28 +55,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Applying Matte Effects to People in Images and Video",
         "url": "https://developer.apple.com/documentation/Vision/applying-matte-effects-to-people-in-images-and-video"
       },
       {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10040/3/F855147A-D789-4E63-81CE-5050A5A3DB14/downloads/wwdc2021-10040_hd.mp4?dl=1",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/222"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:29.651Z"
+  "extractedAt": "2026-10-11T16:43:20.283Z"
 }

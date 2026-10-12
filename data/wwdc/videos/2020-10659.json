@@ -18,40 +18,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Setting up StoreKit Testing in Xcode",
-        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
+        "title": "Testing In-App Purchases with sandbox",
+        "url": "https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox"
       },
       {
         "title": "StoreKit Test",
         "url": "https://developer.apple.com/documentation/StoreKitTest"
       },
       {
-        "title": "Testing at all stages of development with Xcode and the sandbox",
-        "url": "https://developer.apple.com/documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox"
-      },
-      {
         "title": "Testing In-App Purchases in Xcode",
         "url": "https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-in-xcode"
       },
       {
-        "title": "Testing In-App Purchases with sandbox",
-        "url": "https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox"
+        "title": "Setting up StoreKit Testing in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Testing at all stages of development with Xcode and the sandbox",
+        "url": "https://developer.apple.com/documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10659/10/6FFA68D9-58F1-4DC0-BDBA-8E432292E682/wwdc2020_10659_hd.mp4?dl=1",
@@ -77,5 +61,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10661"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:28.662Z"
+  "extractedAt": "2026-10-11T16:44:49.174Z"
 }

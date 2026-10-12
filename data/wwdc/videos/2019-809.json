@@ -17,52 +17,36 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Dark Mode",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode"
+        "title": "Human Interface Guidelines: Layout",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/layout"
       },
       {
         "title": "Human Interface Guidelines: Keyboards",
         "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards"
       },
       {
-        "title": "Human Interface Guidelines: Layout",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/layout"
-      },
-      {
-        "title": "Human Interface Guidelines: Materials",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/materials"
-      },
-      {
-        "title": "Human Interface Guidelines: Multitasking",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking"
+        "title": "Human Interface Guidelines: The menu bar",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/the-menu-bar"
       },
       {
         "title": "Human Interface Guidelines: Pointing devices",
         "url": "https://developer.apple.com/design/human-interface-guidelines/pointing-devices"
       },
       {
-        "title": "Human Interface Guidelines: The menu bar",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/the-menu-bar"
-      },
-      {
         "title": "Learn more about designing app icons for macOS",
         "url": "https://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/app-icon/"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Human Interface Guidelines: Materials",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/materials"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Human Interface Guidelines: Dark Mode",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Multitasking",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/809fdcsntdrt6yhjk/809/809_hd_designing_ipad_apps_for_mac.mp4?dl=1",
@@ -86,7 +70,13 @@
       "year": "2019",
       "title": "Taking iPad Apps for Mac to the Next Level",
       "url": "https://developer.apple.com/videos/play/wwdc2019/235"
+    },
+    {
+      "id": "801",
+      "year": "2019",
+      "title": "What’s New in iOS and macOS Design",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/801"
     }
   ],
-  "extractedAt": "2025-07-18T09:38:08.595Z"
+  "extractedAt": "2026-10-11T16:46:57.471Z"
 }

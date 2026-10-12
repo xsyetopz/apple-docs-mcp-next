@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,24 +68,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "UIKit",
         "url": "https://developer.apple.com/documentation/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10064/3/5DF3D536-453F-4C11-9BD5-9334BD79D560/downloads/wwdc2021-10064_hd.mp4?dl=1",
@@ -104,12 +89,6 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10053"
     },
     {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
-    },
-    {
       "id": "10052",
       "year": "2021",
       "title": "What's new in Mac Catalyst",
@@ -122,5 +101,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10059"
     }
   ],
-  "extractedAt": "2025-07-18T10:26:46.299Z"
+  "extractedAt": "2026-10-11T16:42:37.943Z"
 }

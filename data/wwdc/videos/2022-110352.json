@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -23,24 +24,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110352/3/961EB9A0-3340-443A-8C57-8665B9034F1D/downloads/wwdc2022-110352_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110352/3/961EB9A0-3340-443A-8C57-8665B9034F1D/downloads/wwdc2022-110352_sd.mp4?dl=1"
   },
@@ -64,5 +48,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110354"
     }
   ],
-  "extractedAt": "2025-07-18T10:24:46.658Z"
+  "extractedAt": "2026-10-11T16:40:17.033Z"
 }

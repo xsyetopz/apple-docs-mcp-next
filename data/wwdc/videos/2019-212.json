@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Supporting multiple windows on iPad",
         "url": "https://developer.apple.com/documentation/UIKit/supporting-multiple-windows-on-ipad"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/212nyxqyrke8a9t/212/212_hd_introducing_multiple_windows_on_ipad.mp4?dl=1",
@@ -54,6 +38,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/721"
     },
     {
+      "id": "242",
+      "year": "2019",
+      "title": "Getting the Most out of Multitasking",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/242"
+    },
+    {
       "id": "221",
       "year": "2019",
       "title": "Introducing PencilKit",
@@ -66,5 +56,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/233"
     }
   ],
-  "extractedAt": "2025-07-18T10:58:09.734Z"
+  "extractedAt": "2026-10-11T16:46:58.661Z"
 }

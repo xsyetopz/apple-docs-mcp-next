@@ -17,14 +17,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Apple Pay",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/apple-pay/"
-      },
-      {
         "title": "Implementing a background delivery extension",
         "url": "https://developer.apple.com/documentation/FinanceKit/implementing-a-background-delivery-extension"
       },
@@ -33,16 +25,8 @@
         "url": "https://developer.apple.com/documentation/PassKit/offering-apple-pay-in-your-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Apple Pay",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/apple-pay/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/201/6/b2ba4cc0-5a44-4934-9a49-90c53d540a24/downloads/wwdc2025-201_hd.mp4?dl=1",
@@ -74,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10041"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:19.685Z"
+  "extractedAt": "2026-10-11T16:34:25.296Z"
 }

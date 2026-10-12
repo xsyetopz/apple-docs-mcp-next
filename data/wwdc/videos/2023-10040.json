@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10040/5/FAEE48F2-1B5D-4894-AEB1-1D02816D6347/downloads/wwdc2023-10040_hd.mp4?dl=1",
@@ -66,6 +50,18 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10039"
     },
     {
+      "id": "10321",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10321"
+    },
+    {
+      "id": "10329",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10329"
+    },
+    {
       "id": "10002",
       "year": "2023",
       "title": "Ready, set, relay: Protect app traffic with network relays",
@@ -78,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10143"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:29.998Z"
+  "extractedAt": "2026-10-11T16:36:15.075Z"
 }

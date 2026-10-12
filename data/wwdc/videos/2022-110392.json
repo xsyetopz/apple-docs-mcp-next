@@ -1,0 +1,25 @@
+{
+  "id": "110392",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110392/",
+  "title": "Meet the Presenter: Compose custom layouts with SwiftUI",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10056",
+      "year": "2022",
+      "title": "Compose custom layouts with SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10056"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:29.056Z"
+}

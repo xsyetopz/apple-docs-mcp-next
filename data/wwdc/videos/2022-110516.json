@@ -1,0 +1,31 @@
+{
+  "id": "110516",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110516/",
+  "title": "Q&A: Device management",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Business & Education"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110335",
+      "year": "2022",
+      "title": "Explore Apple Business Essentials",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110335"
+    },
+    {
+      "id": "10045",
+      "year": "2022",
+      "title": "What's new in managing Apple devices",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10045"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:18.340Z"
+}

@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110362/3/629CBACC-AF8F-4856-98CA-075275ADEAA4/downloads/wwdc2022-110362_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110362/3/629CBACC-AF8F-4856-98CA-075275ADEAA4/downloads/wwdc2022-110362_sd.mp4?dl=1"
   },
@@ -68,5 +51,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110427"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:02.871Z"
+  "extractedAt": "2026-10-11T16:40:19.221Z"
 }

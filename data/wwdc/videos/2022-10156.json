@@ -50,28 +50,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Capturing screen content in macOS",
-        "url": "https://developer.apple.com/documentation/ScreenCaptureKit/capturing-screen-content-in-macos"
-      },
-      {
         "title": "ScreenCaptureKit",
         "url": "https://developer.apple.com/documentation/ScreenCaptureKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Capturing screen content in macOS",
+        "url": "https://developer.apple.com/documentation/ScreenCaptureKit/capturing-screen-content-in-macos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10156/3/740DABB6-6584-492E-AA71-A628E023B346/downloads/wwdc2022-10156_hd.mp4?dl=1",
@@ -85,11 +69,29 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10136"
     },
     {
+      "id": "110660",
+      "year": "2022",
+      "title": "Meet the Presenter: Meet ScreenCaptureKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110660"
+    },
+    {
+      "id": "110659",
+      "year": "2022",
+      "title": "Meet the Presenter: Take ScreenCaptureKit to the next level",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110659"
+    },
+    {
+      "id": "110669",
+      "year": "2022",
+      "title": "Q&A: ScreenCaptureKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110669"
+    },
+    {
       "id": "10155",
       "year": "2022",
       "title": "Take ScreenCaptureKit to the next level",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10155"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:49.306Z"
+  "extractedAt": "2026-10-11T16:40:20.776Z"
 }

@@ -1,0 +1,31 @@
+{
+  "id": "110811",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110811/",
+  "title": "Study Hall: Toolbar transformation Tuesday",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10071",
+      "year": "2022",
+      "title": "Adopt desktop-class editing interactions",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10071"
+    },
+    {
+      "id": "10069",
+      "year": "2022",
+      "title": "Meet desktop-class iPad",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10069"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:38.977Z"
+}

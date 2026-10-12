@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Swift API Guidelines",
         "url": "https://swift.org/documentation/api-design-guidelines/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/415zrx4f6t10b2/415/415_hd_modern_swift_api_design.mp4?dl=1",
@@ -84,5 +69,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/402"
     }
   ],
-  "extractedAt": "2025-07-18T10:17:38.816Z"
+  "extractedAt": "2026-10-11T16:47:59.275Z"
 }

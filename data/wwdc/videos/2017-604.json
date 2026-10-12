@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,29 +19,13 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SceneKit",
         "url": "https://developer.apple.com/documentation/SceneKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/library/content/samplecode/scenekit-2017/Fox2SceneKitWWDC2017samplecode.zip",
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/604r7b4rnjq86/604/604_hd_scenekit_whats_new.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/604r7b4rnjq86/604/604_sd_scenekit_whats_new.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:19:13.235Z"
+  "extractedAt": "2026-10-11T16:48:52.981Z"
 }

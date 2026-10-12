@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,10 +18,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding intelligent app features with generative models",
         "url": "https://developer.apple.com/documentation/FoundationModels/adding-intelligent-app-features-with-generative-models"
       },
@@ -29,28 +26,16 @@
         "url": "https://developer.apple.com/design/human-interface-guidelines/generative-ai"
       },
       {
+        "title": "Improving the safety of generative model output",
+        "url": "https://developer.apple.com/documentation/FoundationModels/improving-the-safety-of-generative-model-output"
+      },
+      {
         "title": "Human Interface Guidelines: Machine learning",
         "url": "https://developer.apple.com/design/human-interface-guidelines/machine-learning"
-      },
-      {
-        "title": "Improving safety from generative model output",
-        "url": "https://developer.apple.com/documentation/FoundationModels/improving-safety-from-generative-model-output"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/248/7/5f4b2840-b27c-42a1-992f-179475029fb9/downloads/wwdc2025-248_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/248/7/5f4b2840-b27c-42a1-992f-179475029fb9/downloads/wwdc2025-248_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:35:10.946Z"
+  "extractedAt": "2026-10-11T16:33:37.472Z"
 }

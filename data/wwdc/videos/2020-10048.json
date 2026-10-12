@@ -91,8 +91,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Creating and updating a complication’s timeline",
+        "url": "https://developer.apple.com/documentation/ClockKit/creating-and-updating-a-complication-s-timeline"
       },
       {
         "title": "Building a watchOS app",
@@ -101,22 +101,6 @@
       {
         "title": "ClockKit",
         "url": "https://developer.apple.com/documentation/ClockKit"
-      },
-      {
-        "title": "Creating and updating a complication’s timeline",
-        "url": "https://developer.apple.com/documentation/ClockKit/creating-and-updating-a-complication-s-timeline"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10048/4/A4A61EDD-9948-4DB8-98BB-8BA633D211CC/wwdc2020_10048_hd.mp4?dl=1",
@@ -160,5 +144,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10041"
     }
   ],
-  "extractedAt": "2025-07-18T10:55:29.476Z"
+  "extractedAt": "2026-10-11T16:44:44.547Z"
 }

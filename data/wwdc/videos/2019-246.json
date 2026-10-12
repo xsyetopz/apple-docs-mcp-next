@@ -15,26 +15,17 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/246bnifwqasd17ytre/246/246_hd_window_management_in_your_multitasking_app.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/246bnifwqasd17ytre/246/246_sd_window_management_in_your_multitasking_app.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:58:56.800Z"
+  "relatedVideos": [
+    {
+      "id": "242",
+      "year": "2019",
+      "title": "Getting the Most out of Multitasking",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/242"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:48:14.500Z"
 }

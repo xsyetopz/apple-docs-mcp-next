@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Maps & Location",
+    "Privacy & Security"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Maps",
         "url": "https://developer.apple.com/design/human-interface-guidelines/maps"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10162/3/D6788D29-2A26-4A77-B69F-34F28F2044ED/wwdc2020_10162_hd.mp4?dl=1",
@@ -60,5 +46,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10660"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:49.402Z"
+  "extractedAt": "2026-10-11T16:46:05.283Z"
 }

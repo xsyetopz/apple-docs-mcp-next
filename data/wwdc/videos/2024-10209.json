@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,14 +18,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: App & System Services",
-        "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
-      },
-      {
         "title": "Journaling Suggestions",
         "url": "https://developer.apple.com/documentation/JournalingSuggestions"
       },
@@ -33,16 +26,8 @@
         "url": "https://developer.apple.com/documentation/JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: App & System Services",
+        "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10209/5/B042C450-AC1C-4278-BAA3-1D35E738E141/downloads/wwdc2024-10209_hd.mp4?dl=1",
@@ -56,5 +41,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10109"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:26.003Z"
+  "extractedAt": "2026-10-11T16:35:35.288Z"
 }

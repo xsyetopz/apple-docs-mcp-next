@@ -66,24 +66,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10252/5/28C78519-19B7-468C-A50B-4960D801E332/downloads/wwdc2023-10252_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10252/5/28C78519-19B7-468C-A50B-4960D801E332/downloads/wwdc2023-10252_sd.mp4?dl=1"
   },
@@ -93,6 +76,18 @@
       "year": "2023",
       "title": "Bring widgets to life",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10028"
+    },
+    {
+      "id": "10291",
+      "year": "2023",
+      "title": "Q&A: SwiftUI Previews",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10291"
+    },
+    {
+      "id": "10292",
+      "year": "2023",
+      "title": "Q&A: SwiftUI Previews",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10292"
     },
     {
       "id": "10054",
@@ -113,5 +108,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10165"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:59.116Z"
+  "extractedAt": "2026-10-11T16:37:00.704Z"
 }

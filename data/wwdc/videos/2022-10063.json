@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -133,24 +134,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10063/4/0942FD31-5504-40C2-A4E8-6AAAC31E459C/downloads/wwdc2022-10063_hd.mp4?dl=1",
@@ -176,11 +161,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10017"
     },
     {
+      "id": "110906",
+      "year": "2022",
+      "title": "Meet the Presenter: Accelerate machine learning with Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110906"
+    },
+    {
+      "id": "110907",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore the machine learning developer experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110907"
+    },
+    {
       "id": "10152",
       "year": "2021",
       "title": "Accelerate machine learning with Metal Performance Shaders Graph",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10152"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:02.597Z"
+  "extractedAt": "2026-10-11T16:41:36.821Z"
 }

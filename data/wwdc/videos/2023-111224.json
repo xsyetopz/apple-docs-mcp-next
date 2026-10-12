@@ -1,0 +1,31 @@
+{
+  "id": "111224",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111224/",
+  "title": "Q&A: ActivityKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10184",
+      "year": "2023",
+      "title": "Meet ActivityKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10184"
+    },
+    {
+      "id": "10185",
+      "year": "2023",
+      "title": "Update Live Activities with push notifications",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10185"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:20.626Z"
+}

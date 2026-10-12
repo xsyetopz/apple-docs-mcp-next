@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,28 +69,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "UIDocument",
         "url": "https://developer.apple.com/documentation/UIKit/UIDocument"
       },
       {
         "title": "UIDocumentViewController",
         "url": "https://developer.apple.com/documentation/UIKit/UIDocumentViewController"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10056/4/288B8B11-EFDD-4A1E-8F4E-B5C863A03ADC/downloads/wwdc2023-10056_hd.mp4?dl=1",
@@ -126,5 +112,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10039"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:56.146Z"
+  "extractedAt": "2026-10-11T16:37:57.369Z"
 }

@@ -55,28 +55,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Using MusicKit to integrate with Apple Music",
+        "url": "https://developer.apple.com/documentation/MusicKit/using-musickit-to-integrate-with-apple-music"
       },
       {
         "title": "MusicKit",
         "url": "https://developer.apple.com/documentation/musickit"
-      },
-      {
-        "title": "Using MusicKit to Integrate with Apple Music",
-        "url": "https://developer.apple.com/documentation/musickit/using_musickit_to_integrate_with_apple_music"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10294/5/DFB67B36-DCDE-49D9-8ED1-AC2A8B566F64/downloads/wwdc2021-10294_hd.mp4?dl=1",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10291"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:37.199Z"
+  "extractedAt": "2026-10-11T16:42:35.840Z"
 }

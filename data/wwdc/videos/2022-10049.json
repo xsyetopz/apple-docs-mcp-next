@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "App Services",
-    "Essentials"
+    "Essentials",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -44,28 +45,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SFSafariViewController",
         "url": "https://developer.apple.com/documentation/SafariServices/SFSafariViewController"
       },
       {
         "title": "WebKit",
         "url": "https://developer.apple.com/documentation/WebKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10049/3/47260DC4-814E-466D-AD96-D29DFC5459BA/downloads/wwdc2022-10049_hd.mp4?dl=1",
@@ -73,11 +58,23 @@
   },
   "relatedVideos": [
     {
+      "id": "110485",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110485"
+    },
+    {
+      "id": "110535",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110535"
+    },
+    {
       "id": "10048",
       "year": "2022",
       "title": "What's new in Safari and WebKit",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10048"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:52.009Z"
+  "extractedAt": "2026-10-11T16:42:10.347Z"
 }

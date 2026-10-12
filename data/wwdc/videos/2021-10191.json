@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,44 +44,22 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Customizing the tvOS Playback Experience",
+        "url": "https://developer.apple.com/documentation/AVKit/customizing-the-tvos-playback-experience"
       },
       {
         "title": "AVKit",
         "url": "https://developer.apple.com/documentation/AVKit"
       },
       {
-        "title": "Customizing the tvOS Playback Experience",
-        "url": "https://developer.apple.com/documentation/AVKit/customizing-the-tvos-playback-experience"
-      },
-      {
         "title": "Human Interface Guidelines: Designing for tvOS",
         "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10191/4/E98B040E-0A40-48C3-85D2-F7F18715F00F/downloads/wwdc2021-10191_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10191/4/E98B040E-0A40-48C3-85D2-F7F18715F00F/downloads/wwdc2021-10191_sd.mp4?dl=1"
   },
   "relatedVideos": [
-    {
-      "id": "10323",
-      "year": "2021",
-      "title": "Wednesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10323"
-    },
     {
       "id": "10290",
       "year": "2021",
@@ -112,5 +91,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/224"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:50.002Z"
+  "extractedAt": "2026-10-11T16:43:41.318Z"
 }

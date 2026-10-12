@@ -18,29 +18,13 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Mobile Device Management Protocol Reference",
         "url": "https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/Automatic-Assessment-Configuration-Sample-Code.zip",
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/716op0un8kq3o4n/716/716_hd_ios_configuration_and_apis_for_kiosk_and_assessment_apps.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/716op0un8kq3o4n/716/716_sd_ios_configuration_and_apis_for_kiosk_and_assessment_apps.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:21:27.333Z"
+  "extractedAt": "2026-10-11T16:48:55.823Z"
 }

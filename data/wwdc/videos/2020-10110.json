@@ -17,36 +17,14 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building a custom peer-to-peer protocol",
         "url": "https://developer.apple.com/documentation/Network/building-a-custom-peer-to-peer-protocol"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10110/4/DC28151E-DCDB-4D97-9BDF-EEF1FDD14F13/wwdc2020_10110_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10110/4/DC28151E-DCDB-4D97-9BDF-EEF1FDD14F13/wwdc2020_10110_sd.mp4?dl=1"
   },
   "relatedVideos": [
-    {
-      "id": "110339",
-      "year": "2022",
-      "title": "Build device-to-device interactions with Network Framework",
-      "url": "https://developer.apple.com/videos/play/wwdc2022/110339"
-    },
     {
       "id": "10111",
       "year": "2020",
@@ -60,5 +38,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10676"
     }
   ],
-  "extractedAt": "2025-07-18T11:03:27.558Z"
+  "extractedAt": "2026-10-11T16:45:36.819Z"
 }

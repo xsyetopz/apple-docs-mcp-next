@@ -38,23 +38,7 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Graphics & Games",
-        "url": "https://developer.apple.com/forums/topics/graphics-and-games?cid=vf-a-0010"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Rendering reflections in real time using ray tracing",
-        "url": "https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing"
-      },
-      {
-        "title": "Simplifying GPU Resource Management with Residency Sets",
+        "title": "Simplifying GPU resource management with residency sets",
         "url": "https://developer.apple.com/documentation/Metal/simplifying-gpu-resource-management-with-residency-sets"
       },
       {
@@ -66,16 +50,16 @@
         "url": "https://developer.apple.com/documentation/Xcode/Validating-your-apps-Metal-shader-usage"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Forum: Graphics & Games",
+        "url": "https://developer.apple.com/forums/topics/graphics-and-games?cid=vf-a-0010"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Rendering reflections in real time using ray tracing",
+        "url": "https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10089/5/DFD23E3B-AB98-42B1-9219-9C8B1FCD44EA/downloads/wwdc2024-10089_hd.mp4?dl=1",
@@ -131,5 +115,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/520"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:25.011Z"
+  "extractedAt": "2026-10-11T16:34:45.952Z"
 }

@@ -45,28 +45,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Game Controller",
-        "url": "https://developer.apple.com/documentation/GameController"
-      },
-      {
         "title": "GCVirtualController",
         "url": "https://developer.apple.com/documentation/GameController/GCVirtualController"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Game Controller",
+        "url": "https://developer.apple.com/documentation/GameController"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10081/5/113EE58D-480B-4192-A7E1-8088B2A0BC72/downloads/wwdc2021-10081_hd.mp4?dl=1",
@@ -104,5 +88,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10617"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:03.377Z"
+  "extractedAt": "2026-10-11T16:42:39.780Z"
 }

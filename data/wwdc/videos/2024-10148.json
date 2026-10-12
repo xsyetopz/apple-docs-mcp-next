@@ -73,36 +73,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Customizing window styles and state-restoration behavior in macOS",
         "url": "https://developer.apple.com/documentation/SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS"
-      },
-      {
-        "title": "Destination Video",
-        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
-      },
-      {
-        "title": "Forum: UI Frameworks",
-        "url": "https://developer.apple.com/forums/topics/ui-frameworks?cid=vf-a-0010"
       },
       {
         "title": "Windows",
         "url": "https://developer.apple.com/documentation/SwiftUI/Windows"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Forum: UI Frameworks",
+        "url": "https://developer.apple.com/forums/topics/ui-frameworks?cid=vf-a-0010"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Destination Video",
+        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10148/4/B76C6719-6B90-4EA9-9EDA-03C08C4A02AA/downloads/wwdc2024-10148_hd.mp4?dl=1",
@@ -122,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10061"
     }
   ],
-  "extractedAt": "2025-07-18T10:52:03.217Z"
+  "extractedAt": "2026-10-11T16:35:38.686Z"
 }

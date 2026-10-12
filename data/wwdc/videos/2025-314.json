@@ -26,32 +26,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Enhancing your app’s privacy and security with quantum-secure workflows",
+        "url": "https://developer.apple.com/documentation/CryptoKit/enhancing-your-app-s-privacy-and-security-with-quantum-secure-workflows"
       },
       {
         "title": "Apple CryptoKit",
         "url": "https://developer.apple.com/documentation/CryptoKit"
-      },
-      {
-        "title": "Using the quantum-secure APIs",
-        "url": "https://developer.apple.com/documentation/CryptoKit/using-the-quantum-secure-apis"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/314/4/69450908-6907-44d0-9f37-9ffdec893aa2/downloads/wwdc2025-314_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/314/4/69450908-6907-44d0-9f37-9ffdec893aa2/downloads/wwdc2025-314_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:42:19.837Z"
+  "extractedAt": "2026-10-11T16:33:39.631Z"
 }

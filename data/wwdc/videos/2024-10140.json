@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Design",
-        "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
-      },
-      {
         "title": "Human Interface Guidelines: Writing",
         "url": "https://developer.apple.com/design/human-interface-guidelines/writing"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: Design",
+        "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10140/4/A5E944E8-26A4-4A88-98E9-50C631A5E102/downloads/wwdc2024-10140_hd.mp4?dl=1",
@@ -52,5 +36,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10037"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:02.283Z"
+  "extractedAt": "2026-10-11T16:35:41.059Z"
 }

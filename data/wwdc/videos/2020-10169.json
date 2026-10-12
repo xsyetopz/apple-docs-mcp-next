@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,28 +26,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Language and Locale IDs",
         "url": "https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html"
       },
       {
         "title": "PackageDescription",
         "url": "https://developer.apple.com/documentation/PackageDescription"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10169/3/0F6E83BB-5FF5-4627-9C42-F111EF4B4098/wwdc2020_10169_hd.mp4?dl=1",
@@ -114,5 +99,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/410"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:05.596Z"
+  "extractedAt": "2026-10-11T16:44:54.887Z"
 }

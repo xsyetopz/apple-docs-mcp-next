@@ -12,6 +12,8 @@
     "Graphics & Games",
     "Photos & Camera",
     "Privacy & Security",
+    "Spatial Computing",
+    "Swift",
     "SwiftUI & UI Frameworks",
     "System Services"
   ],
@@ -112,7 +114,8 @@
       "year": "2017",
       "title": "Design Tips for Great Games",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -165,7 +168,9 @@
       "year": "2017",
       "title": "Developing Wireless CarPlay Systems",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -178,7 +183,9 @@
       "year": "2017",
       "title": "Enabling Your App for CarPlay",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -218,7 +225,8 @@
       "title": "Express Yourself!",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -244,7 +252,8 @@
       "year": "2017",
       "title": "Extend Your App's Presence With Sharing",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -270,7 +279,9 @@
       "year": "2017",
       "title": "Get Started with Display P3",
       "topics": [
-        "Design"
+        "Design",
+        "Graphics & Games",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -364,7 +375,8 @@
       "year": "2017",
       "title": "Localization Best Practices on tvOS",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -403,7 +415,8 @@
       "year": "2017",
       "title": "Now Playing and Remote Commands on tvOS",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -416,7 +429,8 @@
       "year": "2017",
       "title": "Rich Notifications",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -429,7 +443,9 @@
       "year": "2017",
       "title": "SceneKit in Swift Playgrounds",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Graphics & Games",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -442,7 +458,9 @@
       "year": "2017",
       "title": "SceneKit: What's New",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -455,7 +473,8 @@
       "year": "2017",
       "title": "Size Classes and Core Components",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,

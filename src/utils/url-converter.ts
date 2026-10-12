@@ -10,7 +10,7 @@
 export function convertToJsonApiUrl(webUrl: string): string | null {
   try {
     // Remove trailing slash if present
-    if (webUrl.endsWith('/')) {
+    if (webUrl.endsWith("/")) {
       webUrl = webUrl.slice(0, -1);
     }
 
@@ -18,26 +18,29 @@ export function convertToJsonApiUrl(webUrl: string): string | null {
     const urlObj = new URL(webUrl);
 
     // Check if it's an Apple Developer URL
-    if (urlObj.hostname !== 'developer.apple.com') {
+    if (urlObj.hostname !== "developer.apple.com") {
       return null;
     }
 
     let path = urlObj.pathname;
 
     // For documentation URLs, format for the JSON API
-    if (path.includes('/documentation/')) {
+    if (path.includes("/documentation/")) {
       // Remove /documentation/ prefix
-      path = path.replace('/documentation/', '');
+      path = path.replace("/documentation/", "");
       // Convert to JSON API URL format
       return `https://developer.apple.com/tutorials/data/documentation/${path}.json`;
     }
 
-    // For tutorial URLs, try to format for the JSON API
-    if (path.includes('/tutorials/')) {
-      // Try to convert tutorials URL to JSON API format
-      // Remove /tutorials/ prefix and add .json
-      const tutorialPath = path.replace('/tutorials/', '');
-      return `https://developer.apple.com/tutorials/data/${tutorialPath}.json`;
+    // The design guidelines are served from the same data path as the documentation, in any letter case:
+    // Xcode's DocumentationSearch writes the path as /design/Human-Interface-Guidelines/…
+    if (path.toLowerCase().startsWith("/design/human-interface-guidelines/")) {
+      return `https://developer.apple.com/tutorials/data${path}.json`;
+    }
+
+    // A tutorial's JSON sits at its whole path under the data path: /tutorials/data/tutorials/…
+    if (path.startsWith("/tutorials/")) {
+      return `https://developer.apple.com/tutorials/data${path}.json`;
     }
 
     // If not a recognized URL format, return the original URL
@@ -55,7 +58,7 @@ export function convertToJsonApiUrl(webUrl: string): string | null {
 export function isValidAppleDeveloperUrl(url: string): boolean {
   try {
     const urlObj = new URL(url);
-    return urlObj.hostname === 'developer.apple.com';
+    return urlObj.hostname === "developer.apple.com";
   } catch {
     return false;
   }
@@ -68,8 +71,8 @@ export function isValidAppleDeveloperUrl(url: string): boolean {
  */
 export function extractApiNameFromUrl(url: string): string {
   try {
-    return new URL(url).pathname.split('/').pop() || 'Unknown API';
+    return new URL(url).pathname.split("/").pop() || "Unknown API";
   } catch {
-    return 'Unknown API';
+    return "Unknown API";
   }
 }

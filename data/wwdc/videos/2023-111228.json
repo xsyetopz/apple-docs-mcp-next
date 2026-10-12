@@ -1,0 +1,25 @@
+{
+  "id": "111228",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111228/",
+  "title": "Meet the presenter: Update Live Activities with push notifications",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10185",
+      "year": "2023",
+      "title": "Update Live Activities with push notifications",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10185"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:12.618Z"
+}

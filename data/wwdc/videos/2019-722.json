@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/722l6blhn0efespfgx/722/722_hd_introducing_combine.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/722l6blhn0efespfgx/722/722_sd_introducing_combine.mp4?dl=1"
   },
@@ -50,11 +33,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/226"
     },
     {
+      "id": "711",
+      "year": "2019",
+      "title": "Introducing Combine and Advances in Foundation",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/711"
+    },
+    {
       "id": "210",
       "year": "2019",
       "title": "What’s New in AppKit for macOS",
       "url": "https://developer.apple.com/videos/play/wwdc2019/210"
     }
   ],
-  "extractedAt": "2025-07-18T11:04:04.427Z"
+  "extractedAt": "2026-10-11T16:47:54.358Z"
 }

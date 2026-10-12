@@ -1,0 +1,43 @@
+{
+  "id": "111287",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111287/",
+  "title": "Q&A: Metal",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Graphics & Games"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10124",
+      "year": "2023",
+      "title": "Bring your game to Mac, Part 2: Compile your shaders",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10124"
+    },
+    {
+      "id": "10125",
+      "year": "2023",
+      "title": "Bring your game to Mac, Part 3: Render with Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10125"
+    },
+    {
+      "id": "10127",
+      "year": "2023",
+      "title": "Optimize GPU renderers with Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10127"
+    },
+    {
+      "id": "10128",
+      "year": "2023",
+      "title": "Your guide to Metal ray tracing",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10128"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:18.449Z"
+}

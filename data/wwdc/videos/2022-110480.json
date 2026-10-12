@@ -1,0 +1,50 @@
+{
+  "id": "110480",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110480/",
+  "title": "Q&A: Swift concurrency",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "Swift"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110351",
+      "year": "2022",
+      "title": "Eliminate data races using Swift Concurrency",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110351"
+    },
+    {
+      "id": "110356",
+      "year": "2022",
+      "title": "Meet distributed actors in Swift",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110356"
+    },
+    {
+      "id": "110355",
+      "year": "2022",
+      "title": "Meet Swift Async Algorithms",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110355"
+    },
+    {
+      "id": "110350",
+      "year": "2022",
+      "title": "Visualize and optimize Swift concurrency",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110350"
+    },
+    {
+      "id": "110354",
+      "year": "2022",
+      "title": "What's new in Swift",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110354"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:36.757Z"
+}

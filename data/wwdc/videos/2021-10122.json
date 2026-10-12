@@ -55,20 +55,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "accessibilityReduceMotion",
-        "url": "https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/accessibilityReduceMotion"
-      },
-      {
         "title": "Appearance Effects and Motion",
         "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/appearance-effects/"
-      },
-      {
-        "title": "Audio graphs",
-        "url": "https://developer.apple.com/documentation/Accessibility/audio-graphs"
       },
       {
         "title": "Color and Contrast",
@@ -79,16 +67,12 @@
         "url": "https://developer.apple.com/documentation/UIKit/UIAccessibility/isReduceMotionEnabled"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "accessibilityReduceMotion",
+        "url": "https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/accessibilityReduceMotion"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Audio graphs",
+        "url": "https://developer.apple.com/documentation/Accessibility/audio-graphs"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10122/6/218A971D-4AB5-4417-96CE-15D01B009082/downloads/wwdc2021-10122_hd.mp4?dl=1",
@@ -102,5 +86,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10119"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:32.083Z"
+  "extractedAt": "2026-10-11T16:42:25.836Z"
 }

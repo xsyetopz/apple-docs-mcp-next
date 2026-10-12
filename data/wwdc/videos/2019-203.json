@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Viewing Desktop or Mobile Web Content Using a Web View",
         "url": "https://developer.apple.com/documentation/WebKit/viewing-desktop-or-mobile-web-content-using-a-web-view"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/203d4wzq0eky2pgtir3/203/203_hd_introducing_desktopclass_browsing_on_ipad.mp4?dl=1",
@@ -61,5 +45,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/515"
     }
   ],
-  "extractedAt": "2025-07-18T10:45:02.273Z"
+  "extractedAt": "2026-10-11T16:46:51.106Z"
 }

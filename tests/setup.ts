@@ -1,43 +1,50 @@
+import { afterEach, beforeEach, mock } from "bun:test";
+
 /**
- * Jest test setup file
+ * Preload for every test file, set in bunfig.toml.
+ * It runs before the test files, so the module mocks here apply to all of them.
  */
 
+declare global {
+  // Helpers that the tests can call to build a fetch response or a fetch failure.
+  var createMockResponse: (data: unknown, status?: number) => Promise<Response>;
+  var createMockError: (message: string) => Promise<never>;
+}
+
 // Set test environment
-process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = "test";
 
 // Mock the path module to avoid import.meta.url issues
-jest.mock('../src/utils/wwdc-data-source-path.js', () => ({
-  getWWDCDataDirectory: jest.fn(() => '/mock/data/wwdc')
+mock.module("../src/utils/wwdc-data-source-path.ts", () => ({
+  getWWDCDataDirectory: mock(() => "/mock/data/wwdc"),
 }));
 
 // Mock console.error to avoid noise in tests
 const originalConsoleError = console.error;
 beforeEach(() => {
-  console.error = jest.fn();
+  console.error = mock();
 });
 
 afterEach(() => {
   console.error = originalConsoleError;
 });
 
-// Global test timeout
-jest.setTimeout(30000);
-
 // Mock fetch for tests
-global.fetch = jest.fn();
+globalThis.fetch = Object.assign(mock<typeof fetch>(), {
+  preconnect: () => {},
+});
 
-// Helper to create mock fetch responses
-(global as any).createMockResponse = (data: any, status = 200) => {
+globalThis.createMockResponse = (data, status = 200) => {
   return Promise.resolve({
     ok: status >= 200 && status < 300,
     status,
-    statusText: status === 200 ? 'OK' : 'Error',
+    statusText: status === 200 ? "OK" : "Error",
     json: () => Promise.resolve(data),
-    text: () => Promise.resolve(typeof data === 'string' ? data : JSON.stringify(data)),
+    text: () =>
+      Promise.resolve(typeof data === "string" ? data : JSON.stringify(data)),
   } as Response);
 };
 
-// Helper to create mock fetch error
-(global as any).createMockError = (message: string) => {
+globalThis.createMockError = (message) => {
   return Promise.reject(new Error(message));
 };

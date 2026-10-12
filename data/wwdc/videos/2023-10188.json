@@ -49,28 +49,32 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "CKSyncEngine",
         "url": "https://developer.apple.com/documentation/CloudKit/CKSyncEngine-5sie5"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10188/3/F63E6FC7-4329-401C-9D80-CD4E7C8A478A/downloads/wwdc2023-10188_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10188/3/F63E6FC7-4329-401C-9D80-CD4E7C8A478A/downloads/wwdc2023-10188_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T11:01:06.464Z"
+  "relatedVideos": [
+    {
+      "id": "10338",
+      "year": "2023",
+      "title": "Meet the presenters: Sync to iCloud with CKSyncEngine",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10338"
+    },
+    {
+      "id": "10339",
+      "year": "2023",
+      "title": "Q&A: CloudKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10339"
+    },
+    {
+      "id": "111544",
+      "year": "2023",
+      "title": "Q&A: CloudKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111544"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:13.583Z"
 }

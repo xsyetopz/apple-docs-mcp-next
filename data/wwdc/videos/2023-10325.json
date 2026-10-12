@@ -1,0 +1,31 @@
+{
+  "id": "10325",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10325/",
+  "title": "Q&A: Health and fitness",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Health & Fitness"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10023",
+      "year": "2023",
+      "title": "Build a multi-device workout app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10023"
+    },
+    {
+      "id": "10016",
+      "year": "2023",
+      "title": "Build custom workouts with WorkoutKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10016"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:09.686Z"
+}

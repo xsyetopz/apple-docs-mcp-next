@@ -73,32 +73,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Shader libraries",
+        "url": "https://developer.apple.com/documentation/Metal/shader-libraries"
       },
       {
-        "title": "Creating a Metal Dynamic Library",
+        "title": "Creating a Metal dynamic library",
         "url": "https://developer.apple.com/documentation/Metal/creating-a-metal-dynamic-library"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Shader Libraries",
-        "url": "https://developer.apple.com/documentation/Metal/shader-libraries"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10229/3/B5993DB1-3978-4019-B109-364AE2E6F14A/downloads/wwdc2021-10229_hd.mp4?dl=1",
@@ -142,5 +126,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10013"
     }
   ],
-  "extractedAt": "2025-07-18T10:33:11.147Z"
+  "extractedAt": "2026-10-11T16:43:44.108Z"
 }

@@ -1,0 +1,26 @@
+{
+  "id": "110484",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110484/",
+  "title": "Meet the Presenter: Explore design navigation on iOS",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Design",
+    "Essentials"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10001",
+      "year": "2022",
+      "title": "Explore navigation design for iOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10001"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:33.528Z"
+}

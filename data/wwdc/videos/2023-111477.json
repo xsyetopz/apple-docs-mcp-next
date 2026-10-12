@@ -1,0 +1,25 @@
+{
+  "id": "111477",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111477/",
+  "title": "Meet the presenter: Support HDR images in your app",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10181",
+      "year": "2023",
+      "title": "Support HDR images in your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10181"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:56.198Z"
+}

@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Core ML",
         "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10038/3/84EFF5EC-346B-4A8C-BDAC-47F3258352D9/downloads/wwdc2021-10038_hd.mp4?dl=1",
@@ -54,5 +38,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10153"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:42.243Z"
+  "extractedAt": "2026-10-11T16:44:27.681Z"
 }

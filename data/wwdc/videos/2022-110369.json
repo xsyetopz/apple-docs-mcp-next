@@ -17,40 +17,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adding structure to your documentation pages",
-        "url": "https://developer.apple.com/documentation/Xcode/adding-structure-to-your-documentation-pages"
-      },
-      {
-        "title": "Adding supplemental content to a documentation catalog",
-        "url": "https://developer.apple.com/documentation/Xcode/adding-supplemental-content-to-a-documentation-catalog"
+        "title": "SwiftDocCPlugin",
+        "url": "https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/"
       },
       {
         "title": "DocC",
         "url": "https://developer.apple.com/documentation/docc"
       },
       {
-        "title": "SlothCreator: Building DocC Documentation in Xcode",
-        "url": "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode"
+        "title": "Adding supplemental content to a documentation catalog",
+        "url": "https://developer.apple.com/documentation/Xcode/adding-supplemental-content-to-a-documentation-catalog"
       },
       {
-        "title": "SwiftDocCPlugin",
-        "url": "https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/"
+        "title": "Adding structure to your documentation pages",
+        "url": "https://developer.apple.com/documentation/Xcode/adding-structure-to-your-documentation-pages"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "SlothCreator: Building DocC documentation in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/slothcreator-building-docc-documentation-in-xcode"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110369/4/7FCC1556-7EF4-4CFA-B757-DBCDC51B836A/downloads/wwdc2022-110369_hd.mp4?dl=1",
@@ -64,5 +48,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10244"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:00.253Z"
+  "extractedAt": "2026-10-11T16:40:18.451Z"
 }

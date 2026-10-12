@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -139,14 +140,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adopting SwiftData for a Core Data app",
-        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
-      },
-      {
         "title": "Building rich SwiftUI text experiences",
         "url": "https://developer.apple.com/documentation/SwiftUI/building-rich-swiftui-text-experiences"
       },
@@ -155,16 +148,8 @@
         "url": "https://developer.apple.com/documentation/SwiftData"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adopting SwiftData for a Core Data app",
+        "url": "https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/291/4/446be11b-b8d3-42dd-b981-a22010ddbbe9/downloads/wwdc2025-291_hd.mp4?dl=1",
@@ -184,5 +169,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10075"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:45.871Z"
+  "extractedAt": "2026-10-11T16:34:20.894Z"
 }

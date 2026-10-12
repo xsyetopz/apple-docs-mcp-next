@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -29,24 +30,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10686/4/63FE46AD-053B-4294-B04F-A4BE576BD265/wwdc2020_10686_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10686/4/63FE46AD-053B-4294-B04F-A4BE576BD265/wwdc2020_10686_sd.mp4?dl=1"
   },
@@ -70,5 +54,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10214"
     }
   ],
-  "extractedAt": "2025-07-18T10:15:06.257Z"
+  "extractedAt": "2026-10-11T16:45:10.473Z"
 }

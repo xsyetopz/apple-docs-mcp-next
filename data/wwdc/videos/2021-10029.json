@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10029/4/8B75DA3D-09DF-40FD-AC0E-FB6A7EECE3F1/downloads/wwdc2021-10029_hd.mp4?dl=1",
@@ -66,12 +51,6 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10032"
     },
     {
-      "id": "10325",
-      "year": "2021",
-      "title": "Friday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10325"
-    },
-    {
       "id": "10033",
       "year": "2021",
       "title": "Meet privacy-preserving ad attribution",
@@ -84,5 +63,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10104"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:26.450Z"
+  "extractedAt": "2026-10-11T16:44:21.873Z"
 }

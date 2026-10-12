@@ -157,24 +157,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Safari Release Notes",
         "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10048/4/8DF121DF-6825-4FBB-B570-A75F5A44CCB7/downloads/wwdc2022-10048_hd.mp4?dl=1",
@@ -218,6 +202,18 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10098"
     },
     {
+      "id": "110485",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110485"
+    },
+    {
+      "id": "110535",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110535"
+    },
+    {
       "id": "10049",
       "year": "2022",
       "title": "What's new in WKWebView",
@@ -230,5 +226,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10099"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:16.430Z"
+  "extractedAt": "2026-10-11T16:39:33.851Z"
 }

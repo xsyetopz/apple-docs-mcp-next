@@ -73,28 +73,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Detecting Hand Poses with Vision",
         "url": "https://developer.apple.com/documentation/Vision/detecting-hand-poses-with-vision"
       },
       {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10653/8/E739CC44-25A9-46B9-8E40-1788530C5785/wwdc2020_10653_hd.mp4?dl=1",
@@ -144,5 +128,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10099"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:44.865Z"
+  "extractedAt": "2026-10-11T16:44:47.170Z"
 }

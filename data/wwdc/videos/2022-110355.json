@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -73,34 +74,30 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AsyncSequence",
-        "url": "https://developer.apple.com/documentation/Swift/AsyncSequence"
-      },
-      {
         "title": "The Swift Programming Language: Concurrency",
         "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AsyncSequence",
+        "url": "https://developer.apple.com/documentation/Swift/AsyncSequence"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110355/4/459D7B80-E4A7-428F-ADA8-EF2543CE3350/downloads/wwdc2022-110355_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110355/4/459D7B80-E4A7-428F-ADA8-EF2543CE3350/downloads/wwdc2022-110355_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110938",
+      "year": "2022",
+      "title": "Meet the presenter: Meet Swift Async Algorithms",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110938"
+    },
+    {
+      "id": "110480",
+      "year": "2022",
+      "title": "Q&A: Swift concurrency",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110480"
+    },
     {
       "id": "110354",
       "year": "2022",
@@ -120,5 +117,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10256"
     }
   ],
-  "extractedAt": "2025-07-18T10:23:04.482Z"
+  "extractedAt": "2026-10-11T16:39:28.793Z"
 }

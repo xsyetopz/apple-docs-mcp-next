@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Safari Release Notes",
-        "url": "https://developer.apple.com/documentation/safari-release-notes"
-      },
-      {
         "title": "Sending web push notifications in web apps and browsers",
         "url": "https://developer.apple.com/documentation/UserNotifications/sending-web-push-notifications-in-web-apps-and-browsers"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Safari Release Notes",
+        "url": "https://developer.apple.com/documentation/safari-release-notes"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10120/4/C81200EB-45AA-47BF-B173-AD1D2EFE80C6/downloads/wwdc2023-10120_hd.mp4?dl=1",
@@ -76,5 +60,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10048"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:03.489Z"
+  "extractedAt": "2026-10-11T16:36:17.282Z"
 }

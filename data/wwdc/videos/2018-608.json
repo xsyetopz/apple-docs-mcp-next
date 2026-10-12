@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Graphics & Games"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Analyzing resource dependencies",
-        "url": "https://developer.apple.com/documentation/Xcode/Analyzing-resource-dependencies"
+        "title": "Optimizing GPU performance",
+        "url": "https://developer.apple.com/documentation/Xcode/Optimizing-GPU-performance"
       },
       {
         "title": "Debugging the shaders within a draw command or compute dispatch",
         "url": "https://developer.apple.com/documentation/Xcode/Debugging-the-shaders-within-a-draw-command-or-compute-dispatch"
       },
       {
-        "title": "Optimizing GPU performance",
-        "url": "https://developer.apple.com/documentation/Xcode/Optimizing-GPU-performance"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Analyzing resource dependencies",
+        "url": "https://developer.apple.com/documentation/Xcode/Analyzing-resource-dependencies"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2018/608u6qpg6mh0uq/608/608_hd_metal_shader_debugging_and_profiling.mp4?dl=1",
@@ -68,5 +53,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/612"
     }
   ],
-  "extractedAt": "2025-07-18T10:18:39.682Z"
+  "extractedAt": "2026-10-11T16:48:32.611Z"
 }

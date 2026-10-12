@@ -1,0 +1,56 @@
+{
+  "id": "110397",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110397/",
+  "title": "Break the SwiftUIce",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Essentials",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10056",
+      "year": "2022",
+      "title": "Compose custom layouts with SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10056"
+    },
+    {
+      "id": "10136",
+      "year": "2022",
+      "title": "Hello Swift Charts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10136"
+    },
+    {
+      "id": "10062",
+      "year": "2022",
+      "title": "Meet Transferable",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10062"
+    },
+    {
+      "id": "10137",
+      "year": "2022",
+      "title": "Swift Charts: Raise the bar",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10137"
+    },
+    {
+      "id": "10054",
+      "year": "2022",
+      "title": "The SwiftUI cookbook for navigation",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10054"
+    },
+    {
+      "id": "10052",
+      "year": "2022",
+      "title": "What's new in SwiftUI",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10052"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:07.687Z"
+}

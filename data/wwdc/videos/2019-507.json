@@ -17,8 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Integrating AirPlay for long-form video apps",
+        "url": "https://developer.apple.com/documentation/AVFoundation/integrating-airplay-for-long-form-video-apps"
       },
       {
         "title": "HTTP Live Streaming",
@@ -27,22 +27,6 @@
       {
         "title": "HTTP Live Streaming (HLS) authoring specification for Apple devices",
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices"
-      },
-      {
-        "title": "Integrating AirPlay for Long-Form Video Apps",
-        "url": "https://developer.apple.com/documentation/AVFoundation/integrating-airplay-for-long-form-video-apps"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/507fk9wyls0np6piwk/507/507_hd_hls_authoring_for_airplay_2_video.mp4?dl=1",
@@ -62,5 +46,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/501"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:34.316Z"
+  "extractedAt": "2026-10-11T16:46:57.795Z"
 }

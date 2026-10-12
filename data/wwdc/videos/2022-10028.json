@@ -49,24 +49,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "ShazamKit",
         "url": "https://developer.apple.com/documentation/ShazamKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10028/3/F2DB18FC-F40C-4FB9-A080-5202CE2794CA/downloads/wwdc2022-10028_hd.mp4?dl=1",
@@ -78,6 +62,12 @@
       "year": "2023",
       "title": "Create a great ShazamKit experience",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10051"
+    },
+    {
+      "id": "110908",
+      "year": "2022",
+      "title": "Meet the Presenter: Create custom catalogs at scale with ShazamKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110908"
     },
     {
       "id": "10045",
@@ -92,5 +82,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10044"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:56.826Z"
+  "extractedAt": "2026-10-11T16:41:38.317Z"
 }

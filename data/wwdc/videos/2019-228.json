@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ARKit",
-        "url": "https://developer.apple.com/documentation/ARKit"
+        "title": "Understanding a Dice Roll with Vision and Object Detection",
+        "url": "https://developer.apple.com/documentation/CoreML/understanding-a-dice-roll-with-vision-and-object-detection"
       },
       {
         "title": "Core ML",
         "url": "https://developer.apple.com/documentation/CoreML"
       },
       {
-        "title": "Understanding a Dice Roll with Vision and Object Detection",
-        "url": "https://developer.apple.com/documentation/CoreML/understanding-a-dice-roll-with-vision-and-object-detection"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "ARKit",
+        "url": "https://developer.apple.com/documentation/ARKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/228l55lz3fc9f4/228/228_hd_creating_great_apps_using_core_ml_and_arkit.mp4?dl=1",
@@ -61,6 +45,12 @@
       "year": "2019",
       "title": "Core ML 3 Framework",
       "url": "https://developer.apple.com/videos/play/wwdc2019/704"
+    },
+    {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406"
     },
     {
       "id": "803",
@@ -93,5 +83,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/209"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:18.326Z"
+  "extractedAt": "2026-10-11T16:47:53.186Z"
 }

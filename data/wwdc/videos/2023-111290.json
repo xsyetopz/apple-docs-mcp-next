@@ -1,0 +1,43 @@
+{
+  "id": "111290",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111290/",
+  "title": "Q&A: Games for visionOS",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Graphics & Games"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10093",
+      "year": "2023",
+      "title": "Bring your Unity VR app to a fully immersive space",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10093"
+    },
+    {
+      "id": "10096",
+      "year": "2023",
+      "title": "Build great games for spatial computing",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10096"
+    },
+    {
+      "id": "10088",
+      "year": "2023",
+      "title": "Create immersive Unity apps",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10088"
+    },
+    {
+      "id": "10089",
+      "year": "2023",
+      "title": "Discover Metal for immersive apps",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10089"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:55.015Z"
+}

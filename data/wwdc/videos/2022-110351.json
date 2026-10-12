@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -199,28 +200,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Concurrency",
         "url": "https://developer.apple.com/documentation/Swift/concurrency"
       },
       {
         "title": "The Swift Programming Language: Concurrency",
         "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110351/3/2B82DC62-6057-4460-93F4-B99CF7073221/downloads/wwdc2022-110351_hd.mp4?dl=1",
@@ -232,6 +217,12 @@
       "year": "2022",
       "title": "Meet distributed actors in Swift",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110356"
+    },
+    {
+      "id": "110480",
+      "year": "2022",
+      "title": "Q&A: Swift concurrency",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110480"
     },
     {
       "id": "110350",
@@ -294,5 +285,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10095"
     }
   ],
-  "extractedAt": "2025-07-18T10:22:39.980Z"
+  "extractedAt": "2026-10-11T16:40:16.613Z"
 }

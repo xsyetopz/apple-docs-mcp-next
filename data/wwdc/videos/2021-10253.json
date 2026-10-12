@@ -247,24 +247,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Fruta: Building a Feature-Rich App with SwiftUI",
-        "url": "https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Fruta: Building a feature-rich app with SwiftUI",
+        "url": "https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10253/4/F323F580-06C3-4F19-9548-AB7560E40CD4/downloads/wwdc2021-10253_hd.mp4?dl=1",
@@ -284,5 +268,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/415"
     }
   ],
-  "extractedAt": "2025-07-18T10:49:26.648Z"
+  "extractedAt": "2026-10-11T16:44:28.478Z"
 }

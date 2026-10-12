@@ -68,36 +68,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documenting a Swift Framework or Package",
-        "url": "https://www.swift.org/documentation/docc/documenting-a-swift-framework-or-package"
-      },
-      {
         "title": "Formatting your documentation",
         "url": "https://developer.apple.com/documentation/docc"
-      },
-      {
-        "title": "SlothCreator: Building DocC Documentation in Xcode",
-        "url": "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode"
       },
       {
         "title": "Writing symbol documentation in your source files",
         "url": "https://developer.apple.com/documentation/Xcode/writing-symbol-documentation-in-your-source-files"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "SlothCreator: Building DocC documentation in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/slothcreator-building-docc-documentation-in-xcode"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Documenting a Swift Framework or Package",
+        "url": "https://www.swift.org/documentation/docc/documenting-a-swift-framework-or-package"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10166/7/097C7329-25A1-4933-A07D-78C7F1F1CA46/downloads/wwdc2021-10166_hd.mp4?dl=1",
@@ -135,5 +119,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10192"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:43.107Z"
+  "extractedAt": "2026-10-11T16:42:34.702Z"
 }

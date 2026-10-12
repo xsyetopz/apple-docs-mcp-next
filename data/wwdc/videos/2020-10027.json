@@ -55,24 +55,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Implementing modern collection views",
         "url": "https://developer.apple.com/documentation/UIKit/implementing-modern-collection-views"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10027/2/8BF22D86-7C86-4813-980B-183CC5B693DE/wwdc2020_10027_hd.mp4?dl=1",
@@ -122,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10026"
     }
   ],
-  "extractedAt": "2025-07-18T10:55:24.083Z"
+  "extractedAt": "2026-10-11T16:44:52.449Z"
 }

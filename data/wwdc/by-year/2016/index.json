@@ -1,11 +1,12 @@
 {
   "year": "2016",
-  "videoCount": 16,
+  "videoCount": 17,
   "topics": [
     "App Services",
     "Audio & Video",
     "Design",
     "Developer Tools",
+    "Graphics & Games",
     "Maps & Location",
     "Photos & Camera",
     "Swift",
@@ -18,7 +19,8 @@
       "year": "2016",
       "title": "Advanced Metal Shader Optimization",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -53,11 +55,25 @@
       "dataFile": "videos/2016-511.json"
     },
     {
+      "id": "717",
+      "year": "2016",
+      "title": "Beyond Dictation — Enhanced Voice-Control for macOS apps",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2016/717/",
+      "dataFile": "videos/2016-717.json"
+    },
+    {
       "id": "720",
       "year": "2016",
       "title": "Concurrent Programming With GCD in Swift 3",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -83,7 +99,8 @@
       "year": "2016",
       "title": "Developing CarPlay Systems, Part 1",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,

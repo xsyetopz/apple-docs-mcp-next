@@ -1,50 +1,20 @@
-import { updatesCache, generateUrlCacheKey } from '../utils/cache.js';
-import { APPLE_URLS } from '../utils/constants.js';
-import { httpClient } from '../utils/http-client.js';
-import { logger } from '../utils/logger.js';
-
-/**
- * Interface for Updates data
- */
-interface UpdatesData {
-  topicSections: Array<{
-    title: string;
-    identifiers: string[];
-    anchor: string;
-  }>;
-  references: Record<string, {
-    type: string;
-    title: string;
-    url: string;
-    abstract?: Array<{ text: string; type: string }>;
-    images?: Array<{ type: string; identifier: string }>;
-    kind?: string;
-    role?: string;
-  }>;
-}
-
-/**
- * Interface for Updates Index data
- */
-interface UpdatesIndexData {
-  interfaceLanguages: {
-    swift: UpdatesIndexSection[];
-  };
-}
-
-interface UpdatesIndexSection {
-  path: string;
-  title: string;
-  type: string;
-  beta?: boolean;
-  children?: UpdatesIndexSection[];
-}
+import type {
+  RenderIndex,
+  RenderIndexNode,
+  RenderNode,
+} from "../types/docc.ts";
+import { isTopicReference } from "../types/docc.ts";
+import { generateUrlCacheKey, updatesCache } from "../utils/cache.ts";
+import { APPLE_URLS } from "../utils/constants.ts";
+import { httpClient } from "../utils/http-client.ts";
+import { logger } from "../utils/logger.ts";
+import { formatInlineContent } from "./doc-formatter.ts";
 
 /**
  * Handle get documentation updates
  */
 export async function handleGetDocumentationUpdates(
-  category: string = 'all',
+  category: string = "all",
   technology?: string,
   year?: string,
   searchQuery?: string,
@@ -52,10 +22,10 @@ export async function handleGetDocumentationUpdates(
   limit: number = 50,
 ): Promise<string> {
   try {
-    logger.info('Fetching documentation updates...');
+    logger.info("Fetching documentation updates...");
 
     // Generate cache key
-    const cacheKey = generateUrlCacheKey('documentation-updates', {
+    const cacheKey = generateUrlCacheKey("documentation-updates", {
       category,
       technology,
       year,
@@ -65,16 +35,16 @@ export async function handleGetDocumentationUpdates(
     });
 
     // Try to get from cache first
-    const cachedResult = updatesCache.get<string>(cacheKey);
+    const cachedResult = updatesCache.get(cacheKey);
     if (cachedResult) {
-      logger.debug('Updates cache hit');
+      logger.debug("Updates cache hit");
       return cachedResult;
     }
 
     // Fetch both updates data files
     const [updatesData, updatesIndex] = await Promise.all([
-      httpClient.getJson<UpdatesData>(APPLE_URLS.UPDATES_JSON),
-      httpClient.getJson<UpdatesIndexData>(APPLE_URLS.UPDATES_INDEX_JSON),
+      httpClient.getJson<RenderNode>(APPLE_URLS.UPDATES_JSON),
+      httpClient.getJson<RenderIndex>(APPLE_URLS.UPDATES_INDEX_JSON),
     ]);
 
     // Parse and filter updates
@@ -95,10 +65,10 @@ export async function handleGetDocumentationUpdates(
     updatesCache.set(cacheKey, result);
 
     return result;
-
   } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : JSON.stringify(error);
-    logger.error('Error fetching documentation updates:', error);
+    const errorMessage =
+      error instanceof Error ? error.message : JSON.stringify(error);
+    logger.error("Error fetching documentation updates:", error);
     return `Error: Failed to fetch documentation updates: ${errorMessage}`;
   }
 }
@@ -106,32 +76,42 @@ export async function handleGetDocumentationUpdates(
 /**
  * Parse updates data
  */
-function parseUpdates(updatesData: UpdatesData, updatesIndex: UpdatesIndexData) {
+function parseUpdates(updatesData: RenderNode, updatesIndex: RenderIndex) {
   const updates: UpdateItem[] = [];
 
   // Process main updates sections
   if (updatesData.topicSections) {
-    updatesData.topicSections.forEach(section => {
-      const sectionCategory = getSectionCategory(section.title);
+    updatesData.topicSections.forEach((section) => {
+      const sectionCategory = getSectionCategory(section.title ?? "");
 
-      section.identifiers.forEach(identifier => {
-        const reference = updatesData.references[identifier];
-        if (reference) {
+      section.identifiers.forEach((identifier) => {
+        const reference = updatesData.references?.[identifier];
+        if (isTopicReference(reference)) {
+          // Apple files past WWDCs under "Past releases": an item named WWDC<year> is a WWDC whatever its section
+          const category = /^WWDC\d{2,4}\b/.test(reference.title)
+            ? "wwdc"
+            : sectionCategory;
           const updateItem: UpdateItem = {
             title: reference.title,
-            url: reference.url ? `https://developer.apple.com${reference.url}` : '',
-            description: reference.abstract?.[0]?.text ?? '',
-            category: sectionCategory,
-            type: reference.kind ?? 'update',
+            url: reference.url
+              ? `https://developer.apple.com${reference.url}`
+              : "",
+            description: formatInlineContent(
+              reference.abstract ?? [],
+              updatesData.references,
+            ).trim(),
+            category,
+            type: reference.kind,
             identifier,
             images: reference.images,
           };
 
           // Extract year from WWDC titles
-          if (sectionCategory === 'wwdc' && reference.title) {
-            const yearMatch = reference.title.match(/WWDC(\d{2,4})/);
-            if (yearMatch) {
-              updateItem.year = yearMatch[1].length === 2 ? `20${yearMatch[1]}` : yearMatch[1];
+          if (category === "wwdc") {
+            const yearDigits = reference.title.match(/WWDC(\d{2,4})/)?.[1];
+            if (yearDigits) {
+              updateItem.year =
+                yearDigits.length === 2 ? `20${yearDigits}` : yearDigits;
             }
           }
 
@@ -142,8 +122,9 @@ function parseUpdates(updatesData: UpdatesData, updatesIndex: UpdatesIndexData) 
   }
 
   // Process index data for additional details and beta information
-  if (updatesIndex.interfaceLanguages?.swift) {
-    processIndexSection(updatesIndex.interfaceLanguages.swift, updates);
+  const swiftIndex = updatesIndex.interfaceLanguages?.["swift"];
+  if (swiftIndex) {
+    processIndexSection(swiftIndex, updates);
   }
 
   return updates;
@@ -152,17 +133,26 @@ function parseUpdates(updatesData: UpdatesData, updatesIndex: UpdatesIndexData) 
 /**
  * Process index section recursively
  */
-function processIndexSection(sections: UpdatesIndexSection[], updates: UpdateItem[]) {
-  sections.forEach(section => {
+function processIndexSection(
+  sections: RenderIndexNode[],
+  updates: UpdateItem[],
+) {
+  sections.forEach((section) => {
     // Find corresponding update item
-    const matchingUpdate = updates.find(u =>
-      u.url.includes(section.path) ||
-      u.title === section.title,
+    const matchingUpdate = updates.find(
+      (u) =>
+        (section.path && u.url.includes(section.path)) ||
+        u.title === section.title,
     );
 
     if (matchingUpdate) {
       matchingUpdate.beta = section.beta ?? false;
-      matchingUpdate.technology = extractTechnologyFromPath(section.path);
+      // A WWDC's page sits under /documentation/updates/ too, but names no technology
+      if (matchingUpdate.category === "technology") {
+        matchingUpdate.technology = extractTechnologyFromPath(
+          section.path ?? "",
+        );
+      }
     }
 
     // Process children
@@ -177,16 +167,16 @@ function processIndexSection(sections: UpdatesIndexSection[], updates: UpdateIte
  */
 function getSectionCategory(title: string): UpdateCategory {
   const lowerTitle = title.toLowerCase();
-  if (lowerTitle.includes('wwdc')) {
-    return 'wwdc';
+  if (lowerTitle.includes("wwdc")) {
+    return "wwdc";
   }
-  if (lowerTitle.includes('release notes')) {
-    return 'release-notes';
+  if (lowerTitle.includes("release notes")) {
+    return "release-notes";
   }
-  if (lowerTitle.includes('technology')) {
-    return 'technology';
+  if (lowerTitle.includes("technology")) {
+    return "technology";
   }
-  return 'other';
+  return "other";
 }
 
 /**
@@ -196,10 +186,11 @@ function extractTechnologyFromPath(path: string): string | undefined {
   const match = path.match(/\/documentation\/updates\/([^/]+)/i);
   if (match?.[1]) {
     // Convert to proper case
-    return match[1].replace(/-/g, ' ')
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+    return match[1]
+      .replace(/-/g, " ")
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
   }
   return undefined;
 }
@@ -210,48 +201,52 @@ function extractTechnologyFromPath(path: string): string | undefined {
 function applyUpdatesFilters(
   updates: UpdateItem[],
   filters: {
-    category?: string;
-    technology?: string;
-    year?: string;
-    searchQuery?: string;
-    includeBeta?: boolean;
-    limit?: number;
+    category?: string | undefined;
+    technology?: string | undefined;
+    year?: string | undefined;
+    searchQuery?: string | undefined;
+    includeBeta?: boolean | undefined;
+    limit?: number | undefined;
   },
 ): UpdateItem[] {
   let filtered = [...updates];
 
   // Category filter
-  if (filters.category && filters.category !== 'all') {
-    filtered = filtered.filter(update => update.category === filters.category);
+  if (filters.category && filters.category !== "all") {
+    filtered = filtered.filter(
+      (update) => update.category === filters.category,
+    );
   }
 
   // Technology filter
   if (filters.technology) {
     const techLower = filters.technology.toLowerCase();
-    filtered = filtered.filter(update =>
-      (update.technology?.toLowerCase().includes(techLower)) ||
-      update.title.toLowerCase().includes(techLower) ||
-      update.description.toLowerCase().includes(techLower),
+    filtered = filtered.filter(
+      (update) =>
+        update.technology?.toLowerCase().includes(techLower) ||
+        update.title.toLowerCase().includes(techLower) ||
+        update.description.toLowerCase().includes(techLower),
     );
   }
 
   // Year filter (for WWDC)
   if (filters.year) {
-    filtered = filtered.filter(update => update.year === filters.year);
+    filtered = filtered.filter((update) => update.year === filters.year);
   }
 
   // Search query filter
   if (filters.searchQuery) {
     const queryLower = filters.searchQuery.toLowerCase();
-    filtered = filtered.filter(update =>
-      update.title.toLowerCase().includes(queryLower) ||
-      update.description.toLowerCase().includes(queryLower),
+    filtered = filtered.filter(
+      (update) =>
+        update.title.toLowerCase().includes(queryLower) ||
+        update.description.toLowerCase().includes(queryLower),
     );
   }
 
   // Beta filter
   if (!filters.includeBeta) {
-    filtered = filtered.filter(update => !update.beta);
+    filtered = filtered.filter((update) => !update.beta);
   }
 
   // Apply limit
@@ -267,57 +262,64 @@ function applyUpdatesFilters(
  */
 function formatUpdatesList(updates: UpdateItem[]): string {
   if (updates.length === 0) {
-    return 'No documentation updates found matching the specified criteria.';
+    return "No documentation updates found matching the specified criteria.";
   }
 
-  let content = '# Apple Developer Documentation Updates\n\n';
+  let content = "# Apple Developer Documentation Updates\n\n";
 
   // Group by category
-  const grouped = updates.reduce((acc, update) => {
-    const category = update.category;
-    if (!acc[category]) {
-      acc[category] = [];
-    }
-    acc[category].push(update);
-    return acc;
-  }, {} as Record<string, UpdateItem[]>);
+  const grouped = updates.reduce(
+    (acc, update) => {
+      const category = update.category;
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+      acc[category].push(update);
+      return acc;
+    },
+    {} as Record<string, UpdateItem[]>,
+  );
 
   // Format each category
   const categoryTitles: Record<string, string> = {
-    'wwdc': 'WWDC',
-    'technology': 'Technology Updates',
-    'release-notes': 'Release Notes',
-    'other': 'Other Updates',
+    wwdc: "WWDC",
+    technology: "Technology Updates",
+    "release-notes": "Release Notes",
+    other: "Other Updates",
   };
 
   Object.entries(grouped).forEach(([category, items]) => {
     content += `## ${categoryTitles[category] ?? category}\n\n`;
 
     // Add WWDC-specific suggestion
-    if (category === 'wwdc' && items.length > 0) {
-      content += '> **💡 Tip:** For comprehensive WWDC video content with full transcripts and code examples, use the dedicated WWDC tools:\n';
-      content += '> - `list_wwdc_videos` - Browse videos by year, topic, or code availability\n';
-      content += '> - `search_wwdc_content` - Search through video transcripts and code\n';
-      content += '> - `browse_wwdc_topics` - Explore videos by topic categories\n\n';
+    if (category === "wwdc" && items.length > 0) {
+      content +=
+        "> **💡 Tip:** For comprehensive WWDC video content with full transcripts and code examples, use the dedicated WWDC tools:\n";
+      content +=
+        "> - `list_wwdc_videos` - Browse videos by year, topic, or code availability\n";
+      content +=
+        "> - `search_wwdc_content` - Search through video transcripts and code\n";
+      content +=
+        "> - `browse_wwdc_topics` - Explore videos by topic categories\n\n";
     }
 
-    items.forEach(item => {
+    items.forEach((item) => {
       // Build title with badges
       let titleLine = `### [${item.title}](${item.url})`;
 
       const badges = [];
       if (item.beta) {
-        badges.push('Beta');
+        badges.push("Beta");
       }
-      if (item.images?.some(img => img.identifier === 'new.svg')) {
-        badges.push('New');
+      if (item.images?.some((img) => img.identifier === "new.svg")) {
+        badges.push("New");
       }
 
       if (badges.length > 0) {
-        titleLine += ` *${badges.join(' | ')}*`;
+        titleLine += ` *${badges.join(" | ")}*`;
       }
 
-      content += titleLine + '\n';
+      content += `${titleLine}\n`;
 
       // Add description
       if (item.description) {
@@ -326,22 +328,23 @@ function formatUpdatesList(updates: UpdateItem[]): string {
 
       // Add metadata
       const metadata = [];
-      if (item.technology && item.category !== 'technology') {
+      if (item.technology && item.category !== "technology") {
         metadata.push(`Technology: ${item.technology}`);
       }
-      if (item.year && item.category === 'wwdc') {
+      if (item.year && item.category === "wwdc") {
         metadata.push(`Year: ${item.year}`);
       }
 
       if (metadata.length > 0) {
-        content += `*${metadata.join(' | ')}*\n`;
+        content += `*${metadata.join(" | ")}*\n`;
       }
 
-      content += '\n';
+      content += "\n";
     });
   });
 
-  content += '\n---\n\n[View all updates on Apple Developer](https://developer.apple.com/documentation/updates)';
+  content +=
+    "\n---\n\n[View all updates on Apple Developer](https://developer.apple.com/documentation/updates)";
 
   return content;
 }
@@ -356,10 +359,10 @@ interface UpdateItem {
   category: UpdateCategory;
   type: string;
   identifier: string;
-  technology?: string;
-  year?: string;
-  beta?: boolean;
-  images?: Array<{ type: string; identifier: string }>;
+  technology?: string | undefined;
+  year?: string | undefined;
+  beta?: boolean | undefined;
+  images?: Array<{ type: string; identifier: string }> | undefined;
 }
 
-type UpdateCategory = 'wwdc' | 'technology' | 'release-notes' | 'other';
+type UpdateCategory = "wwdc" | "technology" | "release-notes" | "other";

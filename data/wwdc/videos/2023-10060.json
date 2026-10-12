@@ -7,7 +7,9 @@
   "duration": "",
   "topics": [
     "App Services",
-    "Essentials"
+    "Essentials",
+    "Privacy & Security",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -18,28 +20,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Describing use of required reason API",
-        "url": "https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api"
-      },
-      {
         "title": "Privacy manifest files",
         "url": "https://developer.apple.com/documentation/BundleResources/privacy-manifest-files"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Describing use of required reason API",
+        "url": "https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10060/4/FF91AF30-61BD-4DCA-A65E-9D3CD75DA679/downloads/wwdc2023-10060_hd.mp4?dl=1",
@@ -71,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10166"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:41.317Z"
+  "extractedAt": "2026-10-11T16:37:08.683Z"
 }

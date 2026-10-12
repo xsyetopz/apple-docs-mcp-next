@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -211,14 +212,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Programming Languages",
-        "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
-      },
-      {
         "title": "Swift Migration Guide",
         "url": "https://www.swift.org/migration/documentation/migrationguide/"
       },
@@ -227,16 +220,8 @@
         "url": "https://developer.apple.com/documentation/Swift/updating-an-app-to-use-strict-concurrency"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: Programming Languages",
+        "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10169/6/4E4B2CB2-ABE3-49B7-AA2B-D97C6BF13B49/downloads/wwdc2024-10169_hd.mp4?dl=1",
@@ -250,5 +235,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10194"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:48.743Z"
+  "extractedAt": "2026-10-11T16:34:45.496Z"
 }

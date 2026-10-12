@@ -55,16 +55,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accelerating ray tracing using Metal",
-        "url": "https://developer.apple.com/documentation/metal/metal_sample_code_library/accelerating_ray_tracing_using_metal"
+        "title": "Rendering reflections in real time using ray tracing",
+        "url": "https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing"
       },
       {
         "title": "Applying realistic material and lighting effects to entities",
         "url": "https://developer.apple.com/documentation/RealityKit/applying-realistic-material-and-lighting-effects-to-entities"
+      },
+      {
+        "title": "Accelerating ray tracing using Metal",
+        "url": "https://developer.apple.com/documentation/metal/metal_sample_code_library/accelerating_ray_tracing_using_metal"
       },
       {
         "title": "Managing groups of resources with argument buffers",
@@ -73,22 +73,6 @@
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Rendering reflections in real time using ray tracing",
-        "url": "https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10150/9/F2EBE5D9-9990-476B-82FF-D73638B5E1AF/downloads/wwdc2021-10150_hd.mp4?dl=1",
@@ -132,5 +116,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10148"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:45.249Z"
+  "extractedAt": "2026-10-11T16:42:29.933Z"
 }

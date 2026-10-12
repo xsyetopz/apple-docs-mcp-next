@@ -1,0 +1,31 @@
+{
+  "id": "110925",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110925/",
+  "title": "Q&A: Xcode Cloud and testing",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110375",
+      "year": "2022",
+      "title": "Deep dive into Xcode Cloud for teams",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110375"
+    },
+    {
+      "id": "110374",
+      "year": "2022",
+      "title": "Get the most out of Xcode Cloud",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110374"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:27.014Z"
+}

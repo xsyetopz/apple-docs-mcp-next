@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Privacy & Security",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,32 +19,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Build Mail App Extensions",
         "url": "https://developer.apple.com/documentation/MailKit/build-mail-app-extensions"
       },
       {
         "title": "MailKit",
         "url": "https://developer.apple.com/documentation/MailKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10168/10/DB697C64-E7F4-431F-BA61-53827D49FC36/downloads/wwdc2021-10168_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10168/10/DB697C64-E7F4-431F-BA61-53827D49FC36/downloads/wwdc2021-10168_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:16:08.585Z"
+  "extractedAt": "2026-10-11T16:43:40.411Z"
 }

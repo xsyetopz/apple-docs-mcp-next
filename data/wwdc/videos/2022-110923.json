@@ -1,0 +1,25 @@
+{
+  "id": "110923",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110923/",
+  "title": "Q&A: C, C++, Objective-C compiler, analyzer, sanitizer, debugger, and linker",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110367",
+      "year": "2022",
+      "title": "Simplify C++ templates with concepts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110367"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:34.175Z"
+}

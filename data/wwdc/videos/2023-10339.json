@@ -1,0 +1,25 @@
+{
+  "id": "10339",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10339/",
+  "title": "Q&A: CloudKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "System Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10188",
+      "year": "2023",
+      "title": "Sync to iCloud with CKSyncEngine",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10188"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:02.301Z"
+}

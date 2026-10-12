@@ -109,28 +109,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "TN3187: Migrating to the UIKit scene-based life cycle",
-        "url": "https://developer.apple.com/documentation/Technotes/tn3187-Migrating-to-the-UIKit-scene-based-life-cycle"
+        "url": "https://developer.apple.com/documentation/UIKit/transitioning-to-the-uikit-scene-based-life-cycle"
       },
       {
         "title": "UIKit updates",
         "url": "https://developer.apple.com/documentation/Updates/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/282/4/24e46505-a3b3-4027-ac3f-0bd2b53dcdeb/downloads/wwdc2025-282_hd.mp4?dl=1",
@@ -150,5 +134,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10147"
     }
   ],
-  "extractedAt": "2025-07-18T10:51:48.377Z"
+  "extractedAt": "2026-10-11T16:33:45.242Z"
 }

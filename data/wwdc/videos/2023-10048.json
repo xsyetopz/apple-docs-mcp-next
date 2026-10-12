@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "VisionKit",
         "url": "https://developer.apple.com/documentation/VisionKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10048/4/55A7BD30-D197-43F5-B35B-74973DEDD898/downloads/wwdc2023-10048_hd.mp4?dl=1",
@@ -46,6 +31,18 @@
       "year": "2023",
       "title": "Lift subjects from images in your app",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10176"
+    },
+    {
+      "id": "111258",
+      "year": "2023",
+      "title": "Q&A: Live Text and data scanning",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111258"
+    },
+    {
+      "id": "111259",
+      "year": "2023",
+      "title": "Q&A: Subject lifting",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111259"
     },
     {
       "id": "10026",
@@ -60,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10276"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:44.234Z"
+  "extractedAt": "2026-10-11T16:36:16.956Z"
 }

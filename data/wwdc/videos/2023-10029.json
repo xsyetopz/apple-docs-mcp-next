@@ -73,14 +73,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Widgets",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
-      },
-      {
         "title": "Updating your app and widgets for watchOS 10",
         "url": "https://developer.apple.com/documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10"
       },
@@ -89,16 +81,8 @@
         "url": "https://developer.apple.com/documentation/WidgetKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Widgets",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10029/5/A6F20D9A-932C-44D8-99FA-FBFE3D6E5CBE/downloads/wwdc2023-10029_hd.mp4?dl=1",
@@ -110,7 +94,19 @@
       "year": "2023",
       "title": "Design widgets for the Smart Stack on Apple Watch",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10309"
+    },
+    {
+      "id": "111335",
+      "year": "2023",
+      "title": "Q&A: App Intents and Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111335"
+    },
+    {
+      "id": "111522",
+      "year": "2023",
+      "title": "Q&A: Widgets in the Smart Stack on watchOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111522"
     }
   ],
-  "extractedAt": "2025-07-18T10:52:45.038Z"
+  "extractedAt": "2026-10-11T16:37:01.048Z"
 }

@@ -139,24 +139,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Manual Memory Management",
         "url": "https://developer.apple.com/documentation/Swift/manual-memory-management"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10648/4/59961AEA-1ADD-470E-BD61-596E5950E0BE/wwdc2020_10648_hd.mp4?dl=1",
@@ -182,5 +166,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/416"
     }
   ],
-  "extractedAt": "2025-07-18T10:50:19.953Z"
+  "extractedAt": "2026-10-11T16:45:56.089Z"
 }

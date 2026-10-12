@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adopting iOS Dark Mode",
         "url": "https://developer.apple.com/documentation/UIKit/adopting-ios-dark-mode"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/214iqtpuhih53fw2/214/214_hd_implementing_dark_mode_on_ios.mp4?dl=1",
@@ -70,7 +54,13 @@
       "year": "2019",
       "title": "What's New in iOS Design",
       "url": "https://developer.apple.com/videos/play/wwdc2019/808"
+    },
+    {
+      "id": "801",
+      "year": "2019",
+      "title": "What’s New in iOS and macOS Design",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/801"
     }
   ],
-  "extractedAt": "2025-07-18T10:59:34.367Z"
+  "extractedAt": "2026-10-11T16:47:12.537Z"
 }

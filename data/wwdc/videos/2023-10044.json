@@ -17,14 +17,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core ML",
-        "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
       },
@@ -33,16 +25,8 @@
         "url": "https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core ML",
+        "url": "https://developer.apple.com/documentation/CoreML"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10044/4/A21FDEB3-C1AF-472E-827F-1E7D7499033E/downloads/wwdc2023-10044_hd.mp4?dl=1",
@@ -54,6 +38,36 @@
       "year": "2023",
       "title": "Explore Natural Language multilingual models",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10042"
+    },
+    {
+      "id": "111244",
+      "year": "2023",
+      "title": "Q&A: Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111244"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251"
     },
     {
       "id": "10020",
@@ -74,5 +88,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110332"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:53.886Z"
+  "extractedAt": "2026-10-11T16:36:03.000Z"
 }

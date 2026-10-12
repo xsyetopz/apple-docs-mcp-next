@@ -20,24 +20,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Inclusion",
         "url": "https://developer.apple.com/design/human-interface-guidelines/inclusion/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10275/3/3E6DAA38-C002-43B3-A62C-F78B03C57AC7/downloads/wwdc2021-10275_hd.mp4?dl=1",
@@ -45,17 +29,11 @@
   },
   "relatedVideos": [
     {
-      "id": "10321",
-      "year": "2021",
-      "title": "Monday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10321"
-    },
-    {
       "id": "10304",
       "year": "2021",
       "title": "The process of inclusive design",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10304"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:29.428Z"
+  "extractedAt": "2026-10-11T16:42:40.154Z"
 }

@@ -1,0 +1,25 @@
+{
+  "id": "111534",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111534/",
+  "title": "Q&A: AVFoundation",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10071",
+      "year": "2023",
+      "title": "Deliver video content for spatial experiences",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10071"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:23.978Z"
+}

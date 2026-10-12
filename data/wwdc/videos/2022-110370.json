@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -131,28 +132,17 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110370/7/31CCC67C-D5AC-4493-AFB4-7B833E2B8162/downloads/wwdc2022-110370_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110370/7/31CCC67C-D5AC-4493-AFB4-7B833E2B8162/downloads/wwdc2022-110370_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110505",
+      "year": "2022",
+      "title": "Q&A: Debugging Swift debugging with LLDB",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110505"
+    },
     {
       "id": "10209",
       "year": "2021",
@@ -178,5 +168,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/412"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:10.569Z"
+  "extractedAt": "2026-10-11T16:41:09.328Z"
 }

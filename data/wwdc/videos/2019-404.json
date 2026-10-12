@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Swift API Guidelines",
         "url": "https://swift.org/documentation/api-design-guidelines/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/404w05ssefca567rh/404/404_hd_getting_started_with_xcode.mp4?dl=1",
@@ -72,5 +56,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/412"
     }
   ],
-  "extractedAt": "2025-07-18T10:17:44.159Z"
+  "extractedAt": "2026-10-11T16:46:50.640Z"
 }

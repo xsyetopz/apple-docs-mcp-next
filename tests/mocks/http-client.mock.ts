@@ -1,15 +1,16 @@
-import { jest } from '@jest/globals';
+import { mock } from "bun:test";
+import * as httpClientActual from "../../src/utils/http-client.ts";
 
-// Mock the http-client module
-jest.mock('../../src/utils/http-client.js', () => ({
+/**
+ * The factory for `mock.module` of the HTTP client: every method of `httpClient` is a fresh mock,
+ * and the other exports stay real, such as the error classes.
+ */
+export const httpClientModule = () => ({
+  ...httpClientActual,
   httpClient: {
-    getJson: jest.fn(),
-    getText: jest.fn(),
-    get: jest.fn(),
+    get: mock(),
+    getJson: mock(),
+    getText: mock(),
+    postText: mock(),
   },
-  HttpClient: jest.fn().mockImplementation(() => ({
-    getJson: jest.fn(),
-    getText: jest.fn(),
-    get: jest.fn(),
-  })),
-}));
+});

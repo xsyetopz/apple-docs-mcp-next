@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Health & Fitness"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,34 +16,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10316/8/F3A4B359-293E-4760-A055-B8998AC4CE02/downloads/wwdc2021-10316_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10316/8/F3A4B359-293E-4760-A055-B8998AC4CE02/downloads/wwdc2021-10316_sd.mp4?dl=1"
   },
-  "relatedVideos": [
-    {
-      "id": "10324",
-      "year": "2021",
-      "title": "Thursday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10324"
-    }
-  ],
-  "extractedAt": "2025-07-18T10:25:27.062Z"
+  "extractedAt": "2026-10-11T16:43:53.421Z"
 }

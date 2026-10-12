@@ -1,8 +1,9 @@
 {
   "id": "health-fitness",
   "name": "Health & Fitness",
-  "videoCount": 42,
+  "videoCount": 55,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -10,15 +11,46 @@
     "2021",
     "2020",
     "2019",
+    "2018",
     "2015"
   ],
   "videos": [
+    {
+      "id": "207",
+      "year": "2026",
+      "title": "Deliver workout insights with HealthKit workout zones",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/207/",
+      "dataFile": "videos/2026-207.json"
+    },
+    {
+      "id": "8014",
+      "year": "2026",
+      "title": "watchOS Group Lab",
+      "topics": [
+        "App Services",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8014/",
+      "dataFile": "videos/2026-8014.json"
+    },
     {
       "id": "321",
       "year": "2025",
       "title": "Meet the HealthKit Medications API",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -31,7 +63,8 @@
       "year": "2025",
       "title": "Track workouts with HealthKit on iOS and iPadOS",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -59,7 +92,8 @@
       "year": "2024",
       "title": "Build custom swimming workouts with WorkoutKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -72,7 +106,8 @@
       "year": "2024",
       "title": "Enhanced suggestions for your journaling app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -85,7 +120,8 @@
       "year": "2024",
       "title": "Explore wellbeing APIs in HealthKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -112,7 +148,9 @@
       "year": "2024",
       "title": "What’s new in watchOS 11",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -138,7 +176,8 @@
       "year": "2023",
       "title": "Build custom workouts with WorkoutKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -147,11 +186,38 @@
       "dataFile": "videos/2023-10016.json"
     },
     {
+      "id": "10318",
+      "year": "2023",
+      "title": "Q&A: Health and fitness",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10318/",
+      "dataFile": "videos/2023-10318.json"
+    },
+    {
+      "id": "10325",
+      "year": "2023",
+      "title": "Q&A: Health and fitness",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10325/",
+      "dataFile": "videos/2023-10325.json"
+    },
+    {
       "id": "10179",
       "year": "2023",
       "title": "What’s new in Core Motion",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -160,28 +226,15 @@
       "dataFile": "videos/2023-10179.json"
     },
     {
-      "id": "110339",
-      "year": "2022",
-      "title": "Build device-to-device interactions with Network Framework",
-      "topics": [
-        "App Services",
-        "Audio & Video",
-        "Essentials"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2022/110339/",
-      "dataFile": "videos/2022-110339.json"
-    },
-    {
       "id": "110348",
       "year": "2022",
       "title": "Build your first app in Swift Playgrounds",
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -194,7 +247,8 @@
       "year": "2022",
       "title": "Create a great video playback experience",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -207,7 +261,8 @@
       "year": "2022",
       "title": "Design app experiences with charts",
       "topics": [
-        "Design"
+        "Design",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -234,7 +289,9 @@
       "year": "2022",
       "title": "Hello Swift Charts",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -250,7 +307,8 @@
         "App Services",
         "Audio & Video",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -259,12 +317,127 @@
       "dataFile": "videos/2022-10139.json"
     },
     {
+      "id": "110821",
+      "year": "2022",
+      "title": "Meet the Presenter: Building Device-to-Device Experiences with Network Framework",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110821/",
+      "dataFile": "videos/2022-110821.json"
+    },
+    {
+      "id": "110817",
+      "year": "2022",
+      "title": "Meet the Presenter: Create a great video playback experience",
+      "topics": [
+        "Audio & Video",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110817/",
+      "dataFile": "videos/2022-110817.json"
+    },
+    {
+      "id": "110531",
+      "year": "2022",
+      "title": "Meet the Presenter: Design app experiences with charts",
+      "topics": [
+        "Design",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110531/",
+      "dataFile": "videos/2022-110531.json"
+    },
+    {
+      "id": "110815",
+      "year": "2022",
+      "title": "Meet the Presenter: Make a great SharePlay experience",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Essentials",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110815/",
+      "dataFile": "videos/2022-110815.json"
+    },
+    {
+      "id": "110448",
+      "year": "2022",
+      "title": "Q&A: Apple Watch development",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110448/",
+      "dataFile": "videos/2022-110448.json"
+    },
+    {
+      "id": "110566",
+      "year": "2022",
+      "title": "Q&A: Health and fitness technologies",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110566/",
+      "dataFile": "videos/2022-110566.json"
+    },
+    {
+      "id": "110415",
+      "year": "2022",
+      "title": "Q&A: Health and fitness technologies",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110415/",
+      "dataFile": "videos/2022-110415.json"
+    },
+    {
+      "id": "110407",
+      "year": "2022",
+      "title": "Q&A: Swift Charts",
+      "topics": [
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110407/",
+      "dataFile": "videos/2022-110407.json"
+    },
+    {
       "id": "10131",
       "year": "2022",
       "title": "Qualities of great AR experiences",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -278,7 +451,8 @@
       "title": "Support multiple users in tvOS apps",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -318,7 +492,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 1: Setup onboarding",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -331,7 +506,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 2: Schedule tasks",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -344,7 +520,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 3: Visualize progress",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -412,7 +589,8 @@
       "year": "2021",
       "title": "Meditation for fidgety skeptics",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -425,7 +603,10 @@
       "year": "2021",
       "title": "What's new in watchOS 8",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -477,7 +658,8 @@
       "year": "2020",
       "title": "Integrate your app with Wind Down",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -563,6 +745,32 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2019/217/",
       "dataFile": "videos/2019-217.json"
+    },
+    {
+      "id": "706",
+      "year": "2018",
+      "title": "Accessing Health Records with HealthKit",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/706/",
+      "dataFile": "videos/2018-706.json"
+    },
+    {
+      "id": "707",
+      "year": "2018",
+      "title": "New Ways to Work with Workouts",
+      "topics": [
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/707/",
+      "dataFile": "videos/2018-707.json"
     },
     {
       "id": "705",

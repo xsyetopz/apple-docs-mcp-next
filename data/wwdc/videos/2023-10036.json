@@ -97,28 +97,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accessibility",
-        "url": "https://developer.apple.com/documentation/accessibility"
-      },
-      {
         "title": "Accessibility updates",
         "url": "https://developer.apple.com/documentation/Updates/Accessibility"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accessibility",
+        "url": "https://developer.apple.com/documentation/accessibility"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10036/4/BB960BFD-F982-4800-8060-5674B049AC5A/downloads/wwdc2023-10036_hd.mp4?dl=1",
@@ -132,5 +116,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10148"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:50.592Z"
+  "extractedAt": "2026-10-11T16:36:59.903Z"
 }

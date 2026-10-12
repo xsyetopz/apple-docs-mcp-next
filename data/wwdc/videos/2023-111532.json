@@ -1,0 +1,26 @@
+{
+  "id": "111532",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111532/",
+  "title": "Q&A: Continuity Camera for Apple TV",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video",
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10256",
+      "year": "2023",
+      "title": "Discover Continuity Camera for tvOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10256"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:19.995Z"
+}

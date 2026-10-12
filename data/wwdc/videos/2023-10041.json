@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10041/5/3291DDC3-9C1C-4F82-885B-351107EFC8AF/downloads/wwdc2023-10041_hd.mp4?dl=1",
@@ -52,6 +36,18 @@
       "year": "2023",
       "title": "Meet device management for Apple Watch",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10039"
+    },
+    {
+      "id": "10321",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10321"
+    },
+    {
+      "id": "10329",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10329"
     },
     {
       "id": "10040",
@@ -72,5 +68,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10131"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:33.285Z"
+  "extractedAt": "2026-10-11T16:37:06.189Z"
 }

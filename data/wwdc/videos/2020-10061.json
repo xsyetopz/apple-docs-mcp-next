@@ -62,28 +62,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Managing Audio with SiriKit",
-        "url": "https://developer.apple.com/documentation/SiriKit/managing-audio-with-sirikit"
-      },
-      {
         "title": "Providing Hands-Free App Control with Intents",
         "url": "https://developer.apple.com/documentation/SiriKit/providing-hands-free-app-control-with-intents"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Managing Audio with SiriKit",
+        "url": "https://developer.apple.com/documentation/SiriKit/managing-audio-with-sirikit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10061/7/0C05700A-690E-443C-9984-6792A466E6CA/wwdc2020_10061_hd.mp4?dl=1",
@@ -163,5 +147,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10068"
     }
   ],
-  "extractedAt": "2025-07-18T09:17:01.346Z"
+  "extractedAt": "2026-10-11T16:45:49.048Z"
 }

@@ -17,36 +17,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Configuring your first Xcode Cloud workflow",
-        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
+        "title": "Xcode Cloud workflow reference",
+        "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud-Workflow-Reference"
       },
       {
         "title": "Developing a workflow strategy for Xcode Cloud",
         "url": "https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud"
       },
       {
+        "title": "Configuring your first Xcode Cloud workflow",
+        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
+      },
+      {
         "title": "Xcode Cloud",
         "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud"
-      },
-      {
-        "title": "Xcode Cloud workflow reference",
-        "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud-Workflow-Reference"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10268/4/D11A0D51-DD10-4E50-932B-03643B47BF07/downloads/wwdc2021-10268_hd.mp4?dl=1",
@@ -90,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10205"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:30.892Z"
+  "extractedAt": "2026-10-11T16:42:31.776Z"
 }

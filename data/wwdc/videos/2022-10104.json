@@ -67,28 +67,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Resource loading",
+        "url": "https://developer.apple.com/documentation/Metal/resource-loading"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Resource Loading",
-        "url": "https://developer.apple.com/documentation/Metal/resource-loading"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10104/4/E095D698-00CE-4A00-812C-4BA755CE26DB/downloads/wwdc2022-10104_hd.mp4?dl=1",
@@ -100,7 +84,25 @@
       "year": "2022",
       "title": "Discover Metal 3",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10066"
+    },
+    {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:46.317Z"
+  "extractedAt": "2026-10-11T16:39:27.228Z"
 }

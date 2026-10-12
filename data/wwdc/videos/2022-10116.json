@@ -92,34 +92,30 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "CKTool JS",
         "url": "https://developer.apple.com/documentation/CKToolJS"
       },
       {
         "title": "Integrating a Text-Based Schema into Your Workflow",
         "url": "https://developer.apple.com/documentation/CloudKit/integrating-a-text-based-schema-into-your-workflow"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10116/5/1DD917FC-5154-4B41-93E7-4D8731FB6D2E/downloads/wwdc2022-10116_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10116/5/1DD917FC-5154-4B41-93E7-4D8731FB6D2E/downloads/wwdc2022-10116_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110831",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110831"
+    },
+    {
+      "id": "110834",
+      "year": "2022",
+      "title": "Q&A: CloudKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110834"
+    },
     {
       "id": "10115",
       "year": "2022",
@@ -139,5 +135,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10117"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:21.749Z"
+  "extractedAt": "2026-10-11T16:40:20.200Z"
 }

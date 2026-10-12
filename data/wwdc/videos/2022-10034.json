@@ -18,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Apple Design Resources",
-        "url": "https://developer.apple.com/design/resources/"
-      },
-      {
         "title": "Human Interface Guidelines: Right to left",
         "url": "https://developer.apple.com/design/human-interface-guidelines/right-to-left"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Apple Design Resources",
+        "url": "https://developer.apple.com/design/resources/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10034/4/09670B48-23F9-4B12-87A7-05A34F146625/downloads/wwdc2022-10034_hd.mp4?dl=1",
@@ -71,11 +55,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110381"
     },
     {
+      "id": "110540",
+      "year": "2022",
+      "title": "Q&A: Internationalization and localization",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110540"
+    },
+    {
+      "id": "110813",
+      "year": "2022",
+      "title": "Q&A: Right-to-left",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110813"
+    },
+    {
       "id": "110931",
       "year": "2022",
       "title": "WWDC22 Day 3 recap",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110931"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:12.659Z"
+  "extractedAt": "2026-10-11T16:41:10.504Z"
 }

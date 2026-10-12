@@ -15,26 +15,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2014/603xx33n8igr5n1/603/603_hd_working_with_metal_overview.mov?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2014/603xx33n8igr5n1/603/603_sd_working_with_metal_overview.mov?dl=1"
   },
-  "extractedAt": "2025-07-18T10:37:31.851Z"
+  "extractedAt": "2026-10-11T16:49:19.956Z"
 }

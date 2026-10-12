@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,28 +26,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Programming Languages",
         "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
       },
       {
         "title": "SwiftData",
         "url": "https://developer.apple.com/documentation/SwiftData"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10138/4/A149C0AB-2AB1-48C1-B259-4D5621873D5F/downloads/wwdc2024-10138_hd.mp4?dl=1",
@@ -60,5 +45,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10075"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:59.985Z"
+  "extractedAt": "2026-10-11T16:34:52.305Z"
 }

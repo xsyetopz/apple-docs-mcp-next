@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core ML",
-        "url": "https://developer.apple.com/documentation/CoreML"
-      },
-      {
         "title": "Forum: Machine Learning and AI",
         "url": "https://developer.apple.com/forums/topics/machine-learning-and-ai?cid=vf-a-0010"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core ML",
+        "url": "https://developer.apple.com/documentation/CoreML"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10161/4/47C857D9-30F3-4FA6-AD90-26916A33426D/downloads/wwdc2024-10161_hd.mp4?dl=1",
@@ -58,5 +42,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10047"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:27.713Z"
+  "extractedAt": "2026-10-11T16:34:52.908Z"
 }

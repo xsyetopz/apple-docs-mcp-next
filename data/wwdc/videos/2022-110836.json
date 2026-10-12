@@ -1,0 +1,31 @@
+{
+  "id": "110836",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110836/",
+  "title": "Q&A: Core Data",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "System Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10120",
+      "year": "2022",
+      "title": "Evolve your Core Data schema",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10120"
+    },
+    {
+      "id": "10119",
+      "year": "2022",
+      "title": "Optimize your use of Core Data and CloudKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10119"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:04.458Z"
+}

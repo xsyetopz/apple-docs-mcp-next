@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -91,36 +92,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "INStartCallIntent",
+        "url": "https://developer.apple.com/documentation/Intents/INStartCallIntent"
       },
       {
         "title": "INSendMessageIntent",
         "url": "https://developer.apple.com/documentation/Intents/INSendMessageIntent"
       },
       {
-        "title": "INStartCallIntent",
-        "url": "https://developer.apple.com/documentation/Intents/INStartCallIntent"
-      },
-      {
-        "title": "SiriKit",
-        "url": "https://developer.apple.com/documentation/SiriKit"
-      },
-      {
         "title": "User Notifications",
         "url": "https://developer.apple.com/documentation/UserNotifications"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "SiriKit",
+        "url": "https://developer.apple.com/documentation/SiriKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10091/4/A4152468-BE8D-45E4-BB60-043AC7854981/downloads/wwdc2021-10091_hd.mp4?dl=1",
@@ -134,5 +119,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10231"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:57.332Z"
+  "extractedAt": "2026-10-11T16:43:33.189Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -61,40 +62,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accessibility updates",
-        "url": "https://developer.apple.com/documentation/Updates/Accessibility"
+        "title": "Forum: Accessibility & Inclusion",
+        "url": "https://developer.apple.com/forums/topics/accessibility-and-inclusion?cid=vf-a-0010"
       },
       {
         "title": "Enhancing the accessibility of your SwiftUI app",
         "url": "https://developer.apple.com/documentation/Accessibility/enhancing-the-accessibility-of-your-swiftui-app"
       },
       {
-        "title": "Forum: Accessibility & Inclusion",
-        "url": "https://developer.apple.com/forums/topics/accessibility-and-inclusion?cid=vf-a-0010"
-      },
-      {
         "title": "Performing accessibility testing for your app",
         "url": "https://developer.apple.com/documentation/Accessibility/performing-accessibility-testing-for-your-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accessibility updates",
+        "url": "https://developer.apple.com/documentation/Updates/Accessibility"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10073/5/769C76D4-F43B-4E18-A6DB-1E3F3A4A8648/downloads/wwdc2024-10073_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10073/5/769C76D4-F43B-4E18-A6DB-1E3F3A4A8648/downloads/wwdc2024-10073_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:07:36.099Z"
+  "extractedAt": "2026-10-11T16:34:51.965Z"
 }

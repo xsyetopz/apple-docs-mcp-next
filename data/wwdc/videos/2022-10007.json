@@ -17,20 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "environment",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/environment"
-      },
-      {
         "title": "Get Notification History",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Get-Notification-History"
       },
       {
         "title": "Get Test Notification Status",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Get-Test-Notification-Status"
+      },
+      {
+        "title": "Request a Test Notification",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Request-a-Test-Notification"
       },
       {
         "title": "Get Transaction History",
@@ -41,20 +37,8 @@
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/recentSubscriptionStartDate"
       },
       {
-        "title": "Request a Test Notification",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Request-a-Test-Notification"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "environment",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/environment"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10007/4/2E07F67B-3E73-4DC2-A300-93EB4AF56295/downloads/wwdc2022-10007_hd.mp4?dl=1",
@@ -92,6 +76,18 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110404"
     },
     {
+      "id": "110758",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110758"
+    },
+    {
+      "id": "110759",
+      "year": "2022",
+      "title": "Q&A: StoreKit and in-app purchases",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110759"
+    },
+    {
       "id": "10039",
       "year": "2022",
       "title": "What's new in StoreKit testing",
@@ -116,5 +112,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10175"
     }
   ],
-  "extractedAt": "2025-07-18T09:19:17.715Z"
+  "extractedAt": "2026-10-11T16:39:36.544Z"
 }

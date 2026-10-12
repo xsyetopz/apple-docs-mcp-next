@@ -17,36 +17,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accessing the camera while multitasking",
-        "url": "https://developer.apple.com/documentation/avkit/accessing_the_camera_while_multitasking"
+        "title": "TN3121: Selecting a pixel format for an AVCaptureVideoDataOutput",
+        "url": "https://developer.apple.com/documentation/Technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput"
       },
       {
         "title": "Adopting Picture in Picture for video calls",
         "url": "https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-for-video-calls"
       },
       {
+        "title": "Accessing the camera while multitasking",
+        "url": "https://developer.apple.com/documentation/avkit/accessing_the_camera_while_multitasking"
+      },
+      {
         "title": "Capture setup",
         "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
-      },
-      {
-        "title": "TN3121: Selecting a pixel format for an AVCaptureVideoDataOutput",
-        "url": "https://developer.apple.com/documentation/Technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110429/4/60E4BC61-632F-484F-AF90-EA3203042E76/downloads/wwdc2022-110429_hd.mp4?dl=1",
@@ -72,6 +56,24 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10018"
     },
     {
+      "id": "110962",
+      "year": "2022",
+      "title": "Meet the Presenter: Discover advancements in iOS camera capture",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110962"
+    },
+    {
+      "id": "110959",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110959"
+    },
+    {
+      "id": "110960",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110960"
+    },
+    {
       "id": "110931",
       "year": "2022",
       "title": "WWDC22 Day 3 recap",
@@ -84,5 +86,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10047"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:36.191Z"
+  "extractedAt": "2026-10-11T16:40:15.975Z"
 }

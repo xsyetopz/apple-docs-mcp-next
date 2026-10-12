@@ -18,26 +18,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "App Store Server API changelog",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/app-store-server-api-changelog"
-      },
-      {
-        "title": "App Store Server Notifications changelog",
-        "url": "https://developer.apple.com/documentation/AppStoreServerNotifications/app-store-server-notifications-changelog"
-      },
-      {
-        "title": "Generating JSON Web Tokens for API requests",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/generating-json-web-tokens-for-api-requests"
-      },
-      {
-        "title": "Get Transaction Info",
-        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Get-Transaction-Info"
-      },
-      {
         "title": "onlyFailures",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI/onlyFailures"
       },
@@ -46,16 +26,20 @@
         "url": "https://developer.apple.com/documentation/AppStoreServerNotifications/status"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Get Transaction Info",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/Get-Transaction-Info"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "App Store Server Notifications changelog",
+        "url": "https://developer.apple.com/documentation/AppStoreServerNotifications/app-store-server-notifications-changelog"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Store Server API changelog",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/app-store-server-api-changelog"
+      },
+      {
+        "title": "Generating JSON Web Tokens for API requests",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI/generating-json-web-tokens-for-api-requests"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10141/4/D21B22C2-4C48-48FB-93A7-3B2712DBBDD9/downloads/wwdc2023-10141_hd.mp4?dl=1",
@@ -87,5 +71,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10007"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:38.530Z"
+  "extractedAt": "2026-10-11T16:37:16.013Z"
 }

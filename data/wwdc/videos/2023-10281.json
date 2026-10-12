@@ -49,40 +49,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding a search interface to your app",
         "url": "https://developer.apple.com/documentation/SwiftUI/Adding-a-search-interface-to-your-app"
-      },
-      {
-        "title": "Adjusting your layout with keyboard layout guide",
-        "url": "https://developer.apple.com/documentation/UIKit/adjusting-your-layout-with-keyboard-layout-guide"
       },
       {
         "title": "FocusState",
         "url": "https://developer.apple.com/documentation/SwiftUI/FocusState"
       },
       {
-        "title": "Human Interface Guidelines: Keyboards",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards"
-      },
-      {
         "title": "SafeAreaRegions",
         "url": "https://developer.apple.com/documentation/SwiftUI/SafeAreaRegions"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Human Interface Guidelines: Keyboards",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adjusting your layout with keyboard layout guide",
+        "url": "https://developer.apple.com/documentation/UIKit/adjusting-your-layout-with-keyboard-layout-guide"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10281/5/28D03695-D3A4-41FB-9F95-B97A11BF249B/downloads/wwdc2023-10281_hd.mp4?dl=1",
@@ -102,5 +86,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10259"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:10.243Z"
+  "extractedAt": "2026-10-11T16:38:51.818Z"
 }

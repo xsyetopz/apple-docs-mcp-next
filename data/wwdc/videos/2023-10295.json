@@ -1,0 +1,25 @@
+{
+  "id": "10295",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10295/",
+  "title": "Meet the presenters: What’s new in Xcode",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10165",
+      "year": "2023",
+      "title": "What’s new in Xcode 15",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10165"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:51.272Z"
+}

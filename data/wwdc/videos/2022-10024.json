@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10024/3/9BD19E63-1BFD-49E9-A941-5CA5A937682C/downloads/wwdc2022-10024_hd.mp4?dl=1",
@@ -46,6 +31,12 @@
       "year": "2022",
       "title": "Capture machine-readable codes and text with VisionKit",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10025"
+    },
+    {
+      "id": "110905",
+      "year": "2022",
+      "title": "Q&A: Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110905"
     },
     {
       "id": "110932",
@@ -60,5 +51,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10040"
     }
   ],
-  "extractedAt": "2025-07-18T10:24:12.516Z"
+  "extractedAt": "2026-10-11T16:41:24.784Z"
 }

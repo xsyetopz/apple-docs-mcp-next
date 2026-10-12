@@ -17,28 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Alerts",
         "url": "https://developer.apple.com/design/Human-Interface-Guidelines/alerts"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Apple Design Site",
+        "url": "https://developer.apple.com/design/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/813vq78d4cyc3/813/813_hd_writing_great_alerts.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/813vq78d4cyc3/813/813_sd_writing_great_alerts.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:38:52.481Z"
+  "extractedAt": "2026-10-11T16:48:51.626Z"
 }

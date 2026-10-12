@@ -1,8 +1,9 @@
 {
   "id": "accessibility-inclusion",
   "name": "Accessibility & Inclusion",
-  "videoCount": 57,
+  "videoCount": 86,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -14,6 +15,89 @@
     "2017"
   ],
   "videos": [
+    {
+      "id": "8005",
+      "year": "2026",
+      "title": "Accessibility Technologies Group Lab",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8005/",
+      "dataFile": "videos/2026-8005.json"
+    },
+    {
+      "id": "256",
+      "year": "2026",
+      "title": "Discover generated subtitles and subtitle styles",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/256/",
+      "dataFile": "videos/2026-256.json"
+    },
+    {
+      "id": "219",
+      "year": "2026",
+      "title": "Enhance the accessibility of your reading app",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/219/",
+      "dataFile": "videos/2026-219.json"
+    },
+    {
+      "id": "221",
+      "year": "2026",
+      "title": "Prepare your tvOS apps for Dynamic Type",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/221/",
+      "dataFile": "videos/2026-221.json"
+    },
+    {
+      "id": "250",
+      "year": "2026",
+      "title": "Principles of great design",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/250/",
+      "dataFile": "videos/2026-250.json"
+    },
+    {
+      "id": "220",
+      "year": "2026",
+      "title": "Refine accessibility for custom controls",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/220/",
+      "dataFile": "videos/2026-220.json"
+    },
     {
       "id": "238",
       "year": "2025",
@@ -73,7 +157,8 @@
       "year": "2024",
       "title": "Catch up on accessibility in SwiftUI",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -86,7 +171,8 @@
       "year": "2024",
       "title": "Get started with Dynamic Type",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -108,11 +194,25 @@
       "dataFile": "videos/2023-10036.json"
     },
     {
+      "id": "111306",
+      "year": "2023",
+      "title": "Community panel: What has the iPhone meant to people with disabilities?",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111306/",
+      "dataFile": "videos/2023-111306.json"
+    },
+    {
       "id": "10034",
       "year": "2023",
       "title": "Create accessible spatial experiences",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -126,7 +226,8 @@
       "title": "Design considerations for vision and motion",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -161,6 +262,72 @@
       "dataFile": "videos/2023-10032.json"
     },
     {
+      "id": "111302",
+      "year": "2023",
+      "title": "Meet the presenter: Build accessible apps with SwiftUI and UIKit",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111302/",
+      "dataFile": "videos/2023-111302.json"
+    },
+    {
+      "id": "111301",
+      "year": "2023",
+      "title": "Meet the presenter: Extend Speech Synthesis with personal and custom voices",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111301/",
+      "dataFile": "videos/2023-111301.json"
+    },
+    {
+      "id": "111300",
+      "year": "2023",
+      "title": "Meet the presenter: Meet Assistive Access",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111300/",
+      "dataFile": "videos/2023-111300.json"
+    },
+    {
+      "id": "111303",
+      "year": "2023",
+      "title": "Meet the presenter: Perform accessibility audits for your app",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111303/",
+      "dataFile": "videos/2023-111303.json"
+    },
+    {
+      "id": "111304",
+      "year": "2023",
+      "title": "Meet the presenters: Create accessible spatial experiences",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111304/",
+      "dataFile": "videos/2023-111304.json"
+    },
+    {
       "id": "10035",
       "year": "2023",
       "title": "Perform accessibility audits for your app",
@@ -175,17 +342,88 @@
       "dataFile": "videos/2023-10035.json"
     },
     {
+      "id": "111216",
+      "year": "2023",
+      "title": "Q&A: Accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111216/",
+      "dataFile": "videos/2023-111216.json"
+    },
+    {
+      "id": "111217",
+      "year": "2023",
+      "title": "Q&A: Accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111217/",
+      "dataFile": "videos/2023-111217.json"
+    },
+    {
+      "id": "10334",
+      "year": "2023",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10334/",
+      "dataFile": "videos/2023-10334.json"
+    },
+    {
       "id": "10153",
       "year": "2023",
       "title": "Unlock the power of grammatical agreement",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2023/10153/",
       "dataFile": "videos/2023-10153.json"
+    },
+    {
+      "id": "110421",
+      "year": "2022",
+      "title": "Accessibility community panel",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110421/",
+      "dataFile": "videos/2022-110421.json"
+    },
+    {
+      "id": "110420",
+      "year": "2022",
+      "title": "Accessibility icebreaker",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110420/",
+      "dataFile": "videos/2022-110420.json"
     },
     {
       "id": "10151",
@@ -206,7 +444,8 @@
       "year": "2022",
       "title": "Build global apps: Localization by example",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -221,7 +460,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -262,13 +502,86 @@
       "year": "2022",
       "title": "Get it right (to left)",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10107/",
       "dataFile": "videos/2022-10107.json"
+    },
+    {
+      "id": "110422",
+      "year": "2022",
+      "title": "Meet the Presenter: Add accessibility to your Unity games",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110422/",
+      "dataFile": "videos/2022-110422.json"
+    },
+    {
+      "id": "110658",
+      "year": "2022",
+      "title": "Meet the Presenter: Add Apple frameworks to your Unity game projects",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Audio & Video",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110658/",
+      "dataFile": "videos/2022-110658.json"
+    },
+    {
+      "id": "110425",
+      "year": "2022",
+      "title": "Meet the Presenter: Create accessible Single App Mode experiences",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110425/",
+      "dataFile": "videos/2022-110425.json"
+    },
+    {
+      "id": "110424",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in web accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Essentials",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110424/",
+      "dataFile": "videos/2022-110424.json"
+    },
+    {
+      "id": "110532",
+      "year": "2022",
+      "title": "Meet the Presenter: Writing for interfaces",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110532/",
+      "dataFile": "videos/2022-110532.json"
     },
     {
       "id": "10065",
@@ -285,12 +598,100 @@
       "dataFile": "videos/2022-10065.json"
     },
     {
+      "id": "110418",
+      "year": "2022",
+      "title": "Q&A: Accessibility in SwiftUI",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110418/",
+      "dataFile": "videos/2022-110418.json"
+    },
+    {
+      "id": "110419",
+      "year": "2022",
+      "title": "Q&A: Accessibility in UIKit and AppKit",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110419/",
+      "dataFile": "videos/2022-110419.json"
+    },
+    {
+      "id": "110530",
+      "year": "2022",
+      "title": "Q&A: Human Interface Guidelines",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110530/",
+      "dataFile": "videos/2022-110530.json"
+    },
+    {
+      "id": "110540",
+      "year": "2022",
+      "title": "Q&A: Internationalization and localization",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110540/",
+      "dataFile": "videos/2022-110540.json"
+    },
+    {
+      "id": "110813",
+      "year": "2022",
+      "title": "Q&A: Right-to-left",
+      "topics": [
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110813/",
+      "dataFile": "videos/2022-110813.json"
+    },
+    {
+      "id": "110456",
+      "year": "2022",
+      "title": "Study Hall: Learn Switch Control through gaming",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110456/",
+      "dataFile": "videos/2022-110456.json"
+    },
+    {
       "id": "10153",
       "year": "2022",
       "title": "What's new in web accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -344,7 +745,8 @@
       "year": "2021",
       "title": "Create accessible experiences for watchOS",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -371,7 +773,8 @@
       "title": "Localize your SwiftUI app",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -385,7 +788,9 @@
       "title": "Streamline your localized strings",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -411,7 +816,8 @@
       "year": "2021",
       "title": "SwiftUI Accessibility: Beyond the basics",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -455,7 +861,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -468,7 +875,8 @@
       "year": "2021",
       "title": "Your guide to keyboard layout",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -494,7 +902,8 @@
       "year": "2020",
       "title": "Accessibility design for Mac Catalyst",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -508,7 +917,8 @@
       "title": "App accessibility for Switch Control",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -536,7 +946,8 @@
       "title": "Build location-aware enterprise apps",
       "topics": [
         "Accessibility & Inclusion",
-        "Business & Education"
+        "Business & Education",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": true,
@@ -576,7 +987,8 @@
       "title": "Make your app visually accessible",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -589,7 +1001,8 @@
       "year": "2020",
       "title": "Swan's Quest, Chapter 1: Voices in the dark",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -602,7 +1015,8 @@
       "year": "2020",
       "title": "Swift packages: Resources and localization",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -628,7 +1042,8 @@
       "year": "2019",
       "title": "Accessibility in SwiftUI",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -642,7 +1057,8 @@
       "title": "Accessibility Inspector",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -651,11 +1067,25 @@
       "dataFile": "videos/2019-257.json"
     },
     {
+      "id": "201",
+      "year": "2019",
+      "title": "Accessibility Lessons",
+      "topics": [
+        "Accessibility & Inclusion"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/201/",
+      "dataFile": "videos/2019-201.json"
+    },
+    {
       "id": "248",
       "year": "2019",
       "title": "Creating an Accessible Reading Experience",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -681,7 +1111,8 @@
       "year": "2019",
       "title": "Large Content Viewer - Ensuring Readability for Everyone",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -694,7 +1125,8 @@
       "year": "2019",
       "title": "Making Apps More Accessible With Custom Actions",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -708,7 +1140,8 @@
       "title": "Visual Design and Accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -721,7 +1154,8 @@
       "year": "2019",
       "title": "Writing Great Accessibility Labels",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -774,7 +1208,8 @@
       "year": "2017",
       "title": "Localization Best Practices on tvOS",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,

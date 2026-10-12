@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -97,36 +98,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Destination Video",
-        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
+        "title": "Enhancing your app’s content with tab navigation",
+        "url": "https://developer.apple.com/documentation/SwiftUI/Enhancing-your-app-content-with-tab-navigation"
       },
       {
         "title": "Elevating your iPad app with a tab bar and sidebar",
         "url": "https://developer.apple.com/documentation/UIKit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar"
       },
       {
-        "title": "Enhancing your app’s content with tab navigation",
-        "url": "https://developer.apple.com/documentation/SwiftUI/Enhancing-your-app-content-with-tab-navigation"
-      },
-      {
         "title": "Forum: UI Frameworks",
         "url": "https://developer.apple.com/forums/topics/ui-frameworks?cid=vf-a-0010"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Destination Video",
+        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10147/4/4B3986F3-DBA0-4C52-8A2E-783346D6D1BA/downloads/wwdc2024-10147_hd.mp4?dl=1",
@@ -146,5 +131,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10206"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:30.619Z"
+  "extractedAt": "2026-10-11T16:34:42.284Z"
 }

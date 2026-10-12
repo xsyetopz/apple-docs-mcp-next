@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -103,28 +104,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Objective-C and C Code Customization",
         "url": "https://developer.apple.com/documentation/Swift/objective-c-and-c-code-customization"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10680/6/733DC040-9073-4427-B411-BBF7BEE212B4/wwdc2020_10680_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10680/6/733DC040-9073-4427-B411-BBF7BEE212B4/wwdc2020_10680_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:44:14.438Z"
+  "relatedVideos": [
+    {
+      "id": "415",
+      "year": "2018",
+      "title": "Behind the Scenes of the Xcode Build Process",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/415"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:46:36.383Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -109,32 +110,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for tvOS",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
-      },
-      {
         "title": "UISearchController",
         "url": "https://developer.apple.com/documentation/UIKit/UISearchController"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Designing for tvOS",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10634/4/F7B5D94B-69EE-4ABC-86AF-2354D9C93060/wwdc2020_10634_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10634/4/F7B5D94B-69EE-4ABC-86AF-2354D9C93060/wwdc2020_10634_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:25:24.258Z"
+  "extractedAt": "2026-10-11T16:46:32.411Z"
 }

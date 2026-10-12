@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Providing Hands-Free App Control with Intents",
+        "url": "https://developer.apple.com/documentation/SiriKit/providing-hands-free-app-control-with-intents"
       },
       {
         "title": "Adding Shortcuts for Wind Down",
         "url": "https://developer.apple.com/documentation/SiriKit/adding-shortcuts-for-wind-down"
       },
       {
-        "title": "Providing Hands-Free App Control with Intents",
-        "url": "https://developer.apple.com/documentation/SiriKit/providing-hands-free-app-control-with-intents"
-      },
-      {
         "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
         "url": "https://developer.apple.com/documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10068/6/21534713-4524-4D0D-B555-7E3C2D960F96/wwdc2020_10068_hd.mp4?dl=1",
@@ -140,5 +124,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10028"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:27.371Z"
+  "extractedAt": "2026-10-11T16:44:58.626Z"
 }

@@ -61,8 +61,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "UIFindInteraction",
+        "url": "https://developer.apple.com/documentation/UIKit/UIFindInteraction"
+      },
+      {
+        "title": "UIEditMenuInteraction",
+        "url": "https://developer.apple.com/documentation/UIKit/UIEditMenuInteraction"
       },
       {
         "title": "Building a desktop-class iPad app",
@@ -71,26 +75,6 @@
       {
         "title": "Supporting desktop-class features in your iPad app",
         "url": "https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app"
-      },
-      {
-        "title": "UIEditMenuInteraction",
-        "url": "https://developer.apple.com/documentation/UIKit/UIEditMenuInteraction"
-      },
-      {
-        "title": "UIFindInteraction",
-        "url": "https://developer.apple.com/documentation/UIKit/UIFindInteraction"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10071/4/A7198C26-97D7-49C3-8FE7-907808F342DE/downloads/wwdc2022-10071_hd.mp4?dl=1",
@@ -108,6 +92,30 @@
       "year": "2022",
       "title": "Meet desktop-class iPad",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10069"
+    },
+    {
+      "id": "110909",
+      "year": "2022",
+      "title": "Meet the Presenter: Adopt desktop-class editing interactions",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110909"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830"
+    },
+    {
+      "id": "110811",
+      "year": "2022",
+      "title": "Study Hall: Toolbar transformation Tuesday",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110811"
     },
     {
       "id": "10068",
@@ -128,5 +136,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/235"
     }
   ],
-  "extractedAt": "2025-07-18T10:53:48.458Z"
+  "extractedAt": "2026-10-11T16:39:18.686Z"
 }

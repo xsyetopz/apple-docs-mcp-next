@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Graphics & Games"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,24 +16,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/412g1eatropvik82vk/412/412_hd_debugging_in_xcode_11.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/412g1eatropvik82vk/412/412_sd_debugging_in_xcode_11.mp4?dl=1"
   },
@@ -62,5 +46,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/401"
     }
   ],
-  "extractedAt": "2025-07-18T10:17:15.854Z"
+  "extractedAt": "2026-10-11T16:47:53.592Z"
 }

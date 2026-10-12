@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Implementing User Authentication with Sign in with Apple",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/706sgor5wzq9m15o2r0/706/706_hd_introducing_sign_in_with_apple.mp4?dl=1",
@@ -91,5 +75,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/516"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:48.360Z"
+  "extractedAt": "2026-10-11T16:47:10.163Z"
 }

@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Establishing your app’s integrity",
         "url": "https://developer.apple.com/documentation/DeviceCheck/establishing-your-app-s-integrity"
       },
       {
         "title": "Validating apps that connect to your server",
         "url": "https://developer.apple.com/documentation/DeviceCheck/validating-apps-that-connect-to-your-server"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10110/4/6F66F9D8-DC2E-40C0-8C90-90FD8375D0B9/downloads/wwdc2021-10110_hd.mp4?dl=1",
@@ -64,5 +48,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/706"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:17.735Z"
+  "extractedAt": "2026-10-11T16:44:25.835Z"
 }

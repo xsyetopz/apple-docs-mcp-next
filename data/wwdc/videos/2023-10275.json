@@ -31,28 +31,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Media playback",
         "url": "https://developer.apple.com/documentation/AVFoundation/media-playback"
       },
       {
         "title": "Supporting AirPlay in your app",
         "url": "https://developer.apple.com/documentation/AVFoundation/supporting-airplay-in-your-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10275/5/9AAAFD03-718B-497E-8A61-C0B00CC14513/downloads/wwdc2023-10275_hd.mp4?dl=1",
@@ -66,5 +50,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10238"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:41.742Z"
+  "extractedAt": "2026-10-11T16:38:24.154Z"
 }

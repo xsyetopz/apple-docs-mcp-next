@@ -8,7 +8,9 @@
   "topics": [
     "Business & Education",
     "Developer Tools",
-    "Essentials"
+    "Essentials",
+    "Health & Fitness",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,24 +69,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110348/5/EF06F7AC-5379-4AFF-A0AB-FD1413B78098/downloads/wwdc2022-110348_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110348/5/EF06F7AC-5379-4AFF-A0AB-FD1413B78098/downloads/wwdc2022-110348_sd.mp4?dl=1"
   },
@@ -94,7 +79,19 @@
       "year": "2022",
       "title": "Create engaging content for Swift Playgrounds",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110349"
+    },
+    {
+      "id": "110506",
+      "year": "2022",
+      "title": "Meet the Presenter: Build your first app in Swift Playgrounds",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110506"
+    },
+    {
+      "id": "110490",
+      "year": "2022",
+      "title": "Q&A: Swift Playgrounds",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110490"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:52.067Z"
+  "extractedAt": "2026-10-11T16:39:20.380Z"
 }

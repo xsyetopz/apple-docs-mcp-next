@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -61,24 +62,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Creating a 3D application with Hydra rendering",
+        "title": "Creating a 3D application with hydra rendering",
         "url": "https://developer.apple.com/documentation/Metal/creating-a-3d-application-with-hydra-rendering"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10141/4/31DD4CF1-C4A2-4A5C-A3C8-B231788AE125/downloads/wwdc2022-10141_hd.mp4?dl=1",
@@ -122,5 +107,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10601"
     }
   ],
-  "extractedAt": "2025-07-18T10:30:42.756Z"
+  "extractedAt": "2026-10-11T16:40:18.141Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Human Interface Guidelines: Designing for macOS",
-        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-macos"
+        "title": "Supporting desktop-class features in your iPad app",
+        "url": "https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app"
       },
       {
         "title": "Human Interface Guidelines: Mac Catalyst",
         "url": "https://developer.apple.com/design/human-interface-guidelines/mac-catalyst"
       },
       {
-        "title": "Supporting desktop-class features in your iPad app",
-        "url": "https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Human Interface Guidelines: Designing for macOS",
+        "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-macos"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10076/6/DC2BEEAC-6D3F-40B0-B9A7-0C46031B0C91/downloads/wwdc2022-10076_hd.mp4?dl=1",
@@ -62,6 +47,30 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10069"
     },
     {
+      "id": "110839",
+      "year": "2022",
+      "title": "Meet the Presenter: Bring your iOS app to the Mac",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110839"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830"
+    },
+    {
+      "id": "110812",
+      "year": "2022",
+      "title": "Study Hall: Go big or go home",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110812"
+    },
+    {
       "id": "10094",
       "year": "2020",
       "title": "Handle trackpad and mouse input",
@@ -74,5 +83,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10109"
     }
   ],
-  "extractedAt": "2025-07-18T10:22:34.750Z"
+  "extractedAt": "2026-10-11T16:40:11.924Z"
 }

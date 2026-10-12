@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Essentials"
+    "Essentials",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -140,32 +141,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Programming Languages",
-        "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
+        "title": "Wrapping C/C++ Library in Swift",
+        "url": "https://www.swift.org/documentation/articles/wrapping-c-cpp-library-in-swift.html"
       },
       {
         "title": "Value and Reference types",
         "url": "https://www.swift.org/documentation/articles/value-and-reference-types.html"
       },
       {
-        "title": "Wrapping C/C++ Library in Swift",
-        "url": "https://www.swift.org/documentation/articles/wrapping-c-cpp-library-in-swift.html"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: Programming Languages",
+        "url": "https://developer.apple.com/forums/topics/programming-languages-topic?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10184/4/9805A8C3-1B6A-43C6-AA4B-C8A8FBBECE62/downloads/wwdc2024-10184_hd.mp4?dl=1",
@@ -209,5 +194,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10253"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:03.388Z"
+  "extractedAt": "2026-10-11T16:34:50.504Z"
 }

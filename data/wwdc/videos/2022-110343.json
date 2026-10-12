@@ -121,10 +121,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Configure your apps navigation titles",
         "url": "https://developer.apple.com/documentation/SwiftUI/Configure-Your-Apps-Navigation-Titles"
       },
@@ -143,18 +139,6 @@
       {
         "title": "ToolbarRole",
         "url": "https://developer.apple.com/documentation/SwiftUI/ToolbarRole"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110343/4/61E55FAE-4837-4DAF-912C-8D101B7DF820/downloads/wwdc2022-110343_hd.mp4?dl=1",
@@ -192,5 +176,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10009"
     }
   ],
-  "extractedAt": "2025-07-18T10:53:37.317Z"
+  "extractedAt": "2026-10-11T16:41:20.480Z"
 }

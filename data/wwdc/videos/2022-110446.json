@@ -1,0 +1,37 @@
+{
+  "id": "110446",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110446/",
+  "title": "Q&A: Apple Watch development",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10133",
+      "year": "2022",
+      "title": "Build a productivity app for Apple Watch",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10133"
+    },
+    {
+      "id": "10135",
+      "year": "2022",
+      "title": "Get timely alerts from Bluetooth devices on watchOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10135"
+    },
+    {
+      "id": "10051",
+      "year": "2022",
+      "title": "Go further with Complications in WidgetKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10051"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:43.065Z"
+}

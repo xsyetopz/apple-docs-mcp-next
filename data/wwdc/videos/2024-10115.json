@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -31,36 +32,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Enabling video reflections in an immersive environment",
+        "url": "https://developer.apple.com/documentation/visionOS/enabling-video-reflections-in-an-immersive-environment"
       },
       {
         "title": "Building an immersive media viewing experience",
         "url": "https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience"
       },
       {
-        "title": "Destination Video",
-        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
-      },
-      {
-        "title": "Enabling video reflections in an immersive environment",
-        "url": "https://developer.apple.com/documentation/visionOS/enabling-video-reflections-in-an-immersive-environment"
-      },
-      {
         "title": "Forum: Media Technologies",
         "url": "https://developer.apple.com/forums/topics/media-technologies?cid=vf-a-0010"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Destination Video",
+        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10115/4/6A9F8C82-702C-4646-8039-A898373DFDAD/downloads/wwdc2024-10115_hd.mp4?dl=1",
@@ -86,5 +71,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/111801"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:05.856Z"
+  "extractedAt": "2026-10-11T16:34:53.891Z"
 }

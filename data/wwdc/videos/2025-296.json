@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -103,8 +104,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Playing immersive media with RealityKit",
+        "url": "https://developer.apple.com/documentation/visionOS/playing-immersive-media-with-realitykit"
+      },
+      {
+        "title": "Playing immersive media with AVKit",
+        "url": "https://developer.apple.com/documentation/AVKit/playing-immersive-media-with-avkit"
+      },
+      {
+        "title": "RealityKit",
+        "url": "https://developer.apple.com/documentation/RealityKit"
       },
       {
         "title": "AVFoundation",
@@ -113,30 +122,6 @@
       {
         "title": "AVKit",
         "url": "https://developer.apple.com/documentation/AVKit"
-      },
-      {
-        "title": "Playing immersive media with AVKit",
-        "url": "https://developer.apple.com/documentation/AVKit/playing-immersive-media-with-avkit"
-      },
-      {
-        "title": "Playing immersive media with RealityKit",
-        "url": "https://developer.apple.com/documentation/visionOS/playing-immersive-media-with-realitykit"
-      },
-      {
-        "title": "RealityKit",
-        "url": "https://developer.apple.com/documentation/RealityKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/296/4/5953ed86-1de9-408e-9d39-2efe18da426b/downloads/wwdc2025-296_hd.mp4?dl=1",
@@ -180,5 +165,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10081"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:42.713Z"
+  "extractedAt": "2026-10-11T16:34:20.514Z"
 }

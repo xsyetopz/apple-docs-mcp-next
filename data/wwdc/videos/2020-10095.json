@@ -73,28 +73,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Implementing Alert Push Notifications",
-        "url": "https://developer.apple.com/documentation/UserNotifications/implementing-alert-push-notifications"
-      },
-      {
         "title": "Implementing Background Push Notifications",
         "url": "https://developer.apple.com/documentation/UserNotifications/implementing-background-push-notifications"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Implementing Alert Push Notifications",
+        "url": "https://developer.apple.com/documentation/UserNotifications/implementing-alert-push-notifications"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10095/3/ED74BA77-B586-4360-B7A1-ABA71109064A/wwdc2020_10095_hd.mp4?dl=1",
@@ -106,7 +90,13 @@
       "year": "2023",
       "title": "Meet Push Notifications Console",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10025"
+    },
+    {
+      "id": "806",
+      "year": "2018",
+      "title": "Designing Notifications",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/806"
     }
   ],
-  "extractedAt": "2025-07-18T11:03:37.564Z"
+  "extractedAt": "2026-10-11T16:45:55.416Z"
 }

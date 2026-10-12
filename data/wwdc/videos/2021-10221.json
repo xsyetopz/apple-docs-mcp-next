@@ -7,7 +7,9 @@
   "duration": "",
   "topics": [
     "Accessibility & Inclusion",
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -140,24 +142,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Localization",
         "url": "https://developer.apple.com/documentation/Xcode/localization"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10221/4/E712C2D5-BD11-435B-8F19-C4ACFD79160A/downloads/wwdc2021-10221_hd.mp4?dl=1",
@@ -201,5 +187,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/403"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:55.274Z"
+  "extractedAt": "2026-10-11T16:44:26.198Z"
 }

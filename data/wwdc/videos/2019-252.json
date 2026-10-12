@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/252ogueb17a2lv/252/252_hd_advances_in_carplay_systems.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/252ogueb17a2lv/252/252_sd_advances_in_carplay_systems.mp4?dl=1"
   },
@@ -62,5 +45,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/723"
     }
   ],
-  "extractedAt": "2025-07-18T09:18:03.418Z"
+  "extractedAt": "2026-10-11T16:47:00.428Z"
 }

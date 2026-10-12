@@ -1,0 +1,25 @@
+{
+  "id": "110444",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110444/",
+  "title": "Q&A: App Clips",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10097",
+      "year": "2022",
+      "title": "What's new in App Clips",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10097"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:35.636Z"
+}

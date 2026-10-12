@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -65,24 +66,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10161/4/8290EAC4-2BB0-4766-AABF-FEC196606758/downloads/wwdc2023-10161_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10161/4/8290EAC4-2BB0-4766-AABF-FEC196606758/downloads/wwdc2023-10161_sd.mp4?dl=1"
   },
@@ -94,5 +78,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10148"
     }
   ],
-  "extractedAt": "2025-07-18T10:21:22.900Z"
+  "extractedAt": "2026-10-11T16:37:09.053Z"
 }

@@ -44,24 +44,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "NSUserActivity",
         "url": "https://developer.apple.com/documentation/Foundation/NSUserActivity"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10264/3/A5939C70-9333-4792-A9D5-A98FF6347D4C/downloads/wwdc2021-10264_hd.mp4?dl=1",
@@ -75,5 +59,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/211"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:29.192Z"
+  "extractedAt": "2026-10-11T16:42:46.850Z"
 }

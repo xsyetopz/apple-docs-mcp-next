@@ -25,24 +25,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Diagnosing issues using crash reports and device logs",
         "url": "https://developer.apple.com/documentation/Xcode/diagnosing-issues-using-crash-reports-and-device-logs"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10203/7/1A8E1E96-00E5-4E9C-B392-6A2AE2AED9ED/downloads/wwdc2021-10203_hd.mp4?dl=1",
@@ -74,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/414"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:20.581Z"
+  "extractedAt": "2026-10-11T16:43:35.817Z"
 }

@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "WebKit",
         "url": "https://developer.apple.com/documentation/WebKit"
       },
       {
         "title": "WKWebView",
         "url": "https://developer.apple.com/documentation/WebKit/WKWebView"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10188/3/6E5129F2-8309-4EDE-BEEA-B2B32A39A5FB/wwdc2020_10188_hd.mp4?dl=1",
@@ -64,5 +48,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10646"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:42.083Z"
+  "extractedAt": "2026-10-11T16:45:48.393Z"
 }

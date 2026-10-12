@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -61,28 +62,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Drawing fully immersive content using Metal",
         "url": "https://developer.apple.com/documentation/CompositorServices/drawing-fully-immersive-content-using-metal"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10089/5/49D0E645-DBE8-4D7A-9637-C4D744C86894/downloads/wwdc2023-10089_hd.mp4?dl=1",
@@ -108,11 +93,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10082"
     },
     {
+      "id": "111289",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111289"
+    },
+    {
+      "id": "111290",
+      "year": "2023",
+      "title": "Q&A: Games for visionOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111290"
+    },
+    {
       "id": "10161",
       "year": "2021",
       "title": "Explore HDR rendering with EDR",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10161"
     }
   ],
-  "extractedAt": "2025-07-18T10:30:33.074Z"
+  "extractedAt": "2026-10-11T16:38:22.548Z"
 }

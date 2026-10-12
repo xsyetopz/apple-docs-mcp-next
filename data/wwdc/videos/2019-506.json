@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Using HEVC Video with Alpha",
+        "title": "Using HEVC video with alpha",
         "url": "https://developer.apple.com/documentation/AVFoundation/using-hevc-video-with-alpha"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/506lqy7sprpfyo800/506/506_hd_hevc_video_with_alpha.mp4?dl=1",
@@ -48,5 +32,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/518"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:29.290Z"
+  "extractedAt": "2026-10-11T16:47:02.832Z"
 }

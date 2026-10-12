@@ -44,24 +44,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "XCUIApplication",
-        "url": "https://developer.apple.com/documentation/XCTest/XCUIApplication"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "url": "https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10035/5/AE94C37D-A130-4B28-987C-ADEA8AC1BEA8/downloads/wwdc2023-10035_hd.mp4?dl=1",
@@ -75,5 +59,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/230"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:47.777Z"
+  "extractedAt": "2026-10-11T16:36:11.201Z"
 }

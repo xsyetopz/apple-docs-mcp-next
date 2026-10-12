@@ -37,36 +37,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Configuring app groups",
+        "url": "https://developer.apple.com/documentation/Xcode/configuring-app-groups"
       },
       {
         "title": "AdAttributionKit",
         "url": "https://developer.apple.com/documentation/AdAttributionKit"
       },
       {
-        "title": "Configuring app groups",
-        "url": "https://developer.apple.com/documentation/Xcode/configuring-app-groups"
-      },
-      {
-        "title": "Explore the Human Interface Guidelines for privacy",
-        "url": "https://developer.apple.com/design/human-interface-guidelines/privacy"
-      },
-      {
         "title": "Privacy manifest files",
         "url": "https://developer.apple.com/documentation/BundleResources/privacy-manifest-files"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Explore the Human Interface Guidelines for privacy",
+        "url": "https://developer.apple.com/design/human-interface-guidelines/privacy"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/246/4/37a0cde9-fca8-4877-b05c-95e677c0e2b0/downloads/wwdc2025-246_hd.mp4?dl=1",
@@ -140,5 +124,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10086"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:24.870Z"
+  "extractedAt": "2026-10-11T16:33:43.028Z"
 }

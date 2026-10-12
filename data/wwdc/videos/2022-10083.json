@@ -31,8 +31,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Refreshing and Maintaining Your App Using Background Tasks",
+        "url": "https://developer.apple.com/documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks"
       },
       {
         "title": "Adopting iOS Dark Mode",
@@ -41,22 +41,6 @@
       {
         "title": "Background Tasks",
         "url": "https://developer.apple.com/documentation/BackgroundTasks"
-      },
-      {
-        "title": "Refreshing and Maintaining Your App Using Background Tasks",
-        "url": "https://developer.apple.com/documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10083/4/B0CF7C82-605A-4F0E-9BF2-C1F540932B45/downloads/wwdc2022-10083_hd.mp4?dl=1",
@@ -68,6 +52,12 @@
       "year": "2022",
       "title": "Enhance voice communication with Push to Talk",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10117"
+    },
+    {
+      "id": "110926",
+      "year": "2022",
+      "title": "Q&A: Performance, power, and stability",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110926"
     },
     {
       "id": "10147",
@@ -88,5 +78,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/511"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:38.052Z"
+  "extractedAt": "2026-10-11T16:42:07.753Z"
 }

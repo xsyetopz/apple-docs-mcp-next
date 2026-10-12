@@ -17,48 +17,32 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "About continuous integration and delivery with Xcode Cloud",
-        "url": "https://developer.apple.com/documentation/Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud"
+        "title": "Configuring your Xcode Cloud workflow’s actions",
+        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions"
       },
       {
         "title": "Configuring start conditions",
         "url": "https://developer.apple.com/documentation/Xcode/Configuring-Start-Conditions"
       },
       {
-        "title": "Configuring your first Xcode Cloud workflow",
-        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
-      },
-      {
-        "title": "Configuring your Xcode Cloud workflow’s actions",
-        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions"
+        "title": "Xcode Cloud workflow reference",
+        "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud-Workflow-Reference"
       },
       {
         "title": "Developing a workflow strategy for Xcode Cloud",
         "url": "https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud"
       },
       {
+        "title": "Configuring your first Xcode Cloud workflow",
+        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Your-First-Xcode-Cloud-Workflow"
+      },
+      {
+        "title": "About continuous integration and delivery with Xcode Cloud",
+        "url": "https://developer.apple.com/documentation/Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud"
+      },
+      {
         "title": "Xcode Cloud",
         "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud"
-      },
-      {
-        "title": "Xcode Cloud workflow reference",
-        "url": "https://developer.apple.com/documentation/Xcode/Xcode-Cloud-Workflow-Reference"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110374/5/69623440-5AFC-4AFB-9641-DBC4EEF46379/downloads/wwdc2022-110374_hd.mp4?dl=1",
@@ -78,11 +62,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110375"
     },
     {
+      "id": "110925",
+      "year": "2022",
+      "title": "Q&A: Xcode Cloud and testing",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110925"
+    },
+    {
       "id": "110929",
       "year": "2022",
       "title": "WWDC22 Day 1 recap",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110929"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:13.077Z"
+  "extractedAt": "2026-10-11T16:39:25.159Z"
 }

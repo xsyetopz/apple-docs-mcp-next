@@ -24,24 +24,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110380/4/F37ED64E-304D-423D-B8FA-17687B8EC980/downloads/wwdc2022-110380_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110380/4/F37ED64E-304D-423D-B8FA-17687B8EC980/downloads/wwdc2022-110380_sd.mp4?dl=1"
   },
@@ -51,6 +34,30 @@
       "year": "2022",
       "title": "Make a great SharePlay experience",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10139"
+    },
+    {
+      "id": "110815",
+      "year": "2022",
+      "title": "Meet the Presenter: Make a great SharePlay experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110815"
+    },
+    {
+      "id": "110823",
+      "year": "2022",
+      "title": "Q&A: AVFoundation",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110823"
+    },
+    {
+      "id": "110822",
+      "year": "2022",
+      "title": "Q&A: Coordinated media with SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110822"
+    },
+    {
+      "id": "110824",
+      "year": "2022",
+      "title": "Q&A: SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110824"
     },
     {
       "id": "10140",
@@ -65,5 +72,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10145"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:20.466Z"
+  "extractedAt": "2026-10-11T16:40:16.314Z"
 }

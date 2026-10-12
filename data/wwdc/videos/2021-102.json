@@ -15,24 +15,7 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/102/9/185FF8CB-65B8-468D-9AF3-E6B6444F9AB7/downloads/wwdc2021-102_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/102/9/185FF8CB-65B8-468D-9AF3-E6B6444F9AB7/downloads/wwdc2021-102_sd.mp4?dl=1"
   },
@@ -50,17 +33,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/111"
     },
     {
-      "id": "10321",
-      "year": "2021",
-      "title": "Monday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10321"
-    },
-    {
       "id": "112",
       "year": "2021",
       "title": "Platforms State of the Union (ASL)",
       "url": "https://developer.apple.com/videos/play/wwdc2021/112"
     }
   ],
-  "extractedAt": "2025-07-18T10:25:10.332Z"
+  "extractedAt": "2026-10-11T16:42:23.995Z"
 }

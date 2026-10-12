@@ -1,0 +1,32 @@
+{
+  "id": "110531",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110531/",
+  "title": "Meet the Presenter: Design app experiences with charts",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Design",
+    "Health & Fitness"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110340",
+      "year": "2022",
+      "title": "Design an effective chart",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110340"
+    },
+    {
+      "id": "110342",
+      "year": "2022",
+      "title": "Design app experiences with charts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110342"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:35.337Z"
+}

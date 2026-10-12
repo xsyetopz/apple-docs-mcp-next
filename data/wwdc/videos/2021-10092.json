@@ -8,7 +8,8 @@
   "topics": [
     "App Services",
     "App Store, Distribution & Marketing",
-    "Essentials"
+    "Essentials",
+    "Privacy & Security"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -19,24 +20,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Apple Pay on the Web",
-        "url": "https://developer.apple.com/documentation/apple_pay_on_the_web"
-      },
-      {
-        "title": "Displaying Apple Pay Buttons Using JavaScript",
-        "url": "https://developer.apple.com/documentation/ApplePayontheWeb/displaying-apple-pay-buttons-using-javascript"
+        "title": "Offering Apple Pay in Your App",
+        "url": "https://developer.apple.com/documentation/PassKit/offering-apple-pay-in-your-app"
       },
       {
         "title": "Distributing and updating a pass",
         "url": "https://developer.apple.com/documentation/WalletPasses/distributing-and-updating-a-pass"
       },
       {
-        "title": "Offering Apple Pay in Your App",
-        "url": "https://developer.apple.com/documentation/PassKit/offering-apple-pay-in-your-app"
+        "title": "Displaying Apple Pay Buttons Using JavaScript",
+        "url": "https://developer.apple.com/documentation/ApplePayontheWeb/displaying-apple-pay-buttons-using-javascript"
+      },
+      {
+        "title": "Apple Pay on the Web",
+        "url": "https://developer.apple.com/documentation/apple_pay_on_the_web"
       },
       {
         "title": "PassKit (Apple Pay and Wallet)",
@@ -45,18 +42,6 @@
       {
         "title": "Wallet",
         "url": "https://developer.apple.com/documentation/PassKit/wallet"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10092/4/60CA3CE3-F906-4071-B3BD-1216A6A64CB4/downloads/wwdc2021-10092_hd.mp4?dl=1",
@@ -70,5 +55,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10662"
     }
   ],
-  "extractedAt": "2025-07-18T09:15:51.622Z"
+  "extractedAt": "2026-10-11T16:43:36.904Z"
 }

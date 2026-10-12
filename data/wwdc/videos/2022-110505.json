@@ -1,0 +1,25 @@
+{
+  "id": "110505",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110505/",
+  "title": "Q&A: Debugging Swift debugging with LLDB",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110370",
+      "year": "2022",
+      "title": "Debug Swift debugging with LLDB",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110370"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:31.637Z"
+}

@@ -18,24 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Implementing a store in your app using the StoreKit API",
+        "url": "https://developer.apple.com/documentation/StoreKit/implementing-a-store-in-your-app-using-the-storekit-api"
       },
       {
         "title": "App Store Server API",
         "url": "https://developer.apple.com/documentation/AppStoreServerAPI"
       },
       {
-        "title": "App Store Server Notifications",
-        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
-      },
-      {
         "title": "Human Interface Guidelines: In-app purchase",
         "url": "https://developer.apple.com/design/human-interface-guidelines/in-app-purchase"
       },
       {
-        "title": "Implementing a store in your app using the StoreKit API",
-        "url": "https://developer.apple.com/documentation/StoreKit/implementing-a-store-in-your-app-using-the-storekit-api"
+        "title": "App Store Server Notifications",
+        "url": "https://developer.apple.com/documentation/appstoreservernotifications"
       },
       {
         "title": "Learn more about designing subscriptions",
@@ -44,18 +40,6 @@
       {
         "title": "StoreKit",
         "url": "https://developer.apple.com/documentation/StoreKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10114/3/2388CEF1-AA51-4CB2-9E79-CBDC25916BDA/downloads/wwdc2021-10114_hd.mp4?dl=1",
@@ -105,12 +89,6 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10175"
     },
     {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
-    },
-    {
       "id": "10661",
       "year": "2020",
       "title": "What’s new with in-app purchase",
@@ -123,5 +101,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/302"
     }
   ],
-  "extractedAt": "2025-07-18T09:19:44.486Z"
+  "extractedAt": "2026-10-11T16:42:37.040Z"
 }

@@ -1,8 +1,9 @@
 {
   "id": "swift",
   "name": "Swift",
-  "videoCount": 118,
+  "videoCount": 147,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -16,6 +17,204 @@
     "2015"
   ],
   "videos": [
+    {
+      "id": "265",
+      "year": "2026",
+      "title": "Build real-time apps and services with gRPC and Swift",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/265/",
+      "dataFile": "videos/2026-265.json"
+    },
+    {
+      "id": "261",
+      "year": "2026",
+      "title": "Build, deliver, and automate with Xcode Cloud",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/261/",
+      "dataFile": "videos/2026-261.json"
+    },
+    {
+      "id": "275",
+      "year": "2026",
+      "title": "Code-along: Add persistence with SwiftData",
+      "topics": [
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/275/",
+      "dataFile": "videos/2026-275.json"
+    },
+    {
+      "id": "389",
+      "year": "2026",
+      "title": "Discover container machines",
+      "topics": [
+        "Developer Tools",
+        "Swift",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/389/",
+      "dataFile": "videos/2026-389.json"
+    },
+    {
+      "id": "328",
+      "year": "2026",
+      "title": "Explore numerical computing in Swift with MLX",
+      "topics": [
+        "Machine Learning & AI",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/328/",
+      "dataFile": "videos/2026-328.json"
+    },
+    {
+      "id": "260",
+      "year": "2026",
+      "title": "Get the most out of Device Hub",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/260/",
+      "dataFile": "videos/2026-260.json"
+    },
+    {
+      "id": "254",
+      "year": "2026",
+      "title": "Integrate MusicKit into your app",
+      "topics": [
+        "Audio & Video",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/254/",
+      "dataFile": "videos/2026-254.json"
+    },
+    {
+      "id": "267",
+      "year": "2026",
+      "title": "Migrate to Swift Testing",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/267/",
+      "dataFile": "videos/2026-267.json"
+    },
+    {
+      "id": "268",
+      "year": "2026",
+      "title": "Profile, fix, and verify: Improve app responsiveness with Instruments",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/268/",
+      "dataFile": "videos/2026-268.json"
+    },
+    {
+      "id": "8001",
+      "year": "2026",
+      "title": "Swift Group Lab",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8001/",
+      "dataFile": "videos/2026-8001.json"
+    },
+    {
+      "id": "262",
+      "year": "2026",
+      "title": "What’s new in Swift",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/262/",
+      "dataFile": "videos/2026-262.json"
+    },
+    {
+      "id": "274",
+      "year": "2026",
+      "title": "What’s new in SwiftData",
+      "topics": [
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/274/",
+      "dataFile": "videos/2026-274.json"
+    },
+    {
+      "id": "258",
+      "year": "2026",
+      "title": "What’s new in Xcode 27",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/258/",
+      "dataFile": "videos/2026-258.json"
+    },
+    {
+      "id": "259",
+      "year": "2026",
+      "title": "Xcode, agents, and you",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/259/",
+      "dataFile": "videos/2026-259.json"
+    },
     {
       "id": "280",
       "year": "2025",
@@ -35,7 +234,8 @@
       "year": "2025",
       "title": "Code-along: Elevate an app with Swift concurrency",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -101,7 +301,9 @@
       "year": "2025",
       "title": "Optimize SwiftUI performance with Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -114,7 +316,8 @@
       "year": "2025",
       "title": "Record, replay, and review: UI automation with Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -140,7 +343,8 @@
       "year": "2025",
       "title": "SwiftData: Dive into inheritance and schema migration",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -153,7 +357,8 @@
       "year": "2025",
       "title": "What’s new in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -167,7 +372,9 @@
       "title": "What’s new in Xcode 26",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -181,7 +388,8 @@
       "title": "A Swift Tour: Explore Swift’s features and design",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -194,7 +402,8 @@
       "year": "2024",
       "title": "Analyze heap memory",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -220,7 +429,8 @@
       "year": "2024",
       "title": "Create a custom data store with SwiftData",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -259,7 +469,8 @@
       "year": "2024",
       "title": "Go further with Swift Testing",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -286,7 +497,8 @@
       "title": "Meet Swift Testing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -299,7 +511,8 @@
       "year": "2024",
       "title": "Migrate your app to Swift 6",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -312,7 +525,8 @@
       "year": "2024",
       "title": "Run, Break, Inspect: Explore effective debugging in LLDB",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -325,7 +539,8 @@
       "year": "2024",
       "title": "Track model changes with SwiftData history",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -338,7 +553,8 @@
       "year": "2024",
       "title": "What’s new in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -351,7 +567,8 @@
       "year": "2024",
       "title": "What’s new in SwiftData",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -365,7 +582,9 @@
       "title": "What’s new in Xcode 16",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -378,7 +597,8 @@
       "year": "2023",
       "title": "Beyond the basics of structured concurrency",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -391,7 +611,8 @@
       "year": "2023",
       "title": "Create rich documentation with Swift-DocC",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -404,7 +625,9 @@
       "year": "2023",
       "title": "Design with SwiftUI",
       "topics": [
-        "Design"
+        "Design",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -430,7 +653,8 @@
       "year": "2023",
       "title": "Expand on Swift macros",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -443,7 +667,8 @@
       "year": "2023",
       "title": "Generalize APIs with parameter packs",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -456,7 +681,8 @@
       "year": "2023",
       "title": "Meet mergeable libraries",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -470,7 +696,8 @@
       "title": "Meet Swift OpenAPI Generator",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -483,13 +710,40 @@
       "year": "2023",
       "title": "Meet SwiftData",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2023/10187/",
       "dataFile": "videos/2023-10187.json"
+    },
+    {
+      "id": "10296",
+      "year": "2023",
+      "title": "Meet the presenter: Write Swift macros",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10296/",
+      "dataFile": "videos/2023-10296.json"
+    },
+    {
+      "id": "111588",
+      "year": "2023",
+      "title": "Meet the presenters: Mix Swift and C++",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111588/",
+      "dataFile": "videos/2023-111588.json"
     },
     {
       "id": "10189",
@@ -509,7 +763,8 @@
       "year": "2023",
       "title": "Mix Swift and C++",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -531,12 +786,65 @@
       "dataFile": "videos/2023-10195.json"
     },
     {
+      "id": "111579",
+      "year": "2023",
+      "title": "Q&A: Intro to Swift",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111579/",
+      "dataFile": "videos/2023-111579.json"
+    },
+    {
+      "id": "10284",
+      "year": "2023",
+      "title": "Q&A: Intro to Swift",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10284/",
+      "dataFile": "videos/2023-10284.json"
+    },
+    {
+      "id": "10331",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10331/",
+      "dataFile": "videos/2023-10331.json"
+    },
+    {
+      "id": "111543",
+      "year": "2023",
+      "title": "Q&A: SwiftData",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111543/",
+      "dataFile": "videos/2023-111543.json"
+    },
+    {
       "id": "10164",
       "year": "2023",
       "title": "What’s new in Swift",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -549,7 +857,8 @@
       "year": "2023",
       "title": "Write Swift macros",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -564,7 +873,9 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -579,7 +890,8 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -592,7 +904,8 @@
       "year": "2022",
       "title": "Create Swift Package plugins",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -605,7 +918,8 @@
       "year": "2022",
       "title": "Debug Swift debugging with LLDB",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -631,7 +945,8 @@
       "year": "2022",
       "title": "Eliminate data races using Swift Concurrency",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -644,7 +959,8 @@
       "year": "2022",
       "title": "Embrace Swift generics",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -670,7 +986,8 @@
       "year": "2022",
       "title": "Meet Swift Async Algorithms",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -683,7 +1000,8 @@
       "year": "2022",
       "title": "Meet Swift Package plugins",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -696,13 +1014,69 @@
       "year": "2022",
       "title": "Meet Swift Regex",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/110357/",
       "dataFile": "videos/2022-110357.json"
+    },
+    {
+      "id": "110938",
+      "year": "2022",
+      "title": "Meet the presenter: Meet Swift Async Algorithms",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110938/",
+      "dataFile": "videos/2022-110938.json"
+    },
+    {
+      "id": "110940",
+      "year": "2022",
+      "title": "Q&A: Foundation",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110940/",
+      "dataFile": "videos/2022-110940.json"
+    },
+    {
+      "id": "110480",
+      "year": "2022",
+      "title": "Q&A: Swift concurrency",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110480/",
+      "dataFile": "videos/2022-110480.json"
+    },
+    {
+      "id": "110921",
+      "year": "2022",
+      "title": "Q&A: Swift Standard Library",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110921/",
+      "dataFile": "videos/2022-110921.json"
     },
     {
       "id": "110358",
@@ -722,7 +1096,8 @@
       "year": "2022",
       "title": "Use Xcode for server-side development",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -736,7 +1111,8 @@
       "title": "Use Xcode to develop a multiplatform app",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -762,7 +1138,8 @@
       "year": "2022",
       "title": "What's new in Swift",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -803,7 +1180,8 @@
       "year": "2021",
       "title": "Discover and curate Swift Packages using Collections",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -935,7 +1313,8 @@
       "year": "2021",
       "title": "What‘s new in Swift",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1002,7 +1381,9 @@
       "year": "2020",
       "title": "Build SwiftUI views for widgets",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1110,7 +1491,8 @@
       "year": "2020",
       "title": "Explore Packages and Projects with Xcode Playgrounds",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1123,7 +1505,8 @@
       "year": "2020",
       "title": "Get your test results faster",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1136,7 +1519,8 @@
       "year": "2020",
       "title": "Handle interruptions and alerts in UI tests",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1149,7 +1533,9 @@
       "year": "2020",
       "title": "Introduction to SwiftUI",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1162,7 +1548,9 @@
       "year": "2020",
       "title": "Meet WidgetKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1175,7 +1563,8 @@
       "year": "2020",
       "title": "Refine Objective-C frameworks for Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1215,7 +1604,9 @@
       "year": "2020",
       "title": "Structure your app for SwiftUI previews",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1228,7 +1619,8 @@
       "year": "2020",
       "title": "Swan's Quest, Chapter 1: Voices in the dark",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1267,7 +1659,8 @@
       "year": "2020",
       "title": "Swan's Quest, Chapter 4: The sequence completes",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1280,7 +1673,8 @@
       "year": "2020",
       "title": "Swift packages: Resources and localization",
       "topics": [
-        "Accessibility & Inclusion"
+        "Accessibility & Inclusion",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1293,7 +1687,8 @@
       "year": "2020",
       "title": "Triage test failures with XCTIssue",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1346,7 +1741,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 1: The adventure begins",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1359,7 +1756,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 2: Alternate timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1372,7 +1771,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 3: Advancing timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1385,7 +1786,8 @@
       "year": "2020",
       "title": "Write tests to fail",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1398,7 +1800,8 @@
       "year": "2019",
       "title": "Adopting Swift Packages in Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -1411,7 +1814,8 @@
       "year": "2019",
       "title": "Binary Frameworks in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -1451,7 +1855,8 @@
       "year": "2019",
       "title": "Modern Swift API Design",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -1486,17 +1891,45 @@
       "dataFile": "videos/2019-402.json"
     },
     {
+      "id": "415",
+      "year": "2018",
+      "title": "Behind the Scenes of the Xcode Build Process",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/415/",
+      "dataFile": "videos/2018-415.json"
+    },
+    {
       "id": "408",
       "year": "2018",
       "title": "Building Faster in Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2018/408/",
       "dataFile": "videos/2018-408.json"
+    },
+    {
+      "id": "223",
+      "year": "2018",
+      "title": "Embracing Algorithms",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/223/",
+      "dataFile": "videos/2018-223.json"
     },
     {
       "id": "411",
@@ -1512,11 +1945,39 @@
       "dataFile": "videos/2018-411.json"
     },
     {
+      "id": "406",
+      "year": "2018",
+      "title": "Swift Generics (Expanded)",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/406/",
+      "dataFile": "videos/2018-406.json"
+    },
+    {
+      "id": "401",
+      "year": "2018",
+      "title": "What's New in Swift",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/401/",
+      "dataFile": "videos/2018-401.json"
+    },
+    {
       "id": "605",
       "year": "2017",
       "title": "SceneKit in Swift Playgrounds",
       "topics": [
-        "Business & Education"
+        "Business & Education",
+        "Graphics & Games",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -1529,7 +1990,8 @@
       "year": "2016",
       "title": "Concurrent Programming With GCD in Swift 3",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -1565,11 +2027,25 @@
       "dataFile": "videos/2016-416.json"
     },
     {
+      "id": "408",
+      "year": "2015",
+      "title": "Protocol-Oriented Programming in Swift",
+      "topics": [
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "dataFile": "videos/2015-408.json"
+    },
+    {
       "id": "401",
       "year": "2015",
       "title": "Swift and Objective-C Interoperability",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,

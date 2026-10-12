@@ -1,0 +1,25 @@
+{
+  "id": "110928",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110928/",
+  "title": "Meet the Presenter: Evolve your Core Data schema",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "System Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10120",
+      "year": "2022",
+      "title": "Evolve your Core Data schema",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10120"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:29.392Z"
+}

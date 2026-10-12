@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -32,28 +33,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building an object reconstruction app",
         "url": "https://developer.apple.com/documentation/RealityKit/building-an-object-reconstruction-app"
       },
       {
         "title": "Forum: Spatial Computing",
         "url": "https://developer.apple.com/forums/topics/spatial-computing?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10107/4/94F3C53B-10C1-4E39-8B9F-33A5BA561420/downloads/wwdc2024-10107_hd.mp4?dl=1",
@@ -73,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10191"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:17.056Z"
+  "extractedAt": "2026-10-11T16:35:34.218Z"
 }

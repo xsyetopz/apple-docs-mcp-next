@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -91,8 +92,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Mixing Swift and C++",
+        "url": "https://swift.org/documentation/cxx-interop"
       },
       {
         "title": "Calling APIs Across Language Boundaries",
@@ -101,22 +102,6 @@
       {
         "title": "Mixing Languages in an Xcode project",
         "url": "https://developer.apple.com/documentation/Swift/MixingLanguagesInAnXcodeProject"
-      },
-      {
-        "title": "Mixing Swift and C++",
-        "url": "https://swift.org/documentation/cxx-interop"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10172/4/58243B95-F51E-4E6A-96C8-B85E8102E450/downloads/wwdc2023-10172_hd.mp4?dl=1",
@@ -124,11 +109,17 @@
   },
   "relatedVideos": [
     {
+      "id": "111588",
+      "year": "2023",
+      "title": "Meet the presenters: Mix Swift and C++",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111588"
+    },
+    {
       "id": "10164",
       "year": "2023",
       "title": "What’s new in Swift",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10164"
     }
   ],
-  "extractedAt": "2025-07-18T09:41:17.039Z"
+  "extractedAt": "2026-10-11T16:37:11.171Z"
 }

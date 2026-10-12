@@ -1,8 +1,9 @@
 {
   "id": "app-services",
   "name": "App Services",
-  "videoCount": 172,
+  "videoCount": 227,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -15,6 +16,362 @@
     "2016"
   ],
   "videos": [
+    {
+      "id": "297",
+      "year": "2026",
+      "title": "Best practices for integrating visual intelligence in your app",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/297/",
+      "dataFile": "videos/2026-297.json"
+    },
+    {
+      "id": "240",
+      "year": "2026",
+      "title": "Build intelligent Siri experiences with App Schemas",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/240/",
+      "dataFile": "videos/2026-240.json"
+    },
+    {
+      "id": "275",
+      "year": "2026",
+      "title": "Code-along: Add persistence with SwiftData",
+      "topics": [
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/275/",
+      "dataFile": "videos/2026-275.json"
+    },
+    {
+      "id": "271",
+      "year": "2026",
+      "title": "Code-along: Build powerful drag and drop in SwiftUI",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/271/",
+      "dataFile": "videos/2026-271.json"
+    },
+    {
+      "id": "344",
+      "year": "2026",
+      "title": "Code-along: Make your app available to Siri",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/344/",
+      "dataFile": "videos/2026-344.json"
+    },
+    {
+      "id": "226",
+      "year": "2026",
+      "title": "Create live communication experiences",
+      "topics": [
+        "App Services",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/226/",
+      "dataFile": "videos/2026-226.json"
+    },
+    {
+      "id": "345",
+      "year": "2026",
+      "title": "Discover new capabilities in the App Intents framework",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/345/",
+      "dataFile": "videos/2026-345.json"
+    },
+    {
+      "id": "370",
+      "year": "2026",
+      "title": "Elevate your app’s text experience with TextKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/370/",
+      "dataFile": "videos/2026-370.json"
+    },
+    {
+      "id": "205",
+      "year": "2026",
+      "title": "Enhance your presence on the App Store",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing",
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/205/",
+      "dataFile": "videos/2026-205.json"
+    },
+    {
+      "id": "343",
+      "year": "2026",
+      "title": "Explore advanced App Intents features for Siri and Apple Intelligence",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/343/",
+      "dataFile": "videos/2026-343.json"
+    },
+    {
+      "id": "309",
+      "year": "2026",
+      "title": "Explore Retention Messaging in App Store Connect",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/309/",
+      "dataFile": "videos/2026-309.json"
+    },
+    {
+      "id": "223",
+      "year": "2026",
+      "title": "Live Activities essentials",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/223/",
+      "dataFile": "videos/2026-223.json"
+    },
+    {
+      "id": "203",
+      "year": "2026",
+      "title": "Read between the strokes with PencilKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/203/",
+      "dataFile": "videos/2026-203.json"
+    },
+    {
+      "id": "201",
+      "year": "2026",
+      "title": "Secure your apps with App Attest",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing",
+        "Business & Education",
+        "Privacy & Security"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/201/",
+      "dataFile": "videos/2026-201.json"
+    },
+    {
+      "id": "8017",
+      "year": "2026",
+      "title": "SwiftData Group Lab",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8017/",
+      "dataFile": "videos/2026-8017.json"
+    },
+    {
+      "id": "378",
+      "year": "2026",
+      "title": "Unlock in-game content with StoreKit and Background Assets",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/378/",
+      "dataFile": "videos/2026-378.json"
+    },
+    {
+      "id": "372",
+      "year": "2026",
+      "title": "Unwrap PaperKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/372/",
+      "dataFile": "videos/2026-372.json"
+    },
+    {
+      "id": "272",
+      "year": "2026",
+      "title": "Use SwiftUI with AppKit and UIKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/272/",
+      "dataFile": "videos/2026-272.json"
+    },
+    {
+      "id": "8014",
+      "year": "2026",
+      "title": "watchOS Group Lab",
+      "topics": [
+        "App Services",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8014/",
+      "dataFile": "videos/2026-8014.json"
+    },
+    {
+      "id": "210",
+      "year": "2026",
+      "title": "What’s new in Apple In-App Purchase",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/210/",
+      "dataFile": "videos/2026-210.json"
+    },
+    {
+      "id": "230",
+      "year": "2026",
+      "title": "What’s new in assessment on macOS",
+      "topics": [
+        "App Services",
+        "Business & Education"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/230/",
+      "dataFile": "videos/2026-230.json"
+    },
+    {
+      "id": "237",
+      "year": "2026",
+      "title": "What’s new in image understanding",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/237/",
+      "dataFile": "videos/2026-237.json"
+    },
+    {
+      "id": "274",
+      "year": "2026",
+      "title": "What’s new in SwiftData",
+      "topics": [
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/274/",
+      "dataFile": "videos/2026-274.json"
+    },
+    {
+      "id": "269",
+      "year": "2026",
+      "title": "What’s new in SwiftUI",
+      "topics": [
+        "App Services",
+        "Design",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/269/",
+      "dataFile": "videos/2026-269.json"
+    },
+    {
+      "id": "209",
+      "year": "2026",
+      "title": "What’s new in Wallet",
+      "topics": [
+        "App Services",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/209/",
+      "dataFile": "videos/2026-209.json"
+    },
     {
       "id": "225",
       "year": "2025",
@@ -36,7 +393,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Graphics & Games"
+        "Graphics & Games",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -49,7 +407,8 @@
       "year": "2025",
       "title": "Dive deeper into Writing Tools",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -76,7 +435,8 @@
       "year": "2025",
       "title": "Enhance child safety with PermissionKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -89,7 +449,8 @@
       "year": "2025",
       "title": "Enhance your app’s multilingual experience",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -103,7 +464,8 @@
       "title": "Explore enhancements to your spatial business app",
       "topics": [
         "App Services",
-        "Business & Education"
+        "Business & Education",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -129,7 +491,8 @@
       "year": "2025",
       "title": "Meet the HealthKit Medications API",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -142,7 +505,9 @@
       "year": "2025",
       "title": "Meet WebKit for SwiftUI",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -155,7 +520,8 @@
       "year": "2025",
       "title": "SwiftData: Dive into inheritance and schema migration",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -168,7 +534,8 @@
       "year": "2025",
       "title": "Track workouts with HealthKit on iOS and iPadOS",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -181,7 +548,8 @@
       "year": "2025",
       "title": "Turbocharge your app for CarPlay",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -194,7 +562,8 @@
       "year": "2025",
       "title": "Unlock GPU computing with WebGPU",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -207,7 +576,8 @@
       "year": "2025",
       "title": "Verify identity documents on the web",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -260,7 +630,8 @@
       "year": "2025",
       "title": "What’s new in Safari and WebKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -300,7 +671,8 @@
       "year": "2024",
       "title": "Bring your app to Siri",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -313,7 +685,8 @@
       "year": "2024",
       "title": "Bring your app’s core features to users with App Intents",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -352,7 +725,8 @@
       "year": "2024",
       "title": "Build custom swimming workouts with WorkoutKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -365,7 +739,9 @@
       "year": "2024",
       "title": "Build immersive web experiences with WebXR",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -378,7 +754,8 @@
       "year": "2024",
       "title": "Build multilingual-ready apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -391,7 +768,8 @@
       "year": "2024",
       "title": "Create a custom data store with SwiftData",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -418,7 +796,8 @@
       "title": "Customize spatial Persona templates in SharePlay",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -445,7 +824,8 @@
       "year": "2024",
       "title": "Enhanced suggestions for your journaling app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -458,7 +838,8 @@
       "year": "2024",
       "title": "Explore wellbeing APIs in HealthKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -471,7 +852,8 @@
       "year": "2024",
       "title": "Extend your app’s controls across the system",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -500,7 +882,10 @@
       "topics": [
         "App Services",
         "Audio & Video",
-        "Business & Education"
+        "Business & Education",
+        "Machine Learning & AI",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -540,7 +925,8 @@
       "year": "2024",
       "title": "Meet the Contact Access Button",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -553,7 +939,8 @@
       "year": "2024",
       "title": "Meet the Translation API",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -566,7 +953,8 @@
       "year": "2024",
       "title": "Squeeze the most out of Apple Pencil",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -579,7 +967,9 @@
       "year": "2024",
       "title": "Streamline sign-in with passkey upgrades and credential managers",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -592,7 +982,9 @@
       "year": "2024",
       "title": "Support semantic search with Core Spotlight",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -605,7 +997,8 @@
       "year": "2024",
       "title": "Swift Charts: Vectorized and function plots",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -618,7 +1011,8 @@
       "year": "2024",
       "title": "Track model changes with SwiftData history",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -631,7 +1025,8 @@
       "year": "2024",
       "title": "Train your machine learning and AI models on Apple GPUs",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -644,7 +1039,9 @@
       "year": "2024",
       "title": "Unlock the power of places with MapKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -657,7 +1054,8 @@
       "year": "2024",
       "title": "What’s new in App Intents",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -670,7 +1068,8 @@
       "year": "2024",
       "title": "What’s new in AppKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -684,7 +1083,8 @@
       "title": "What’s new in StoreKit and In-App Purchase",
       "topics": [
         "App Services",
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -697,7 +1097,8 @@
       "year": "2024",
       "title": "What’s new in SwiftData",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -710,7 +1111,8 @@
       "year": "2024",
       "title": "What’s new in UIKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -736,7 +1138,9 @@
       "year": "2024",
       "title": "What’s new in watchOS 11",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -750,7 +1154,8 @@
       "title": "Animate symbols in your app",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -764,7 +1169,8 @@
       "title": "Bring widgets to life",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -777,7 +1183,8 @@
       "year": "2023",
       "title": "Bring widgets to new places",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -790,7 +1197,9 @@
       "year": "2023",
       "title": "Build better document-based apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -817,7 +1226,8 @@
       "year": "2023",
       "title": "Create a more responsive camera experience",
       "topics": [
-        "App Services"
+        "App Services",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -831,7 +1241,8 @@
       "title": "Create animated symbols",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -844,7 +1255,8 @@
       "year": "2023",
       "title": "Discover Calendar and EventKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -857,7 +1269,8 @@
       "year": "2023",
       "title": "Discover streamlined location updates",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": true,
@@ -898,7 +1311,9 @@
       "title": "Get started with privacy manifests",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -937,7 +1352,8 @@
       "year": "2023",
       "title": "Lift subjects from images in your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -979,7 +1395,9 @@
       "year": "2023",
       "title": "Meet Core Location for spatial computing",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -992,7 +1410,8 @@
       "year": "2023",
       "title": "Meet Core Location Monitor",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -1006,7 +1425,8 @@
       "title": "Meet StoreKit for SwiftUI",
       "topics": [
         "App Services",
-        "App Store, Distribution & Marketing"
+        "App Store, Distribution & Marketing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1029,6 +1449,195 @@
       "dataFile": "videos/2023-10143.json"
     },
     {
+      "id": "111228",
+      "year": "2023",
+      "title": "Meet the presenter: Update Live Activities with push notifications",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111228/",
+      "dataFile": "videos/2023-111228.json"
+    },
+    {
+      "id": "111224",
+      "year": "2023",
+      "title": "Q&A: ActivityKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111224/",
+      "dataFile": "videos/2023-111224.json"
+    },
+    {
+      "id": "111234",
+      "year": "2023",
+      "title": "Q&A: App Clips",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111234/",
+      "dataFile": "videos/2023-111234.json"
+    },
+    {
+      "id": "111335",
+      "year": "2023",
+      "title": "Q&A: App Intents and Shortcuts",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111335/",
+      "dataFile": "videos/2023-111335.json"
+    },
+    {
+      "id": "10327",
+      "year": "2023",
+      "title": "Q&A: App Store Server APIs & notifications",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10327/",
+      "dataFile": "videos/2023-10327.json"
+    },
+    {
+      "id": "10333",
+      "year": "2023",
+      "title": "Q&A: CarPlay",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10333/",
+      "dataFile": "videos/2023-10333.json"
+    },
+    {
+      "id": "111258",
+      "year": "2023",
+      "title": "Q&A: Live Text and data scanning",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111258/",
+      "dataFile": "videos/2023-111258.json"
+    },
+    {
+      "id": "111333",
+      "year": "2023",
+      "title": "Q&A: SiriKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111333/",
+      "dataFile": "videos/2023-111333.json"
+    },
+    {
+      "id": "10323",
+      "year": "2023",
+      "title": "Q&A: StoreKit and in-app purchase",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10323/",
+      "dataFile": "videos/2023-10323.json"
+    },
+    {
+      "id": "111454",
+      "year": "2023",
+      "title": "Q&A: StoreKit and in-app purchase",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111454/",
+      "dataFile": "videos/2023-111454.json"
+    },
+    {
+      "id": "111259",
+      "year": "2023",
+      "title": "Q&A: Subject lifting",
+      "topics": [
+        "App Services",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111259/",
+      "dataFile": "videos/2023-111259.json"
+    },
+    {
+      "id": "111519",
+      "year": "2023",
+      "title": "Q&A: WeatherKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111519/",
+      "dataFile": "videos/2023-111519.json"
+    },
+    {
+      "id": "10342",
+      "year": "2023",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10342/",
+      "dataFile": "videos/2023-10342.json"
+    },
+    {
+      "id": "10341",
+      "year": "2023",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10341/",
+      "dataFile": "videos/2023-10341.json"
+    },
+    {
       "id": "10102",
       "year": "2023",
       "title": "Spotlight your app with App Shortcuts",
@@ -1047,7 +1656,9 @@
       "title": "Unleash the UIKit trait system",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1074,7 +1685,9 @@
       "title": "Verify app dependencies with digital signatures",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1115,7 +1728,9 @@
       "title": "What’s new in AppKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1142,7 +1757,8 @@
       "year": "2023",
       "title": "What’s new in Core Motion",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1169,7 +1785,9 @@
       "year": "2023",
       "title": "What’s new in UIKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1182,7 +1800,8 @@
       "year": "2023",
       "title": "What’s new in VisionKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1208,7 +1827,9 @@
       "year": "2023",
       "title": "What’s new with text and text interactions",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1221,7 +1842,8 @@
       "year": "2022",
       "title": "Add Live Text interaction to your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1234,7 +1856,9 @@
       "year": "2022",
       "title": "Add Shared with You to your app",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1263,7 +1887,8 @@
       "title": "Complications and widgets: Reloaded",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1318,7 +1943,8 @@
       "year": "2022",
       "title": "Efficiency awaits: Background tasks in SwiftUI",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1331,7 +1957,9 @@
       "year": "2022",
       "title": "Enhance collaboration experiences with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1344,7 +1972,8 @@
       "year": "2022",
       "title": "Get more mileage out of your app with CarPlay",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1357,7 +1986,8 @@
       "year": "2022",
       "title": "Go further with Complications in WidgetKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1383,7 +2013,9 @@
       "year": "2022",
       "title": "Integrate your custom collaboration app with Messages",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1399,7 +2031,8 @@
         "App Services",
         "Audio & Video",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1434,11 +2067,112 @@
       "dataFile": "videos/2022-10121.json"
     },
     {
+      "id": "110821",
+      "year": "2022",
+      "title": "Meet the Presenter: Building Device-to-Device Experiences with Network Framework",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110821/",
+      "dataFile": "videos/2022-110821.json"
+    },
+    {
+      "id": "110433",
+      "year": "2022",
+      "title": "Meet the Presenter: Complications and widgets: Reloaded",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110433/",
+      "dataFile": "videos/2022-110433.json"
+    },
+    {
+      "id": "110533",
+      "year": "2022",
+      "title": "Meet the Presenter: Design App Shortcuts",
+      "topics": [
+        "App Services",
+        "Design"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110533/",
+      "dataFile": "videos/2022-110533.json"
+    },
+    {
+      "id": "110888",
+      "year": "2022",
+      "title": "Meet the Presenter: Dive into App Intents",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110888/",
+      "dataFile": "videos/2022-110888.json"
+    },
+    {
+      "id": "110887",
+      "year": "2022",
+      "title": "Meet the Presenter: Implement App Shortcuts with App Intents",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110887/",
+      "dataFile": "videos/2022-110887.json"
+    },
+    {
+      "id": "110815",
+      "year": "2022",
+      "title": "Meet the Presenter: Make a great SharePlay experience",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Essentials",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110815/",
+      "dataFile": "videos/2022-110815.json"
+    },
+    {
+      "id": "110919",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in MapKit",
+      "topics": [
+        "App Services",
+        "Maps & Location"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110919/",
+      "dataFile": "videos/2022-110919.json"
+    },
+    {
       "id": "10003",
       "year": "2022",
       "title": "Meet WeatherKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1447,12 +2181,123 @@
       "dataFile": "videos/2022-10003.json"
     },
     {
+      "id": "110444",
+      "year": "2022",
+      "title": "Q&A: App Clips",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110444/",
+      "dataFile": "videos/2022-110444.json"
+    },
+    {
+      "id": "110445",
+      "year": "2022",
+      "title": "Q&A: App Clips",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110445/",
+      "dataFile": "videos/2022-110445.json"
+    },
+    {
+      "id": "110885",
+      "year": "2022",
+      "title": "Q&A: App Intents",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110885/",
+      "dataFile": "videos/2022-110885.json"
+    },
+    {
+      "id": "110465",
+      "year": "2022",
+      "title": "Q&A: CarPlay",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110465/",
+      "dataFile": "videos/2022-110465.json"
+    },
+    {
+      "id": "110886",
+      "year": "2022",
+      "title": "Q&A: Shortcuts",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110886/",
+      "dataFile": "videos/2022-110886.json"
+    },
+    {
+      "id": "110431",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110431/",
+      "dataFile": "videos/2022-110431.json"
+    },
+    {
+      "id": "110432",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110432/",
+      "dataFile": "videos/2022-110432.json"
+    },
+    {
+      "id": "110452",
+      "year": "2022",
+      "title": "Study Hall: WidgetKit workshop",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110452/",
+      "dataFile": "videos/2022-110452.json"
+    },
+    {
       "id": "110384",
       "year": "2022",
       "title": "Support multiple users in tvOS apps",
       "topics": [
         "App Services",
-        "Audio & Video"
+        "Audio & Video",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -1479,7 +2324,8 @@
       "title": "What's new in MapKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -1492,7 +2338,8 @@
       "year": "2022",
       "title": "What's new in Nearby Interaction",
       "topics": [
-        "App Services"
+        "App Services",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -1521,7 +2368,8 @@
       "topics": [
         "App Services",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1562,7 +2410,8 @@
       "title": "What's new in WKWebView",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1589,7 +2438,8 @@
       "year": "2021",
       "title": "Add intelligence to your widgets",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1616,7 +2466,9 @@
       "year": "2021",
       "title": "Build Mail app extensions",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1671,7 +2523,8 @@
       "year": "2021",
       "title": "Explore Safari Web Extension improvements",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1684,7 +2537,9 @@
       "year": "2021",
       "title": "Explore UWB-based car keys",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1711,7 +2566,8 @@
       "title": "Principles of great widgets",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1724,7 +2580,8 @@
       "year": "2021",
       "title": "Send communication and Time Sensitive notifications",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1737,7 +2594,8 @@
       "year": "2021",
       "title": "Sync files to the cloud with FileProvider on macOS",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1782,7 +2640,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -1822,7 +2681,9 @@
       "title": "Broaden your reach with Siri Event Suggestions",
       "topics": [
         "App Services",
-        "Developer Tools"
+        "Developer Tools",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1835,7 +2696,9 @@
       "year": "2020",
       "title": "Build SwiftUI views for widgets",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2004,7 +2867,8 @@
       "year": "2020",
       "title": "Integrate your app with Wind Down",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -2017,7 +2881,8 @@
       "year": "2020",
       "title": "Introducing Car Keys",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -2030,7 +2895,9 @@
       "year": "2020",
       "title": "Meet WidgetKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2044,7 +2911,9 @@
       "title": "Shop online with AR Quick Look",
       "topics": [
         "App Services",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Safari & Web",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -2083,7 +2952,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 1: The adventure begins",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2096,7 +2967,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 2: Alternate timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2109,7 +2982,9 @@
       "year": "2020",
       "title": "Widgets Code-along, part 3: Advancing timelines",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2135,7 +3010,8 @@
       "year": "2019",
       "title": "Advances in Speech Recognition",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2217,7 +3093,8 @@
       "title": "Mastering the Living Room With tvOS",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2230,7 +3107,8 @@
       "year": "2018",
       "title": "CarPlay Audio and Navigation Apps",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2243,7 +3121,8 @@
       "year": "2018",
       "title": "Introduction to Siri Shortcuts",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2256,7 +3135,9 @@
       "year": "2017",
       "title": "Developing Wireless CarPlay Systems",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -2270,7 +3151,8 @@
       "title": "Express Yourself!",
       "topics": [
         "App Services",
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2283,7 +3165,8 @@
       "year": "2017",
       "title": "Extend Your App's Presence With Sharing",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2292,11 +3175,25 @@
       "dataFile": "videos/2017-247.json"
     },
     {
+      "id": "717",
+      "year": "2016",
+      "title": "Beyond Dictation — Enhanced Voice-Control for macOS apps",
+      "topics": [
+        "App Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2016/717/",
+      "dataFile": "videos/2016-717.json"
+    },
+    {
       "id": "722",
       "year": "2016",
       "title": "Developing CarPlay Systems, Part 1",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,

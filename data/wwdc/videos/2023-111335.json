@@ -1,0 +1,43 @@
+{
+  "id": "111335",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111335/",
+  "title": "Q&A: App Intents and Shortcuts",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10029",
+      "year": "2023",
+      "title": "Build widgets for the Smart Stack on Apple Watch",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10029"
+    },
+    {
+      "id": "10193",
+      "year": "2023",
+      "title": "Design Shortcuts for Spotlight",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10193"
+    },
+    {
+      "id": "10103",
+      "year": "2023",
+      "title": "Explore enhancements to App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10103"
+    },
+    {
+      "id": "10102",
+      "year": "2023",
+      "title": "Spotlight your app with App Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10102"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:13.265Z"
+}

@@ -1,8 +1,9 @@
 {
   "id": "essentials",
   "name": "Essentials",
-  "videoCount": 170,
+  "videoCount": 201,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -12,6 +13,178 @@
     "2019"
   ],
   "videos": [
+    {
+      "id": "121",
+      "year": "2026",
+      "title": "Announcing Apple’s next big step for Siri and iPhone",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/121/",
+      "dataFile": "videos/2026-121.json"
+    },
+    {
+      "id": "292",
+      "year": "2026",
+      "title": "Design intuitive search experiences",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/292/",
+      "dataFile": "videos/2026-292.json"
+    },
+    {
+      "id": "397",
+      "year": "2026",
+      "title": "Dub Dub Daily: Day 2",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/397/",
+      "dataFile": "videos/2026-397.json"
+    },
+    {
+      "id": "398",
+      "year": "2026",
+      "title": "Dub Dub Daily: Day 3",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/398/",
+      "dataFile": "videos/2026-398.json"
+    },
+    {
+      "id": "399",
+      "year": "2026",
+      "title": "Dub Dub Daily: Day 4",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/399/",
+      "dataFile": "videos/2026-399.json"
+    },
+    {
+      "id": "400",
+      "year": "2026",
+      "title": "Dub Dub Daily: Day 5",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/400/",
+      "dataFile": "videos/2026-400.json"
+    },
+    {
+      "id": "394",
+      "year": "2026",
+      "title": "Get ready for WWDC26",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/394/",
+      "dataFile": "videos/2026-394.json"
+    },
+    {
+      "id": "382",
+      "year": "2026",
+      "title": "Inside Apple Intelligence and Xcode: Special Presentation",
+      "topics": [
+        "Developer Tools",
+        "Essentials",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/382/",
+      "dataFile": "videos/2026-382.json"
+    },
+    {
+      "id": "101",
+      "year": "2026",
+      "title": "Keynote",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/101/",
+      "dataFile": "videos/2026-101.json"
+    },
+    {
+      "id": "111",
+      "year": "2026",
+      "title": "Keynote (ASL)",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/111/",
+      "dataFile": "videos/2026-111.json"
+    },
+    {
+      "id": "102",
+      "year": "2026",
+      "title": "Platforms State of the Union",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/102/",
+      "dataFile": "videos/2026-102.json"
+    },
+    {
+      "id": "112",
+      "year": "2026",
+      "title": "Platforms State of the Union (ASL)",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/112/",
+      "dataFile": "videos/2026-112.json"
+    },
+    {
+      "id": "122",
+      "year": "2026",
+      "title": "WWDC26 Platforms State of the Union Recap",
+      "topics": [
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/122/",
+      "dataFile": "videos/2026-122.json"
+    },
     {
       "id": "359",
       "year": "2025",
@@ -31,7 +204,8 @@
       "year": "2025",
       "title": "Discover machine learning & AI frameworks on Apple platforms",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -48,7 +222,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2025/101/",
       "dataFile": "videos/2025-101.json"
     },
@@ -61,7 +235,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2025/111/",
       "dataFile": "videos/2025-111.json"
     },
@@ -138,7 +312,9 @@
       "title": "What’s new in SwiftUI",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -178,7 +354,8 @@
       "title": "A Swift Tour: Explore Swift’s features and design",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -232,7 +409,8 @@
       "title": "Meet Swift Testing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -284,7 +462,8 @@
       "year": "2024",
       "title": "SwiftUI essentials",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -297,7 +476,9 @@
       "year": "2024",
       "title": "What’s new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -311,7 +492,9 @@
       "title": "What’s new in Xcode 16",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -352,7 +535,8 @@
       "title": "Bring widgets to life",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -380,7 +564,8 @@
       "year": "2023",
       "title": "Build an app with SwiftData",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -393,7 +578,8 @@
       "year": "2023",
       "title": "Build custom workouts with WorkoutKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -420,7 +606,8 @@
       "year": "2023",
       "title": "Build spatial experiences with RealityKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -433,7 +620,8 @@
       "year": "2023",
       "title": "Develop your first immersive app",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -447,7 +635,8 @@
       "title": "Discover String Catalogs",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -461,7 +650,9 @@
       "title": "Get started with privacy manifests",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -474,7 +665,8 @@
       "year": "2023",
       "title": "Inspectors in SwiftUI: Discover the details",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -542,7 +734,8 @@
       "year": "2023",
       "title": "Meet MapKit for SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -555,7 +748,8 @@
       "year": "2023",
       "title": "Meet Reality Composer Pro",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -569,7 +763,8 @@
       "title": "Meet Safari for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -583,7 +778,8 @@
       "title": "Meet Swift OpenAPI Generator",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -596,7 +792,8 @@
       "year": "2023",
       "title": "Meet SwiftData",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -609,7 +806,9 @@
       "year": "2023",
       "title": "Meet SwiftUI for spatial computing",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -623,7 +822,9 @@
       "title": "Meet UIKit for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -637,7 +838,8 @@
       "title": "Meet watchOS 10",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -691,7 +893,9 @@
       "title": "Run your iPad and iPhone apps in the Shared Space",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -719,7 +923,9 @@
       "title": "Unleash the UIKit trait system",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -733,7 +939,9 @@
       "title": "Verify app dependencies with digital signatures",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -760,7 +968,9 @@
       "title": "What’s new in AppKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -774,7 +984,8 @@
       "title": "What’s new in Swift",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -787,7 +998,8 @@
       "year": "2023",
       "title": "What’s new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -810,6 +1022,20 @@
       "dataFile": "videos/2023-10165.json"
     },
     {
+      "id": "110421",
+      "year": "2022",
+      "title": "Accessibility community panel",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110421/",
+      "dataFile": "videos/2022-110421.json"
+    },
+    {
       "id": "110361",
       "year": "2022",
       "title": "Author fast and reliable tests for Xcode Cloud",
@@ -824,11 +1050,26 @@
       "dataFile": "videos/2022-110361.json"
     },
     {
+      "id": "110397",
+      "year": "2022",
+      "title": "Break the SwiftUIce",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110397/",
+      "dataFile": "videos/2022-110397.json"
+    },
+    {
       "id": "10076",
       "year": "2022",
       "title": "Bring your iOS app to the Mac",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -841,7 +1082,8 @@
       "year": "2022",
       "title": "Build a productivity app for Apple Watch",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -871,7 +1113,9 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -885,7 +1129,8 @@
       "title": "Complications and widgets: Reloaded",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -900,7 +1145,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -915,7 +1161,8 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -971,7 +1218,8 @@
       "year": "2022",
       "title": "Discover ARKit 6",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -984,7 +1232,8 @@
       "year": "2022",
       "title": "Eliminate data races using Swift Concurrency",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -997,7 +1246,8 @@
       "year": "2022",
       "title": "Embrace Swift generics",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1010,7 +1260,9 @@
       "year": "2022",
       "title": "Explore App Tracking Transparency",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1037,7 +1289,9 @@
       "year": "2022",
       "title": "Hello Swift Charts",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1079,7 +1333,8 @@
         "App Services",
         "Audio & Video",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1106,7 +1361,8 @@
       "year": "2022",
       "title": "Meet Swift Async Algorithms",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1119,7 +1375,8 @@
       "year": "2022",
       "title": "Meet Swift Regex",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1128,11 +1385,100 @@
       "dataFile": "videos/2022-110357.json"
     },
     {
+      "id": "110506",
+      "year": "2022",
+      "title": "Meet the Presenter: Build your first app in Swift Playgrounds",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110506/",
+      "dataFile": "videos/2022-110506.json"
+    },
+    {
+      "id": "110484",
+      "year": "2022",
+      "title": "Meet the Presenter: Explore design navigation on iOS",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110484/",
+      "dataFile": "videos/2022-110484.json"
+    },
+    {
+      "id": "110815",
+      "year": "2022",
+      "title": "Meet the Presenter: Make a great SharePlay experience",
+      "topics": [
+        "App Services",
+        "Audio & Video",
+        "Essentials",
+        "Health & Fitness"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110815/",
+      "dataFile": "videos/2022-110815.json"
+    },
+    {
+      "id": "110391",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in SwiftUI",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110391/",
+      "dataFile": "videos/2022-110391.json"
+    },
+    {
+      "id": "110424",
+      "year": "2022",
+      "title": "Meet the Presenter: What's new in web accessibility",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Essentials",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110424/",
+      "dataFile": "videos/2022-110424.json"
+    },
+    {
+      "id": "110532",
+      "year": "2022",
+      "title": "Meet the Presenter: Writing for interfaces",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110532/",
+      "dataFile": "videos/2022-110532.json"
+    },
+    {
       "id": "10062",
       "year": "2022",
       "title": "Meet Transferable",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1167,12 +1513,114 @@
       "dataFile": "videos/2022-112.json"
     },
     {
+      "id": "110530",
+      "year": "2022",
+      "title": "Q&A: Human Interface Guidelines",
+      "topics": [
+        "Accessibility & Inclusion",
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110530/",
+      "dataFile": "videos/2022-110530.json"
+    },
+    {
+      "id": "10175",
+      "year": "2022",
+      "title": "Q&A: Prototyping",
+      "topics": [
+        "Design",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10175/",
+      "dataFile": "videos/2022-10175.json"
+    },
+    {
+      "id": "110490",
+      "year": "2022",
+      "title": "Q&A: Swift Playgrounds",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110490/",
+      "dataFile": "videos/2022-110490.json"
+    },
+    {
+      "id": "110395",
+      "year": "2022",
+      "title": "Q&A: SwiftUI and UI Frameworks",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110395/",
+      "dataFile": "videos/2022-110395.json"
+    },
+    {
+      "id": "110432",
+      "year": "2022",
+      "title": "Q&A: WidgetKit",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110432/",
+      "dataFile": "videos/2022-110432.json"
+    },
+    {
+      "id": "110924",
+      "year": "2022",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110924/",
+      "dataFile": "videos/2022-110924.json"
+    },
+    {
+      "id": "110927",
+      "year": "2022",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110927/",
+      "dataFile": "videos/2022-110927.json"
+    },
+    {
       "id": "10131",
       "year": "2022",
       "title": "Qualities of great AR experiences",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1181,11 +1629,41 @@
       "dataFile": "videos/2022-10131.json"
     },
     {
+      "id": "110443",
+      "year": "2022",
+      "title": "Study Hall: Throwback Thursday",
+      "topics": [
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110443/",
+      "dataFile": "videos/2022-110443.json"
+    },
+    {
+      "id": "110452",
+      "year": "2022",
+      "title": "Study Hall: WidgetKit workshop",
+      "topics": [
+        "App Services",
+        "Essentials",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110452/",
+      "dataFile": "videos/2022-110452.json"
+    },
+    {
       "id": "10054",
       "year": "2022",
       "title": "The SwiftUI cookbook for navigation",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1194,11 +1672,26 @@
       "dataFile": "videos/2022-10054.json"
     },
     {
+      "id": "110935",
+      "year": "2022",
+      "title": "Trivia Night",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110935/",
+      "dataFile": "videos/2022-110935.json"
+    },
+    {
       "id": "10075",
       "year": "2022",
       "title": "Use SwiftUI with AppKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1211,7 +1704,8 @@
       "year": "2022",
       "title": "Use SwiftUI with UIKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1225,7 +1719,8 @@
       "title": "Use Xcode to develop a multiplatform app",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1253,7 +1748,8 @@
       "title": "What's new in MapKit",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Maps & Location"
       ],
       "duration": "",
       "hasCode": false,
@@ -1282,7 +1778,8 @@
       "topics": [
         "App Services",
         "Business & Education",
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1309,7 +1806,8 @@
       "year": "2022",
       "title": "What's new in Swift",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1322,7 +1820,8 @@
       "year": "2022",
       "title": "What's new in TextKit and text views",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1335,7 +1834,8 @@
       "year": "2022",
       "title": "What's new in the Photos picker",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1348,7 +1848,8 @@
       "year": "2022",
       "title": "What's new in Vision",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1362,7 +1863,9 @@
       "title": "What's new in web accessibility",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1376,7 +1879,8 @@
       "title": "What's new in WKWebView",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1482,7 +1986,8 @@
       "year": "2021",
       "title": "Apple’s privacy pillars in focus",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -1496,7 +2001,8 @@
       "title": "AR Quick Look, meet Object Capture",
       "topics": [
         "Essentials",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1509,7 +2015,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 1: Setup onboarding",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1522,7 +2029,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 2: Schedule tasks",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1535,7 +2043,8 @@
       "year": "2021",
       "title": "Build a research and care app, part 3: Visualize progress",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1576,7 +2085,8 @@
       "year": "2021",
       "title": "Discover Web Inspector improvements",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1590,7 +2100,8 @@
       "title": "Discoverable design",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1618,7 +2129,8 @@
       "title": "Explore the SF Symbols 3 app",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1662,7 +2174,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2021/101/",
       "dataFile": "videos/2021-101.json"
     },
@@ -1675,7 +2187,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2021/111/",
       "dataFile": "videos/2021-111.json"
     },
@@ -1684,7 +2196,8 @@
       "year": "2021",
       "title": "Meditation for fidgety skeptics",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1725,7 +2238,8 @@
       "year": "2021",
       "title": "Meet Safari Web Extensions on iOS",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1767,7 +2281,9 @@
       "year": "2021",
       "title": "Meet the Location Button",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Maps & Location",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -1781,7 +2297,8 @@
       "title": "Meet the Screen Time API",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -1794,7 +2311,8 @@
       "year": "2021",
       "title": "Meet the UIKit button system",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1865,7 +2383,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2021/112/",
       "dataFile": "videos/2021-112.json"
     },
@@ -1875,7 +2393,8 @@
       "title": "Principles of great widgets",
       "topics": [
         "App Services",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1888,7 +2407,8 @@
       "year": "2021",
       "title": "Qualities of a great Mac Catalyst app",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1902,7 +2422,8 @@
       "title": "Qualities of great iPad and iPhone apps on Macs with M1",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1930,7 +2451,9 @@
       "title": "Streamline your localized strings",
       "topics": [
         "Accessibility & Inclusion",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1943,7 +2466,8 @@
       "year": "2021",
       "title": "SwiftUI on the Mac: Build the fundamentals",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1956,7 +2480,8 @@
       "year": "2021",
       "title": "SwiftUI on the Mac: The finishing touches",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1969,7 +2494,8 @@
       "year": "2021",
       "title": "Take your iPad apps to the next level",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2015,7 +2541,8 @@
       "topics": [
         "Accessibility & Inclusion",
         "Design",
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2081,7 +2608,8 @@
       "year": "2021",
       "title": "What's new in AppKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2108,7 +2636,9 @@
       "year": "2021",
       "title": "What's new in CloudKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2121,7 +2651,8 @@
       "year": "2021",
       "title": "What's new in Foundation",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2150,7 +2681,8 @@
       "year": "2021",
       "title": "What's new in Mac Catalyst",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2164,7 +2696,8 @@
       "title": "What’s new in SF Symbols",
       "topics": [
         "Design",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2177,7 +2710,8 @@
       "year": "2021",
       "title": "What‘s new in Swift",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2190,7 +2724,8 @@
       "year": "2021",
       "title": "What's new in SwiftUI",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2203,7 +2738,8 @@
       "year": "2021",
       "title": "What's new in UIKit",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -2218,7 +2754,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Essentials"
+        "Essentials",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": false,
@@ -2231,7 +2768,10 @@
       "year": "2021",
       "title": "What's new in watchOS 8",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -2274,7 +2814,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2020/101/",
       "dataFile": "videos/2020-101.json"
     },
@@ -2287,7 +2827,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2020/102/",
       "dataFile": "videos/2020-102.json"
     },
@@ -2300,7 +2840,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2019/101/",
       "dataFile": "videos/2019-101.json"
     },

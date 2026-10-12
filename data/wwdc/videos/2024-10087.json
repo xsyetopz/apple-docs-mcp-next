@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,36 +18,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Enabling video reflections in an immersive environment",
+        "url": "https://developer.apple.com/documentation/visionOS/enabling-video-reflections-in-an-immersive-environment"
       },
       {
         "title": "Building an immersive media viewing experience",
         "url": "https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience"
       },
       {
-        "title": "Destination Video",
-        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
-      },
-      {
-        "title": "Enabling video reflections in an immersive environment",
-        "url": "https://developer.apple.com/documentation/visionOS/enabling-video-reflections-in-an-immersive-environment"
-      },
-      {
         "title": "Forum: Design",
         "url": "https://developer.apple.com/forums/topics/design?cid=vf-a-0010"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Destination Video",
+        "url": "https://developer.apple.com/documentation/visionOS/destination-video"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10087/4/1BAC307D-DA03-4FDC-AB9B-F3B4494DE81E/downloads/wwdc2024-10087_hd.mp4?dl=1",
@@ -72,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10186"
     }
   ],
-  "extractedAt": "2025-07-18T09:35:48.894Z"
+  "extractedAt": "2026-10-11T16:34:52.598Z"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "242",
+  "year": "2019",
+  "url": "https://developer.apple.com/videos/play/wwdc2019/242/",
+  "title": "Getting the Most out of Multitasking",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "258",
+      "year": "2019",
+      "title": "Architecting Your App for Multiple Windows",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/258"
+    },
+    {
+      "id": "212",
+      "year": "2019",
+      "title": "Introducing Multiple Windows on iPad",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/212"
+    },
+    {
+      "id": "259",
+      "year": "2019",
+      "title": "Targeting Content with Multiple Windows",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/259"
+    },
+    {
+      "id": "246",
+      "year": "2019",
+      "title": "Window Management in Your Multitasking App",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/246"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:48:12.392Z"
+}

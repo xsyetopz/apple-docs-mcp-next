@@ -41,24 +41,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10276/3/35E33348-1E17-4FF5-92BB-618ED251B0EC/downloads/wwdc2021-10276_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10276/3/35E33348-1E17-4FF5-92BB-618ED251B0EC/downloads/wwdc2021-10276_sd.mp4?dl=1"
   },
@@ -80,7 +63,13 @@
       "year": "2020",
       "title": "AutoFill everywhere",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10115"
+    },
+    {
+      "id": "204",
+      "year": "2018",
+      "title": "Automatic Strong Passwords and Security Code AutoFill",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/204"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:46.433Z"
+  "extractedAt": "2026-10-11T16:42:41.341Z"
 }

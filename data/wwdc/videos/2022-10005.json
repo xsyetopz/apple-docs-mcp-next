@@ -17,32 +17,30 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "HealthKit",
-        "url": "https://developer.apple.com/documentation/HealthKit"
-      },
-      {
         "title": "Human Interface Guidelines: HealthKit",
         "url": "https://developer.apple.com/design/human-interface-guidelines/healthkit/overview/"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "HealthKit",
+        "url": "https://developer.apple.com/documentation/HealthKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10005/4/55C7CDFC-2E36-4AC0-8E77-7327EBD9E0E9/downloads/wwdc2022-10005_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10005/4/55C7CDFC-2E36-4AC0-8E77-7327EBD9E0E9/downloads/wwdc2022-10005_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:37:50.691Z"
+  "relatedVideos": [
+    {
+      "id": "110415",
+      "year": "2022",
+      "title": "Q&A: Health and fitness technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110415"
+    },
+    {
+      "id": "110566",
+      "year": "2022",
+      "title": "Q&A: Health and fitness technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110566"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:25.753Z"
 }

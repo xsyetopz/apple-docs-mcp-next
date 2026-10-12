@@ -80,18 +80,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ActivityKit",
-        "url": "https://developer.apple.com/documentation/ActivityKit"
-      },
-      {
-        "title": "Displaying live data with Live Activities",
-        "url": "https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities"
-      },
-      {
         "title": "Human Interface Guidelines: Live Activities",
         "url": "https://developer.apple.com/design/human-interface-guidelines/live-activities"
       },
@@ -100,20 +88,16 @@
         "url": "https://developer.apple.com/documentation/ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications"
       },
       {
+        "title": "Displaying live data with Live Activities",
+        "url": "https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities"
+      },
+      {
+        "title": "ActivityKit",
+        "url": "https://developer.apple.com/documentation/ActivityKit"
+      },
+      {
         "title": "WidgetKit",
         "url": "https://developer.apple.com/documentation/WidgetKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10184/4/A7390924-2731-4B9B-925E-1CBDFB186C3E/downloads/wwdc2023-10184_hd.mp4?dl=1",
@@ -133,11 +117,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10194"
     },
     {
+      "id": "111224",
+      "year": "2023",
+      "title": "Q&A: ActivityKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111224"
+    },
+    {
       "id": "10185",
       "year": "2023",
       "title": "Update Live Activities with push notifications",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10185"
     }
   ],
-  "extractedAt": "2025-07-18T09:13:49.803Z"
+  "extractedAt": "2026-10-11T16:36:07.732Z"
 }

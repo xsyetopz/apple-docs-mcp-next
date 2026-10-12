@@ -49,28 +49,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Supporting coordinated media playback",
+        "url": "https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback"
       },
       {
         "title": "Group Activities",
         "url": "https://developer.apple.com/documentation/GroupActivities"
-      },
-      {
-        "title": "Supporting Coordinated Media Playback",
-        "url": "https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10225/4/2C87FE7A-A19B-4138-92A4-29065B15DFB7/downloads/wwdc2021-10225_hd.mp4?dl=1",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10183"
     }
   ],
-  "extractedAt": "2025-07-18T09:24:15.449Z"
+  "extractedAt": "2026-10-11T16:42:50.032Z"
 }

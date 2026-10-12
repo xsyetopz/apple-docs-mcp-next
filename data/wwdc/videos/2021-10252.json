@@ -97,28 +97,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building high-performance lists and collection views",
         "url": "https://developer.apple.com/documentation/UIKit/building-high-performance-lists-and-collection-views"
       },
       {
         "title": "UIKit",
         "url": "https://developer.apple.com/documentation/UIKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10252/5/B37B6913-C7C8-49EA-982E-9D10AC147454/downloads/wwdc2021-10252_hd.mp4?dl=1",
@@ -144,5 +128,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10097"
     }
   ],
-  "extractedAt": "2025-07-18T10:54:45.598Z"
+  "extractedAt": "2026-10-11T16:43:28.405Z"
 }

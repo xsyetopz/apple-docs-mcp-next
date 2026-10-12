@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -55,28 +56,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accessibility design for Mac Catalyst",
         "url": "https://developer.apple.com/documentation/Accessibility/accessibility_design_for_mac_catalyst"
       },
       {
         "title": "Delivering an exceptional accessibility experience",
         "url": "https://developer.apple.com/documentation/Accessibility/delivering_an_exceptional_accessibility_experience"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10117/4/59AF0B72-76C2-4442-8160-967F2A9FDB96/wwdc2020_10117_hd.mp4?dl=1",
@@ -108,5 +93,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/254"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:16.195Z"
+  "extractedAt": "2026-10-11T16:45:59.183Z"
 }

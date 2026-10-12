@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Machine Learning & AI",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -37,28 +39,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Classifying Live Audio Input with a Built-in Sound Classifier",
         "url": "https://developer.apple.com/documentation/SoundAnalysis/classifying-live-audio-input-with-a-built-in-sound-classifier"
       },
       {
         "title": "Sound Analysis",
         "url": "https://developer.apple.com/documentation/SoundAnalysis"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10036/7/E21A5457-DFA1-405D-87E4-EBCCB8A6F0C1/downloads/wwdc2021-10036_hd.mp4?dl=1",
@@ -78,17 +64,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10044"
     },
     {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
-    },
-    {
       "id": "425",
       "year": "2019",
       "title": "Training Sound Classification Models in Create ML",
       "url": "https://developer.apple.com/videos/play/wwdc2019/425"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:32.148Z"
+  "extractedAt": "2026-10-11T16:42:27.901Z"
 }

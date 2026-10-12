@@ -1,0 +1,26 @@
+{
+  "id": "110945",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110945/",
+  "title": "Q&A: Xcode Previews",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110427",
+      "year": "2022",
+      "title": "What's new in Xcode",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110427"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:32.295Z"
+}

@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "Spatial Computing",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Updating your widgets for visionOS",
         "url": "https://developer.apple.com/documentation/WidgetKit/Updating-your-widgets-for-visionOS"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/255/7/af349b4f-e1db-4adc-a446-d92c8942a7c1/downloads/wwdc2025-255_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/255/7/af349b4f-e1db-4adc-a446-d92c8942a7c1/downloads/wwdc2025-255_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:35:02.667Z"
+  "extractedAt": "2026-10-11T16:33:29.544Z"
 }

@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Enabling Low-Latency HTTP Live Streaming (HLS)",
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/enabling-low-latency-http-live-streaming-hls"
       },
       {
         "title": "HTTP Live Streaming (HLS) authoring specification for Apple devices",
         "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/502gzyuhh8p2r8g8/502/502_hd_introducing_lowlatency_hls.mp4?dl=1",
@@ -58,5 +42,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/507"
     }
   ],
-  "extractedAt": "2025-07-18T09:25:42.670Z"
+  "extractedAt": "2026-10-11T16:46:52.922Z"
 }

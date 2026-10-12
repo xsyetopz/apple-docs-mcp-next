@@ -29,24 +29,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10165/4/F5BC5595-D6B4-4C08-B9EC-E801F766386B/wwdc2020_10165_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10165/4/F5BC5595-D6B4-4C08-B9EC-E801F766386B/wwdc2020_10165_sd.mp4?dl=1"
   },
@@ -56,7 +39,13 @@
       "year": "2020",
       "title": "App essentials in SwiftUI",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10037"
+    },
+    {
+      "id": "406",
+      "year": "2018",
+      "title": "Swift Generics (Expanded)",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/406"
     }
   ],
-  "extractedAt": "2025-07-18T10:49:58.243Z"
+  "extractedAt": "2026-10-11T16:45:48.703Z"
 }

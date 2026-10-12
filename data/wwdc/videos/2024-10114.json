@@ -55,28 +55,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: Media Technologies",
-        "url": "https://developer.apple.com/forums/topics/media-technologies?cid=vf-a-0010"
-      },
-      {
         "title": "Providing an integrated view of your timeline when playing HLS interstitials",
         "url": "https://developer.apple.com/documentation/AVFoundation/providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Forum: Media Technologies",
+        "url": "https://developer.apple.com/forums/topics/media-technologies?cid=vf-a-0010"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10114/4/EA8643B4-5978-424A-AFCE-5E8A7D6A6DF1/downloads/wwdc2024-10114_hd.mp4?dl=1",
@@ -96,5 +80,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10140"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:03.356Z"
+  "extractedAt": "2026-10-11T16:34:42.636Z"
 }

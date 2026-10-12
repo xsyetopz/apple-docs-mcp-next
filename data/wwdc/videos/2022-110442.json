@@ -1,0 +1,25 @@
+{
+  "id": "110442",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110442/",
+  "title": "Study Hall: SwiftUI navigation hotdish",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10054",
+      "year": "2022",
+      "title": "The SwiftUI cookbook for navigation",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10054"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:38.643Z"
+}

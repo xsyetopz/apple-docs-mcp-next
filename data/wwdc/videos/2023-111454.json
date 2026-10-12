@@ -1,0 +1,26 @@
+{
+  "id": "111454",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111454/",
+  "title": "Q&A: StoreKit and in-app purchase",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services",
+    "App Store, Distribution & Marketing"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10142",
+      "year": "2023",
+      "title": "Explore testing in-app purchases",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10142"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:57.918Z"
+}

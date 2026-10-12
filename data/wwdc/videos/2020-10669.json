@@ -37,24 +37,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Accessing a User’s Clinical Records",
         "url": "https://developer.apple.com/documentation/HealthKit/accessing-a-user-s-clinical-records"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10669/4/63009C98-F22F-4CFE-9037-5DCC0A37017F/wwdc2020_10669_hd.mp4?dl=1",
@@ -84,7 +68,13 @@
       "year": "2020",
       "title": "What's new in HealthKit",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10182"
+    },
+    {
+      "id": "706",
+      "year": "2018",
+      "title": "Accessing Health Records with HealthKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/706"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:18.609Z"
+  "extractedAt": "2026-10-11T16:46:35.003Z"
 }

@@ -1,0 +1,37 @@
+{
+  "id": "111246",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111246/",
+  "title": "Q&A: Image understanding and the Vision framework",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10045",
+      "year": "2023",
+      "title": "Detect animal poses in Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10045"
+    },
+    {
+      "id": "111241",
+      "year": "2023",
+      "title": "Explore 3D body pose and person segmentation in Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111241"
+    },
+    {
+      "id": "10176",
+      "year": "2023",
+      "title": "Lift subjects from images in your app",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10176"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:51.787Z"
+}

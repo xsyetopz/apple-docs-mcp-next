@@ -50,40 +50,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Delivering Rich App Experiences with Haptics",
+        "url": "https://developer.apple.com/documentation/CoreHaptics/delivering-rich-app-experiences-with-haptics"
       },
       {
         "title": "Accessibility",
         "url": "https://developer.apple.com/documentation/swiftui/view-accessibility"
       },
       {
-        "title": "Delivering Rich App Experiences with Haptics",
-        "url": "https://developer.apple.com/documentation/CoreHaptics/delivering-rich-app-experiences-with-haptics"
-      },
-      {
-        "title": "Game Controller",
-        "url": "https://developer.apple.com/documentation/GameController"
+        "title": "PHASE",
+        "url": "https://developer.apple.com/documentation/PHASE"
       },
       {
         "title": "Human Interface Guidelines: Game Center",
         "url": "https://developer.apple.com/design/human-interface-guidelines/game-center"
       },
       {
-        "title": "PHASE",
-        "url": "https://developer.apple.com/documentation/PHASE"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Game Controller",
+        "url": "https://developer.apple.com/documentation/GameController"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10065/5/C221E77C-502C-47CD-B0C4-9091B529DD77/downloads/wwdc2022-10065_hd.mp4?dl=1",
@@ -101,6 +85,30 @@
       "year": "2022",
       "title": "Add accessibility to your Unity games",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10151"
+    },
+    {
+      "id": "110658",
+      "year": "2022",
+      "title": "Meet the Presenter: Add Apple frameworks to your Unity game projects",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110658"
+    },
+    {
+      "id": "110662",
+      "year": "2022",
+      "title": "Meet the Presenter: Reach new players with Game Center dashboard",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110662"
+    },
+    {
+      "id": "110663",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110663"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664"
     },
     {
       "id": "10064",
@@ -157,5 +165,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10619"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:06.838Z"
+  "extractedAt": "2026-10-11T16:39:30.220Z"
 }

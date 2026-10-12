@@ -1,0 +1,49 @@
+{
+  "id": "110758",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110758/",
+  "title": "Q&A: StoreKit and in-app purchases",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Store, Distribution & Marketing"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10040",
+      "year": "2022",
+      "title": "Explore in-app purchase integration and migration",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10040"
+    },
+    {
+      "id": "110404",
+      "year": "2022",
+      "title": "Implement proactive in-app purchase restore",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110404"
+    },
+    {
+      "id": "10039",
+      "year": "2022",
+      "title": "What's new in StoreKit testing",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10039"
+    },
+    {
+      "id": "10007",
+      "year": "2022",
+      "title": "What's new with in-app purchase",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10007"
+    },
+    {
+      "id": "10038",
+      "year": "2022",
+      "title": "What's new with SKAdNetwork",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10038"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:36.471Z"
+}

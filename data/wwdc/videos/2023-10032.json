@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "UISupportsFullScreenInAssistiveAccess",
         "url": "https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsFullScreenInAssistiveAccess"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10032/3/A9BDC1BB-32F3-4A51-9207-FFB4C4B235A0/downloads/wwdc2023-10032_hd.mp4?dl=1",
@@ -48,5 +32,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10056"
     }
   ],
-  "extractedAt": "2025-07-18T09:07:55.860Z"
+  "extractedAt": "2026-10-11T16:38:52.125Z"
 }

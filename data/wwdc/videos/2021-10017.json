@@ -45,24 +45,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Loading and Displaying a Large Data Feed",
-        "url": "https://developer.apple.com/documentation/swiftui/loading_and_displaying_a_large_data_feed"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Loading and displaying a large data feed",
+        "url": "https://developer.apple.com/documentation/SwiftUI/loading-and-displaying-a-large-data-feed"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10017/4/F075C8AE-C8D2-40F9-8520-018581E3A771/downloads/wwdc2021-10017_hd.mp4?dl=1",
@@ -100,5 +84,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10018"
     }
   ],
-  "extractedAt": "2025-07-18T10:49:11.114Z"
+  "extractedAt": "2026-10-11T16:43:39.327Z"
 }

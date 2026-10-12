@@ -1,0 +1,55 @@
+{
+  "id": "801",
+  "year": "2019",
+  "url": "https://developer.apple.com/videos/play/wwdc2019/801/",
+  "title": "What’s New in iOS and macOS Design",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Design"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "809",
+      "year": "2019",
+      "title": "Designing iPad Apps for Mac",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/809"
+    },
+    {
+      "id": "214",
+      "year": "2019",
+      "title": "Implementing Dark Mode on iOS",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/214"
+    },
+    {
+      "id": "205",
+      "year": "2019",
+      "title": "Introducing iPad Apps for Mac",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/205"
+    },
+    {
+      "id": "206",
+      "year": "2019",
+      "title": "Introducing SF Symbols",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/206"
+    },
+    {
+      "id": "103",
+      "year": "2019",
+      "title": "Platforms State of the Union",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/103"
+    },
+    {
+      "id": "808",
+      "year": "2019",
+      "title": "What's New in iOS Design",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/808"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:46:59.779Z"
+}

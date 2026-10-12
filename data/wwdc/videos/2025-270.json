@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -91,28 +92,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Code-along: Elevating an app with Swift concurrency",
         "url": "https://developer.apple.com/documentation/Swift/code-along-elevating-an-app-with-swift-concurrency"
       },
       {
         "title": "Swift Migration Guide",
         "url": "https://www.swift.org/migration/documentation/migrationguide/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/270/4/fec27360-7913-4e07-8025-e80187a8d00a/downloads/wwdc2025-270_hd.mp4?dl=1",
@@ -144,5 +129,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10170"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:20.888Z"
+  "extractedAt": "2026-10-11T16:33:25.469Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Accessibility & Inclusion"
+    "Accessibility & Inclusion",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,28 +68,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Internationalization and Localization Guide",
-        "url": "https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html"
-      },
-      {
         "title": "Localization",
         "url": "https://developer.apple.com/documentation/Xcode/localization"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Internationalization and Localization Guide",
+        "url": "https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10107/3/85B12DD5-27C3-420C-97F8-4C71326BB3D0/downloads/wwdc2022-10107_hd.mp4?dl=1",
@@ -114,11 +99,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110441"
     },
     {
+      "id": "110540",
+      "year": "2022",
+      "title": "Q&A: Internationalization and localization",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110540"
+    },
+    {
+      "id": "110813",
+      "year": "2022",
+      "title": "Q&A: Right-to-left",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110813"
+    },
+    {
       "id": "10221",
       "year": "2021",
       "title": "Streamline your localized strings",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10221"
     }
   ],
-  "extractedAt": "2025-07-18T09:08:15.580Z"
+  "extractedAt": "2026-10-11T16:41:15.804Z"
 }

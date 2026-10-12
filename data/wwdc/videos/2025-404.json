@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Writing",
         "url": "https://developer.apple.com/design/human-interface-guidelines/writing"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/404/4/59f0f7aa-24a1-477b-b61b-2baeebe52df0/downloads/wwdc2025-404_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/404/4/59f0f7aa-24a1-477b-b61b-2baeebe52df0/downloads/wwdc2025-404_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:35:24.580Z"
+  "extractedAt": "2026-10-11T16:33:44.597Z"
 }

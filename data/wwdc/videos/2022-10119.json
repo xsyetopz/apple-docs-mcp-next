@@ -97,32 +97,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Core Data",
-        "url": "https://developer.apple.com/documentation/CoreData"
+        "title": "Synchronizing a local store to the cloud",
+        "url": "https://developer.apple.com/documentation/CoreData/synchronizing-a-local-store-to-the-cloud"
       },
       {
         "title": "Mirroring a Core Data store with CloudKit",
         "url": "https://developer.apple.com/documentation/CoreData/mirroring-a-core-data-store-with-cloudkit"
       },
       {
-        "title": "Synchronizing a local store to the cloud",
-        "url": "https://developer.apple.com/documentation/CoreData/synchronizing-a-local-store-to-the-cloud"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core Data",
+        "url": "https://developer.apple.com/documentation/CoreData"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10119/4/8D4ACDA6-A3CE-4294-8DFE-B4CF5DE26D86/downloads/wwdc2022-10119_hd.mp4?dl=1",
@@ -134,6 +118,18 @@
       "year": "2022",
       "title": "Evolve your Core Data schema",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10120"
+    },
+    {
+      "id": "110836",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110836"
+    },
+    {
+      "id": "110838",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110838"
     },
     {
       "id": "10015",
@@ -160,5 +156,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/202"
     }
   ],
-  "extractedAt": "2025-07-18T11:02:42.598Z"
+  "extractedAt": "2026-10-11T16:40:22.184Z"
 }

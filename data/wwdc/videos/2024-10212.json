@@ -68,36 +68,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Configuring your app to use location services",
+        "url": "https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services"
       },
       {
         "title": "Adopting live updates in Core Location",
         "url": "https://developer.apple.com/documentation/CoreLocation/adopting-live-updates-in-core-location"
       },
       {
-        "title": "Configuring your app to use location services",
-        "url": "https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services"
-      },
-      {
         "title": "Forum: Maps & Location",
         "url": "https://developer.apple.com/forums/topics/maps-and-location?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10212/4/4E06515C-912A-4159-8C07-9468D1209F8F/downloads/wwdc2024-10212_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10212/4/4E06515C-912A-4159-8C07-9468D1209F8F/downloads/wwdc2024-10212_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:38:31.722Z"
+  "extractedAt": "2026-10-11T16:35:39.512Z"
 }

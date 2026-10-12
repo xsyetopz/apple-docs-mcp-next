@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Audio & Video"
+    "Audio & Video",
+    "Photos & Camera",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,40 +45,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVFoundation",
-        "url": "https://developer.apple.com/documentation/AVFoundation"
+        "title": "TN3177: Understanding alternate audio track groups in movie files",
+        "url": "https://developer.apple.com/documentation/Technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files"
       },
       {
         "title": "Capturing Spatial Audio in your iOS app",
         "url": "https://developer.apple.com/documentation/AVFoundation/capturing-spatial-audio-in-your-ios-app"
       },
       {
-        "title": "Cinematic",
-        "url": "https://developer.apple.com/documentation/Cinematic"
-      },
-      {
         "title": "Editing Spatial Audio with an audio mix",
         "url": "https://developer.apple.com/documentation/Cinematic/editing-spatial-audio-with-an-audio-mix"
       },
       {
-        "title": "TN3177: Understanding alternate audio track groups in movie files",
-        "url": "https://developer.apple.com/documentation/Technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files"
+        "title": "Cinematic",
+        "url": "https://developer.apple.com/documentation/Cinematic"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AVFoundation",
+        "url": "https://developer.apple.com/documentation/AVFoundation"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/251/4/d14e1f6d-5996-4c7a-8576-c7cb4e6eaf02/downloads/wwdc2025-251_hd.mp4?dl=1",
@@ -96,5 +82,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/253"
     }
   ],
-  "extractedAt": "2025-07-18T09:21:40.054Z"
+  "extractedAt": "2026-10-11T16:33:34.129Z"
 }

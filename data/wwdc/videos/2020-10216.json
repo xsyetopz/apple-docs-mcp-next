@@ -65,24 +65,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10216/5/10085282-EADD-4030-9CAF-5F5A1D28C4E7/wwdc2020_10216_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10216/5/10085282-EADD-4030-9CAF-5F5A1D28C4E7/wwdc2020_10216_sd.mp4?dl=1"
   },
@@ -100,5 +83,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10151"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:11.161Z"
+  "extractedAt": "2026-10-11T16:45:57.090Z"
 }

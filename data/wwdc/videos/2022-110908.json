@@ -1,0 +1,26 @@
+{
+  "id": "110908",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110908/",
+  "title": "Meet the Presenter: Create custom catalogs at scale with ShazamKit",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Audio & Video",
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10028",
+      "year": "2022",
+      "title": "Create custom catalogs at scale with ShazamKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10028"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:11.423Z"
+}

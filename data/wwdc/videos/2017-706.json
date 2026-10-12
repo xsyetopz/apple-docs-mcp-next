@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Dispatch",
         "url": "https://developer.apple.com/documentation/Dispatch"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2017/706byvveyendgv5l/706/706_hd_modernizing_grand_central_dispatch_usage.mp4?dl=1",
@@ -60,5 +44,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/221"
     }
   ],
-  "extractedAt": "2025-07-18T10:19:07.827Z"
+  "extractedAt": "2026-10-11T16:48:52.454Z"
 }

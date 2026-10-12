@@ -18,8 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Highlighting Areas of Interest in an Image Using Saliency",
+        "url": "https://developer.apple.com/documentation/Vision/highlighting-areas-of-interest-in-an-image-using-saliency"
       },
       {
         "title": "Analyzing Image Similarity with Feature Print",
@@ -30,40 +30,24 @@
         "url": "https://developer.apple.com/documentation/Vision/classifying-images-for-categorization-and-search"
       },
       {
-        "title": "Detecting Objects in Still Images",
-        "url": "https://developer.apple.com/documentation/Vision/detecting-objects-in-still-images"
-      },
-      {
-        "title": "Highlighting Areas of Interest in an Image Using Saliency",
-        "url": "https://developer.apple.com/documentation/Vision/highlighting-areas-of-interest-in-an-image-using-saliency"
+        "title": "Selecting a selfie based on capture quality",
+        "url": "https://developer.apple.com/documentation/Vision/selecting-a-selfie-based-on-capture-quality"
       },
       {
         "title": "Recognizing Objects in Live Capture",
         "url": "https://developer.apple.com/documentation/Vision/recognizing-objects-in-live-capture"
       },
       {
-        "title": "Selecting a selfie based on capture quality",
-        "url": "https://developer.apple.com/documentation/Vision/selecting-a-selfie-based-on-capture-quality"
-      },
-      {
         "title": "Tracking Multiple Objects or Rectangles in Video",
         "url": "https://developer.apple.com/documentation/Vision/tracking-multiple-objects-or-rectangles-in-video"
       },
       {
+        "title": "Detecting Objects in Still Images",
+        "url": "https://developer.apple.com/documentation/Vision/detecting-objects-in-still-images"
+      },
+      {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/ImageClassificationwithVisionandCoreML.zip",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/209"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:08.209Z"
+  "extractedAt": "2026-10-11T16:47:12.930Z"
 }

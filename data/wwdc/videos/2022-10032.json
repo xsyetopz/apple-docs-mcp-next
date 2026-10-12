@@ -121,24 +121,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Intents",
         "url": "https://developer.apple.com/documentation/AppIntents"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10032/6/69FD8F9D-5C29-4114-9C81-DF1ACC4B4BCA/downloads/wwdc2022-10032_hd.mp4?dl=1",
@@ -170,11 +154,41 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10121"
     },
     {
+      "id": "110533",
+      "year": "2022",
+      "title": "Meet the Presenter: Design App Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110533"
+    },
+    {
+      "id": "110888",
+      "year": "2022",
+      "title": "Meet the Presenter: Dive into App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110888"
+    },
+    {
+      "id": "110887",
+      "year": "2022",
+      "title": "Meet the Presenter: Implement App Shortcuts with App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110887"
+    },
+    {
+      "id": "110885",
+      "year": "2022",
+      "title": "Q&A: App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110885"
+    },
+    {
+      "id": "110886",
+      "year": "2022",
+      "title": "Q&A: Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110886"
+    },
+    {
       "id": "10283",
       "year": "2021",
       "title": "Design great actions for Shortcuts, Siri, and Suggestions",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10283"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:31.940Z"
+  "extractedAt": "2026-10-11T16:39:23.353Z"
 }

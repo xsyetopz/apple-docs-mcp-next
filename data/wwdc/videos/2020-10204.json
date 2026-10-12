@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -15,26 +16,9 @@
     "segments": []
   },
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10204/3/4851FA64-34F3-4E4F-AFA0-D60383DD9E2D/wwdc2020_10204_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10204/3/4851FA64-34F3-4E4F-AFA0-D60383DD9E2D/wwdc2020_10204_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:27:18.873Z"
+  "extractedAt": "2026-10-11T16:44:46.290Z"
 }

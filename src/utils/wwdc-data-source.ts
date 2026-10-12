@@ -5,13 +5,16 @@
  * JSON files that are bundled with the npm package.
  */
 
-import { promises as fs } from 'fs';
-import path from 'path';
-import { logger } from './logger.js';
-import { wwdcDataCache } from './cache.js';
-import { WWDC_CONFIG } from './constants.js';
-import { getWWDCDataDirectory } from './wwdc-data-source-path.js';
-import type { WWDCVideo, GlobalMetadata, TopicIndex, YearIndex } from '../types/wwdc.js';
+import path from "node:path";
+import type {
+  GlobalMetadata,
+  TopicIndex,
+  WWDCVideo,
+  YearIndex,
+} from "../types/wwdc.ts";
+import { wwdcDataCache } from "./cache.ts";
+import { logger } from "./logger.ts";
+import { getWWDCDataDirectory } from "./wwdc-data-source-path.ts";
 
 // Get the data directory from the separate module
 const WWDC_DATA_DIR = getWWDCDataDirectory();
@@ -23,13 +26,16 @@ async function readBundledFile(filePath: string): Promise<string> {
   const fullPath = path.join(WWDC_DATA_DIR, filePath);
 
   try {
-    const content = await fs.readFile(fullPath, 'utf-8');
+    const content = await Bun.file(fullPath).text();
     logger.debug(`Loaded bundled data: ${filePath}`);
     return content;
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     logger.error(`Failed to read bundled data: ${filePath}`, error);
-    throw new Error(`Failed to load WWDC data from ${filePath}: ${errorMessage}`);
+    throw new Error(
+      `Failed to load WWDC data from ${filePath}: ${errorMessage}`,
+      { cause: error },
+    );
   }
 }
 
@@ -40,7 +46,7 @@ async function fetchData(filePath: string): Promise<string> {
   const cacheKey = `wwdc:${filePath}`;
 
   // Check cache first
-  const cached = wwdcDataCache.get<string>(cacheKey);
+  const cached = wwdcDataCache.get(cacheKey);
   if (cached) {
     logger.debug(`Cache hit: ${filePath}`);
     return cached;
@@ -50,7 +56,7 @@ async function fetchData(filePath: string): Promise<string> {
   const data = await readBundledFile(filePath);
 
   // Cache the data
-  wwdcDataCache.set(cacheKey, data, WWDC_CONFIG.CACHE_TTL);
+  wwdcDataCache.set(cacheKey, data);
 
   return data;
 }
@@ -60,11 +66,14 @@ async function fetchData(filePath: string): Promise<string> {
  */
 export async function loadGlobalMetadata(): Promise<GlobalMetadata> {
   try {
-    const data = await fetchData('index.json');
+    const data = await fetchData("index.json");
     return JSON.parse(data);
   } catch (error) {
-    logger.error('Failed to load global metadata', error);
-    throw new Error('Failed to load WWDC metadata. Please ensure the package is properly installed.');
+    logger.error("Failed to load global metadata", error);
+    throw new Error(
+      "Failed to load WWDC metadata. Please ensure the package is properly installed.",
+      { cause: error },
+    );
   }
 }
 
@@ -77,7 +86,7 @@ export async function loadTopicIndex(topicId: string): Promise<TopicIndex> {
     return JSON.parse(data);
   } catch (error) {
     logger.error(`Failed to load topic index: ${topicId}`, error);
-    throw new Error(`Topic not found: ${topicId}`);
+    throw new Error(`Topic not found: ${topicId}`, { cause: error });
   }
 }
 
@@ -90,20 +99,23 @@ export async function loadYearIndex(year: string): Promise<YearIndex> {
     return JSON.parse(data);
   } catch (error) {
     logger.error(`Failed to load year index: ${year}`, error);
-    throw new Error(`Year not found: ${year}`);
+    throw new Error(`Year not found: ${year}`, { cause: error });
   }
 }
 
 /**
  * Load individual video data
  */
-export async function loadVideoData(year: string, videoId: string): Promise<WWDCVideo> {
+export async function loadVideoData(
+  year: string,
+  videoId: string,
+): Promise<WWDCVideo> {
   try {
     const data = await fetchData(`videos/${year}-${videoId}.json`);
     return JSON.parse(data);
   } catch (error) {
     logger.error(`Failed to load video: ${year}-${videoId}`, error);
-    throw new Error(`Video not found: ${year}-${videoId}`);
+    throw new Error(`Video not found: ${year}-${videoId}`, { cause: error });
   }
 }
 
@@ -112,11 +124,11 @@ export async function loadVideoData(year: string, videoId: string): Promise<WWDC
  */
 export async function loadAllVideos(): Promise<WWDCVideo[]> {
   try {
-    const data = await fetchData('all-videos.json');
+    const data = await fetchData("all-videos.json");
     return JSON.parse(data);
   } catch (error) {
-    logger.error('Failed to load all videos', error);
-    throw new Error('Failed to load WWDC video list');
+    logger.error("Failed to load all videos", error);
+    throw new Error("Failed to load WWDC video list", { cause: error });
   }
 }
 
@@ -125,18 +137,12 @@ export async function loadAllVideos(): Promise<WWDCVideo[]> {
  */
 export function clearDataCache(): void {
   wwdcDataCache.clear();
-  logger.info('WWDC data cache cleared');
+  logger.info("WWDC data cache cleared");
 }
 
 /**
  * Check if WWDC data is available
  */
-export async function isDataAvailable(): Promise<boolean> {
-  try {
-    await fs.access(WWDC_DATA_DIR);
-    await fs.access(path.join(WWDC_DATA_DIR, 'index.json'));
-    return true;
-  } catch {
-    return false;
-  }
+export function isDataAvailable(): Promise<boolean> {
+  return Bun.file(path.join(WWDC_DATA_DIR, "index.json")).exists();
 }

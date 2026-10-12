@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: SharePlay",
         "url": "https://developer.apple.com/design/human-interface-guidelines/shareplay/overview/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10241/4/CB916690-4807-421C-AD85-6D36695D722C/downloads/wwdc2023-10241_hd.mp4?dl=1",
@@ -46,7 +30,13 @@
       "year": "2023",
       "title": "Add SharePlay to your app",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10239"
+    },
+    {
+      "id": "111533",
+      "year": "2023",
+      "title": "Q&A: SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111533"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:44.230Z"
+  "extractedAt": "2026-10-11T16:38:53.264Z"
 }

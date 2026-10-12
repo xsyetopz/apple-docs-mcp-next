@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Privacy & Security"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -61,28 +62,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Declared Age Range",
         "url": "https://developer.apple.com/documentation/DeclaredAgeRange"
       },
       {
         "title": "PermissionKit",
         "url": "https://developer.apple.com/documentation/PermissionKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/293/4/3d149cec-af19-46df-9916-67a21d041047/downloads/wwdc2025-293_hd.mp4?dl=1",
@@ -96,5 +81,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/299"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:00.451Z"
+  "extractedAt": "2026-10-11T16:33:33.451Z"
 }

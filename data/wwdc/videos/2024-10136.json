@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -163,8 +164,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Swift Migration Guide",
+        "url": "https://www.swift.org/migration/documentation/migrationguide/"
       },
       {
         "title": "Forum: Programming Languages",
@@ -173,22 +174,6 @@
       {
         "title": "Swift Forums",
         "url": "https://forums.swift.org"
-      },
-      {
-        "title": "Swift Migration Guide",
-        "url": "https://www.swift.org/migration/documentation/migrationguide/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10136/4/14B6AAA9-EB58-4299-AA9B-A1F804631E6C/downloads/wwdc2024-10136_hd.mp4?dl=1",
@@ -244,5 +229,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10172"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:45.866Z"
+  "extractedAt": "2026-10-11T16:34:48.246Z"
 }

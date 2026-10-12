@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
       },
       {
         "title": "Mobile Device Management Protocol Reference",
         "url": "https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10039/4/5852C97C-D712-4FA9-BDB2-2FC9C69289EB/downloads/wwdc2023-10039_hd.mp4?dl=1",
@@ -52,11 +36,23 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10041"
     },
     {
+      "id": "10321",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10321"
+    },
+    {
+      "id": "10329",
+      "year": "2023",
+      "title": "Q&A: Device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10329"
+    },
+    {
       "id": "10040",
       "year": "2023",
       "title": "What’s new in managing Apple devices",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10040"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:42.580Z"
+  "extractedAt": "2026-10-11T16:38:52.464Z"
 }

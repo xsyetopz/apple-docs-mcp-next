@@ -41,7 +41,9 @@
       "year": "2025",
       "title": "Better together: SwiftUI and RealityKit",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -93,10 +95,11 @@
       "year": "2025",
       "title": "Build a SwiftUI app with the new design",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
-      "hasCode": false,
+      "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2025/323/",
       "dataFile": "videos/2025-323.json"
@@ -106,7 +109,8 @@
       "year": "2025",
       "title": "Build a UIKit app with the new design",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -132,7 +136,8 @@
       "year": "2025",
       "title": "Capture cinematic video in your app",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -172,7 +177,8 @@
       "year": "2025",
       "title": "Code-along: Elevate an app with Swift concurrency",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -199,7 +205,8 @@
       "year": "2025",
       "title": "Combine Metal 4 machine learning and graphics",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -225,7 +232,8 @@
       "year": "2025",
       "title": "Create icons with Icon Composer",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -292,7 +300,8 @@
       "year": "2025",
       "title": "Design hover interactions for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -305,7 +314,8 @@
       "year": "2025",
       "title": "Design interactive snippets",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -318,7 +328,9 @@
       "year": "2025",
       "title": "Design widgets for visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -346,7 +358,8 @@
       "topics": [
         "App Services",
         "App Store, Distribution & Marketing",
-        "Graphics & Games"
+        "Graphics & Games",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -359,7 +372,8 @@
       "year": "2025",
       "title": "Discover machine learning & AI frameworks on Apple platforms",
       "topics": [
-        "Essentials"
+        "Essentials",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -385,7 +399,8 @@
       "year": "2025",
       "title": "Dive deeper into Writing Tools",
       "topics": [
-        "App Services"
+        "App Services",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -412,7 +427,8 @@
       "year": "2025",
       "title": "Elevate the design of your iPad app",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -451,7 +467,8 @@
       "year": "2025",
       "title": "Enhance child safety with PermissionKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -464,7 +481,8 @@
       "year": "2025",
       "title": "Enhance your app with machine-learning-based video effects",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -477,7 +495,9 @@
       "year": "2025",
       "title": "Enhance your app’s audio recording capabilities",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Photos & Camera",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -490,7 +510,8 @@
       "year": "2025",
       "title": "Enhance your app’s multilingual experience",
       "topics": [
-        "App Services"
+        "App Services",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -544,7 +565,8 @@
       "title": "Explore enhancements to your spatial business app",
       "topics": [
         "App Services",
-        "Business & Education"
+        "Business & Education",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -596,7 +618,8 @@
       "year": "2025",
       "title": "Explore prompt design & safety for on-device foundation models",
       "topics": [
-        "Design"
+        "Design",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -609,7 +632,8 @@
       "year": "2025",
       "title": "Explore spatial accessory input on visionOS",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -636,7 +660,8 @@
       "title": "Explore video experiences for visionOS",
       "topics": [
         "Audio & Video",
-        "Design"
+        "Design",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -732,7 +757,7 @@
         "Business & Education"
       ],
       "duration": "",
-      "hasCode": false,
+      "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2025/203/",
       "dataFile": "videos/2025-203.json"
@@ -742,7 +767,8 @@
       "year": "2025",
       "title": "Get to know the new design system",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -811,7 +837,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2025/101/",
       "dataFile": "videos/2025-101.json"
     },
@@ -824,7 +850,7 @@
       ],
       "duration": "",
       "hasCode": false,
-      "hasTranscript": true,
+      "hasTranscript": false,
       "url": "https://developer.apple.com/videos/play/wwdc2025/111/",
       "dataFile": "videos/2025-111.json"
     },
@@ -833,7 +859,8 @@
       "year": "2025",
       "title": "Learn about Apple Immersive Video technologies",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -846,7 +873,8 @@
       "year": "2025",
       "title": "Learn about the Apple Projected Media Profile",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -937,7 +965,8 @@
       "year": "2025",
       "title": "Meet Liquid Glass",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -963,7 +992,9 @@
       "year": "2025",
       "title": "Meet SwiftUI spatial layout",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -989,7 +1020,8 @@
       "year": "2025",
       "title": "Meet the HealthKit Medications API",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": false,
@@ -1002,7 +1034,9 @@
       "year": "2025",
       "title": "Meet WebKit for SwiftUI",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1029,7 +1063,8 @@
       "title": "Optimize CPU performance with Instruments",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -1055,7 +1090,9 @@
       "year": "2025",
       "title": "Optimize SwiftUI performance with Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1069,7 +1106,8 @@
       "title": "Optimize your custom environments for visionOS",
       "topics": [
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -1136,7 +1174,8 @@
       "year": "2025",
       "title": "Profile and optimize power usage in your app",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1162,7 +1201,8 @@
       "year": "2025",
       "title": "Record, replay, and review: UI automation with Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1188,7 +1228,8 @@
       "year": "2025",
       "title": "Say hello to the new look of app icons",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1201,7 +1242,9 @@
       "year": "2025",
       "title": "Set the scene with SwiftUI in visionOS",
       "topics": [
-        "Design"
+        "Design",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1214,7 +1257,8 @@
       "year": "2025",
       "title": "Share visionOS experiences with nearby people",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1241,7 +1285,8 @@
       "year": "2025",
       "title": "Support immersive video playback in visionOS apps",
       "topics": [
-        "Audio & Video"
+        "Audio & Video",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1254,7 +1299,8 @@
       "year": "2025",
       "title": "SwiftData: Dive into inheritance and schema migration",
       "topics": [
-        "App Services"
+        "App Services",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1267,7 +1313,8 @@
       "year": "2025",
       "title": "Track workouts with HealthKit on iOS and iPadOS",
       "topics": [
-        "App Services"
+        "App Services",
+        "Health & Fitness"
       ],
       "duration": "",
       "hasCode": true,
@@ -1280,7 +1327,8 @@
       "year": "2025",
       "title": "Turbocharge your app for CarPlay",
       "topics": [
-        "App Services"
+        "App Services",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1293,7 +1341,8 @@
       "year": "2025",
       "title": "Unlock GPU computing with WebGPU",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1319,7 +1368,8 @@
       "year": "2025",
       "title": "Verify identity documents on the web",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -1438,7 +1488,8 @@
       "year": "2025",
       "title": "What’s new in Metal rendering for immersive apps",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1464,7 +1515,8 @@
       "year": "2025",
       "title": "What’s new in RealityKit",
       "topics": [
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -1477,7 +1529,8 @@
       "year": "2025",
       "title": "What’s new in Safari and WebKit",
       "topics": [
-        "App Services"
+        "App Services",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1490,7 +1543,8 @@
       "year": "2025",
       "title": "What’s new in SF Symbols 7",
       "topics": [
-        "Design"
+        "Design",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1517,7 +1571,8 @@
       "year": "2025",
       "title": "What’s new in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1531,7 +1586,9 @@
       "title": "What’s new in SwiftUI",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1561,7 +1618,11 @@
         "Audio & Video",
         "Business & Education",
         "Design",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera",
+        "Safari & Web",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1616,7 +1677,9 @@
       "title": "What’s new in Xcode 26",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,

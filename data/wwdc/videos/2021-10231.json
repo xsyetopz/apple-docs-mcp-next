@@ -37,24 +37,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Donating Shortcuts",
         "url": "https://developer.apple.com/documentation/SiriKit/donating-shortcuts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10231/3/E4613D08-78BF-4C2F-AE4E-E1A4B7A68D78/downloads/wwdc2021-10231_hd.mp4?dl=1",
@@ -92,5 +76,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/211"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:14.121Z"
+  "extractedAt": "2026-10-11T16:43:45.522Z"
 }

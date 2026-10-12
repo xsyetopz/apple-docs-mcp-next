@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SFSafariViewController",
         "url": "https://developer.apple.com/documentation/SafariServices/SFSafariViewController"
       },
       {
         "title": "WebKit",
         "url": "https://developer.apple.com/documentation/WebKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10032/4/BF2DECD6-BD90-4253-9082-6F2FC912788C/downloads/wwdc2021-10032_hd.mp4?dl=1",
@@ -88,5 +72,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10188"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:26.761Z"
+  "extractedAt": "2026-10-11T16:43:27.323Z"
 }

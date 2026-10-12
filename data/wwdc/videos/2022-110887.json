@@ -1,0 +1,31 @@
+{
+  "id": "110887",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110887/",
+  "title": "Meet the Presenter: Implement App Shortcuts with App Intents",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10032",
+      "year": "2022",
+      "title": "Dive into App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10032"
+    },
+    {
+      "id": "10170",
+      "year": "2022",
+      "title": "Implement App Shortcuts with App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10170"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:39:40.897Z"
+}

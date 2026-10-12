@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Providing Hands-Free App Control with Intents",
         "url": "https://developer.apple.com/documentation/SiriKit/providing-hands-free-app-control-with-intents"
       },
       {
         "title": "Soup Chef: Accelerating App Interactions with Shortcuts",
         "url": "https://developer.apple.com/documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10073/3/AA5FAD47-6829-4827-8B36-DB2F30DFC267/wwdc2020_10073_hd.mp4?dl=1",
@@ -112,5 +96,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10068"
     }
   ],
-  "extractedAt": "2025-07-18T09:16:30.154Z"
+  "extractedAt": "2026-10-11T16:46:33.071Z"
 }

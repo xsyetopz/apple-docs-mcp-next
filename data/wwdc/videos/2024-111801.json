@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -92,28 +93,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Creating a Spaceship game",
         "url": "https://developer.apple.com/documentation/RealityKit/creating-a-spaceship-game"
       },
       {
         "title": "Forum: Spatial Computing",
         "url": "https://developer.apple.com/forums/topics/spatial-computing?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/111801/4/8F764313-3800-4A2E-AD3F-92C75F4A02C2/downloads/wwdc2024-111801_hd.mp4?dl=1",
@@ -139,5 +124,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10115"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:35.708Z"
+  "extractedAt": "2026-10-11T16:34:42.942Z"
 }

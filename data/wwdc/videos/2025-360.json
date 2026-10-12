@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: Generative AI",
         "url": "https://developer.apple.com/design/human-interface-guidelines/generative-ai"
       },
       {
         "title": "Human Interface Guidelines: Machine learning",
         "url": "https://developer.apple.com/design/human-interface-guidelines/machine-learning"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/360/5/ea6bc2a8-c1b8-4735-857d-4526abe1348a/downloads/wwdc2025-360_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/360/5/ea6bc2a8-c1b8-4735-857d-4526abe1348a/downloads/wwdc2025-360_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T10:19:50.927Z"
+  "extractedAt": "2026-10-11T16:33:30.693Z"
 }

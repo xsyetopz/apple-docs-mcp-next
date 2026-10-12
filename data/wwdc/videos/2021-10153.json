@@ -43,28 +43,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Debugging the shaders within a draw command or compute dispatch",
         "url": "https://developer.apple.com/documentation/Xcode/Debugging-the-shaders-within-a-draw-command-or-compute-dispatch"
       },
       {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10153/4/F8C484C1-A0A2-4377-992B-313BEB320A28/downloads/wwdc2021-10153_hd.mp4?dl=1",
@@ -84,5 +68,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10632"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:50.190Z"
+  "extractedAt": "2026-10-11T16:43:41.026Z"
 }

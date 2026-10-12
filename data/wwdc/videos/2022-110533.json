@@ -1,0 +1,32 @@
+{
+  "id": "110533",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110533/",
+  "title": "Meet the Presenter: Design App Shortcuts",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services",
+    "Design"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10169",
+      "year": "2022",
+      "title": "Design App Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10169"
+    },
+    {
+      "id": "10032",
+      "year": "2022",
+      "title": "Dive into App Intents",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10032"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:38.363Z"
+}

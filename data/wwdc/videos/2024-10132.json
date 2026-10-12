@@ -121,10 +121,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building a document-based app with SwiftUI",
         "url": "https://developer.apple.com/documentation/SwiftUI/Building-a-document-based-app-with-SwiftUI"
       },
@@ -135,18 +131,6 @@
       {
         "title": "Forum: UI Frameworks",
         "url": "https://developer.apple.com/forums/topics/ui-frameworks?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10132/4/F41D2CAF-097E-4793-B867-78798357CBBC/downloads/wwdc2024-10132_hd.mp4?dl=1",
@@ -166,5 +150,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10039"
     }
   ],
-  "extractedAt": "2025-07-18T10:51:52.846Z"
+  "extractedAt": "2026-10-11T16:34:54.599Z"
 }

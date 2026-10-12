@@ -91,28 +91,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AVFoundation",
-        "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
-      {
         "title": "Loading media data asynchronously",
         "url": "https://developer.apple.com/documentation/AVFoundation/loading-media-data-asynchronously"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AVFoundation",
+        "url": "https://developer.apple.com/documentation/AVFoundation"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10146/5/DB6BBE8F-5AF9-4331-BF7B-F8DF5AC43A92/downloads/wwdc2021-10146_hd.mp4?dl=1",
@@ -162,5 +146,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10290"
     }
   ],
-  "extractedAt": "2025-07-18T09:23:55.027Z"
+  "extractedAt": "2026-10-11T16:43:53.157Z"
 }

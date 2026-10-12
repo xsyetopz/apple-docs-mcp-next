@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -31,28 +32,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "AppKit",
-        "url": "https://developer.apple.com/documentation/AppKit"
-      },
-      {
         "title": "Human Interface Guidelines: SF Symbols",
         "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "AppKit",
+        "url": "https://developer.apple.com/documentation/AppKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10054/7/D3581025-DC73-47FB-98A0-0C9599FAD509/downloads/wwdc2021-10054_hd.mp4?dl=1",
@@ -84,5 +69,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10349"
     }
   ],
-  "extractedAt": "2025-07-18T10:27:27.365Z"
+  "extractedAt": "2026-10-11T16:42:42.073Z"
 }

@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Capture setup",
         "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10247/10/1D70E20D-6FE1-4770-9932-4BC4F4C4F7BA/downloads/wwdc2021-10247_hd.mp4?dl=1",
@@ -60,5 +44,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/501"
     }
   ],
-  "extractedAt": "2025-07-18T10:41:51.506Z"
+  "extractedAt": "2026-10-11T16:43:40.752Z"
 }

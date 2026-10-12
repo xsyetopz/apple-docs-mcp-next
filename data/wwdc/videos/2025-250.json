@@ -97,8 +97,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "NetworkBrowser",
+        "url": "https://developer.apple.com/documentation/Network/NetworkBrowser"
+      },
+      {
+        "title": "NetworkListener",
+        "url": "https://developer.apple.com/documentation/Network/NetworkListener"
+      },
+      {
+        "title": "NetworkConnection",
+        "url": "https://developer.apple.com/documentation/Network/NetworkConnection"
       },
       {
         "title": "Building a custom peer-to-peer protocol",
@@ -107,30 +115,6 @@
       {
         "title": "Network",
         "url": "https://developer.apple.com/documentation/Network"
-      },
-      {
-        "title": "NetworkBrowser",
-        "url": "https://developer.apple.com/documentation/Network/NetworkBrowser"
-      },
-      {
-        "title": "NetworkConnection",
-        "url": "https://developer.apple.com/documentation/Network/NetworkConnection"
-      },
-      {
-        "title": "NetworkListener",
-        "url": "https://developer.apple.com/documentation/Network/NetworkListener"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/250/4/ffac19d6-02fb-4abc-a491-fc009e5d38e3/downloads/wwdc2025-250_hd.mp4?dl=1",
@@ -156,5 +140,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/715"
     }
   ],
-  "extractedAt": "2025-07-18T11:00:35.115Z"
+  "extractedAt": "2026-10-11T16:34:22.527Z"
 }

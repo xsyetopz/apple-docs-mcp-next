@@ -1,0 +1,32 @@
+{
+  "id": "110407",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110407/",
+  "title": "Q&A: Swift Charts",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Health & Fitness",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10136",
+      "year": "2022",
+      "title": "Hello Swift Charts",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10136"
+    },
+    {
+      "id": "10137",
+      "year": "2022",
+      "title": "Swift Charts: Raise the bar",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10137"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:30.192Z"
+}

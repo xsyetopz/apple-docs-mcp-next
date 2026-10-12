@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Nearby Interaction",
         "url": "https://developer.apple.com/documentation/NearbyInteraction"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10165/5/7A838436-C185-4F66-B1AD-411F16DCBF86/downloads/wwdc2021-10165_hd.mp4?dl=1",
@@ -55,17 +39,11 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10245"
     },
     {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
-    },
-    {
       "id": "10668",
       "year": "2020",
       "title": "Meet Nearby Interaction",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10668"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:36.871Z"
+  "extractedAt": "2026-10-11T16:42:30.237Z"
 }

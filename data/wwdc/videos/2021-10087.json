@@ -32,36 +32,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Reducing terminations in your app",
+        "url": "https://developer.apple.com/documentation/Xcode/reduce-terminations-in-your-app"
       },
       {
         "title": "Analyzing the performance of your shipping app",
         "url": "https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app"
       },
       {
-        "title": "App Store Connect API",
-        "url": "https://developer.apple.com/documentation/AppStoreConnectAPI"
-      },
-      {
         "title": "MetricKit",
         "url": "https://developer.apple.com/documentation/MetricKit"
       },
       {
-        "title": "Reducing terminations in your app",
-        "url": "https://developer.apple.com/documentation/Xcode/reduce-terminations-in-your-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Store Connect API",
+        "url": "https://developer.apple.com/documentation/AppStoreConnectAPI"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10087/6/35272A76-3FD8-4149-B4C9-B7C0AA197E61/downloads/wwdc2021-10087_hd.mp4?dl=1",
@@ -111,5 +95,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10081"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:07.899Z"
+  "extractedAt": "2026-10-11T16:43:20.660Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Capture setup",
-        "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
-      },
-      {
         "title": "Supporting Continuity Camera in your macOS app",
         "url": "https://developer.apple.com/documentation/AVFoundation/supporting-continuity-camera-in-your-macos-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Capture setup",
+        "url": "https://developer.apple.com/documentation/AVFoundation/capture-setup"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10018/6/1C7686E9-BB02-4797-B131-7FA5BD1B6133/downloads/wwdc2022-10018_hd.mp4?dl=1",
@@ -58,6 +43,30 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110429"
     },
     {
+      "id": "110961",
+      "year": "2022",
+      "title": "Meet the Presenter: Bring Continuity Camera to your macOS app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110961"
+    },
+    {
+      "id": "110964",
+      "year": "2022",
+      "title": "Meet the Presenter: Create camera extensions with CoreMediaIO",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110964"
+    },
+    {
+      "id": "110959",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110959"
+    },
+    {
+      "id": "110960",
+      "year": "2022",
+      "title": "Q&A: Camera capture",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110960"
+    },
+    {
       "id": "10247",
       "year": "2021",
       "title": "Capture high-quality photos using video formats",
@@ -70,5 +79,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10047"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:58.185Z"
+  "extractedAt": "2026-10-11T16:39:19.357Z"
 }

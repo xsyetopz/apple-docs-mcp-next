@@ -18,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Building a Custom Catalog and Matching Audio",
         "url": "https://developer.apple.com/documentation/ShazamKit/building-a-custom-catalog-and-matching-audio"
       },
       {
         "title": "ShazamKit",
         "url": "https://developer.apple.com/documentation/ShazamKit"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/audio/shazamkit-mov.zip",
@@ -58,13 +42,7 @@
       "year": "2021",
       "title": "Explore ShazamKit",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10044"
-    },
-    {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
     }
   ],
-  "extractedAt": "2025-07-18T09:24:23.260Z"
+  "extractedAt": "2026-10-11T16:42:27.439Z"
 }

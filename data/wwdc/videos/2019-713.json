@@ -17,16 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Collecting Network Connection Metrics",
+        "url": "https://developer.apple.com/documentation/Network/collecting-network-connection-metrics"
       },
       {
         "title": "Building a custom peer-to-peer protocol",
         "url": "https://developer.apple.com/documentation/Network/building-a-custom-peer-to-peer-protocol"
-      },
-      {
-        "title": "Collecting Network Connection Metrics",
-        "url": "https://developer.apple.com/documentation/Network/collecting-network-connection-metrics"
       },
       {
         "title": "Network",
@@ -35,30 +31,12 @@
       {
         "title": "URLSession",
         "url": "https://developer.apple.com/documentation/Foundation/URLSession"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/713b310k72bjpcmz6xn/713/713_hd_advances_in_networking_part_2.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/713b310k72bjpcmz6xn/713/713_sd_advances_in_networking_part_2.mp4?dl=1"
   },
   "relatedVideos": [
-    {
-      "id": "110339",
-      "year": "2022",
-      "title": "Build device-to-device interactions with Network Framework",
-      "url": "https://developer.apple.com/videos/play/wwdc2022/110339"
-    },
     {
       "id": "110356",
       "year": "2022",
@@ -96,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/716"
     }
   ],
-  "extractedAt": "2025-07-18T11:04:10.135Z"
+  "extractedAt": "2026-10-11T16:48:04.207Z"
 }

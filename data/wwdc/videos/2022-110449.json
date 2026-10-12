@@ -1,0 +1,25 @@
+{
+  "id": "110449",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110449/",
+  "title": "Meet the Presenter: Build a productivity app for Apple Watch",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10133",
+      "year": "2022",
+      "title": "Build a productivity app for Apple Watch",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10133"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:37.448Z"
+}

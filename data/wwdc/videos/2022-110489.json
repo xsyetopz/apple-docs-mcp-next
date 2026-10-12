@@ -1,0 +1,37 @@
+{
+  "id": "110489",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110489/",
+  "title": "Q&A: Swift Package Manager",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110401",
+      "year": "2022",
+      "title": "Create Swift Package plugins",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110401"
+    },
+    {
+      "id": "110359",
+      "year": "2022",
+      "title": "Meet Swift Package plugins",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110359"
+    },
+    {
+      "id": "110354",
+      "year": "2022",
+      "title": "What's new in Swift",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110354"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:13.259Z"
+}

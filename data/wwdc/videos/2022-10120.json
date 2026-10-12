@@ -25,24 +25,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Migrating your data model automatically",
         "url": "https://developer.apple.com/documentation/CoreData/migrating-your-data-model-automatically"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10120/5/7685DE64-40AC-4C35-9865-8CDA798501E4/downloads/wwdc2022-10120_hd.mp4?dl=1",
@@ -56,11 +40,29 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10186"
     },
     {
+      "id": "110928",
+      "year": "2022",
+      "title": "Meet the Presenter: Evolve your Core Data schema",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110928"
+    },
+    {
       "id": "10119",
       "year": "2022",
       "title": "Optimize your use of Core Data and CloudKit",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10119"
+    },
+    {
+      "id": "110836",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110836"
+    },
+    {
+      "id": "110838",
+      "year": "2022",
+      "title": "Q&A: Core Data",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110838"
     }
   ],
-  "extractedAt": "2025-07-18T11:02:27.095Z"
+  "extractedAt": "2026-10-11T16:41:14.312Z"
 }

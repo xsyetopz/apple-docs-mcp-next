@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building a Signal Generator",
-        "url": "https://developer.apple.com/documentation/avfoundation/building_a_signal_generator"
+        "title": "Building a signal generator",
+        "url": "https://developer.apple.com/documentation/AVFAudio/building-a-signal-generator"
       },
       {
         "title": "Using voice processing",
         "url": "https://developer.apple.com/documentation/AVFAudio/using-voice-processing"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/510v8txdlekug3npw2m/510/510_hd_whats_new_in_avaudioengine.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/510v8txdlekug3npw2m/510/510_sd_whats_new_in_avaudioengine.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:25:26.744Z"
+  "extractedAt": "2026-10-11T16:47:07.158Z"
 }

@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,28 +50,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "CloudKit",
-        "url": "https://developer.apple.com/documentation/CloudKit"
-      },
-      {
         "title": "Integrating a Text-Based Schema into Your Workflow",
         "url": "https://developer.apple.com/documentation/CloudKit/integrating-a-text-based-schema-into-your-workflow"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "CloudKit",
+        "url": "https://developer.apple.com/documentation/CloudKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10118/4/9B80307B-4AD2-499D-81D9-ABD4D94DFE78/downloads/wwdc2021-10118_hd.mp4?dl=1",
@@ -90,5 +75,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10117"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:05.522Z"
+  "extractedAt": "2026-10-11T16:43:38.949Z"
 }

@@ -1,0 +1,26 @@
+{
+  "id": "110465",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110465/",
+  "title": "Q&A: CarPlay",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10016",
+      "year": "2022",
+      "title": "Get more mileage out of your app with CarPlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10016"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:42:16.542Z"
+}

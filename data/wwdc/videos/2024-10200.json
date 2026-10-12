@@ -44,12 +44,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Forum: Developer Tools & Services",
+        "url": "https://developer.apple.com/forums/topics/developer-tools-and-services?cid=vf-a-0010"
       },
       {
-        "title": "Configuring start conditions",
-        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Start-Conditions"
+        "title": "Sharing macOS and Xcode versions across Xcode Cloud workflows",
+        "url": "https://developer.apple.com/documentation/Xcode/Sharing-custom-aliases-across-Xcode-Cloud-workflows"
       },
       {
         "title": "Configuring webhooks in Xcode Cloud",
@@ -60,28 +60,12 @@
         "url": "https://developer.apple.com/documentation/Xcode/Environment-Variable-Reference"
       },
       {
-        "title": "Forum: Developer Tools & Services",
-        "url": "https://developer.apple.com/forums/topics/developer-tools-and-services?cid=vf-a-0010"
-      },
-      {
-        "title": "Sharing macOS and Xcode versions across Xcode Cloud workflows",
-        "url": "https://developer.apple.com/documentation/Xcode/Sharing-custom-aliases-across-Xcode-Cloud-workflows"
-      },
-      {
         "title": "Writing custom build scripts",
         "url": "https://developer.apple.com/documentation/Xcode/Writing-Custom-Build-Scripts"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Configuring start conditions",
+        "url": "https://developer.apple.com/documentation/Xcode/Configuring-Start-Conditions"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10200/5/28E5AAA4-9AE8-427A-B577-512070861A1A/downloads/wwdc2024-10200_hd.mp4?dl=1",
@@ -107,5 +91,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10267"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:00.373Z"
+  "extractedAt": "2026-10-11T16:35:43.744Z"
 }

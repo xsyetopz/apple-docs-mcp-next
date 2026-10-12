@@ -91,44 +91,28 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Modern rendering with Metal",
+        "url": "https://developer.apple.com/documentation/Metal/modern-rendering-with-metal"
       },
       {
         "title": "Accelerating ray tracing and motion blur using Metal",
         "url": "https://developer.apple.com/documentation/Metal/accelerating-ray-tracing-and-motion-blur-using-metal"
       },
       {
-        "title": "Debugging the shaders within a draw command or compute dispatch",
-        "url": "https://developer.apple.com/documentation/Xcode/Debugging-the-shaders-within-a-draw-command-or-compute-dispatch"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
         "title": "Metal for Accelerating Ray Tracing",
         "url": "https://developer.apple.com/documentation/metal/metal_sample_code_library/accelerating_ray_tracing_using_metal"
+      },
+      {
+        "title": "Debugging the shaders within a draw command or compute dispatch",
+        "url": "https://developer.apple.com/documentation/Xcode/Debugging-the-shaders-within-a-draw-command-or-compute-dispatch"
       },
       {
         "title": "Metal Performance Shaders",
         "url": "https://developer.apple.com/documentation/MetalPerformanceShaders"
       },
       {
-        "title": "Modern Rendering with Metal",
-        "url": "https://developer.apple.com/documentation/Metal/modern-rendering-with-metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10013/4/17EAECF9-AE48-4108-B8E1-7214F30DC9AC/wwdc2020_10013_hd.mp4?dl=1",
@@ -148,5 +132,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10157"
     }
   ],
-  "extractedAt": "2025-07-18T10:33:53.408Z"
+  "extractedAt": "2026-10-11T16:46:34.701Z"
 }

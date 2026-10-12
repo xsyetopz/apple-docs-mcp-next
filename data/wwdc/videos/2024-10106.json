@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Graphics & Games"
+    "Graphics & Games",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -18,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Spatial Computing",
         "url": "https://developer.apple.com/forums/topics/spatial-computing?cid=vf-a-0010"
       },
       {
         "title": "ShaderGraph",
         "url": "https://developer.apple.com/documentation/ShaderGraph"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10106/5/6A686C28-DE5C-4ED5-A387-C03961DF852D/downloads/wwdc2024-10106_hd.mp4?dl=1",
@@ -65,5 +50,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10105"
     }
   ],
-  "extractedAt": "2025-07-18T09:40:38.229Z"
+  "extractedAt": "2026-10-11T16:35:48.166Z"
 }

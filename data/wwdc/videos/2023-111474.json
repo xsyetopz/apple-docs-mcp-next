@@ -1,0 +1,25 @@
+{
+  "id": "111474",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111474/",
+  "title": "Meet the presenter: Create a more responsive camera experience",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10105",
+      "year": "2023",
+      "title": "Create a more responsive camera experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10105"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:36:53.347Z"
+}

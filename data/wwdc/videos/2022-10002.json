@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Business & Education"
+    "Business & Education",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -115,10 +116,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Hypervisor",
         "url": "https://developer.apple.com/documentation/Hypervisor"
       },
@@ -129,18 +126,6 @@
       {
         "title": "Virtualization",
         "url": "https://developer.apple.com/documentation/Virtualization"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10002/5/F229C2EC-A6BC-4671-91A0-65FBC9D71DDF/downloads/wwdc2022-10002_hd.mp4?dl=1",
@@ -154,5 +139,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10007"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:49.257Z"
+  "extractedAt": "2026-10-11T16:39:21.788Z"
 }

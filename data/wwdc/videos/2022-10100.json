@@ -31,28 +31,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adding a web development tool to Safari Web Inspector",
         "url": "https://developer.apple.com/documentation/SafariServices/adding-a-web-development-tool-to-safari-web-inspector"
       },
       {
         "title": "Safari web extensions",
         "url": "https://developer.apple.com/documentation/SafariServices/safari-web-extensions"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10100/8/7E160FF7-856D-4B6E-BE75-633EF8C15CA5/downloads/wwdc2022-10100_hd.mp4?dl=1",
@@ -64,6 +48,18 @@
       "year": "2023",
       "title": "What’s new in Web Inspector",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10118"
+    },
+    {
+      "id": "110485",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110485"
+    },
+    {
+      "id": "110535",
+      "year": "2022",
+      "title": "Q&A: Safari and web technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110535"
     },
     {
       "id": "10048",
@@ -78,5 +74,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10099"
     }
   ],
-  "extractedAt": "2025-07-18T10:44:24.263Z"
+  "extractedAt": "2026-10-11T16:41:08.977Z"
 }

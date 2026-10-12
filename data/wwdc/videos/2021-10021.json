@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -43,36 +44,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Add Rich Graphics to Your SwiftUI App",
-        "url": "https://developer.apple.com/documentation/swiftui/add_rich_graphics_to_your_swiftui_app"
-      },
-      {
-        "title": "Adding interactivity with gestures",
-        "url": "https://developer.apple.com/documentation/SwiftUI/Adding-Interactivity-with-Gestures"
+        "title": "Add rich graphics to your SwiftUI app",
+        "url": "https://developer.apple.com/documentation/SwiftUI/add-rich-graphics-to-your-swiftui-app"
       },
       {
         "title": "Composing SwiftUI gestures",
         "url": "https://developer.apple.com/documentation/SwiftUI/Composing-SwiftUI-Gestures"
       },
       {
+        "title": "Adding interactivity with gestures",
+        "url": "https://developer.apple.com/documentation/SwiftUI/Adding-Interactivity-with-Gestures"
+      },
+      {
         "title": "GestureState",
         "url": "https://developer.apple.com/documentation/SwiftUI/GestureState"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10021/8/16B955CA-C8EE-4062-9495-C6571401B563/downloads/wwdc2021-10021_hd.mp4?dl=1",
@@ -98,5 +83,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10002"
     }
   ],
-  "extractedAt": "2025-07-18T10:32:19.700Z"
+  "extractedAt": "2026-10-11T16:42:25.094Z"
 }

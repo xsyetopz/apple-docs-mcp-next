@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -67,14 +68,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adding Menus and Shortcuts to the Menu Bar and User Interface",
-        "url": "https://developer.apple.com/documentation/uikit/uicommand/adding_menus_and_shortcuts_to_the_menu_bar_and_user_interface"
-      },
-      {
         "title": "Human Interface Guidelines: Mac Catalyst",
         "url": "https://developer.apple.com/design/human-interface-guidelines/mac-catalyst"
       },
@@ -87,16 +80,8 @@
         "url": "https://developer.apple.com/documentation/UIKit/optimizing-your-ipad-app-for-mac"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adding menus and shortcuts to the menu bar and user interface",
+        "url": "https://developer.apple.com/documentation/UIKit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10056/11/7A6C9FD8-33A7-4FA5-BF00-AA6A9D0A1A5B/wwdc2020_10056_hd.mp4?dl=1",
@@ -152,5 +137,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/205"
     }
   ],
-  "extractedAt": "2025-07-18T10:15:00.139Z"
+  "extractedAt": "2026-10-11T16:45:53.251Z"
 }

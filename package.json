@@ -1,77 +1,84 @@
 {
-  "name": "@kimsungwhee/apple-docs-mcp",
+  "name": "apple-docs-mcp-next",
   "version": "1.0.26",
-  "description": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC videos, Swift/Objective-C APIs & code examples in Claude, Cursor & AI assistants",
-  "type": "module",
-  "main": "dist/index.js",
-  "bin": {
-    "apple-docs-mcp": "./dist/index.js"
-  },
-  "files": [
-    "dist",
-    "README.md",
-    "README.*.md",
-    "LICENSE"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kimsungwhee/apple-docs-mcp.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kimsungwhee/apple-docs-mcp/issues"
-  },
-  "homepage": "https://github.com/kimsungwhee/apple-docs-mcp#readme",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "build": "tsc && cp -r data dist/",
-    "dev": "tsc --watch",
-    "start": "node dist/index.js",
-    "clean": "rm -rf dist",
-    "lint": "eslint src --ext .ts",
-    "lint:fix": "eslint src --ext .ts --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:ci": "jest --ci --coverage --watchAll=false",
-    "prepublishOnly": "pnpm run clean && pnpm run build && pnpm run test:ci",
-    "release:patch": "npm version patch && git push origin main --tags && npm publish",
-    "release:minor": "npm version minor && git push origin main --tags && npm publish",
-    "release:major": "npm version major && git push origin main --tags && npm publish"
-  },
+  "description": "MCP server for Apple Developer Documentation: API reference, Human Interface Guidelines, App Store Connect Help, sample code and 1,700 WWDC sessions with transcripts and code, on Bun",
   "keywords": [
     "mcp",
+    "model-context-protocol",
+    "mcp-server",
     "apple",
-    "developer-documentation",
+    "apple-developer",
+    "documentation",
+    "swift",
+    "swiftui",
+    "uikit",
+    "wwdc",
+    "xcode",
     "ios",
     "macos",
-    "swift",
-    "objective-c",
-    "api-search",
-    "framework-documentation",
-    "sample-code",
-    "apple-apis"
+    "claude",
+    "cursor"
   ],
-  "author": "kimsungwhee",
+  "homepage": "https://github.com/xsyetopz/apple-docs-mcp-next#readme",
+  "bugs": {
+    "url": "https://github.com/xsyetopz/apple-docs-mcp-next/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsyetopz/apple-docs-mcp-next.git"
+  },
   "license": "MIT",
+  "contributors": [
+    "kimsungwhee (https://github.com/kimsungwhee)",
+    "mishafyi (https://github.com/mishafyi)"
+  ],
+  "type": "module",
+  "bin": {
+    "apple-docs-mcp-next": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "data",
+    "api-map/apple-docs-map.tsv"
+  ],
+  "engines": {
+    "bun": ">=1.4.3"
+  },
+  "packageManager": "bun@1.4.3",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch run src/index.ts",
+    "lint": "biome ci .",
+    "format": "biome check --write .",
+    "lint:md": "markdownlint-cli2",
+    "test": "bun test --isolate",
+    "ci": "bun check && bun run lint && bun run lint:md && bun run test",
+    "types:docc": "openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderNode.spec.json --default-non-nullable false -o src/types/docc/render-node.d.ts && openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderIndex.spec.json --default-non-nullable false -o src/types/docc/render-index.d.ts",
+    "types:captured": "bun run scripts/capture-responses.ts && bun run types:captured:generate",
+    "types:captured:generate": "quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchStream --out src/types/captured/search-stream.ts api-map/responses/*.messages.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchDocument --out src/types/captured/search-document.ts api-map/responses/*.document.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level TechnologiesPage --out src/types/captured/technologies.ts api-map/responses/technologies.json"
+  },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.15.1",
-    "cheerio": "^1.1.0",
-    "zod": "^4.0.5"
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "bottleneck": "2.19.5",
+    "header-generator": "2.1.88",
+    "jsdom": "30.1.2",
+    "lru-cache": "11.5.3",
+    "p-retry": "8.0.1",
+    "turndown": "7.2.4",
+    "turndown-plugin-gfm": "1.0.2",
+    "zod": "4.6.6"
   },
   "devDependencies": {
-    "@jest/globals": "^30.0.4",
-    "@types/jest": "^30.0.0",
-    "@types/jsdom": "^21.1.7",
-    "@types/node": "^20.11.0",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.1",
-    "jest": "^30.0.4",
-    "jsdom": "^26.1.0",
-    "ts-jest": "^29.4.0",
-    "tsx": "^4.20.3",
-    "typescript": "^5.3.3"
+    "@biomejs/biome": "2.5.15",
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "@types/bun": "1.4.3",
+    "@types/jsdom": "30.0.0",
+    "@types/node": "26.6.5",
+    "@types/turndown": "5.0.6",
+    "markdownlint-cli2": "0.23.3",
+    "openapi-typescript": "7.13.0",
+    "playwright": "1.64.0",
+    "quicktype": "26.0.0"
   }
 }

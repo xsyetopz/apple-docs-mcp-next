@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Design",
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -18,28 +19,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Apple Design Resources",
-        "url": "https://developer.apple.com/design/resources/"
-      },
-      {
         "title": "Human Interface Guidelines: watchOS",
         "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Apple Design Resources",
+        "url": "https://developer.apple.com/design/resources/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10026/4/F0D39B26-C7C2-4ABB-8897-C377223B6A82/downloads/wwdc2023-10026_hd.mp4?dl=1",
@@ -59,11 +44,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10309"
     },
     {
+      "id": "111520",
+      "year": "2023",
+      "title": "Q&A: watchOS 10 design",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111520"
+    },
+    {
       "id": "10031",
       "year": "2023",
       "title": "Update your app for watchOS 10",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10031"
     }
   ],
-  "extractedAt": "2025-07-18T09:36:17.147Z"
+  "extractedAt": "2026-10-11T16:36:10.911Z"
 }

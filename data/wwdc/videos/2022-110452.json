@@ -1,0 +1,27 @@
+{
+  "id": "110452",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110452/",
+  "title": "Study Hall: WidgetKit workshop",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "App Services",
+    "Essentials",
+    "SwiftUI & UI Frameworks"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10050",
+      "year": "2022",
+      "title": "Complications and widgets: Reloaded",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10050"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:31.930Z"
+}

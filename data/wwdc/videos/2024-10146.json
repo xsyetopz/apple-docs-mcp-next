@@ -199,28 +199,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Creating custom container views",
         "url": "https://developer.apple.com/documentation/SwiftUI/Creating-custom-container-views"
       },
       {
         "title": "Forum: UI Frameworks",
         "url": "https://developer.apple.com/forums/topics/ui-frameworks?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10146/4/F3988ADA-0BF0-447C-BE07-01C07F99F11E/downloads/wwdc2024-10146_hd.mp4?dl=1",
@@ -240,5 +224,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10022"
     }
   ],
-  "extractedAt": "2025-07-18T10:51:58.221Z"
+  "extractedAt": "2026-10-11T16:35:33.081Z"
 }

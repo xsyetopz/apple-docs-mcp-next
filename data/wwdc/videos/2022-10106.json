@@ -65,24 +65,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10106/5/56A1A2BE-7EF5-4AA0-AE93-1F93BD885019/downloads/wwdc2022-10106_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10106/5/56A1A2BE-7EF5-4AA0-AE93-1F93BD885019/downloads/wwdc2022-10106_sd.mp4?dl=1"
   },
@@ -100,6 +83,36 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10101"
     },
     {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110663",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110663"
+    },
+    {
+      "id": "110664",
+      "year": "2022",
+      "title": "Q&A: Games technologies",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110664"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
+    },
+    {
       "id": "10180",
       "year": "2021",
       "title": "Detect and diagnose memory issues",
@@ -112,5 +125,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10157"
     }
   ],
-  "extractedAt": "2025-07-18T10:31:40.649Z"
+  "extractedAt": "2026-10-11T16:42:08.164Z"
 }

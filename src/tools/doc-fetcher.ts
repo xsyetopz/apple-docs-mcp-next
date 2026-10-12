@@ -1,35 +1,51 @@
-import { apiCache, generateEnhancedCacheKey } from '../utils/cache.js';
-import { convertToJsonApiUrl } from '../utils/url-converter.js';
-import { httpClient } from '../utils/http-client.js';
-import type { AppleDocJSON } from '../types/apple-docs.js';
-import type { ContentSection, ContentItem } from '../types/content-sections.js';
-import { logger } from '../utils/logger.js';
-import { PROCESSING_LIMITS } from '../utils/constants.js';
+import type {
+  Attribute,
+  DeclarationToken,
+  DocumentationPrimaryRenderSection,
+  PlatformAvailability,
+  RenderBlockContent,
+  RenderNode,
+  RenderSection,
+  TypedProperty,
+} from "../types/docc.ts";
+import { isDeprecated, isTopicReference } from "../types/docc.ts";
+import { apiCache, generateEnhancedCacheKey } from "../utils/cache.ts";
+import { PROCESSING_LIMITS } from "../utils/constants.ts";
+import { httpClient } from "../utils/http-client.ts";
+import { logger } from "../utils/logger.ts";
+import { convertToJsonApiUrl } from "../utils/url-converter.ts";
 import {
-  formatDocumentHeader,
   formatDocumentAbstract,
+  formatDocumentHeader,
+  formatIdentifierLine,
+  formatIdentifierLink,
+  formatImage,
+  formatInlineContent,
+  formatIntroducedVersion,
   formatPlatformAvailability,
   formatSeeAlsoSection,
   isSpecificAPIDocument,
-} from './doc-formatter.js';
-
-
+  referenceUrl,
+} from "./doc-formatter.ts";
+import { fetchHelpPage } from "./help-pages.ts";
+import { HELP_PATH } from "./search-result-parser.ts";
 
 /**
  * Format JSON documentation content with enhanced analysis
  */
 function formatJsonDocumentation(
-  jsonData: AppleDocJSON,
+  jsonData: RenderNode,
   originalUrl: string,
   options: EnhancedAnalysisOptions = {},
-): { content: Array<{ type: string; text: string }> } {
-  let content = '';
+): { content: Array<{ type: "text"; text: string }> } {
+  let content = "";
 
   // Add header with title and status
   content += formatDocumentHeader(jsonData);
 
   // Add abstract
   content += formatDocumentAbstract(jsonData);
+  content += formatSampleDownload(jsonData);
 
   // Check if this is a specific API/symbol or an API collection
   if (isSpecificAPIDocument(jsonData)) {
@@ -37,6 +53,8 @@ function formatJsonDocumentation(
   } else {
     content += formatAPICollectionContent(jsonData);
   }
+  content += formatTutorialSections(jsonData);
+  content += formatRelationshipsSection(jsonData);
 
   // Add platform availability
   content += formatPlatformAvailability(jsonData);
@@ -44,7 +62,30 @@ function formatJsonDocumentation(
   // Add See Also section
   content += formatSeeAlsoSection(jsonData);
 
-  // Add enhanced analysis sections
+  content += formatAnalysisSections(jsonData, options);
+
+  // Add link to original documentation
+  content += `---\n\n[View full documentation on Apple Developer](${originalUrl})`;
+
+  return {
+    content: [
+      {
+        type: "text" as const,
+        text: content,
+      },
+    ],
+  };
+}
+
+/**
+ * The sections the include… flags ask for, read from the page's JSON
+ */
+function formatAnalysisSections(
+  jsonData: RenderNode,
+  options: EnhancedAnalysisOptions,
+): string {
+  let content = "";
+
   if (options.includeRelatedApis) {
     const relatedApis = extractRelatedApis(jsonData);
     if (relatedApis.length > 0) {
@@ -73,167 +114,444 @@ function formatJsonDocumentation(
     }
   }
 
-  // Add link to original documentation
-  content += `---\n\n[View full documentation on Apple Developer](${originalUrl})`;
+  return content;
+}
 
-  return {
-    content: [
-      {
-        type: 'text' as const,
-        text: content,
-      },
-    ],
-  };
+/**
+ * A sample's Download button: a reference to the project's zip, linked like any reference
+ */
+function formatSampleDownload(jsonData: RenderNode): string {
+  const action = jsonData.sampleCodeDownload?.action;
+  return action
+    ? `${formatInlineContent([action], jsonData.references)}\n\n`
+    : "";
 }
 
 /**
  * Format specific API content (methods, properties, etc.)
  */
-function formatSpecificAPIContent(jsonData: AppleDocJSON): string {
-  let content = '';
+function formatSpecificAPIContent(jsonData: RenderNode): string {
+  let content = "";
 
-  if (jsonData.primaryContentSections) {
-    jsonData.primaryContentSections.forEach((section) => {
-      const typedSection = section as ContentSection;
-      switch (typedSection.kind) {
-        case 'declarations':
-          content += '## Declaration\n\n';
-          if (typedSection.declarations?.[0]?.tokens) {
-            const declaration = typedSection.declarations[0].tokens
-              .map((token) => token.text ?? '')
-              .join('');
-            content += `\`\`\`swift\n${declaration}\`\`\`\n\n`;
-          }
-          break;
-
-        case 'parameters':
-          content += '## Parameters\n\n';
-          if (typedSection.parameters && Array.isArray(typedSection.parameters)) {
-            typedSection.parameters.forEach((param) => {
-              content += `**${param.name}**: `;
-              if (param.content?.[0]?.inlineContent) {
-                const paramDesc = param.content[0].inlineContent
-                  .map((inline) => (inline as { text?: string })?.text ?? '')
-                  .join('');
-                content += `${paramDesc}\n\n`;
-              }
-            });
-          }
-          break;
-
-        case 'content':
-          if (typedSection.content && Array.isArray(typedSection.content)) {
-            typedSection.content.forEach((item) => {
-              const contentItem = item as ContentItem;
-              if (contentItem.type === 'heading') {
-                content += `## ${contentItem.text}\n\n`;
-              } else if (contentItem.type === 'paragraph' && contentItem.inlineContent) {
-                const paragraphText = contentItem.inlineContent
-                  .map((inline: any) => {
-                    if (inline.type === 'text') {
-                      return inline.text ?? '';
-                    } else if (inline.type === 'codeVoice') {
-                      return `\`${(inline).code ?? ''}\``;
-                    } else if (inline.type === 'reference' && (inline).identifier) {
-                      const apiName = ((inline).identifier as string).split('/').pop() ?? (inline).identifier;
-                      return `\`${apiName}\``;
-                    }
-                    return '';
-                  })
-                  .join('');
-                if (paragraphText.trim()) {
-                  content += `${paragraphText}\n\n`;
-                }
-              } else if (contentItem.type === 'codeListing' && (contentItem as any).code) {
-                content += `\`\`\`${(contentItem as any).syntax ?? 'swift'}\n${(contentItem as any).code.join('\n')}\`\`\`\n\n`;
-              }
-            });
-          }
-          break;
+  for (const section of jsonData.primaryContentSections ?? []) {
+    if (!("kind" in section)) {
+      continue;
+    }
+    switch (section.kind) {
+      case "declarations": {
+        const declaration =
+          section.declarations[0]?.tokens.map((token) => token.text).join("") ??
+          "";
+        content += `## Declaration\n\n\`\`\`swift\n${declaration.trimEnd()}\n\`\`\`\n\n`;
+        break;
       }
-    });
+      case "parameters":
+        content += "## Parameters\n\n";
+        for (const param of section.parameters) {
+          content += `**${param.name}**: ${formatContentItems(param.content, jsonData.references).trim()}\n\n`;
+        }
+        break;
+      case "content":
+        content += formatContentItems(section.content, jsonData.references);
+        break;
+      default:
+        content += formatWebServiceSection(section, jsonData.references);
+    }
   }
 
-  return content;
+  return content + formatTopicsSection(jsonData);
+}
+
+/**
+ * A web-service page's sections: an endpoint's URL, parameters, body and responses; an object's properties; a type's
+ * possible values. Other kinds (mentions, details) are left out.
+ */
+function formatWebServiceSection(
+  section: Extract<DocumentationPrimaryRenderSection, { kind: string }>,
+  references: References,
+): string {
+  const fields = (items: TypedProperty[]): string =>
+    items.map((item) => formatTypedProperty(item, references)).join("");
+  switch (section.kind) {
+    case "restEndpoint":
+      return `## ${section.title}\n\n\`\`\`\n${section.tokens.map((token) => token.text).join("")}\n\`\`\`\n\n`;
+    case "restParameters":
+      return `## ${section.title}\n\n${fields(section.items)}\n`;
+    case "properties":
+      return `## ${section.title}\n\n${fields(section.items ?? [])}\n`;
+    case "restBody":
+      return (
+        `## ${section.title}\n\n${formatTypeTokens(section.bodyContentType, references)} (${section.mimeType})\n\n` +
+        `${formatContentItems(section.content ?? [], references)}${fields(section.parameters ?? [])}\n`
+      );
+    case "restResponses":
+      return `## ${section.title}\n\n${section.items
+        .map((response) => {
+          const about = formatOneLine(response.content ?? [], references);
+          return (
+            `- ${response.status}${response.reason ? ` ${response.reason}` : ""}: ${formatTypeTokens(response.type, references)}` +
+            `${response.mimeType ? ` (${response.mimeType})` : ""}${about ? `. ${about}` : ""}\n`
+          );
+        })
+        .join("")}\n`;
+    case "possibleValues":
+      return `${section.title ? `## ${section.title}\n\n` : ""}${section.values
+        .map((value) => {
+          const about = formatOneLine(value.content ?? [], references);
+          return `- \`${value.name}\`${about ? `: ${about}` : ""}\n`;
+        })
+        .join("")}\n`;
+    default:
+      return "";
+  }
+}
+
+/**
+ * A property, parameter or body field on one line: its name, type, flags, description and attributes
+ */
+function formatTypedProperty(
+  property: TypedProperty,
+  references: References,
+): string {
+  const flags = [
+    property.required && "required",
+    property.readOnly && "read-only",
+    property.deprecated && "deprecated",
+  ]
+    .filter((flag): flag is string => Boolean(flag))
+    .map((flag) => `, ${flag}`)
+    .join("");
+  const notes = [
+    formatOneLine(property.content ?? [], references),
+    ...(property.attributes ?? []).map((attribute) =>
+      formatAttribute(attribute, references),
+    ),
+  ]
+    .filter(Boolean)
+    .join("; ");
+  return `- \`${property.name}\` (${formatTypeTokens(property.type, references)}${flags})${notes ? `: ${notes}` : ""}\n`;
+}
+
+/**
+ * swift-docc-render's labels for an attribute that comes without a title (its `parameters` strings)
+ */
+const ATTRIBUTE_LABELS: Record<Attribute["kind"], string> = {
+  default: "Default",
+  minimum: "Minimum",
+  minimumExclusive: "Minimum",
+  maximum: "Maximum",
+  maximumExclusive: "Maximum",
+  allowedValues: "Possible Values",
+  allowedTypes: "Possible types",
+};
+
+/**
+ * A property's default, bound, allowed values or allowed types
+ */
+function formatAttribute(attribute: Attribute, references: References): string {
+  const label = attribute.title ?? ATTRIBUTE_LABELS[attribute.kind];
+  switch (attribute.kind) {
+    case "allowedValues":
+      return `${label}: ${attribute.values.map((value) => `\`${value}\``).join(", ")}`;
+    case "allowedTypes":
+      return `${label}: ${attribute.values.map((type) => formatTypeTokens(type, references)).join(", ")}`;
+    default:
+      return `${label}: ${attribute.value}`;
+  }
+}
+
+/**
+ * A type's tokens as text, each token with a page linked to it
+ */
+function formatTypeTokens(
+  tokens: DeclarationToken[],
+  references: References,
+): string {
+  return tokens
+    .map((token) => {
+      const url = token.identifier
+        ? referenceUrl(references?.[token.identifier])
+        : undefined;
+      return url ? `[\`${token.text}\`](${url})` : token.text;
+    })
+    .join("");
+}
+
+/**
+ * Blocks as one line of text, for a list item
+ */
+function formatOneLine(
+  blocks: RenderBlockContent[],
+  references: References,
+): string {
+  return formatContentItems(blocks, references)
+    .trim()
+    .replace(/\s*\n+\s*/g, " ");
+}
+
+/**
+ * A page's Topics: Apple's groups of its members (a type's) or collections (a framework's), under the heading
+ * Apple's renderer gives them, swift-docc-render's `sections.topics` string; the page's JSON has only each group's title.
+ */
+function formatTopicsSection(jsonData: RenderNode): string {
+  const topics = formatTopicGroups(jsonData);
+  return topics ? `## Topics\n\n${topics}` : "";
+}
+
+/**
+ * Each Topics group's title, its description when it has one, and the pages in it, as links
+ */
+function formatTopicGroups(jsonData: RenderNode): string {
+  return (jsonData.topicSections ?? [])
+    .filter((section) => section.title && section.identifiers.length > 0)
+    .map(
+      (section) =>
+        `### ${section.title}\n\n` +
+        (section.abstract
+          ? `${formatInlineContent(section.abstract, jsonData.references).trim()}\n\n`
+          : "") +
+        `${section.identifiers.map((identifier) => formatIdentifierLine(identifier, jsonData.references)).join("")}\n`,
+    )
+    .join("");
+}
+
+/**
+ * The page's Relationships (Conforms To, Inherits From, Inherited By, Conforming Types), each type by name as Apple's
+ * pages list them
+ */
+function formatRelationshipsSection(jsonData: RenderNode): string {
+  const groups = (jsonData.relationshipsSections ?? [])
+    .filter((section) => section.identifiers.length > 0)
+    .map(
+      (section) =>
+        `### ${section.title}\n\n${section.identifiers
+          .map(
+            (identifier) =>
+              `- ${formatIdentifierLink(identifier, jsonData.references)}\n`,
+          )
+          .join("")}\n`,
+    );
+  return groups.length > 0 ? `## Relationships\n\n${groups.join("")}` : "";
+}
+
+type References = RenderNode["references"];
+
+/**
+ * Format one block, including the blocks that hold other blocks: a code listing's language tabs (Swift, Objective-C),
+ * notes, lists, side-by-side columns, tables, link lists (a HIG page's videos) and tutorial layouts. Blocks of any
+ * other type are left out.
+ */
+function formatBlock(
+  block: RenderBlockContent,
+  references: References,
+): string {
+  if (!("type" in block)) {
+    return formatLayout(block, references);
+  }
+  switch (block.type) {
+    case "heading":
+      return `${"#".repeat(Math.min(Math.max(block.level, 2), 6))} ${block.text}\n\n`;
+    case "paragraph": {
+      const text = formatInlineContent(block.inlineContent, references);
+      return text.trim() ? `${text}\n\n` : "";
+    }
+    case "codeListing":
+      return `\`\`\`${block.syntax ?? "swift"}\n${block.code.join("\n")}\n\`\`\`\n\n`;
+    case "tabNavigator":
+      return block.tabs
+        .map(
+          (tab) =>
+            `**${tab.title}**\n\n${formatContentItems(tab.content, references)}`,
+        )
+        .join("");
+    case "aside": {
+      const body = formatContentItems(block.content, references)
+        .trim()
+        .replace(/\n/g, "\n> ");
+      return `> **${block.name ?? "Note"}:** ${body}\n\n`;
+    }
+    case "unorderedList":
+    case "orderedList": {
+      const lines = block.items.map((item, index) => {
+        const marker = block.type === "orderedList" ? `${index + 1}.` : "-";
+        return `${marker} ${formatContentItems(item.content, references).trim().replace(/\n/g, "\n  ")}`;
+      });
+      return `${lines.join("\n")}\n\n`;
+    }
+    case "row":
+      return block.columns
+        .map((column) => formatContentItems(column.content, references))
+        .join("");
+    case "table":
+      return formatTable(block, references);
+    case "links":
+      return `${block.items.map((identifier) => formatIdentifierLine(identifier, references)).join("")}\n`;
+    default:
+      return "";
+  }
+}
+
+/**
+ * A tutorial's layout, which the spec tags with `kind`: full width, columns, or content beside its picture
+ */
+function formatLayout(
+  block: Exclude<RenderBlockContent, { type: string }>,
+  references: References,
+): string {
+  return "content" in block
+    ? formatContentItems(block.content, references) +
+        formatMedia("media" in block ? block.media : null, references)
+    : "";
+}
+
+/**
+ * A tutorial step: what to do, the code file as it stands after it, its pictures, and the caption under them
+ */
+function formatStep(block: RenderBlockContent, references: References): string {
+  if (!("type" in block) || block.type !== "step") {
+    return formatBlock(block, references);
+  }
+  return (
+    formatContentItems(block.content, references) +
+    formatCodeFile(block.code, references) +
+    formatMedia(block.media, references) +
+    formatMedia(block.runtimePreview, references) +
+    formatContentItems(block.caption, references)
+  );
+}
+
+/**
+ * A picture on its own line; a video or a missing reference leaves nothing
+ */
+function formatMedia(
+  identifier: string | null | undefined,
+  references: References,
+): string {
+  const image = identifier ? formatImage(identifier, references) : "";
+  return image ? `${image}\n\n` : "";
+}
+
+/**
+ * A tutorial step's code: the whole file as it stands after the step
+ */
+function formatCodeFile(
+  identifier: string | null | undefined,
+  references: References,
+): string {
+  const file = identifier ? references?.[identifier] : undefined;
+  return file?.type === "file"
+    ? `**${file.fileName}**\n\n\`\`\`${file.syntax}\n${file.content.join("\n")}\n\`\`\`\n\n`
+    : "";
+}
+
+/**
+ * A tutorials page's sections, which documentation pages leave empty: an overview's volumes, a tutorial's tasks and an
+ * article's body; its questions and the link to what comes next are left out. The page header gives the hero's title.
+ */
+function formatTutorialSections(jsonData: RenderNode): string {
+  return (jsonData.sections ?? [])
+    .map((section) => formatTutorialSection(section, jsonData.references))
+    .join("");
+}
+
+function formatTutorialSection(
+  section: RenderSection,
+  references: References,
+): string {
+  switch (section.kind) {
+    case "hero":
+    case "intro": {
+      // "Project files": swift-docc-render's `project-files` string for the download
+      const projectFiles = section.projectFiles
+        ? referenceUrl(references?.[section.projectFiles])
+        : undefined;
+      return (
+        formatContentItems(section.content ?? [], references) +
+        (projectFiles ? `[Project files](${projectFiles})\n\n` : "")
+      );
+    }
+    case "articleBody":
+      return formatContentItems(section.content, references);
+    case "volume":
+      return (
+        `${section.name ? `## ${section.name}\n\n` : ""}${formatContentItems(section.content ?? [], references)}` +
+        section.chapters
+          .map(
+            (chapter) =>
+              `### ${chapter.name}\n\n${formatContentItems(chapter.content, references)}` +
+              `${chapter.tutorials.map((identifier) => formatIdentifierLine(identifier, references)).join("")}\n`,
+          )
+          .join("")
+      );
+    case "tasks":
+      return section.tasks
+        .map(
+          (task) =>
+            `## ${task.title}\n\n${formatContentItems(task.contentSection, references)}` +
+            task.stepsSection
+              .map((block) => formatStep(block, references))
+              .join(""),
+        )
+        .join("");
+    default:
+      return "";
+  }
+}
+
+function formatContentItems(
+  items: RenderBlockContent[],
+  references: References,
+): string {
+  return items.map((item) => formatBlock(item, references)).join("");
+}
+
+/**
+ * Format a table in Markdown, each cell's blocks on one line; a table without a header row gets an empty one
+ */
+function formatTable(
+  table: Extract<RenderBlockContent, { type: "table" }>,
+  references: References,
+): string {
+  const rows = table.rows.map(
+    (row) =>
+      `| ${row
+        .map((cell) =>
+          formatContentItems(cell, references)
+            .trim()
+            .replace(/\s*\n+\s*/g, " "),
+        )
+        .join(" | ")} |`,
+  );
+  const width = table.rows[0]?.length ?? 0;
+  if (width === 0) {
+    return "";
+  }
+  const header =
+    table.header === "row" || table.header === "both"
+      ? rows.shift()
+      : `|${" |".repeat(width)}`;
+  return `${header}\n|${" --- |".repeat(width)}\n${rows.map((row) => `${row}\n`).join("")}\n`;
 }
 
 /**
  * Format API collection content (overview + API lists)
  */
-function formatAPICollectionContent(jsonData: AppleDocJSON): string {
-  let content = '';
+function formatAPICollectionContent(jsonData: RenderNode): string {
+  let content = "";
 
-  // Add primary content sections (Overview)
-  if (jsonData.primaryContentSections && Array.isArray(jsonData.primaryContentSections)) {
-    content += '## Overview\n\n';
-    jsonData.primaryContentSections.forEach((section) => {
-      const typedSection = section as ContentSection;
-      if (typedSection.kind === 'content' && typedSection.content) {
-        typedSection.content.forEach((item: any) => {
-          if (item.type === 'paragraph' && item.inlineContent) {
-            const paragraphText = item.inlineContent
-              .map((inline: any) => {
-                if (inline.type === 'text') {
-                  return inline.text ?? '';
-                } else if (inline.type === 'reference' && inline.identifier) {
-                  // Extract API name from identifier
-                  const apiName = inline.identifier.split('/').pop() ?? inline.identifier;
-                  return `\`${apiName}\``;
-                }
-                return '';
-              })
-              .join('');
-            if (paragraphText.trim()) {
-              content += `${paragraphText}\n\n`;
-            }
-          } else if (item.type === 'unorderedList' && item.items) {
-            item.items.forEach((listItem: any) => {
-              if (listItem.content?.[0]?.inlineContent) {
-                const listText = listItem.content[0].inlineContent
-                  .map((inline: any) => {
-                    if (inline.type === 'text') {
-                      return inline.text ?? '';
-                    } else if (inline.type === 'reference' && inline.identifier) {
-                      const apiName = inline.identifier.split('/').pop() ?? inline.identifier;
-                      return `\`${apiName}\``;
-                    }
-                    return '';
-                  })
-                  .join('');
-                if (listText.trim()) {
-                  content += `- ${listText}\n`;
-                }
-              }
-            });
-            content += '\n';
-          }
-        });
-      }
-    });
+  // Add primary content sections (Overview); an article that opens with its own heading keeps it
+  for (const section of jsonData.primaryContentSections ?? []) {
+    if ("kind" in section && section.kind === "content") {
+      const first = section.content[0];
+      content +=
+        first && "type" in first && first.type === "heading"
+          ? ""
+          : "## Overview\n\n";
+      content += formatContentItems(section.content, jsonData.references);
+    }
   }
 
-  // Add topic sections (API Collections) - this is the most important part
-  if (jsonData.topicSections && Array.isArray(jsonData.topicSections)) {
-    content += '## APIs and Functions\n\n';
-
-    jsonData.topicSections.forEach((section) => {
-      if (section.title && section.identifiers && Array.isArray(section.identifiers)) {
-        content += `### ${section.title}\n\n`;
-
-        section.identifiers.forEach((identifier: string) => {
-          // Extract the API name from the identifier
-          const apiName = identifier.split('/').pop() ?? identifier;
-          // Create a documentation URL for the API
-          const apiPath = identifier.replace('doc://com.apple.SwiftUI/documentation/', '');
-          const apiUrl = `https://developer.apple.com/documentation/${apiPath}`;
-          content += `- [\`${apiName}\`](${apiUrl})\n`;
-        });
-        content += '\n';
-      }
-    });
-  }
-
-  return content;
+  return content + formatTopicsSection(jsonData);
 }
 
 /**
@@ -250,34 +568,30 @@ interface EnhancedAnalysisOptions {
  * Fetch JSON documentation from Apple Developer Documentation with optional enhanced analysis
  * @param url The URL of the documentation page
  * @param options Enhanced analysis options
- * @param maxDepth Maximum recursion depth (to prevent infinite loops)
  * @returns Formatted documentation content
  */
 export async function fetchAppleDocJson(
   url: string,
-  options: EnhancedAnalysisOptions | number = {},
-  maxDepth: number = 2,
-): Promise<any> {
-  // Backward compatibility: if second param is number, treat as maxDepth
-  if (typeof options === 'number') {
-    maxDepth = options;
-    options = {};
-  }
+  options: EnhancedAnalysisOptions = {},
+): Promise<{
+  content: Array<{ type: "text"; text: string }>;
+  isError?: boolean;
+}> {
   try {
     // Validate that this is an Apple Developer URL
-    if (!url.includes('developer.apple.com')) {
-      throw new Error('URL must be from developer.apple.com');
+    if (!url.includes("developer.apple.com")) {
+      throw new Error("URL must be from developer.apple.com");
     }
 
     // Convert web URL to JSON API URL if needed
-    const jsonApiUrl = url.includes('.json') ? url : convertToJsonApiUrl(url);
+    const jsonApiUrl = url.includes(".json") ? url : convertToJsonApiUrl(url);
 
     if (!jsonApiUrl) {
-      throw new Error('Invalid Apple Developer Documentation URL');
+      throw new Error("Invalid Apple Developer Documentation URL");
     }
 
     // Generate cache key including options
-    const cacheKey = generateEnhancedCacheKey(jsonApiUrl, options as any);
+    const cacheKey = generateEnhancedCacheKey(jsonApiUrl, options);
 
     // Try to get from cache first
     const cachedResult = apiCache.get(cacheKey);
@@ -286,35 +600,18 @@ export async function fetchAppleDocJson(
       return cachedResult;
     }
 
+    if (new URL(url).pathname.startsWith(HELP_PATH)) {
+      const result = {
+        content: [{ type: "text" as const, text: await fetchHelpPage(url) }],
+      };
+      apiCache.set(cacheKey, result);
+      return result;
+    }
+
     logger.info(`Fetching Apple doc JSON from: ${jsonApiUrl}`);
 
     // Fetch the documentation JSON using HTTP client
-    const jsonData = await httpClient.getJson<AppleDocJSON>(jsonApiUrl);
-
-    // If the JSON doesn't have primary content but has references to other docs,
-    // fetch the first reference if we haven't exceeded max depth
-    if (!jsonData.primaryContentSections &&
-      jsonData.references &&
-      Object.keys(jsonData.references).length > 0 &&
-      maxDepth > 0) {
-
-      // Find the main reference to follow (usually first in the list)
-      const mainReferenceKey = Object.keys(jsonData.references)[0];
-      const mainReference = jsonData.references[mainReferenceKey];
-
-      if (mainReference?.url) {
-        // Recursively fetch the referenced documentation
-        // Remove leading /documentation/ if present to avoid duplication
-        let refPath = mainReference.url;
-        if (refPath.startsWith('/documentation/')) {
-          refPath = refPath.substring('/documentation/'.length);
-        } else if (refPath.startsWith('/')) {
-          refPath = refPath.substring(1);
-        }
-        const refUrl = `https://developer.apple.com/tutorials/data/documentation/${refPath}.json`;
-        return await fetchAppleDocJson(refUrl, options, maxDepth - 1);
-      }
-    }
+    const jsonData = await httpClient.getJson<RenderNode>(jsonApiUrl);
 
     // Format the JSON documentation with enhanced analysis
     const result = formatJsonDocumentation(jsonData, url, options);
@@ -327,20 +624,20 @@ export async function fetchAppleDocJson(
     let errorMessage: string;
 
     // Handle AppError objects from http-client
-    if (error && typeof error === 'object' && 'message' in error) {
-      errorMessage = (error as any).message;
+    if (error && typeof error === "object" && "message" in error) {
+      errorMessage = String(error.message);
     } else if (error instanceof Error) {
       errorMessage = error.message;
     } else {
       errorMessage = String(error);
     }
 
-    logger.error('Error fetching Apple doc JSON:', errorMessage);
+    logger.error("Error fetching Apple doc JSON:", errorMessage);
 
     return {
       content: [
         {
-          type: 'text' as const,
+          type: "text" as const,
           text: `Error: Failed to get Apple doc content: ${errorMessage}\n\nPlease try accessing the documentation directly at: ${url}`,
         },
       ],
@@ -352,20 +649,33 @@ export async function fetchAppleDocJson(
 /**
  * Extract related APIs from JSON data
  */
-function extractRelatedApis(jsonData: AppleDocJSON): Array<{title: string, url: string, relationship: string}> {
-  const relatedApis: Array<{title: string, url: string, relationship: string}> = [];
+function extractRelatedApis(
+  jsonData: RenderNode,
+): Array<{ title: string; url: string; relationship: string }> {
+  const relatedApis: Array<{
+    title: string;
+    url: string;
+    relationship: string;
+  }> = [];
 
   // From relationshipsSections
   if (jsonData.relationshipsSections) {
     for (const section of jsonData.relationshipsSections) {
       if (section.identifiers) {
-        for (const identifier of section.identifiers.slice(0, PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION)) {
-          if (jsonData.references?.[identifier]) {
-            const ref = jsonData.references[identifier];
+        for (const identifier of section.identifiers.slice(
+          0,
+          PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
+        )) {
+          const ref = jsonData.references?.[identifier];
+          if (isTopicReference(ref)) {
             relatedApis.push({
-              title: ref.title ?? 'Unknown',
-              url: ref.url ? (ref.url.startsWith('http') ? ref.url : `https://developer.apple.com${ref.url}`) : '#',
-              relationship: section.title ?? 'Related',
+              title: ref.title ?? "Unknown",
+              url: ref.url
+                ? ref.url.startsWith("http")
+                  ? ref.url
+                  : `https://developer.apple.com${ref.url}`
+                : "#",
+              relationship: section.title ?? "Related",
             });
           }
         }
@@ -377,13 +687,20 @@ function extractRelatedApis(jsonData: AppleDocJSON): Array<{title: string, url: 
   if (jsonData.seeAlsoSections) {
     for (const section of jsonData.seeAlsoSections) {
       if (section.identifiers) {
-        for (const identifier of section.identifiers.slice(0, PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION)) {
-          if (jsonData.references?.[identifier]) {
-            const ref = jsonData.references[identifier];
+        for (const identifier of section.identifiers.slice(
+          0,
+          PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
+        )) {
+          const ref = jsonData.references?.[identifier];
+          if (isTopicReference(ref)) {
             relatedApis.push({
-              title: ref.title ?? 'Unknown',
-              url: ref.url ? (ref.url.startsWith('http') ? ref.url : `https://developer.apple.com${ref.url}`) : '#',
-              relationship: `See Also: ${section.title ?? 'Related'}`,
+              title: ref.title ?? "Unknown",
+              url: ref.url
+                ? ref.url.startsWith("http")
+                  ? ref.url
+                  : `https://developer.apple.com${ref.url}`
+                : "#",
+              relationship: `See Also: ${section.title ?? "Related"}`,
             });
           }
         }
@@ -397,19 +714,39 @@ function extractRelatedApis(jsonData: AppleDocJSON): Array<{title: string, url: 
 /**
  * Extract references from JSON data
  */
-function extractReferences(jsonData: AppleDocJSON): Array<{title: string, url: string, type: string, abstract?: string}> {
-  const references: Array<{title: string, url: string, type: string, abstract?: string}> = [];
+function extractReferences(jsonData: RenderNode): Array<{
+  title: string;
+  url: string;
+  type: string;
+  abstract?: string | undefined;
+}> {
+  const references: Array<{
+    title: string;
+    url: string;
+    type: string;
+    abstract?: string | undefined;
+  }> = [];
 
   if (jsonData.references) {
-    const refEntries = Object.entries(jsonData.references).slice(0, PROCESSING_LIMITS.MAX_DOC_FETCHER_REFERENCES); // Limit
+    const refEntries = Object.entries(jsonData.references).slice(
+      0,
+      PROCESSING_LIMITS.MAX_DOC_FETCHER_REFERENCES,
+    ); // Limit
 
     for (const [, ref] of refEntries) {
+      if (!isTopicReference(ref)) {
+        continue;
+      }
       references.push({
-        title: ref.title ?? 'Unknown',
-        url: ref.url ? (ref.url.startsWith('http') ? ref.url : `https://developer.apple.com${ref.url}`) : '#',
-        type: ref.role ?? ref.kind ?? 'unknown',
+        title: ref.title ?? "Unknown",
+        url: ref.url
+          ? ref.url.startsWith("http")
+            ? ref.url
+            : `https://developer.apple.com${ref.url}`
+          : "#",
+        type: ref.role ?? ref.kind ?? "unknown",
         abstract: ref.abstract
-          ? ref.abstract.map((a) => (a as { text?: string })?.text ?? '').join(' ').trim()
+          ? formatInlineContent(ref.abstract, jsonData.references).trim()
           : undefined,
       });
     }
@@ -421,20 +758,30 @@ function extractReferences(jsonData: AppleDocJSON): Array<{title: string, url: s
 /**
  * Extract similar APIs from JSON data
  */
-function extractSimilarApis(jsonData: AppleDocJSON): Array<{title: string, url: string, category: string}> {
-  const similarApis: Array<{title: string, url: string, category: string}> = [];
+function extractSimilarApis(
+  jsonData: RenderNode,
+): Array<{ title: string; url: string; category: string }> {
+  const similarApis: Array<{ title: string; url: string; category: string }> =
+    [];
 
   // From topicSections
   if (jsonData.topicSections) {
     for (const section of jsonData.topicSections) {
       if (section.identifiers) {
-        for (const identifier of section.identifiers.slice(0, PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION)) {
-          if (jsonData.references?.[identifier]) {
-            const ref = jsonData.references[identifier];
+        for (const identifier of section.identifiers.slice(
+          0,
+          PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
+        )) {
+          const ref = jsonData.references?.[identifier];
+          if (isTopicReference(ref)) {
             similarApis.push({
-              title: ref.title ?? 'Unknown',
-              url: ref.url ? (ref.url.startsWith('http') ? ref.url : `https://developer.apple.com${ref.url}`) : '#',
-              category: section.title ?? 'Related',
+              title: ref.title ?? "Unknown",
+              url: ref.url
+                ? ref.url.startsWith("http")
+                  ? ref.url
+                  : `https://developer.apple.com${ref.url}`
+                : "#",
+              category: section.title ?? "Related",
             });
           }
         }
@@ -448,23 +795,27 @@ function extractSimilarApis(jsonData: AppleDocJSON): Array<{title: string, url: 
 /**
  * Analyze platform compatibility
  */
-function analyzePlatformCompatibility(
-  jsonData: AppleDocJSON,
-): {
+function analyzePlatformCompatibility(jsonData: RenderNode): {
   supportedPlatforms: string;
   betaPlatforms: string[];
   deprecatedPlatforms: string[];
   crossPlatform: boolean;
-  platforms: any[];
+  platforms: PlatformAvailability[];
 } | null {
   if (!jsonData.metadata?.platforms) {
     return null;
   }
 
   const platforms = jsonData.metadata.platforms;
-  const supportedPlatforms = platforms.map((p) => p.name).join(', ');
-  const betaPlatforms = platforms.filter((p) => p.beta).map((p) => p.name).filter((name): name is string => name !== undefined);
-  const deprecatedPlatforms = platforms.filter((p) => p.deprecated).map((p) => p.name).filter((name): name is string => name !== undefined);
+  const supportedPlatforms = platforms.map((p) => p.name).join(", ");
+  const betaPlatforms = platforms
+    .filter((p) => p.beta)
+    .map((p) => p.name)
+    .filter((name): name is string => name !== undefined);
+  const deprecatedPlatforms = platforms
+    .filter(isDeprecated)
+    .map((p) => p.name)
+    .filter((name): name is string => name !== undefined);
 
   return {
     supportedPlatforms,
@@ -478,41 +829,52 @@ function analyzePlatformCompatibility(
 /**
  * Format related APIs section
  */
-function formatRelatedApisSection(relatedApis: Array<{title: string, url: string, relationship: string}>): string {
-  let content = '\n## Related APIs\n\n';
+function formatRelatedApisSection(
+  relatedApis: Array<{ title: string; url: string; relationship: string }>,
+): string {
+  let content = "\n## Related APIs\n\n";
 
   for (const api of relatedApis) {
     content += `- [**${api.title}**](${api.url}) - *${api.relationship}*\n`;
   }
 
-  return content + '\n';
+  return `${content}\n`;
 }
 
 /**
  * Format references section
  */
-function formatReferencesSection(references: Array<{title: string, url: string, type: string, abstract?: string}>): string {
-  let content = '\n## Key References\n\n';
+function formatReferencesSection(
+  references: Array<{
+    title: string;
+    url: string;
+    type: string;
+    abstract?: string | undefined;
+  }>,
+): string {
+  let content = "\n## Key References\n\n";
 
   // Group by type
-  const groupedRefs: Record<string, typeof references> = {};
+  const groupedRefs = new Map<string, typeof references>();
   for (const ref of references) {
-    if (!groupedRefs[ref.type]) {
-      groupedRefs[ref.type] = [];
-    }
-    groupedRefs[ref.type].push(ref);
+    const group = groupedRefs.get(ref.type) ?? [];
+    group.push(ref);
+    groupedRefs.set(ref.type, group);
   }
 
-  for (const [type, refs] of Object.entries(groupedRefs)) {
+  for (const [type, refs] of groupedRefs) {
     content += `### ${type.charAt(0).toUpperCase() + type.slice(1)}s\n\n`;
-    for (const ref of refs.slice(0, PROCESSING_LIMITS.MAX_DOC_FETCHER_REFS_PER_TYPE)) {
+    for (const ref of refs.slice(
+      0,
+      PROCESSING_LIMITS.MAX_DOC_FETCHER_REFS_PER_TYPE,
+    )) {
       content += `- [**${ref.title}**](${ref.url})`;
       if (ref.abstract) {
-        content += ` - ${ref.abstract.substring(0, 100)}${ref.abstract.length > 100 ? '...' : ''}`;
+        content += ` - ${ref.abstract}`;
       }
-      content += '\n';
+      content += "\n";
     }
-    content += '\n';
+    content += "\n";
   }
 
   return content;
@@ -522,25 +884,24 @@ function formatReferencesSection(references: Array<{title: string, url: string, 
  * Format similar APIs section
  */
 function formatSimilarApisSection(
-  similarApis: Array<{title: string, url: string, category: string}>,
+  similarApis: Array<{ title: string; url: string; category: string }>,
 ): string {
-  let content = '\n## Similar APIs\n\n';
+  let content = "\n## Similar APIs\n\n";
 
   // Group by category
-  const groupedApis: Record<string, typeof similarApis> = {};
+  const groupedApis = new Map<string, typeof similarApis>();
   for (const api of similarApis) {
-    if (!groupedApis[api.category]) {
-      groupedApis[api.category] = [];
-    }
-    groupedApis[api.category].push(api);
+    const group = groupedApis.get(api.category) ?? [];
+    group.push(api);
+    groupedApis.set(api.category, group);
   }
 
-  for (const [category, apis] of Object.entries(groupedApis)) {
+  for (const [category, apis] of groupedApis) {
     content += `### ${category}\n\n`;
     for (const api of apis) {
       content += `- [**${api.title}**](${api.url})\n`;
     }
-    content += '\n';
+    content += "\n";
   }
 
   return content;
@@ -549,42 +910,37 @@ function formatSimilarApisSection(
 /**
  * Format platform analysis section
  */
-function formatPlatformAnalysisSection(
-  analysis: {
-    supportedPlatforms: string;
-    betaPlatforms: string[];
-    deprecatedPlatforms: string[];
-    crossPlatform?: boolean;
-    platforms?: any[];
-  },
-): string {
-  let content = '\n## Platform Compatibility Analysis\n\n';
+function formatPlatformAnalysisSection(analysis: {
+  supportedPlatforms: string;
+  betaPlatforms: string[];
+  deprecatedPlatforms: string[];
+  crossPlatform?: boolean;
+  platforms?: PlatformAvailability[];
+}): string {
+  let content = "\n## Platform Compatibility Analysis\n\n";
 
   content += `**Supported Platforms:** ${analysis.supportedPlatforms}\n`;
-  content += `**Cross-Platform Support:** ${analysis.crossPlatform ? 'Yes' : 'No'}\n`;
+  content += `**Cross-Platform Support:** ${analysis.crossPlatform ? "Yes" : "No"}\n`;
 
   if (analysis.betaPlatforms.length > 0) {
-    content += `**Beta Platforms:** ${analysis.betaPlatforms.join(', ')}\n`;
+    content += `**Beta Platforms:** ${analysis.betaPlatforms.join(", ")}\n`;
   }
 
   if (analysis.deprecatedPlatforms.length > 0) {
-    content += `**Deprecated Platforms:** ${analysis.deprecatedPlatforms.join(', ')}\n`;
+    content += `**Deprecated Platforms:** ${analysis.deprecatedPlatforms.join(", ")}\n`;
   }
 
-  content += '\n**Detailed Platform Information:**\n\n';
+  content += "\n**Detailed Platform Information:**\n\n";
   for (const platform of analysis.platforms ?? []) {
-    content += `- **${platform.name}**`;
-    if (platform.introducedAt) {
-      content += ` ${platform.introducedAt}+`;
-    }
+    content += `- **${platform.name}**${formatIntroducedVersion(platform)}`;
     if (platform.beta) {
-      content += ' (Beta)';
+      content += " (Beta)";
     }
-    if (platform.deprecated) {
-      content += ' (Deprecated)';
+    if (isDeprecated(platform)) {
+      content += " (Deprecated)";
     }
-    content += '\n';
+    content += "\n";
   }
 
-  return content + '\n';
+  return `${content}\n`;
 }

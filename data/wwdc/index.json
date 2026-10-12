@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "lastUpdated": "2025-07-18T11:04:52.652Z",
-  "totalVideos": 1266,
+  "lastUpdated": "2026-10-11T16:49:21.804Z",
+  "totalVideos": 1700,
   "topics": [
     {
       "id": "accessibility-inclusion",
@@ -61,7 +61,7 @@
     {
       "id": "machine-learning-ai",
       "name": "Machine Learning & AI",
-      "url": "https://developer.apple.com/videos/machine-learning-ai/"
+      "url": "https://developer.apple.com/videos/ai-machine-learning/"
     },
     {
       "id": "photos-camera",
@@ -100,6 +100,7 @@
     }
   ],
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -115,42 +116,42 @@
   ],
   "statistics": {
     "byTopic": {
-      "accessibility-inclusion": 57,
-      "app-services": 172,
-      "app-store-distribution-marketing": 75,
-      "audio-video": 124,
-      "business-education": 51,
-      "design": 143,
-      "developer-tools": 199,
-      "essentials": 170,
-      "graphics-games": 155,
-      "health-fitness": 42,
-      "machine-learning-ai": 92,
-      "maps-location": 26,
-      "photos-camera": 54,
-      "privacy-security": 70,
-      "safari-web": 67,
-      "spatial-computing": 122,
-      "swift": 118,
-      "swiftui-ui-frameworks": 280,
-      "system-services": 118
+      "accessibility-inclusion": 86,
+      "app-services": 227,
+      "app-store-distribution-marketing": 92,
+      "audio-video": 152,
+      "business-education": 65,
+      "design": 172,
+      "developer-tools": 260,
+      "essentials": 201,
+      "graphics-games": 194,
+      "health-fitness": 55,
+      "maps-location": 32,
+      "machine-learning-ai": 150,
+      "photos-camera": 76,
+      "privacy-security": 84,
+      "safari-web": 87,
+      "spatial-computing": 160,
+      "swift": 147,
+      "swiftui-ui-frameworks": 361,
+      "system-services": 150
     },
     "byYear": {
       "2014": 6,
-      "2015": 10,
-      "2016": 16,
+      "2015": 12,
+      "2016": 17,
       "2017": 36,
-      "2018": 18,
-      "2019": 153,
+      "2018": 38,
+      "2019": 159,
       "2020": 209,
       "2021": 207,
-      "2022": 185,
-      "2023": 181,
+      "2022": 317,
+      "2023": 316,
       "2024": 123,
-      "2025": 122
+      "2025": 122,
+      "2026": 138
     },
-    "videosWithCode": 626,
-    "videosWithTranscript": 1266,
-    "videosWithResources": 0
+    "videosWithCode": 715,
+    "videosWithTranscript": 1416
   }
 }

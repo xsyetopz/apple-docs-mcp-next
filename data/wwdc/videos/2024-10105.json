@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Graphics & Games"
+    "Graphics & Games",
+    "Safari & Web",
+    "Spatial Computing"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -25,24 +27,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Forum: Spatial Computing",
         "url": "https://developer.apple.com/forums/topics/spatial-computing?cid=vf-a-0010"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10105/5/9DD1E3E1-8BCD-498A-9045-F2251FFDF077/downloads/wwdc2024-10105_hd.mp4?dl=1",
@@ -62,5 +48,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10186"
     }
   ],
-  "extractedAt": "2025-07-18T10:29:40.370Z"
+  "extractedAt": "2026-10-11T16:35:47.778Z"
 }

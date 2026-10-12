@@ -17,24 +17,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10045/4/CD4F90B5-A291-452A-93CC-2694D9A8FB9E/downloads/wwdc2023-10045_hd.mp4?dl=1",
@@ -52,7 +36,37 @@
       "year": "2023",
       "title": "Integrate with motorized iPhone stands using DockKit",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10304"
+    },
+    {
+      "id": "111246",
+      "year": "2023",
+      "title": "Q&A: Image understanding and the Vision framework",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111246"
+    },
+    {
+      "id": "111248",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111248"
+    },
+    {
+      "id": "111249",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111249"
+    },
+    {
+      "id": "111250",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111250"
+    },
+    {
+      "id": "111251",
+      "year": "2023",
+      "title": "Q&A: Machine learning open forum",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111251"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:51.037Z"
+  "extractedAt": "2026-10-11T16:36:02.213Z"
 }

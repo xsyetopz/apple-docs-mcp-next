@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Counting human body action repetitions in a live video feed",
-        "url": "https://developer.apple.com/documentation/createmlcomponents/counting_human_body_action_repetitions_in_a_live_video_feed"
+        "url": "https://developer.apple.com/documentation/CreateMLComponents/counting-human-body-action-repetitions-in-a-live-video-feed"
       },
       {
         "title": "Create ML",
         "url": "https://developer.apple.com/documentation/CreateML"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10020/3/D44F2D64-E1DB-492F-9D23-1BFD26FF7EF2/downloads/wwdc2022-10020_hd.mp4?dl=1",
@@ -56,6 +40,24 @@
       "year": "2022",
       "title": "Get to know Create ML Components",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10019"
+    },
+    {
+      "id": "110904",
+      "year": "2022",
+      "title": "Meet the Presenter: Compose advanced models with Create ML Components",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110904"
+    },
+    {
+      "id": "110902",
+      "year": "2022",
+      "title": "Meet the Presenter: Get to know Create ML Components",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110902"
+    },
+    {
+      "id": "110901",
+      "year": "2022",
+      "title": "Q&A: Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110901"
     },
     {
       "id": "110332",
@@ -94,5 +96,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/425"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:24.500Z"
+  "extractedAt": "2026-10-11T16:40:13.446Z"
 }

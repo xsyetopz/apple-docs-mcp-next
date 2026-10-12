@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Maps & Location",
+    "Safari & Web"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -73,36 +75,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Displaying place information using the Maps Embed API",
         "url": "https://developer.apple.com/documentation/MapKitJS/displaying-place-information-using-the-maps-embed-api"
-      },
-      {
-        "title": "Forum: Maps & Location",
-        "url": "https://developer.apple.com/forums/topics/maps-and-location?cid=vf-a-0010"
       },
       {
         "title": "Identifying unique locations with Place IDs",
         "url": "https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids"
       },
       {
+        "title": "Forum: Maps & Location",
+        "url": "https://developer.apple.com/forums/topics/maps-and-location?cid=vf-a-0010"
+      },
+      {
         "title": "Interacting with nearby points of interest",
         "url": "https://developer.apple.com/documentation/MapKit/interacting-with-nearby-points-of-interest"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10097/4/D991C391-4CC9-4A32-A10F-9D4DC6D7B615/downloads/wwdc2024-10097_hd.mp4?dl=1",
@@ -116,5 +102,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10043"
     }
   ],
-  "extractedAt": "2025-07-18T09:11:45.986Z"
+  "extractedAt": "2026-10-11T16:35:39.186Z"
 }

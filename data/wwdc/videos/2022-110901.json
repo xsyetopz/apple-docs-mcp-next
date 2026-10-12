@@ -1,0 +1,37 @@
+{
+  "id": "110901",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110901/",
+  "title": "Q&A: Create ML",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10020",
+      "year": "2022",
+      "title": "Compose advanced models with Create ML Components",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10020"
+    },
+    {
+      "id": "10019",
+      "year": "2022",
+      "title": "Get to know Create ML Components",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10019"
+    },
+    {
+      "id": "110332",
+      "year": "2022",
+      "title": "What's new in Create ML",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110332"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:04.831Z"
+}

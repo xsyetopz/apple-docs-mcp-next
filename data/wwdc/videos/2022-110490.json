@@ -1,0 +1,32 @@
+{
+  "id": "110490",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110490/",
+  "title": "Q&A: Swift Playgrounds",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Developer Tools",
+    "Essentials"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "110348",
+      "year": "2022",
+      "title": "Build your first app in Swift Playgrounds",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110348"
+    },
+    {
+      "id": "110349",
+      "year": "2022",
+      "title": "Create engaging content for Swift Playgrounds",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110349"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:40:30.662Z"
+}

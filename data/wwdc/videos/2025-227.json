@@ -49,32 +49,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Background Tasks",
-        "url": "https://developer.apple.com/documentation/BackgroundTasks"
+        "title": "Uploading asset resources in the background",
+        "url": "https://developer.apple.com/documentation/PhotoKit/uploading-asset-resources-in-the-background"
       },
       {
         "title": "Performing long-running tasks on iOS and iPadOS",
         "url": "https://developer.apple.com/documentation/BackgroundTasks/performing-long-running-tasks-on-ios-and-ipados"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Background Tasks",
+        "url": "https://developer.apple.com/documentation/BackgroundTasks"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/227/4/b4d5d5a5-5c5a-4f37-a4ad-66fea0b6f25d/downloads/wwdc2025-227_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/227/4/b4d5d5a5-5c5a-4f37-a4ad-66fea0b6f25d/downloads/wwdc2025-227_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T11:00:50.894Z"
+  "extractedAt": "2026-10-11T16:33:39.234Z"
 }

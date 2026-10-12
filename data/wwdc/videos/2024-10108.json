@@ -17,40 +17,24 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Forum: App & System Services",
-        "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
-      },
-      {
         "title": "Loading the latest version of the Apple Pay JS SDK",
         "url": "https://developer.apple.com/documentation/ApplePayontheWeb/loading-the-latest-version-of-apple-pay-js"
-      },
-      {
-        "title": "PassKit (Apple Pay and Wallet)",
-        "url": "https://developer.apple.com/documentation/PassKit"
       },
       {
         "title": "SemanticTags",
         "url": "https://developer.apple.com/documentation/WalletPasses/SemanticTags"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Forum: App & System Services",
+        "url": "https://developer.apple.com/forums/topics/app-and-system-services?cid=vf-a-0010"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "PassKit (Apple Pay and Wallet)",
+        "url": "https://developer.apple.com/documentation/PassKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10108/4/C63602CE-99FE-4290-B5EC-B7BBAA6A08FA/downloads/wwdc2024-10108_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10108/4/C63602CE-99FE-4290-B5EC-B7BBAA6A08FA/downloads/wwdc2024-10108_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:11:40.395Z"
+  "extractedAt": "2026-10-11T16:35:48.499Z"
 }

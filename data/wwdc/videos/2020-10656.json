@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "CareKit",
         "url": "https://developer.apple.com/CareKit/documentation/carekit/"
-      },
-      {
-        "title": "Core Motion",
-        "url": "https://developer.apple.com/documentation/CoreMotion"
       },
       {
         "title": "HealthKit",
         "url": "https://developer.apple.com/documentation/HealthKit"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Core Motion",
+        "url": "https://developer.apple.com/documentation/CoreMotion"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10656/3/396B42E5-AAA7-4464-94DF-8F090FB4ED5E/wwdc2020_10656_hd.mp4?dl=1",
@@ -92,5 +76,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10216"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:16.111Z"
+  "extractedAt": "2026-10-11T16:46:00.772Z"
 }

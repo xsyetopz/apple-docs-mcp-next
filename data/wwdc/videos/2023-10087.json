@@ -79,24 +79,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "SystemCoordinator",
         "url": "https://developer.apple.com/documentation/GroupActivities/SystemCoordinator"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10087/4/36E3D439-2B36-408C-9249-3929F2E75FBD/downloads/wwdc2023-10087_hd.mp4?dl=1",
@@ -134,5 +118,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/259"
     }
   ],
-  "extractedAt": "2025-07-18T10:45:38.154Z"
+  "extractedAt": "2026-10-11T16:37:58.100Z"
 }

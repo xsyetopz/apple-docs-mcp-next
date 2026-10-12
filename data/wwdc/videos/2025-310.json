@@ -67,28 +67,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Adopting Liquid Glass",
         "url": "https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass"
       },
       {
         "title": "Human Interface Guidelines: Designing for macOS",
         "url": "https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-macos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/310/5/97dc5fb5-f986-4d12-beb4-c3a389390d36/downloads/wwdc2025-310_hd.mp4?dl=1",
@@ -108,5 +92,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/219"
     }
   ],
-  "extractedAt": "2025-07-18T10:51:37.039Z"
+  "extractedAt": "2026-10-11T16:33:23.864Z"
 }

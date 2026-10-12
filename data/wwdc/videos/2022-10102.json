@@ -73,32 +73,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Metal",
-        "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Minimizing the Binary Size of a Shader Library",
-        "url": "https://developer.apple.com/documentation/Metal/minimizing-the-binary-size-of-a-shader-library"
-      },
-      {
         "title": "MTLLibraryOptimizationLevel",
         "url": "https://developer.apple.com/documentation/Metal/MTLLibraryOptimizationLevel"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "Minimizing the binary size of a shader library",
+        "url": "https://developer.apple.com/documentation/Metal/minimizing-the-binary-size-of-a-shader-library"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10102/4/E03398C4-8CAE-4CA1-905A-22205249E038/downloads/wwdc2022-10102_hd.mp4?dl=1",
@@ -124,6 +108,24 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10066"
     },
     {
+      "id": "110670",
+      "year": "2022",
+      "title": "Icebreaker: Graphics and Games",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110670"
+    },
+    {
+      "id": "110666",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110666"
+    },
+    {
+      "id": "110667",
+      "year": "2022",
+      "title": "Q&A: Metal",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110667"
+    },
+    {
       "id": "10229",
       "year": "2021",
       "title": "Discover compilation workflows in Metal",
@@ -136,5 +138,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10615"
     }
   ],
-  "extractedAt": "2025-07-18T10:30:47.247Z"
+  "extractedAt": "2026-10-11T16:40:24.682Z"
 }

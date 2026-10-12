@@ -1,0 +1,31 @@
+{
+  "id": "111245",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111245/",
+  "title": "Q&A: Core ML",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Machine Learning & AI"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10049",
+      "year": "2023",
+      "title": "Improve Core ML integration with async prediction",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10049"
+    },
+    {
+      "id": "10047",
+      "year": "2023",
+      "title": "Use Core ML Tools for machine learning model compression",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10047"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:38:11.053Z"
+}

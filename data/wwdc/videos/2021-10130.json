@@ -18,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10130/4/92D05556-BFA4-40C0-A181-5747D041FF01/downloads/wwdc2021-10130_hd.mp4?dl=1",
@@ -73,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10131"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:16.480Z"
+  "extractedAt": "2026-10-11T16:42:45.813Z"
 }

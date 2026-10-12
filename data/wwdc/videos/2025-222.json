@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -37,8 +38,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Language Introspector",
+        "url": "https://developer.apple.com/documentation/Foundation/language-introspector"
       },
       {
         "title": "Human Interface Guidelines: Right to left",
@@ -47,22 +48,6 @@
       {
         "title": "Internationalization and Localization Guide",
         "url": "https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html"
-      },
-      {
-        "title": "Language Introspector",
-        "url": "https://developer.apple.com/documentation/Foundation/language-introspector"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/222/6/0c2c6210-4f59-409a-ba23-36a7895563d3/downloads/wwdc2025-222_hd.mp4?dl=1",
@@ -88,5 +73,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10107"
     }
   ],
-  "extractedAt": "2025-07-18T09:10:13.493Z"
+  "extractedAt": "2026-10-11T16:33:34.500Z"
 }

@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
       },
       {
         "title": "Network Extension",
         "url": "https://developer.apple.com/documentation/NetworkExtension"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10639/6/CA966211-6AC2-4D0B-B067-5B260747CD5F/wwdc2020_10639_hd.mp4?dl=1",
@@ -64,5 +48,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10139"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:34.454Z"
+  "extractedAt": "2026-10-11T16:44:57.596Z"
 }

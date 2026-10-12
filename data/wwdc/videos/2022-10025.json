@@ -68,24 +68,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Scanning data with the camera",
         "url": "https://developer.apple.com/documentation/VisionKit/scanning-data-with-the-camera"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10025/4/5DB691AA-D403-4394-885D-0F1F18772715/downloads/wwdc2022-10025_hd.mp4?dl=1",
@@ -99,11 +83,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10026"
     },
     {
+      "id": "110905",
+      "year": "2022",
+      "title": "Q&A: Vision",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110905"
+    },
+    {
       "id": "10024",
       "year": "2022",
       "title": "What's new in Vision",
       "url": "https://developer.apple.com/videos/play/wwdc2022/10024"
     }
   ],
-  "extractedAt": "2025-07-18T10:40:19.426Z"
+  "extractedAt": "2026-10-11T16:39:20.681Z"
 }

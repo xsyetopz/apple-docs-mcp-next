@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "App Intents",
-        "url": "https://developer.apple.com/documentation/AppIntents"
-      },
-      {
         "title": "App Shortcuts",
         "url": "https://developer.apple.com/documentation/AppIntents/app-shortcuts"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "App Intents",
+        "url": "https://developer.apple.com/documentation/AppIntents"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10103/4/D65BF0C4-53B8-450E-8B16-DF92AA76A73A/downloads/wwdc2023-10103_hd.mp4?dl=1",
@@ -58,11 +42,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10193"
     },
     {
+      "id": "111335",
+      "year": "2023",
+      "title": "Q&A: App Intents and Shortcuts",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111335"
+    },
+    {
       "id": "10102",
       "year": "2023",
       "title": "Spotlight your app with App Shortcuts",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10102"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:50.606Z"
+  "extractedAt": "2026-10-11T16:37:06.514Z"
 }

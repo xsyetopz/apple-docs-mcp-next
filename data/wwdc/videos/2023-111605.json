@@ -1,0 +1,25 @@
+{
+  "id": "111605",
+  "year": "2023",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/111605/",
+  "title": "Meet the presenters: Meet RealityKit Trace",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Spatial Computing"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10099",
+      "year": "2023",
+      "title": "Meet RealityKit Trace",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10099"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:37:53.112Z"
+}

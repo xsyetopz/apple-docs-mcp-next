@@ -49,24 +49,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Security",
         "url": "https://developer.apple.com/documentation/Security"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10266/4/24189FC4-EAA7-44E2-B039-930BF35F451F/downloads/wwdc2023-10266_hd.mp4?dl=1",
@@ -86,5 +70,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10686"
     }
   ],
-  "extractedAt": "2025-07-18T10:42:40.138Z"
+  "extractedAt": "2026-10-11T16:38:05.430Z"
 }

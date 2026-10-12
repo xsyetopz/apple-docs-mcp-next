@@ -1,8 +1,9 @@
 {
   "id": "developer-tools",
   "name": "Developer Tools",
-  "videoCount": 199,
+  "videoCount": 260,
   "years": [
+    "2026",
     "2025",
     "2024",
     "2023",
@@ -18,11 +19,268 @@
   ],
   "videos": [
     {
+      "id": "265",
+      "year": "2026",
+      "title": "Build real-time apps and services with gRPC and Swift",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/265/",
+      "dataFile": "videos/2026-265.json"
+    },
+    {
+      "id": "261",
+      "year": "2026",
+      "title": "Build, deliver, and automate with Xcode Cloud",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/261/",
+      "dataFile": "videos/2026-261.json"
+    },
+    {
+      "id": "8007",
+      "year": "2026",
+      "title": "Coding Intelligence for Beginners Group Lab",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8007/",
+      "dataFile": "videos/2026-8007.json"
+    },
+    {
+      "id": "227",
+      "year": "2026",
+      "title": "Create UI prototypes using agents in Xcode",
+      "topics": [
+        "Design",
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/227/",
+      "dataFile": "videos/2026-227.json"
+    },
+    {
+      "id": "252",
+      "year": "2026",
+      "title": "Design no-code games with Reality Composer Pro 3",
+      "topics": [
+        "Design",
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/252/",
+      "dataFile": "videos/2026-252.json"
+    },
+    {
+      "id": "389",
+      "year": "2026",
+      "title": "Discover container machines",
+      "topics": [
+        "Developer Tools",
+        "Swift",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/389/",
+      "dataFile": "videos/2026-389.json"
+    },
+    {
+      "id": "205",
+      "year": "2026",
+      "title": "Enhance your presence on the App Store",
+      "topics": [
+        "App Services",
+        "App Store, Distribution & Marketing",
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/205/",
+      "dataFile": "videos/2026-205.json"
+    },
+    {
+      "id": "388",
+      "year": "2026",
+      "title": "Find and fix performance issues in your Metal games",
+      "topics": [
+        "Developer Tools",
+        "Graphics & Games"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/388/",
+      "dataFile": "videos/2026-388.json"
+    },
+    {
+      "id": "260",
+      "year": "2026",
+      "title": "Get the most out of Device Hub",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/260/",
+      "dataFile": "videos/2026-260.json"
+    },
+    {
+      "id": "382",
+      "year": "2026",
+      "title": "Inside Apple Intelligence and Xcode: Special Presentation",
+      "topics": [
+        "Developer Tools",
+        "Essentials",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/382/",
+      "dataFile": "videos/2026-382.json"
+    },
+    {
+      "id": "222",
+      "year": "2026",
+      "title": "Meet the new MetricKit",
+      "topics": [
+        "Developer Tools",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/222/",
+      "dataFile": "videos/2026-222.json"
+    },
+    {
+      "id": "267",
+      "year": "2026",
+      "title": "Migrate to Swift Testing",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/267/",
+      "dataFile": "videos/2026-267.json"
+    },
+    {
+      "id": "268",
+      "year": "2026",
+      "title": "Profile, fix, and verify: Improve app responsiveness with Instruments",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/268/",
+      "dataFile": "videos/2026-268.json"
+    },
+    {
+      "id": "213",
+      "year": "2026",
+      "title": "Translate your app using agents in Xcode",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/213/",
+      "dataFile": "videos/2026-213.json"
+    },
+    {
+      "id": "262",
+      "year": "2026",
+      "title": "What’s new in Swift",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": true,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/262/",
+      "dataFile": "videos/2026-262.json"
+    },
+    {
+      "id": "258",
+      "year": "2026",
+      "title": "What’s new in Xcode 27",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/258/",
+      "dataFile": "videos/2026-258.json"
+    },
+    {
+      "id": "8013",
+      "year": "2026",
+      "title": "Xcode Tips and Tricks Group Lab",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8013/",
+      "dataFile": "videos/2026-8013.json"
+    },
+    {
+      "id": "259",
+      "year": "2026",
+      "title": "Xcode, agents, and you",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/259/",
+      "dataFile": "videos/2026-259.json"
+    },
+    {
       "id": "270",
       "year": "2025",
       "title": "Code-along: Elevate an app with Swift concurrency",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -77,7 +335,8 @@
       "title": "Optimize CPU performance with Instruments",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -90,7 +349,9 @@
       "year": "2025",
       "title": "Optimize SwiftUI performance with Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -103,7 +364,8 @@
       "year": "2025",
       "title": "Profile and optimize power usage in your app",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -116,7 +378,8 @@
       "year": "2025",
       "title": "Record, replay, and review: UI automation with Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -129,7 +392,8 @@
       "year": "2025",
       "title": "What’s new in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -143,7 +407,9 @@
       "title": "What’s new in SwiftUI",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -157,7 +423,9 @@
       "title": "What’s new in Xcode 26",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -171,7 +439,8 @@
       "title": "A Swift Tour: Explore Swift’s features and design",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -184,7 +453,8 @@
       "year": "2024",
       "title": "Analyze heap memory",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -198,7 +468,8 @@
       "title": "Break into the RealityKit debugger",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -212,7 +483,8 @@
       "title": "Build a spatial drawing app with RealityKit",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -225,7 +497,8 @@
       "year": "2024",
       "title": "Compose interactive 3D content in Reality Composer Pro",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -252,7 +525,8 @@
       "title": "Discover area mode for Object Capture",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -266,7 +540,8 @@
       "title": "Discover RealityKit APIs for iOS, macOS, and visionOS",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -280,7 +555,8 @@
       "title": "Enhance your spatial computing app with RealityKit audio",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -307,7 +583,8 @@
       "year": "2024",
       "title": "Go further with Swift Testing",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -321,7 +598,8 @@
       "title": "Meet Swift Testing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -334,7 +612,8 @@
       "year": "2024",
       "title": "Migrate your app to Swift 6",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -361,7 +640,8 @@
       "year": "2024",
       "title": "Run, Break, Inspect: Explore effective debugging in LLDB",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -374,7 +654,8 @@
       "year": "2024",
       "title": "What’s new in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -388,7 +669,8 @@
       "title": "What’s new in USD and MaterialX",
       "topics": [
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -402,7 +684,9 @@
       "title": "What’s new in Xcode 16",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -442,7 +726,8 @@
       "year": "2023",
       "title": "Beyond the basics of structured concurrency",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -525,7 +810,8 @@
       "year": "2023",
       "title": "Create rich documentation with Swift-DocC",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -547,12 +833,65 @@
       "dataFile": "videos/2023-10226.json"
     },
     {
+      "id": "10300",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10300/",
+      "dataFile": "videos/2023-10300.json"
+    },
+    {
+      "id": "10301",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10301/",
+      "dataFile": "videos/2023-10301.json"
+    },
+    {
+      "id": "10302",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10302/",
+      "dataFile": "videos/2023-10302.json"
+    },
+    {
+      "id": "10303",
+      "year": "2023",
+      "title": "Dev Tools Trivia Time",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10303/",
+      "dataFile": "videos/2023-10303.json"
+    },
+    {
       "id": "10155",
       "year": "2023",
       "title": "Discover String Catalogs",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -565,7 +904,9 @@
       "year": "2023",
       "title": "Enhance your iPad and iPhone apps for the Shared Space",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -578,7 +919,8 @@
       "year": "2023",
       "title": "Expand on Swift macros",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -604,7 +946,8 @@
       "year": "2023",
       "title": "Generalize APIs with parameter packs",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -617,7 +960,8 @@
       "year": "2023",
       "title": "Meet mergeable libraries",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -630,7 +974,8 @@
       "year": "2023",
       "title": "Meet RealityKit Trace",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": true,
@@ -644,7 +989,8 @@
       "title": "Meet Safari for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -658,7 +1004,8 @@
       "title": "Meet Swift OpenAPI Generator",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -667,12 +1014,66 @@
       "dataFile": "videos/2023-10171.json"
     },
     {
+      "id": "10299",
+      "year": "2023",
+      "title": "Meet the presenter: Analyze hangs with Instruments",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10299/",
+      "dataFile": "videos/2023-10299.json"
+    },
+    {
+      "id": "10297",
+      "year": "2023",
+      "title": "Meet the presenter: Debug with structured logging",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10297/",
+      "dataFile": "videos/2023-10297.json"
+    },
+    {
+      "id": "111589",
+      "year": "2023",
+      "title": "Meet the presenters: Meet mergeable libraries",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111589/",
+      "dataFile": "videos/2023-111589.json"
+    },
+    {
+      "id": "10295",
+      "year": "2023",
+      "title": "Meet the presenters: What’s new in Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10295/",
+      "dataFile": "videos/2023-10295.json"
+    },
+    {
       "id": "111215",
       "year": "2023",
       "title": "Meet UIKit for spatial computing",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -685,7 +1086,8 @@
       "year": "2023",
       "title": "Mix Swift and C++",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -698,7 +1100,8 @@
       "year": "2023",
       "title": "Optimize app power and performance for spatial computing",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -749,11 +1152,155 @@
       "dataFile": "videos/2023-10250.json"
     },
     {
+      "id": "10289",
+      "year": "2023",
+      "title": "Q&A: Signing and distribution",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10289/",
+      "dataFile": "videos/2023-10289.json"
+    },
+    {
+      "id": "10294",
+      "year": "2023",
+      "title": "Q&A: Swift Package Manager",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10294/",
+      "dataFile": "videos/2023-10294.json"
+    },
+    {
+      "id": "111458",
+      "year": "2023",
+      "title": "Q&A: Swift Playgrounds",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111458/",
+      "dataFile": "videos/2023-111458.json"
+    },
+    {
+      "id": "10291",
+      "year": "2023",
+      "title": "Q&A: SwiftUI Previews",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10291/",
+      "dataFile": "videos/2023-10291.json"
+    },
+    {
+      "id": "10292",
+      "year": "2023",
+      "title": "Q&A: SwiftUI Previews",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10292/",
+      "dataFile": "videos/2023-10292.json"
+    },
+    {
+      "id": "10285",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10285/",
+      "dataFile": "videos/2023-10285.json"
+    },
+    {
+      "id": "10286",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10286/",
+      "dataFile": "videos/2023-10286.json"
+    },
+    {
+      "id": "10287",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10287/",
+      "dataFile": "videos/2023-10287.json"
+    },
+    {
+      "id": "10288",
+      "year": "2023",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10288/",
+      "dataFile": "videos/2023-10288.json"
+    },
+    {
+      "id": "10290",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10290/",
+      "dataFile": "videos/2023-10290.json"
+    },
+    {
+      "id": "10293",
+      "year": "2023",
+      "title": "Q&A: Xcode Cloud and testing",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10293/",
+      "dataFile": "videos/2023-10293.json"
+    },
+    {
       "id": "10262",
       "year": "2023",
       "title": "Rediscover Safari developer features",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -767,7 +1314,9 @@
       "title": "Run your iPad and iPhone apps in the Shared Space",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Spatial Computing",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -809,7 +1358,8 @@
       "title": "What’s new in Swift",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -822,7 +1372,8 @@
       "year": "2023",
       "title": "What’s new in Web Inspector",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": false,
@@ -849,7 +1400,8 @@
       "year": "2023",
       "title": "Write Swift macros",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -878,7 +1430,9 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Health & Fitness",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -893,7 +1447,8 @@
       "topics": [
         "Business & Education",
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -906,7 +1461,8 @@
       "year": "2022",
       "title": "Create Swift Package plugins",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -919,7 +1475,8 @@
       "year": "2022",
       "title": "Debug Swift debugging with LLDB",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1010,13 +1567,28 @@
       "year": "2022",
       "title": "Meet Swift Package plugins",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/110359/",
       "dataFile": "videos/2022-110359.json"
+    },
+    {
+      "id": "110506",
+      "year": "2022",
+      "title": "Meet the Presenter: Build your first app in Swift Playgrounds",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110506/",
+      "dataFile": "videos/2022-110506.json"
     },
     {
       "id": "10083",
@@ -1030,6 +1602,210 @@
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2022/10083/",
       "dataFile": "videos/2022-10083.json"
+    },
+    {
+      "id": "110922",
+      "year": "2022",
+      "title": "Q&A: C, C++, Objective-C compiler, analyzer, sanitizer, debugger, and linker",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110922/",
+      "dataFile": "videos/2022-110922.json"
+    },
+    {
+      "id": "110923",
+      "year": "2022",
+      "title": "Q&A: C, C++, Objective-C compiler, analyzer, sanitizer, debugger, and linker",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110923/",
+      "dataFile": "videos/2022-110923.json"
+    },
+    {
+      "id": "110505",
+      "year": "2022",
+      "title": "Q&A: Debugging Swift debugging with LLDB",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110505/",
+      "dataFile": "videos/2022-110505.json"
+    },
+    {
+      "id": "110940",
+      "year": "2022",
+      "title": "Q&A: Foundation",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110940/",
+      "dataFile": "videos/2022-110940.json"
+    },
+    {
+      "id": "110944",
+      "year": "2022",
+      "title": "Q&A: Passkeys and authentication",
+      "topics": [
+        "Developer Tools",
+        "Privacy & Security",
+        "Safari & Web"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110944/",
+      "dataFile": "videos/2022-110944.json"
+    },
+    {
+      "id": "110926",
+      "year": "2022",
+      "title": "Q&A: Performance, power, and stability",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110926/",
+      "dataFile": "videos/2022-110926.json"
+    },
+    {
+      "id": "110920",
+      "year": "2022",
+      "title": "Q&A: Simulators and devices",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110920/",
+      "dataFile": "videos/2022-110920.json"
+    },
+    {
+      "id": "110480",
+      "year": "2022",
+      "title": "Q&A: Swift concurrency",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110480/",
+      "dataFile": "videos/2022-110480.json"
+    },
+    {
+      "id": "110489",
+      "year": "2022",
+      "title": "Q&A: Swift Package Manager",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110489/",
+      "dataFile": "videos/2022-110489.json"
+    },
+    {
+      "id": "110490",
+      "year": "2022",
+      "title": "Q&A: Swift Playgrounds",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110490/",
+      "dataFile": "videos/2022-110490.json"
+    },
+    {
+      "id": "110921",
+      "year": "2022",
+      "title": "Q&A: Swift Standard Library",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110921/",
+      "dataFile": "videos/2022-110921.json"
+    },
+    {
+      "id": "110924",
+      "year": "2022",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110924/",
+      "dataFile": "videos/2022-110924.json"
+    },
+    {
+      "id": "110927",
+      "year": "2022",
+      "title": "Q&A: Xcode",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110927/",
+      "dataFile": "videos/2022-110927.json"
+    },
+    {
+      "id": "110925",
+      "year": "2022",
+      "title": "Q&A: Xcode Cloud and testing",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110925/",
+      "dataFile": "videos/2022-110925.json"
+    },
+    {
+      "id": "110945",
+      "year": "2022",
+      "title": "Q&A: Xcode Previews",
+      "topics": [
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110945/",
+      "dataFile": "videos/2022-110945.json"
     },
     {
       "id": "110367",
@@ -1058,11 +1834,26 @@
       "dataFile": "videos/2022-10082.json"
     },
     {
+      "id": "110935",
+      "year": "2022",
+      "title": "Trivia Night",
+      "topics": [
+        "Developer Tools",
+        "Essentials"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110935/",
+      "dataFile": "videos/2022-110935.json"
+    },
+    {
       "id": "110360",
       "year": "2022",
       "title": "Use Xcode for server-side development",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1076,7 +1867,8 @@
       "title": "Use Xcode to develop a multiplatform app",
       "topics": [
         "Developer Tools",
-        "Essentials"
+        "Essentials",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1116,7 +1908,9 @@
       "year": "2021",
       "title": "Analyze HTTP traffic in Instruments",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Privacy & Security",
+        "System Services"
       ],
       "duration": "",
       "hasCode": false,
@@ -1129,7 +1923,8 @@
       "year": "2021",
       "title": "Automate CloudKit tests with cktool and declarative schema",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1235,7 +2030,8 @@
       "year": "2021",
       "title": "Discover and curate Swift Packages using Collections",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1370,7 +2166,8 @@
       "title": "Faster and simpler notarization for Mac apps",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Developer Tools"
+        "Developer Tools",
+        "Privacy & Security"
       ],
       "duration": "",
       "hasCode": true,
@@ -1397,7 +2194,8 @@
       "title": "Localize your SwiftUI app",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1573,7 +2371,9 @@
       "title": "Broaden your reach with Siri Event Suggestions",
       "topics": [
         "App Services",
-        "Developer Tools"
+        "Developer Tools",
+        "Maps & Location",
+        "Safari & Web"
       ],
       "duration": "",
       "hasCode": true,
@@ -1586,7 +2386,8 @@
       "year": "2020",
       "title": "Build an Action Classifier with Create ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -1613,7 +2414,8 @@
       "year": "2020",
       "title": "Build Image and Video Style Transfer models in Create ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -1642,7 +2444,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1655,7 +2458,9 @@
       "year": "2020",
       "title": "Core Data: Sundries and maxims",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1741,7 +2546,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": false,
@@ -1781,7 +2587,8 @@
       "year": "2020",
       "title": "Explore Packages and Projects with Xcode Playgrounds",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1794,7 +2601,8 @@
       "year": "2020",
       "title": "Explore the new system architecture of Apple silicon Macs",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "System Services"
       ],
       "duration": "",
       "hasCode": true,
@@ -1835,7 +2643,8 @@
       "year": "2020",
       "title": "Get your test results faster",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1848,7 +2657,8 @@
       "year": "2020",
       "title": "Handle interruptions and alerts in UI tests",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1889,7 +2699,9 @@
       "year": "2020",
       "title": "Introduction to SwiftUI",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1932,7 +2744,8 @@
       "topics": [
         "Audio & Video",
         "Developer Tools",
-        "Graphics & Games"
+        "Graphics & Games",
+        "Photos & Camera"
       ],
       "duration": "",
       "hasCode": true,
@@ -1945,7 +2758,8 @@
       "year": "2020",
       "title": "Optimize the interface of your Mac Catalyst app",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": true,
@@ -1971,7 +2785,8 @@
       "year": "2020",
       "title": "Refine Objective-C frameworks for Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -1984,7 +2799,9 @@
       "year": "2020",
       "title": "Structure your app for SwiftUI previews",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -1997,7 +2814,8 @@
       "year": "2020",
       "title": "Triage test failures with XCTIssue",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2010,7 +2828,8 @@
       "year": "2020",
       "title": "Use model deployment and security with Core ML",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": true,
@@ -2050,7 +2869,8 @@
       "title": "What's new in Mac Catalyst",
       "topics": [
         "App Store, Distribution & Marketing",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2076,7 +2896,8 @@
       "year": "2020",
       "title": "Write tests to fail",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": true,
@@ -2103,7 +2924,8 @@
       "title": "Accessibility Inspector",
       "topics": [
         "Accessibility & Inclusion",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2116,7 +2938,8 @@
       "year": "2019",
       "title": "Adopting Swift Packages in Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -2156,7 +2979,8 @@
       "year": "2019",
       "title": "Binary Frameworks in Swift",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -2169,7 +2993,8 @@
       "year": "2019",
       "title": "Core ML 3 Framework",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2178,11 +3003,40 @@
       "dataFile": "videos/2019-704.json"
     },
     {
+      "id": "407",
+      "year": "2019",
+      "title": "Create ML for Activity, Text, and Recommendations",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/407/",
+      "dataFile": "videos/2019-407.json"
+    },
+    {
+      "id": "406",
+      "year": "2019",
+      "title": "Create ML for Object Detection and Sound Classification",
+      "topics": [
+        "Developer Tools",
+        "Machine Learning & AI"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": false,
+      "url": "https://developer.apple.com/videos/play/wwdc2019/406/",
+      "dataFile": "videos/2019-406.json"
+    },
+    {
       "id": "412",
       "year": "2019",
       "title": "Debugging in Xcode 11",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -2195,7 +3049,8 @@
       "year": "2019",
       "title": "Delivering Optimized Metal Apps and Games",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -2260,7 +3115,8 @@
       "year": "2019",
       "title": "Getting the Most Out of Simulator",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -2274,7 +3130,8 @@
       "title": "Great Developer Habits",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2300,7 +3157,8 @@
       "year": "2019",
       "title": "Introducing the Create ML App",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2326,7 +3184,8 @@
       "year": "2019",
       "title": "Mastering Xcode Previews",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
@@ -2352,7 +3211,8 @@
       "year": "2019",
       "title": "Modern Swift API Design",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -2431,7 +3291,8 @@
       "year": "2019",
       "title": "What's New in Machine Learning",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Machine Learning & AI"
       ],
       "duration": "",
       "hasCode": false,
@@ -2466,17 +3327,46 @@
       "dataFile": "videos/2018-412.json"
     },
     {
+      "id": "415",
+      "year": "2018",
+      "title": "Behind the Scenes of the Xcode Build Process",
+      "topics": [
+        "Developer Tools",
+        "Swift"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/415/",
+      "dataFile": "videos/2018-415.json"
+    },
+    {
       "id": "408",
       "year": "2018",
       "title": "Building Faster in Xcode",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2018/408/",
       "dataFile": "videos/2018-408.json"
+    },
+    {
+      "id": "224",
+      "year": "2018",
+      "title": "Core Data Best Practices",
+      "topics": [
+        "Developer Tools",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/224/",
+      "dataFile": "videos/2018-224.json"
     },
     {
       "id": "410",
@@ -2522,7 +3412,8 @@
       "year": "2018",
       "title": "Metal Game Performance Optimization",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -2535,7 +3426,8 @@
       "year": "2018",
       "title": "Metal Shader Debugging and Profiling",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -2548,13 +3440,27 @@
       "year": "2018",
       "title": "Optimizing App Assets",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "SwiftUI & UI Frameworks"
       ],
       "duration": "",
       "hasCode": false,
       "hasTranscript": true,
       "url": "https://developer.apple.com/videos/play/wwdc2018/227/",
       "dataFile": "videos/2018-227.json"
+    },
+    {
+      "id": "407",
+      "year": "2018",
+      "title": "Practical Approaches to Great App Performance",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/407/",
+      "dataFile": "videos/2018-407.json"
     },
     {
       "id": "417",
@@ -2583,6 +3489,21 @@
       "dataFile": "videos/2018-414.json"
     },
     {
+      "id": "209",
+      "year": "2018",
+      "title": "What's New in Cocoa for macOS",
+      "topics": [
+        "Developer Tools",
+        "SwiftUI & UI Frameworks",
+        "System Services"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2018/209/",
+      "dataFile": "videos/2018-209.json"
+    },
+    {
       "id": "706",
       "year": "2017",
       "title": "Modernizing Grand Central Dispatch Usage",
@@ -2600,7 +3521,9 @@
       "year": "2017",
       "title": "SceneKit: What's New",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games",
+        "Spatial Computing"
       ],
       "duration": "",
       "hasCode": false,
@@ -2613,7 +3536,8 @@
       "year": "2016",
       "title": "Advanced Metal Shader Optimization",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,
@@ -2626,7 +3550,8 @@
       "year": "2016",
       "title": "Concurrent Programming With GCD in Swift 3",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -2648,11 +3573,25 @@
       "dataFile": "videos/2016-411.json"
     },
     {
+      "id": "413",
+      "year": "2015",
+      "title": "Advanced Debugging and the Address Sanitizer",
+      "topics": [
+        "Developer Tools"
+      ],
+      "duration": "",
+      "hasCode": false,
+      "hasTranscript": true,
+      "url": "https://developer.apple.com/videos/play/wwdc2015/413/",
+      "dataFile": "videos/2015-413.json"
+    },
+    {
       "id": "401",
       "year": "2015",
       "title": "Swift and Objective-C Interoperability",
       "topics": [
-        "Developer Tools"
+        "Developer Tools",
+        "Swift"
       ],
       "duration": "",
       "hasCode": false,
@@ -2679,7 +3618,8 @@
       "title": "Ingredients of Great Games",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "Graphics & Games"
       ],
       "duration": "",
       "hasCode": false,

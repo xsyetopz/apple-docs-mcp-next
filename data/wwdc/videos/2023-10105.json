@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Photos & Camera"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,28 +18,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "AVCam: Building a camera app",
         "url": "https://developer.apple.com/documentation/AVFoundation/avcam-building-a-camera-app"
       },
       {
         "title": "AVFoundation",
         "url": "https://developer.apple.com/documentation/AVFoundation"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10105/4/E34149DA-EEF7-4E25-A6B3-DDEB0BB7BF1C/downloads/wwdc2023-10105_hd.mp4?dl=1",
@@ -46,11 +31,23 @@
   },
   "relatedVideos": [
     {
+      "id": "111474",
+      "year": "2023",
+      "title": "Meet the presenter: Create a more responsive camera experience",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111474"
+    },
+    {
+      "id": "111473",
+      "year": "2023",
+      "title": "Q&A: Camera",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111473"
+    },
+    {
       "id": "10641",
       "year": "2020",
       "title": "Handle the Limited Photos Library in your app",
       "url": "https://developer.apple.com/videos/play/wwdc2020/10641"
     }
   ],
-  "extractedAt": "2025-07-18T09:12:53.430Z"
+  "extractedAt": "2026-10-11T16:37:01.489Z"
 }

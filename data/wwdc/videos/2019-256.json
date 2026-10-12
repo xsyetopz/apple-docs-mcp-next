@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "App Services"
+    "App Services",
+    "Machine Learning & AI"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -17,24 +18,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Recognizing speech in live audio",
         "url": "https://developer.apple.com/documentation/Speech/recognizing-speech-in-live-audio"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/256p7m9z4yst71ai/256/256_hd_advances_in_speech_recognition.mp4?dl=1",
@@ -72,5 +57,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2016/509"
     }
   ],
-  "extractedAt": "2025-07-18T09:18:06.666Z"
+  "extractedAt": "2026-10-11T16:46:48.640Z"
 }

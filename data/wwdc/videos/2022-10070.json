@@ -115,56 +115,40 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building a desktop-class iPad app",
-        "url": "https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app"
-      },
-      {
-        "title": "centerItemGroups",
-        "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/centerItemGroups"
-      },
-      {
-        "title": "collectionView(_:contextMenuConfigurationForItemsAt:point:)",
-        "url": "https://developer.apple.com/documentation/UIKit/UICollectionViewDelegate/collectionView(_:contextMenuConfigurationForItemsAt:point:)"
-      },
-      {
         "title": "collectionView(_:performPrimaryActionForItemAt:)",
         "url": "https://developer.apple.com/documentation/UIKit/UICollectionViewDelegate/collectionView(_:performPrimaryActionForItemAt:)"
-      },
-      {
-        "title": "Supporting desktop-class features in your iPad app",
-        "url": "https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app"
       },
       {
         "title": "titleMenuProvider",
         "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/titleMenuProvider"
       },
       {
-        "title": "UIDocumentProperties",
-        "url": "https://developer.apple.com/documentation/UIKit/UIDocumentProperties"
-      },
-      {
         "title": "UINavigationItem.ItemStyle",
         "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/ItemStyle"
+      },
+      {
+        "title": "collectionView(_:contextMenuConfigurationForItemsAt:point:)",
+        "url": "https://developer.apple.com/documentation/UIKit/UICollectionViewDelegate/collectionView(_:contextMenuConfigurationForItemsAt:point:)"
+      },
+      {
+        "title": "centerItemGroups",
+        "url": "https://developer.apple.com/documentation/UIKit/UINavigationItem/centerItemGroups"
       },
       {
         "title": "UINavigationItemRenameDelegate",
         "url": "https://developer.apple.com/documentation/UIKit/UINavigationItemRenameDelegate-5j4ws"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
+        "title": "UIDocumentProperties",
+        "url": "https://developer.apple.com/documentation/UIKit/UIDocumentProperties"
       },
       {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
+        "title": "Building a desktop-class iPad app",
+        "url": "https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app"
       },
       {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Supporting desktop-class features in your iPad app",
+        "url": "https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10070/3/03E2BD27-04DD-4C07-A662-B94B7F784C65/downloads/wwdc2022-10070_hd.mp4?dl=1",
@@ -196,6 +180,30 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10069"
     },
     {
+      "id": "110837",
+      "year": "2022",
+      "title": "Meet the Presenter: Build a desktop-class iPad app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110837"
+    },
+    {
+      "id": "110829",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110829"
+    },
+    {
+      "id": "110830",
+      "year": "2022",
+      "title": "Q&A: UI Frameworks",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110830"
+    },
+    {
+      "id": "110812",
+      "year": "2022",
+      "title": "Study Hall: Go big or go home",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110812"
+    },
+    {
       "id": "10068",
       "year": "2022",
       "title": "What's new in UIKit",
@@ -214,5 +222,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/110931"
     }
   ],
-  "extractedAt": "2025-07-18T10:53:15.418Z"
+  "extractedAt": "2026-10-11T16:40:12.341Z"
 }

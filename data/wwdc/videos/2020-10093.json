@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Design"
+    "Design",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -49,24 +50,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Enhancing your iPad app with pointer interactions",
         "url": "https://developer.apple.com/documentation/UIKit/enhancing-your-ipad-app-with-pointer-interactions"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10093/4/3B8A69F7-49AD-49B5-AFD5-1F1AF706199D/wwdc2020_10093_hd.mp4?dl=1",
@@ -104,5 +89,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10094"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:55.595Z"
+  "extractedAt": "2026-10-11T16:45:02.614Z"
 }

@@ -18,32 +18,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Autosizing views for localization in iOS",
+        "url": "https://developer.apple.com/documentation/Xcode/autosizing-views-for-localization-in-ios"
+      },
+      {
+        "title": "Localization-friendly layouts in macOS",
+        "url": "https://developer.apple.com/documentation/Xcode/localization-friendly-layouts-in-macos"
       },
       {
         "title": "Auto Layout Guide",
         "url": "https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/"
-      },
-      {
-        "title": "Autosizing Views for Localization in iOS",
-        "url": "https://developer.apple.com/documentation/xcode/autosizing_views_for_localization_in_ios"
-      },
-      {
-        "title": "Localization-Friendly Layouts in macOS",
-        "url": "https://developer.apple.com/documentation/xcode/localization-friendly_layouts_in_macos"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10219/4/2B66E0C1-3863-4A8E-AD06-54CC51176ED3/wwdc2020_10219_hd.mp4?dl=1",
@@ -57,5 +41,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10140"
     }
   ],
-  "extractedAt": "2025-07-18T09:09:23.782Z"
+  "extractedAt": "2026-10-11T16:46:01.676Z"
 }

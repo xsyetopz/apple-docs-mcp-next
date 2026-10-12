@@ -6,7 +6,8 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "Swift"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -101,24 +102,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110401/6/E6B6BDA3-C922-4FC4-AF6B-EB6C290568A7/downloads/wwdc2022-110401_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/110401/6/E6B6BDA3-C922-4FC4-AF6B-EB6C290568A7/downloads/wwdc2022-110401_sd.mp4?dl=1"
   },
@@ -128,6 +112,12 @@
       "year": "2022",
       "title": "Meet Swift Package plugins",
       "url": "https://developer.apple.com/videos/play/wwdc2022/110359"
+    },
+    {
+      "id": "110489",
+      "year": "2022",
+      "title": "Q&A: Swift Package Manager",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110489"
     },
     {
       "id": "110354",
@@ -160,5 +150,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/410"
     }
   ],
-  "extractedAt": "2025-07-18T09:42:23.071Z"
+  "extractedAt": "2026-10-11T16:41:38.647Z"
 }

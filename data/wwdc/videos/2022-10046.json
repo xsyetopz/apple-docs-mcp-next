@@ -73,24 +73,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Device Management",
         "url": "https://developer.apple.com/documentation/DeviceManagement"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10046/3/776B5FA8-B8C0-46DA-9EDE-7A0BE5F03772/downloads/wwdc2022-10046_hd.mp4?dl=1",
@@ -102,6 +86,12 @@
       "year": "2023",
       "title": "Explore advances in declarative device management",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10041"
+    },
+    {
+      "id": "110481",
+      "year": "2022",
+      "title": "Q&A: Declarative device management",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110481"
     },
     {
       "id": "10045",
@@ -116,5 +106,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10131"
     }
   ],
-  "extractedAt": "2025-07-18T09:27:01.347Z"
+  "extractedAt": "2026-10-11T16:40:11.117Z"
 }

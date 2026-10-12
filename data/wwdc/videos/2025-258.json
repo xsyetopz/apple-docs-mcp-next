@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Apple School and Business Manager API",
+        "title": "Apple School Manager and Apple Business APIs",
         "url": "https://developer.apple.com/documentation/apple-school-and-business-manager-api"
       },
       {
         "title": "ManagedApp",
         "url": "https://developer.apple.com/documentation/ManagedApp"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/258/4/00c0d5e4-631c-40a0-b535-65404ad0e9c1/downloads/wwdc2025-258_hd.mp4?dl=1",
@@ -58,5 +42,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2025/203"
     }
   ],
-  "extractedAt": "2025-07-18T09:26:19.518Z"
+  "extractedAt": "2026-10-11T16:34:24.977Z"
 }

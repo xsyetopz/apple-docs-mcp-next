@@ -7,7 +7,9 @@
   "duration": "",
   "topics": [
     "Developer Tools",
-    "Essentials"
+    "Essentials",
+    "Swift",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -110,32 +112,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Previewing your app’s interface in Xcode",
+        "url": "https://developer.apple.com/documentation/Xcode/previewing-your-apps-interface-in-xcode"
       },
       {
         "title": "Forum: Developer Tools & Services",
         "url": "https://developer.apple.com/forums/topics/developer-tools-and-services?cid=vf-a-0010"
       },
       {
-        "title": "Previewing your app’s interface in Xcode",
-        "url": "https://developer.apple.com/documentation/Xcode/previewing-your-apps-interface-in-xcode"
-      },
-      {
         "title": "Xcode updates",
         "url": "https://developer.apple.com/documentation/Updates/Xcode"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2024/10135/4/A6AD3D2B-72D9-43AE-901E-8AFDBA304007/downloads/wwdc2024-10135_hd.mp4?dl=1",
@@ -179,5 +165,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2024/10198"
     }
   ],
-  "extractedAt": "2025-07-18T09:39:54.810Z"
+  "extractedAt": "2026-10-11T16:34:49.956Z"
 }

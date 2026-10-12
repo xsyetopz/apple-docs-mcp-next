@@ -31,32 +31,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Recognizing tables within a document",
+        "url": "https://developer.apple.com/documentation/Vision/recognize-tables-within-a-document"
       },
       {
         "title": "Classifying Images with Vision and Core ML",
         "url": "https://developer.apple.com/documentation/CoreML/classifying-images-with-vision-and-core-ml"
       },
       {
-        "title": "Recognizing tables within a document",
-        "url": "https://developer.apple.com/documentation/Vision/recognize-tables-within-a-document"
-      },
-      {
         "title": "Vision",
         "url": "https://developer.apple.com/documentation/Vision"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "sampleProject": "https://developer.apple.com/sample-code/wwdc/2017/ImageClassificationwithVisionandCoreML.zip",
@@ -89,5 +73,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/111241"
     }
   ],
-  "extractedAt": "2025-07-18T10:39:14.978Z"
+  "extractedAt": "2026-10-11T16:34:17.647Z"
 }

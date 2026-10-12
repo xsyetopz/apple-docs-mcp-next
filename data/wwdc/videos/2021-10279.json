@@ -43,24 +43,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Simplifying User Authentication in a tvOS App",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/simplifying-user-authentication-in-a-tvos-app"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10279/6/2634C5FD-06F9-4C34-8D8A-215A0C29356B/downloads/wwdc2021-10279_hd.mp4?dl=1",
@@ -84,13 +68,7 @@
       "year": "2021",
       "title": "Secure login with iCloud Keychain verification codes",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10105"
-    },
-    {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:07.814Z"
+  "extractedAt": "2026-10-11T16:42:39.097Z"
 }

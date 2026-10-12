@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Design",
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -18,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: SF Symbols",
         "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10288/4/48BB2A1D-31BF-4E09-90DF-2FC4669B3946/downloads/wwdc2021-10288_hd.mp4?dl=1",
@@ -79,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/206"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:13.633Z"
+  "extractedAt": "2026-10-11T16:43:26.394Z"
 }

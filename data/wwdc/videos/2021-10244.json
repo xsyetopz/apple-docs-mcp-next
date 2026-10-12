@@ -37,36 +37,20 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Accessing and modifying per-device data",
-        "url": "https://developer.apple.com/documentation/DeviceCheck/accessing-and-modifying-per-device-data"
+        "title": "Establishing your app’s integrity",
+        "url": "https://developer.apple.com/documentation/DeviceCheck/establishing-your-app-s-integrity"
       },
       {
         "title": "Assessing fraud risk",
         "url": "https://developer.apple.com/documentation/DeviceCheck/assessing-fraud-risk"
       },
       {
-        "title": "Establishing your app’s integrity",
-        "url": "https://developer.apple.com/documentation/DeviceCheck/establishing-your-app-s-integrity"
-      },
-      {
         "title": "Validating apps that connect to your server",
         "url": "https://developer.apple.com/documentation/DeviceCheck/validating-apps-that-connect-to-your-server"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Accessing and modifying per-device data",
+        "url": "https://developer.apple.com/documentation/DeviceCheck/accessing-and-modifying-per-device-data"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10244/5/5C0B3E9F-163D-4DCB-AC48-F92DBE33E112/downloads/wwdc2021-10244_hd.mp4?dl=1",
@@ -80,5 +64,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10110"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:10.256Z"
+  "extractedAt": "2026-10-11T16:44:23.819Z"
 }

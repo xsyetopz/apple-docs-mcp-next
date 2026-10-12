@@ -6,7 +6,9 @@
   "speakers": [],
   "duration": "",
   "topics": [
-    "Developer Tools"
+    "Developer Tools",
+    "SwiftUI & UI Frameworks",
+    "System Services"
   ],
   "hasTranscript": true,
   "hasCode": true,
@@ -97,24 +99,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Loading and Displaying a Large Data Feed",
-        "url": "https://developer.apple.com/documentation/swiftui/loading_and_displaying_a_large_data_feed"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Loading and displaying a large data feed",
+        "url": "https://developer.apple.com/documentation/SwiftUI/loading-and-displaying-a-large-data-feed"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10017/5/F2FB4653-3146-4087-A264-6EFCE0C197D5/wwdc2020_10017_hd.mp4?dl=1",
@@ -128,5 +114,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/230"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:59.004Z"
+  "extractedAt": "2026-10-11T16:46:03.263Z"
 }

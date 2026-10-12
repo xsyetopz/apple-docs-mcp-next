@@ -133,28 +133,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Adopting unified Maps URLs",
-        "url": "https://developer.apple.com/documentation/MapKit/Unified-Map-URLs"
-      },
-      {
         "title": "Searching, displaying, and navigating to places",
         "url": "https://developer.apple.com/documentation/MapKit/searching-displaying-and-navigating-to-places"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Adopting unified Maps URLs",
+        "url": "https://developer.apple.com/documentation/MapKit/Unified-Map-URLs"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/204/5/38ed2a79-6f38-4c36-8d25-933f80d3b8ce/downloads/wwdc2025-204_hd.mp4?dl=1",
@@ -180,5 +164,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10035"
     }
   ],
-  "extractedAt": "2025-07-18T10:38:26.456Z"
+  "extractedAt": "2026-10-11T16:33:41.869Z"
 }

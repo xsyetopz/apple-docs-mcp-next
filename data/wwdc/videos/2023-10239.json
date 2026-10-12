@@ -29,24 +29,7 @@
     }
   ],
   "resources": {
-    "resourceLinks": [
-      {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
-      }
-    ],
+    "resourceLinks": [],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10239/5/0F1CDDAF-2EAD-43A1-8B09-806ED4EE707A/downloads/wwdc2023-10239_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2023/10239/5/0F1CDDAF-2EAD-43A1-8B09-806ED4EE707A/downloads/wwdc2023-10239_sd.mp4?dl=1"
   },
@@ -64,11 +47,17 @@
       "url": "https://developer.apple.com/videos/play/wwdc2023/10075"
     },
     {
+      "id": "111533",
+      "year": "2023",
+      "title": "Q&A: SharePlay",
+      "url": "https://developer.apple.com/videos/play/wwdc2023/111533"
+    },
+    {
       "id": "10241",
       "year": "2023",
       "title": "Share files with SharePlay",
       "url": "https://developer.apple.com/videos/play/wwdc2023/10241"
     }
   ],
-  "extractedAt": "2025-07-18T09:22:21.512Z"
+  "extractedAt": "2026-10-11T16:35:56.238Z"
 }

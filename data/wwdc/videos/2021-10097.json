@@ -7,7 +7,8 @@
   "duration": "",
   "topics": [
     "Design",
-    "Essentials"
+    "Essentials",
+    "SwiftUI & UI Frameworks"
   ],
   "hasTranscript": true,
   "hasCode": false,
@@ -18,24 +19,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Human Interface Guidelines: SF Symbols",
         "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10097/5/4D377285-9082-4F13-8F15-EBCD0A938E8C/downloads/wwdc2021-10097_hd.mp4?dl=1",
@@ -73,12 +58,6 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10349"
     },
     {
-      "id": "10322",
-      "year": "2021",
-      "title": "Tuesday@WWDC21",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/10322"
-    },
-    {
       "id": "10018",
       "year": "2021",
       "title": "What's new in SwiftUI",
@@ -91,5 +70,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10207"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:23.866Z"
+  "extractedAt": "2026-10-11T16:43:37.664Z"
 }

@@ -49,30 +49,26 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "App Clips",
         "url": "https://developer.apple.com/documentation/AppClip"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10097/4/1195D4FF-4AF5-48B0-BB92-948D01AF942B/downloads/wwdc2022-10097_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2022/10097/4/1195D4FF-4AF5-48B0-BB92-948D01AF942B/downloads/wwdc2022-10097_sd.mp4?dl=1"
   },
   "relatedVideos": [
+    {
+      "id": "110444",
+      "year": "2022",
+      "title": "Q&A: App Clips",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110444"
+    },
+    {
+      "id": "110445",
+      "year": "2022",
+      "title": "Q&A: App Clips",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/110445"
+    },
     {
       "id": "10013",
       "year": "2021",
@@ -98,5 +94,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10651"
     }
   ],
-  "extractedAt": "2025-07-18T09:14:28.953Z"
+  "extractedAt": "2026-10-11T16:39:31.909Z"
 }

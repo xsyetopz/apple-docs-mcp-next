@@ -32,24 +32,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Authentication Services",
         "url": "https://developer.apple.com/documentation/AuthenticationServices"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10139/5/EE9B8782-2114-4EDC-A2CF-C26D03BB5E54/wwdc2020_10139_hd.mp4?dl=1",
@@ -69,5 +53,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10639"
     }
   ],
-  "extractedAt": "2025-07-18T09:20:43.238Z"
+  "extractedAt": "2026-10-11T16:45:33.387Z"
 }

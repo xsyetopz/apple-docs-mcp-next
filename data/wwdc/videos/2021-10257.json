@@ -31,14 +31,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "ClassKit",
-        "url": "https://developer.apple.com/documentation/ClassKit"
-      },
-      {
         "title": "fetchActivity(for:completion:)",
         "url": "https://developer.apple.com/documentation/ClassKit/CLSDataStore/fetchActivity(for:completion:)"
       },
@@ -47,20 +39,20 @@
         "url": "https://developer.apple.com/documentation/ClassKit/incorporating-classkit-into-an-educational-app"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "ClassKit",
+        "url": "https://developer.apple.com/documentation/ClassKit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10257/6/1A9F8965-41D7-4A10-A0B1-36FE84E977EE/downloads/wwdc2021-10257_hd.mp4?dl=1",
     "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10257/6/1A9F8965-41D7-4A10-A0B1-36FE84E977EE/downloads/wwdc2021-10257_sd.mp4?dl=1"
   },
-  "extractedAt": "2025-07-18T09:27:16.091Z"
+  "relatedVideos": [
+    {
+      "id": "215",
+      "year": "2018",
+      "title": "Introducing ClassKit",
+      "url": "https://developer.apple.com/videos/play/wwdc2018/215"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:43:49.179Z"
 }

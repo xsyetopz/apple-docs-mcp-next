@@ -1,0 +1,31 @@
+{
+  "id": "110964",
+  "year": "2022",
+  "url": "https://developer.apple.com/videos/play/wwdc2022/110964/",
+  "title": "Meet the Presenter: Create camera extensions with CoreMediaIO",
+  "speakers": [],
+  "duration": "",
+  "topics": [
+    "Photos & Camera"
+  ],
+  "hasTranscript": false,
+  "hasCode": false,
+  "resources": {
+    "resourceLinks": []
+  },
+  "relatedVideos": [
+    {
+      "id": "10018",
+      "year": "2022",
+      "title": "Bring Continuity Camera to your macOS app",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10018"
+    },
+    {
+      "id": "10022",
+      "year": "2022",
+      "title": "Create camera extensions with Core Media IO",
+      "url": "https://developer.apple.com/videos/play/wwdc2022/10022"
+    }
+  ],
+  "extractedAt": "2026-10-11T16:41:28.817Z"
+}

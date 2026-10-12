@@ -17,28 +17,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Network",
         "url": "https://developer.apple.com/documentation/Network"
       },
       {
         "title": "URLSession",
         "url": "https://developer.apple.com/documentation/Foundation/URLSession"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/712oixq9dtsljwqxm/712/712_hd_advances_in_networking_part_1.mp4?dl=1",
@@ -82,6 +66,12 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/422"
     },
     {
+      "id": "711",
+      "year": "2019",
+      "title": "Introducing Combine and Advances in Foundation",
+      "url": "https://developer.apple.com/videos/play/wwdc2019/711"
+    },
+    {
       "id": "714",
       "year": "2019",
       "title": "Network Extensions for the Modern Mac",
@@ -94,5 +84,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/716"
     }
   ],
-  "extractedAt": "2025-07-18T11:04:15.388Z"
+  "extractedAt": "2026-10-11T16:47:55.126Z"
 }

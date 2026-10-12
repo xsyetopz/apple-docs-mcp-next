@@ -17,32 +17,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Building Widgets Using WidgetKit and SwiftUI",
-        "url": "https://developer.apple.com/documentation/widgetkit/building_widgets_using_widgetkit_and_swiftui"
-      },
-      {
         "title": "Human Interface Guidelines: Widgets",
         "url": "https://developer.apple.com/design/human-interface-guidelines/widgets"
       },
       {
+        "title": "Building Widgets Using WidgetKit and SwiftUI",
+        "url": "https://developer.apple.com/documentation/WidgetKit/building-widgets-using-widgetkit-and-swiftui"
+      },
+      {
         "title": "SwiftUI",
         "url": "https://developer.apple.com/documentation/SwiftUI"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10103/4/640B143D-B8DE-4811-87EC-9578EA46C952/wwdc2020_10103_hd.mp4?dl=1",
@@ -74,5 +58,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10034"
     }
   ],
-  "extractedAt": "2025-07-18T09:37:46.955Z"
+  "extractedAt": "2026-10-11T16:46:05.661Z"
 }

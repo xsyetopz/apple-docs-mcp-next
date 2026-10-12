@@ -99,12 +99,16 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
+        "title": "Workouts and activity rings",
+        "url": "https://developer.apple.com/documentation/HealthKit/workouts-and-activity-rings"
       },
       {
         "title": "Creating controls to perform actions across the system",
         "url": "https://developer.apple.com/documentation/WidgetKit/Creating-controls-to-perform-actions-across-the-system"
+      },
+      {
+        "title": "Migrating ClockKit complications to WidgetKit",
+        "url": "https://developer.apple.com/documentation/WidgetKit/Converting-A-ClockKit-App"
       },
       {
         "title": "Increasing the visibility of widgets in Smart Stacks",
@@ -117,26 +121,6 @@
       {
         "title": "MapKit",
         "url": "https://developer.apple.com/documentation/MapKit"
-      },
-      {
-        "title": "Migrating ClockKit complications to WidgetKit",
-        "url": "https://developer.apple.com/documentation/WidgetKit/Converting-A-ClockKit-App"
-      },
-      {
-        "title": "Workouts and activity rings",
-        "url": "https://developer.apple.com/documentation/HealthKit/workouts-and-activity-rings"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2025/334/6/578bf261-7e37-4689-a465-bd1300c0f908/downloads/wwdc2025-334_hd.mp4?dl=1",
@@ -180,5 +164,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2022/10051"
     }
   ],
-  "extractedAt": "2025-07-18T10:37:37.290Z"
+  "extractedAt": "2026-10-11T16:34:30.047Z"
 }

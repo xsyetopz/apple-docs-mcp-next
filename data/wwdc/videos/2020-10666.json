@@ -19,14 +19,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "Authentication Services",
-        "url": "https://developer.apple.com/documentation/AuthenticationServices"
-      },
-      {
         "title": "Implementing User Authentication with Sign in with Apple",
         "url": "https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple"
       },
@@ -35,16 +27,8 @@
         "url": "https://developer.apple.com/documentation/Security/password-autofill"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "Authentication Services",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10666/6/D7AC2207-1C98-4C40-B53E-B41D8B673E40/wwdc2020_10666_hd.mp4?dl=1",
@@ -76,5 +60,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2019/706"
     }
   ],
-  "extractedAt": "2025-07-18T10:43:22.783Z"
+  "extractedAt": "2026-10-11T16:44:52.888Z"
 }

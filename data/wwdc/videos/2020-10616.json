@@ -44,24 +44,8 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Metal",
         "url": "https://developer.apple.com/documentation/Metal"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10616/5/F585B9C6-DBD8-4C59-B210-5228EF5B86B1/wwdc2020_10616_hd.mp4?dl=1",
@@ -111,5 +95,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2020/10632"
     }
   ],
-  "extractedAt": "2025-07-18T10:15:13.405Z"
+  "extractedAt": "2026-10-11T16:45:46.523Z"
 }

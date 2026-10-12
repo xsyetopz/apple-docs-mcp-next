@@ -25,10 +25,6 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
         "title": "Analyzing the performance of your shipping app",
         "url": "https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app"
       },
@@ -43,18 +39,6 @@
       {
         "title": "XCTest",
         "url": "https://developer.apple.com/documentation/XCTest"
-      },
-      {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10180/5/0CD6241A-4A02-4CD3-9885-93ABE0FD4981/downloads/wwdc2021-10180_hd.mp4?dl=1",
@@ -92,5 +76,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2018/416"
     }
   ],
-  "extractedAt": "2025-07-18T09:43:18.088Z"
+  "extractedAt": "2026-10-11T16:43:42.398Z"
 }

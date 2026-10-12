@@ -1,8 +1,27 @@
-import { z } from 'zod';
+import { z } from "zod";
 
 export const findSimilarApisSchema = z.object({
-  apiUrl: z.string().describe('The Apple Developer Documentation API URL to find similar APIs for'),
-  searchDepth: z.enum(['shallow', 'medium', 'deep']).default('medium').describe('Search depth for similarity analysis'),
-  filterByCategory: z.string().optional().describe('Filter results by category/topic'),
-  includeAlternatives: z.boolean().default(true).describe('Include alternative APIs from the same topic section'),
+  apiUrl: z
+    .string()
+    .describe(
+      'Starting API URL. Example: "https://developer.apple.com/documentation/uikit/uialertview" (finds modern alternatives)',
+    ),
+  searchDepth: z
+    .enum(["shallow", "medium", "deep"])
+    .default("medium")
+    .describe(
+      'How thoroughly to search. "shallow" = direct recommendations only, "medium" = topic siblings, "deep" = full relationship analysis. Default: "medium"',
+    ),
+  filterByCategory: z
+    .string()
+    .optional()
+    .describe(
+      'Focus on specific functionality like "Animation", "Navigation", "Data". Keeps the See Also and Topics groups whose title contains it, in any case.',
+    ),
+  includeAlternatives: z
+    .boolean()
+    .default(true)
+    .describe(
+      "Include functionally similar APIs that might be better choices. Default: true",
+    ),
 });

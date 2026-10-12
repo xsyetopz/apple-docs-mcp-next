@@ -67,28 +67,12 @@
   "resources": {
     "resourceLinks": [
       {
-        "title": "Design",
-        "url": "https://developer.apple.com/design/"
-      },
-      {
-        "title": "TextKit",
-        "url": "https://developer.apple.com/documentation/AppKit/textkit"
-      },
-      {
         "title": "Using TextKit 2 to interact with text",
         "url": "https://developer.apple.com/documentation/UIKit/using-textkit-2-to-interact-with-text"
       },
       {
-        "title": "Documentation",
-        "url": "https://developer.apple.com/documentation/"
-      },
-      {
-        "title": "Forums",
-        "url": "https://developer.apple.com/forums/"
-      },
-      {
-        "title": "Apple Design Awards",
-        "url": "https://developer.apple.com/design/awards/"
+        "title": "TextKit",
+        "url": "https://developer.apple.com/documentation/AppKit/textkit"
       }
     ],
     "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2021/10061/4/D12F25A4-D409-4DDA-9DCF-72C97E9875C3/downloads/wwdc2021-10061_hd.mp4?dl=1",
@@ -114,5 +98,5 @@
       "url": "https://developer.apple.com/videos/play/wwdc2021/10059"
     }
   ],
-  "extractedAt": "2025-07-18T10:54:39.902Z"
+  "extractedAt": "2026-10-11T16:43:30.408Z"
 }
