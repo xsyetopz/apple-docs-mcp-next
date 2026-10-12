@@ -81,7 +81,12 @@ describe("find-similar-apis", () => {
     it("should find similar APIs with shallow search depth", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleFindSimilarApis(mockApiUrl, "shallow");
+      const result = await handleFindSimilarApis({
+        apiUrl: mockApiUrl,
+        searchDepth: "shallow",
+        filterByCategory: undefined,
+        includeAlternatives: true,
+      });
 
       expect(mockConvertToJsonApiUrl).toHaveBeenCalledWith(mockApiUrl);
       expect(mockHttpClient.getJson).toHaveBeenCalledTimes(1);
@@ -98,7 +103,12 @@ describe("find-similar-apis", () => {
     it("should include topic sections with medium search depth", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleFindSimilarApis(mockApiUrl, "medium");
+      const result = await handleFindSimilarApis({
+        apiUrl: mockApiUrl,
+        searchDepth: "medium",
+        filterByCategory: undefined,
+        includeAlternatives: true,
+      });
 
       expect(result).toContain("## See Also: Text Display");
       expect(result).toContain("## Topic Group: Creating Text Views");
@@ -141,7 +151,12 @@ describe("find-similar-apis", () => {
           "https://developer.apple.com/documentation/swiftui/label.json",
         );
 
-      const result = await handleFindSimilarApis(mockApiUrl, "deep");
+      const result = await handleFindSimilarApis({
+        apiUrl: mockApiUrl,
+        searchDepth: "deep",
+        filterByCategory: undefined,
+        includeAlternatives: true,
+      });
 
       // Deep search makes multiple calls (1 initial + up to 3 for related APIs)
       expect(mockHttpClient.getJson.mock.calls.length).toBeGreaterThanOrEqual(
@@ -155,11 +170,12 @@ describe("find-similar-apis", () => {
     it("should filter by category", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleFindSimilarApis(
-        mockApiUrl,
-        "medium",
-        "Creating",
-      );
+      const result = await handleFindSimilarApis({
+        apiUrl: mockApiUrl,
+        searchDepth: "medium",
+        filterByCategory: "Creating",
+        includeAlternatives: true,
+      });
 
       expect(result).toContain("## Topic Group: Creating Text Views");
       expect(result).not.toContain("## See Also: Text Display");
@@ -169,12 +185,12 @@ describe("find-similar-apis", () => {
     it("should exclude alternatives when includeAlternatives is false", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleFindSimilarApis(
-        mockApiUrl,
-        "medium",
-        undefined,
-        false,
-      );
+      const result = await handleFindSimilarApis({
+        apiUrl: mockApiUrl,
+        searchDepth: "medium",
+        filterByCategory: undefined,
+        includeAlternatives: false,
+      });
 
       expect(result).toContain("## See Also: Text Display");
       expect(result).not.toContain("## Topic Group: Creating Text Views");
@@ -191,7 +207,12 @@ describe("find-similar-apis", () => {
 
       mockHttpClient.getJson.mockResolvedValue(noSimilarResponse);
 
-      const result = await handleFindSimilarApis(mockApiUrl);
+      const result = await handleFindSimilarApis({
+        apiUrl: mockApiUrl,
+        searchDepth: "medium",
+        filterByCategory: undefined,
+        includeAlternatives: true,
+      });
 
       expect(result).toContain("# Similar APIs to Text");
       expect(result).toContain("No similar APIs found");
@@ -200,17 +221,27 @@ describe("find-similar-apis", () => {
     it("should handle invalid URL", async () => {
       mockConvertToJsonApiUrl.mockReturnValue(null);
 
-      await expect(handleFindSimilarApis("invalid-url")).rejects.toThrow(
-        "Invalid Apple Developer Documentation URL",
-      );
+      await expect(
+        handleFindSimilarApis({
+          apiUrl: "invalid-url",
+          searchDepth: "medium",
+          filterByCategory: undefined,
+          includeAlternatives: true,
+        }),
+      ).rejects.toThrow("Invalid Apple Developer Documentation URL");
     });
 
     it("should handle fetch errors gracefully", async () => {
       mockHttpClient.getJson.mockRejectedValue(new Error("Network error"));
 
-      await expect(handleFindSimilarApis(mockApiUrl)).rejects.toThrow(
-        "Network error",
-      );
+      await expect(
+        handleFindSimilarApis({
+          apiUrl: mockApiUrl,
+          searchDepth: "medium",
+          filterByCategory: undefined,
+          includeAlternatives: true,
+        }),
+      ).rejects.toThrow("Network error");
     });
 
     it("should deduplicate similar APIs across sections", async () => {
@@ -250,7 +281,12 @@ describe("find-similar-apis", () => {
 
       mockHttpClient.getJson.mockResolvedValue(duplicateResponse);
 
-      const result = await handleFindSimilarApis(mockApiUrl);
+      const result = await handleFindSimilarApis({
+        apiUrl: mockApiUrl,
+        searchDepth: "medium",
+        filterByCategory: undefined,
+        includeAlternatives: true,
+      });
 
       // Label should appear only once despite being in two sections
       const labelOccurrences = (result.match(/### \[Label\]/g) || []).length;
@@ -315,12 +351,13 @@ describe("find-similar-apis", () => {
       },
     });
 
-    const result = await handleFindSimilarApis(
-      "https://developer.apple.com/documentation/swiftui/navigationview",
-      "medium",
-      undefined,
-      true,
-    );
+    const result = await handleFindSimilarApis({
+      apiUrl:
+        "https://developer.apple.com/documentation/swiftui/navigationview",
+      searchDepth: "medium",
+      filterByCategory: undefined,
+      includeAlternatives: true,
+    });
 
     expect(result).toContain(
       "**Deprecated:** Use [`NavigationStack`](https://developer.apple.com/documentation/swiftui/navigationstack) " +

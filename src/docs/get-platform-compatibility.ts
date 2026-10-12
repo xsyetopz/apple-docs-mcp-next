@@ -5,9 +5,6 @@ import type { PlatformAvailability, RenderNode } from "../types/docc.ts";
 import { isDeprecated, isTopicReference } from "../types/docc.ts";
 import { convertToJsonApiUrl } from "./url-converter.ts";
 
-/**
- * 平台兼容性信息接口
- */
 interface CompatibilityAnalysis {
   apiName: string;
   apiUrl: string;
@@ -19,14 +16,17 @@ interface CompatibilityAnalysis {
   crossPlatformSupport: boolean;
 }
 
-/**
- * 获取平台兼容性分析
- */
-export async function handleGetPlatformCompatibility(
-  apiUrl: string,
-  compareMode: string = "single",
-  includeRelated: boolean = false,
-): Promise<string> {
+export interface PlatformCompatibilityQuery {
+  apiUrl: string;
+  compareMode: "single" | "framework";
+  includeRelated: boolean;
+}
+
+export async function handleGetPlatformCompatibility({
+  apiUrl,
+  compareMode,
+  includeRelated,
+}: PlatformCompatibilityQuery): Promise<string> {
   try {
     logger.info(`Analyzing platform compatibility for: ${apiUrl}`);
 
@@ -41,9 +41,6 @@ export async function handleGetPlatformCompatibility(
   }
 }
 
-/**
- * 分析单个API的平台兼容性
- */
 async function analyzeSingleApiCompatibility(
   apiUrl: string,
   includeRelated: boolean,
@@ -68,9 +65,8 @@ async function analyzeSingleApiCompatibility(
 
   let result = formatCompatibilityAnalysis(analysis);
 
-  // 如果需要包含相关API的兼容性信息
   if (includeRelated && data.topicSections) {
-    const relatedAnalyses = await analyzeRelatedCompatibility(data, 3); // 限制3个相关API
+    const relatedAnalyses = await analyzeRelatedCompatibility(data, 3);
     if (relatedAnalyses.length > 0) {
       result += "\n\n## Related APIs Compatibility\n\n";
       for (const relatedAnalysis of relatedAnalyses) {
@@ -82,24 +78,18 @@ async function analyzeSingleApiCompatibility(
   return result;
 }
 
-/**
- * 分析框架的平台兼容性
- */
 async function analyzeFrameworkCompatibility(
   frameworkUrl: string,
   includeRelated: boolean,
 ): Promise<string> {
-  // 这里可以扩展为分析整个框架的兼容性
-  // 暂时使用单API分析作为基础
+  // Could extend this to analyze the whole framework
+  // For now it uses single-API analysis as the base.
   return await analyzeSingleApiCompatibility(
     frameworkUrl,
     includeRelated || true,
   );
 }
 
-/**
- * 分析相关API的兼容性
- */
 async function analyzeRelatedCompatibility(
   data: RenderNode,
   maxRelated: number = 3,
@@ -120,7 +110,6 @@ async function analyzeRelatedCompatibility(
       0,
       PROCESSING_LIMITS.MAX_PLATFORM_COMPATIBILITY_ITEMS,
     )) {
-      // 每个section最多2个
       if (count >= maxRelated) {
         break;
       }
@@ -148,7 +137,6 @@ async function analyzeRelatedCompatibility(
             count++;
           }
         } catch (error) {
-          // 忽略单个相关API的错误
           logger.error(`Failed to fetch related API ${identifier}:`, error);
         }
       }
@@ -158,9 +146,6 @@ async function analyzeRelatedCompatibility(
   return analyses;
 }
 
-/**
- * 分析兼容性数据
- */
 function analyzeCompatibility(
   apiName: string,
   apiUrl: string,
@@ -203,9 +188,6 @@ function analyzeCompatibility(
   };
 }
 
-/**
- * 格式化兼容性分析结果
- */
 function formatCompatibilityAnalysis(
   analysis: CompatibilityAnalysis,
   isRelated: boolean = false,
@@ -217,7 +199,6 @@ function formatCompatibilityAnalysis(
     content += `**API:** [${analysis.apiUrl}](${analysis.apiUrl})\n\n`;
   }
 
-  // 平台支持概览
   content += "## Platform Support Summary\n\n";
   content += `**Supported Platforms:** ${analysis.supportedPlatforms.join(", ")}\n`;
   content += `**Cross-Platform:** ${analysis.crossPlatformSupport ? "Yes" : "No"}\n`;
@@ -232,7 +213,6 @@ function formatCompatibilityAnalysis(
 
   content += "\n";
 
-  // 详细平台信息
   content += "## Detailed Platform Information\n\n";
 
   for (const platform of analysis.platforms) {
@@ -268,7 +248,6 @@ function formatCompatibilityAnalysis(
     content += "\n";
   }
 
-  // 兼容性建议
   content += "## Compatibility Recommendations\n\n";
 
   const deprecatedEverywhere =
@@ -292,7 +271,6 @@ function formatCompatibilityAnalysis(
     content += `⚠️ **Deprecated on** ${analysis.deprecatedPlatforms.join(", ")} - Consider migration plans for those platforms\n\n`;
   }
 
-  // 最低版本要求
   if (Object.keys(analysis.minVersions).length > 0) {
     content += "## Minimum Version Requirements\n\n";
     for (const [platform, version] of Object.entries(analysis.minVersions)) {

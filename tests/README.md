@@ -11,12 +11,12 @@ tests/
 │   └── test-helpers.ts
 ├── mocks/                     # Mock modules
 │   └── http-client.mock.ts
-├── regression/                # Regression tests for fixed bugs
-│   └── get-apple-doc-content-nesting.test.ts
-├── tools/                     # Tests for each tool, including tools/wwdc
-├── utils/                     # Tests for the utility modules
-├── index.test.ts              # Server tests
-├── response-format.test.ts    # MCP response format tests
+├── core/                      # Tests for src/core: the HTTP client and the errors
+├── docs/                      # Tests for the use cases in src/docs
+├── wwdc/                      # Tests for the use cases and extractors in src/wwdc
+├── architecture.test.ts       # The layers of src/ and the direction of their imports
+├── response-format.test.ts    # One text result per tool call, over MCP
+├── server.test.ts             # The tools a client lists, each call routed to its use case
 └── setup.ts                   # Preload for every test file
 ```
 
@@ -30,7 +30,7 @@ It runs before each test file and sets the global mocks: `fetch`, `console.error
 bun run test
 
 # Run one test file
-bun run test tests/utils/http-client.test.ts
+bun run test tests/core/http-client.test.ts
 
 # Run with coverage
 bun test --isolate --coverage

@@ -173,7 +173,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should fetch and format documentation updates", async () => {
-    const result = await handleGetDocumentationUpdates();
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(httpClient.getJson).toHaveBeenCalledTimes(2);
     expect(result).toContain("Apple Developer Documentation Updates");
@@ -183,7 +190,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should filter by category", async () => {
-    const result = await handleGetDocumentationUpdates("wwdc");
+    const result = await handleGetDocumentationUpdates({
+      category: "wwdc",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("WWDC24");
     expect(result).toContain("WWDC23");
@@ -192,7 +206,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should filter by technology", async () => {
-    const result = await handleGetDocumentationUpdates("all", "SwiftUI");
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: "SwiftUI",
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("SwiftUI updates");
     expect(result).not.toContain("UIKit updates");
@@ -200,18 +221,28 @@ describe("get-documentation-updates", () => {
   });
 
   it("should filter by year for WWDC", async () => {
-    const result = await handleGetDocumentationUpdates(
-      "wwdc",
-      undefined,
-      "2024",
-    );
+    const result = await handleGetDocumentationUpdates({
+      category: "wwdc",
+      technology: undefined,
+      year: "2024",
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("WWDC24");
     expect(result).not.toContain("WWDC23");
   });
 
   it("should filter release notes", async () => {
-    const result = await handleGetDocumentationUpdates("release-notes");
+    const result = await handleGetDocumentationUpdates({
+      category: "release-notes",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("iOS & iPadOS Release Notes");
     expect(result).not.toContain("WWDC");
@@ -219,26 +250,28 @@ describe("get-documentation-updates", () => {
   });
 
   it("should exclude beta features when includeBeta is false", async () => {
-    const result = await handleGetDocumentationUpdates(
-      "technology",
-      undefined,
-      undefined,
-      undefined,
-      false,
-    );
+    const result = await handleGetDocumentationUpdates({
+      category: "technology",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: false,
+      limit: 50,
+    });
 
     expect(result).toContain("UIKit updates"); // Not beta
     expect(result).not.toContain("SwiftUI updates"); // This is marked as beta
   });
 
   it("should include beta features when includeBeta is true", async () => {
-    const result = await handleGetDocumentationUpdates(
-      "technology",
-      undefined,
-      undefined,
-      undefined,
-      true,
-    );
+    const result = await handleGetDocumentationUpdates({
+      category: "technology",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("UIKit updates");
     expect(result).toContain("SwiftUI updates");
@@ -246,12 +279,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should search by query", async () => {
-    const result = await handleGetDocumentationUpdates(
-      "all",
-      undefined,
-      undefined,
-      "SwiftUI",
-    );
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: "SwiftUI",
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("SwiftUI updates");
     expect(result).not.toContain("UIKit updates");
@@ -259,14 +294,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should limit results", async () => {
-    const result = await handleGetDocumentationUpdates(
-      "all",
-      undefined,
-      undefined,
-      undefined,
-      true,
-      2,
-    );
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 2,
+    });
 
     // Should contain only two results
     const updateCount = (result.match(/###/g) || []).length;
@@ -274,7 +309,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should show new badges", async () => {
-    const result = await handleGetDocumentationUpdates("wwdc");
+    const result = await handleGetDocumentationUpdates({
+      category: "wwdc",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("WWDC24");
     expect(result).toContain("*New*"); // WWDC24 has new.svg image
@@ -286,21 +328,28 @@ describe("get-documentation-updates", () => {
       cachedResult,
     );
 
-    const result = await handleGetDocumentationUpdates();
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(httpClient.getJson).not.toHaveBeenCalled();
     expect(result).toBe(cachedResult);
   });
 
   it("should store results in cache", async () => {
-    await handleGetDocumentationUpdates(
-      "all",
-      undefined,
-      undefined,
-      undefined,
-      true,
-      10,
-    );
+    await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 10,
+    });
 
     expect(updatesCache.set).toHaveBeenCalled();
     const [cacheKey, cachedValue] =
@@ -325,7 +374,14 @@ describe("get-documentation-updates", () => {
       throw new Error("Unknown URL");
     });
 
-    const result = await handleGetDocumentationUpdates();
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toBe(
       "No documentation updates found matching the specified criteria.",
@@ -337,7 +393,14 @@ describe("get-documentation-updates", () => {
       httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
     ).mockRejectedValue(new Error("Network error"));
 
-    const result = await handleGetDocumentationUpdates();
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("Error: Failed to fetch documentation updates");
     expect(result).toContain("Network error");
@@ -369,7 +432,14 @@ describe("get-documentation-updates", () => {
       throw new Error("Unknown URL");
     });
 
-    const result = await handleGetDocumentationUpdates();
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     // Should handle gracefully and return no results
     expect(result).toBe(
@@ -378,7 +448,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should extract technology from path correctly", async () => {
-    const result = await handleGetDocumentationUpdates("technology");
+    const result = await handleGetDocumentationUpdates({
+      category: "technology",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     // SwiftUI should have technology extracted from path
     expect(result).toContain("SwiftUI updates");
@@ -388,7 +465,14 @@ describe("get-documentation-updates", () => {
   });
 
   it("should group updates by category", async () => {
-    const result = await handleGetDocumentationUpdates();
+    const result = await handleGetDocumentationUpdates({
+      category: "all",
+      technology: undefined,
+      year: undefined,
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     // Check proper grouping
     const wwdcIndex = result.indexOf("## WWDC");
@@ -455,14 +539,14 @@ describe("get-documentation-updates", () => {
           },
     );
 
-    const result = await handleGetDocumentationUpdates(
-      "wwdc",
-      undefined,
-      "2025",
-      undefined,
-      true,
-      50,
-    );
+    const result = await handleGetDocumentationUpdates({
+      category: "wwdc",
+      technology: undefined,
+      year: "2025",
+      searchQuery: undefined,
+      includeBeta: true,
+      limit: 50,
+    });
 
     expect(result).toContain("## WWDC");
     expect(result).toContain(

@@ -120,7 +120,12 @@ describe("WWDC Handlers", () => {
 
       mockLoadYearIndex.mockResolvedValue(mockYearIndex);
 
-      const result = await handleListWWDCVideos();
+      const result = await handleListWWDCVideos({
+        year: undefined,
+        topic: undefined,
+        hasCode: undefined,
+        limit: 50,
+      });
 
       expect(result).toContain("WWDC Video List");
       expect(result).toContain("Meet the Translation API");
@@ -149,7 +154,12 @@ describe("WWDC Handlers", () => {
 
       mockLoadYearIndex.mockResolvedValue(mockYearIndex);
 
-      const result = await handleListWWDCVideos("2025");
+      const result = await handleListWWDCVideos({
+        year: "2025",
+        topic: undefined,
+        hasCode: undefined,
+        limit: 50,
+      });
 
       expect(result).toContain("WWDC2025");
       expect(result).toContain("Meet the Translation API");
@@ -169,10 +179,12 @@ describe("WWDC Handlers", () => {
 
       mockLoadTopicIndex.mockResolvedValue(mockTopicIndex);
 
-      const result = await handleListWWDCVideos(
-        undefined,
-        "machine-learning-ai",
-      );
+      const result = await handleListWWDCVideos({
+        year: undefined,
+        topic: "machine-learning-ai",
+        hasCode: undefined,
+        limit: 50,
+      });
 
       expect(result).toContain("Machine Learning & AI");
       expect(result).toContain("Meet the Translation API");
@@ -224,7 +236,12 @@ describe("WWDC Handlers", () => {
         return Promise.reject(new Error("Video not found"));
       });
 
-      const result = await handleListWWDCVideos("2025", undefined, true);
+      const result = await handleListWWDCVideos({
+        year: "2025",
+        topic: undefined,
+        hasCode: true,
+        limit: 50,
+      });
 
       expect(result).toContain("Meet the Translation API");
       expect(result).not.toContain("No Code Video");
@@ -235,7 +252,12 @@ describe("WWDC Handlers", () => {
         new Error("Failed to load metadata"),
       );
 
-      const result = await handleListWWDCVideos();
+      const result = await handleListWWDCVideos({
+        year: undefined,
+        topic: undefined,
+        hasCode: undefined,
+        limit: 50,
+      });
 
       expect(result).toContain("Error: Failed to list WWDC videos");
       expect(result).toContain("Failed to load metadata");
@@ -322,7 +344,13 @@ describe("WWDC Handlers", () => {
     });
 
     test("should search in transcripts", async () => {
-      const result = await handleSearchWWDCContent("async await", "transcript");
+      const result = await handleSearchWWDCContent({
+        query: "async await",
+        searchIn: "transcript",
+        year: undefined,
+        language: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("WWDC Content Search Results");
       expect(result).toContain("Meet the Translation API");
@@ -331,7 +359,13 @@ describe("WWDC Handlers", () => {
     });
 
     test("should search in code examples", async () => {
-      const result = await handleSearchWWDCContent("translator", "code");
+      const result = await handleSearchWWDCContent({
+        query: "translator",
+        searchIn: "code",
+        year: undefined,
+        language: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("WWDC Content Search Results");
       expect(result).toContain("Basic Translation\n```swift");
@@ -339,14 +373,26 @@ describe("WWDC Handlers", () => {
     });
 
     test("should search in both transcript and code", async () => {
-      const result = await handleSearchWWDCContent("translate", "both");
+      const result = await handleSearchWWDCContent({
+        query: "translate",
+        searchIn: "both",
+        year: undefined,
+        language: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("Meet the Translation API");
       expect(result).toContain("translator.translate");
     });
 
     test("should filter by year", async () => {
-      const result = await handleSearchWWDCContent("translate", "both", "2025");
+      const result = await handleSearchWWDCContent({
+        query: "translate",
+        searchIn: "both",
+        year: "2025",
+        language: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("Meet the Translation API");
       expect(mockLoadYearIndex).toHaveBeenCalledWith("2025");
@@ -354,19 +400,26 @@ describe("WWDC Handlers", () => {
     });
 
     test("should filter by language", async () => {
-      const result = await handleSearchWWDCContent(
-        "translate",
-        "code",
-        undefined,
-        "swift",
-      );
+      const result = await handleSearchWWDCContent({
+        query: "translate",
+        searchIn: "code",
+        year: undefined,
+        language: "swift",
+        limit: 20,
+      });
 
       expect(result).toContain("Basic Translation");
       expect(result).toContain("```swift");
     });
 
     test("should handle no results", async () => {
-      const result = await handleSearchWWDCContent("nonexistent", "both");
+      const result = await handleSearchWWDCContent({
+        query: "nonexistent",
+        searchIn: "both",
+        year: undefined,
+        language: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("No content found");
     });
@@ -374,7 +427,13 @@ describe("WWDC Handlers", () => {
     test("should handle errors gracefully", async () => {
       mockLoadGlobalMetadata.mockRejectedValue(new Error("Search failed"));
 
-      const result = await handleSearchWWDCContent("test");
+      const result = await handleSearchWWDCContent({
+        query: "test",
+        searchIn: "both",
+        year: undefined,
+        language: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("Error: Failed to search WWDC content");
       expect(result).toContain("Search failed");
@@ -433,7 +492,12 @@ describe("WWDC Handlers", () => {
     });
 
     test("should get full video details with transcript and code", async () => {
-      const result = await handleGetWWDCVideo("2025", "10188");
+      const result = await handleGetWWDCVideo({
+        year: "2025",
+        videoId: "10188",
+        includeTranscript: true,
+        includeCode: true,
+      });
 
       expect(result).toContain("Meet the Translation API");
       expect(result).toContain("Welcome to the session");
@@ -443,7 +507,12 @@ describe("WWDC Handlers", () => {
     });
 
     test("should exclude transcript when requested", async () => {
-      const result = await handleGetWWDCVideo("2025", "10188", false, true);
+      const result = await handleGetWWDCVideo({
+        year: "2025",
+        videoId: "10188",
+        includeTranscript: false,
+        includeCode: true,
+      });
 
       expect(result).toContain("Meet the Translation API");
       expect(result).not.toContain("Welcome to the session");
@@ -451,7 +520,12 @@ describe("WWDC Handlers", () => {
     });
 
     test("should exclude code when requested", async () => {
-      const result = await handleGetWWDCVideo("2025", "10188", true, false);
+      const result = await handleGetWWDCVideo({
+        year: "2025",
+        videoId: "10188",
+        includeTranscript: true,
+        includeCode: false,
+      });
 
       expect(result).toContain("Meet the Translation API");
       expect(result).toContain("Welcome to the session");
@@ -461,7 +535,12 @@ describe("WWDC Handlers", () => {
     test("should handle missing video", async () => {
       mockLoadVideoData.mockRejectedValue(new Error("Video not found"));
 
-      const result = await handleGetWWDCVideo("2025", "99999");
+      const result = await handleGetWWDCVideo({
+        year: "2025",
+        videoId: "99999",
+        includeTranscript: true,
+        includeCode: true,
+      });
 
       expect(result).toContain("Error: Failed to get WWDC video");
       expect(result).toContain("Video not found");
@@ -568,7 +647,13 @@ describe("WWDC Handlers", () => {
     });
 
     test("should get all code examples", async () => {
-      const result = await handleGetWWDCCodeExamples();
+      const result = await handleGetWWDCCodeExamples({
+        framework: undefined,
+        topic: undefined,
+        year: undefined,
+        language: undefined,
+        limit: 30,
+      });
 
       expect(result).toContain("WWDC Code Examples");
       expect(result).toContain("Animation Example");
@@ -576,19 +661,26 @@ describe("WWDC Handlers", () => {
     });
 
     test("should filter by framework", async () => {
-      const result = await handleGetWWDCCodeExamples("SwiftUI");
+      const result = await handleGetWWDCCodeExamples({
+        framework: "SwiftUI",
+        topic: undefined,
+        year: undefined,
+        language: undefined,
+        limit: 30,
+      });
 
       expect(result).toContain("Animation Example");
       expect(result).not.toContain("UIKit Example");
     });
 
     test("should filter by language", async () => {
-      const result = await handleGetWWDCCodeExamples(
-        undefined,
-        undefined,
-        undefined,
-        "swift",
-      );
+      const result = await handleGetWWDCCodeExamples({
+        framework: undefined,
+        topic: undefined,
+        year: undefined,
+        language: "swift",
+        limit: 30,
+      });
 
       expect(result).toContain("Animation Example");
       expect(result).toContain("Language: swift");
@@ -608,7 +700,13 @@ describe("WWDC Handlers", () => {
         return Promise.reject(new Error("Video not found"));
       });
 
-      const result = await handleGetWWDCCodeExamples();
+      const result = await handleGetWWDCCodeExamples({
+        framework: undefined,
+        topic: undefined,
+        year: undefined,
+        language: undefined,
+        limit: 30,
+      });
 
       expect(result).toContain("No code examples found");
     });
@@ -688,7 +786,12 @@ describe("WWDC Handlers", () => {
     });
 
     test("should list all topics when no topicId provided", async () => {
-      const result = await handleBrowseWWDCTopics();
+      const result = await handleBrowseWWDCTopics({
+        topicId: undefined,
+        includeVideos: true,
+        year: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("WWDC Topics");
       expect(result).toContain("SwiftUI & UI Frameworks");
@@ -698,7 +801,12 @@ describe("WWDC Handlers", () => {
     });
 
     test("should show specific topic with videos", async () => {
-      const result = await handleBrowseWWDCTopics("swiftui-ui-frameworks");
+      const result = await handleBrowseWWDCTopics({
+        topicId: "swiftui-ui-frameworks",
+        includeVideos: true,
+        year: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("SwiftUI & UI Frameworks");
       expect(result).toContain("SwiftUI Animations");
@@ -706,10 +814,12 @@ describe("WWDC Handlers", () => {
     });
 
     test("should exclude videos when requested", async () => {
-      const result = await handleBrowseWWDCTopics(
-        "swiftui-ui-frameworks",
-        false,
-      );
+      const result = await handleBrowseWWDCTopics({
+        topicId: "swiftui-ui-frameworks",
+        includeVideos: false,
+        year: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain("SwiftUI & UI Frameworks");
       expect(result).not.toContain("SwiftUI Animations");
@@ -718,7 +828,12 @@ describe("WWDC Handlers", () => {
     test("should handle topic not found", async () => {
       mockLoadTopicIndex.mockRejectedValue(new Error("Topic not found"));
 
-      const result = await handleBrowseWWDCTopics("invalid-topic");
+      const result = await handleBrowseWWDCTopics({
+        topicId: "invalid-topic",
+        includeVideos: true,
+        year: undefined,
+        limit: 20,
+      });
 
       expect(result).toContain('Topic "invalid-topic" not found');
       expect(result).toContain("Available topics:");
@@ -787,7 +902,14 @@ describe("WWDC Handlers", () => {
     });
 
     test("should find explicitly related videos", async () => {
-      const result = await handleFindRelatedWWDCVideos("10188", "2025");
+      const result = await handleFindRelatedWWDCVideos({
+        videoId: "10188",
+        year: "2025",
+        includeExplicitRelated: true,
+        includeTopicRelated: true,
+        includeYearRelated: false,
+        limit: 15,
+      });
 
       expect(result).toContain('Related Videos for "SwiftUI Basics"');
       expect(result).toContain("## Related Videos");
@@ -796,13 +918,14 @@ describe("WWDC Handlers", () => {
     });
 
     test("should exclude explicit related when requested", async () => {
-      const result = await handleFindRelatedWWDCVideos(
-        "10188",
-        "2025",
-        false,
-        true,
-        false,
-      );
+      const result = await handleFindRelatedWWDCVideos({
+        videoId: "10188",
+        year: "2025",
+        includeExplicitRelated: false,
+        includeTopicRelated: true,
+        includeYearRelated: false,
+        limit: 15,
+      });
 
       expect(result).toContain('Related Videos for "SwiftUI Basics"');
       // When no videos found
@@ -812,7 +935,14 @@ describe("WWDC Handlers", () => {
     test("should handle video not found", async () => {
       mockLoadVideoData.mockRejectedValue(new Error("Video not found"));
 
-      const result = await handleFindRelatedWWDCVideos("99999", "2025");
+      const result = await handleFindRelatedWWDCVideos({
+        videoId: "99999",
+        year: "2025",
+        includeExplicitRelated: true,
+        includeTopicRelated: true,
+        includeYearRelated: false,
+        limit: 15,
+      });
 
       expect(result).toContain("Error: Failed to find related WWDC videos");
       expect(result).toContain("Video not found");

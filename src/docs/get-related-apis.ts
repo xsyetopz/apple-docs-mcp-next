@@ -6,9 +6,6 @@ import { isTopicReference } from "../types/docc.ts";
 import { formatInlineContent } from "./doc-formatter.ts";
 import { convertToJsonApiUrl } from "./url-converter.ts";
 
-/**
- * 关联API信息接口
- */
 interface RelatedAPI {
   title: string;
   url: string;
@@ -20,19 +17,22 @@ interface RelatedAPI {
 
 type References = RenderNode["references"];
 
-/**
- * 获取相关API
- */
-export async function handleGetRelatedApis(
-  apiUrl: string,
-  includeInherited: boolean = true,
-  includeConformance: boolean = true,
-  includeSeeAlso: boolean = true,
-): Promise<string> {
+export interface RelatedApisQuery {
+  apiUrl: string;
+  includeInherited: boolean;
+  includeConformance: boolean;
+  includeSeeAlso: boolean;
+}
+
+export async function handleGetRelatedApis({
+  apiUrl,
+  includeInherited,
+  includeConformance,
+  includeSeeAlso,
+}: RelatedApisQuery): Promise<string> {
   try {
     logger.info(`Fetching related APIs for: ${apiUrl}`);
 
-    // 将网页URL转换为JSON API URL
     const jsonApiUrl = convertToJsonApiUrl(apiUrl);
 
     if (!jsonApiUrl) {
@@ -41,10 +41,9 @@ export async function handleGetRelatedApis(
 
     const data = await httpClient.getJson<RenderNode>(jsonApiUrl);
 
-    // 收集所有相关API
     const relatedApis: RelatedAPI[] = [];
 
-    // 处理关系部分（继承、一致性等）
+    // Relationship sections (inheritance, conformance)
     if (data.relationshipsSections) {
       for (const section of data.relationshipsSections) {
         const shouldInclude =
@@ -70,7 +69,6 @@ export async function handleGetRelatedApis(
       }
     }
 
-    // 处理"另请参阅"部分
     if (includeSeeAlso && data.seeAlsoSections) {
       for (const section of data.seeAlsoSections) {
         if (section.identifiers) {
@@ -88,11 +86,10 @@ export async function handleGetRelatedApis(
       }
     }
 
-    // 处理主题部分的相关API
     if (data.topicSections) {
       for (const section of data.topicSections) {
         if (section.identifiers && section.identifiers.length > 0) {
-          // 只取前3个，避免过多
+          // Only the first 3 per section, to avoid too many
           const limitedIdentifiers = section.identifiers.slice(
             0,
             PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
@@ -111,10 +108,8 @@ export async function handleGetRelatedApis(
       }
     }
 
-    // 去重
     const uniqueApis = deduplicateApis(relatedApis);
 
-    // 格式化输出
     return formatRelatedApis(apiUrl, uniqueApis);
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
@@ -122,15 +117,11 @@ export async function handleGetRelatedApis(
   }
 }
 
-/**
- * 从标识符提取API信息
- */
 function extractApiFromIdentifier(
   identifier: string,
   relationship: string,
   references: References,
 ): RelatedAPI | null {
-  // 先从references中查找
   const ref = references?.[identifier];
   if (isTopicReference(ref)) {
     return {
@@ -145,7 +136,6 @@ function extractApiFromIdentifier(
     };
   }
 
-  // 如果references中没有，尝试解析标识符
   if (identifier.startsWith("doc://")) {
     const parts = identifier.split("/");
     const apiName = parts[parts.length - 1] || "Unknown";
@@ -163,9 +153,6 @@ function extractApiFromIdentifier(
   return null;
 }
 
-/**
- * 去重API列表
- */
 function deduplicateApis(apis: RelatedAPI[]): RelatedAPI[] {
   const seen = new Set<string>();
   return apis.filter((api) => {
@@ -177,9 +164,6 @@ function deduplicateApis(apis: RelatedAPI[]): RelatedAPI[] {
   });
 }
 
-/**
- * 格式化相关API输出
- */
 function formatRelatedApis(
   originalUrl: string,
   relatedApis: RelatedAPI[],
@@ -193,7 +177,6 @@ function formatRelatedApis(
   content += `**Source:** [${originalUrl}](${originalUrl})\n\n`;
   content += `**Found ${relatedApis.length} related APIs:**\n\n`;
 
-  // 按关系类型分组
   const groupedApis = groupApisByRelationship(relatedApis);
 
   for (const [relationship, apis] of groupedApis) {
@@ -215,9 +198,6 @@ function formatRelatedApis(
   return content;
 }
 
-/**
- * 按关系类型分组API
- */
 function groupApisByRelationship(
   apis: RelatedAPI[],
 ): Map<string, RelatedAPI[]> {

@@ -159,12 +159,12 @@ describe("get-technology-overviews", () => {
   });
 
   it("lists each group, its collections with their summaries, and every article under its own collection", async () => {
-    const result = await handleGetTechnologyOverviews(
-      undefined,
-      undefined,
-      true,
-      50,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: undefined,
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 50,
+    });
 
     expect(links(result)).toEqual([
       "App design and UI",
@@ -197,18 +197,18 @@ describe("get-technology-overviews", () => {
   });
 
   it("gives a category with all its articles, those of its nested collections included", async () => {
-    const result = await handleGetTechnologyOverviews(
-      "app-design-and-ui",
-      undefined,
-      true,
-      50,
-    );
-    const nested = await handleGetTechnologyOverviews(
-      "liquid-glass",
-      undefined,
-      true,
-      50,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: "app-design-and-ui",
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 50,
+    });
+    const nested = await handleGetTechnologyOverviews({
+      category: "liquid-glass",
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 50,
+    });
 
     expect(links(result)).toEqual([
       "App design and UI",
@@ -221,12 +221,12 @@ describe("get-technology-overviews", () => {
   });
 
   it("counts every entry it prints against the limit", async () => {
-    const result = await handleGetTechnologyOverviews(
-      undefined,
-      undefined,
-      true,
-      3,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: undefined,
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 3,
+    });
 
     expect(links(result)).toEqual([
       "App design and UI",
@@ -236,12 +236,12 @@ describe("get-technology-overviews", () => {
   });
 
   it("lists only the collections without subcategories", async () => {
-    const result = await handleGetTechnologyOverviews(
-      undefined,
-      undefined,
-      false,
-      50,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: undefined,
+      searchQuery: undefined,
+      includeSubcategories: false,
+      limit: 50,
+    });
 
     expect(links(result)).toEqual([
       "App design and UI",
@@ -252,12 +252,12 @@ describe("get-technology-overviews", () => {
   });
 
   it("finds entries by title or summary, naming the collection each is in", async () => {
-    const result = await handleGetTechnologyOverviews(
-      undefined,
-      "liquid",
-      true,
-      50,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: undefined,
+      searchQuery: "liquid",
+      includeSubcategories: true,
+      limit: 50,
+    });
 
     expect(links(result)).toEqual(["Liquid Glass", "Adopting Liquid Glass"]);
     expect(result).toContain(
@@ -266,12 +266,12 @@ describe("get-technology-overviews", () => {
   });
 
   it("names the categories when the one asked for does not exist", async () => {
-    const result = await handleGetTechnologyOverviews(
-      "nope",
-      undefined,
-      true,
-      50,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: "nope",
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 50,
+    });
 
     expect(result).toBe(
       'No technology overview matches category "nope". Categories: app-design-and-ui, liquid-glass, games, data-management.',
@@ -284,18 +284,23 @@ describe("get-technology-overviews", () => {
     ).mockReturnValue("cached");
 
     await expect(
-      handleGetTechnologyOverviews(undefined, undefined, true, 50),
+      handleGetTechnologyOverviews({
+        category: undefined,
+        searchQuery: undefined,
+        includeSubcategories: true,
+        limit: 50,
+      }),
     ).resolves.toBe("cached");
     expect(httpClient.getJson).not.toHaveBeenCalled();
   });
 
   it("caches its answer", async () => {
-    const result = await handleGetTechnologyOverviews(
-      undefined,
-      undefined,
-      true,
-      50,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: undefined,
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 50,
+    });
 
     expect(technologyOverviewsCache.set).toHaveBeenCalledWith(
       expect.stringContaining("technology-overviews"),
@@ -315,7 +320,12 @@ describe("get-technology-overviews", () => {
     );
 
     await expect(
-      handleGetTechnologyOverviews(undefined, undefined, true, 50),
+      handleGetTechnologyOverviews({
+        category: undefined,
+        searchQuery: undefined,
+        includeSubcategories: true,
+        limit: 50,
+      }),
     ).resolves.toBe(
       "No technology overviews found matching the specified criteria.",
     );
@@ -326,12 +336,12 @@ describe("get-technology-overviews", () => {
       httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
     ).mockRejectedValue(new Error("Network error"));
 
-    const result = await handleGetTechnologyOverviews(
-      undefined,
-      undefined,
-      true,
-      50,
-    );
+    const result = await handleGetTechnologyOverviews({
+      category: undefined,
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 50,
+    });
 
     expect(result).toContain("Error: Failed to fetch technology overviews");
     expect(result).toContain("Network error");

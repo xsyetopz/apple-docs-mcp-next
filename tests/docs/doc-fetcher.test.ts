@@ -8,7 +8,7 @@ mock.module("../../src/core/cache.ts", () => ({
     get: mock(),
     set: mock(),
   },
-  generateEnhancedCacheKey: mock((url) => `cache-key-${url}`),
+  generateUrlCacheKey: mock((url) => `cache-key-${url}`),
 }));
 
 mock.module("../../src/core/http-client.ts", () => ({
@@ -46,27 +46,37 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue(mockData.docJsonData);
 
-      const result = await fetchAppleDocJson(mockDocUrl);
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
 
       expect(convertToJsonApiUrl).toHaveBeenCalledWith(mockDocUrl);
       expect(httpClient.getJson).toHaveBeenCalledWith(mockJsonUrl);
-      expect(result.content[0]?.text).toContain("# UIView");
-      expect(result.content[0]?.text).toContain("**Class**");
-      expect(result.content[0]?.text).toContain("class UIView");
+      expect(result).toContain("# UIView");
+      expect(result).toContain("**Class**");
+      expect(result).toContain("class UIView");
       expect(apiCache.set).toHaveBeenCalled();
     });
 
     it("should use cache when available", async () => {
-      const cachedContent = {
-        content: [{ type: "text", text: "# Cached Documentation" }],
-      };
+      const cachedContent = "# Cached Documentation";
       (apiCache.get as Mock<(...args: unknown[]) => unknown>).mockReturnValue(
         cachedContent,
       );
 
-      const result = await fetchAppleDocJson(mockDocUrl);
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
 
-      expect(result.content[0]?.text).toBe("# Cached Documentation");
+      expect(result).toBe("# Cached Documentation");
       expect(httpClient.getJson).not.toHaveBeenCalled();
     });
 
@@ -89,11 +99,15 @@ describe("fetchAppleDocJson", () => {
         ],
       });
 
-      const result = await fetchAppleDocJson(mockDocUrl, {
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
         includeRelatedApis: true,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
       });
 
-      expect(result.content[0]?.text).toContain("# UIView");
+      expect(result).toContain("# UIView");
       // Note: The actual implementation would include related APIs if the handler was called
     });
 
@@ -168,8 +182,14 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue(complexDoc);
 
-      const result = await fetchAppleDocJson(mockDocUrl);
-      const text = result.content[0]?.text;
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
+      const text = result;
 
       expect(text).toContain("@MainActor class UIView : UIResponder");
       expect(text).toContain("An object that manages the content");
@@ -268,7 +288,13 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue(doc);
 
-      const text = (await fetchAppleDocJson(mockDocUrl)).content[0]?.text;
+      const text = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
 
       expect(text).toContain(
         "```swift\nclass UNCalendarNotificationTrigger\n```",
@@ -403,7 +429,13 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue(doc);
 
-      const text = (await fetchAppleDocJson(mockDocUrl)).content[0]?.text;
+      const text = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
 
       expect(text).toContain("## Overview\n\nA tab bar lets people navigate.");
       expect(text).toContain("## Best practices");
@@ -430,12 +462,15 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockRejectedValue(new Error("Network error"));
 
-      const result = await fetchAppleDocJson(mockDocUrl);
-
-      expect(result.isError).toBe(true);
-      expect(result.content[0]?.text).toContain(
-        "Error: Failed to get Apple doc content: Network error",
-      );
+      await expect(
+        fetchAppleDocJson({
+          url: mockDocUrl,
+          includeRelatedApis: false,
+          includeReferences: false,
+          includeSimilarApis: false,
+          includePlatformAnalysis: false,
+        }),
+      ).rejects.toThrow("Failed to get Apple doc content: Network error");
     });
 
     it("should handle 404 errors", async () => {
@@ -446,12 +481,15 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockRejectedValue(new Error("404 Not Found"));
 
-      const result = await fetchAppleDocJson(mockDocUrl);
-
-      expect(result.isError).toBe(true);
-      expect(result.content[0]?.text).toContain(
-        "Error: Failed to get Apple doc content: 404 Not Found",
-      );
+      await expect(
+        fetchAppleDocJson({
+          url: mockDocUrl,
+          includeRelatedApis: false,
+          includeReferences: false,
+          includeSimilarApis: false,
+          includePlatformAnalysis: false,
+        }),
+      ).rejects.toThrow("Failed to get Apple doc content: 404 Not Found");
     });
 
     it("should handle malformed JSON", async () => {
@@ -462,13 +500,17 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue({});
 
-      const result = await fetchAppleDocJson(mockDocUrl);
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
 
       // Should still return something even with empty data
-      expect(result.content[0]?.text).toContain("# Documentation");
-      expect(result.content[0]?.text).toContain(
-        "[View full documentation on Apple Developer]",
-      );
+      expect(result).toContain("# Documentation");
+      expect(result).toContain("[View full documentation on Apple Developer]");
     });
 
     it("should handle missing metadata", async () => {
@@ -493,13 +535,17 @@ describe("fetchAppleDocJson", () => {
         ],
       });
 
-      const result = await fetchAppleDocJson(mockDocUrl);
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
 
-      expect(result.content[0]?.text).toContain(
-        "Some content without metadata",
-      );
-      expect(result.content[0]?.text).not.toContain("**Type:**");
-      expect(result.content[0]?.text).not.toContain("**Module:**");
+      expect(result).toContain("Some content without metadata");
+      expect(result).not.toContain("**Type:**");
+      expect(result).not.toContain("**Module:**");
     });
   });
 
@@ -522,8 +568,14 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue(betaDoc);
 
-      const result = await fetchAppleDocJson(mockDocUrl);
-      const text = result.content[0]?.text;
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
+      const text = result;
 
       // The beta/deprecated status appears to be handled differently
       // Let's just check that we get some output
@@ -557,8 +609,14 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue(availabilityDoc);
 
-      const result = await fetchAppleDocJson(mockDocUrl);
-      const text = result.content[0]?.text;
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
+      const text = result;
 
       expect(text).toContain("# UIView");
       expect(text).toContain("**Beta**");
@@ -597,8 +655,14 @@ describe("fetchAppleDocJson", () => {
         httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
       ).mockResolvedValue(codeSampleDoc);
 
-      const result = await fetchAppleDocJson(mockDocUrl);
-      const text = result.content[0]?.text;
+      const result = await fetchAppleDocJson({
+        url: mockDocUrl,
+        includeRelatedApis: false,
+        includeReferences: false,
+        includeSimilarApis: false,
+        includePlatformAnalysis: false,
+      });
+      const text = result;
 
       // The code samples appear in a different format
       expect(text).toContain("# UIView");

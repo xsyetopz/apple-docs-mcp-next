@@ -5,9 +5,6 @@ import { isTopicReference } from "../types/docc.ts";
 import { formatInlineContent } from "./doc-formatter.ts";
 import { convertToJsonApiUrl } from "./url-converter.ts";
 
-/**
- * 解析的引用信息接口
- */
 interface ResolvedReference {
   identifier: string;
   title: string;
@@ -24,18 +21,20 @@ interface ResolvedReference {
 
 type References = RenderNode["references"];
 
-/**
- * 批量解析引用
- */
-export async function handleResolveReferencesBatch(
-  sourceUrl: string,
-  maxReferences: number = 20,
-  filterByType: string = "all",
-): Promise<string> {
+export interface ReferencesQuery {
+  sourceUrl: string;
+  maxReferences: number;
+  filterByType: string;
+}
+
+export async function handleResolveReferencesBatch({
+  sourceUrl,
+  maxReferences,
+  filterByType,
+}: ReferencesQuery): Promise<string> {
   try {
     logger.info(`Resolving references from: ${sourceUrl}`);
 
-    // 将网页URL转换为JSON API URL
     const jsonApiUrl = convertToJsonApiUrl(sourceUrl);
 
     if (!jsonApiUrl) {
@@ -48,14 +47,12 @@ export async function handleResolveReferencesBatch(
       return `No references found in: ${sourceUrl}`;
     }
 
-    // 过滤和限制引用数量
     const filteredReferences = filterReferences(data.references, filterByType);
     const limitedReferences = Object.entries(filteredReferences).slice(
       0,
       maxReferences,
     );
 
-    // 解析引用信息
     const resolvedReferences: ResolvedReference[] = [];
 
     for (const [identifier, refData] of limitedReferences) {
@@ -69,7 +66,6 @@ export async function handleResolveReferencesBatch(
       }
     }
 
-    // 格式化输出
     return formatResolvedReferences(
       sourceUrl,
       resolvedReferences,
@@ -81,9 +77,6 @@ export async function handleResolveReferencesBatch(
   }
 }
 
-/**
- * 过滤引用
- */
 function filterReferences(
   references: NonNullable<References>,
   filterByType: string,
@@ -101,16 +94,12 @@ function filterReferences(
   );
 }
 
-/**
- * 解析单个引用
- */
 async function resolveReference(
   identifier: string,
   refData: TopicRenderReference,
   references: References,
 ): Promise<ResolvedReference | null> {
   try {
-    // 基本信息
     const resolved: ResolvedReference = {
       identifier,
       title: refData.title || "Unknown",
@@ -120,7 +109,6 @@ async function resolveReference(
       kind: refData.kind,
     };
 
-    // 处理摘要
     if (refData.abstract && Array.isArray(refData.abstract)) {
       resolved.abstract = formatInlineContent(
         refData.abstract,
@@ -128,7 +116,6 @@ async function resolveReference(
       ).trim();
     }
 
-    // 处理代码片段
     if (refData.fragments && Array.isArray(refData.fragments)) {
       resolved.fragments = refData.fragments.map((fragment) => ({
         kind: fragment.kind || "text",
@@ -143,9 +130,6 @@ async function resolveReference(
   }
 }
 
-/**
- * 格式化解析结果
- */
 function formatResolvedReferences(
   sourceUrl: string,
   references: ResolvedReference[],
@@ -161,7 +145,6 @@ function formatResolvedReferences(
   content += `**Source:** [${sourceUrl}](${sourceUrl})\n\n`;
   content += `**Resolved ${references.length} references:**\n\n`;
 
-  // 按类型分组
   const groupedReferences = groupReferencesByRole(references);
 
   for (const [role, refs] of Object.entries(groupedReferences)) {
@@ -177,9 +160,6 @@ function formatResolvedReferences(
   return content;
 }
 
-/**
- * 按角色分组引用
- */
 function groupReferencesByRole(
   references: ResolvedReference[],
 ): Record<string, ResolvedReference[]> {
@@ -196,9 +176,6 @@ function groupReferencesByRole(
   return groups;
 }
 
-/**
- * 格式化角色标题
- */
 function formatRoleTitle(role: string): string {
   const roleTitles: Record<string, string> = {
     symbol: "API Symbols",
@@ -213,13 +190,9 @@ function formatRoleTitle(role: string): string {
   return roleTitles[role] || role.charAt(0).toUpperCase() + role.slice(1);
 }
 
-/**
- * 格式化单个引用
- */
 function formatSingleReference(ref: ResolvedReference): string {
   let content = `### [${ref.title}](${ref.url})\n`;
 
-  // 添加代码片段（如果是符号）
   if (ref.fragments && ref.fragments.length > 0) {
     const codeSignature = ref.fragments.map((f) => f.text).join("");
     if (codeSignature.trim()) {
@@ -227,12 +200,10 @@ function formatSingleReference(ref: ResolvedReference): string {
     }
   }
 
-  // 添加摘要
   if (ref.abstract) {
     content += `${ref.abstract}\n\n`;
   }
 
-  // 添加元数据
   const metadata = [];
   if (ref.kind) {
     metadata.push(`Kind: ${ref.kind}`);

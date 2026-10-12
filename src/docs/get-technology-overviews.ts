@@ -40,15 +40,22 @@ const TYPE_LABELS: Record<string, string> = {
 const NOTHING_FOUND =
   "No technology overviews found matching the specified criteria.";
 
+export interface TechnologyOverviewsQuery {
+  category?: string | undefined;
+  searchQuery?: string | undefined;
+  includeSubcategories: boolean;
+  limit: number;
+}
+
 /**
  * Handle get technology overviews
  */
-export async function handleGetTechnologyOverviews(
-  category?: string,
-  searchQuery?: string,
-  includeSubcategories: boolean = true,
-  limit: number = 50,
-): Promise<string> {
+export async function handleGetTechnologyOverviews({
+  category,
+  searchQuery,
+  includeSubcategories,
+  limit,
+}: TechnologyOverviewsQuery): Promise<string> {
   try {
     logger.info("Fetching technology overviews...");
 

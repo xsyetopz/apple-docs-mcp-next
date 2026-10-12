@@ -27,10 +27,6 @@ mock.module("../../src/wwdc/data-source.ts", () => ({
 
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-
-import AppleDeveloperDocsMCPServer from "../../src/index.ts";
-import { registerTools } from "../../src/tools/handlers.ts";
 
 // Import mocked functions
 import {
@@ -40,6 +36,8 @@ import {
   loadVideoData,
   loadYearIndex,
 } from "../../src/wwdc/data-source.ts";
+
+const { createServer } = await import("../../src/server.ts");
 
 const mockLoadGlobalMetadata = loadGlobalMetadata as Mock<
   (...args: unknown[]) => Promise<unknown>
@@ -68,11 +66,12 @@ describe("WWDC Tools Integration", () => {
     };
 
   beforeEach(async () => {
-    const server = new McpServer({ name: "apple-docs-mcp", version: "test" });
-    registerTools(server, new AppleDeveloperDocsMCPServer());
     const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
     client = new Client({ name: "test", version: "test" });
-    await Promise.all([server.connect(serverSide), client.connect(clientSide)]);
+    await Promise.all([
+      createServer().connect(serverSide),
+      client.connect(clientSide),
+    ]);
 
     mock.clearAllMocks();
 

@@ -34,11 +34,12 @@ describe("resolve_references_batch", () => {
       },
     });
 
-    const result = await handleResolveReferencesBatch(
-      "https://developer.apple.com/documentation/swiftui/navigationstack",
-      5,
-      "all",
-    );
+    const result = await handleResolveReferencesBatch({
+      sourceUrl:
+        "https://developer.apple.com/documentation/swiftui/navigationstack",
+      maxReferences: 5,
+      filterByType: "all",
+    });
 
     expect(result).not.toContain("Unknown");
     expect(result).toContain("Resolved 1 references");

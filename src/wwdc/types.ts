@@ -1,17 +1,17 @@
 /**
- * WWDC视频数据类型定义
+ * Type definitions for WWDC video data.
  */
 
 /**
- * Transcript段落
+ * One timed line of a video transcript.
  */
 export interface TranscriptSegment {
-  timestamp: string; // "00:00" 格式
+  timestamp: string; // Timestamp text copied from the transcript line
   text: string;
 }
 
 /**
- * Transcript数据
+ * Transcript text for a video, as full text and timed segments.
  */
 export interface TranscriptData {
   fullText: string;
@@ -19,37 +19,37 @@ export interface TranscriptData {
 }
 
 /**
- * 代码示例
+ * A code snippet shown in a video.
  */
 export interface CodeExample {
-  timestamp?: string | undefined; // "05:30" 格式，可能没有
-  title?: string | undefined; // 代码标题或描述
-  language: string; // "swift", "objc", "javascript" 等
-  code: string; // 代码内容
-  context?: string | undefined; // 代码上下文说明
+  timestamp?: string | undefined; // Start time parsed from the heading; empty when the heading has none
+  title?: string | undefined;
+  language: string; // Detected from the class or data-language attribute; defaults to "swift"
+  code: string;
+  context?: string | undefined;
 }
 
 /**
- * 资源链接
+ * A titled link attached to a video.
  */
-export interface ResourceLink {
+interface ResourceLink {
   title: string;
   url: string;
 }
 
 /**
- * 视频资源
+ * Downloadable resources attached to a video.
  */
 export interface VideoResources {
-  hdVideo?: string; // HD视频下载链接
-  sdVideo?: string; // SD视频下载链接
-  sampleProject?: string; // 示例项目下载链接
-  slides?: string; // 演示文稿下载链接
-  resourceLinks?: ResourceLink[]; // 资源链接
+  hdVideo?: string;
+  sdVideo?: string;
+  sampleProject?: string;
+  slides?: string;
+  resourceLinks?: ResourceLink[];
 }
 
 /**
- * 相关视频
+ * A video related to another video.
  */
 export interface RelatedVideo {
   id: string;
@@ -59,28 +59,28 @@ export interface RelatedVideo {
 }
 
 /**
- * WWDC视频数据
+ * A WWDC video record.
  */
 export interface WWDCVideo {
-  id: string; // 视频ID，如 "238"
-  year: string; // 年份，如 "2025"
-  url: string; // 完整URL
-  title: string; // 视频标题
-  speakers?: string[] | undefined; // 演讲者列表
-  duration: string; // 时长，如 "15:30"
-  topics: string[]; // 主题标签（标准分类）
-  hasTranscript: boolean; // 是否有transcript
-  hasCode: boolean; // 是否有代码示例
+  id: string;
+  year: string;
+  url: string;
+  title: string;
+  speakers?: string[] | undefined;
+  duration: string; // Duration text from the video list page
+  topics: string[]; // Topic names from Apple's topic pages
+  hasTranscript: boolean;
+  hasCode: boolean;
   transcript?: TranscriptData | undefined;
   codeExamples?: CodeExample[] | undefined;
-  chapters?: Chapter[] | undefined; // 章节信息
+  chapters?: Chapter[] | undefined;
   resources: VideoResources;
-  relatedVideos?: RelatedVideo[] | undefined; // 相关视频
-  extractedAt?: string | undefined; // 提取时间 ISO 8601
+  relatedVideos?: RelatedVideo[] | undefined;
+  extractedAt?: string | undefined; // ISO 8601 time of extraction
 }
 
 /**
- * 视频章节
+ * A chapter marker within a video.
  */
 export interface Chapter {
   title: string;
@@ -89,26 +89,7 @@ export interface Chapter {
 }
 
 /**
- * 年份元数据
- */
-export interface YearMetadata {
-  year: string;
-  totalVideos: number;
-  hasCodeTab: boolean; // 该年份是否有独立的Code标签页
-  extractedAt: string;
-  lastUpdated?: string;
-}
-
-/**
- * WWDC年份数据
- */
-export interface WWDCYearData {
-  metadata: YearMetadata;
-  videos: WWDCVideo[];
-}
-
-/**
- * 全局元数据
+ * Dataset-wide metadata.
  */
 export interface GlobalMetadata {
   version: string;
@@ -129,7 +110,7 @@ export interface GlobalMetadata {
 }
 
 /**
- * 主题索引
+ * Index of the videos for one topic.
  */
 export interface TopicIndex {
   id: string;
@@ -150,7 +131,7 @@ export interface TopicIndex {
 }
 
 /**
- * 年份索引
+ * Index of the videos for one year.
  */
 export interface YearIndex {
   year: string;
@@ -170,15 +151,7 @@ export interface YearIndex {
 }
 
 /**
- * 完整的WWDC数据集
- */
-export interface WWDCDataset {
-  wwdc: Record<string, WWDCYearData>;
-  globalMetadata: GlobalMetadata;
-}
-
-/**
- * 视频列表项（用于列表页提取）
+ * A video entry scraped from a list page.
  */
 export interface VideoListItem {
   id: string;
@@ -186,30 +159,4 @@ export interface VideoListItem {
   title: string;
   duration?: string;
   thumbnail?: string;
-}
-
-/**
- * 提取配置
- */
-export interface ExtractorConfig {
-  year: string;
-  concurrency?: number; // 并发数，默认5
-  retryAttempts?: number; // 重试次数，默认3
-  timeout?: number; // 超时时间（毫秒）
-  skipExisting?: boolean; // 跳过已存在的视频
-}
-
-/**
- * 提取进度
- */
-export interface ExtractProgress {
-  total: number;
-  completed: number;
-  failed: number;
-  skipped: number;
-  currentVideo?: string;
-  errors: Array<{
-    videoId: string;
-    error: string;
-  }>;
 }

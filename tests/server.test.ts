@@ -1,31 +1,58 @@
 /**
  * The server as a client sees it, over the SDK's in-memory transport: the tools it lists, and each call routed to its
- * handler with its arguments checked against the tool's schema.
+ * use case with its arguments checked against the tool's schema.
  */
 
-import { afterEach, beforeEach, describe, expect, it, spyOn } from "bun:test";
+import { afterEach, beforeEach, describe, expect, it, mock } from "bun:test";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
-import AppleDeveloperDocsMCPServer from "../src/index.ts";
-import { registerTools } from "../src/tools/handlers.ts";
+import { AppError, ErrorType } from "../src/core/errors.ts";
+
+const searchAppleDocs = mock(async () => "Search results");
+const fetchAppleDocJson = mock(async () => "Doc content");
+const handleListTechnologies = mock(async () => "Technologies");
+const searchFrameworkSymbols = mock(async () => "Symbols");
+const handleGetDocumentationUpdates = mock(async () => "Updates");
+
+for (const [path, useCases] of Object.entries({
+  "../src/docs/search-apple-docs.ts": { searchAppleDocs },
+  "../src/docs/doc-fetcher.ts": { fetchAppleDocJson },
+  "../src/docs/list-technologies.ts": { handleListTechnologies },
+  "../src/docs/search-framework-symbols.ts": { searchFrameworkSymbols },
+  "../src/docs/get-documentation-updates.ts": {
+    handleGetDocumentationUpdates,
+  },
+})) {
+  const actual = await import(path);
+  mock.module(path, () => ({ ...actual, ...useCases }));
+}
+
+const { createServer } = await import("../src/server.ts");
 
 const answer = (text: string) => ({
   content: [{ type: "text" as const, text }],
 });
 
 describe("the server", () => {
-  let docs: AppleDeveloperDocsMCPServer;
   let client: Client;
 
   beforeEach(async () => {
-    docs = new AppleDeveloperDocsMCPServer();
-    const server = new McpServer({ name: "apple-docs-mcp", version: "test" });
-    registerTools(server, docs);
+    for (const useCase of [
+      searchAppleDocs,
+      fetchAppleDocJson,
+      handleListTechnologies,
+      searchFrameworkSymbols,
+      handleGetDocumentationUpdates,
+    ]) {
+      useCase.mockClear();
+    }
     const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
     client = new Client({ name: "test", version: "test" });
-    await Promise.all([server.connect(serverSide), client.connect(clientSide)]);
+    await Promise.all([
+      createServer().connect(serverSide),
+      client.connect(clientSide),
+    ]);
   });
 
   afterEach(async () => {
@@ -66,24 +93,19 @@ describe("the server", () => {
   });
 
   it("passes a search its query, the type defaulting to all, and returns its answer", async () => {
-    const search = spyOn(docs, "searchAppleDocs").mockResolvedValue(
-      answer("Search results"),
-    );
-
     await expect(
       client.callTool({
         name: "search_apple_docs",
         arguments: { query: "SwiftUI" },
       }),
     ).resolves.toMatchObject(answer("Search results"));
-    expect(search).toHaveBeenCalledWith("SwiftUI", "all");
+    expect(searchAppleDocs).toHaveBeenCalledWith({
+      query: "SwiftUI",
+      type: "all",
+    });
   });
 
   it("passes a page read its options, the ones left out false", async () => {
-    const read = spyOn(docs, "getAppleDocContent").mockResolvedValue(
-      answer("Doc content"),
-    );
-
     await client.callTool({
       name: "get_apple_doc_content",
       arguments: {
@@ -92,20 +114,16 @@ describe("the server", () => {
       },
     });
 
-    expect(read).toHaveBeenCalledWith(
-      "https://developer.apple.com/documentation/swiftui",
-      true,
-      false,
-      false,
-      false,
-    );
+    expect(fetchAppleDocJson).toHaveBeenCalledWith({
+      url: "https://developer.apple.com/documentation/swiftui",
+      includeRelatedApis: true,
+      includeReferences: false,
+      includeSimilarApis: false,
+      includePlatformAnalysis: false,
+    });
   });
 
   it("fills the defaults a tool leaves to its schema", async () => {
-    const list = spyOn(docs, "listTechnologies").mockResolvedValue(
-      answer("Technologies"),
-    );
-
     await client.callTool({
       name: "list_technologies",
       arguments: { category: "games", language: "swift", includeBeta: false },
@@ -115,18 +133,20 @@ describe("the server", () => {
       arguments: { category: "ui", limit: 10 },
     });
 
-    expect(list).toHaveBeenNthCalledWith(1, "games", "swift", false, 200);
-    expect(list).toHaveBeenNthCalledWith(2, "ui", undefined, true, 10);
+    expect(handleListTechnologies).toHaveBeenNthCalledWith(1, {
+      category: "games",
+      language: "swift",
+      includeBeta: false,
+      limit: 200,
+    });
+    expect(handleListTechnologies).toHaveBeenNthCalledWith(2, {
+      category: "ui",
+      includeBeta: true,
+      limit: 10,
+    });
   });
 
-  it("passes every argument it is given, in order", async () => {
-    const symbols = spyOn(docs, "searchFrameworkSymbols").mockResolvedValue(
-      answer("Symbols"),
-    );
-    const updates = spyOn(docs, "getDocumentationUpdates").mockResolvedValue(
-      answer("Updates"),
-    );
-
+  it("passes every argument it is given", async () => {
     await client.callTool({
       name: "search_framework_symbols",
       arguments: {
@@ -149,26 +169,24 @@ describe("the server", () => {
       },
     });
 
-    expect(symbols).toHaveBeenCalledWith(
-      "swiftui",
-      "struct",
-      "*View",
-      "swift",
-      100,
-    );
-    expect(updates).toHaveBeenCalledWith(
-      "wwdc",
-      "SwiftUI",
-      "2024",
-      "animation",
-      true,
-      50,
-    );
+    expect(searchFrameworkSymbols).toHaveBeenCalledWith({
+      framework: "swiftui",
+      symbolType: "struct",
+      namePattern: "*View",
+      language: "swift",
+      limit: 100,
+    });
+    expect(handleGetDocumentationUpdates).toHaveBeenCalledWith({
+      category: "wwdc",
+      technology: "SwiftUI",
+      year: "2024",
+      searchQuery: "animation",
+      includeBeta: true,
+      limit: 50,
+    });
   });
 
   it("refuses arguments its schema rejects, without calling the tool", async () => {
-    const search = spyOn(docs, "searchAppleDocs");
-
     const result = await client.callTool({
       name: "search_apple_docs",
       arguments: {},
@@ -183,13 +201,33 @@ describe("the server", () => {
         },
       ],
     });
-    expect(search).not.toHaveBeenCalled();
+    expect(searchAppleDocs).not.toHaveBeenCalled();
+  });
+
+  it("answers a failure with one error result: its message, then its suggestions as a list", async () => {
+    fetchAppleDocJson.mockRejectedValueOnce(
+      new AppError({
+        type: ErrorType.NOT_FOUND,
+        message: "Gone",
+        suggestions: ["Search first"],
+      }),
+    );
+
+    await expect(
+      client.callTool({
+        name: "get_apple_doc_content",
+        arguments: { url: "https://developer.apple.com/documentation/gone" },
+      }),
+    ).resolves.toEqual({
+      content: [
+        { type: "text", text: "Error: Gone\n\nSuggestions:\n• Search first" },
+      ],
+      isError: true,
+    });
   });
 
   it("answers an unknown tool, and a tool that throws, with an error result", async () => {
-    spyOn(docs, "listTechnologies").mockRejectedValue(
-      new Error("Apple is down"),
-    );
+    handleListTechnologies.mockRejectedValueOnce(new Error("Apple is down"));
 
     await expect(
       client.callTool({ name: "unknown_tool", arguments: {} }),
@@ -201,7 +239,9 @@ describe("the server", () => {
       client.callTool({ name: "list_technologies", arguments: {} }),
     ).resolves.toMatchObject({
       isError: true,
-      content: [{ type: "text", text: "Apple is down" }],
+      content: [
+        { type: "text", text: expect.stringContaining("Error: Apple is down") },
+      ],
     });
   });
 });

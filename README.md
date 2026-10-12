@@ -393,34 +393,18 @@ bun install
 ## 🏗️ Technical Architecture for Apple Developer Documentation Access
 
 ```text
-apple-docs-mcp/
+apple-docs-mcp-next/
 ├── 🔧 src/
-│   ├── index.ts                      # MCP server entry point with all tools
-│   ├── tools/                        # MCP tool implementations
-│   │   ├── search-parser.ts          # HTML search result parsing
-│   │   ├── doc-fetcher.ts            # JSON API documentation fetching
-│   │   ├── list-technologies.ts      # Technology catalog handling
-│   │   ├── get-documentation-updates.ts # Documentation updates tracking
-│   │   ├── get-technology-overviews.ts # Technology overviews and guides
-│   │   ├── get-sample-code.ts        # Sample code library browser
-│   │   ├── get-framework-index.ts    # Framework structure indexing
-│   │   ├── get-related-apis.ts       # Related API discovery
-│   │   ├── resolve-references-batch.ts # Batch reference resolution
-│   │   ├── get-platform-compatibility.ts # Platform analysis
-│   │   ├── find-similar-apis.ts      # Similar API recommendations
-│   │   └── wwdc/                     # WWDC video tools
-│   │       ├── wwdc-handlers.ts      # WWDC tool handlers
-│   │       ├── content-extractor.ts  # Video content extraction
-│   │       ├── topics-extractor.ts   # Topic listing
-│   │       └── video-list-extractor.ts # Video list parsing
-│   └── utils/                        # Utility functions and helpers
-│       ├── cache.ts                  # Memory cache with TTL support
-│       ├── constants.ts              # Application constants and URLs
-│       ├── error-handler.ts          # Error handling and validation
-│       ├── http-client.ts            # HTTP client with performance tracking
-│       ├── user-agent-pool.ts        # Smart UserAgent rotation system
-│       ├── http-headers-generator.ts # Dynamic browser headers generation
-│       └── url-converter.ts          # URL conversion utilities
+│   ├── main.ts                       # Executable: the server on stdio
+│   ├── server.ts                     # Composition root: the MCP server and its instructions
+│   ├── tools/                        # MCP side: one spec per tool (name, description, zod input schema, use case)
+│   │   ├── define-tool.ts            # Registers a spec; Markdown or one error result per call
+│   │   └── index.ts                  # Every tool the server offers
+│   ├── docs/                         # Use cases for Apple's documentation, HIG, sample code and help pages
+│   ├── wwdc/                         # Use cases for the bundled WWDC data, and its extractors
+│   ├── core/                         # HTTP client, caches, errors, logger, constants
+│   └── types/                        # DocC and captured response types (generated)
+├── 🧪 tests/                         # Bun tests, by layer, plus tests/architecture.test.ts for the import rules
 ├── 📄 package.json                   # Package configuration
 └── 📖 README.md                      # This file
 ```

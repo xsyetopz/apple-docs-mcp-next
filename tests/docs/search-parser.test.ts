@@ -67,7 +67,7 @@ const stream = (results: unknown[]) => {
 describe("parseSearchResults", () => {
   const mockSearchUrl = "https://developer.apple.com/search/?q=test";
   const text = (jsonl: string, query = "test", filter = "all") =>
-    parseSearchResults([jsonl], query, mockSearchUrl, filter).content[0]?.text;
+    parseSearchResults([jsonl], query, mockSearchUrl, filter);
 
   describe("successful parsing", () => {
     it("should parse search results from the streamed response", () => {
@@ -150,13 +150,12 @@ describe("parseSearchResults", () => {
         "wwdc2023-10035",
         "Perform accessibility audits for your app",
       );
-      const output =
-        parseSearchResults(
-          [stream([session]), stream([session])],
-          "audit",
-          mockSearchUrl,
-          "all",
-        ).content[0]?.text ?? "";
+      const output = parseSearchResults(
+        [stream([session]), stream([session])],
+        "audit",
+        mockSearchUrl,
+        "all",
+      );
 
       expect(
         output.split("Perform accessibility audits for your app").length - 1,

@@ -161,7 +161,12 @@ describe("handleGetSampleCode", () => {
     const { handleGetSampleCode } = await import(
       "../../src/docs/get-sample-code.ts"
     );
-    const result = await handleGetSampleCode();
+    const result = await handleGetSampleCode({
+      framework: undefined,
+      beta: "include",
+      searchQuery: undefined,
+      limit: 50,
+    });
 
     // Verify API calls
     expect(mockHttpClient.get).toHaveBeenCalledTimes(2);
@@ -198,7 +203,12 @@ describe("handleGetSampleCode", () => {
     const { handleGetSampleCode } = await import(
       "../../src/docs/get-sample-code.ts"
     );
-    const result = await handleGetSampleCode("SwiftUI");
+    const result = await handleGetSampleCode({
+      framework: "SwiftUI",
+      beta: "include",
+      searchQuery: undefined,
+      limit: 50,
+    });
 
     expect(result).toContain("Framework: SwiftUI");
 
@@ -227,7 +237,12 @@ describe("handleGetSampleCode", () => {
     const { handleGetSampleCode } = await import(
       "../../src/docs/get-sample-code.ts"
     );
-    const result = await handleGetSampleCode(undefined, "exclude");
+    const result = await handleGetSampleCode({
+      framework: undefined,
+      beta: "exclude",
+      searchQuery: undefined,
+      limit: 50,
+    });
 
     expect(result).toContain("Beta: exclude");
     expect(result).toContain("Found 2 sample code projects");
@@ -244,7 +259,12 @@ describe("handleGetSampleCode", () => {
     const { handleGetSampleCode } = await import(
       "../../src/docs/get-sample-code.ts"
     );
-    const result = await handleGetSampleCode();
+    const result = await handleGetSampleCode({
+      framework: undefined,
+      beta: "include",
+      searchQuery: undefined,
+      limit: 50,
+    });
 
     expect(result).toBe(cachedResult);
     expect(mockHttpClient.get).not.toHaveBeenCalled();
@@ -264,7 +284,12 @@ describe("handleGetSampleCode", () => {
     const { handleGetSampleCode } = await import(
       "../../src/docs/get-sample-code.ts"
     );
-    await handleGetSampleCode("SwiftUI", "exclude", "test", 10);
+    await handleGetSampleCode({
+      framework: "SwiftUI",
+      beta: "exclude",
+      searchQuery: "test",
+      limit: 10,
+    });
 
     expect(mockSampleCodeCache.set).toHaveBeenCalled();
     expect(mockGenerateUrlCacheKey).toHaveBeenCalledWith("sample-code", {
@@ -281,7 +306,14 @@ describe("handleGetSampleCode", () => {
     const { handleGetSampleCode } = await import(
       "../../src/docs/get-sample-code.ts"
     );
-    await expect(handleGetSampleCode()).rejects.toThrow("Network error");
+    await expect(
+      handleGetSampleCode({
+        framework: undefined,
+        beta: "include",
+        searchQuery: undefined,
+        limit: 50,
+      }),
+    ).rejects.toThrow("Network error");
   });
 
   it("should handle non-200 status codes", async () => {
@@ -293,8 +325,13 @@ describe("handleGetSampleCode", () => {
     const { handleGetSampleCode } = await import(
       "../../src/docs/get-sample-code.ts"
     );
-    await expect(handleGetSampleCode()).rejects.toThrow(
-      "Failed to fetch sample code content: Not Found",
-    );
+    await expect(
+      handleGetSampleCode({
+        framework: undefined,
+        beta: "include",
+        searchQuery: undefined,
+        limit: 50,
+      }),
+    ).rejects.toThrow("Failed to fetch sample code content: Not Found");
   });
 });

@@ -6,10 +6,7 @@ import { LRUCache } from "lru-cache";
 import { CACHE_SIZE, CACHE_TTL, WWDC_CONFIG } from "./constants.ts";
 
 /** A page as `get_apple_doc_content` returns it */
-export const apiCache = new LRUCache<
-  string,
-  { content: Array<{ type: "text"; text: string }> }
->({
+export const apiCache = new LRUCache<string, string>({
   max: CACHE_SIZE.API_DOCS,
   ttl: CACHE_TTL.API_DOCS,
 });
@@ -54,19 +51,4 @@ export function generateUrlCacheKey(
     key += `?${sortedParams}`;
   }
   return key;
-}
-
-/**
- * Generate cache key for enhanced analysis
- */
-export function generateEnhancedCacheKey(
-  url: string,
-  options: {
-    includeRelatedApis?: boolean;
-    includeReferences?: boolean;
-    includeSimilarApis?: boolean;
-    includePlatformAnalysis?: boolean;
-  },
-): string {
-  return generateUrlCacheKey(url, options);
 }

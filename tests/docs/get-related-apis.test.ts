@@ -93,7 +93,12 @@ describe("get-related-apis", () => {
     it("should get all related APIs by default", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleGetRelatedApis(mockApiUrl);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+      });
 
       expect(mockConvertToJsonApiUrl).toHaveBeenCalledWith(mockApiUrl);
       expect(mockHttpClient.getJson).toHaveBeenCalledWith(
@@ -115,7 +120,12 @@ describe("get-related-apis", () => {
     it("should exclude inherited APIs when includeInherited is false", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleGetRelatedApis(mockApiUrl, false, true, true);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: false,
+        includeConformance: true,
+        includeSeeAlso: true,
+      });
 
       expect(result).not.toContain("## Inherits From");
       expect(result).not.toContain("Protocol1");
@@ -126,7 +136,12 @@ describe("get-related-apis", () => {
     it("should exclude conformance when includeConformance is false", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleGetRelatedApis(mockApiUrl, true, false, true);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: false,
+        includeSeeAlso: true,
+      });
 
       expect(result).toContain("## Inherits From");
       expect(result).not.toContain("## Conforms To");
@@ -137,7 +152,12 @@ describe("get-related-apis", () => {
     it("should exclude see also when includeSeeAlso is false", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
-      const result = await handleGetRelatedApis(mockApiUrl, true, true, false);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: false,
+      });
 
       expect(result).toContain("## Inherits From");
       expect(result).toContain("## Conforms To");
@@ -155,7 +175,12 @@ describe("get-related-apis", () => {
 
       mockHttpClient.getJson.mockResolvedValue(noRelationshipsResponse);
 
-      const result = await handleGetRelatedApis(mockApiUrl);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+      });
 
       expect(result).toContain("No related APIs found for:");
       expect(result).toContain(mockApiUrl);
@@ -164,7 +189,12 @@ describe("get-related-apis", () => {
     it("should handle invalid URL", async () => {
       mockConvertToJsonApiUrl.mockReturnValue(null);
 
-      const result = await handleGetRelatedApis("invalid-url");
+      const result = await handleGetRelatedApis({
+        apiUrl: "invalid-url",
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+      });
 
       expect(result).toContain("Error: Failed to get related APIs:");
       expect(result).toContain("Invalid Apple Developer Documentation URL");
@@ -173,7 +203,12 @@ describe("get-related-apis", () => {
     it("should handle fetch errors", async () => {
       mockHttpClient.getJson.mockRejectedValue(new Error("Network error"));
 
-      const result = await handleGetRelatedApis(mockApiUrl);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+      });
 
       expect(result).toContain("Error: Failed to get related APIs:");
       expect(result).toContain("Network error");
@@ -182,7 +217,12 @@ describe("get-related-apis", () => {
     it("should handle malformed JSON response", async () => {
       mockHttpClient.getJson.mockResolvedValue({ invalid: "response" });
 
-      const result = await handleGetRelatedApis(mockApiUrl);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+      });
 
       expect(result).toContain("No related APIs found for:");
     });
@@ -227,7 +267,12 @@ describe("get-related-apis", () => {
 
       mockHttpClient.getJson.mockResolvedValue(complexResponse);
 
-      const result = await handleGetRelatedApis(mockApiUrl);
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+      });
 
       expect(result).toContain("# Related APIs for view");
       expect(result).toContain("**Found 2 related APIs:**");
@@ -268,12 +313,13 @@ describe("get-related-apis", () => {
       },
     });
 
-    const result = await handleGetRelatedApis(
-      "https://developer.apple.com/documentation/swiftui/navigationstack",
-      true,
-      true,
-      true,
-    );
+    const result = await handleGetRelatedApis({
+      apiUrl:
+        "https://developer.apple.com/documentation/swiftui/navigationstack",
+      includeInherited: true,
+      includeConformance: true,
+      includeSeeAlso: true,
+    });
 
     expect(result).toContain("Pushes the view onto a `NavigationStack`.");
   });

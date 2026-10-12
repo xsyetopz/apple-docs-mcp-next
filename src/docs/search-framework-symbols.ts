@@ -1,16 +1,12 @@
 import { generateUrlCacheKey, indexCache } from "../core/cache.ts";
-import {
-  API_LIMITS,
-  APPLE_URLS,
-  PROCESSING_LIMITS,
-} from "../core/constants.ts";
+import { APPLE_URLS, PROCESSING_LIMITS } from "../core/constants.ts";
 import { httpClient } from "../core/http-client.ts";
 import { logger } from "../core/logger.ts";
 import type { RenderIndex, RenderIndexNode } from "../types/docc.ts";
 import { normalizeFrameworkName } from "./framework-mapper.ts";
 
 /**
- * 搜索框架中的符号（类、结构体、协议等）
+ * Searches a framework's symbols (classes, structs, protocols, and so on).
  */
 // Function to find symbols recursively (defined outside to reduce complexity)
 function findSymbolsRecursive(
@@ -61,21 +57,27 @@ function findSymbolsRecursive(
   return false;
 }
 
-export async function searchFrameworkSymbols(
-  framework: string,
-  symbolType: string = "all",
-  namePattern?: string,
-  language: string = "swift",
-  limit: number = API_LIMITS.DEFAULT_FRAMEWORK_SYMBOLS_LIMIT,
-): Promise<string> {
+export interface FrameworkSymbolsQuery {
+  framework: string;
+  symbolType: string;
+  namePattern?: string | undefined;
+  language: "swift" | "occ";
+  limit: number;
+}
+
+export async function searchFrameworkSymbols({
+  framework,
+  symbolType,
+  namePattern,
+  language,
+  limit,
+}: FrameworkSymbolsQuery): Promise<string> {
   try {
-    // Normalize framework name for consistent processing
     const normalizedFramework = normalizeFrameworkName(framework);
     logger.info(
       `Searching ${symbolType} symbols in ${normalizedFramework} framework`,
     );
 
-    // 获取框架索引
     const indexUrl = `${APPLE_URLS.TUTORIALS_DATA}index/${framework.toLowerCase()}`;
     const cacheKey = generateUrlCacheKey(indexUrl, {
       framework: normalizedFramework,
@@ -85,7 +87,6 @@ export async function searchFrameworkSymbols(
       limit,
     });
 
-    // Check cache
     const cachedResult = indexCache.get(cacheKey);
     if (cachedResult) {
       return cachedResult;
@@ -93,7 +94,6 @@ export async function searchFrameworkSymbols(
 
     const data = await httpClient.getJson<RenderIndex>(indexUrl);
 
-    // Get language-specific index
     const indexItems = data.interfaceLanguages?.[language] || [];
 
     if (indexItems.length === 0) {
@@ -101,11 +101,9 @@ export async function searchFrameworkSymbols(
       return `Language "${language}" not available for ${framework}. Available languages: ${availableLanguages.join(", ")}`;
     }
 
-    // Find all symbols recursively
     const symbols: RenderIndexNode[] = [];
     findSymbolsRecursive(indexItems, symbolType, namePattern, limit, symbols);
 
-    // Format results
     const typeLabel =
       symbolType === "all" ? "Symbols" : pluralizeType(symbolType);
     let result = `# ${framework} Framework ${typeLabel}\n\n`;
@@ -121,7 +119,6 @@ export async function searchFrameworkSymbols(
       }
       result += ` in ${framework} framework.\n`;
 
-      // Suggest exploring collections
       const collections = findCollections(indexItems);
       if (collections.length > 0) {
         result += "\n## Try exploring these collections:\n\n";
@@ -139,7 +136,6 @@ export async function searchFrameworkSymbols(
       }
       result += "\n\n";
 
-      // Group by type if searching all
       if (symbolType === "all") {
         const grouped = groupByType(symbols);
         for (const [type, items] of Object.entries(grouped)) {
@@ -150,14 +146,12 @@ export async function searchFrameworkSymbols(
           result += "\n";
         }
       } else {
-        // List symbols
         for (const symbol of symbols) {
           result += formatSymbolItem(symbol);
         }
       }
     }
 
-    // Cache result
     indexCache.set(cacheKey, result);
 
     return result;

@@ -15,16 +15,22 @@ interface MapRow {
   technology: string;
 }
 
+export interface DocsMapQuery {
+  query: string;
+  technology?: string[] | undefined;
+  limit: number;
+}
+
 /**
  * The pages whose title contains `query`, in any case and as typed, shortest titles first, within `technologies` when
  * given: the docs map's shell search (awk, sort -n, head) as a tool, without awk reading `(`, `.` or `*` in a Swift
  * name as a pattern.
  */
-export async function handleSearchDocsMap(
-  query: string,
-  technologies: string[] | undefined,
-  limit: number,
-): Promise<string> {
+export async function handleSearchDocsMap({
+  query,
+  technology: technologies,
+  limit,
+}: DocsMapQuery): Promise<string> {
   const [map, builtAt] = await Promise.all([MAP.text(), MAP.lastModified]);
   const rows: MapRow[] = map
     .split("\n")

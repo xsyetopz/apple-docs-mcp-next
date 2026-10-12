@@ -5,8 +5,7 @@ import Bottleneck from "bottleneck";
 import { HeaderGenerator } from "header-generator";
 import pRetry, { AbortError } from "p-retry";
 import { RATE_LIMIT, REQUEST_CONFIG } from "./constants.ts";
-import type { AppError, ErrorType } from "./error.ts";
-import { handleFetchError } from "./error-handler.ts";
+import { classifyFetchError } from "./errors.ts";
 import { logger } from "./logger.ts";
 
 interface RequestOptions {
@@ -55,21 +54,6 @@ class HttpStatusError extends Error {
     this.url = url;
     this.status = status;
     this.statusText = statusText;
-  }
-}
-
-/** A request that failed for good: an Error, so every caller reads its message, with an AppError's kind and suggestions */
-export class RequestError extends Error implements AppError {
-  readonly type: ErrorType;
-  readonly originalError?: Error | undefined;
-  readonly suggestions?: string[] | undefined;
-
-  constructor({ type, message, originalError, suggestions }: AppError) {
-    super(message, { cause: originalError });
-    this.name = "RequestError";
-    this.type = type;
-    this.originalError = originalError;
-    this.suggestions = suggestions;
   }
 }
 
@@ -125,7 +109,7 @@ async function request<T>(
       },
     );
   } catch (error) {
-    throw new RequestError(handleFetchError(error, url));
+    throw classifyFetchError(error, url);
   }
 }
 

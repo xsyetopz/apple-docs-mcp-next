@@ -1,11 +1,20 @@
 /**
  * Response format validation tests
  *
- * These tests ensure that all MCP tool responses follow the correct format
- * and prevent nested response structure issues.
+ * Every tool answers over MCP with one text content item: the use case's Markdown, or one error result.
  */
 
-import { beforeEach, describe, expect, it, type Mock, mock } from "bun:test";
+import {
+  afterEach,
+  beforeEach,
+  describe,
+  expect,
+  it,
+  type Mock,
+  mock,
+} from "bun:test";
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 
 // Mock wwdc-data-source before importing anything that uses it
 mock.module("../src/wwdc/data-source.ts", () => ({
@@ -17,8 +26,6 @@ mock.module("../src/wwdc/data-source.ts", () => ({
   clearDataCache: mock(),
   isDataAvailable: mock().mockResolvedValue(true),
 }));
-
-import AppleDeveloperDocsMCPServer from "../src/index.ts";
 
 type ToolResponse = {
   content: { type: string; text: string }[];
@@ -48,7 +55,9 @@ mock.module("../src/core/logger.ts", () => ({
   },
 }));
 
+const cacheActual = await import("../src/core/cache.ts");
 mock.module("../src/core/cache.ts", () => ({
+  ...cacheActual,
   apiCache: {
     get: mock().mockReturnValue(null),
     set: mock(),
@@ -57,103 +66,100 @@ mock.module("../src/core/cache.ts", () => ({
   generateUrlCacheKey: mock().mockReturnValue("test-cache-key"),
 }));
 
-// Mock all handler functions to return proper string responses
-mock.module("../src/docs/list-technologies.ts", () => ({
-  handleListTechnologies: mock().mockResolvedValue("Mock technologies list"),
-}));
+/**
+ * Replaces some exports of a module, keeping the others real. The use cases that are not under test answer with a
+ * fixed text; search and the page reader keep the real code, which the tests reach through the mocked HTTP client.
+ */
+async function replaceExports(
+  path: string,
+  overrides: Record<string, unknown>,
+): Promise<void> {
+  const actual = await import(path);
+  mock.module(path, () => ({ ...actual, ...overrides }));
+}
 
-mock.module("../src/docs/search-framework-symbols.ts", () => ({
-  searchFrameworkSymbols: mock().mockResolvedValue("Mock framework symbols"),
-}));
+const { fetchAppleDocJson: actualFetchAppleDocJson } = await import(
+  "../src/docs/doc-fetcher.ts"
+);
+// Defaults to the real reader, so an invalid URL is refused before any request; tests that need a page replace it
+const fetchAppleDocJson = mock(actualFetchAppleDocJson);
 
-mock.module("../src/docs/get-related-apis.ts", () => ({
-  handleGetRelatedApis: mock().mockResolvedValue("Mock related APIs"),
-}));
-
-mock.module("../src/docs/resolve-references-batch.ts", () => ({
-  handleResolveReferencesBatch: mock().mockResolvedValue("Mock references"),
-}));
-
-mock.module("../src/docs/get-platform-compatibility.ts", () => ({
-  handleGetPlatformCompatibility: mock().mockResolvedValue(
-    "Mock platform compatibility",
+await replaceExports("../src/docs/doc-fetcher.ts", { fetchAppleDocJson });
+await replaceExports("../src/docs/list-technologies.ts", {
+  handleListTechnologies: mock(async () => "Mock technologies list"),
+});
+await replaceExports("../src/docs/search-framework-symbols.ts", {
+  searchFrameworkSymbols: mock(async () => "Mock framework symbols"),
+});
+await replaceExports("../src/docs/get-related-apis.ts", {
+  handleGetRelatedApis: mock(async () => "Mock related APIs"),
+});
+await replaceExports("../src/docs/resolve-references-batch.ts", {
+  handleResolveReferencesBatch: mock(async () => "Mock references"),
+});
+await replaceExports("../src/docs/get-platform-compatibility.ts", {
+  handleGetPlatformCompatibility: mock(
+    async () => "Mock platform compatibility",
   ),
-}));
+});
+await replaceExports("../src/docs/find-similar-apis.ts", {
+  handleFindSimilarApis: mock(async () => "Mock similar APIs"),
+});
+await replaceExports("../src/docs/get-documentation-updates.ts", {
+  handleGetDocumentationUpdates: mock(async () => "Mock documentation updates"),
+});
+await replaceExports("../src/docs/get-technology-overviews.ts", {
+  handleGetTechnologyOverviews: mock(async () => "Mock technology overviews"),
+});
+await replaceExports("../src/docs/get-sample-code.ts", {
+  handleGetSampleCode: mock(async () => "Mock sample code"),
+});
 
-mock.module("../src/docs/find-similar-apis.ts", () => ({
-  handleFindSimilarApis: mock().mockResolvedValue("Mock similar APIs"),
-}));
-
-mock.module("../src/docs/get-documentation-updates.ts", () => ({
-  handleGetDocumentationUpdates: mock().mockResolvedValue(
-    "Mock documentation updates",
-  ),
-}));
-
-mock.module("../src/docs/get-technology-overviews.ts", () => ({
-  handleGetTechnologyOverviews: mock().mockResolvedValue(
-    "Mock technology overviews",
-  ),
-}));
-
-mock.module("../src/docs/get-sample-code.ts", () => ({
-  handleGetSampleCode: mock().mockResolvedValue("Mock sample code"),
-}));
-
-mock.module("../src/docs/doc-fetcher.ts", () => ({
-  fetchAppleDocJson: mock().mockResolvedValue({
-    content: [
-      {
-        type: "text",
-        text: "Mock doc content",
-      },
-    ],
-  }),
-}));
+const { createServer } = await import("../src/server.ts");
 
 describe("Response Format Validation", () => {
-  let server: AppleDeveloperDocsMCPServer;
+  let client: Client;
 
-  beforeEach(() => {
-    server = new AppleDeveloperDocsMCPServer();
-    mock.clearAllMocks();
-  });
+  const call = async (
+    name: string,
+    args: Record<string, unknown>,
+  ): Promise<ToolResponse> =>
+    (await client.callTool({ name, arguments: args })) as ToolResponse;
 
   /**
-   * Valid MCP response format should be:
-   * {
-   *   content: [
-   *     {
-   *       type: 'text',
-   *       text: string
-   *     }
-   *   ],
-   *   isError?: boolean
-   * }
+   * Valid MCP response format: { content: [{ type: 'text', text: string }], isError?: boolean }, with one item.
    */
   const validateResponseFormat = (response: ToolResponse) => {
-    expect(response).toHaveProperty("content");
     expect(Array.isArray(response.content)).toBe(true);
-    expect(response.content.length).toBeGreaterThan(0);
+    expect(response.content).toHaveLength(1);
 
     response.content.forEach((item) => {
-      expect(item).toHaveProperty("type");
       expect(item.type).toBe("text");
-      expect(item).toHaveProperty("text");
       expect(typeof item.text).toBe("string");
-
-      // Ensure text is not a nested object (the main issue we're preventing)
-      expect(typeof item.text).not.toBe("object");
-      expect(item.text).not.toHaveProperty("content");
     });
   };
 
-  describe("searchAppleDocs response format", () => {
+  beforeEach(async () => {
+    mock.clearAllMocks();
+    fetchAppleDocJson.mockImplementation(actualFetchAppleDocJson);
+
+    const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
+    client = new Client({ name: "test", version: "test" });
+    await Promise.all([
+      createServer().connect(serverSide),
+      client.connect(clientSide),
+    ]);
+  });
+
+  afterEach(async () => {
+    await client.close();
+  });
+
+  describe("search_apple_docs response format", () => {
     it("should return properly formatted response for valid query", async () => {
-      const response = await server.searchAppleDocs("SwiftUI", "all");
+      const response = await call("search_apple_docs", { query: "SwiftUI" });
 
       validateResponseFormat(response);
-      expect(typeof response.content[0]?.text).toBe("string");
       expect(response.content[0]?.text).toContain(
         "Apple Documentation Search Results",
       );
@@ -201,8 +207,12 @@ describe("Response Format Validation", () => {
         );
 
       const text =
-        (await server.searchAppleDocs("StoreKit testing", "all")).content[0]
-          ?.text ?? "";
+        (
+          await call("search_apple_docs", {
+            query: "StoreKit testing",
+            type: "all",
+          })
+        ).content[0]?.text ?? "";
 
       // The search developer.apple.com/search sends unfiltered; then the videos on their own
       expect(post.mock.calls[0]?.[1]).not.toHaveProperty("searchScope");
@@ -227,13 +237,16 @@ describe("Response Format Validation", () => {
       const post = httpClient.postText as Mock<typeof httpClient.postText>;
       post.mockClear();
 
-      await server.searchAppleDocs("StoreKit testing", "documentation");
+      await call("search_apple_docs", {
+        query: "StoreKit testing",
+        type: "documentation",
+      });
 
       expect(post).toHaveBeenCalledTimes(1);
     });
 
     it("should return properly formatted error response for invalid input", async () => {
-      const response: ToolResponse = await server.searchAppleDocs("", "all");
+      const response = await call("search_apple_docs", { query: "" });
 
       validateResponseFormat(response);
       expect(response.isError).toBe(true);
@@ -243,77 +256,66 @@ describe("Response Format Validation", () => {
 
   describe("All MCP tools response format consistency", () => {
     const toolTests = [
+      { name: "list_technologies", args: {} },
       {
-        name: "listTechnologies",
-        method: () => server.listTechnologies(),
+        name: "search_framework_symbols",
+        args: { framework: "SwiftUI" },
       },
       {
-        name: "searchFrameworkSymbols",
-        method: () => server.searchFrameworkSymbols("SwiftUI"),
+        name: "get_apple_doc_content",
+        args: { url: "https://developer.apple.com/documentation/swiftui" },
       },
       {
-        name: "getAppleDocContent",
-        method: () =>
-          server.getAppleDocContent(
-            "https://developer.apple.com/documentation/swiftui",
-          ),
+        name: "get_related_apis",
+        args: {
+          apiUrl: "https://developer.apple.com/documentation/swiftui/view",
+        },
       },
       {
-        name: "getRelatedApis",
-        method: () =>
-          server.getRelatedApis(
-            "https://developer.apple.com/documentation/swiftui/view",
-          ),
+        name: "resolve_references_batch",
+        args: {
+          sourceUrl: "https://developer.apple.com/documentation/swiftui",
+        },
       },
       {
-        name: "resolveReferencesBatch",
-        method: () =>
-          server.resolveReferencesBatch(
-            "https://developer.apple.com/documentation/swiftui",
-          ),
+        name: "get_platform_compatibility",
+        args: {
+          apiUrl: "https://developer.apple.com/documentation/swiftui/view",
+        },
       },
       {
-        name: "getPlatformCompatibility",
-        method: () =>
-          server.getPlatformCompatibility(
-            "https://developer.apple.com/documentation/swiftui/view",
-          ),
+        name: "find_similar_apis",
+        args: {
+          apiUrl: "https://developer.apple.com/documentation/swiftui/view",
+        },
       },
-      {
-        name: "findSimilarApis",
-        method: () =>
-          server.findSimilarApis(
-            "https://developer.apple.com/documentation/swiftui/view",
-          ),
-      },
-      {
-        name: "getDocumentationUpdates",
-        method: () => server.getDocumentationUpdates(),
-      },
-      {
-        name: "getTechnologyOverviews",
-        method: () => server.getTechnologyOverviews(),
-      },
-      {
-        name: "getSampleCode",
-        method: () => server.getSampleCode(),
-      },
+      { name: "get_documentation_updates", args: {} },
+      { name: "get_technology_overviews", args: {} },
+      { name: "get_sample_code", args: {} },
     ];
 
-    toolTests.forEach(({ name, method }) => {
-      it(`${name} should return properly formatted response`, async () => {
-        const response = await method();
+    describe("each tool answers with one text item", () => {
+      beforeEach(() => {
+        fetchAppleDocJson.mockResolvedValue("Mock doc content");
+      });
 
-        validateResponseFormat(response);
-        expect(typeof response.content[0]?.text).toBe("string");
+      toolTests.forEach(({ name, args }) => {
+        it(`${name} should return properly formatted response`, async () => {
+          const response = await call(name, args);
+
+          validateResponseFormat(response);
+          expect(typeof response.content[0]?.text).toBe("string");
+        });
       });
     });
   });
 
   describe("Error response format consistency", () => {
     it("should maintain consistent error format across all tools", async () => {
-      // Test with invalid URL to trigger error in getAppleDocContent
-      const response = await server.getAppleDocContent("invalid-url");
+      // An invalid URL is refused by the page reader before any request
+      const response = await call("get_apple_doc_content", {
+        url: "invalid-url",
+      });
 
       validateResponseFormat(response);
       expect(response.isError).toBe(true);
@@ -327,126 +329,39 @@ describe("Response Format Validation", () => {
         httpClient.postText as Mock<typeof httpClient.postText>
       ).mockRejectedValueOnce(new Error("Network error"));
 
-      const response: ToolResponse = await server.searchAppleDocs(
-        "SwiftUI",
-        "all",
-      );
+      const response = await call("search_apple_docs", {
+        query: "SwiftUI",
+        type: "all",
+      });
 
       validateResponseFormat(response);
       expect(response.isError).toBe(true);
     });
   });
 
-  describe("Regression tests for nested response issue", () => {
-    it("should not return nested content objects in searchAppleDocs", async () => {
-      const response = await server.searchAppleDocs("SwiftUI", "all");
+  describe("get_apple_doc_content options", () => {
+    it("should return the page for enhanced options as one text item", async () => {
+      fetchAppleDocJson.mockResolvedValueOnce("Mock doc content");
 
-      // Specifically check that text is not an object with content property
-      const textContent = response.content[0]?.text;
-      expect(typeof textContent).toBe("string");
-      expect(textContent).not.toHaveProperty("content");
-
-      // Ensure we don't have the problematic nested structure:
-      // { content: [{ type: 'text', text: { content: [...] } }] }
-      expect(typeof textContent).not.toBe("object");
-    });
-
-    it("should prevent double-wrapping of response content", async () => {
-      const response = await server.searchAppleDocs("SwiftUI", "all");
-
-      // Check that the response is not double-wrapped
-      expect(response.content).toBeDefined();
-      expect(Array.isArray(response.content)).toBe(true);
-
-      const firstItem = response.content[0];
-      expect(firstItem?.type).toBe("text");
-      expect(typeof firstItem?.text).toBe("string");
-
-      // Parse the text to ensure it's not stringified JSON
-      let parsed: unknown;
-      try {
-        parsed = JSON.parse(firstItem?.text ?? "");
-      } catch {
-        // This is expected - text should not be valid JSON
-      }
-      expect(
-        parsed &&
-          typeof parsed === "object" &&
-          "content" in parsed &&
-          parsed.content,
-      ).toBeFalsy();
-    });
-
-    it("should not return nested content objects in getAppleDocContent", async () => {
-      const response = await server.getAppleDocContent(
-        "https://developer.apple.com/documentation/uikit/uiviewcontroller",
-      );
-
-      // Specifically check that text is not an object with content property
-      const textContent = response.content[0]?.text;
-      expect(typeof textContent).toBe("string");
-      expect(textContent).not.toHaveProperty("content");
-
-      // Ensure we don't have the problematic nested structure:
-      // { content: [{ type: 'text', text: { content: [...] } }] }
-      expect(typeof textContent).not.toBe("object");
-    });
-
-    it("should prevent double-wrapping in getAppleDocContent when fetchAppleDocJson returns MCP format", async () => {
-      const response = await server.getAppleDocContent(
-        "https://developer.apple.com/documentation/swiftui/view",
-      );
-
-      // Verify the response structure is correct
-      validateResponseFormat(response);
-
-      // Check that the response is not double-wrapped
-      expect(response.content).toBeDefined();
-      expect(Array.isArray(response.content)).toBe(true);
-
-      const firstItem = response.content[0];
-      expect(firstItem?.type).toBe("text");
-      expect(typeof firstItem?.text).toBe("string");
-
-      // Ensure the text content is not a stringified MCP response
-      let parsed: unknown;
-      try {
-        parsed = JSON.parse(firstItem?.text ?? "");
-      } catch {
-        // This is expected - text should not be valid JSON representing an MCP response
-      }
-      expect(
-        parsed &&
-          typeof parsed === "object" &&
-          "content" in parsed &&
-          Array.isArray(parsed.content),
-      ).toBeFalsy();
-    });
-
-    it("should handle getAppleDocContent with enhanced options without nesting", async () => {
-      // Test with all enhanced options enabled
-      const response = await server.getAppleDocContent(
-        "https://developer.apple.com/documentation/swiftui/view",
-        true, // includeRelatedApis
-        true, // includeReferences
-        true, // includeSimilarApis
-        true, // includePlatformAnalysis
-      );
+      const response = await call("get_apple_doc_content", {
+        url: "https://developer.apple.com/documentation/swiftui/view",
+        includeRelatedApis: true,
+        includeReferences: true,
+        includeSimilarApis: true,
+        includePlatformAnalysis: true,
+      });
 
       validateResponseFormat(response);
-
-      const textContent = response.content[0]?.text;
-      expect(typeof textContent).toBe("string");
-      expect(textContent).not.toHaveProperty("content");
-
-      // Verify that enhanced content was requested (mock should still return simple content)
-      expect(textContent).toContain("Mock doc content");
+      expect(response.content[0]?.text).toContain("Mock doc content");
     });
   });
 
   describe("Response size and performance validation", () => {
     it("should return reasonable response sizes", async () => {
-      const response = await server.searchAppleDocs("SwiftUI", "all");
+      const response = await call("search_apple_docs", {
+        query: "SwiftUI",
+        type: "all",
+      });
 
       validateResponseFormat(response);
 
@@ -470,7 +385,10 @@ describe("Response Format Validation", () => {
         httpClient.getText as Mock<typeof httpClient.getText>
       ).mockResolvedValueOnce(largeHtml);
 
-      const response = await server.searchAppleDocs("SwiftUI", "all");
+      const response = await call("search_apple_docs", {
+        query: "SwiftUI",
+        type: "all",
+      });
 
       validateResponseFormat(response);
       // Should handle large responses without breaking format

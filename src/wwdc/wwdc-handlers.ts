@@ -34,17 +34,23 @@ async function loadVideosData(videoFiles: string[]): Promise<WWDCVideo[]> {
   return videos;
 }
 
+export interface VideoListQuery {
+  year?: string | undefined;
+  topic?: string | undefined;
+  hasCode?: boolean | undefined;
+  limit: number;
+}
+
 /**
  * List WWDC videos
  */
-export async function handleListWWDCVideos(
-  year?: string,
-  topic?: string,
-  hasCode?: boolean,
-  limit: number = 50,
-): Promise<string> {
+export async function handleListWWDCVideos({
+  year,
+  topic,
+  hasCode,
+  limit,
+}: VideoListQuery): Promise<string> {
   try {
-    // Load metadata
     const metadata = await loadGlobalMetadata();
 
     let allVideos: Array<WWDCVideo & { year: string }> = [];
@@ -56,13 +62,11 @@ export async function handleListWWDCVideos(
       try {
         const topicIndex = await loadTopicIndex(topic);
 
-        // Filter by year
         const videosToLoad =
           year && year !== "all"
             ? topicIndex.videos.filter((v) => v.year === year)
             : topicIndex.videos;
 
-        // Load video data
         const videoFiles = videosToLoad.map((v) => v.dataFile);
         const videos = await loadVideosData(videoFiles);
 
@@ -78,16 +82,13 @@ export async function handleListWWDCVideos(
     }
 
     if (!byTopicIndex && year && year !== "all") {
-      // If year is specified, use year index
       const yearIndex = await loadYearIndex(year);
 
-      // 加载视频数据
       const videoFiles = yearIndex.videos.map((v) => v.dataFile);
       const videos = await loadVideosData(videoFiles);
 
       allVideos = videos.map((v: WWDCVideo) => ({ ...v, year: v.year }));
     } else if (!byTopicIndex) {
-      // Load all videos - through year indices
       const yearsToLoad = metadata.years;
 
       for (const y of yearsToLoad) {
@@ -107,7 +108,6 @@ export async function handleListWWDCVideos(
       }
     }
 
-    // Apply filters
     let filteredVideos = allVideos;
 
     // Topic filter (if not already filtered through topic index)
@@ -120,15 +120,12 @@ export async function handleListWWDCVideos(
       );
     }
 
-    // Code filter
     if (hasCode !== undefined) {
       filteredVideos = filteredVideos.filter((v) => v.hasCode === hasCode);
     }
 
-    // Apply limit
     const limitedVideos = filteredVideos.slice(0, limit);
 
-    // Format output
     return formatVideoList(limitedVideos, year, topic, hasCode);
   } catch (error) {
     logger.error("Failed to list WWDC videos:", error);
@@ -137,16 +134,24 @@ export async function handleListWWDCVideos(
   }
 }
 
+export interface ContentSearchQuery {
+  query: string;
+  searchIn: "transcript" | "code" | "both";
+  year?: string | undefined;
+  language?: string | undefined;
+  limit: number;
+}
+
 /**
  * Search WWDC content
  */
-export async function handleSearchWWDCContent(
-  query: string,
-  searchIn: "transcript" | "code" | "both" = "both",
-  year?: string,
-  language?: string,
-  limit: number = 20,
-): Promise<string> {
+export async function handleSearchWWDCContent({
+  query,
+  searchIn,
+  year,
+  language,
+  limit,
+}: ContentSearchQuery): Promise<string> {
   try {
     const metadata = await loadGlobalMetadata();
     const queryLower = query.toLowerCase();
@@ -159,17 +164,14 @@ export async function handleSearchWWDCContent(
       }>;
     }> = [];
 
-    // Determine years to search
     const yearsToSearch = year ? [year] : metadata.years;
 
-    // Search each year
     for (const y of yearsToSearch) {
       try {
         const yearIndex = await loadYearIndex(y);
 
         // Pre-filter: only load videos that might contain search content
         const potentialVideos = yearIndex.videos.filter((v) => {
-          // Basic title and topic matching
           const titleMatch =
             v.title?.toLowerCase().includes(queryLower) || false;
           const topicMatch =
@@ -188,11 +190,9 @@ export async function handleSearchWWDCContent(
           continue;
         }
 
-        // 加载视频数据
         const videoFiles = potentialVideos.map((v) => v.dataFile);
         const videos = await loadVideosData(videoFiles);
 
-        // Search each video
         for (const video of videos) {
           const matches: Array<{
             type: "transcript" | "code";
@@ -200,7 +200,6 @@ export async function handleSearchWWDCContent(
             timestamp?: string | undefined;
           }> = [];
 
-          // Search transcript
           if (
             (searchIn === "transcript" || searchIn === "both") &&
             video.transcript
@@ -218,7 +217,6 @@ export async function handleSearchWWDCContent(
             );
           }
 
-          // Search code
           if (
             (searchIn === "code" || searchIn === "both") &&
             video.codeExamples
@@ -249,10 +247,8 @@ export async function handleSearchWWDCContent(
       }
     }
 
-    // Sort by match count
     results.sort((a, b) => b.matches.length - a.matches.length);
 
-    // Apply limit
     const limitedResults = results.slice(0, limit);
 
     return formatSearchResults(limitedResults, query, searchIn);
@@ -263,17 +259,23 @@ export async function handleSearchWWDCContent(
   }
 }
 
+export interface VideoQuery {
+  year: string;
+  videoId: string;
+  includeTranscript: boolean;
+  includeCode: boolean;
+}
+
 /**
  * Get WWDC video details
  */
-export async function handleGetWWDCVideo(
-  year: string,
-  videoId: string,
-  includeTranscript: boolean = true,
-  includeCode: boolean = true,
-): Promise<string> {
+export async function handleGetWWDCVideo({
+  year,
+  videoId,
+  includeTranscript,
+  includeCode,
+}: VideoQuery): Promise<string> {
   try {
-    // Load video data directly
     const video = await loadVideoData(year, videoId);
 
     return formatVideoDetail(video, includeTranscript, includeCode);
@@ -284,16 +286,24 @@ export async function handleGetWWDCVideo(
   }
 }
 
+export interface CodeExamplesQuery {
+  framework?: string | undefined;
+  topic?: string | undefined;
+  year?: string | undefined;
+  language?: string | undefined;
+  limit: number;
+}
+
 /**
  * Get WWDC code examples
  */
-export async function handleGetWWDCCodeExamples(
-  framework?: string,
-  topic?: string,
-  year?: string,
-  language?: string,
-  limit: number = 30,
-): Promise<string> {
+export async function handleGetWWDCCodeExamples({
+  framework,
+  topic,
+  year,
+  language,
+  limit,
+}: CodeExamplesQuery): Promise<string> {
   try {
     const metadata = await loadGlobalMetadata();
     const codeExamples: Array<{
@@ -306,7 +316,6 @@ export async function handleGetWWDCCodeExamples(
       year: string;
     }> = [];
 
-    // Determine years to search
     const yearsToSearch = year ? [year] : metadata.years;
     const isTopicId = metadata.topics.some((t) => t.id === topic);
 
@@ -314,10 +323,8 @@ export async function handleGetWWDCCodeExamples(
       try {
         const yearIndex = await loadYearIndex(y);
 
-        // Pre-filter: only load videos with code
         const videosWithCode = yearIndex.videos.filter((v) => v.hasCode);
 
-        // Topic filter
         let filteredVideos = videosWithCode;
         if (topic) {
           if (isTopicId) {
@@ -328,7 +335,6 @@ export async function handleGetWWDCCodeExamples(
                 topicVideoIds.has(v.id),
               );
             } catch (error) {
-              // If topic index doesn't exist, fallback to string matching
               logger.warn("No topic index, matching topic names instead", {
                 topic,
                 error,
@@ -341,7 +347,6 @@ export async function handleGetWWDCCodeExamples(
               );
             }
           } else {
-            // Search by name
             const topicLower = topic.toLowerCase();
             filteredVideos = videosWithCode.filter(
               (v) =>
@@ -355,18 +360,15 @@ export async function handleGetWWDCCodeExamples(
           continue;
         }
 
-        // 加载视频数据
         const videoFiles = filteredVideos.map((v) => v.dataFile);
         const videos = await loadVideosData(videoFiles);
 
-        // Extract code examples
         for (const video of videos) {
           if (!video.codeExamples || video.codeExamples.length === 0) {
             continue;
           }
 
           for (const example of video.codeExamples) {
-            // Language filter
             if (
               language &&
               example.language.toLowerCase() !== language.toLowerCase()
@@ -374,7 +376,6 @@ export async function handleGetWWDCCodeExamples(
               continue;
             }
 
-            // Framework filter (search in code)
             if (
               framework &&
               !example.code.toLowerCase().includes(framework.toLowerCase())
@@ -398,7 +399,6 @@ export async function handleGetWWDCCodeExamples(
       }
     }
 
-    // Limit result count
     const limitedExamples = codeExamples.slice(0, limit);
 
     return formatCodeExamples(
@@ -428,7 +428,6 @@ function searchInTranscript(
 
   for (const [i, line] of lines.entries()) {
     if (line.toLowerCase().includes(query)) {
-      // Get context (one line before and after)
       const context = [lines[i - 1] ?? "", line, lines[i + 1] ?? ""]
         .filter((l) => l.trim())
         .join(" ... ");
@@ -457,7 +456,6 @@ function searchInCode(
     [];
 
   for (const example of codeExamples) {
-    // Language filter
     if (language && example.language.toLowerCase() !== language.toLowerCase()) {
       continue;
     }
@@ -492,7 +490,6 @@ function formatVideoList(
 
   let content = "# WWDC Video List\n\n";
 
-  // Filter conditions
   const filters: string[] = [];
   if (year && year !== "all") {
     filters.push(`Year: ${year}`);
@@ -510,7 +507,6 @@ function formatVideoList(
 
   content += `**Found ${videos.length} videos**\n\n`;
 
-  // Group by year
   const videosByYear = videos.reduce(
     (acc, video) => {
       const group = acc[video.year] ?? [];
@@ -521,7 +517,6 @@ function formatVideoList(
     {} as Record<string, typeof videos>,
   );
 
-  // Format each year
   Object.keys(videosByYear)
     .sort((a, b) => parseInt(b, 10) - parseInt(a, 10))
     .forEach((y) => {
@@ -614,7 +609,6 @@ function formatVideoDetail(
   let content = `# ${video.title}\n\n`;
   content += `**WWDC${video.year}** | [Watch Video](${video.url})\n\n`;
 
-  // Basic information
   if (video.duration) {
     content += `**Duration:** ${video.duration}\n`;
   }
@@ -625,7 +619,6 @@ function formatVideoDetail(
     content += `**Topics:** ${video.topics.join(", ")}\n`;
   }
 
-  // Resource links
   if (
     video.resources.hdVideo ||
     video.resources.sdVideo ||
@@ -648,7 +641,6 @@ function formatVideoDetail(
     }
   }
 
-  // Chapters
   if (video.chapters && video.chapters.length > 0) {
     content += "\n## Chapters\n\n";
     video.chapters.forEach((chapter) => {
@@ -656,23 +648,19 @@ function formatVideoDetail(
     });
   }
 
-  // Transcript
   if (includeTranscript && video.transcript) {
     content += "\n## Transcript\n\n";
 
-    // If there are timestamped segments, use them
     if (video.transcript.segments.length > 0) {
       video.transcript.segments.forEach((segment) => {
         content += `**${segment.timestamp}**\n`;
         content += `${segment.text}\n\n`;
       });
     } else {
-      // Show full transcript text
       content += video.transcript.fullText;
     }
   }
 
-  // Code examples
   if (includeCode && video.codeExamples && video.codeExamples.length > 0) {
     content += "\n## Code Examples\n\n";
 
@@ -698,7 +686,6 @@ function formatVideoDetail(
     });
   }
 
-  // Related videos
   if (video.relatedVideos && video.relatedVideos.length > 0) {
     content += "\n## Related Videos\n\n";
     video.relatedVideos.forEach((related) => {
@@ -733,7 +720,6 @@ function formatCodeExamples(
 
   let content = "# WWDC Code Examples\n\n";
 
-  // Filter conditions
   const filters: string[] = [];
   if (framework) {
     filters.push(`Framework: ${framework}`);
@@ -754,7 +740,6 @@ function formatCodeExamples(
 
   content += `**Found ${examples.length} code examples**\n\n`;
 
-  // Group by language
   const examplesByLanguage = examples.reduce(
     (acc, ex) => {
       const group = acc[ex.language] ?? [];
@@ -786,20 +771,26 @@ function formatCodeExamples(
   return content;
 }
 
+export interface TopicsQuery {
+  topicId?: string | undefined;
+  includeVideos: boolean;
+  year?: string | undefined;
+  limit: number;
+}
+
 /**
  * Browse WWDC topics
  */
-export async function handleBrowseWWDCTopics(
-  topicId?: string,
-  includeVideos: boolean = true,
-  year?: string,
-  limit: number = 20,
-): Promise<string> {
+export async function handleBrowseWWDCTopics({
+  topicId,
+  includeVideos,
+  year,
+  limit,
+}: TopicsQuery): Promise<string> {
   try {
     const metadata = await loadGlobalMetadata();
 
     if (!topicId) {
-      // List all available topics
       let content = "# WWDC Topics\n\n";
       content += `Found ${metadata.topics.length} topics:\n\n`;
 
@@ -807,7 +798,6 @@ export async function handleBrowseWWDCTopics(
         content += `## [${topic.name}](${topic.url})\n`;
         content += `**Topic ID:** ${topic.id}\n`;
 
-        // Show video count for this topic
         const topicStats = metadata.statistics.byTopic[topic.id];
         if (topicStats) {
           content += `**Videos:** ${topicStats}\n`;
@@ -819,7 +809,6 @@ export async function handleBrowseWWDCTopics(
       return content;
     }
 
-    // Browse specific topic
     const topic = metadata.topics.find((t) => t.id === topicId);
     if (!topic) {
       return `Topic "${topicId}" not found. Available topics: ${metadata.topics.map((t) => t.id).join(", ")}`;
@@ -833,13 +822,11 @@ export async function handleBrowseWWDCTopics(
       try {
         const topicIndex = await loadTopicIndex(topicId);
 
-        // Filter by year if specified
         let videosToShow = topicIndex.videos;
         if (year && year !== "all") {
           videosToShow = videosToShow.filter((v) => v.year === year);
         }
 
-        // Apply limit
         videosToShow = videosToShow.slice(0, limit);
 
         content += `## Videos (${videosToShow.length}${videosToShow.length === limit ? "+" : ""})\n\n`;
@@ -847,7 +834,6 @@ export async function handleBrowseWWDCTopics(
         if (videosToShow.length === 0) {
           content += "No videos found for this topic.\n";
         } else {
-          // Group by year
           const videosByYear = videosToShow.reduce(
             (acc, video) => {
               const group = acc[video.year] ?? [];
@@ -897,19 +883,27 @@ export async function handleBrowseWWDCTopics(
   }
 }
 
+export interface RelatedVideosQuery {
+  videoId: string;
+  year: string;
+  includeExplicitRelated: boolean;
+  includeTopicRelated: boolean;
+  includeYearRelated: boolean;
+  limit: number;
+}
+
 /**
  * Find related WWDC videos
  */
-export async function handleFindRelatedWWDCVideos(
-  videoId: string,
-  year: string,
-  includeExplicitRelated: boolean = true,
-  includeTopicRelated: boolean = true,
-  includeYearRelated: boolean = false,
-  limit: number = 15,
-): Promise<string> {
+export async function handleFindRelatedWWDCVideos({
+  videoId,
+  year,
+  includeExplicitRelated,
+  includeTopicRelated,
+  includeYearRelated,
+  limit,
+}: RelatedVideosQuery): Promise<string> {
   try {
-    // Load the source video
     const sourceVideo = await loadVideoData(year, videoId);
 
     let content = `# Related Videos for "${sourceVideo.title}"\n\n`;
@@ -921,7 +915,6 @@ export async function handleFindRelatedWWDCVideos(
       score: number;
     }> = [];
 
-    // 1. Explicit related videos from video metadata
     if (includeExplicitRelated && sourceVideo.relatedVideos) {
       for (const related of sourceVideo.relatedVideos) {
         try {
@@ -941,7 +934,6 @@ export async function handleFindRelatedWWDCVideos(
       }
     }
 
-    // 2. Topic-related videos
     if (
       includeTopicRelated &&
       sourceVideo.topics &&
@@ -949,7 +941,6 @@ export async function handleFindRelatedWWDCVideos(
     ) {
       for (const topic of sourceVideo.topics) {
         try {
-          // Try to find topic by name mapping
           const metadata = await loadGlobalMetadata();
           const topicEntry = metadata.topics.find(
             (t) =>
@@ -962,17 +953,14 @@ export async function handleFindRelatedWWDCVideos(
           if (topicEntry) {
             const topicIndex = await loadTopicIndex(topicEntry.id);
 
-            // Get videos from same topic (excluding source video)
             const topicVideos = topicIndex.videos.filter(
               (v) => v.id !== videoId,
             );
 
-            // Load video data for scoring
             const videoFiles = topicVideos.slice(0, 10).map((v) => v.dataFile); // Limit to avoid too many requests
             const videos = await loadVideosData(videoFiles);
 
             for (const video of videos) {
-              // Skip if already added
               if (
                 relatedVideos.find(
                   (r) => r.video.id === video.id && r.video.year === video.year,
@@ -981,7 +969,6 @@ export async function handleFindRelatedWWDCVideos(
                 continue;
               }
 
-              // Calculate similarity score based on shared topics
               const sharedTopics = (sourceVideo.topics || []).filter(
                 (t) =>
                   video.topics?.some(
@@ -1006,12 +993,10 @@ export async function handleFindRelatedWWDCVideos(
       }
     }
 
-    // 3. Year-related videos (same year, similar topics)
     if (includeYearRelated) {
       try {
         const yearIndex = await loadYearIndex(year);
 
-        // Get videos from same year with overlapping topics
         const yearVideos = yearIndex.videos.filter(
           (v) =>
             v.id !== videoId &&
@@ -1023,12 +1008,10 @@ export async function handleFindRelatedWWDCVideos(
             ),
         );
 
-        // Load a sample of videos
         const videoFiles = yearVideos.slice(0, 10).map((v) => v.dataFile);
         const videos = await loadVideosData(videoFiles);
 
         for (const video of videos) {
-          // Skip if already added
           if (
             relatedVideos.find(
               (r) => r.video.id === video.id && r.video.year === video.year,
@@ -1056,7 +1039,6 @@ export async function handleFindRelatedWWDCVideos(
       }
     }
 
-    // Sort by score (descending) and apply limit
     relatedVideos.sort((a, b) => b.score - a.score);
     const limitedResults = relatedVideos.slice(0, limit);
 
@@ -1105,32 +1087,26 @@ export async function handleFindRelatedWWDCVideos(
  */
 export async function handleListWWDCYears(): Promise<string> {
   try {
-    // Load metadata to get available years
     const metadata = await loadGlobalMetadata();
 
     let content = "# Available WWDC Years\n\n";
 
-    // Check if years exist in metadata
     if (!metadata.years || metadata.years.length === 0) {
       return "No WWDC years available.";
     }
 
-    // Sort years in descending order (newest first)
     const sortedYears = [...metadata.years].sort((a, b) => b.localeCompare(a));
 
     content += `**Total Years:** ${sortedYears.length}\n\n`;
     content += "## Years with Video Counts\n\n";
 
-    // Get video count for each year from statistics
     for (const year of sortedYears) {
       const videoCount = metadata.statistics?.byYear?.[year] || 0;
       content += `- **${year}**: ${videoCount} videos\n`;
     }
 
-    // Add total video count
     content += `\n**Total Videos:** ${metadata.totalVideos || 0}\n`;
 
-    // Add statistics summary if available
     if (metadata.statistics) {
       content += "\n## Statistics\n\n";
       content += `- **Videos with Code:** ${metadata.statistics.videosWithCode || 0}\n`;

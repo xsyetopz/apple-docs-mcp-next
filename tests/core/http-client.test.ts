@@ -3,7 +3,8 @@
  */
 import { beforeEach, describe, expect, it, mock, spyOn } from "bun:test";
 
-import { httpClient, RequestError } from "../../src/core/http-client.ts";
+import { AppError } from "../../src/core/errors.ts";
+import { httpClient } from "../../src/core/http-client.ts";
 import { logger } from "../../src/core/logger.ts";
 
 const answer = (status: number, body: string) => new Response(body, { status });
@@ -45,7 +46,7 @@ describe("httpClient", () => {
 
     const failure = httpClient.get("https://developer.apple.com/missing.json");
 
-    await expect(failure).rejects.toBeInstanceOf(RequestError);
+    await expect(failure).rejects.toBeInstanceOf(AppError);
     await expect(failure).rejects.toMatchObject({
       type: "NOT_FOUND",
       cause: { status: 404, url: "https://developer.apple.com/missing.json" },

@@ -77,7 +77,12 @@ describe("list-technologies", () => {
     it("should list all technologies without filters", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockTechnologiesResponse);
 
-      const result = await handleListTechnologies();
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(mockHttpClient.getJson).toHaveBeenCalledWith(
         "https://developer.apple.com/tutorials/data/documentation/technologies.json",
@@ -92,7 +97,12 @@ describe("list-technologies", () => {
     it("should filter by category", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockTechnologiesResponse);
 
-      const result = await handleListTechnologies("app frameworks");
+      const result = await handleListTechnologies({
+        category: "app frameworks",
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(result).toContain("## App Frameworks");
       expect(result).toContain("[Foundation]");
@@ -103,7 +113,12 @@ describe("list-technologies", () => {
     it("should handle case-insensitive category filtering", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockTechnologiesResponse);
 
-      const result = await handleListTechnologies("APP FRAMEWORKS");
+      const result = await handleListTechnologies({
+        category: "APP FRAMEWORKS",
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(result).toContain("## App Frameworks");
       expect(result).toContain("[Foundation]");
@@ -148,7 +163,12 @@ describe("list-technologies", () => {
 
       mockHttpClient.getJson.mockResolvedValue(mockResponseWithLanguage);
 
-      const result = await handleListTechnologies(undefined, "swift");
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: "swift",
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(result).toContain("[SwiftUI]");
       expect(result).not.toContain("Core Foundation");
@@ -199,7 +219,12 @@ describe("list-technologies", () => {
 
       mockHttpClient.getJson.mockResolvedValue(mockResponseWithBeta);
 
-      const result = await handleListTechnologies(undefined, undefined, false);
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: false,
+        limit: 200,
+      });
 
       expect(result).not.toContain("SwiftUI");
       expect(result).toContain("[UIKit]");
@@ -211,7 +236,12 @@ describe("list-technologies", () => {
         sections: [],
       });
 
-      const result = await handleListTechnologies();
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(result).toContain(
         "No technologies found matching the specified criteria.",
@@ -221,7 +251,12 @@ describe("list-technologies", () => {
     it("should handle fetch errors", async () => {
       mockHttpClient.getJson.mockRejectedValue(new Error("Network error"));
 
-      const result = await handleListTechnologies();
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(result).toContain("Error: Failed to list technologies:");
       expect(result).toContain("Network error");
@@ -230,7 +265,12 @@ describe("list-technologies", () => {
     it("should report malformed JSON as an error", async () => {
       mockHttpClient.getJson.mockResolvedValue({ invalid: "response" });
 
-      const result = await handleListTechnologies();
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(result).toContain("Error: Failed to list technologies:");
     });
@@ -264,7 +304,12 @@ describe("list-technologies", () => {
 
       mockHttpClient.getJson.mockResolvedValue(detailedResponse);
 
-      const result = await handleListTechnologies();
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
 
       expect(result).toContain("[Metal]");
       expect(result).toContain("Languages: swift, occ");
@@ -345,12 +390,12 @@ describe("list-technologies", () => {
 
       mockHttpClient.getJson.mockResolvedValue(limitTestResponse);
 
-      const result = await handleListTechnologies(
-        undefined,
-        undefined,
-        true,
-        2,
-      );
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 2,
+      });
 
       // The first 2 of each category
       expect(result).toContain("SwiftUI");
@@ -425,12 +470,12 @@ describe("list-technologies", () => {
 
       mockHttpClient.getJson.mockResolvedValue(multiGroupResponse);
 
-      const result = await handleListTechnologies(
-        undefined,
-        undefined,
-        true,
-        1,
-      );
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 1,
+      });
 
       // The first of each category
       expect(result).toContain("Tech 1");
@@ -443,12 +488,12 @@ describe("list-technologies", () => {
     it("should handle zero limit", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockTechnologiesResponse);
 
-      const result = await handleListTechnologies(
-        undefined,
-        undefined,
-        true,
-        0,
-      );
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 0,
+      });
 
       expect(result).toContain(
         "No technologies found matching the specified criteria.",

@@ -248,8 +248,8 @@ export function parseSearchResults(
   streams: string[],
   query: string,
   searchUrl: string,
-  filterType: string = "all",
-): { content: Array<{ type: "text"; text: string }> } {
+  filterType: string,
+): string {
   try {
     const found = streams
       .flatMap(streamedResults)
@@ -268,23 +268,9 @@ export function parseSearchResults(
       )
       .slice(0, API_LIMITS.MAX_SEARCH_RESULTS);
 
-    return {
-      content: [
-        {
-          type: "text",
-          text: formatSearchResults(results, query, filterType, searchUrl),
-        },
-      ],
-    };
+    return formatSearchResults(results, query, filterType, searchUrl);
   } catch (error) {
     logger.error("Error parsing search results:", error);
-    return {
-      content: [
-        {
-          type: "text",
-          text: `Error parsing search results: ${error instanceof Error ? error.message : "Unknown error"}`,
-        },
-      ],
-    };
+    return `Error parsing search results: ${error instanceof Error ? error.message : "Unknown error"}`;
   }
 }

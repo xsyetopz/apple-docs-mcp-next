@@ -34,7 +34,7 @@
   ],
   "type": "module",
   "bin": {
-    "apple-docs-mcp-next": "./src/index.ts"
+    "apple-docs-mcp-next": "./src/main.ts"
   },
   "files": [
     "src",
@@ -46,8 +46,8 @@
   },
   "packageManager": "bun@1.4.3",
   "scripts": {
-    "start": "bun run src/index.ts",
-    "dev": "bun --watch run src/index.ts",
+    "start": "bun run src/main.ts",
+    "dev": "bun --watch run src/main.ts",
     "lint": "biome ci .",
     "format": "biome check --write .",
     "lint:md": "markdownlint-cli2",

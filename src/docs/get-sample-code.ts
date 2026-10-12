@@ -30,15 +30,22 @@ interface SampleCodeFilters {
   searchQuery?: string | undefined;
 }
 
+export interface SampleCodeQuery {
+  framework?: string | undefined;
+  beta: "include" | "exclude" | "only";
+  searchQuery?: string | undefined;
+  limit: number;
+}
+
 /**
  * Handles the get_sample_code tool request
  */
-export async function handleGetSampleCode(
-  framework?: string,
-  beta: "include" | "exclude" | "only" = "include",
-  searchQuery?: string,
-  limit: number = 50,
-): Promise<string> {
+export async function handleGetSampleCode({
+  framework,
+  beta,
+  searchQuery,
+  limit,
+}: SampleCodeQuery): Promise<string> {
   // Generate cache key
   const cacheKey = generateUrlCacheKey("sample-code", {
     framework,

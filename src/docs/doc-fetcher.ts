@@ -1,5 +1,6 @@
-import { apiCache, generateEnhancedCacheKey } from "../core/cache.ts";
+import { apiCache, generateUrlCacheKey } from "../core/cache.ts";
 import { PROCESSING_LIMITS } from "../core/constants.ts";
+import { AppError, ErrorType, requireText } from "../core/errors.ts";
 import { httpClient } from "../core/http-client.ts";
 import { logger } from "../core/logger.ts";
 import type {
@@ -28,7 +29,10 @@ import {
 } from "./doc-formatter.ts";
 import { fetchHelpPage } from "./help-pages.ts";
 import { HELP_PATH } from "./search-result-parser.ts";
-import { convertToJsonApiUrl } from "./url-converter.ts";
+import {
+  convertToJsonApiUrl,
+  isValidAppleDeveloperUrl,
+} from "./url-converter.ts";
 
 /**
  * Format JSON documentation content with enhanced analysis
@@ -36,8 +40,8 @@ import { convertToJsonApiUrl } from "./url-converter.ts";
 function formatJsonDocumentation(
   jsonData: RenderNode,
   originalUrl: string,
-  options: EnhancedAnalysisOptions = {},
-): { content: Array<{ type: "text"; text: string }> } {
+  options: AnalysisOptions,
+): string {
   let content = "";
 
   // Add header with title and status
@@ -67,14 +71,7 @@ function formatJsonDocumentation(
   // Add link to original documentation
   content += `---\n\n[View full documentation on Apple Developer](${originalUrl})`;
 
-  return {
-    content: [
-      {
-        type: "text" as const,
-        text: content,
-      },
-    ],
-  };
+  return content;
 }
 
 /**
@@ -82,7 +79,7 @@ function formatJsonDocumentation(
  */
 function formatAnalysisSections(
   jsonData: RenderNode,
-  options: EnhancedAnalysisOptions,
+  options: AnalysisOptions,
 ): string {
   let content = "";
 
@@ -554,96 +551,68 @@ function formatAPICollectionContent(jsonData: RenderNode): string {
   return content + formatTopicsSection(jsonData);
 }
 
-/**
- * Enhanced analysis options
- */
-interface EnhancedAnalysisOptions {
-  includeRelatedApis?: boolean;
-  includeReferences?: boolean;
-  includeSimilarApis?: boolean;
-  includePlatformAnalysis?: boolean;
+export interface DocContentQuery {
+  url: string;
+  includeRelatedApis: boolean;
+  includeReferences: boolean;
+  includeSimilarApis: boolean;
+  includePlatformAnalysis: boolean;
 }
 
+type AnalysisOptions = Omit<DocContentQuery, "url">;
+
 /**
- * Fetch JSON documentation from Apple Developer Documentation with optional enhanced analysis
- * @param url The URL of the documentation page
- * @param options Enhanced analysis options
- * @returns Formatted documentation content
+ * One documentation page as Markdown, with the analysis sections the include… flags ask for: an App Store Connect Help
+ * page from its HTML, any other page from its JSON
  */
-export async function fetchAppleDocJson(
-  url: string,
-  options: EnhancedAnalysisOptions = {},
-): Promise<{
-  content: Array<{ type: "text"; text: string }>;
-  isError?: boolean;
-}> {
+export async function fetchAppleDocJson({
+  url,
+  ...options
+}: DocContentQuery): Promise<string> {
+  requireText(url, "URL");
+  if (!isValidAppleDeveloperUrl(url)) {
+    throw new AppError({
+      type: ErrorType.INVALID_INPUT,
+      message: "URL must be from developer.apple.com",
+    });
+  }
+
   try {
-    // Validate that this is an Apple Developer URL
-    if (!url.includes("developer.apple.com")) {
-      throw new Error("URL must be from developer.apple.com");
-    }
-
-    // Convert web URL to JSON API URL if needed
     const jsonApiUrl = url.includes(".json") ? url : convertToJsonApiUrl(url);
-
     if (!jsonApiUrl) {
       throw new Error("Invalid Apple Developer Documentation URL");
     }
 
-    // Generate cache key including options
-    const cacheKey = generateEnhancedCacheKey(jsonApiUrl, options);
-
-    // Try to get from cache first
-    const cachedResult = apiCache.get(cacheKey);
-    if (cachedResult) {
+    const cacheKey = generateUrlCacheKey(jsonApiUrl, options);
+    const cached = apiCache.get(cacheKey);
+    if (cached) {
       logger.debug(`Cache hit for: ${jsonApiUrl}`);
-      return cachedResult;
+      return cached;
     }
 
-    if (new URL(url).pathname.startsWith(HELP_PATH)) {
-      const result = {
-        content: [{ type: "text" as const, text: await fetchHelpPage(url) }],
-      };
-      apiCache.set(cacheKey, result);
-      return result;
-    }
-
-    logger.info(`Fetching Apple doc JSON from: ${jsonApiUrl}`);
-
-    // Fetch the documentation JSON using HTTP client
-    const jsonData = await httpClient.getJson<RenderNode>(jsonApiUrl);
-
-    // Format the JSON documentation with enhanced analysis
-    const result = formatJsonDocumentation(jsonData, url, options);
-
-    // Cache the result
-    apiCache.set(cacheKey, result);
-
-    return result;
+    const markdown = new URL(url).pathname.startsWith(HELP_PATH)
+      ? await fetchHelpPage(url)
+      : formatJsonDocumentation(
+          await fetchRenderNode(jsonApiUrl),
+          url,
+          options,
+        );
+    apiCache.set(cacheKey, markdown);
+    return markdown;
   } catch (error) {
-    let errorMessage: string;
-
-    // Handle AppError objects from http-client
-    if (error && typeof error === "object" && "message" in error) {
-      errorMessage = String(error.message);
-    } else if (error instanceof Error) {
-      errorMessage = error.message;
-    } else {
-      errorMessage = String(error);
-    }
-
-    logger.error("Error fetching Apple doc JSON:", errorMessage);
-
-    return {
-      content: [
-        {
-          type: "text" as const,
-          text: `Error: Failed to get Apple doc content: ${errorMessage}\n\nPlease try accessing the documentation directly at: ${url}`,
-        },
-      ],
-      isError: true,
-    };
+    const message = error instanceof Error ? error.message : String(error);
+    logger.error("Error fetching Apple doc JSON:", message);
+    throw new AppError({
+      type: error instanceof AppError ? error.type : ErrorType.UNKNOWN,
+      message: `Failed to get Apple doc content: ${message}\n\nPlease try accessing the documentation directly at: ${url}`,
+      cause: error,
+    });
   }
+}
+
+function fetchRenderNode(jsonApiUrl: string): Promise<RenderNode> {
+  logger.info(`Fetching Apple doc JSON from: ${jsonApiUrl}`);
+  return httpClient.getJson<RenderNode>(jsonApiUrl);
 }
 
 /**

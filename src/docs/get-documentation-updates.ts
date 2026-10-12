@@ -10,17 +10,26 @@ import type {
 import { isTopicReference } from "../types/docc.ts";
 import { formatInlineContent } from "./doc-formatter.ts";
 
+export interface DocumentationUpdatesQuery {
+  category: "all" | "wwdc" | "technology" | "release-notes";
+  technology?: string | undefined;
+  year?: string | undefined;
+  searchQuery?: string | undefined;
+  includeBeta: boolean;
+  limit: number;
+}
+
 /**
  * Handle get documentation updates
  */
-export async function handleGetDocumentationUpdates(
-  category: string = "all",
-  technology?: string,
-  year?: string,
-  searchQuery?: string,
-  includeBeta: boolean = true,
-  limit: number = 50,
-): Promise<string> {
+export async function handleGetDocumentationUpdates({
+  category,
+  technology,
+  year,
+  searchQuery,
+  includeBeta,
+  limit,
+}: DocumentationUpdatesQuery): Promise<string> {
   try {
     logger.info("Fetching documentation updates...");
 
