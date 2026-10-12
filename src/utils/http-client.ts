@@ -43,15 +43,19 @@ const limiter = new Bottleneck({
 });
 
 /** An answer that is not 2xx: the request, and the status Apple answered it with */
-export class HttpStatusError extends Error {
-  constructor(
-    readonly method: string,
-    readonly url: string,
-    readonly status: number,
-    readonly statusText: string,
-  ) {
+class HttpStatusError extends Error {
+  readonly method: string;
+  readonly url: string;
+  readonly status: number;
+  readonly statusText: string;
+
+  constructor(method: string, url: string, status: number, statusText: string) {
     super(`${method} ${url}: HTTP ${status} ${statusText}`);
     this.name = "HttpStatusError";
+    this.method = method;
+    this.url = url;
+    this.status = status;
+    this.statusText = statusText;
   }
 }
 

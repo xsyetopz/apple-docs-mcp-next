@@ -1,21 +1,13 @@
 {
   "compilerOptions": {
-    "allowArbitraryExtensions": true,
     "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true,
-    "allowUmdGlobalAccess": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "checkJs": false,
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
+    "erasableSyntaxOnly": true,
     "exactOptionalPropertyTypes": true,
-    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "lib": ["ES2023"],
-    "module": "esnext",
+    "lib": ["ESNext"],
+    "module": "preserve",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
     "noEmit": true,
@@ -30,10 +22,9 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2023",
-    "typeRoots": ["./node_modules/@types"],
-    "types": ["bun", "node"],
-    "useDefineForClassFields": true
+    "target": "esnext",
+    "types": ["bun"],
+    "verbatimModuleSyntax": true
   },
   "exclude": ["node_modules", "dist", "build", "out", "coverage"]
 }
