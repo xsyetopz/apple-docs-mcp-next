@@ -1,17 +1,15 @@
 import { beforeEach, describe, expect, type Mock, mock, test } from "bun:test";
 /**
- * Tests for WWDC handlers
+ * The WWDC use cases, over a mocked data source
  */
 
-import {
-  handleBrowseWWDCTopics,
-  handleFindRelatedWWDCVideos,
-  handleGetWWDCCodeExamples,
-  handleGetWWDCVideo,
-  handleListWWDCVideos,
-  handleListWWDCYears,
-  handleSearchWWDCContent,
-} from "../../src/wwdc/wwdc-handlers.ts";
+import { handleBrowseWWDCTopics } from "../../src/wwdc/browse-wwdc-topics.ts";
+import { handleFindRelatedWWDCVideos } from "../../src/wwdc/find-related-wwdc-videos.ts";
+import { handleGetWWDCCodeExamples } from "../../src/wwdc/get-wwdc-code-examples.ts";
+import { handleGetWWDCVideo } from "../../src/wwdc/get-wwdc-video.ts";
+import { handleListWWDCVideos } from "../../src/wwdc/list-wwdc-videos.ts";
+import { handleListWWDCYears } from "../../src/wwdc/list-wwdc-years.ts";
+import { handleSearchWWDCContent } from "../../src/wwdc/search-wwdc-content.ts";
 
 // Mock the data source module
 mock.module("../../src/wwdc/data-source.ts", () => ({

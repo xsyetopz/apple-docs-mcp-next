@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { handleFindRelatedWWDCVideos } from "../wwdc/wwdc-handlers.ts";
+import { handleFindRelatedWWDCVideos } from "../wwdc/find-related-wwdc-videos.ts";
 import { defineTool } from "./define-tool.ts";
 
 export const findRelatedWwdcVideosTool = defineTool({

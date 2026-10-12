@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { handleListWWDCVideos } from "../wwdc/wwdc-handlers.ts";
+import { handleListWWDCVideos } from "../wwdc/list-wwdc-videos.ts";
 import { defineTool } from "./define-tool.ts";
 
 export const listWwdcVideosTool = defineTool({

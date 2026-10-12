@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { handleListWWDCYears } from "../wwdc/wwdc-handlers.ts";
+import { handleListWWDCYears } from "../wwdc/list-wwdc-years.ts";
 import { defineTool } from "./define-tool.ts";
 
 export const listWwdcYearsTool = defineTool({

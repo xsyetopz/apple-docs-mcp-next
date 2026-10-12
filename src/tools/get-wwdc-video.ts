@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { handleGetWWDCVideo } from "../wwdc/wwdc-handlers.ts";
+import { handleGetWWDCVideo } from "../wwdc/get-wwdc-video.ts";
 import { defineTool } from "./define-tool.ts";
 
 export const getWwdcVideoTool = defineTool({

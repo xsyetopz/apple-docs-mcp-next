@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { handleGetWWDCCodeExamples } from "../wwdc/wwdc-handlers.ts";
+import { handleGetWWDCCodeExamples } from "../wwdc/get-wwdc-code-examples.ts";
 import { defineTool } from "./define-tool.ts";
 
 export const getWwdcCodeExamplesTool = defineTool({

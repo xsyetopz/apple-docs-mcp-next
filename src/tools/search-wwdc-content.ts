@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { handleSearchWWDCContent } from "../wwdc/wwdc-handlers.ts";
+import { handleSearchWWDCContent } from "../wwdc/search-wwdc-content.ts";
 import { defineTool } from "./define-tool.ts";
 
 export const searchWwdcContentTool = defineTool({

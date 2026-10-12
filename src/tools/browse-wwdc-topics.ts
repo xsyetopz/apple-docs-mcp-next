@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { handleBrowseWWDCTopics } from "../wwdc/wwdc-handlers.ts";
+import { handleBrowseWWDCTopics } from "../wwdc/browse-wwdc-topics.ts";
 import { defineTool } from "./define-tool.ts";
 
 export const browseWwdcTopicsTool = defineTool({
