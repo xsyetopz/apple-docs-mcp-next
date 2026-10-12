@@ -15,7 +15,7 @@ declare global {
 process.env.NODE_ENV = "test";
 
 // Mock the path module to avoid import.meta.url issues
-mock.module("../src/utils/wwdc-data-source-path.ts", () => ({
+mock.module("../src/wwdc/data-source-path.ts", () => ({
   getWWDCDataDirectory: mock(() => "/mock/data/wwdc"),
 }));
 

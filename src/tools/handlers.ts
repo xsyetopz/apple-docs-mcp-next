@@ -4,7 +4,7 @@
  */
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
-
+import { handleSearchDocsMap } from "../docs/search-docs-map.ts";
 import type AppleDeveloperDocsMCPServer from "../index.ts";
 import {
   findSimilarApisSchema,
@@ -28,7 +28,6 @@ import {
   listWWDCVideosSchema,
   searchWWDCContentSchema,
 } from "../schemas/wwdc.schemas.ts";
-import { handleSearchDocsMap } from "./search-docs-map.ts";
 import {
   handleBrowseWWDCTopics,
   handleFindRelatedWWDCVideos,
@@ -37,7 +36,7 @@ import {
   handleListWWDCVideos,
   handleListWWDCYears,
   handleSearchWWDCContent,
-} from "./wwdc/wwdc-handlers.ts";
+} from "../wwdc/wwdc-handlers.ts";
 
 const text = (result: string): CallToolResult => ({
   content: [{ type: "text", text: result }],

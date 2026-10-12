@@ -1,5 +1,5 @@
 import { mock } from "bun:test";
-import * as httpClientActual from "../../src/utils/http-client.ts";
+import * as httpClientActual from "../../src/core/http-client.ts";
 
 /**
  * The factory for `mock.module` of the HTTP client: every method of `httpClient` is a fresh mock,

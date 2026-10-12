@@ -8,7 +8,7 @@
 import { beforeEach, describe, expect, it, type Mock, mock } from "bun:test";
 
 // Mock wwdc-data-source before importing anything that uses it
-mock.module("../src/utils/wwdc-data-source.ts", () => ({
+mock.module("../src/wwdc/data-source.ts", () => ({
   loadGlobalMetadata: mock(),
   loadTopicIndex: mock(),
   loadYearIndex: mock(),
@@ -26,7 +26,7 @@ type ToolResponse = {
 };
 
 // Mock external dependencies
-mock.module("../src/utils/http-client.ts", () => ({
+mock.module("../src/core/http-client.ts", () => ({
   httpClient: {
     getText: mock().mockResolvedValue(
       '<html><body><ul class="search-results"></ul></body></html>',
@@ -39,7 +39,7 @@ mock.module("../src/utils/http-client.ts", () => ({
   },
 }));
 
-mock.module("../src/utils/logger.ts", () => ({
+mock.module("../src/core/logger.ts", () => ({
   logger: {
     info: mock(),
     error: mock(),
@@ -48,7 +48,7 @@ mock.module("../src/utils/logger.ts", () => ({
   },
 }));
 
-mock.module("../src/utils/cache.ts", () => ({
+mock.module("../src/core/cache.ts", () => ({
   apiCache: {
     get: mock().mockReturnValue(null),
     set: mock(),
@@ -58,49 +58,49 @@ mock.module("../src/utils/cache.ts", () => ({
 }));
 
 // Mock all handler functions to return proper string responses
-mock.module("../src/tools/list-technologies.ts", () => ({
+mock.module("../src/docs/list-technologies.ts", () => ({
   handleListTechnologies: mock().mockResolvedValue("Mock technologies list"),
 }));
 
-mock.module("../src/tools/search-framework-symbols.ts", () => ({
+mock.module("../src/docs/search-framework-symbols.ts", () => ({
   searchFrameworkSymbols: mock().mockResolvedValue("Mock framework symbols"),
 }));
 
-mock.module("../src/tools/get-related-apis.ts", () => ({
+mock.module("../src/docs/get-related-apis.ts", () => ({
   handleGetRelatedApis: mock().mockResolvedValue("Mock related APIs"),
 }));
 
-mock.module("../src/tools/resolve-references-batch.ts", () => ({
+mock.module("../src/docs/resolve-references-batch.ts", () => ({
   handleResolveReferencesBatch: mock().mockResolvedValue("Mock references"),
 }));
 
-mock.module("../src/tools/get-platform-compatibility.ts", () => ({
+mock.module("../src/docs/get-platform-compatibility.ts", () => ({
   handleGetPlatformCompatibility: mock().mockResolvedValue(
     "Mock platform compatibility",
   ),
 }));
 
-mock.module("../src/tools/find-similar-apis.ts", () => ({
+mock.module("../src/docs/find-similar-apis.ts", () => ({
   handleFindSimilarApis: mock().mockResolvedValue("Mock similar APIs"),
 }));
 
-mock.module("../src/tools/get-documentation-updates.ts", () => ({
+mock.module("../src/docs/get-documentation-updates.ts", () => ({
   handleGetDocumentationUpdates: mock().mockResolvedValue(
     "Mock documentation updates",
   ),
 }));
 
-mock.module("../src/tools/get-technology-overviews.ts", () => ({
+mock.module("../src/docs/get-technology-overviews.ts", () => ({
   handleGetTechnologyOverviews: mock().mockResolvedValue(
     "Mock technology overviews",
   ),
 }));
 
-mock.module("../src/tools/get-sample-code.ts", () => ({
+mock.module("../src/docs/get-sample-code.ts", () => ({
   handleGetSampleCode: mock().mockResolvedValue("Mock sample code"),
 }));
 
-mock.module("../src/tools/doc-fetcher.ts", () => ({
+mock.module("../src/docs/doc-fetcher.ts", () => ({
   fetchAppleDocJson: mock().mockResolvedValue({
     content: [
       {
@@ -160,7 +160,7 @@ describe("Response Format Validation", () => {
     });
 
     it("should ask for WWDC sessions separately under all, and list them after the documentation", async () => {
-      const { httpClient } = await import("../src/utils/http-client.ts");
+      const { httpClient } = await import("../src/core/http-client.ts");
       const post = httpClient.postText as Mock<typeof httpClient.postText>;
       const stream = (results: unknown[]) =>
         JSON.stringify({
@@ -223,7 +223,7 @@ describe("Response Format Validation", () => {
     });
 
     it("should make one request under the other filters", async () => {
-      const { httpClient } = await import("../src/utils/http-client.ts");
+      const { httpClient } = await import("../src/core/http-client.ts");
       const post = httpClient.postText as Mock<typeof httpClient.postText>;
       post.mockClear();
 
@@ -322,7 +322,7 @@ describe("Response Format Validation", () => {
 
     it("should handle network errors with proper format", async () => {
       // Mock network failure
-      const { httpClient } = await import("../src/utils/http-client.ts");
+      const { httpClient } = await import("../src/core/http-client.ts");
       (
         httpClient.postText as Mock<typeof httpClient.postText>
       ).mockRejectedValueOnce(new Error("Network error"));
@@ -465,7 +465,7 @@ describe("Response Format Validation", () => {
         ) +
         "</ul></body></html>";
 
-      const { httpClient } = await import("../src/utils/http-client.ts");
+      const { httpClient } = await import("../src/core/http-client.ts");
       (
         httpClient.getText as Mock<typeof httpClient.getText>
       ).mockResolvedValueOnce(largeHtml);

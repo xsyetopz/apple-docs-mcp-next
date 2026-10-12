@@ -12,13 +12,13 @@
  */
 
 import { beforeEach, describe, expect, it, mock } from "bun:test";
-import * as cacheActual from "../../src/utils/cache.ts";
+import * as cacheActual from "../../src/core/cache.ts";
 
 // Create a mock function first
 const mockFetchAppleDocJson = mock();
 
 // Mock wwdc-data-source before importing anything that uses it
-mock.module("../../src/utils/wwdc-data-source.ts", () => ({
+mock.module("../../src/wwdc/data-source.ts", () => ({
   loadGlobalMetadata: mock(),
   loadTopicIndex: mock(),
   loadYearIndex: mock(),
@@ -29,12 +29,12 @@ mock.module("../../src/utils/wwdc-data-source.ts", () => ({
 }));
 
 // Mock the doc-fetcher module
-mock.module("../../src/tools/doc-fetcher.ts", () => ({
+mock.module("../../src/docs/doc-fetcher.ts", () => ({
   fetchAppleDocJson: mockFetchAppleDocJson,
 }));
 
 // Mock external dependencies
-mock.module("../../src/utils/http-client.ts", () => ({
+mock.module("../../src/core/http-client.ts", () => ({
   httpClient: {
     getText: mock().mockResolvedValue(
       '<html><body><ul class="search-results"></ul></body></html>',
@@ -47,7 +47,7 @@ mock.module("../../src/utils/http-client.ts", () => ({
   },
 }));
 
-mock.module("../../src/utils/logger.ts", () => ({
+mock.module("../../src/core/logger.ts", () => ({
   logger: {
     info: mock(),
     error: mock(),
@@ -56,7 +56,7 @@ mock.module("../../src/utils/logger.ts", () => ({
   },
 }));
 
-mock.module("../../src/utils/cache.ts", () => ({
+mock.module("../../src/core/cache.ts", () => ({
   ...cacheActual,
   apiCache: {
     get: mock().mockReturnValue(null),

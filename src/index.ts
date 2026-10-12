@@ -4,29 +4,29 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import pkg from "../package.json";
-import { fetchAppleDocJson } from "./tools/doc-fetcher.ts";
-import { handleFindSimilarApis } from "./tools/find-similar-apis.ts";
-import { handleGetDocumentationUpdates } from "./tools/get-documentation-updates.ts";
-import { handleGetPlatformCompatibility } from "./tools/get-platform-compatibility.ts";
-import { handleGetRelatedApis } from "./tools/get-related-apis.ts";
-import { handleGetSampleCode } from "./tools/get-sample-code.ts";
-import { handleGetTechnologyOverviews } from "./tools/get-technology-overviews.ts";
-import { registerTools } from "./tools/handlers.ts";
-import { handleListTechnologies } from "./tools/list-technologies.ts";
-import { handleResolveReferencesBatch } from "./tools/resolve-references-batch.ts";
-import { searchStreams } from "./tools/search-api.ts";
-import { searchFrameworkSymbols } from "./tools/search-framework-symbols.ts";
-import { parseSearchResults } from "./tools/search-parser.ts";
-import { API_LIMITS, APPLE_URLS } from "./utils/constants.ts";
+import { API_LIMITS, APPLE_URLS } from "./core/constants.ts";
 import {
   createErrorResponse,
   createStandardErrorResponse,
   ErrorType,
   isAppError,
   validateInput,
-} from "./utils/error-handler.ts";
-import { logger } from "./utils/logger.ts";
-import { isValidAppleDeveloperUrl } from "./utils/url-converter.ts";
+} from "./core/error-handler.ts";
+import { logger } from "./core/logger.ts";
+import { fetchAppleDocJson } from "./docs/doc-fetcher.ts";
+import { handleFindSimilarApis } from "./docs/find-similar-apis.ts";
+import { handleGetDocumentationUpdates } from "./docs/get-documentation-updates.ts";
+import { handleGetPlatformCompatibility } from "./docs/get-platform-compatibility.ts";
+import { handleGetRelatedApis } from "./docs/get-related-apis.ts";
+import { handleGetSampleCode } from "./docs/get-sample-code.ts";
+import { handleGetTechnologyOverviews } from "./docs/get-technology-overviews.ts";
+import { handleListTechnologies } from "./docs/list-technologies.ts";
+import { handleResolveReferencesBatch } from "./docs/resolve-references-batch.ts";
+import { searchStreams } from "./docs/search-api.ts";
+import { searchFrameworkSymbols } from "./docs/search-framework-symbols.ts";
+import { parseSearchResults } from "./docs/search-parser.ts";
+import { isValidAppleDeveloperUrl } from "./docs/url-converter.ts";
+import { registerTools } from "./tools/handlers.ts";
 
 const PACKAGE = z.object({ name: z.string(), version: z.string() }).parse(pkg);
 

@@ -7,15 +7,15 @@
  */
 import { writeFile } from "node:fs/promises";
 import { setTimeout as sleep } from "node:timers/promises";
-import { helpPagesOf } from "../src/tools/help-pages.ts";
+import { APPLE_URLS } from "../src/core/constants.ts";
+import { httpClient } from "../src/core/http-client.ts";
+import { helpPagesOf } from "../src/docs/help-pages.ts";
 import type {
   RenderIndex,
   RenderIndexNode,
   RenderNode,
 } from "../src/types/docc.ts";
 import { isTopicReference } from "../src/types/docc.ts";
-import { APPLE_URLS } from "../src/utils/constants.ts";
-import { httpClient } from "../src/utils/http-client.ts";
 
 class UsageError extends Error {}
 

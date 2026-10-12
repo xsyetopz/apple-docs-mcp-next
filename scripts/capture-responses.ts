@@ -4,11 +4,10 @@
  * one JSON array, and the document they build) and the technologies page.
  */
 import { mkdir, writeFile } from "node:fs/promises";
-
-import { searchStreams } from "../src/tools/search-api.ts";
-import { streamedDocument } from "../src/tools/search-parser.ts";
-import { APPLE_URLS } from "../src/utils/constants.ts";
-import { httpClient } from "../src/utils/http-client.ts";
+import { APPLE_URLS } from "../src/core/constants.ts";
+import { httpClient } from "../src/core/http-client.ts";
+import { searchStreams } from "../src/docs/search-api.ts";
+import { streamedDocument } from "../src/docs/search-parser.ts";
 
 /** One search per kind of result: docs and WWDC sessions, guidelines, sample code, API reference, App Store Connect Help */
 const SEARCHES: Array<[name: string, query: string, type: string]> = [

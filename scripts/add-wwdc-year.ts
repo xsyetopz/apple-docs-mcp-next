@@ -11,15 +11,15 @@ import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { extractVideoContent } from "../src/tools/wwdc/content-extractor.ts";
-import { extractTopicVideos } from "../src/tools/wwdc/topics-extractor.ts";
-import { extractVideoList } from "../src/tools/wwdc/video-list-extractor.ts";
+import { extractVideoContent } from "../src/wwdc/extractors/content-extractor.ts";
+import { extractTopicVideos } from "../src/wwdc/extractors/topics-extractor.ts";
+import { extractVideoList } from "../src/wwdc/extractors/video-list-extractor.ts";
 import type {
   GlobalMetadata,
   TopicIndex,
   WWDCVideo,
   YearIndex,
-} from "../src/types/wwdc.ts";
+} from "../src/wwdc/types.ts";
 
 type Entry = YearIndex["videos"][number];
 

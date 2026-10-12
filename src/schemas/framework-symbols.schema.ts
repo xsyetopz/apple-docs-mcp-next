@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { API_LIMITS } from "../utils/constants.ts";
+import { API_LIMITS } from "../core/constants.ts";
 
 export const searchFrameworkSymbolsSchema = z.object({
   framework: z
