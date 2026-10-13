@@ -36,3 +36,4 @@ DEVLOG.MD
 /[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9]-*.txt
 
 /skills-lock.json
+.dotclaude/rate-limits.jsonl
