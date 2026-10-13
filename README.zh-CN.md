@@ -59,6 +59,17 @@ Apple 开发者文档 MCP 服务器 - 通过模型上下文协议访问 Apple �
 claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 ```
 
+**从源码安装**：`bunx` 从 npm 下载软件包，因此对于 fork 或 npm 上没有的版本，它会以 404 失败。请改为从克隆的仓库运行服务器：
+
+```bash
+git clone https://github.com/xsyetopz/apple-docs-mcp-next.git
+cd apple-docs-mcp-next
+bun install
+claude mcp add --scope user apple-docs -- bun run "$PWD/src/main.ts"
+```
+
+Claude Code 从当前项目的文件夹启动服务器，因此路径必须是绝对路径。`"$PWD"` 会得到克隆仓库的绝对路径。
+
 [📖 Claude Code MCP 文档](https://docs.anthropic.com/en/docs/claude-code/mcp)
 
 </details>

@@ -59,6 +59,18 @@ Restart Claude Desktop and start asking about Apple APIs!
 claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 ```
 
+**From source**: `bunx` downloads the package from npm, so it fails with a 404 for a fork or a version that is not on npm.
+Run the server from a clone instead:
+
+```bash
+git clone https://github.com/xsyetopz/apple-docs-mcp-next.git
+cd apple-docs-mcp-next
+bun install
+claude mcp add --scope user apple-docs -- bun run "$PWD/src/main.ts"
+```
+
+Claude Code starts the server from the folder of the current project, so the path must be absolute. `"$PWD"` gives the absolute path of the clone.
+
 [📖 Claude Code MCP docs](https://docs.anthropic.com/en/docs/claude-code/mcp)
 
 </details>

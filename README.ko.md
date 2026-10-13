@@ -61,6 +61,17 @@ Claude Desktop을 재시작하고 Apple API에 대해 질문해보세요!
 claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
 ```
 
+**소스에서 설치**: `bunx`는 npm에서 패키지를 내려받으므로, 포크나 npm에 없는 버전에서는 404로 실패합니다. 대신 클론에서 서버를 실행하세요:
+
+```bash
+git clone https://github.com/xsyetopz/apple-docs-mcp-next.git
+cd apple-docs-mcp-next
+bun install
+claude mcp add --scope user apple-docs -- bun run "$PWD/src/main.ts"
+```
+
+Claude Code는 현재 프로젝트 폴더에서 서버를 시작하므로 경로는 절대 경로여야 합니다. `"$PWD"`는 클론의 절대 경로가 됩니다.
+
 [📖 Claude Code MCP 문서](https://docs.anthropic.com/en/docs/claude-code/mcp)
 
 </details>
