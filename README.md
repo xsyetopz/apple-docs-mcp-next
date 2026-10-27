@@ -384,24 +384,19 @@ bun install
 | Tool | What it returns |
 | ------ | ----------------- |
 | `search_apple_docs` | Search results from developer.apple.com: documentation, HIG, sample code, App Store Connect Help and WWDC sessions |
-| `get_apple_doc_content` | One documentation page as Markdown, optionally with related, referenced and similar APIs and a platform analysis |
+| `get_apple_doc_content` | One documentation page as Markdown |
 | `search_docs_map` | Pages whose title contains a query, from the docs map on disk (no network) |
 | `list_technologies` | Apple's technology index, by category, language and beta status |
 | `search_framework_symbols` | The symbols of one framework, by kind and wildcard name |
-| `get_related_apis` | Inheritance, conformances, See Also and Topics of one page |
-| `resolve_references_batch` | The pages one page references, with their summaries and declarations |
-| `get_platform_compatibility` | Where an API is available, introduced and deprecated |
-| `find_similar_apis` | Alternatives to an API, Apple's replacements first for a deprecated one |
+| `get_api_relations` | Related, referenced or similar APIs, or platform availability, of one page: `kind` "related", "references", "similar" or "platforms" |
 | `get_documentation_updates` | Release notes, framework updates pages and WWDC What's new pages |
 | `get_technology_overviews` | Apple's Technology Overviews guides |
 | `get_sample_code` | Apple's sample-code projects, by framework and keyword |
-| `list_wwdc_videos` | WWDC sessions by year, topic and code |
+| `list_wwdc_videos` | WWDC sessions by year, topic and code; with no filter, the index of years and topic IDs |
 | `search_wwdc_content` | Full-text search of WWDC transcripts and code |
-| `get_wwdc_video` | One session: links, transcript, code examples and related sessions |
+| `get_wwdc_video` | One session: links, code examples and related sessions, and the transcript on request |
 | `get_wwdc_code_examples` | WWDC code examples by the type or framework they use |
-| `browse_wwdc_topics` | The 19 WWDC topics, or one topic's sessions |
 | `find_related_wwdc_videos` | Sessions related to one session |
-| `list_wwdc_years` | The WWDC years with their session counts |
 
 Every tool is read-only. A failed call returns one error result with what to try instead.
 

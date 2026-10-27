@@ -383,24 +383,19 @@ bun install
 | 工具 | 返回内容 |
 | ------ | ----------------- |
 | `search_apple_docs` | 来自 developer.apple.com 的搜索结果：文档、HIG、示例代码、App Store Connect 帮助和 WWDC 会议 |
-| `get_apple_doc_content` | 一个文档页面的 Markdown 内容，可选包含相关、引用和类似 API 以及平台分析 |
+| `get_apple_doc_content` | 一个文档页面的 Markdown 内容 |
 | `search_docs_map` | 标题包含查询词的页面，来自磁盘上的文档地图（无需网络） |
 | `list_technologies` | Apple 技术索引，按类别、语言和 beta 状态分组 |
 | `search_framework_symbols` | 某个框架的符号，按类型和通配符名称筛选 |
-| `get_related_apis` | 某个页面的继承、遵循、See Also 和 Topics |
-| `resolve_references_batch` | 某个页面引用的页面，附带其摘要和声明 |
-| `get_platform_compatibility` | API 在哪些平台可用，以及引入和弃用的版本 |
-| `find_similar_apis` | API 的替代项，已弃用的 API 优先显示 Apple 推荐的替代方案 |
+| `get_api_relations` | 一个页面的相关、引用、类似 API 或平台支持情况：`kind` 为 "related"、"references"、"similar"、"platforms" |
 | `get_documentation_updates` | 发布说明、框架更新页面和 WWDC What's new 页面 |
 | `get_technology_overviews` | Apple 的技术概览指南 |
 | `get_sample_code` | Apple 的示例代码项目，按框架和关键词 |
-| `list_wwdc_videos` | 按年份、主题和是否含代码列出的 WWDC 会议 |
+| `list_wwdc_videos` | 按年份、主题和是否含代码列出的 WWDC 会议；不带筛选时返回年份和主题 ID 索引 |
 | `search_wwdc_content` | 对 WWDC 文字记录和代码的全文搜索 |
-| `get_wwdc_video` | 单场会议：链接、文字记录、代码示例和相关会议 |
+| `get_wwdc_video` | 单场会议：链接、代码示例和相关会议，文字记录按需提供 |
 | `get_wwdc_code_examples` | 按所用类型或框架列出的 WWDC 代码示例 |
-| `browse_wwdc_topics` | 19 个 WWDC 主题，或某个主题下的会议 |
 | `find_related_wwdc_videos` | 与某场会议相关的会议 |
-| `list_wwdc_years` | WWDC 年份及其会议数量 |
 
 所有工具都是只读的。失败的调用只返回一个错误结果，并说明可以改为尝试什么。
 

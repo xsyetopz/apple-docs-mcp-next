@@ -383,24 +383,19 @@ bun install
 | ツール | 返すもの |
 | ------ | ----------------- |
 | `search_apple_docs` | developer.apple.com の検索結果: ドキュメント、HIG、サンプルコード、App Store Connect ヘルプ、WWDC セッション |
-| `get_apple_doc_content` | 1 つのドキュメントページを Markdown で。任意で関連、参照、類似 API とプラットフォーム分析を含む |
+| `get_apple_doc_content` | 1 つのドキュメントページを Markdown で |
 | `search_docs_map` | ドキュメントマップ（ディスク上）からタイトルに検索語を含むページ（ネットワークなし） |
 | `list_technologies` | カテゴリ、言語、ベータ状況で整理された Apple のテクノロジー索引 |
 | `search_framework_symbols` | 1 つのフレームワークのシンボル。種類とワイルドカード名で絞り込み |
-| `get_related_apis` | 1 つのページの継承、準拠、See Also、Topics |
-| `resolve_references_batch` | 1 つのページが参照するページ。その概要と宣言を含む |
-| `get_platform_compatibility` | API が利用可能になった、導入された、非推奨になった場所 |
-| `find_similar_apis` | API の代替。非推奨 API は Apple の代替を先頭に表示 |
+| `get_api_relations` | 1 つのページの関連、参照、類似 API、またはプラットフォーム対応: `kind` は "related"、"references"、"similar"、"platforms" |
 | `get_documentation_updates` | リリースノート、フレームワークの更新ページ、WWDC の What's new ページ |
 | `get_technology_overviews` | Apple のテクノロジー概要ガイド |
 | `get_sample_code` | Apple のサンプルコードプロジェクト。フレームワークとキーワードで検索 |
-| `list_wwdc_videos` | 年、トピック、コードの有無で絞り込んだ WWDC セッション |
+| `list_wwdc_videos` | 年、トピック、コードの有無で絞り込んだ WWDC セッション。絞り込みなしでは年とトピック ID の一覧 |
 | `search_wwdc_content` | WWDC のトランスクリプトとコードの全文検索 |
-| `get_wwdc_video` | 1 つのセッション: リンク、トランスクリプト、コード例、関連セッション |
+| `get_wwdc_video` | 1 つのセッション: リンク、コード例、関連セッション。トランスクリプトは指定時のみ |
 | `get_wwdc_code_examples` | 使われている型またはフレームワークで絞り込んだ WWDC のコード例 |
-| `browse_wwdc_topics` | 19 の WWDC トピック、または 1 つのトピックのセッション |
 | `find_related_wwdc_videos` | 1 つのセッションに関連するセッション |
-| `list_wwdc_years` | WWDC の年と、それぞれのセッション数 |
 
 すべてのツールは読み取り専用です。失敗した呼び出しは、代わりに何を試すべきかを示す 1 つのエラー結果を返します。
 

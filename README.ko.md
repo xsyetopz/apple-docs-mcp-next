@@ -385,24 +385,19 @@ bun install
 | 도구 | 반환 내용 |
 | ------ | ----------------- |
 | `search_apple_docs` | developer.apple.com의 검색 결과: 문서, HIG, 샘플 코드, App Store Connect 도움말 및 WWDC 세션 |
-| `get_apple_doc_content` | 문서 페이지 하나를 Markdown으로, 선택적으로 관련, 참조 및 유사 API와 플랫폼 분석 포함 |
+| `get_apple_doc_content` | 문서 페이지 하나를 Markdown으로 |
 | `search_docs_map` | 디스크의 문서 맵에서 제목에 검색어가 포함된 페이지 (네트워크 사용 없음) |
 | `list_technologies` | 카테고리, 언어, 베타 상태별 Apple 기술 색인 |
 | `search_framework_symbols` | 한 프레임워크의 심볼, 종류와 와일드카드 이름별 |
-| `get_related_apis` | 한 페이지의 상속, 준수, See Also 및 Topics |
-| `resolve_references_batch` | 한 페이지가 참조하는 페이지들, 요약 및 선언 포함 |
-| `get_platform_compatibility` | API가 사용 가능한 위치, 도입 및 사용 중단 시점 |
-| `find_similar_apis` | API의 대안. 사용 중단된 API는 Apple의 대체 API가 먼저 나옴 |
+| `get_api_relations` | 한 페이지의 관련, 참조, 유사 API 또는 플랫폼 지원: `kind`는 "related", "references", "similar", "platforms" |
 | `get_documentation_updates` | 릴리스 노트, 프레임워크 업데이트 페이지 및 WWDC What's new 페이지 |
 | `get_technology_overviews` | Apple의 Technology Overviews 가이드 |
 | `get_sample_code` | 프레임워크와 키워드별 Apple 샘플 코드 프로젝트 |
-| `list_wwdc_videos` | 연도, 주제, 코드별 WWDC 세션 |
+| `list_wwdc_videos` | 연도, 주제, 코드별 WWDC 세션. 필터가 없으면 연도와 주제 ID 목록 |
 | `search_wwdc_content` | WWDC 대본과 코드의 전문 검색 |
-| `get_wwdc_video` | 세션 하나: 링크, 대본, 코드 예제 및 관련 세션 |
+| `get_wwdc_video` | 세션 하나: 링크, 코드 예제 및 관련 세션, 요청 시 대본 |
 | `get_wwdc_code_examples` | 사용하는 타입이나 프레임워크별 WWDC 코드 예제 |
-| `browse_wwdc_topics` | WWDC 주제 19개, 또는 한 주제의 세션 |
 | `find_related_wwdc_videos` | 한 세션과 관련된 세션 |
-| `list_wwdc_years` | WWDC 연도와 각 연도의 세션 수 |
 
 모든 도구는 읽기 전용입니다. 호출이 실패하면 대신 무엇을 시도할지 알려주는 오류 결과 하나를 반환합니다.
 
