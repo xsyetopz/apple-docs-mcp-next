@@ -63,7 +63,6 @@ describe("the server", () => {
     const { tools } = await client.listTools();
 
     expect(tools.map((tool) => tool.name).sort()).toEqual([
-      "browse_wwdc_topics",
       "find_related_wwdc_videos",
       "get_api_relations",
       "get_apple_doc_content",
@@ -74,7 +73,6 @@ describe("the server", () => {
       "get_wwdc_video",
       "list_technologies",
       "list_wwdc_videos",
-      "list_wwdc_years",
       "search_apple_docs",
       "search_docs_map",
       "search_framework_symbols",
@@ -255,7 +253,7 @@ describe("the server for a client speaking 2026-07-28", () => {
         cacheScope: "public",
       });
       const listed = await client.listTools();
-      expect(listed.tools).toHaveLength(16);
+      expect(listed.tools).toHaveLength(14);
       expect(listed).toMatchObject({ ttlMs: 3_600_000, cacheScope: "public" });
     } finally {
       await client.close();

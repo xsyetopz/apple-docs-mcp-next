@@ -8,6 +8,7 @@ import {
   loadVideoData,
   loadYearIndex,
 } from "./data-source.ts";
+import { sessionLine } from "./format.ts";
 import { loadVideosData } from "./load-videos.ts";
 import type { WWDCVideo } from "./types.ts";
 
@@ -33,8 +34,7 @@ export const handleFindRelatedWWDCVideos = async ({
 }: RelatedVideosQuery): Promise<string> => {
   const sourceVideo = await loadVideoData(year, videoId);
 
-  let content = `# Related Videos for "${sourceVideo.title}"\n\n`;
-  content += `**Source:** [${sourceVideo.title}](${sourceVideo.url}) (WWDC${year})\n\n`;
+  let content = `# Related to [${sourceVideo.title}](${sourceVideo.url}) (WWDC${year})\n\n`;
 
   const relatedVideos: Array<{
     video: WWDCVideo & { year: string };
@@ -169,33 +169,19 @@ export const handleFindRelatedWWDCVideos = async ({
   if (limitedResults.length === 0) {
     content += "No related videos found.\n";
   } else {
-    content += `## Related Videos (${limitedResults.length})\n\n`;
-
-    limitedResults.forEach((result) => {
-      content += `### [${result.video.title}](${result.video.url})\n`;
-      content += `*WWDC${result.video.year} | ${result.relationship}*\n\n`;
-
-      const features: string[] = [];
-      if (result.video.duration) {
-        features.push(`Duration: ${result.video.duration}`);
-      }
-      if (result.video.hasTranscript) {
-        features.push("Transcript");
-      }
-      if (result.video.hasCode) {
-        features.push("Code");
-      }
-
-      if (features.length > 0) {
-        content += `${features.join(" | ")}\n`;
-      }
-
-      if (result.video.topics.length > 0) {
-        content += `**Topics:** ${result.video.topics.join(", ")}\n`;
-      }
-
-      content += "\n";
-    });
+    content += `${limitedResults.length} of ${relatedVideos.length} sessions\n\n`;
+    content += `${limitedResults
+      .map((result) =>
+        sessionLine(result.video, {
+          showYear: true,
+          showTopics: false,
+          note: result.relationship,
+        }),
+      )
+      .join("\n")}\n`;
+    if (relatedVideos.length > limitedResults.length) {
+      content += `\nShowing ${limitedResults.length} of ${relatedVideos.length}. Raise limit for more.\n`;
+    }
   }
 
   return content;

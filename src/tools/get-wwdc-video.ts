@@ -7,24 +7,15 @@ export const getWwdcVideoTool = defineTool({
   name: "get_wwdc_video",
   title: "Get WWDC Video",
   description:
-    "One WWDC session from the bundled data, as text (no network): title, year and topics; its links, including the HD and SD .mp4 downloads and the documentation it covers; the full transcript as plain text, without timestamps; every code example with the time it appears; and related sessions. Transcripts run to tens of KB: includeTranscript false leaves it out.",
+    "Read one WWDC session from bundled data (no network): title, topics, links (HD .mp4 download, covered documentation), code examples with their times and related sessions; the plain-text transcript only with includeTranscript (tens of KB).",
+  openWorld: false,
   inputSchema: z.object({
-    year: z.string().describe('WWDC year. Example: "2025"'),
+    year: z.string().describe('e.g. "2025"'),
     videoId: z
       .string()
-      .describe(
-        'Session ID. Example: "10101" for keynote, "238" for session 238.',
-      ),
-    includeTranscript: z
-      .boolean()
-      .default(true)
-      .describe(
-        "Include the full transcript, as plain text without timestamps. Default: true",
-      ),
-    includeCode: z
-      .boolean()
-      .default(true)
-      .describe("Include all code examples from the session. Default: true"),
+      .describe('Session ID, e.g. "238"; "10101" is the keynote'),
+    includeTranscript: z.boolean().default(false),
+    includeCode: z.boolean().default(true),
   }),
   run: handleGetWWDCVideo,
 });

@@ -7,6 +7,7 @@ import {
   loadTopicIndex,
   loadYearIndex,
 } from "./data-source.ts";
+import { tidyCode } from "./format.ts";
 import { loadVideosData } from "./load-videos.ts";
 
 export interface CodeExamplesQuery {
@@ -123,7 +124,7 @@ export const handleGetWWDCCodeExamples = async ({
 
   const limitedExamples = codeExamples.slice(0, limit);
 
-  return formatCodeExamples(limitedExamples, framework, topic, year, language);
+  return formatCodeExamples(limitedExamples, codeExamples.length);
 };
 
 /**
@@ -139,64 +140,24 @@ const formatCodeExamples = (
     videoUrl: string;
     year: string;
   }>,
-  framework?: string,
-  topic?: string,
-  year?: string,
-  language?: string,
+  total: number,
 ): string => {
   if (examples.length === 0) {
     return "No code examples found matching the criteria.";
   }
 
-  let content = "# WWDC Code Examples\n\n";
+  let content = `${examples.length} of ${total} code examples\n\n`;
 
-  const filters: string[] = [];
-  if (framework) {
-    filters.push(`Framework: ${framework}`);
-  }
-  if (topic) {
-    filters.push(`Topic: ${topic}`);
-  }
-  if (year) {
-    filters.push(`Year: ${year}`);
-  }
-  if (language) {
-    filters.push(`Language: ${language}`);
+  for (const example of examples) {
+    const title = example.title || "Code Example";
+    const at = example.timestamp ? ` @ ${example.timestamp}` : "";
+    content += `### ${title} · [${example.videoTitle}](${example.videoUrl}) · ${example.year}${at}\n`;
+    content += `\`\`\`${example.language}\n${tidyCode(example.code, example.title)}\n\`\`\`\n\n`;
   }
 
-  if (filters.length > 0) {
-    content += `**Filter Conditions:** ${filters.join(", ")}\n\n`;
+  if (total > examples.length) {
+    content += `Showing ${examples.length} of ${total}. Narrow with year, topic or language, or raise limit.\n`;
   }
-
-  content += `**Found ${examples.length} code examples**\n\n`;
-
-  const examplesByLanguage = examples.reduce(
-    (acc, ex) => {
-      const group = acc[ex.language] ?? [];
-      group.push(ex);
-      acc[ex.language] = group;
-      return acc;
-    },
-    {} as Record<string, typeof examples>,
-  );
-
-  Object.keys(examplesByLanguage).forEach((lang) => {
-    content += `## ${lang.charAt(0).toUpperCase() + lang.slice(1)}\n\n`;
-
-    (examplesByLanguage[lang] ?? []).forEach((example) => {
-      content += `### ${example.title || "Code Example"}\n`;
-      content += `*From: [${example.videoTitle}](${example.videoUrl}) (WWDC${example.year})*`;
-
-      if (example.timestamp) {
-        content += ` *@ ${example.timestamp}*`;
-      }
-      content += "\n\n";
-
-      content += `\`\`\`${example.language}\n`;
-      content += example.code;
-      content += "\n```\n\n";
-    });
-  });
 
   return content;
 };

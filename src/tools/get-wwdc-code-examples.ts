@@ -7,38 +7,24 @@ export const getWwdcCodeExamplesTool = defineTool({
   name: "get_wwdc_code_examples",
   title: "Get WWDC Code Examples",
   description:
-    'Code examples from the bundled WWDC sessions (no network): each with its title, its session\'s title, link and year, the time it appears, and the code. framework keeps the examples whose code mentions it, so "SwiftUI" matches any code that imports SwiftUI; topic, language and year filter too.',
+    "Code examples from WWDC sessions, from bundled data (no network): title, session title, link, year, time and the code. Pass the type or attribute the code contains as framework.",
+  openWorld: false,
   inputSchema: z.object({
     framework: z
       .string()
       .optional()
       .describe(
-        'Framework to find examples for. Examples: "SwiftUI", "SwiftData", "RealityKit".',
+        'Text the code mentions, e.g. "SwiftUI", "@Generable", "LanguageModelSession"',
       ),
     topic: z
       .string()
       .optional()
       .describe(
-        'A topic ID from browse_wwdc_topics, such as "swift" or "swiftui-ui-frameworks", keeps that topic\'s sessions; any other text, such as "animation", keeps the sessions whose title or topic names contain it.',
+        'A topic ID from list_wwdc_videos ("swift") or text in a session title or topic name ("animation")',
       ),
-    year: z
-      .string()
-      .optional()
-      .describe('WWDC year filter ("2025", "2024", etc.).'),
-    language: z
-      .string()
-      .optional()
-      .describe(
-        'Programming language: "swift", "objc", "javascript", "metal".',
-      ),
-    limit: z
-      .number()
-      .min(1)
-      .max(100)
-      .default(30)
-      .describe(
-        "Max examples (default: 30). Each includes code and source video info.",
-      ),
+    year: z.string().optional().describe('e.g. "2025"'),
+    language: z.string().optional().describe('e.g. "swift"'),
+    limit: z.number().min(1).max(100).default(10),
   }),
   run: handleGetWWDCCodeExamples,
 });

@@ -1,5 +1,4 @@
 /** Every tool the server offers, in the order a client lists them */
-import { browseWwdcTopicsTool } from "./browse-wwdc-topics.ts";
 import type { Tool } from "./define-tool.ts";
 import { findRelatedWwdcVideosTool } from "./find-related-wwdc-videos.ts";
 import { getApiRelationsTool } from "./get-api-relations.ts";
@@ -11,7 +10,6 @@ import { getWwdcCodeExamplesTool } from "./get-wwdc-code-examples.ts";
 import { getWwdcVideoTool } from "./get-wwdc-video.ts";
 import { listTechnologiesTool } from "./list-technologies.ts";
 import { listWwdcVideosTool } from "./list-wwdc-videos.ts";
-import { listWwdcYearsTool } from "./list-wwdc-years.ts";
 import { searchAppleDocsTool } from "./search-apple-docs.ts";
 import { searchDocsMapTool } from "./search-docs-map.ts";
 import { searchFrameworkSymbolsTool } from "./search-framework-symbols.ts";
@@ -31,7 +29,5 @@ export const tools: readonly Tool[] = [
   searchWwdcContentTool,
   getWwdcVideoTool,
   getWwdcCodeExamplesTool,
-  browseWwdcTopicsTool,
   findRelatedWwdcVideosTool,
-  listWwdcYearsTool,
 ];

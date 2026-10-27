@@ -165,18 +165,20 @@ describe("WWDC Tools Integration", () => {
   });
 
   describe("list_wwdc_videos", () => {
-    it("should list WWDC videos", async () => {
+    it("should return the index without arguments", async () => {
       const result = await call("list_wwdc_videos", {});
 
       expect(result).toHaveProperty("content");
-      expect(result.content[0]?.text).toContain("WWDC Video List");
+      expect(result.content[0]?.text).toContain("Years:");
+      expect(result.content[0]?.text).toContain("2025");
+      expect(result.content[0]?.text).toContain("2024");
       expect(mockLoadGlobalMetadata).toHaveBeenCalled();
     });
 
     it("should filter videos by year", async () => {
       const result = await call("list_wwdc_videos", { year: "2025" });
 
-      expect(result.content[0]?.text).toContain("2025");
+      expect(result.content[0]?.text).toContain("sessions");
       expect(mockLoadYearIndex).toHaveBeenCalledWith("2025");
     });
 
@@ -248,21 +250,6 @@ describe("WWDC Tools Integration", () => {
     });
   });
 
-  describe("browse_wwdc_topics", () => {
-    it("should list all topics", async () => {
-      const result = await call("browse_wwdc_topics", {});
-
-      expect(result.content[0]?.text).toContain("WWDC Topics");
-      expect(mockLoadGlobalMetadata).toHaveBeenCalled();
-    });
-
-    it("should show specific topic", async () => {
-      await call("browse_wwdc_topics", { topicId: "swiftui" });
-
-      expect(mockLoadTopicIndex).toHaveBeenCalledWith("swiftui");
-    });
-  });
-
   describe("find_related_wwdc_videos", () => {
     it("should find related videos", async () => {
       const result = await call("find_related_wwdc_videos", {
@@ -272,16 +259,6 @@ describe("WWDC Tools Integration", () => {
 
       expect(result).toHaveProperty("content");
       expect(mockLoadVideoData).toHaveBeenCalledWith("2025", "10001");
-    });
-  });
-
-  describe("list_wwdc_years", () => {
-    it("should list available years", async () => {
-      const result = await call("list_wwdc_years", {});
-
-      expect(result.content[0]?.text).toContain("2025");
-      expect(result.content[0]?.text).toContain("2024");
-      expect(mockLoadGlobalMetadata).toHaveBeenCalled();
     });
   });
 

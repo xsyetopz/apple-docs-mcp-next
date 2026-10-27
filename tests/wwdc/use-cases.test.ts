@@ -3,12 +3,10 @@ import { beforeEach, describe, expect, type Mock, mock, test } from "bun:test";
  * The WWDC use cases, over a mocked data source
  */
 
-import { handleBrowseWWDCTopics } from "../../src/wwdc/browse-wwdc-topics.ts";
 import { handleFindRelatedWWDCVideos } from "../../src/wwdc/find-related-wwdc-videos.ts";
 import { handleGetWWDCCodeExamples } from "../../src/wwdc/get-wwdc-code-examples.ts";
 import { handleGetWWDCVideo } from "../../src/wwdc/get-wwdc-video.ts";
 import { handleListWWDCVideos } from "../../src/wwdc/list-wwdc-videos.ts";
-import { handleListWWDCYears } from "../../src/wwdc/list-wwdc-years.ts";
 import { handleSearchWWDCContent } from "../../src/wwdc/search-wwdc-content.ts";
 
 // Mock the data source module
@@ -96,7 +94,56 @@ describe("WWDC Handlers", () => {
       });
     });
 
-    test("should list all videos when no filters provided", async () => {
+    test("returns the index when no filter is given", async () => {
+      mockLoadGlobalMetadata.mockResolvedValue({
+        ...mockMetadata,
+        statistics: {
+          byTopic: { "machine-learning-ai": 40, "swiftui-ui-frameworks": 60 },
+          byYear: { "2025": 122, "2024": 123, "2023": 316 },
+          videosWithCode: 500,
+          videosWithTranscript: 1200,
+        },
+      });
+
+      const result = await handleListWWDCVideos({
+        year: undefined,
+        topic: undefined,
+        hasCode: undefined,
+        limit: 30,
+      });
+
+      expect(result).toContain("Years: 2025 (122), 2024 (123), 2023 (316)");
+      expect(result).toContain(
+        "Total: 1266 sessions, 500 with code, 1200 with transcript",
+      );
+      expect(result).toContain(
+        "machine-learning-ai (Machine Learning & AI, 40)",
+      );
+      expect(result).toContain(
+        "swiftui-ui-frameworks (SwiftUI & UI Frameworks, 60)",
+      );
+      expect(mockLoadYearIndex).not.toHaveBeenCalled();
+    });
+
+    test("lists the topic IDs when a topic matches nothing", async () => {
+      mockLoadYearIndex.mockResolvedValue({
+        year: "2025",
+        videoCount: 0,
+        videos: [],
+      });
+
+      const result = await handleListWWDCVideos({
+        year: undefined,
+        topic: "machine learning",
+        hasCode: undefined,
+        limit: 30,
+      });
+
+      expect(result).toContain("No WWDC videos found");
+      expect(result).toContain("machine-learning-ai (Machine Learning & AI)");
+    });
+
+    test("should list videos across years with the year on each line", async () => {
       const mockYearIndex = {
         year: "2025",
         videoCount: 1,
@@ -120,12 +167,14 @@ describe("WWDC Handlers", () => {
       const result = await handleListWWDCVideos({
         year: undefined,
         topic: undefined,
-        hasCode: undefined,
+        hasCode: true,
         limit: 50,
       });
 
-      expect(result).toContain("WWDC Video List");
-      expect(result).toContain("Meet the Translation API");
+      expect(result).toContain("3 of 3 sessions");
+      expect(result).toContain(
+        "- [Meet the Translation API](https://developer.apple.com/videos/play/wwdc2025/10188/) · 2025 · 15 min · transcript, code · Machine Learning & AI",
+      );
       expect(mockLoadGlobalMetadata).toHaveBeenCalled();
       expect(mockLoadYearIndex).toHaveBeenCalledWith("2025");
     });
@@ -158,8 +207,8 @@ describe("WWDC Handlers", () => {
         limit: 50,
       });
 
-      expect(result).toContain("WWDC2025");
       expect(result).toContain("Meet the Translation API");
+      expect(result).not.toContain("· 2025 ·");
       expect(mockLoadYearIndex).toHaveBeenCalledWith("2025");
       expect(mockLoadYearIndex).toHaveBeenCalledTimes(1);
     });
@@ -183,8 +232,8 @@ describe("WWDC Handlers", () => {
         limit: 50,
       });
 
-      expect(result).toContain("Machine Learning & AI");
       expect(result).toContain("Meet the Translation API");
+      expect(result).not.toContain("Machine Learning & AI");
       expect(mockLoadTopicIndex).toHaveBeenCalledWith("machine-learning-ai");
     });
 
@@ -348,7 +397,7 @@ describe("WWDC Handlers", () => {
         limit: 20,
       });
 
-      expect(result).toContain("WWDC Content Search Results");
+      expect(result).toContain("WWDC content matches");
       expect(result).toContain("Meet the Translation API");
       expect(result).toContain("async await patterns");
       expect(mockLoadVideoData).toHaveBeenCalled();
@@ -363,7 +412,7 @@ describe("WWDC Handlers", () => {
         limit: 20,
       });
 
-      expect(result).toContain("WWDC Content Search Results");
+      expect(result).toContain("WWDC content matches");
       expect(result).toContain("Basic Translation\n```swift");
       expect(result).toContain("translator.translate");
     });
@@ -406,6 +455,95 @@ describe("WWDC Handlers", () => {
 
       expect(result).toContain("Basic Translation");
       expect(result).toContain("```swift");
+    });
+
+    test("caps a transcript snippet near 300 chars around the match", async () => {
+      const filler = "word ".repeat(200);
+      mockLoadVideoData.mockResolvedValue({
+        ...mockSearchVideo,
+        transcript: {
+          fullText: `${filler}the async await pattern ${filler}`,
+          segments: [],
+        },
+      });
+      mockLoadYearIndex.mockResolvedValue({
+        year: "2025",
+        videoCount: 1,
+        topics: [],
+        videos: [
+          {
+            id: "10188",
+            year: "2025",
+            title: "Meet the Translation API",
+            topics: [],
+            duration: "15 min",
+            hasCode: false,
+            hasTranscript: true,
+            dataFile: "videos/2025-10188.json",
+          },
+        ],
+      });
+
+      const result = await handleSearchWWDCContent({
+        query: "async await",
+        searchIn: "transcript",
+        year: "2025",
+        language: undefined,
+        limit: 20,
+      });
+
+      const line = result.split("\n").find((l) => l.startsWith("Transcript"));
+      expect(line).toContain("async await pattern");
+      expect(line?.includes("…")).toBe(true);
+      expect(line?.length).toBeLessThan(330);
+    });
+
+    test("shows one heading line per session and no query echo", async () => {
+      const result = await handleSearchWWDCContent({
+        query: "translator",
+        searchIn: "code",
+        year: undefined,
+        language: undefined,
+        limit: 20,
+      });
+
+      expect(result).toContain(
+        "## [Meet the Translation API](https://developer.apple.com/videos/play/wwdc2025/10188/) (2025)",
+      );
+      expect(result).not.toContain("Search Query");
+      expect(result).not.toContain("Search Scope");
+    });
+
+    test("ends with an actionable line when the limit cuts sessions", async () => {
+      mockLoadYearIndex.mockResolvedValue({
+        year: "2025",
+        videoCount: 2,
+        topics: [],
+        videos: ["10188", "10189"].map((id) => ({
+          id,
+          year: "2025",
+          title: "Meet the Translation API",
+          topics: [],
+          duration: "15 min",
+          hasCode: true,
+          hasTranscript: true,
+          dataFile: `videos/2025-${id}.json`,
+        })),
+      });
+      mockLoadVideoData.mockImplementation((_year: string, id: string) =>
+        Promise.resolve({ ...mockSearchVideo, id }),
+      );
+
+      const result = await handleSearchWWDCContent({
+        query: "translator",
+        searchIn: "code",
+        year: "2025",
+        language: undefined,
+        limit: 1,
+      });
+
+      expect(result).toContain("1 of 2 sessions");
+      expect(result).toContain("Showing 1 of 2. Narrow with year or language");
     });
 
     test("should handle no results", async () => {
@@ -499,6 +637,51 @@ describe("WWDC Handlers", () => {
       expect(result).toContain("Example Code");
       expect(result).toContain("Download Sample");
       expect(mockLoadVideoData).toHaveBeenCalledWith("2025", "10188");
+    });
+
+    test("keeps one HD download link and drops the SD one", async () => {
+      mockLoadVideoData.mockResolvedValue({
+        ...mockFullVideo,
+        resources: {
+          hdVideo: "https://example.com/hd.mp4",
+          sdVideo: "https://example.com/sd.mp4",
+        },
+      });
+
+      const result = await handleGetWWDCVideo({
+        year: "2025",
+        videoId: "10188",
+        includeTranscript: false,
+        includeCode: false,
+      });
+
+      expect(result).toContain("https://example.com/hd.mp4");
+      expect(result).not.toContain("https://example.com/sd.mp4");
+      expect(result).toContain("Machine Learning & AI");
+      expect(result).toContain("[Related Video 1](https://example.com/10189)");
+    });
+
+    test("drops a first comment line that repeats the example title", async () => {
+      mockLoadVideoData.mockResolvedValue({
+        ...mockFullVideo,
+        codeExamples: [
+          {
+            language: "swift",
+            title: "Creating a Generable struct",
+            code: "\n// Creating a Generable struct\n\n@Generable\nstruct S {}",
+          },
+        ],
+      });
+
+      const result = await handleGetWWDCVideo({
+        year: "2025",
+        videoId: "10188",
+        includeTranscript: false,
+        includeCode: true,
+      });
+
+      expect(result).toContain("```swift\n@Generable\nstruct S {}\n```");
+      expect(result).not.toContain("// Creating a Generable struct");
     });
 
     test("should exclude transcript when requested", async () => {
@@ -649,8 +832,10 @@ describe("WWDC Handlers", () => {
         limit: 30,
       });
 
-      expect(result).toContain("WWDC Code Examples");
-      expect(result).toContain("Animation Example");
+      expect(result).toContain("2 of 2 code examples");
+      expect(result).toContain(
+        "### Animation Example · [SwiftUI Animations](https://developer.apple.com/videos/play/wwdc2025/10188/) · 2025",
+      );
       expect(result).toContain("UIKit Example");
     });
 
@@ -677,7 +862,8 @@ describe("WWDC Handlers", () => {
       });
 
       expect(result).toContain("Animation Example");
-      expect(result).toContain("Language: swift");
+      expect(result).toContain("```swift");
+      expect(result).not.toContain("Language: swift");
     });
 
     test("should handle no code examples", async () => {
@@ -706,7 +892,7 @@ describe("WWDC Handlers", () => {
     });
   });
 
-  describe("handleBrowseWWDCTopics", () => {
+  describe("handleListWWDCVideos with a topic ID", () => {
     const mockTopics = [
       {
         topicId: "swiftui-ui-frameworks",
@@ -779,58 +965,45 @@ describe("WWDC Handlers", () => {
       });
     });
 
-    test("should list all topics when no topicId provided", async () => {
-      const result = await handleBrowseWWDCTopics({
-        topicId: undefined,
-        includeVideos: true,
-        year: undefined,
-        limit: 20,
-      });
-
-      expect(result).toContain("WWDC Topics");
-      expect(result).toContain("SwiftUI & UI Frameworks");
-      expect(result).toContain("Machine Learning & AI");
-      expect(result).toContain("**Videos:** 50");
-      expect(result).toContain("**Videos:** 30");
-    });
-
-    test("should show specific topic with videos", async () => {
-      const result = await handleBrowseWWDCTopics({
+    test("lists a topic's sessions with its topic ID, year and limit", async () => {
+      mockLoadTopicIndex.mockResolvedValue({
         topicId: "swiftui-ui-frameworks",
-        includeVideos: true,
-        year: undefined,
-        limit: 20,
+        name: "SwiftUI & UI Frameworks",
+        videoCount: 3,
+        videos: [
+          { id: "10188", year: "2025", dataFile: "videos/2025-10188.json" },
+          { id: "10187", year: "2024", dataFile: "videos/2024-10187.json" },
+          { id: "10186", year: "2025", dataFile: "videos/2025-10186.json" },
+        ],
+      });
+      mockLoadVideoData.mockImplementation((year: string, videoId: string) =>
+        Promise.resolve({
+          id: videoId,
+          url: `https://developer.apple.com/videos/play/wwdc${year}/${videoId}/`,
+          title: `Session ${videoId}`,
+          year,
+          topics: ["SwiftUI & UI Frameworks"],
+          duration: "20 min",
+          hasTranscript: true,
+          hasCode: false,
+          resources: {},
+        }),
+      );
+
+      const result = await handleListWWDCVideos({
+        year: "2025",
+        topic: "swiftui-ui-frameworks",
+        hasCode: undefined,
+        limit: 1,
       });
 
-      expect(result).toContain("SwiftUI & UI Frameworks");
-      expect(result).toContain("SwiftUI Animations");
       expect(mockLoadTopicIndex).toHaveBeenCalledWith("swiftui-ui-frameworks");
-    });
-
-    test("should exclude videos when requested", async () => {
-      const result = await handleBrowseWWDCTopics({
-        topicId: "swiftui-ui-frameworks",
-        includeVideos: false,
-        year: undefined,
-        limit: 20,
-      });
-
-      expect(result).toContain("SwiftUI & UI Frameworks");
-      expect(result).not.toContain("SwiftUI Animations");
-    });
-
-    test("should handle topic not found", async () => {
-      mockLoadTopicIndex.mockRejectedValue(new Error("Topic not found"));
-
-      const result = await handleBrowseWWDCTopics({
-        topicId: "invalid-topic",
-        includeVideos: true,
-        year: undefined,
-        limit: 20,
-      });
-
-      expect(result).toContain('Topic "invalid-topic" not found');
-      expect(result).toContain("Available topics:");
+      expect(result).toContain("1 of 2 sessions");
+      expect(result).toContain("Session 10188");
+      expect(result).not.toContain("Session 10187");
+      expect(result).toContain(
+        "Showing 1 of 2. Narrow with year or topic, or raise limit.",
+      );
     });
   });
 
@@ -905,10 +1078,13 @@ describe("WWDC Handlers", () => {
         limit: 15,
       });
 
-      expect(result).toContain('Related Videos for "SwiftUI Basics"');
-      expect(result).toContain("## Related Videos");
-      expect(result).toContain("Advanced SwiftUI");
-      expect(result).toContain("SwiftUI Performance");
+      expect(result).toContain("# Related to [SwiftUI Basics]");
+      expect(result).toContain(
+        "- [Advanced SwiftUI](https://developer.apple.com/videos/play/wwdc2025/10189/) · 2025 · 25 min · Explicitly related · transcript, code",
+      );
+      expect(result).toContain(
+        "· 2024 · 20 min · Explicitly related · transcript",
+      );
     });
 
     test("should exclude explicit related when requested", async () => {
@@ -921,7 +1097,7 @@ describe("WWDC Handlers", () => {
         limit: 15,
       });
 
-      expect(result).toContain('Related Videos for "SwiftUI Basics"');
+      expect(result).toContain("# Related to [SwiftUI Basics]");
       // When no videos found
       expect(result).toContain("No related videos found");
     });
@@ -939,30 +1115,6 @@ describe("WWDC Handlers", () => {
           limit: 15,
         }),
       ).rejects.toThrow("Video not found");
-    });
-  });
-
-  describe("handleListWWDCYears", () => {
-    test("lists each year with its sessions, and how many have code and transcripts", async () => {
-      mockLoadGlobalMetadata.mockResolvedValue({
-        version: "2.0",
-        lastUpdated: "2026-10-05",
-        totalVideos: 3,
-        topics: [],
-        years: ["2026", "2025"],
-        statistics: {
-          byTopic: {},
-          byYear: { 2026: 2, 2025: 1 },
-          videosWithCode: 1,
-          videosWithTranscript: 3,
-        },
-      });
-
-      const result = await handleListWWDCYears();
-
-      expect(result).toContain("**2026**: 2 videos");
-      expect(result).toContain("**Videos with Code:** 1");
-      expect(result).not.toContain("Resources");
     });
   });
 });

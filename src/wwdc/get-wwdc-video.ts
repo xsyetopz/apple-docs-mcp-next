@@ -2,6 +2,7 @@
  * One WWDC session from the bundled data, as text
  */
 import { loadVideoData } from "./data-source.ts";
+import { tidyCode } from "./format.ts";
 import type { WWDCVideo } from "./types.ts";
 
 export interface VideoQuery {
@@ -34,44 +35,30 @@ const formatVideoDetail = (
   includeCode: boolean,
 ): string => {
   let content = `# ${video.title}\n\n`;
-  content += `**WWDC${video.year}** | [Watch Video](${video.url})\n\n`;
-
+  const facts = [`WWDC${video.year}`];
   if (video.duration) {
-    content += `**Duration:** ${video.duration}\n`;
+    facts.push(video.duration);
   }
   if (video.speakers && video.speakers.length > 0) {
-    content += `**Speakers:** ${video.speakers.join(", ")}\n`;
+    facts.push(video.speakers.join(", "));
   }
+  content += `${facts.join(" · ")}\n`;
+  content += `[Watch](${video.url})`;
+  if (video.resources.hdVideo) {
+    content += ` · [HD video](${video.resources.hdVideo})`;
+  }
+  content += "\n";
   if (video.topics.length > 0) {
-    content += `**Topics:** ${video.topics.join(", ")}\n`;
+    content += `Topics: ${video.topics.join(", ")}\n`;
   }
-
-  if (
-    video.resources.hdVideo ||
-    video.resources.sdVideo ||
-    video.resources.resourceLinks
-  ) {
-    content += "\n**Resources:**\n";
-    if (video.resources.hdVideo) {
-      content += `- [HD Video](${video.resources.hdVideo})\n`;
-    }
-    if (video.resources.sdVideo) {
-      content += `- [SD Video](${video.resources.sdVideo})\n`;
-    }
-    if (
-      video.resources.resourceLinks &&
-      video.resources.resourceLinks.length > 0
-    ) {
-      video.resources.resourceLinks.forEach((link) => {
-        content += `- [${link.title}](${link.url})\n`;
-      });
-    }
+  for (const link of video.resources.resourceLinks ?? []) {
+    content += `- [${link.title}](${link.url})\n`;
   }
 
   if (video.chapters && video.chapters.length > 0) {
     content += "\n## Chapters\n\n";
     video.chapters.forEach((chapter) => {
-      content += `- **${chapter.timestamp}** ${chapter.title}\n`;
+      content += `- ${chapter.timestamp} ${chapter.title}\n`;
     });
   }
 
@@ -80,11 +67,10 @@ const formatVideoDetail = (
 
     if (video.transcript.segments.length > 0) {
       video.transcript.segments.forEach((segment) => {
-        content += `**${segment.timestamp}**\n`;
-        content += `${segment.text}\n\n`;
+        content += `**${segment.timestamp}** ${segment.text}\n`;
       });
     } else {
-      content += video.transcript.fullText;
+      content += `${video.transcript.fullText}\n`;
     }
   }
 
@@ -101,14 +87,14 @@ const formatVideoDetail = (
       if (example.timestamp) {
         content += ` (${example.timestamp})`;
       }
-      content += "\n\n";
+      content += "\n";
 
       content += `\`\`\`${example.language}\n`;
-      content += example.code;
-      content += "\n```\n\n";
+      content += tidyCode(example.code, example.title);
+      content += "\n```\n";
 
       if (example.context) {
-        content += `*${example.context}*\n\n`;
+        content += `*${example.context}*\n`;
       }
     });
   }

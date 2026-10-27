@@ -3,6 +3,7 @@
  */
 import { logger } from "../core/logger.ts";
 import { loadGlobalMetadata, loadYearIndex } from "./data-source.ts";
+import { capCodeLines, snippetAround } from "./format.ts";
 import { loadVideosData } from "./load-videos.ts";
 import type { WWDCVideo } from "./types.ts";
 
@@ -120,7 +121,7 @@ export const handleSearchWWDCContent = async ({
 
   const limitedResults = results.slice(0, limit);
 
-  return formatSearchResults(limitedResults, query, searchIn);
+  return formatSearchResults(limitedResults, results.length, query, searchIn);
 };
 
 /**
@@ -140,7 +141,7 @@ const searchInTranscript = (
         .filter((l) => l.trim())
         .join(" ... ");
 
-      matches.push({ context });
+      matches.push({ context: snippetAround(context, query) });
     }
   }
 
@@ -172,9 +173,14 @@ const searchInCode = (
     const at = lines.findIndex((line) => line.toLowerCase().includes(query));
     if (at >= 0) {
       // The matching line with 2 lines before it and 6 after: enough to see the call and what it takes
-      const snippet = lines.slice(Math.max(0, at - 2), at + 7).join("\n");
+      const snippet = capCodeLines(
+        lines
+          .slice(Math.max(0, at - 2), at + 7)
+          .join("\n")
+          .trim(),
+      );
       matches.push({
-        context: `${example.title ?? ""}\n\`\`\`${example.language}\n${snippet}\n\`\`\``,
+        context: `${example.title ? `${example.title}\n` : ""}\`\`\`${example.language}\n${snippet}\n\`\`\``,
         timestamp: example.timestamp,
       });
     }
@@ -195,6 +201,7 @@ const formatSearchResults = (
       timestamp?: string | undefined;
     }>;
   }>,
+  total: number,
   query: string,
   searchIn: string,
 ): string => {
@@ -202,27 +209,24 @@ const formatSearchResults = (
     return `No ${searchIn === "code" ? "code" : searchIn === "transcript" ? "transcript" : "content"} found containing "${query}".`;
   }
 
-  let content = "# WWDC Content Search Results\n\n";
-  content += `**Search Query:** "${query}"\n`;
-  content += `**Search Scope:** ${searchIn === "code" ? "Code" : searchIn === "transcript" ? "Transcript" : "All Content"}\n`;
-  content += `**Found ${results.length} related videos**\n\n`;
+  let content = `# WWDC content matches\n\n${results.length} of ${total} sessions\n\n`;
 
   results.forEach((result) => {
-    content += `## [${result.video.title}](${result.video.url})\n`;
-    content += `*WWDC${result.video.year} | ${result.matches.length} matches*\n\n`;
+    content += `## [${result.video.title}](${result.video.url}) (${result.video.year})\n`;
 
     result.matches.forEach((match) => {
-      content += `**${match.type === "code" ? "Code" : "Transcript"}**`;
-      if (match.timestamp) {
-        content += ` (${match.timestamp})`;
-      }
-      content += "\n";
+      const at = match.timestamp ? ` ${match.timestamp}` : "";
       content +=
         match.type === "code"
-          ? `${match.context}\n\n`
-          : `> ${match.context}\n\n`;
+          ? `Code${at}: ${match.context}\n`
+          : `Transcript${at}: ${match.context}\n`;
     });
+    content += "\n";
   });
+
+  if (total > results.length) {
+    content += `Showing ${results.length} of ${total}. Narrow with year or language, or raise limit.\n`;
+  }
 
   return content;
 };

@@ -7,6 +7,7 @@ import {
   loadTopicIndex,
   loadYearIndex,
 } from "./data-source.ts";
+import { sessionLine } from "./format.ts";
 import { loadVideosData } from "./load-videos.ts";
 import type { WWDCVideo } from "./types.ts";
 
@@ -26,6 +27,10 @@ export const handleListWWDCVideos = async ({
   hasCode,
   limit,
 }: VideoListQuery): Promise<string> => {
+  if (year === undefined && topic === undefined && hasCode === undefined) {
+    return formatIndex();
+  }
+
   const metadata = await loadGlobalMetadata();
 
   let allVideos: Array<WWDCVideo & { year: string }> = [];
@@ -99,9 +104,15 @@ export const handleListWWDCVideos = async ({
     filteredVideos = filteredVideos.filter((v) => v.hasCode === hasCode);
   }
 
+  // Newest first, so a cap drops the oldest
+  filteredVideos.sort((a, b) => parseInt(b.year, 10) - parseInt(a.year, 10));
   const limitedVideos = filteredVideos.slice(0, limit);
 
-  return formatVideoList(limitedVideos, year, topic, hasCode);
+  if (limitedVideos.length === 0 && topic && !isTopicId) {
+    return `No WWDC videos found matching the criteria. Topic IDs: ${metadata.topics.map((t) => topicLabel(t)).join(", ")}`;
+  }
+
+  return formatVideoList(limitedVideos, filteredVideos.length, year, topic);
 };
 
 /**
@@ -109,76 +120,61 @@ export const handleListWWDCVideos = async ({
  */
 const formatVideoList = (
   videos: Array<WWDCVideo & { year: string }>,
+  total: number,
   year?: string,
   topic?: string,
-  hasCode?: boolean,
 ): string => {
   if (videos.length === 0) {
     return "No WWDC videos found matching the criteria.";
   }
 
-  let content = "# WWDC Video List\n\n";
-
-  const filters: string[] = [];
-  if (year && year !== "all") {
-    filters.push(`Year: ${year}`);
-  }
-  if (topic) {
-    filters.push(`Topic: ${topic}`);
-  }
-  if (hasCode !== undefined) {
-    filters.push(`Has Code: ${hasCode ? "Yes" : "No"}`);
-  }
-
-  if (filters.length > 0) {
-    content += `**Filter Conditions:** ${filters.join(", ")}\n\n`;
-  }
-
-  content += `**Found ${videos.length} videos**\n\n`;
-
-  const videosByYear = videos.reduce(
-    (acc, video) => {
-      const group = acc[video.year] ?? [];
-      group.push(video);
-      acc[video.year] = group;
-      return acc;
-    },
-    {} as Record<string, typeof videos>,
+  const spansYears = !year || year === "all";
+  const lines = videos.map((video) =>
+    sessionLine(video, { showYear: spansYears, showTopics: !topic }),
   );
 
-  Object.keys(videosByYear)
-    .sort((a, b) => parseInt(b, 10) - parseInt(a, 10))
-    .forEach((y) => {
-      content += `## WWDC${y}\n\n`;
-
-      (videosByYear[y] ?? []).forEach((video) => {
-        content += `### [${video.title}](${video.url})\n`;
-
-        const metadata: string[] = [];
-        if (video.duration) {
-          metadata.push(`Duration: ${video.duration}`);
-        }
-        if (video.speakers && video.speakers.length > 0) {
-          metadata.push(`Speakers: ${video.speakers.join(", ")}`);
-        }
-        if (video.hasTranscript) {
-          metadata.push("Transcript");
-        }
-        if (video.hasCode) {
-          metadata.push("Code Examples");
-        }
-
-        if (metadata.length > 0) {
-          content += `*${metadata.join(" | ")}*\n`;
-        }
-
-        if (video.topics.length > 0) {
-          content += `**Topics:** ${video.topics.join(", ")}\n`;
-        }
-
-        content += "\n";
-      });
-    });
-
+  let content = `# WWDC sessions\n\n${videos.length} of ${total} sessions\n\n${lines.join("\n")}\n`;
+  if (total > videos.length) {
+    content += `\nShowing ${videos.length} of ${total}. Narrow with year or topic, or raise limit.\n`;
+  }
   return content;
+};
+
+/**
+ * A topic as its ID with its display name, and its session count when given
+ */
+const topicLabel = (
+  topic: { id: string; name: string },
+  count?: number,
+): string =>
+  `${topic.id} (${topic.name}${count === undefined ? "" : `, ${count}`})`;
+
+/**
+ * The index: years, totals and topics with their IDs
+ */
+const formatIndex = async (): Promise<string> => {
+  const metadata = await loadGlobalMetadata();
+  const stats = metadata.statistics;
+  const years = [...(metadata.years ?? [])].sort((a, b) => b.localeCompare(a));
+  if (years.length === 0) {
+    return "No WWDC years available.";
+  }
+
+  const yearList = years
+    .map((y) => `${y} (${stats?.byYear?.[y] ?? 0})`)
+    .join(", ");
+  const topicList = metadata.topics
+    .map((t) => topicLabel(t, stats?.byTopic?.[t.id] ?? 0))
+    .join(", ");
+
+  return [
+    "# WWDC sessions",
+    "",
+    `Years: ${yearList}`,
+    `Total: ${metadata.totalVideos || 0} sessions, ${stats?.videosWithCode ?? 0} with code, ${stats?.videosWithTranscript ?? 0} with transcript`,
+    `Topics (id): ${topicList}`,
+    "",
+    "Pass year, topic (a topic ID or a word) or hasCode to list sessions.",
+    "",
+  ].join("\n");
 };
