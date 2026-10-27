@@ -132,7 +132,7 @@ const extractApiFromIdentifier = (
   if (isTopicReference(ref)) {
     return {
       title: ref.title,
-      url: `https://developer.apple.com${ref.url}`,
+      url: ref.url,
       identifier,
       relationship,
       abstract: ref.abstract
@@ -148,7 +148,7 @@ const extractApiFromIdentifier = (
 
     return {
       title: apiName,
-      url: `https://developer.apple.com/documentation/${pathPart}`,
+      url: `/documentation/${pathPart}`,
       identifier,
       relationship,
     };

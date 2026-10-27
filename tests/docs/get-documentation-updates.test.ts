@@ -551,9 +551,7 @@ describe("get-documentation-updates", () => {
     });
 
     expect(result).toContain("## WWDC");
-    expect(result).toContain(
-      "[WWDC25](https://developer.apple.com/documentation/updates/wwdc2025)",
-    );
+    expect(result).toContain("[WWDC25](/documentation/updates/wwdc2025)");
     expect(result).toContain("(2025)");
     expect(result).not.toContain("Technology:");
   });

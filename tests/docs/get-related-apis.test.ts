@@ -118,10 +118,10 @@ describe("get-related-apis", () => {
       });
 
       expect(result).toContain(
-        "## Topics\n- Creating a View: [Text](https://developer.apple.com/documentation/swiftui/text)\n- Showing Images: [Image](https://developer.apple.com/documentation/swiftui/image)",
+        "## Topics\n- Creating a View: [Text](/documentation/swiftui/text)\n- Showing Images: [Image](/documentation/swiftui/image)",
       );
       expect(result).toContain(
-        "- Showing Images: [Image](https://developer.apple.com/documentation/swiftui/image), +2 more",
+        "- Showing Images: [Image](/documentation/swiftui/image), +2 more",
       );
     });
 
@@ -165,7 +165,7 @@ describe("get-related-apis", () => {
       });
 
       expect(result).toContain(
-        "- [Text](https://developer.apple.com/documentation/swiftui/text): A view that displays text.",
+        "- [Text](/documentation/swiftui/text): A view that displays text.",
       );
       expect(result).not.toContain("###");
       expect(result).not.toContain("*Type:");

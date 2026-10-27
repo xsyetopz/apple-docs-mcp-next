@@ -242,7 +242,7 @@ const flatList = (entries: OverviewEntry[]): string => {
 };
 
 const urlOf = (entry: OverviewEntry): string => {
-  return `https://developer.apple.com${entry.path}`;
+  return entry.path;
 };
 
 const typeOf = (entry: OverviewEntry): string => {

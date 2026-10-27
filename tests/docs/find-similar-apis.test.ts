@@ -438,8 +438,8 @@ describe("find-similar-apis", () => {
     });
 
     expect(result).toContain(
-      "**Deprecated:** Use [`NavigationStack`](https://developer.apple.com/documentation/swiftui/navigationstack) " +
-        "and [`NavigationSplitView`](https://developer.apple.com/documentation/swiftui/navigationsplitview) instead.",
+      "**Deprecated:** Use [`NavigationStack`](/documentation/swiftui/navigationstack) " +
+        "and [`NavigationSplitView`](/documentation/swiftui/navigationsplitview) instead.",
     );
     expect(result.indexOf("[NavigationSplitView]")).toBeLessThan(
       result.indexOf("[tabItem(_:)]"),

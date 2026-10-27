@@ -75,15 +75,14 @@ const assetUrl = (path: string): string => {
 };
 
 /**
- * Where a reference leads: a page (a WWDC session's carries a full URL; a page's, a site path), a link, or a download
+ * Where a reference leads: a page (a WWDC session's carries a full URL; a page's, a site path, kept as one because
+ * full URLs were a third of a long page), a link, or a download
  */
 export const referenceUrl = (
   ref: RenderReference | undefined,
 ): string | undefined => {
   if (isTopicReference(ref)) {
-    return ref.url.startsWith("http")
-      ? ref.url
-      : `${APPLE_URLS.BASE}${ref.url}`;
+    return ref.url;
   }
   if (ref?.type === "link") {
     return ref.url;
@@ -94,10 +93,10 @@ export const referenceUrl = (
 };
 
 /**
- * The web address of a page Apple names by its doc:// identifier: doc://<bundle>/<path> is developer.apple.com/<path>
+ * The site path of a page Apple names by its doc:// identifier: doc://<bundle>/<path> is developer.apple.com/<path>
  */
 export const docUrl = (identifier: string): string => {
-  return `${APPLE_URLS.BASE}/${identifier.replace(/^doc:\/\/[^/]+\//, "")}`;
+  return `/${identifier.replace(/^doc:\/\/[^/]+\//, "")}`;
 };
 
 /**
@@ -142,10 +141,11 @@ export const formatIdentifierLink = (
 export const formatIdentifierLine = (
   identifier: string,
   references: References,
+  withSummary = true,
 ): string => {
   const ref = references?.[identifier];
   const summary =
-    isTopicReference(ref) && ref.abstract
+    withSummary && isTopicReference(ref) && ref.abstract
       ? formatInlineContent(ref.abstract, references).trim()
       : "";
   const declaration = isTopicReference(ref)

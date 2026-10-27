@@ -45,7 +45,7 @@ describe("resolve_references_batch", () => {
     expect(result).toContain("1 references");
     expect(result).toContain("Reads and writes a value owned by a `State`.");
     expect(result).toContain(
-      "- [Binding](https://developer.apple.com/documentation/swiftui/binding): Reads and writes",
+      "- [Binding](/documentation/swiftui/binding): Reads and writes",
     );
     expect(result).not.toContain("Kind:");
     expect(result).not.toContain("Showing");
@@ -81,7 +81,7 @@ describe("resolve_references_batch", () => {
     });
 
     expect(result).toContain(
-      "- [Alpha](https://developer.apple.com/documentation/swiftui/alpha) `struct Alpha`: The Alpha.",
+      "- [Alpha](/documentation/swiftui/alpha) `struct Alpha`: The Alpha.",
     );
     expect(result).not.toContain("Gamma");
     expect(result).toContain(

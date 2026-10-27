@@ -74,6 +74,8 @@ export const PROCESSING_LIMITS = {
   MAX_PLATFORM_COMPATIBILITY_ITEMS: 2,
   MAX_SIMILAR_APIS_FOR_DEEP_SEARCH: 3,
   MAX_TOPIC_IDENTIFIERS: 4,
+  // Claude Code saves a tool result over 50,000 characters to a file; a longer page drops its Topics summaries
+  MAX_PAGE_CHARS: 40_000,
 } as const;
 
 // Apple Developer URLs

@@ -5,6 +5,7 @@ import { handleFindSimilarApis } from "../docs/find-similar-apis.ts";
 import { handleGetPlatformCompatibility } from "../docs/get-platform-compatibility.ts";
 import { handleGetRelatedApis } from "../docs/get-related-apis.ts";
 import { handleResolveReferencesBatch } from "../docs/resolve-references-batch.ts";
+import { absoluteAppleUrl } from "../docs/url-converter.ts";
 import { defineTool } from "./define-tool.ts";
 
 const REFERENCE_FILTERS = [
@@ -29,7 +30,7 @@ export const getApiRelationsTool = defineTool({
     url: z
       .string()
       .describe(
-        'Documentation page, e.g. "https://developer.apple.com/documentation/uikit/uiview"',
+        'Documentation page URL or site path, e.g. "/documentation/uikit/uiview"',
       ),
     kind: z.enum(["related", "references", "similar", "platforms"]),
     limit: z
@@ -54,7 +55,8 @@ export const getApiRelationsTool = defineTool({
         'similar: how far to read (default "medium"). platforms: "medium" or "deep" adds related APIs (default "shallow").',
       ),
   }),
-  run: async ({ url, kind, limit, filter, depth }) => {
+  run: async ({ url: input, kind, limit, filter, depth }) => {
+    const url = absoluteAppleUrl(input);
     switch (kind) {
       case "related":
         return await handleGetRelatedApis({

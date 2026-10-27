@@ -125,7 +125,7 @@ export const searchFrameworkSymbols = async ({
         0,
         PROCESSING_LIMITS.MAX_COLLECTIONS_TO_SHOW,
       )) {
-        result += `- [${col.title}](https://developer.apple.com${col.path})\n`;
+        result += `- [${col.title}](${col.path})\n`;
       }
     }
   } else {
@@ -160,7 +160,7 @@ export const searchFrameworkSymbols = async ({
 };
 
 const formatSymbolItem = (item: RenderIndexNode): string => {
-  const url = `https://developer.apple.com${item.path ?? ""}`;
+  const url = item.path ?? "";
   let result = `- [${item.title}](${url})`;
 
   const metadata = [];

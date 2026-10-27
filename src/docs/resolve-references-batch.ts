@@ -97,7 +97,7 @@ const resolveReference = async (
     const resolved: ResolvedReference = {
       identifier,
       title: refData.title || "Unknown",
-      url: refData.url ? `https://developer.apple.com${refData.url}` : "#",
+      url: refData.url || "#",
       type: refData.type || "unknown",
       role: refData.role || "unknown",
       kind: refData.kind,

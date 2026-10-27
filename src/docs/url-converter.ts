@@ -2,6 +2,15 @@
  * URL conversion utilities for Apple Developer Documentation
  */
 
+import { APPLE_URLS } from "../core/constants.ts";
+
+/**
+ * A page's full URL: a site path, as page links give it ("/documentation/uikit/uiview"), is on developer.apple.com
+ */
+export const absoluteAppleUrl = (url: string): string => {
+  return url.startsWith("/") ? `${APPLE_URLS.BASE}${url}` : url;
+};
+
 /**
  * Convert a web URL to a JSON API URL
  * @param webUrl The web URL to convert
@@ -15,7 +24,7 @@ export const convertToJsonApiUrl = (webUrl: string): string | null => {
     }
 
     // Extract the path from the URL
-    const urlObj = new URL(webUrl);
+    const urlObj = new URL(absoluteAppleUrl(webUrl));
 
     // Check if it's an Apple Developer URL
     if (urlObj.hostname !== "developer.apple.com") {

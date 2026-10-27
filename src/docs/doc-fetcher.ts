@@ -1,4 +1,5 @@
 import { apiCache, generateUrlCacheKey } from "../core/cache.ts";
+import { PROCESSING_LIMITS } from "../core/constants.ts";
 import { AppError, ErrorType, requireText } from "../core/errors.ts";
 import { httpClient } from "../core/http-client.ts";
 import { logger } from "../core/logger.ts";
@@ -26,6 +27,7 @@ import {
 import { fetchHelpPage } from "./help-pages.ts";
 import { HELP_PATH } from "./search-result-parser.ts";
 import {
+  absoluteAppleUrl,
   convertToJsonApiUrl,
   isValidAppleDeveloperUrl,
 } from "./url-converter.ts";
@@ -44,9 +46,23 @@ const collapseBlankLines = (markdown: string): string => {
 };
 
 /**
+ * A page as Markdown; a page past the limit lists its Topics members without their summaries, which are most of a
+ * large type's page, so that Claude Code keeps the result in the conversation rather than in a file
+ */
+const formatPage = (jsonData: RenderNode): string => {
+  const page = formatJsonDocumentation(jsonData, true);
+  return page.length <= PROCESSING_LIMITS.MAX_PAGE_CHARS
+    ? page
+    : formatJsonDocumentation(jsonData, false);
+};
+
+/**
  * Format JSON documentation content
  */
-const formatJsonDocumentation = (jsonData: RenderNode): string => {
+const formatJsonDocumentation = (
+  jsonData: RenderNode,
+  summaries: boolean,
+): string => {
   let content = "";
 
   // Add header with title and status
@@ -62,6 +78,7 @@ const formatJsonDocumentation = (jsonData: RenderNode): string => {
   } else {
     content += formatAPICollectionContent(jsonData);
   }
+  content += formatTopicsSection(jsonData, summaries);
   content += formatTutorialSections(jsonData);
   content += formatRelationshipsSection(jsonData);
 
@@ -116,7 +133,7 @@ const formatSpecificAPIContent = (jsonData: RenderNode): string => {
     }
   }
 
-  return content + formatTopicsSection(jsonData);
+  return content;
 };
 
 /**
@@ -253,15 +270,27 @@ const formatOneLine = (
  * A page's Topics: Apple's groups of its members (a type's) or collections (a framework's), under the heading
  * Apple's renderer gives them, swift-docc-render's `sections.topics` string; the page's JSON has only each group's title.
  */
-const formatTopicsSection = (jsonData: RenderNode): string => {
-  const topics = formatTopicGroups(jsonData);
-  return topics ? `## Topics\n\n${topics}` : "";
+const formatTopicsSection = (
+  jsonData: RenderNode,
+  summaries: boolean,
+): string => {
+  const topics = formatTopicGroups(jsonData, summaries);
+  if (!topics) {
+    return "";
+  }
+  const note = summaries
+    ? ""
+    : 'Members without summaries, to keep this long page short; get_api_relations kind "related" lists them with summaries.\n\n';
+  return `## Topics\n\n${note}${topics}`;
 };
 
 /**
  * Each Topics group's title, its description when it has one, and the pages in it, as links
  */
-const formatTopicGroups = (jsonData: RenderNode): string => {
+const formatTopicGroups = (
+  jsonData: RenderNode,
+  summaries: boolean,
+): string => {
   return (jsonData.topicSections ?? [])
     .filter((section) => section.title && section.identifiers.length > 0)
     .map(
@@ -270,7 +299,7 @@ const formatTopicGroups = (jsonData: RenderNode): string => {
         (section.abstract
           ? `${formatInlineContent(section.abstract, jsonData.references).trim()}\n\n`
           : "") +
-        `${section.identifiers.map((identifier) => formatIdentifierLine(identifier, jsonData.references)).join("")}\n`,
+        `${section.identifiers.map((identifier) => formatIdentifierLine(identifier, jsonData.references, summaries)).join("")}\n`,
     )
     .join("");
 };
@@ -514,7 +543,7 @@ const formatAPICollectionContent = (jsonData: RenderNode): string => {
     }
   }
 
-  return content + formatTopicsSection(jsonData);
+  return content;
 };
 
 export interface DocContentQuery {
@@ -524,10 +553,11 @@ export interface DocContentQuery {
 /**
  * One documentation page as Markdown: an App Store Connect Help page from its HTML, any other page from its JSON
  */
-export const fetchAppleDocJson = async ({
-  url,
-}: DocContentQuery): Promise<string> => {
-  requireText(url, "URL");
+export const fetchAppleDocJson = async (
+  query: DocContentQuery,
+): Promise<string> => {
+  requireText(query.url, "URL");
+  const url = absoluteAppleUrl(query.url);
   if (!isValidAppleDeveloperUrl(url)) {
     throw new AppError({
       type: ErrorType.INVALID_INPUT,
@@ -550,7 +580,7 @@ export const fetchAppleDocJson = async ({
 
     const markdown = new URL(url).pathname.startsWith(HELP_PATH)
       ? await fetchHelpPage(url)
-      : formatJsonDocumentation(await fetchRenderNode(jsonApiUrl));
+      : formatPage(await fetchRenderNode(jsonApiUrl));
     apiCache.set(cacheKey, markdown);
     return markdown;
   } catch (error) {

@@ -4,11 +4,26 @@ import { describe, expect, it } from "bun:test";
  */
 
 import {
+  absoluteAppleUrl,
   convertToJsonApiUrl,
   isValidAppleDeveloperUrl,
 } from "../../src/docs/url-converter.ts";
 
 describe("URL Converter", () => {
+  describe("absoluteAppleUrl", () => {
+    it("resolves a site path on developer.apple.com", () => {
+      expect(absoluteAppleUrl("/documentation/swiftui/view")).toBe(
+        "https://developer.apple.com/documentation/swiftui/view",
+      );
+    });
+
+    it("keeps a full URL as it is", () => {
+      expect(absoluteAppleUrl("https://apple.com/documentation/x")).toBe(
+        "https://apple.com/documentation/x",
+      );
+    });
+  });
+
   describe("convertToJsonApiUrl", () => {
     it("should convert documentation URL to JSON API URL", () => {
       const webUrl = "https://developer.apple.com/documentation/swiftui/view";
@@ -16,6 +31,12 @@ describe("URL Converter", () => {
         "https://developer.apple.com/tutorials/data/documentation/swiftui/view.json";
 
       expect(convertToJsonApiUrl(webUrl)).toBe(expected);
+    });
+
+    it("converts a site path, as result links give it", () => {
+      expect(convertToJsonApiUrl("/documentation/swiftui/view")).toBe(
+        "https://developer.apple.com/tutorials/data/documentation/swiftui/view.json",
+      );
     });
 
     it("should handle URLs with trailing slash", () => {

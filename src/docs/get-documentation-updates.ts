@@ -96,9 +96,7 @@ const parseUpdates = (updatesData: RenderNode, updatesIndex: RenderIndex) => {
             : sectionCategory;
           const updateItem: UpdateItem = {
             title: reference.title,
-            url: reference.url
-              ? `https://developer.apple.com${reference.url}`
-              : "",
+            url: reference.url ?? "",
             description: formatInlineContent(
               reference.abstract ?? [],
               updatesData.references,

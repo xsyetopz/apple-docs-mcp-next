@@ -282,7 +282,7 @@ const createSimilarApi = (
   if (isTopicReference(ref)) {
     return {
       title: ref.title,
-      url: `https://developer.apple.com${ref.url}`,
+      url: ref.url,
       identifier,
       abstract: ref.abstract
         ? formatInlineContent(ref.abstract, references).trim()
@@ -301,7 +301,7 @@ const createSimilarApi = (
 
     return {
       title: apiName,
-      url: `https://developer.apple.com/documentation/${pathPart}`,
+      url: `/documentation/${pathPart}`,
       identifier,
       category,
       similarityType,

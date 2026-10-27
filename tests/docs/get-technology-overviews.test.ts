@@ -133,9 +133,7 @@ const overviewsIndex = {
 
 const links = (result: string): string[] =>
   [
-    ...result.matchAll(
-      /\[([^\]]+)\]\(https:\/\/developer\.apple\.com\/documentation\/technologyoverviews\//g,
-    ),
+    ...result.matchAll(/\[([^\]]+)\]\(\/documentation\/technologyoverviews\//g),
   ].map((match) => match[1] ?? "");
 
 describe("get-technology-overviews", () => {
@@ -276,7 +274,7 @@ describe("get-technology-overviews", () => {
 
     expect(links(result)).toEqual(["Liquid Glass", "Adopting Liquid Glass"]);
     expect(result).toContain(
-      "[Adopting Liquid Glass](https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass) *(Article)* — in Liquid Glass",
+      "[Adopting Liquid Glass](/documentation/technologyoverviews/adopting-liquid-glass) *(Article)* — in Liquid Glass",
     );
   });
 

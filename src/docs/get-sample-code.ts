@@ -254,7 +254,7 @@ const processSampleCodeNodes = (
         framework: framework || undefined,
         beta: node.beta || false,
         featured: featuredIds.has(docUrl),
-        url: `https://developer.apple.com${node.path}`,
+        url: node.path,
         path: node.path,
         depth,
       });

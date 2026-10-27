@@ -58,6 +58,55 @@ describe("fetchAppleDocJson", () => {
       expect(apiCache.set).toHaveBeenCalled();
     });
 
+    it("reads a page named by its site path, as its links name it", async () => {
+      (apiCache.get as Mock<(...args: unknown[]) => unknown>).mockReturnValue(
+        null,
+      );
+      (
+        httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
+      ).mockResolvedValue(mockData.docJsonData);
+
+      const result = await fetchAppleDocJson({
+        url: "/documentation/uikit/uiview",
+      });
+
+      expect(convertToJsonApiUrl).toHaveBeenCalledWith(mockDocUrl);
+      expect(result).toContain("# UIView");
+    });
+
+    it("lists Topics without member summaries when the page would run past the page limit", async () => {
+      (apiCache.get as Mock<(...args: unknown[]) => unknown>).mockReturnValue(
+        null,
+      );
+      const summary = "A long member summary. ".repeat(20);
+      const members = Array.from({ length: 100 }, (_, i) => `doc://x/m${i}`);
+      (
+        httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
+      ).mockResolvedValue({
+        metadata: { title: "Big", role: "collection" },
+        topicSections: [{ title: "Members", identifiers: members }],
+        references: Object.fromEntries(
+          members.map((id, i) => [
+            id,
+            {
+              type: "topic",
+              title: `member${i}`,
+              url: `/documentation/x/m${i}`,
+              kind: "symbol",
+              abstract: [{ type: "text", text: summary }],
+            },
+          ]),
+        ),
+      });
+
+      const result = await fetchAppleDocJson({ url: mockDocUrl });
+
+      expect(result).toContain("- [`member50`](/documentation/x/m50)\n");
+      expect(result).not.toContain(summary.trim());
+      expect(result).toContain('get_api_relations kind "related"');
+      expect(result.length).toBeLessThan(40_000);
+    });
+
     it("should use cache when available", async () => {
       const cachedContent = "# Cached Documentation";
       (apiCache.get as Mock<(...args: unknown[]) => unknown>).mockReturnValue(
@@ -418,8 +467,8 @@ describe("fetchAppleDocJson", () => {
       expect(text).toContain("## Best practices");
       expect(text).toContain(
         "**Use a tab bar to support navigation.** For actions, use a " +
-          "[toolbar](https://developer.apple.com/design/human-interface-guidelines/toolbars) or " +
-          "[`UITabBar`](https://developer.apple.com/documentation/uikit/uitabbar).",
+          "[toolbar](/design/human-interface-guidelines/toolbars) or " +
+          "[`UITabBar`](/documentation/uikit/uitabbar).",
       );
       expect(text).toContain("### iPadOS");
       expect(text).toContain("Left column");
