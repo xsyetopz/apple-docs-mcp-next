@@ -1,8 +1,9 @@
 #!/usr/bin/env bun
 /**
- * The executable: the server on stdio, ended by a signal or by a failure nothing caught.
+ * The executable: the server on stdio, ended by a signal or by a failure nothing caught. `serveStdio` picks the protocol
+ * era from the first message: `server/discover` serves 2026-07-28, `initialize` serves an older client.
  */
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { serveStdio } from "@modelcontextprotocol/server/stdio";
 
 import { logger } from "./core/logger.ts";
 import { createServer } from "./server.ts";
@@ -19,7 +20,7 @@ process.on("uncaughtException", (error) => {
 });
 
 try {
-  await createServer().connect(new StdioServerTransport());
+  serveStdio(createServer);
   logger.info("Apple Developer Docs MCP server running on stdio");
 } catch (error) {
   logger.error("Fatal error in main():", error);

@@ -4,8 +4,7 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it } from "bun:test";
-import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
+import { Client, InMemoryTransport } from "@modelcontextprotocol/client";
 
 const { createServer } = await import("../../src/server.ts");
 

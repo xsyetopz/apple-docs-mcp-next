@@ -4,8 +4,8 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it, mock } from "bun:test";
-import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
+import { Client, InMemoryTransport } from "@modelcontextprotocol/client";
+import { serveStdio } from "@modelcontextprotocol/server/stdio";
 
 import { AppError, ErrorType } from "../src/core/errors.ts";
 
@@ -59,7 +59,7 @@ describe("the server", () => {
     await client.close();
   });
 
-  it("lists every tool, each with a description and every argument described", async () => {
+  it("lists every tool, each with a description, hints, every argument described and a 2020-12 schema", async () => {
     const { tools } = await client.listTools();
 
     expect(tools.map((tool) => tool.name).sort()).toEqual([
@@ -86,6 +86,10 @@ describe("the server", () => {
     for (const tool of tools) {
       expect(tool.description).toBeTruthy();
       expect(tool.annotations?.readOnlyHint).toBe(true);
+      expect(typeof tool.annotations?.openWorldHint).toBe("boolean");
+      expect(tool.inputSchema["$schema"]).toBe(
+        "https://json-schema.org/draft/2020-12/schema",
+      );
       for (const argument of Object.values(tool.inputSchema.properties ?? {})) {
         expect((argument as { description?: string }).description).toBeTruthy();
       }
@@ -226,15 +230,13 @@ describe("the server", () => {
     });
   });
 
-  it("answers an unknown tool, and a tool that throws, with an error result", async () => {
+  it("refuses an unknown tool, and answers a tool that throws with an error result", async () => {
     handleListTechnologies.mockRejectedValueOnce(new Error("Apple is down"));
 
+    // The v2 SDK answers an unknown tool with a protocol error, not a tool result
     await expect(
       client.callTool({ name: "unknown_tool", arguments: {} }),
-    ).resolves.toMatchObject({
-      isError: true,
-      content: [{ text: expect.stringContaining("unknown_tool not found") }],
-    });
+    ).rejects.toThrow("unknown_tool not found");
     await expect(
       client.callTool({ name: "list_technologies", arguments: {} }),
     ).resolves.toMatchObject({
@@ -243,5 +245,34 @@ describe("the server", () => {
         { type: "text", text: expect.stringContaining("Error: Apple is down") },
       ],
     });
+  });
+});
+
+describe("the server for a client speaking 2026-07-28", () => {
+  it("answers server/discover and lists its tools with a public hour of caching", async () => {
+    const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
+    const handle = serveStdio(createServer, { transport: serverSide });
+    const client = new Client(
+      { name: "test", version: "test" },
+      { versionNegotiation: { mode: { pin: "2026-07-28" } } },
+    );
+    await client.connect(clientSide);
+
+    try {
+      expect(client.getProtocolEra()).toBe("modern");
+      const discovered = await client.discover();
+      expect(discovered.supportedVersions).toContain("2026-07-28");
+      expect(discovered.instructions).toBeTruthy();
+      expect(discovered).toMatchObject({
+        ttlMs: 3_600_000,
+        cacheScope: "public",
+      });
+      const listed = await client.listTools();
+      expect(listed.tools).toHaveLength(19);
+      expect(listed).toMatchObject({ ttlMs: 3_600_000, cacheScope: "public" });
+    } finally {
+      await client.close();
+      await handle.close();
+    }
   });
 });

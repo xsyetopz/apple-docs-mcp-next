@@ -24,8 +24,7 @@ mock.module("../../src/wwdc/data-source.ts", () => ({
   clearDataCache: mock(),
 }));
 
-import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
+import { Client, InMemoryTransport } from "@modelcontextprotocol/client";
 
 // Import mocked functions
 import {

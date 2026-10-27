@@ -13,8 +13,7 @@ import {
   type Mock,
   mock,
 } from "bun:test";
-import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
+import { Client, InMemoryTransport } from "@modelcontextprotocol/client";
 
 // Mock wwdc-data-source before importing anything that uses it
 mock.module("../src/wwdc/data-source.ts", () => ({

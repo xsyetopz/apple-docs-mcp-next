@@ -2,8 +2,7 @@
  * The MCP side of a tool: its listing, its arguments checked against its zod schema by the SDK, and its answer, the
  * use case's Markdown or, when the use case throws, one error result with the failure's suggestions.
  */
-import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
+import type { CallToolResult, McpServer } from "@modelcontextprotocol/server";
 import type { z } from "zod";
 
 import { AppError, classifyError } from "../core/errors.ts";
@@ -13,6 +12,8 @@ export interface ToolSpec<Input extends z.ZodObject> {
   title: string;
   description: string;
   inputSchema: Input;
+  /** Whether the tool calls developer.apple.com (the MCP `openWorldHint`); false for bundled data */
+  openWorld?: boolean;
   run: (input: z.output<Input>) => Promise<string>;
 }
 
@@ -29,7 +30,10 @@ export const defineTool = <Input extends z.ZodObject>(
         title: spec.title,
         description: spec.description,
         inputSchema: spec.inputSchema,
-        annotations: { readOnlyHint: true },
+        annotations: {
+          readOnlyHint: true,
+          openWorldHint: spec.openWorld ?? true,
+        },
       },
       // The SDK parses the arguments with `spec.inputSchema` before this runs; its types cannot say so for a generic schema.
       (input) => call(spec, input as z.output<Input>),

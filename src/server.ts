@@ -1,7 +1,7 @@
 /**
  * The composition root: the MCP server with its name, version and instructions, and every tool registered on it.
  */
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { McpServer } from "@modelcontextprotocol/server";
 import { z } from "zod";
 
 import pkg from "../package.json";
@@ -25,8 +25,14 @@ Searched wrong, or not there:
 - Not there: the word matches only another framework's term ("confetti" is an AVFoundation camera reaction), a wildcard symbol search in the framework finds nothing, and Xcode's DocumentationSearch returns only generic matches; look outside Apple's frameworks.
 - An existing API comes first under its exact name. Result counts mean nothing: searches fill about 20 slots.`;
 
+/** The tool list is the same for every caller and changes only with a release: a client may keep it for an hour */
+const STATIC_LIST = { ttlMs: 3_600_000, cacheScope: "public" } as const;
+
 export const createServer = (): McpServer => {
-  const server = new McpServer(PACKAGE, { instructions: SEARCH_GUIDE });
+  const server = new McpServer(PACKAGE, {
+    instructions: SEARCH_GUIDE,
+    cacheHints: { "tools/list": STATIC_LIST, "server/discover": STATIC_LIST },
+  });
   for (const register of tools) {
     register(server);
   }
