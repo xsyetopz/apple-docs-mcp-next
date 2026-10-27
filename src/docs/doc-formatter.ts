@@ -211,7 +211,8 @@ export const formatDocumentAbstract = (jsonData: RenderNode): string => {
 export const formatPlatformAvailability = (jsonData: RenderNode): string => {
   if (
     !jsonData.metadata?.platforms ||
-    !Array.isArray(jsonData.metadata.platforms)
+    !Array.isArray(jsonData.metadata.platforms) ||
+    jsonData.metadata.platforms.length === 0
   ) {
     return "";
   }
@@ -267,23 +268,13 @@ const formatPlatformLine = (platform: PlatformAvailability): string => {
  * Format See Also section
  */
 export const formatSeeAlsoSection = (jsonData: RenderNode): string => {
-  if (!jsonData.seeAlsoSections || !Array.isArray(jsonData.seeAlsoSections)) {
-    return "";
-  }
-
-  let content = "## See Also\n\n";
-
-  jsonData.seeAlsoSections.forEach((seeAlso) => {
-    if (seeAlso.title && seeAlso.identifiers) {
-      content += `### ${seeAlso.title}\n\n`;
-      content += formatSeeAlsoIdentifiers(
-        seeAlso.identifiers,
-        jsonData.references,
-      );
-    }
-  });
-
-  return content;
+  const groups = (jsonData.seeAlsoSections ?? [])
+    .filter((seeAlso) => seeAlso.title && seeAlso.identifiers?.length > 0)
+    .map(
+      (seeAlso) =>
+        `### ${seeAlso.title}\n\n${formatSeeAlsoIdentifiers(seeAlso.identifiers, jsonData.references)}`,
+    );
+  return groups.length > 0 ? `## See Also\n\n${groups.join("")}` : "";
 };
 
 /**

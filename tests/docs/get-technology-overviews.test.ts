@@ -179,7 +179,7 @@ describe("get-technology-overviews", () => {
     ]);
     const order = [
       "## Get started",
-      "### [App design and UI]",
+      "- [App design and UI]",
       "Build your app’s interface.",
       "**App builder**",
       "[SwiftUI apps]",
@@ -187,9 +187,9 @@ describe("get-technology-overviews", () => {
       "[Liquid Glass]",
       "**Essentials**",
       "[Adopting Liquid Glass]",
-      "### [Games]",
+      "- [Games]",
       "## Discover Apple technologies",
-      "### [Data management]",
+      "- [Data management]",
       "[Shared data]",
     ].map((text) => result.indexOf(text));
     expect(order.every((index) => index >= 0)).toBe(true);
@@ -233,6 +233,21 @@ describe("get-technology-overviews", () => {
       "SwiftUI apps",
       "UIKit and AppKit apps",
     ]);
+    expect(result).toContain(
+      "Showing 3 of 9. Narrow with category or searchQuery, or raise limit.",
+    );
+  });
+
+  it("does not mention a cap when everything fits", async () => {
+    const result = await handleGetTechnologyOverviews({
+      category: undefined,
+      searchQuery: undefined,
+      includeSubcategories: true,
+      limit: 50,
+    });
+
+    expect(result).not.toContain("Showing");
+    expect(result).not.toContain("###");
   });
 
   it("lists only the collections without subcategories", async () => {

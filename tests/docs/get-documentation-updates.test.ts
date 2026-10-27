@@ -275,7 +275,7 @@ describe("get-documentation-updates", () => {
 
     expect(result).toContain("UIKit updates");
     expect(result).toContain("SwiftUI updates");
-    expect(result).toContain("*Beta*"); // Beta badge should be shown
+    expect(result).toContain("(Beta)"); // Beta badge should be shown
   });
 
   it("should search by query", async () => {
@@ -304,8 +304,11 @@ describe("get-documentation-updates", () => {
     });
 
     // Should contain only two results
-    const updateCount = (result.match(/###/g) || []).length;
+    const updateCount = (result.match(/^- \[/gm) || []).length;
     expect(updateCount).toBe(2);
+    expect(result).toContain(
+      "Showing 2 of 5. Narrow with category, technology or searchQuery, or raise limit.",
+    );
   });
 
   it("should show new badges", async () => {
@@ -319,7 +322,7 @@ describe("get-documentation-updates", () => {
     });
 
     expect(result).toContain("WWDC24");
-    expect(result).toContain("*New*"); // WWDC24 has new.svg image
+    expect(result).toContain("(New, 2024)"); // WWDC24 has new.svg image
   });
 
   it("should use cache when available", async () => {
@@ -460,7 +463,7 @@ describe("get-documentation-updates", () => {
     expect(result).toContain("SwiftUI updates");
     // Since we're in technology category, the technology metadata is not shown (it's redundant)
     // The technology extraction is working internally as the beta flag is correctly applied
-    expect(result).toContain("*Beta*"); // Beta status correctly extracted from index
+    expect(result).toContain("(Beta)"); // Beta status correctly extracted from index
   });
 
   it("should group updates by category", async () => {
@@ -551,7 +554,7 @@ describe("get-documentation-updates", () => {
     expect(result).toContain(
       "[WWDC25](https://developer.apple.com/documentation/updates/wwdc2025)",
     );
-    expect(result).toContain("Year: 2025");
+    expect(result).toContain("(2025)");
     expect(result).not.toContain("Technology:");
   });
 });

@@ -90,6 +90,41 @@ describe("get-related-apis", () => {
       },
     };
 
+    it("groups the Topics members under their section titles", async () => {
+      mockHttpClient.getJson.mockResolvedValue({
+        ...mockJsonResponse,
+        topicSections: [
+          { title: "Creating a View", identifiers: ["swiftui/text"] },
+          {
+            title: "Showing Images",
+            identifiers: [
+              "swiftui/image",
+              "swiftui/protocol1",
+              "swiftui/protocol2",
+              "swiftui/protocol3",
+              "swiftui/text",
+            ],
+          },
+        ],
+        seeAlsoSections: [],
+      });
+
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+        limit: 10,
+      });
+
+      expect(result).toContain(
+        "## Topics\n- Creating a View: [Text](https://developer.apple.com/documentation/swiftui/text)\n- Showing Images: [Image](https://developer.apple.com/documentation/swiftui/image)",
+      );
+      expect(result).toContain(
+        "- Showing Images: [Image](https://developer.apple.com/documentation/swiftui/image), +2 more",
+      );
+    });
+
     it("should get all related APIs by default", async () => {
       mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
 
@@ -98,6 +133,7 @@ describe("get-related-apis", () => {
         includeInherited: true,
         includeConformance: true,
         includeSeeAlso: true,
+        limit: 10,
       });
 
       expect(mockConvertToJsonApiUrl).toHaveBeenCalledWith(mockApiUrl);
@@ -106,15 +142,73 @@ describe("get-related-apis", () => {
       );
 
       expect(result).toContain("# Related APIs for view");
-      expect(result).toContain("**Found 5 related APIs:**");
+      expect(result).toContain("5 related APIs");
       expect(result).toContain("## Inherits From");
       expect(result).toContain("[Protocol1]");
       expect(result).toContain("## Conforms To");
       expect(result).toContain("[Protocol2]");
       expect(result).toContain("[Protocol3]");
-      expect(result).toContain("## See Also: Related Views");
+      expect(result).toContain("## See Also");
       expect(result).toContain("[Text]");
       expect(result).toContain("A view that displays text.");
+    });
+
+    it("should print one line per API: link, then summary", async () => {
+      mockHttpClient.getJson.mockResolvedValue(mockJsonResponse);
+
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+        limit: 10,
+      });
+
+      expect(result).toContain(
+        "- [Text](https://developer.apple.com/documentation/swiftui/text): A view that displays text.",
+      );
+      expect(result).not.toContain("###");
+      expect(result).not.toContain("*Type:");
+      expect(result).not.toContain("…and");
+    });
+
+    it("should cap each group at limit and end it with how many more", async () => {
+      const ids = ["a", "b", "c", "d", "e"].map((name) => `swiftui/${name}`);
+      mockHttpClient.getJson.mockResolvedValue({
+        relationshipsSections: [
+          { type: "conformsTo", title: "Conforms To", identifiers: ids },
+        ],
+        seeAlsoSections: [
+          { title: "More", identifiers: ids.slice(0, 2).map((id) => `${id}2`) },
+        ],
+        references: Object.fromEntries(
+          [...ids, ...ids.slice(0, 2).map((id) => `${id}2`)].map((id) => [
+            id,
+            {
+              type: "topic",
+              title: id.toUpperCase(),
+              url: `/documentation/${id}`,
+              kind: "symbol",
+            },
+          ]),
+        ),
+      });
+
+      const result = await handleGetRelatedApis({
+        apiUrl: mockApiUrl,
+        includeInherited: true,
+        includeConformance: true,
+        includeSeeAlso: true,
+        limit: 3,
+      });
+
+      expect(result).toContain("7 related APIs");
+      expect(result).toContain("[SWIFTUI/C]");
+      expect(result).not.toContain("[SWIFTUI/D]");
+      expect(result).toContain("…and 2 more");
+      expect(result.match(/…and/g)).toHaveLength(1);
+      expect(result).toContain("## See Also\n- [SWIFTUI/A2]");
+      expect(result).toContain("Showing 3 per group. Raise limit");
     });
 
     it("should exclude inherited APIs when includeInherited is false", async () => {
@@ -125,6 +219,7 @@ describe("get-related-apis", () => {
         includeInherited: false,
         includeConformance: true,
         includeSeeAlso: true,
+        limit: 10,
       });
 
       expect(result).not.toContain("## Inherits From");
@@ -141,6 +236,7 @@ describe("get-related-apis", () => {
         includeInherited: true,
         includeConformance: false,
         includeSeeAlso: true,
+        limit: 10,
       });
 
       expect(result).toContain("## Inherits From");
@@ -157,6 +253,7 @@ describe("get-related-apis", () => {
         includeInherited: true,
         includeConformance: true,
         includeSeeAlso: false,
+        limit: 10,
       });
 
       expect(result).toContain("## Inherits From");
@@ -180,6 +277,7 @@ describe("get-related-apis", () => {
         includeInherited: true,
         includeConformance: true,
         includeSeeAlso: true,
+        limit: 10,
       });
 
       expect(result).toContain("No related APIs found for:");
@@ -195,6 +293,7 @@ describe("get-related-apis", () => {
           includeInherited: true,
           includeConformance: true,
           includeSeeAlso: true,
+          limit: 10,
         }),
       ).rejects.toThrow("Invalid Apple Developer Documentation URL");
     });
@@ -208,6 +307,7 @@ describe("get-related-apis", () => {
           includeInherited: true,
           includeConformance: true,
           includeSeeAlso: true,
+          limit: 10,
         }),
       ).rejects.toThrow("Network error");
     });
@@ -220,6 +320,7 @@ describe("get-related-apis", () => {
         includeInherited: true,
         includeConformance: true,
         includeSeeAlso: true,
+        limit: 10,
       });
 
       expect(result).toContain("No related APIs found for:");
@@ -270,10 +371,11 @@ describe("get-related-apis", () => {
         includeInherited: true,
         includeConformance: true,
         includeSeeAlso: true,
+        limit: 10,
       });
 
       expect(result).toContain("# Related APIs for view");
-      expect(result).toContain("**Found 2 related APIs:**");
+      expect(result).toContain("2 related APIs");
       expect(result).toContain("## Conforming Types");
       expect(result).toContain("[AnyView]");
       expect(result).toContain("A type-erased view.");
@@ -317,6 +419,7 @@ describe("get-related-apis", () => {
       includeInherited: true,
       includeConformance: true,
       includeSeeAlso: true,
+      limit: 10,
     });
 
     expect(result).toContain("Pushes the view onto a `NavigationStack`.");

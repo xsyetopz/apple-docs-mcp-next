@@ -8,12 +8,12 @@ export const searchFrameworkSymbolsTool = defineTool({
   name: "search_framework_symbols",
   title: "Search Framework Symbols",
   description:
-    'The symbols in one framework\'s navigator index: each one\'s name, link and kind, without summaries. framework is the last segment of the framework\'s documentation link ("swiftui", "storekit"); symbolType keeps one kind; namePattern is a wildcard such as "*View" or "UI*", in any case; nested symbols count toward limit. Read a symbol with get_apple_doc_content.',
+    "List the symbols of one framework by name pattern and kind: name, link and kind, no summaries. Read a symbol with get_apple_doc_content.",
   inputSchema: z.object({
     framework: z
       .string()
       .describe(
-        'Framework identifier in lowercase. Common: "uikit", "swiftui", "foundation", "combine", "coredata". Get exact names from list_technologies. Example: "swiftui" for SwiftUI framework.',
+        'Lowercase framework ID, the last segment of its documentation link: "swiftui", "storekit" (see list_technologies)',
       ),
     symbolType: z
       .enum([
@@ -30,30 +30,18 @@ export const searchFrameworkSymbolsTool = defineTool({
         "let",
         "typealias",
       ])
-      .default("all")
-      .describe(
-        'Filter by symbol type. Use "class" for UIViewController subclasses, "protocol" for delegates, "struct" for value types. Default: "all" shows everything.',
-      ),
+      .default("all"),
     namePattern: z
       .string()
       .optional()
-      .describe(
-        'Filter by name pattern. Use "*View" for all views, "UI*" for UI-prefixed symbols, "*Delegate" for delegates. Any case. Leave empty for all symbols.',
-      ),
-    language: z
-      .enum(["swift", "occ"])
-      .default("swift")
-      .describe(
-        'Language preference. Some APIs differ between Swift and Objective-C. Default: "swift"',
-      ),
+      .describe('Wildcard in any case, e.g. "*View", "UI*", "*feedback*"'),
+    language: z.enum(["swift", "occ"]).default("swift"),
     limit: z
       .number()
       .min(1)
       .max(API_LIMITS.MAX_FRAMEWORK_SYMBOLS_LIMIT)
       .default(API_LIMITS.DEFAULT_FRAMEWORK_SYMBOLS_LIMIT)
-      .describe(
-        "Results limit (default: 50, max: 200). Includes nested symbols.",
-      ),
+      .describe("Nested symbols count"),
   }),
   run: searchFrameworkSymbols,
 });

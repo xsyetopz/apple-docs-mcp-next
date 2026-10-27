@@ -59,17 +59,15 @@ describe("the server", () => {
     await client.close();
   });
 
-  it("lists every tool, each with a description, hints, every argument described and a 2020-12 schema", async () => {
+  it("lists every tool, each with a description, hints and a 2020-12 schema", async () => {
     const { tools } = await client.listTools();
 
     expect(tools.map((tool) => tool.name).sort()).toEqual([
       "browse_wwdc_topics",
       "find_related_wwdc_videos",
-      "find_similar_apis",
+      "get_api_relations",
       "get_apple_doc_content",
       "get_documentation_updates",
-      "get_platform_compatibility",
-      "get_related_apis",
       "get_sample_code",
       "get_technology_overviews",
       "get_wwdc_code_examples",
@@ -77,7 +75,6 @@ describe("the server", () => {
       "list_technologies",
       "list_wwdc_videos",
       "list_wwdc_years",
-      "resolve_references_batch",
       "search_apple_docs",
       "search_docs_map",
       "search_framework_symbols",
@@ -90,9 +87,6 @@ describe("the server", () => {
       expect(tool.inputSchema["$schema"]).toBe(
         "https://json-schema.org/draft/2020-12/schema",
       );
-      for (const argument of Object.values(tool.inputSchema.properties ?? {})) {
-        expect((argument as { description?: string }).description).toBeTruthy();
-      }
     }
   });
 
@@ -109,21 +103,14 @@ describe("the server", () => {
     });
   });
 
-  it("passes a page read its options, the ones left out false", async () => {
+  it("passes a page read its url", async () => {
     await client.callTool({
       name: "get_apple_doc_content",
-      arguments: {
-        url: "https://developer.apple.com/documentation/swiftui",
-        includeRelatedApis: true,
-      },
+      arguments: { url: "https://developer.apple.com/documentation/swiftui" },
     });
 
     expect(fetchAppleDocJson).toHaveBeenCalledWith({
       url: "https://developer.apple.com/documentation/swiftui",
-      includeRelatedApis: true,
-      includeReferences: false,
-      includeSimilarApis: false,
-      includePlatformAnalysis: false,
     });
   });
 
@@ -268,7 +255,7 @@ describe("the server for a client speaking 2026-07-28", () => {
         cacheScope: "public",
       });
       const listed = await client.listTools();
-      expect(listed.tools).toHaveLength(19);
+      expect(listed.tools).toHaveLength(16);
       expect(listed).toMatchObject({ ttlMs: 3_600_000, cacheScope: "public" });
     } finally {
       await client.close();

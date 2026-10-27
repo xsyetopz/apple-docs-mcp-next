@@ -32,6 +32,7 @@ export interface SimilarApisQuery {
   searchDepth: "shallow" | "medium" | "deep";
   filterByCategory?: string | undefined;
   includeAlternatives: boolean;
+  limit: number;
 }
 
 export const handleFindSimilarApis = async ({
@@ -39,6 +40,7 @@ export const handleFindSimilarApis = async ({
   searchDepth,
   filterByCategory,
   includeAlternatives,
+  limit,
 }: SimilarApisQuery): Promise<string> => {
   try {
     logger.info(`Finding similar APIs for: ${apiUrl}`);
@@ -94,7 +96,10 @@ export const handleFindSimilarApis = async ({
 
     uniqueApis.sort((a, b) => b.confidence - a.confidence);
 
-    const limitedApis = uniqueApis.slice(0, SEARCH_DEPTH_LIMITS[searchDepth]);
+    const limitedApis = uniqueApis.slice(
+      0,
+      Math.min(limit, SEARCH_DEPTH_LIMITS[searchDepth]),
+    );
 
     const title = data.metadata?.title ?? "API";
 
@@ -102,7 +107,14 @@ export const handleFindSimilarApis = async ({
       .map((inline) => formatInlineContent(inline, references))
       .join(" ")
       .trim();
-    return formatSimilarApis(apiUrl, limitedApis, title, data, deprecationNote);
+    return formatSimilarApis(
+      apiUrl,
+      limitedApis,
+      uniqueApis.length,
+      title,
+      data,
+      deprecationNote,
+    );
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     if (errorMessage.includes("Invalid Apple Developer Documentation URL")) {
@@ -320,6 +332,7 @@ const deduplicateAndScore = (apis: SimilarAPI[]): SimilarAPI[] => {
 const formatSimilarApis = (
   originalUrl: string,
   similarApis: SimilarAPI[],
+  foundCount: number,
   originalApiName?: string,
   originalData?: RenderNode,
   deprecationNote?: string,
@@ -347,8 +360,7 @@ const formatSimilarApis = (
     }
   }
 
-  content += `**Source:** [${originalUrl}](${originalUrl})\n\n`;
-  content += `**Found ${similarApis.length} similar APIs (sorted by relevance):**\n\n`;
+  content += `${similarApis.length} similar APIs\n`;
 
   // Group by category instead of similarity type for better organization
   const groupedByCategory = new Map<string, SimilarAPI[]>();
@@ -361,48 +373,16 @@ const formatSimilarApis = (
   }
 
   for (const [categoryKey, apis] of groupedByCategory) {
-    content += `## ${categoryKey}\n\n`;
+    content += `\n## ${categoryKey}\n`;
 
     for (const api of apis) {
-      content += formatSingleSimilarApi(api);
+      content += `- [${api.title}](${api.url})${api.abstract ? `: ${api.abstract}` : ""}\n`;
     }
   }
 
-  content += "## Similarity Analysis\n\n";
-  const avgConfidence =
-    similarApis.reduce((sum, api) => sum + api.confidence, 0) /
-    similarApis.length;
-  content += `**Average Similarity:** ${avgConfidence.toFixed(1)}/10\n`;
-
-  const highConfidenceApis = similarApis.filter((api) => api.confidence >= 7);
-  if (highConfidenceApis.length > 0) {
-    content += `**Highly Similar APIs:** ${highConfidenceApis.length}\n`;
+  if (foundCount > similarApis.length) {
+    content += `\n…and ${foundCount - similarApis.length} more\n\nShowing ${similarApis.length} of ${foundCount}. Raise limit or depth (shallow ${SEARCH_DEPTH_LIMITS.shallow}, medium ${SEARCH_DEPTH_LIMITS.medium}, deep ${SEARCH_DEPTH_LIMITS.deep}) to see more.\n`;
   }
 
-  const categories = [...new Set(similarApis.map((api) => api.category))];
-  content += `**Categories:** ${categories.join(", ")}\n\n`;
-
-  content += `---\n\n*Total: ${similarApis.length} similar APIs found*`;
-
-  return content;
-};
-
-const formatSingleSimilarApi = (api: SimilarAPI): string => {
-  let content = `### [${api.title}](${api.url})\n`;
-
-  if (api.abstract) {
-    content += `${api.abstract}\n\n`;
-  }
-
-  const metadata = [`Similarity: ${api.confidence}/10`];
-  if (api.symbolKind) {
-    metadata.push(`Type: ${api.symbolKind}`);
-  }
-  if (api.category !== api.similarityType) {
-    metadata.push(`Category: ${api.category}`);
-  }
-
-  content += `*${metadata.join(" | ")}*\n\n`;
-
-  return content;
+  return content.trimEnd();
 };

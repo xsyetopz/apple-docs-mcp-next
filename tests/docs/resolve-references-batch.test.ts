@@ -42,7 +42,50 @@ describe("resolve_references_batch", () => {
     });
 
     expect(result).not.toContain("Unknown");
-    expect(result).toContain("Resolved 1 references");
+    expect(result).toContain("1 references");
     expect(result).toContain("Reads and writes a value owned by a `State`.");
+    expect(result).toContain(
+      "- [Binding](https://developer.apple.com/documentation/swiftui/binding): Reads and writes",
+    );
+    expect(result).not.toContain("Kind:");
+    expect(result).not.toContain("Showing");
+  });
+
+  it("prints a declaration on the item's line and says when maxReferences cut the list", async () => {
+    const reference = (name: string) => ({
+      type: "topic",
+      kind: "symbol",
+      role: "symbol",
+      title: name,
+      url: `/documentation/swiftui/${name.toLowerCase()}`,
+      fragments: [
+        { kind: "keyword", text: "struct" },
+        { kind: "text", text: " " },
+        { kind: "identifier", text: name },
+      ],
+      abstract: [{ type: "text", text: `The ${name}.` }],
+    });
+    spyOn(httpClient, "getJson").mockResolvedValue({
+      metadata: { title: "View" },
+      references: {
+        "doc://SwiftUI/A": reference("Alpha"),
+        "doc://SwiftUI/B": reference("Beta"),
+        "doc://SwiftUI/C": reference("Gamma"),
+      },
+    });
+
+    const result = await handleResolveReferencesBatch({
+      sourceUrl: "https://developer.apple.com/documentation/swiftui/view",
+      maxReferences: 2,
+      filterByType: "all",
+    });
+
+    expect(result).toContain(
+      "- [Alpha](https://developer.apple.com/documentation/swiftui/alpha) `struct Alpha`: The Alpha.",
+    );
+    expect(result).not.toContain("Gamma");
+    expect(result).toContain(
+      "Showing 2 of 3. Narrow with filter, or raise limit.",
+    );
   });
 });

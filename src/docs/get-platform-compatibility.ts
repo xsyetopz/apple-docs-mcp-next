@@ -250,7 +250,7 @@ const formatCompatibilityAnalysis = (
     analysis.deprecatedPlatforms.length === analysis.supportedPlatforms.length;
   if (deprecatedEverywhere) {
     content +=
-      "⚠️ **Deprecated** on every platform it supports - find_similar_apis lists the replacements Apple names\n\n";
+      '⚠️ **Deprecated** on every platform it supports - get_api_relations kind "similar" lists the replacements Apple names\n\n';
   } else if (analysis.crossPlatformSupport) {
     content += `✅ **Cross-platform compatible** - This API works across ${analysis.supportedPlatforms.length} platforms\n\n`;
   } else {

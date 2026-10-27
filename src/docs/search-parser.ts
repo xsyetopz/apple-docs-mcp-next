@@ -13,24 +13,23 @@ export const formatSearchResults = (
   query: string,
   filterType: SearchType,
   searchUrl: string,
+  total: number = results.length,
 ): string => {
-  let content = "";
+  let content = "# Apple Documentation Search Results\n";
 
-  // Add header
-  content += "# Apple Documentation Search Results\n\n";
-  content += `**Query:** "${query}"\n`;
-  content += `**Filter:** ${filterType}\n`;
-  content += `**Results found:** ${results.length}\n\n`;
+  if (results.length === 0) {
+    const suggestion = getVideoSuggestion(query);
+    content += suggestion ? `\n${suggestion}\n` : "\n";
+    content += formatNoResultsMessage(query, filterType, searchUrl);
+    return content;
+  }
+
+  content += `${results.length} results\n`;
 
   // Check if query might be video-related
   const videoSuggestion = getVideoSuggestion(query);
   if (videoSuggestion) {
-    content += videoSuggestion;
-  }
-
-  if (results.length === 0) {
-    content += formatNoResultsMessage(query, filterType, searchUrl);
-    return content;
+    content += `\n${videoSuggestion}`;
   }
 
   // Group results by type
@@ -41,10 +40,11 @@ export const formatSearchResults = (
     content += formatResultGroup(type, typeResults);
   });
 
-  // Add footer
-  content += formatSearchFooter(searchUrl);
+  if (total > results.length) {
+    content += `\nShowing ${results.length} of ${total}. Narrow the query or set type.\n`;
+  }
 
-  return content;
+  return content.trimEnd();
 };
 
 /**
@@ -97,75 +97,57 @@ const groupResultsByType = (
  */
 const getDisplayType = (type: string): string => {
   const typeDisplayNames: Record<string, string> = {
-    documentation: "📚 API Documentation",
-    "documentation-article": "📄 Articles",
-    "documentation-tutorial": "📖 Tutorials",
-    "sample-code": "💻 Sample Code",
-    "design-guideline": "🎨 Design Guidelines",
-    "wwdc-session": "🎥 WWDC Sessions",
-    help: "🧭 App Store Connect Help",
-    guide: "📋 Guides",
+    documentation: "API Documentation",
+    "documentation-article": "Articles",
+    "documentation-tutorial": "Tutorials",
+    "sample-code": "Sample Code",
+    "design-guideline": "Design Guidelines",
+    "wwdc-session": "WWDC Sessions",
+    help: "App Store Connect Help",
+    guide: "Guides",
   };
 
-  return typeDisplayNames[type] || "📝 Other";
+  return typeDisplayNames[type] || "Other";
 };
 
 /**
  * Format a group of results
  */
 const formatResultGroup = (type: string, results: SearchResult[]): string => {
-  let content = `## ${type}\n\n`;
+  let content = `\n## ${type}\n`;
 
-  results.forEach((result, index) => {
-    content += formatSingleResult(result, index + 1);
+  results.forEach((result) => {
+    content += formatSingleResult(result, type === "Other");
   });
 
   return content;
 };
 
 /**
- * Format a single search result
+ * Format a single search result on one line: the link, its marks, the description and, for a WWDC session, how to read it
  */
-const formatSingleResult = (result: SearchResult, index: number): string => {
-  let content = `### ${index}. ${result.title}`;
+const formatSingleResult = (
+  result: SearchResult,
+  showType: boolean,
+): string => {
+  const marks = [
+    result.beta ? "Beta" : "",
+    result.framework ?? "",
+    showType ? result.type.replace(/-/g, " ") : "",
+  ].filter(Boolean);
 
-  // Add badges
-  const badges = [];
-  if (result.beta) {
-    badges.push("🧪 Beta");
+  let content = `- [${result.title}](${result.url})`;
+  if (marks.length > 0) {
+    content += ` (${marks.join(", ")})`;
   }
-  if (badges.length > 0) {
-    content += ` ${badges.join(" ")}`;
-  }
-
-  content += "\n\n";
-
-  // Add metadata
-  if (result.framework) {
-    content += `**Framework:** ${result.framework}\n`;
-  }
-  content += `**Type:** ${result.type.replace(/-/g, " ")}\n`;
-
-  // Add description
   if (result.description) {
-    content += `**Description:** ${result.description}\n`;
+    content += `: ${result.description}`;
   }
-
   if (result.wwdc) {
-    content += `**Read:** get_wwdc_video (year: "${result.wwdc.year}", videoId: "${result.wwdc.videoId}"): transcript and code\n`;
+    content += ` · get_wwdc_video (year: "${result.wwdc.year}", videoId: "${result.wwdc.videoId}")`;
   }
 
-  // Add URL
-  content += `**URL:** ${result.url}\n\n`;
-
-  return content;
-};
-
-/**
- * Format search footer
- */
-const formatSearchFooter = (searchUrl: string): string => {
-  return `---\n\n[View all results on Apple Developer](${searchUrl})`;
+  return `${content}\n`;
 };
 
 /**
@@ -199,17 +181,7 @@ const getVideoSuggestion = (query: string): string | null => {
   const hasYearPattern = /\b(20[2-9][0-9]|wwdc[2-9][0-9])\b/i.test(query);
 
   if (hasVideoKeyword || hasYearPattern) {
-    return `## 💡 Looking for WWDC Videos?
-
-This search covers documentation and samples, but not WWDC videos. For WWDC content, try these tools:
-
-- **\`list_wwdc_videos\`** - Browse WWDC videos by year, topic, or code availability
-- **\`search_wwdc_content\`** - Search through video transcripts and code examples
-- **\`browse_wwdc_topics\`** - Explore videos organized by topic categories
-
----
-
-`;
+    return "WWDC videos are not searched here: use search_wwdc_content (transcripts and code) or list_wwdc_videos.\n";
   }
 
   return null;
@@ -267,5 +239,11 @@ export const parseSearchResults = (
     )
     .slice(0, API_LIMITS.MAX_SEARCH_RESULTS);
 
-  return formatSearchResults(results, query, filterType, searchUrl);
+  return formatSearchResults(
+    results,
+    query,
+    filterType,
+    searchUrl,
+    parsed.length,
+  );
 };

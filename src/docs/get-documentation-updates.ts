@@ -63,11 +63,12 @@ export const handleGetDocumentationUpdates = async ({
     year,
     searchQuery,
     includeBeta,
-    limit,
   });
+  const shownUpdates =
+    limit > 0 ? filteredUpdates.slice(0, limit) : filteredUpdates;
 
   // Format output
-  const result = formatUpdatesList(filteredUpdates);
+  const result = formatUpdatesList(shownUpdates, filteredUpdates.length);
 
   // Cache the result
   updatesCache.set(cacheKey, result);
@@ -208,7 +209,6 @@ const applyUpdatesFilters = (
     year?: string | undefined;
     searchQuery?: string | undefined;
     includeBeta?: boolean | undefined;
-    limit?: number | undefined;
   },
 ): UpdateItem[] => {
   let filtered = [...updates];
@@ -251,23 +251,18 @@ const applyUpdatesFilters = (
     filtered = filtered.filter((update) => !update.beta);
   }
 
-  // Apply limit
-  if (filters.limit && filters.limit > 0) {
-    filtered = filtered.slice(0, filters.limit);
-  }
-
   return filtered;
 };
 
 /**
  * Format updates list
  */
-const formatUpdatesList = (updates: UpdateItem[]): string => {
+const formatUpdatesList = (updates: UpdateItem[], total: number): string => {
   if (updates.length === 0) {
     return "No documentation updates found matching the specified criteria.";
   }
 
-  let content = "# Apple Developer Documentation Updates\n\n";
+  let content = `# Apple Developer Documentation Updates\n${total} updates\n`;
 
   // Group by category
   const grouped = updates.reduce(
@@ -291,24 +286,15 @@ const formatUpdatesList = (updates: UpdateItem[]): string => {
   };
 
   Object.entries(grouped).forEach(([category, items]) => {
-    content += `## ${categoryTitles[category] ?? category}\n\n`;
+    content += `\n## ${categoryTitles[category] ?? category}\n`;
 
     // Add WWDC-specific suggestion
     if (category === "wwdc" && items.length > 0) {
       content +=
-        "> **💡 Tip:** For comprehensive WWDC video content with full transcripts and code examples, use the dedicated WWDC tools:\n";
-      content +=
-        "> - `list_wwdc_videos` - Browse videos by year, topic, or code availability\n";
-      content +=
-        "> - `search_wwdc_content` - Search through video transcripts and code\n";
-      content +=
-        "> - `browse_wwdc_topics` - Explore videos by topic categories\n\n";
+        "For session transcripts and code, use list_wwdc_videos, search_wwdc_content and get_wwdc_video.\n";
     }
 
     items.forEach((item) => {
-      // Build title with badges
-      let titleLine = `### [${item.title}](${item.url})`;
-
       const badges = [];
       if (item.beta) {
         badges.push("Beta");
@@ -317,38 +303,30 @@ const formatUpdatesList = (updates: UpdateItem[]): string => {
         badges.push("New");
       }
 
-      if (badges.length > 0) {
-        titleLine += ` *${badges.join(" | ")}*`;
-      }
-
-      content += `${titleLine}\n`;
-
-      // Add description
-      if (item.description) {
-        content += `${item.description}\n`;
-      }
-
-      // Add metadata
-      const metadata = [];
+      const metadata = [...badges];
       if (item.technology && item.category !== "technology") {
-        metadata.push(`Technology: ${item.technology}`);
+        metadata.push(item.technology);
       }
       if (item.year && item.category === "wwdc") {
-        metadata.push(`Year: ${item.year}`);
+        metadata.push(item.year);
       }
 
+      content += `- [${item.title}](${item.url})`;
       if (metadata.length > 0) {
-        content += `*${metadata.join(" | ")}*\n`;
+        content += ` (${metadata.join(", ")})`;
       }
-
+      if (item.description) {
+        content += `: ${item.description}`;
+      }
       content += "\n";
     });
   });
 
-  content +=
-    "\n---\n\n[View all updates on Apple Developer](https://developer.apple.com/documentation/updates)";
+  if (total > updates.length) {
+    content += `\nShowing ${updates.length} of ${total}. Narrow with category, technology or searchQuery, or raise limit.\n`;
+  }
 
-  return content;
+  return content.trimEnd();
 };
 
 /**

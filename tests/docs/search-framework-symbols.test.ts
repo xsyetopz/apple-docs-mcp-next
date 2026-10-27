@@ -46,7 +46,7 @@ describe("searchFrameworkSymbols", () => {
       );
       expect(result).toContain("UIView");
       expect(result).toContain("UIViewController");
-      expect(result).toContain("Found:** 4 classes");
+      expect(result).toContain("4 classes");
       expect(indexCache.set).toHaveBeenCalled();
     });
 
@@ -141,6 +141,8 @@ describe("searchFrameworkSymbols", () => {
       // Count occurrences of class links
       const classLinks = (result.match(/\[.*?\]/g) || []).length;
       expect(classLinks).toBe(5);
+      expect(result).toContain("Stopped at the limit of 5");
+      expect(result).toContain("raise limit");
     });
 
     it("should support Objective-C language", async () => {
@@ -160,7 +162,7 @@ describe("searchFrameworkSymbols", () => {
       });
 
       expect(result).toContain("UIView");
-      expect(result).toContain("Found:** 1 classes");
+      expect(result).toContain("1 classes");
     });
   });
 
@@ -340,7 +342,7 @@ describe("searchFrameworkSymbols", () => {
       });
 
       expect(result).toContain("UIView");
-      expect(result).toContain("Found:** 1 classes");
+      expect(result).toContain("1 classes");
     });
 
     it("should handle framework name case variations", async () => {
@@ -416,10 +418,11 @@ describe("searchFrameworkSymbols", () => {
         limit: 10,
       });
 
-      expect(result).toContain("BetaClass**");
-      expect(result).toContain("*(Beta, Class)*");
-      expect(result).toContain("DeprecatedClass**");
-      expect(result).toContain("*(Deprecated, Class)*");
+      expect(result).toContain("[BetaClass](");
+      expect(result).toContain("(Beta)");
+      expect(result).toContain("[DeprecatedClass](");
+      expect(result).toContain("(Deprecated)");
+      expect(result).not.toContain("Stopped at the limit");
     });
   });
 });

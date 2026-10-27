@@ -263,30 +263,15 @@ describe("Response Format Validation", () => {
         name: "get_apple_doc_content",
         args: { url: "https://developer.apple.com/documentation/swiftui" },
       },
-      {
-        name: "get_related_apis",
-        args: {
-          apiUrl: "https://developer.apple.com/documentation/swiftui/view",
-        },
-      },
-      {
-        name: "resolve_references_batch",
-        args: {
-          sourceUrl: "https://developer.apple.com/documentation/swiftui",
-        },
-      },
-      {
-        name: "get_platform_compatibility",
-        args: {
-          apiUrl: "https://developer.apple.com/documentation/swiftui/view",
-        },
-      },
-      {
-        name: "find_similar_apis",
-        args: {
-          apiUrl: "https://developer.apple.com/documentation/swiftui/view",
-        },
-      },
+      ...(["related", "references", "similar", "platforms"] as const).map(
+        (kind) => ({
+          name: "get_api_relations",
+          args: {
+            url: "https://developer.apple.com/documentation/swiftui/view",
+            kind,
+          },
+        }),
+      ),
       { name: "get_documentation_updates", args: {} },
       { name: "get_technology_overviews", args: {} },
       { name: "get_sample_code", args: {} },
@@ -334,23 +319,6 @@ describe("Response Format Validation", () => {
 
       validateResponseFormat(response);
       expect(response.isError).toBe(true);
-    });
-  });
-
-  describe("get_apple_doc_content options", () => {
-    it("should return the page for enhanced options as one text item", async () => {
-      fetchAppleDocJson.mockResolvedValueOnce("Mock doc content");
-
-      const response = await call("get_apple_doc_content", {
-        url: "https://developer.apple.com/documentation/swiftui/view",
-        includeRelatedApis: true,
-        includeReferences: true,
-        includeSimilarApis: true,
-        includePlatformAnalysis: true,
-      });
-
-      validateResponseFormat(response);
-      expect(response.content[0]?.text).toContain("Mock doc content");
     });
   });
 

@@ -56,14 +56,24 @@ export const handleListTechnologies = async ({
 
   const technologies = parseTechnologies(data);
 
-  const filteredTechnologies = applyTechnologyFilters(technologies, {
+  const matching = applyTechnologyFilters(technologies, {
     category,
     language,
     includeBeta,
-    limit,
   });
+  const shown = matching
+    .map((group) => ({
+      ...group,
+      technologies: group.technologies.slice(0, limit),
+    }))
+    .filter((group) => group.technologies.length > 0);
 
-  const result = formatTechnologiesList(filteredTechnologies);
+  const result = formatTechnologiesList(
+    shown,
+    category,
+    countTechnologies(matching) - countTechnologies(shown),
+    limit,
+  );
 
   technologiesCache.set(cacheKey, result);
 
@@ -133,7 +143,6 @@ const applyTechnologyFilters = (
     category?: string | undefined;
     language?: string | undefined;
     includeBeta?: boolean | undefined;
-    limit?: number | undefined;
   },
 ): TechnologyGroup[] => {
   const category = filters.category?.toLowerCase() ?? "";
@@ -150,62 +159,79 @@ const applyTechnologyFilters = (
       );
       return {
         ...group,
-        technologies: filteredTechnologies.slice(0, filters.limit),
+        technologies: filteredTechnologies,
       };
     })
     .filter((group) => group.technologies.length > 0);
 };
 
-const formatTechnologiesList = (groups: TechnologyGroup[]): string => {
+/**
+ * The framework ID, the last segment of the technology's link, which search_framework_symbols takes
+ */
+const frameworkId = (tech: Technology): string => {
+  return tech.identifier.split("/").pop() ?? "";
+};
+
+/**
+ * A technology on a compact line: its name and, when it differs from the ID, the ID in parentheses; (beta) marks it
+ */
+const formatTechnology = (tech: Technology, withTags: boolean): string => {
+  const id = frameworkId(tech);
+  const name = tech.title === id ? id : `${tech.title} (${id})`;
+  const beta = tech.beta ? " (beta)" : "";
+  // Most technologies support Swift and Objective-C; the unfiltered view marks only the others
+  const bothLanguages =
+    tech.languages.includes("swift") && tech.languages.includes("occ");
+  const languages =
+    withTags || !bothLanguages ? ` [${tech.languages.join(", ")}]` : "";
+  const tags =
+    withTags && tech.tags.length > 0 ? `: ${tech.tags.join(", ")}` : "";
+  return `${name}${beta}${languages}${tags}`;
+};
+
+const countTechnologies = (groups: TechnologyGroup[]): number => {
+  return groups.reduce((sum, group) => sum + group.technologies.length, 0);
+};
+
+const formatTechnologiesList = (
+  groups: TechnologyGroup[],
+  category: string | undefined,
+  hidden: number,
+  limit: number,
+): string => {
   if (groups.length === 0) {
     return "No technologies found matching the specified criteria.";
   }
 
-  let content = "# Apple Developer Technologies\n\n";
-
-  const totalTechs = groups.reduce(
-    (sum, group) => sum + group.technologies.length,
-    0,
-  );
+  const totalTechs = countTechnologies(groups);
   const betaTechs = groups.reduce(
     (sum, group) => sum + group.technologies.filter((tech) => tech.beta).length,
     0,
   );
 
-  content += `*Found ${totalTechs} technologies`;
+  let content = `# Apple Developer Technologies\n${totalTechs} technologies`;
   if (betaTechs > 0) {
     content += ` (${betaTechs} in beta)`;
   }
-  content += "*\n\n";
+  content += category
+    ? ". Name (framework ID) for search_framework_symbols; tags follow the colon.\n"
+    : ". Name (framework ID) for search_framework_symbols; [languages] only when not both swift and occ; pass category for each technology's languages and tags.\n";
 
   groups.forEach((group) => {
-    content += `## ${group.name}\n\n`;
+    content += `\n## ${group.name}\n`;
 
-    group.technologies.forEach((tech) => {
-      const titleWithStatus = tech.beta ? `${tech.title} (Beta)` : tech.title;
-
-      content += `### [${titleWithStatus}](${tech.url || "#"})\n`;
-
-      const metadata = [];
-
-      if (tech.languages.length > 0) {
-        metadata.push(`Languages: ${tech.languages.join(", ")}`);
-      }
-
-      if (tech.tags.length > 0) {
-        metadata.push(`Categories: ${tech.tags.join(", ")}`);
-      }
-
-      if (metadata.length > 0) {
-        content += `*${metadata.join(" | ")}*\n`;
-      }
-
-      content += "\n";
-    });
+    if (category) {
+      group.technologies.forEach((tech) => {
+        content += `- ${formatTechnology(tech, true)}\n`;
+      });
+    } else {
+      content += `${group.technologies.map((tech) => formatTechnology(tech, false)).join("; ")}\n`;
+    }
   });
 
-  content +=
-    "\n---\n\n[View all technologies on Apple Developer](https://developer.apple.com/documentation/technologies)";
+  if (hidden > 0) {
+    content += `\nShowing the first ${limit} of each category; ${hidden} more not shown. Narrow with category or language, or raise limit.\n`;
+  }
 
-  return content;
+  return content.trimEnd();
 };

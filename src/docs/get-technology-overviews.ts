@@ -173,7 +173,7 @@ const formatOverviews = (
     return `No technology overview matches category "${filters.category}". Categories: ${categories.join(", ")}.`;
   }
   const terms = filters.searchQuery ? [filters.searchQuery.toLowerCase()] : [];
-  const shown = all
+  const matching = all
     .filter(
       (entry) => !root || entry === root || entry.ancestors.includes(root.path),
     )
@@ -184,21 +184,22 @@ const formatOverviews = (
           .toLowerCase()
           .includes(term),
       ),
-    )
-    .slice(0, filters.limit);
+    );
+  const shown = matching.slice(0, filters.limit);
   if (shown.length === 0) {
     return NOTHING_FOUND;
   }
   const body =
     terms.length > 0 ? flatList(shown) : tree(shown, root?.depth ?? 0);
-  return (
-    `# Apple Developer Technology Overviews\n\n${body}\n\n---\n\n` +
-    "[Explore all Technology Overviews](https://developer.apple.com/documentation/technologyoverviews)"
-  );
+  const capped =
+    matching.length > shown.length
+      ? `\n\nShowing ${shown.length} of ${matching.length}. Narrow with category or searchQuery, or raise limit.`
+      : "";
+  return `# Apple Developer Technology Overviews\n${matching.length} entries\n\n${body}${capped}`;
 };
 
 /**
- * Top entries as headings under their group's heading; the ones inside them as nested lists under their group's name
+ * Top entries as list items under their group's heading; the ones inside them as nested lists under their group's name
  */
 const tree = (entries: OverviewEntry[], base: number): string => {
   const lines: string[] = [];
@@ -207,17 +208,12 @@ const tree = (entries: OverviewEntry[], base: number): string => {
   for (const entry of entries) {
     const depth = entry.depth - base;
     if (depth === 0) {
-      if (lines.length > 0 && lines[lines.length - 1] !== "") {
-        lines.push("");
-      }
       if (entry.group && entry.group !== heading) {
         heading = entry.group;
-        lines.push(`## ${heading}`, "");
+        lines.push(`## ${heading}`);
       }
       lines.push(
-        `### [${entry.title}](${urlOf(entry)})`,
-        `*${typeOf(entry)}*${entry.abstract ? ` — ${entry.abstract}` : ""}`,
-        "",
+        `- [${entry.title}](${urlOf(entry)}) *(${typeOf(entry)})*${entry.abstract ? ` — ${entry.abstract}` : ""}`,
       );
       label = "";
       continue;

@@ -1,5 +1,4 @@
 import { apiCache, generateUrlCacheKey } from "../core/cache.ts";
-import { PROCESSING_LIMITS } from "../core/constants.ts";
 import { AppError, ErrorType, requireText } from "../core/errors.ts";
 import { httpClient } from "../core/http-client.ts";
 import { logger } from "../core/logger.ts";
@@ -7,13 +6,11 @@ import type {
   Attribute,
   DeclarationToken,
   DocumentationPrimaryRenderSection,
-  PlatformAvailability,
   RenderBlockContent,
   RenderNode,
   RenderSection,
   TypedProperty,
 } from "../types/docc.ts";
-import { isDeprecated, isTopicReference } from "../types/docc.ts";
 import {
   formatDocumentAbstract,
   formatDocumentHeader,
@@ -21,7 +18,6 @@ import {
   formatIdentifierLink,
   formatImage,
   formatInlineContent,
-  formatIntroducedVersion,
   formatPlatformAvailability,
   formatSeeAlsoSection,
   isSpecificAPIDocument,
@@ -35,13 +31,22 @@ import {
 } from "./url-converter.ts";
 
 /**
- * Format JSON documentation content with enhanced analysis
+ * Collapse each run of blank lines to one and drop trailing ones, outside code fences
  */
-const formatJsonDocumentation = (
-  jsonData: RenderNode,
-  originalUrl: string,
-  options: AnalysisOptions,
-): string => {
+const collapseBlankLines = (markdown: string): string => {
+  return markdown
+    .split("```")
+    .map((part, index) =>
+      index % 2 === 0 ? part.replace(/\n{3,}/g, "\n\n") : part,
+    )
+    .join("```")
+    .trimEnd();
+};
+
+/**
+ * Format JSON documentation content
+ */
+const formatJsonDocumentation = (jsonData: RenderNode): string => {
   let content = "";
 
   // Add header with title and status
@@ -66,52 +71,7 @@ const formatJsonDocumentation = (
   // Add See Also section
   content += formatSeeAlsoSection(jsonData);
 
-  content += formatAnalysisSections(jsonData, options);
-
-  // Add link to original documentation
-  content += `---\n\n[View full documentation on Apple Developer](${originalUrl})`;
-
-  return content;
-};
-
-/**
- * The sections the include… flags ask for, read from the page's JSON
- */
-const formatAnalysisSections = (
-  jsonData: RenderNode,
-  options: AnalysisOptions,
-): string => {
-  let content = "";
-
-  if (options.includeRelatedApis) {
-    const relatedApis = extractRelatedApis(jsonData);
-    if (relatedApis.length > 0) {
-      content += formatRelatedApisSection(relatedApis);
-    }
-  }
-
-  if (options.includeReferences) {
-    const references = extractReferences(jsonData);
-    if (references.length > 0) {
-      content += formatReferencesSection(references);
-    }
-  }
-
-  if (options.includeSimilarApis) {
-    const similarApis = extractSimilarApis(jsonData);
-    if (similarApis.length > 0) {
-      content += formatSimilarApisSection(similarApis);
-    }
-  }
-
-  if (options.includePlatformAnalysis) {
-    const platformAnalysis = analyzePlatformCompatibility(jsonData);
-    if (platformAnalysis) {
-      content += formatPlatformAnalysisSection(platformAnalysis);
-    }
-  }
-
-  return content;
+  return collapseBlankLines(content);
 };
 
 /**
@@ -559,21 +519,13 @@ const formatAPICollectionContent = (jsonData: RenderNode): string => {
 
 export interface DocContentQuery {
   url: string;
-  includeRelatedApis: boolean;
-  includeReferences: boolean;
-  includeSimilarApis: boolean;
-  includePlatformAnalysis: boolean;
 }
 
-type AnalysisOptions = Omit<DocContentQuery, "url">;
-
 /**
- * One documentation page as Markdown, with the analysis sections the include… flags ask for: an App Store Connect Help
- * page from its HTML, any other page from its JSON
+ * One documentation page as Markdown: an App Store Connect Help page from its HTML, any other page from its JSON
  */
 export const fetchAppleDocJson = async ({
   url,
-  ...options
 }: DocContentQuery): Promise<string> => {
   requireText(url, "URL");
   if (!isValidAppleDeveloperUrl(url)) {
@@ -589,7 +541,7 @@ export const fetchAppleDocJson = async ({
       throw new Error("Invalid Apple Developer Documentation URL");
     }
 
-    const cacheKey = generateUrlCacheKey(jsonApiUrl, options);
+    const cacheKey = generateUrlCacheKey(jsonApiUrl);
     const cached = apiCache.get(cacheKey);
     if (cached) {
       logger.debug(`Cache hit for: ${jsonApiUrl}`);
@@ -598,11 +550,7 @@ export const fetchAppleDocJson = async ({
 
     const markdown = new URL(url).pathname.startsWith(HELP_PATH)
       ? await fetchHelpPage(url)
-      : formatJsonDocumentation(
-          await fetchRenderNode(jsonApiUrl),
-          url,
-          options,
-        );
+      : formatJsonDocumentation(await fetchRenderNode(jsonApiUrl));
     apiCache.set(cacheKey, markdown);
     return markdown;
   } catch (error) {
@@ -619,307 +567,4 @@ export const fetchAppleDocJson = async ({
 const fetchRenderNode = (jsonApiUrl: string): Promise<RenderNode> => {
   logger.info(`Fetching Apple doc JSON from: ${jsonApiUrl}`);
   return httpClient.getJson<RenderNode>(jsonApiUrl);
-};
-
-/**
- * Extract related APIs from JSON data
- */
-const extractRelatedApis = (
-  jsonData: RenderNode,
-): Array<{ title: string; url: string; relationship: string }> => {
-  const relatedApis: Array<{
-    title: string;
-    url: string;
-    relationship: string;
-  }> = [];
-
-  // From relationshipsSections
-  if (jsonData.relationshipsSections) {
-    for (const section of jsonData.relationshipsSections) {
-      if (section.identifiers) {
-        for (const identifier of section.identifiers.slice(
-          0,
-          PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
-        )) {
-          const ref = jsonData.references?.[identifier];
-          if (isTopicReference(ref)) {
-            relatedApis.push({
-              title: ref.title ?? "Unknown",
-              url: ref.url
-                ? ref.url.startsWith("http")
-                  ? ref.url
-                  : `https://developer.apple.com${ref.url}`
-                : "#",
-              relationship: section.title ?? "Related",
-            });
-          }
-        }
-      }
-    }
-  }
-
-  // From seeAlsoSections
-  if (jsonData.seeAlsoSections) {
-    for (const section of jsonData.seeAlsoSections) {
-      if (section.identifiers) {
-        for (const identifier of section.identifiers.slice(
-          0,
-          PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
-        )) {
-          const ref = jsonData.references?.[identifier];
-          if (isTopicReference(ref)) {
-            relatedApis.push({
-              title: ref.title ?? "Unknown",
-              url: ref.url
-                ? ref.url.startsWith("http")
-                  ? ref.url
-                  : `https://developer.apple.com${ref.url}`
-                : "#",
-              relationship: `See Also: ${section.title ?? "Related"}`,
-            });
-          }
-        }
-      }
-    }
-  }
-
-  return relatedApis.slice(0, PROCESSING_LIMITS.MAX_DOC_FETCHER_RELATED_APIS); // Limit results
-};
-
-/**
- * Extract references from JSON data
- */
-const extractReferences = (
-  jsonData: RenderNode,
-): Array<{
-  title: string;
-  url: string;
-  type: string;
-  abstract?: string | undefined;
-}> => {
-  const references: Array<{
-    title: string;
-    url: string;
-    type: string;
-    abstract?: string | undefined;
-  }> = [];
-
-  if (jsonData.references) {
-    const refEntries = Object.entries(jsonData.references).slice(
-      0,
-      PROCESSING_LIMITS.MAX_DOC_FETCHER_REFERENCES,
-    ); // Limit
-
-    for (const [, ref] of refEntries) {
-      if (!isTopicReference(ref)) {
-        continue;
-      }
-      references.push({
-        title: ref.title ?? "Unknown",
-        url: ref.url
-          ? ref.url.startsWith("http")
-            ? ref.url
-            : `https://developer.apple.com${ref.url}`
-          : "#",
-        type: ref.role ?? ref.kind ?? "unknown",
-        abstract: ref.abstract
-          ? formatInlineContent(ref.abstract, jsonData.references).trim()
-          : undefined,
-      });
-    }
-  }
-
-  return references;
-};
-
-/**
- * Extract similar APIs from JSON data
- */
-const extractSimilarApis = (
-  jsonData: RenderNode,
-): Array<{ title: string; url: string; category: string }> => {
-  const similarApis: Array<{ title: string; url: string; category: string }> =
-    [];
-
-  // From topicSections
-  if (jsonData.topicSections) {
-    for (const section of jsonData.topicSections) {
-      if (section.identifiers) {
-        for (const identifier of section.identifiers.slice(
-          0,
-          PROCESSING_LIMITS.MAX_RELATED_APIS_PER_SECTION,
-        )) {
-          const ref = jsonData.references?.[identifier];
-          if (isTopicReference(ref)) {
-            similarApis.push({
-              title: ref.title ?? "Unknown",
-              url: ref.url
-                ? ref.url.startsWith("http")
-                  ? ref.url
-                  : `https://developer.apple.com${ref.url}`
-                : "#",
-              category: section.title ?? "Related",
-            });
-          }
-        }
-      }
-    }
-  }
-
-  return similarApis.slice(0, PROCESSING_LIMITS.MAX_DOC_FETCHER_SIMILAR_APIS); // Limit results
-};
-
-/**
- * Analyze platform compatibility
- */
-const analyzePlatformCompatibility = (
-  jsonData: RenderNode,
-): {
-  supportedPlatforms: string;
-  betaPlatforms: string[];
-  deprecatedPlatforms: string[];
-  crossPlatform: boolean;
-  platforms: PlatformAvailability[];
-} | null => {
-  if (!jsonData.metadata?.platforms) {
-    return null;
-  }
-
-  const platforms = jsonData.metadata.platforms;
-  const supportedPlatforms = platforms.map((p) => p.name).join(", ");
-  const betaPlatforms = platforms
-    .filter((p) => p.beta)
-    .map((p) => p.name)
-    .filter((name): name is string => name !== undefined);
-  const deprecatedPlatforms = platforms
-    .filter(isDeprecated)
-    .map((p) => p.name)
-    .filter((name): name is string => name !== undefined);
-
-  return {
-    supportedPlatforms,
-    betaPlatforms,
-    deprecatedPlatforms,
-    crossPlatform: platforms.length > 1,
-    platforms,
-  };
-};
-
-/**
- * Format related APIs section
- */
-const formatRelatedApisSection = (
-  relatedApis: Array<{ title: string; url: string; relationship: string }>,
-): string => {
-  let content = "\n## Related APIs\n\n";
-
-  for (const api of relatedApis) {
-    content += `- [**${api.title}**](${api.url}) - *${api.relationship}*\n`;
-  }
-
-  return `${content}\n`;
-};
-
-/**
- * Format references section
- */
-const formatReferencesSection = (
-  references: Array<{
-    title: string;
-    url: string;
-    type: string;
-    abstract?: string | undefined;
-  }>,
-): string => {
-  let content = "\n## Key References\n\n";
-
-  // Group by type
-  const groupedRefs = new Map<string, typeof references>();
-  for (const ref of references) {
-    const group = groupedRefs.get(ref.type) ?? [];
-    group.push(ref);
-    groupedRefs.set(ref.type, group);
-  }
-
-  for (const [type, refs] of groupedRefs) {
-    content += `### ${type.charAt(0).toUpperCase() + type.slice(1)}s\n\n`;
-    for (const ref of refs.slice(
-      0,
-      PROCESSING_LIMITS.MAX_DOC_FETCHER_REFS_PER_TYPE,
-    )) {
-      content += `- [**${ref.title}**](${ref.url})`;
-      if (ref.abstract) {
-        content += ` - ${ref.abstract}`;
-      }
-      content += "\n";
-    }
-    content += "\n";
-  }
-
-  return content;
-};
-
-/**
- * Format similar APIs section
- */
-const formatSimilarApisSection = (
-  similarApis: Array<{ title: string; url: string; category: string }>,
-): string => {
-  let content = "\n## Similar APIs\n\n";
-
-  // Group by category
-  const groupedApis = new Map<string, typeof similarApis>();
-  for (const api of similarApis) {
-    const group = groupedApis.get(api.category) ?? [];
-    group.push(api);
-    groupedApis.set(api.category, group);
-  }
-
-  for (const [category, apis] of groupedApis) {
-    content += `### ${category}\n\n`;
-    for (const api of apis) {
-      content += `- [**${api.title}**](${api.url})\n`;
-    }
-    content += "\n";
-  }
-
-  return content;
-};
-
-/**
- * Format platform analysis section
- */
-const formatPlatformAnalysisSection = (analysis: {
-  supportedPlatforms: string;
-  betaPlatforms: string[];
-  deprecatedPlatforms: string[];
-  crossPlatform?: boolean;
-  platforms?: PlatformAvailability[];
-}): string => {
-  let content = "\n## Platform Compatibility Analysis\n\n";
-
-  content += `**Supported Platforms:** ${analysis.supportedPlatforms}\n`;
-  content += `**Cross-Platform Support:** ${analysis.crossPlatform ? "Yes" : "No"}\n`;
-
-  if (analysis.betaPlatforms.length > 0) {
-    content += `**Beta Platforms:** ${analysis.betaPlatforms.join(", ")}\n`;
-  }
-
-  if (analysis.deprecatedPlatforms.length > 0) {
-    content += `**Deprecated Platforms:** ${analysis.deprecatedPlatforms.join(", ")}\n`;
-  }
-
-  content += "\n**Detailed Platform Information:**\n\n";
-  for (const platform of analysis.platforms ?? []) {
-    content += `- **${platform.name}**${formatIntroducedVersion(platform)}`;
-    if (platform.beta) {
-      content += " (Beta)";
-    }
-    if (isDeprecated(platform)) {
-      content += " (Deprecated)";
-    }
-    content += "\n";
-  }
-
-  return `${content}\n`;
 };

@@ -86,15 +86,20 @@ export const handleSearchDocsMap = async ({
   const count =
     hits.length === 1
       ? "1 page has it in its title"
-      : `${hits.length} pages have it in their title${shown.length < hits.length ? `; the ${shown.length} shortest below` : ""}`;
+      : `${hits.length} pages have it in their title`;
   return [
     `# Docs map: "${query}"${scope}`,
-    "",
     `${count}. The map was built ${date}; read a page with get_apple_doc_content.`,
     "",
     ...shown.map(
       ({ url, title, kind, technology }) =>
-        `- **${title}** · ${kind} · ${technology} · ${url}`,
+        `- [${title}](${url}) · ${kind} · ${technology}`,
     ),
+    ...(shown.length < hits.length
+      ? [
+          "",
+          `Showing the ${shown.length} shortest of ${hits.length}. Narrow with technology or a longer query, or raise limit.`,
+        ]
+      : []),
   ].join("\n");
 };

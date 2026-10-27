@@ -179,14 +179,11 @@ describe("handleGetSampleCode", () => {
 
     // Verify result contains expected content
     expect(result).toContain("Apple Sample Code Library");
-    expect(result).toContain("Found 4 sample code projects");
+    expect(result).toContain("4 sample code projects");
     expect(result).toContain("Landmarks: Building an app with Liquid Glass");
     expect(result).toContain("Understanding StoreKit workflows");
 
-    // Featured samples might not always be shown depending on the implementation
-    if (result.includes("⭐ Featured Samples")) {
-      expect(result).toContain("Featured Samples");
-    }
+    expect(result).not.toContain("Showing");
   });
 
   it("should filter by framework", async () => {
@@ -210,17 +207,10 @@ describe("handleGetSampleCode", () => {
       limit: 50,
     });
 
-    expect(result).toContain("Framework: SwiftUI");
-
-    // The framework filtering might not work perfectly with the test data
-    // So let's just check that it shows the framework filter was applied
-    if (result.includes("No sample code projects found")) {
-      expect(result).toContain("Found 0 sample code projects");
-    } else {
-      expect(result).toMatch(/Found \d+ sample code projects/);
-      // Should contain SwiftUI-related samples
-      expect(result.toLowerCase()).toContain("swiftui");
-    }
+    expect(result).not.toContain("Framework:");
+    expect(result).toContain("2 sample code projects");
+    expect(result).toContain("## SwiftUI");
+    expect(result).not.toContain("Understanding StoreKit workflows");
   });
 
   it("should filter beta samples when beta=exclude", async () => {
@@ -244,12 +234,39 @@ describe("handleGetSampleCode", () => {
       limit: 50,
     });
 
-    expect(result).toContain("Beta: exclude");
-    expect(result).toContain("Found 2 sample code projects");
+    expect(result).not.toContain("Beta: exclude");
+    expect(result).toContain("2 sample code projects");
     expect(result).not.toContain("Adding intelligent app features");
     expect(result).not.toContain("Building rich SwiftUI text experiences");
     expect(result).toContain("Understanding StoreKit workflows");
     expect(result).toContain("Landmarks: Building an app with Liquid Glass");
+  });
+
+  it("says how many are not shown when limit cuts the list", async () => {
+    mockHttpClient.get
+      .mockResolvedValueOnce({
+        ok: true,
+        json: mock().mockResolvedValue(mockSampleCodeContent),
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: mock().mockResolvedValue(mockSampleCodeIndex),
+      });
+
+    const { handleGetSampleCode } = await import(
+      "../../src/docs/get-sample-code.ts"
+    );
+    const result = await handleGetSampleCode({
+      framework: undefined,
+      beta: "include",
+      searchQuery: undefined,
+      limit: 1,
+    });
+
+    expect(result).toContain("4 sample code projects");
+    expect(result).toContain(
+      "Showing 1 of 4. Narrow with searchQuery or framework, or raise limit.",
+    );
   });
 
   it("should return cached results when available", async () => {

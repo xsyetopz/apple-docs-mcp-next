@@ -17,7 +17,7 @@ const SEARCH_GUIDE = `Apple's API docs, Human Interface Guidelines (HIG), App St
 
 1. Code examples: pass get_wwdc_code_examples the type or attribute the code contains as \`framework\` (\`LanguageModelSession\`, \`@Generable\`); a framework name finds about half as many (snippets omit imports). Then read the best session with get_wwdc_video (includeTranscript: false) and the articles and samples search_apple_docs lists.
 2. Replacing hand-rolled code: search_apple_docs (type "documentation") for what it does, with the UI framework's name ("SwiftUI haptic feedback"; without it, older UIKit and Foundation APIs lead), then confirm the family with search_framework_symbols and a wildcard (\`*feedback*\`).
-3. Bugs: search the failing API's name with what it should do ("NLTagger requestAssets", "SwiftData CloudKit sync requirements") and read the first member or article: its Important notes and tables hold the rules, and a type's page lists its members. For a deprecated call, find_similar_apis leads with the replacement Apple names.
+3. Bugs: search the failing API's name with what it should do ("NLTagger requestAssets", "SwiftData CloudKit sync requirements") and read the first member or article: its Important notes and tables hold the rules, and a type's page lists its members. For a deprecated call, get_api_relations kind "similar" leads with the replacement Apple names.
 4. Design: search with type "design" and the HIG's own noun ("progress indicators"; "paywall" finds Apple In-App Purchase), then read the first result titled with it by its URL, never a guessed one.
 
 Searched wrong, or not there:

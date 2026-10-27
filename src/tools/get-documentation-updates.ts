@@ -8,42 +8,23 @@ export const getDocumentationUpdatesTool = defineTool({
   name: "get_documentation_updates",
   title: "Get Documentation Updates",
   description:
-    "Links from Apple's Updates page, each with Apple's one-line summary: the release notes of each OS, Xcode and Safari; each framework's updates page (\"SwiftUI updates\"); and the What's new page of each past WWDC. Returns the links, not the changes; read one with get_apple_doc_content. For WWDC sessions use the WWDC tools.",
+    "Links from Apple's Updates page with one-line summaries: OS, Xcode and Safari release notes, each framework's \"updates\" page, and the What's new page of each WWDC. Links only; read one with get_apple_doc_content. For WWDC sessions use the WWDC tools.",
   inputSchema: z.object({
     category: z
       .enum(["all", "wwdc", "technology", "release-notes"])
-      .default("all")
-      .describe(
-        'Update type filter. "wwdc": the What\'s new page of each past WWDC; "technology": each framework\'s updates page; "release-notes": the release notes of each OS, Xcode and Safari. Default: "all"',
-      ),
+      .default("all"),
     technology: z
       .string()
       .optional()
-      .describe(
-        'Filter by framework, in any case. Examples: "SwiftUI", "UIKit", "ARKit". Get names from list_technologies.',
-      ),
-    year: z
-      .string()
-      .optional()
-      .describe(
-        'WWDC year filter ("2025", "2024", etc.). Only for wwdc category.',
-      ),
-    searchQuery: z
-      .string()
-      .optional()
-      .describe(
-        'Search keywords. Examples: "async", "performance", "widgets". Case-insensitive.',
-      ),
-    includeBeta: z
-      .boolean()
-      .default(true)
-      .describe("Include beta/preview features. Default: true"),
+      .describe('Framework, e.g. "SwiftUI" (names from list_technologies)'),
+    year: z.string().optional().describe('WWDC year, e.g. "2025"; wwdc only'),
+    searchQuery: z.string().optional().describe('Keywords, e.g. "widgets"'),
+    includeBeta: z.boolean().default(true),
     limit: z
       .number()
       .min(1)
       .max(API_LIMITS.MAX_DOCUMENTATION_UPDATES_LIMIT)
-      .default(API_LIMITS.DEFAULT_DOCUMENTATION_UPDATES_LIMIT)
-      .describe("Max results (default: 50). Sorted by relevance and date."),
+      .default(API_LIMITS.DEFAULT_DOCUMENTATION_UPDATES_LIMIT),
   }),
   run: handleGetDocumentationUpdates,
 });

@@ -108,9 +108,6 @@ export const handleGetSampleCode = async ({
 
   // Format the result
   const result = formatSampleCodeResult(limitedSampleCodes, {
-    framework,
-    beta,
-    searchQuery,
     totalFound: filteredSampleCodes.length,
     showing: limitedSampleCodes.length,
   });
@@ -394,41 +391,14 @@ const applySampleCodeFilters = (
 const formatSampleCodeResult = (
   sampleCodes: ParsedSampleCode[],
   options: {
-    framework?: string | undefined;
-    beta?: string | undefined;
-    searchQuery?: string | undefined;
     totalFound: number;
     showing: number;
   },
 ): string => {
   const lines: string[] = [];
 
-  // Header
   lines.push("# Apple Sample Code Library");
-  lines.push("");
-
-  // Filter summary
-  const filterParts: string[] = [];
-  if (options.framework) {
-    filterParts.push(`Framework: ${normalizeFrameworkName(options.framework)}`);
-  }
-  if (options.beta && options.beta !== "include") {
-    filterParts.push(`Beta: ${options.beta}`);
-  }
-  if (options.searchQuery) {
-    filterParts.push(`Search: "${options.searchQuery}"`);
-  }
-
-  if (filterParts.length > 0) {
-    lines.push("## Filters Applied");
-    lines.push(filterParts.join(", "));
-    lines.push("");
-  }
-
-  // Results summary
-  lines.push(
-    `Found ${options.totalFound} sample code projects${options.showing < options.totalFound ? `, showing ${options.showing}` : ""}`,
-  );
+  lines.push(`${options.totalFound} sample code projects`);
   lines.push("");
 
   if (sampleCodes.length === 0) {
@@ -475,8 +445,7 @@ const formatSampleCodeResult = (
   // Display featured samples first if any
   const featuredSamples = sampleCodes.filter((c) => c.featured);
   if (featuredSamples.length > 0) {
-    lines.push("## ⭐ Featured Samples");
-    lines.push("");
+    lines.push("## Featured");
     for (const code of featuredSamples) {
       lines.push(formatSampleCodeItem(code, false)); // Don't show framework in featured section
     }
@@ -490,7 +459,6 @@ const formatSampleCodeResult = (
 
     if (nonFeaturedCodes.length > 0) {
       lines.push(`## ${category}`);
-      lines.push("");
       for (const code of nonFeaturedCodes) {
         lines.push(formatSampleCodeItem(code, false)); // Framework already shown in section header
       }
@@ -503,12 +471,17 @@ const formatSampleCodeResult = (
     const nonFeaturedOther = noCategory.filter((c) => !c.featured);
     if (nonFeaturedOther.length > 0) {
       lines.push("## Other");
-      lines.push("");
       for (const code of nonFeaturedOther) {
         lines.push(formatSampleCodeItem(code, false));
       }
       lines.push("");
     }
+  }
+
+  if (options.showing < options.totalFound) {
+    lines.push(
+      `Showing ${options.showing} of ${options.totalFound}. Narrow with searchQuery or framework, or raise limit.`,
+    );
   }
 
   return lines.join("\n").trim();
@@ -523,7 +496,7 @@ const formatSampleCodeItem = (
 ): string => {
   const badges: string[] = [];
   if (code.beta) {
-    badges.push("🧪 Beta");
+    badges.push("(Beta)");
   }
 
   // Don't duplicate the featured badge as it's already in the section header

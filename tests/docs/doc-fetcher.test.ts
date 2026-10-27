@@ -48,10 +48,6 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
 
       expect(convertToJsonApiUrl).toHaveBeenCalledWith(mockDocUrl);
@@ -70,17 +66,13 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
 
       expect(result).toBe("# Cached Documentation");
       expect(httpClient.getJson).not.toHaveBeenCalled();
     });
 
-    it("should include related APIs when requested", async () => {
+    it("should list the relationships a page has", async () => {
       (apiCache.get as Mock<(...args: unknown[]) => unknown>).mockReturnValue(
         null,
       );
@@ -101,14 +93,11 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: true,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
 
       expect(result).toContain("# UIView");
-      // Note: The actual implementation would include related APIs if the handler was called
+      expect(result).toContain("### Inherits From");
+      expect(result).toContain("uiresponder");
     });
 
     it("should handle complex documentation structure", async () => {
@@ -184,10 +173,6 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
       const text = result;
 
@@ -290,10 +275,6 @@ describe("fetchAppleDocJson", () => {
 
       const text = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
 
       expect(text).toContain(
@@ -431,10 +412,6 @@ describe("fetchAppleDocJson", () => {
 
       const text = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
 
       expect(text).toContain("## Overview\n\nA tab bar lets people navigate.");
@@ -465,10 +442,6 @@ describe("fetchAppleDocJson", () => {
       await expect(
         fetchAppleDocJson({
           url: mockDocUrl,
-          includeRelatedApis: false,
-          includeReferences: false,
-          includeSimilarApis: false,
-          includePlatformAnalysis: false,
         }),
       ).rejects.toThrow("Failed to get Apple doc content: Network error");
     });
@@ -484,10 +457,6 @@ describe("fetchAppleDocJson", () => {
       await expect(
         fetchAppleDocJson({
           url: mockDocUrl,
-          includeRelatedApis: false,
-          includeReferences: false,
-          includeSimilarApis: false,
-          includePlatformAnalysis: false,
         }),
       ).rejects.toThrow("Failed to get Apple doc content: 404 Not Found");
     });
@@ -502,15 +471,45 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
 
       // Should still return something even with empty data
-      expect(result).toContain("# Documentation");
-      expect(result).toContain("[View full documentation on Apple Developer]");
+      expect(result).toBe("# Documentation");
+    });
+
+    it("should leave out the link back to the input URL, empty sections and blank-line runs", async () => {
+      (apiCache.get as Mock<(...args: unknown[]) => unknown>).mockReturnValue(
+        null,
+      );
+      (
+        httpClient.getJson as Mock<(...args: unknown[]) => Promise<unknown>>
+      ).mockResolvedValue({
+        ...mockData.docJsonData,
+        metadata: { ...mockData.docJsonData.metadata, platforms: [] },
+        seeAlsoSections: [{ title: "Nothing", identifiers: [] }],
+        primaryContentSections: [
+          {
+            kind: "content",
+            content: [
+              {
+                type: "codeListing",
+                syntax: "swift",
+                code: ["let a = 1", "", "", "let b = 2"],
+              },
+            ],
+          },
+        ],
+      });
+
+      const result = await fetchAppleDocJson({ url: mockDocUrl });
+
+      expect(result).not.toContain("View full documentation");
+      expect(result).not.toContain(mockDocUrl);
+      expect(result).not.toContain("## Platform Availability");
+      expect(result).not.toContain("## See Also");
+      expect(result.replace(/```[\s\S]*?```/g, "")).not.toContain("\n\n\n");
+      expect(result).toContain("let a = 1\n\n\nlet b = 2");
+      expect(result.endsWith("\n")).toBe(false);
     });
 
     it("should handle missing metadata", async () => {
@@ -537,10 +536,6 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
 
       expect(result).toContain("Some content without metadata");
@@ -570,10 +565,6 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
       const text = result;
 
@@ -611,10 +602,6 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
       const text = result;
 
@@ -657,10 +644,6 @@ describe("fetchAppleDocJson", () => {
 
       const result = await fetchAppleDocJson({
         url: mockDocUrl,
-        includeRelatedApis: false,
-        includeReferences: false,
-        includeSimilarApis: false,
-        includePlatformAnalysis: false,
       });
       const text = result;
 

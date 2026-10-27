@@ -105,7 +105,7 @@ export const searchFrameworkSymbols = async ({
 
   const typeLabel =
     symbolType === "all" ? "Symbols" : pluralizeType(symbolType);
-  let result = `# ${framework} Framework ${typeLabel}\n\n`;
+  let result = `# ${framework} Framework ${typeLabel}\n`;
 
   if (symbols.length === 0) {
     const typeText =
@@ -129,36 +129,39 @@ export const searchFrameworkSymbols = async ({
       }
     }
   } else {
-    result += `**Found:** ${symbols.length} ${symbolType === "all" ? "symbols" : pluralizeType(symbolType).toLowerCase()}`;
+    result += `${symbols.length} ${symbolType === "all" ? "symbols" : pluralizeType(symbolType).toLowerCase()}`;
     if (namePattern) {
       result += ` matching "${namePattern}"`;
     }
-    result += "\n\n";
+    result += "\n";
 
     if (symbolType === "all") {
       const grouped = groupByType(symbols);
       for (const [type, items] of Object.entries(grouped)) {
-        result += `## ${pluralizeType(type)} (${items.length})\n\n`;
+        result += `\n## ${pluralizeType(type)} (${items.length})\n`;
         for (const item of items) {
           result += formatSymbolItem(item);
         }
-        result += "\n";
       }
     } else {
       for (const symbol of symbols) {
         result += formatSymbolItem(symbol);
       }
     }
+
+    if (symbols.length >= limit) {
+      result += `\nStopped at the limit of ${limit}, so there may be more. Narrow with namePattern or symbolType, or raise limit.\n`;
+    }
   }
 
-  indexCache.set(cacheKey, result);
+  indexCache.set(cacheKey, result.trimEnd());
 
-  return result;
+  return result.trimEnd();
 };
 
 const formatSymbolItem = (item: RenderIndexNode): string => {
   const url = `https://developer.apple.com${item.path ?? ""}`;
-  let result = `- [**${item.title}**](${url})`;
+  let result = `- [${item.title}](${url})`;
 
   const metadata = [];
   if (item.beta) {
@@ -167,12 +170,9 @@ const formatSymbolItem = (item: RenderIndexNode): string => {
   if (item.deprecated) {
     metadata.push("Deprecated");
   }
-  if (item.type && item.type !== "groupMarker") {
-    metadata.push(formatTypeLabel(item.type));
-  }
 
   if (metadata.length > 0) {
-    result += ` *(${metadata.join(", ")})*`;
+    result += ` (${metadata.join(", ")})`;
   }
 
   return `${result}\n`;

@@ -86,14 +86,16 @@ describe("parseSearchResults", () => {
       );
 
       expect(output).toContain("# Apple Documentation Search Results");
-      expect(output).toContain('**Query:** "test"');
-      expect(output).toContain("### 1. UIView");
-      expect(output).toContain("### 2. UIViewController");
-      expect(output).toContain("An object that manages the content");
-      expect(output).toContain("**Framework:** UIKit");
+      expect(output).not.toContain("Query:");
+      expect(output).toContain("2 results");
       expect(output).toContain(
-        "**URL:** https://developer.apple.com/documentation/uikit/uiview",
+        "- [UIView](https://developer.apple.com/documentation/uikit/uiview) (UIKit): An object that manages the content",
       );
+      expect(output).toContain(
+        "- [UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller) (UIKit)",
+      );
+      expect(output).not.toContain("###");
+      expect(output).not.toContain("Showing");
     });
 
     it("should keep documentation pages and design guidelines", () => {
@@ -109,9 +111,9 @@ describe("parseSearchResults", () => {
       );
 
       expect(output).not.toContain("WWDC Video");
-      expect(output).toContain("## 🎨 Design Guidelines");
+      expect(output).toContain("## Design Guidelines");
       expect(output).toContain(
-        "**URL:** https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "[Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons)",
       );
     });
 
@@ -120,10 +122,9 @@ describe("parseSearchResults", () => {
         stream([wwdcSession("wwdc2023-10013", "Meet StoreKit for SwiftUI")]),
       );
 
-      expect(output).toContain("## 🎥 WWDC Sessions");
-      expect(output).toContain("### 1. Meet StoreKit for SwiftUI");
+      expect(output).toContain("## WWDC Sessions");
       expect(output).toContain(
-        "**URL:** https://developer.apple.com/videos/play/wwdc2023/10013",
+        "- [Meet StoreKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2023/10013)",
       );
       expect(output).toContain(
         'get_wwdc_video (year: "2023", videoId: "10013")',
@@ -199,8 +200,10 @@ describe("parseSearchResults", () => {
         ]),
       );
 
-      expect(output).toContain("**Framework:** SwiftUI");
-      expect(output).toContain("**Framework:** Foundation");
+      expect(output).toContain(
+        "[List](https://developer.apple.com/documentation/swiftui/list) (SwiftUI)",
+      );
+      expect(output).toContain("(Foundation)");
     });
 
     it("should limit results when too many", () => {
@@ -214,10 +217,13 @@ describe("parseSearchResults", () => {
         ),
       );
 
-      expect(output).toContain("### 1. Result 0");
-      expect(output).toContain("### 50. Result 49");
+      expect(output).toContain("- [Result 0](");
+      expect(output).toContain("- [Result 49](");
       expect(output).not.toContain("Result 99");
-      expect(output).toContain("[View all results on Apple Developer]");
+      expect(output).toContain("50 results");
+      expect(output).toContain(
+        "Showing 50 of 100. Narrow the query or set type.",
+      );
     });
 
     it("should apply the type filter", () => {
@@ -269,7 +275,9 @@ describe("parseSearchResults", () => {
         ]),
       );
 
-      expect(output).toContain("### 1. Valid Result");
+      expect(output).toContain(
+        "- [Valid Result](https://developer.apple.com/documentation/test): Valid description",
+      );
       expect(output).not.toContain("No title");
       expect(output).not.toContain("No URL");
     });
@@ -283,7 +291,9 @@ describe("parseSearchResults", () => {
         specialQuery,
       );
 
-      expect(output).toContain('**Query:** "test & <special> "quoted""');
+      expect(output).toContain(
+        "- [Result](https://developer.apple.com/documentation/test)",
+      );
     });
 
     it("should pass descriptions through", () => {

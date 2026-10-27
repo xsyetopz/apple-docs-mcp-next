@@ -8,34 +8,30 @@ export const getTechnologyOverviewsTool = defineTool({
   name: "get_technology_overviews",
   title: "Get Technology Overviews",
   description:
-    "Apple's Technology Overviews guides: its collections, each with Apple's summary, and the articles in each, as one tree in Apple's order. category gives one collection with everything in it; searchQuery gives a flat list of the entries that mention it, each with the collection it is in. Returns links, not the articles; read one with get_apple_doc_content.",
+    "Apple's Technology Overviews guides: collections with summaries and their articles, in Apple's order. Links only; read one with get_apple_doc_content.",
   inputSchema: z.object({
     category: z
       .string()
       .optional()
       .describe(
-        'One collection, by the last segment of its link or its title, such as "app-design-and-ui", "games", "ai-machine-learning" or "liquid-glass"; an unknown one returns the list. Leave empty for all.',
+        'One collection, by link segment or title, e.g. "games" or "liquid-glass"; an unknown one lists them all',
       ),
     searchQuery: z
       .string()
       .optional()
       .describe(
-        'Keeps the collections and articles whose title or summary contain it, such as "data", "SwiftUI", "machine learning" or "performance". Articles carry no summary in Apple\'s index, so their titles decide.',
+        'Keeps entries whose title or summary contains it, e.g. "performance"',
       ),
     includeSubcategories: z
       .boolean()
       .default(true)
-      .describe(
-        "false lists only the collections, without their articles. Default: true",
-      ),
+      .describe("false lists only the collections"),
     limit: z
       .number()
       .min(1)
       .max(API_LIMITS.MAX_TECHNOLOGY_OVERVIEWS_LIMIT)
       .default(API_LIMITS.DEFAULT_TECHNOLOGY_OVERVIEWS_LIMIT)
-      .describe(
-        "Most entries to print, collections and articles together. Default: 50",
-      ),
+      .describe("Collections and articles together"),
   }),
   run: handleGetTechnologyOverviews,
 });

@@ -89,9 +89,11 @@ describe("list-technologies", () => {
       );
       expect(result).toContain("# Apple Developer Technologies");
       expect(result).toContain("## Featured");
-      expect(result).toContain("[SwiftUI]");
+      expect(result).toContain("SwiftUI (swiftui) [swift]; UIKit (uikit)");
       expect(result).toContain("## App Frameworks");
-      expect(result).toContain("[Foundation]");
+      expect(result).toContain("Foundation (foundation)");
+      expect(result).toContain("3 technologies");
+      expect(result).toContain("pass category");
     });
 
     it("should filter by category", async () => {
@@ -105,9 +107,9 @@ describe("list-technologies", () => {
       });
 
       expect(result).toContain("## App Frameworks");
-      expect(result).toContain("[Foundation]");
+      expect(result).toContain("- Foundation (foundation)");
       expect(result).not.toContain("## Featured");
-      expect(result).not.toContain("[SwiftUI]");
+      expect(result).not.toContain("SwiftUI");
     });
 
     it("should handle case-insensitive category filtering", async () => {
@@ -121,7 +123,7 @@ describe("list-technologies", () => {
       });
 
       expect(result).toContain("## App Frameworks");
-      expect(result).toContain("[Foundation]");
+      expect(result).toContain("Foundation (foundation)");
     });
 
     it("should filter by language", async () => {
@@ -170,7 +172,7 @@ describe("list-technologies", () => {
         limit: 200,
       });
 
-      expect(result).toContain("[SwiftUI]");
+      expect(result).toContain("SwiftUI (swiftui)");
       expect(result).not.toContain("Core Foundation");
     });
 
@@ -227,7 +229,7 @@ describe("list-technologies", () => {
       });
 
       expect(result).not.toContain("SwiftUI");
-      expect(result).toContain("[UIKit]");
+      expect(result).toContain("UIKit (uikit)");
     });
 
     it("should handle empty response", async () => {
@@ -310,9 +312,87 @@ describe("list-technologies", () => {
         limit: 200,
       });
 
-      expect(result).toContain("[Metal]");
-      expect(result).toContain("Languages: swift, occ");
-      expect(result).toContain("Categories: Graphics, Games");
+      expect(result).toContain("Metal (metal)");
+      expect(result).not.toContain("Graphics, Games");
+      expect(result).toContain("pass category");
+    });
+
+    it("should list a technology's tags when the category matched by tag", async () => {
+      mockHttpClient.getJson.mockResolvedValue({
+        references: {},
+        sections: [
+          {
+            kind: "technologies",
+            groups: [
+              {
+                name: "Graphics & Games",
+                technologies: [
+                  {
+                    title: "Metal",
+                    tags: ["Graphics", "Games"],
+                    languages: ["swift", "occ"],
+                    destination: {
+                      identifier:
+                        "doc://com.apple.documentation/documentation/metal",
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      });
+
+      const result = await handleListTechnologies({
+        category: "games",
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
+
+      expect(result).toContain("- Metal (metal) [swift, occ]: Graphics, Games");
+    });
+
+    it("should mark beta technologies", async () => {
+      mockHttpClient.getJson.mockResolvedValue({
+        references: {
+          "doc://com.apple.documentation/documentation/swiftui": {
+            identifier: "doc://com.apple.documentation/documentation/swiftui",
+            beta: true,
+          },
+        },
+        sections: [
+          {
+            kind: "technologies",
+            groups: [
+              {
+                name: "Featured",
+                technologies: [
+                  {
+                    title: "SwiftUI",
+                    tags: [],
+                    languages: ["swift"],
+                    destination: {
+                      identifier:
+                        "doc://com.apple.documentation/documentation/swiftui",
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      });
+
+      const result = await handleListTechnologies({
+        category: undefined,
+        language: undefined,
+        includeBeta: true,
+        limit: 200,
+      });
+
+      expect(result).toContain("SwiftUI (swiftui) (beta)");
+      expect(result).toContain("1 technologies (1 in beta)");
     });
 
     it("should apply the limit to each category", async () => {
@@ -402,7 +482,9 @@ describe("list-technologies", () => {
       expect(result).not.toContain("AppKit");
       expect(result).toContain("Core Data");
       expect(result).toContain("CloudKit");
-      expect(result).toContain("Found 4 technologies");
+      expect(result).toContain("4 technologies");
+      expect(result).toContain("1 more not shown");
+      expect(result).toContain("raise limit");
     });
 
     it("should list every category under the limit", async () => {
@@ -477,11 +559,12 @@ describe("list-technologies", () => {
       });
 
       // The first of each category
-      expect(result).toContain("Tech 1");
+      expect(result).toContain("Tech 1 (tech1)");
       expect(result).not.toContain("Tech 2");
-      expect(result).toContain("Tech 3");
+      expect(result).toContain("Tech 3 (tech3)");
       expect(result).not.toContain("Tech 4");
-      expect(result).toContain("Found 2 technologies");
+      expect(result).toContain("2 technologies");
+      expect(result).toContain("2 more not shown");
     });
 
     it("should handle zero limit", async () => {

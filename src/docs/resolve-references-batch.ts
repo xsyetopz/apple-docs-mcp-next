@@ -47,10 +47,8 @@ export const handleResolveReferencesBatch = async ({
   }
 
   const filteredReferences = filterReferences(data.references, filterByType);
-  const limitedReferences = Object.entries(filteredReferences).slice(
-    0,
-    maxReferences,
-  );
+  const matched = Object.entries(filteredReferences);
+  const limitedReferences = matched.slice(0, maxReferences);
 
   const resolvedReferences: ResolvedReference[] = [];
 
@@ -68,6 +66,7 @@ export const handleResolveReferencesBatch = async ({
   return formatResolvedReferences(
     sourceUrl,
     resolvedReferences,
+    matched.length,
     data.metadata?.title,
   );
 };
@@ -128,6 +127,7 @@ const resolveReference = async (
 const formatResolvedReferences = (
   sourceUrl: string,
   references: ResolvedReference[],
+  matchedCount: number,
   sourceTitle?: string,
 ): string => {
   if (references.length === 0) {
@@ -136,23 +136,23 @@ const formatResolvedReferences = (
 
   const title =
     sourceTitle || new URL(sourceUrl).pathname.split("/").pop() || "Document";
-  let content = `# References from ${title}\n\n`;
-  content += `**Source:** [${sourceUrl}](${sourceUrl})\n\n`;
-  content += `**Resolved ${references.length} references:**\n\n`;
+  let content = `# References from ${title}\n${references.length} references\n`;
 
   const groupedReferences = groupReferencesByRole(references);
 
   for (const [role, refs] of Object.entries(groupedReferences)) {
-    content += `## ${formatRoleTitle(role)} (${refs.length})\n\n`;
+    content += `\n## ${formatRoleTitle(role)} (${refs.length})\n`;
 
     for (const ref of refs) {
       content += formatSingleReference(ref);
     }
   }
 
-  content += `---\n\n*Total: ${references.length} references resolved*`;
+  if (matchedCount > references.length) {
+    content += `\nShowing ${references.length} of ${matchedCount}. Narrow with filter, or raise limit.\n`;
+  }
 
-  return content;
+  return content.trimEnd();
 };
 
 const groupReferencesByRole = (
@@ -186,26 +186,9 @@ const formatRoleTitle = (role: string): string => {
 };
 
 const formatSingleReference = (ref: ResolvedReference): string => {
-  let content = `### [${ref.title}](${ref.url})\n`;
-
-  if (ref.fragments && ref.fragments.length > 0) {
-    const codeSignature = ref.fragments.map((f) => f.text).join("");
-    if (codeSignature.trim()) {
-      content += `\`\`\`swift\n${codeSignature.trimEnd()}\n\`\`\`\n\n`;
-    }
-  }
-
-  if (ref.abstract) {
-    content += `${ref.abstract}\n\n`;
-  }
-
-  const metadata = [];
-  if (ref.kind) {
-    metadata.push(`Kind: ${ref.kind}`);
-  }
-  if (metadata.length > 0) {
-    content += `*${metadata.join(" | ")}*\n\n`;
-  }
-
-  return content;
+  const signature = (ref.fragments ?? [])
+    .map((f) => f.text)
+    .join("")
+    .trim();
+  return `- [${ref.title}](${ref.url})${signature ? ` \`${signature}\`` : ""}${ref.abstract ? `: ${ref.abstract}` : ""}\n`;
 };
