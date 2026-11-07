@@ -466,9 +466,9 @@ bun install
 bun run dev        # the server, restarted on each change
 bun run start      # the server on stdio
 bun check          # type check
-bun run lint       # Biome
+bun run lint:md    # markdownlint
 bun run test       # the tests, each file in isolation
-bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
+bun run ci         # type check, markdownlint and the tests, as CI runs them
 ```
 
 `tests/architecture.test.ts` 检查 `src/` 的分层：导入方向只能从 `main` 指向 `server`、`tools`、`docs` 和 `wwdc` 中的用例，再指向 `core`，不能反向。

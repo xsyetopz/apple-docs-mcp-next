@@ -69,7 +69,7 @@ jobs:
             const success = '${{ job.status }}' === 'success';
 
             const body = success
-              ? '✅ **All PR checks passed!**\n\n- ✓ Type checking\n- ✓ Commit messages\n- ✓ Biome and markdownlint\n- ✓ Tests\n- ✓ Bundled data'
+              ? '✅ **All PR checks passed!**\n\n- ✓ Type checking\n- ✓ Commit messages\n- ✓ markdownlint\n- ✓ Tests\n- ✓ Bundled data'
               : '❌ **PR checks failed**\n\nPlease review the CI logs for details.';
 
             github.rest.issues.createComment({

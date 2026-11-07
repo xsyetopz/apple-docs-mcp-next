@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      # Type check, Biome, markdownlint, and tests
+      # Type check, markdownlint, and tests
       - name: Run checks
         run: bun run ci
 

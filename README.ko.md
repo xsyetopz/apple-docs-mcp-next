@@ -469,9 +469,9 @@ bun install
 bun run dev        # the server, restarted on each change
 bun run start      # the server on stdio
 bun check          # type check
-bun run lint       # Biome
+bun run lint:md    # markdownlint
 bun run test       # the tests, each file in isolation
-bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
+bun run ci         # type check, markdownlint and the tests, as CI runs them
 ```
 
 `tests/architecture.test.ts`는 `src/`의 계층을 검사합니다: `main`에서 `server`, `tools`, `docs`와 `wwdc`의 유스케이스, `core`로만 import가 향하며 그 반대는 허용되지 않습니다.

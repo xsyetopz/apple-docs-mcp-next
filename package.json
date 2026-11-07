@@ -48,11 +48,9 @@
   "scripts": {
     "start": "bun run src/main.ts",
     "dev": "bun --watch run src/main.ts",
-    "lint": "biome ci .",
-    "format": "biome check --write .",
     "lint:md": "markdownlint-cli2",
     "test": "bun test --isolate",
-    "ci": "bun check && bun run lint && bun run lint:md && bun run test",
+    "ci": "bun check && bun run lint:md && bun run test",
     "types:docc": "openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderNode.spec.json --default-non-nullable false -o src/types/docc/render-node.d.ts && openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderIndex.spec.json --default-non-nullable false -o src/types/docc/render-index.d.ts",
     "types:captured": "bun run scripts/capture-responses.ts && bun run types:captured:generate",
     "types:captured:generate": "quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchStream --out src/types/captured/search-stream.ts api-map/responses/*.messages.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchDocument --out src/types/captured/search-document.ts api-map/responses/*.document.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level TechnologiesPage --out src/types/captured/technologies.ts api-map/responses/technologies.json"
@@ -69,7 +67,6 @@
     "zod": "4.6.7"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.3",
     "@commitlint/cli": "21.2.4",
     "@commitlint/config-conventional": "21.2.4",
     "@modelcontextprotocol/client": "2.4.0",

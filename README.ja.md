@@ -466,9 +466,9 @@ bun install
 bun run dev        # the server, restarted on each change
 bun run start      # the server on stdio
 bun check          # type check
-bun run lint       # Biome
+bun run lint:md    # markdownlint
 bun run test       # the tests, each file in isolation
-bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
+bun run ci         # type check, markdownlint and the tests, as CI runs them
 ```
 
 `tests/architecture.test.ts` は `src/` のレイヤーを検査します: import は `main` から `server`、`tools`、`docs` と `wwdc` のユースケース、`core` へ向かい、逆向きにはなりません。
