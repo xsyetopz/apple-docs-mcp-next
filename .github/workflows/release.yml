@@ -60,7 +60,7 @@ jobs:
           body: |
             ## 🚀 Published to npm
 
-            Run with Bun 1.4.3 or later:
+            Run with Bun 1.4.4 or later:
             ```bash
             bunx apple-docs-mcp-next
             ```

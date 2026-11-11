@@ -54,12 +54,35 @@ Claude Desktop을 재시작하고 Apple API에 대해 질문해보세요!
 
 ## 📦 설치
 
-<details>
-<summary><strong>📱 Claude Code</strong></summary>
+### 📱 Claude Code
 
 ```bash
-claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
+claude mcp add --scope user apple-docs -- bunx apple-docs-mcp-next@latest
 ```
+
+`--scope`는 서버가 로드되는 곳과 사용할 수 있는 사람을 정합니다:
+
+| 스코프 | 로드되는 곳 | 저장 위치 | 알맞은 경우 |
+| ------- | ---------- | ----------- | ------ |
+| `user` | 내 모든 프로젝트 | `~/.claude.json` | 대부분의 경우: 어떤 Apple 프로젝트에서도 쓸모가 있습니다 |
+| `project` | 이 프로젝트 (클론한 모든 사람) | 프로젝트 루트의 `.mcp.json` | 팀이 공유하는 앱 저장소: 이 파일을 커밋하세요 |
+| `local` (기본값) | 이 프로젝트 (나만) | `~/.claude.json` 안의 프로젝트 경로 아래 | 한 프로젝트에서 시험해 볼 때 |
+
+`project` 스코프는 다음과 같은 `.mcp.json`을 씁니다. 직접 작성해도 됩니다:
+
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next@latest"]
+    }
+  }
+}
+```
+
+Claude Code는 `.mcp.json`의 서버를 사용하기 전에 승인을 요청합니다. `claude mcp list`는 서버가 연결되는지 보여주고, `claude mcp remove apple-docs`는 서버를 제거합니다.
 
 **소스에서 설치**: `bunx`는 npm에서 패키지를 내려받으므로, 포크나 npm에 없는 버전에서는 404로 실패합니다. 대신 클론에서 서버를 실행하세요:
 
@@ -72,16 +95,17 @@ claude mcp add --scope user apple-docs -- bun run "$PWD/src/main.ts"
 
 Claude Code는 현재 프로젝트 폴더에서 서버를 시작하므로 경로는 절대 경로여야 합니다. `"$PWD"`는 클론의 절대 경로가 됩니다.
 
-[📖 Claude Code MCP 문서](https://docs.anthropic.com/en/docs/claude-code/mcp)
+절대 경로는 한 대의 컴퓨터에서만 맞으므로, 클론에는 `user` 또는 `local` 스코프가 알맞고 `project` 스코프에는 `bunx` 형식이 알맞습니다.
 
-</details>
+로그에 `Usage: bun run [flags] <file or script>`가 보이면 그 항목의 `args`가 `["run"]`뿐인 것입니다. `"run"` 뒤에 `src/main.ts`의 경로를 추가하세요.
 
-<details>
-<summary><strong>🖱️ Cursor</strong></summary>
+[📖 Claude Code MCP 문서](https://code.claude.com/docs/en/mcp)
+
+### 🖱️ Cursor
 
 **설정을 통해**: 설정 → Cursor 설정 → MCP → 새 글로벌 MCP 서버 추가
 
-**구성 파일을 통해**: `~/.cursor/mcp.json`에 추가:
+**구성 파일을 통해**: 모든 프로젝트에서 쓰려면 `~/.cursor/mcp.json`에, 한 프로젝트에서만 쓰려면 그 폴더의 `.cursor/mcp.json`에 추가:
 
 ```json
 {
@@ -94,35 +118,30 @@ Claude Code는 현재 프로젝트 폴더에서 서버를 시작하므로 경로
 }
 ```
 
-[📖 Cursor MCP 문서](https://docs.cursor.com/context/mcp)
+[📖 Cursor MCP 문서](https://cursor.com/docs/context/mcp)
 
-</details>
+### 🔷 VS Code
 
-<details>
-<summary><strong>🔷 VS Code</strong></summary>
-
-VS Code MCP 구성에 추가:
+모든 작업 영역에서 쓰려면 `~/.copilot/mcp-config.json`에, 팀과 공유하려면 작업 영역 루트의 `.mcp.json`에 추가하세요.
+후자는 Claude Code의 `project` 스코프가 쓰는 파일과 같으므로, 파일 하나로 둘 다 쓸 수 있습니다:
 
 ```json
 {
-  "mcp": {
-    "servers": {
-      "apple-docs": {
-        "type": "stdio",
-        "command": "bunx",
-        "args": ["apple-docs-mcp-next"]
-      }
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
-[📖 VS Code MCP 문서](https://code.visualstudio.com/docs/editor/mcp)
+명령 팔레트의 **MCP: Add Server**는 단계별로 서버를 설정합니다.
 
-</details>
+[📖 VS Code MCP 구성](https://code.visualstudio.com/docs/agents/reference/mcp-configuration)
 
-<details>
-<summary><strong>🌊 Windsurf</strong></summary>
+### 🌊 Windsurf
 
 Windsurf MCP 구성에 추가:
 
@@ -139,10 +158,7 @@ Windsurf MCP 구성에 추가:
 
 [📖 Windsurf MCP 문서](https://docs.codeium.com/windsurf/mcp)
 
-</details>
-
-<details>
-<summary><strong>⚡ Zed</strong></summary>
+### ⚡ Zed
 
 Zed `settings.json`에 추가:
 
@@ -162,10 +178,7 @@ Zed `settings.json`에 추가:
 
 [📖 Zed 컨텍스트 서버 문서](https://zed.dev/docs/context-servers)
 
-</details>
-
-<details>
-<summary><strong>🔧 Cline</strong></summary>
+### 🔧 Cline
 
 **마켓플레이스를 통해**:
 
@@ -187,10 +200,7 @@ Zed `settings.json`에 추가:
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>🟠 Amazon Q Developer CLI</strong></summary>
+### 🟠 Amazon Q Developer CLI
 
 **구성 파일을 통해**: `~/.aws/amazonq/mcp.json`에 추가:
 
@@ -207,10 +217,7 @@ Zed `settings.json`에 추가:
 
 [📖 Amazon Q Developer CLI MCP 문서](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html)
 
-</details>
-
-<details>
-<summary><strong>🪟 Windows</strong></summary>
+### 🪟 Windows
 
 Windows 시스템의 경우:
 
@@ -227,10 +234,7 @@ Windows 시스템의 경우:
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>⚙️ 고급 설치</strong></summary>
+### ⚙️ 고급 설치
 
 **전역 설치**:
 
@@ -252,8 +256,6 @@ cd apple-docs-mcp-next
 
 bun install
 ```
-
-</details>
 
 ## 💬 사용 예제
 
@@ -401,6 +403,8 @@ bun install
 
 모든 도구는 읽기 전용입니다. 호출이 실패하면 대신 무엇을 시도할지 알려주는 오류 결과 하나를 반환합니다.
 
+어떤 응답도 22,000바이트를 넘지 않으므로 10,000토큰 미만으로 유지됩니다. 그보다 긴 응답은 여러 파트로 나뉩니다. 각 파트는 `Part 1 of 5`와 같은 줄로 끝나고, 모든 도구가 받는 `part` 인수(기본값 1)로 파트를 고릅니다. 파트가 열린 코드 블록 안에서 끝나는 일은 없습니다.
+
 ## 🏗️ 기술 아키텍처
 
 ```text
@@ -410,6 +414,7 @@ apple-docs-mcp-next/
 │   ├── server.ts                     # Composition root: the MCP server and its instructions
 │   ├── tools/                        # MCP side: one spec per tool (name, description, zod input schema, use case)
 │   │   ├── define-tool.ts            # Registers a spec; Markdown or one error result per call
+│   │   ├── answer-parts.ts           # Cuts a long answer into parts of at most 22,000 bytes
 │   │   └── index.ts                  # Every tool the server offers
 │   ├── docs/                         # Use cases for Apple's documentation, HIG, sample code and help pages
 │   ├── wwdc/                         # Use cases for the bundled WWDC data, and its extractors
@@ -428,7 +433,8 @@ apple-docs-mcp-next/
 - **속도 조절**: 분당 최대 100개 요청, 검색은 15초 간격.
   Apple은 더 빠른 요청에 결과를 주지 않기 때문입니다
 - **검증**: 도구를 실행하기 전에 모든 도구의 인수를 Zod 4 스키마로 검사합니다
-- **런타임**: Bun 1.4.3 및 MCP TypeScript SDK 1.32.1
+- **응답 크기**: 호출당 최대 22,000바이트. 나머지는 `part`로 가져옵니다
+- **런타임**: Bun 1.4.4 및 MCP TypeScript SDK 2.4.0 (`@modelcontextprotocol/server`)
 
 ### 💾 캐싱 전략
 
@@ -465,14 +471,17 @@ WWDC 데이터는 **패키지에 번들**되어 `data/wwdc/`에 있으므로, WW
 
 ```bash
 bun install
+just setup         # the pinned tools and the git hooks
 
 bun run dev        # the server, restarted on each change
 bun run start      # the server on stdio
-bun check          # type check
-bun run lint:md    # markdownlint
-bun run test       # the tests, each file in isolation
-bun run ci         # type check, markdownlint and the tests, as CI runs them
+just typecheck     # type check
+just lint          # oxlint, markdownlint and the hook scripts
+just test          # the tests
+just verify        # format check, type check, lint, guard and the tests, as CI runs them
 ```
+
+레시피는 [`just`](https://just.systems)로 실행하며, `just`만 실행하면 레시피 목록이 나옵니다. 검사와 그 규칙은 `typescript-bedrock`에서 옵니다.
 
 `tests/architecture.test.ts`는 `src/`의 계층을 검사합니다: `main`에서 `server`, `tools`, `docs`와 `wwdc`의 유스케이스, `core`로만 import가 향하며 그 반대는 허용되지 않습니다.
 
@@ -498,12 +507,8 @@ MIT 라이선스 - 자세한 내용은 [LICENSE](LICENSE)를 참조하세요.
 
 ---
 
-<div align="center">
-
-<p><strong>Apple 개발자 커뮤니티를 위해 ❤️로 제작</strong></p>
+Apple 개발자 커뮤니티를 위해 ❤️로 제작
 
 Apple 개발자 문서 검색 | iOS 개발 | macOS 개발 | Swift 프로그래밍 | SwiftUI | UIKit | Xcode | WWDC 비디오 | 모델 컨텍스트 프로토콜 | MCP 서버
 
 [문제 신고](https://github.com/xsyetopz/apple-docs-mcp-next/issues) • [기능 요청](https://github.com/xsyetopz/apple-docs-mcp-next/issues/new) • [문서](https://github.com/xsyetopz/apple-docs-mcp-next#readme)
-
-</div>

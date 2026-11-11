@@ -6,7 +6,7 @@ To protect the `main` branch, configure the following rules in GitHub:
 
 ### 1. Go to Settings → Branches
 
-### 2. Add branch protection rule for `main`
+### 2. Add Branch Protection Rule for `main`
 
 **Required status checks:**
 
@@ -31,7 +31,7 @@ To protect the `main` branch, configure the following rules in GitHub:
 - [x] Include administrators
 - [x] Restrict who can push to matching branches
 
-## npm Trusted Publishing
+## Trusted Publishing
 
 `release.yml` publishes through npm trusted publishing (OIDC), so the repository holds no npm token.
 The package must exist on npm before it can trust the workflow, so publish the first version by hand:
