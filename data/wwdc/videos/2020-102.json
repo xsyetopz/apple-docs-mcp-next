@@ -1,19 +1,17 @@
 {
-  "id": "102",
-  "year": "2020",
-  "url": "https://developer.apple.com/videos/play/wwdc2020/102/",
-  "title": "Platforms State of the Union",
-  "speakers": [],
-  "duration": "",
-  "topics": [
-    "Essentials"
-  ],
-  "hasTranscript": false,
-  "hasCode": false,
-  "resources": {
-    "resourceLinks": [],
-    "hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/102/10/7DD15AE9-07BA-4E91-BC72-9DF1EA9729F8/200622_SotuLiveEMv2_HQ2160p29SDR_1080p_dl.mp4?dl=1",
-    "sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/102/10/7DD15AE9-07BA-4E91-BC72-9DF1EA9729F8/200622_SotuLiveEMv2_HQ2160p29SDR_540p_dl.mp4?dl=1"
-  },
-  "extractedAt": "2026-10-11T16:44:42.686Z"
+	"id": "102",
+	"year": "2020",
+	"url": "https://developer.apple.com/videos/play/wwdc2020/102/",
+	"title": "Platforms State of the Union",
+	"speakers": [],
+	"duration": "",
+	"topics": ["Essentials"],
+	"hasTranscript": false,
+	"hasCode": false,
+	"resources": {
+		"resourceLinks": [],
+		"hdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/102/10/7DD15AE9-07BA-4E91-BC72-9DF1EA9729F8/200622_SotuLiveEMv2_HQ2160p29SDR_1080p_dl.mp4?dl=1",
+		"sdVideo": "https://devstreaming-cdn.apple.com/videos/wwdc/2020/102/10/7DD15AE9-07BA-4E91-BC72-9DF1EA9729F8/200622_SotuLiveEMv2_HQ2160p29SDR_540p_dl.mp4?dl=1"
+	},
+	"extractedAt": "2026-10-11T16:44:42.686Z"
 }
