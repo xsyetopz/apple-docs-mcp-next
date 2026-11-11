@@ -38,7 +38,7 @@ The package must exist on npm before it can trust the workflow, so publish the f
 
 1. `npm login`, with two-factor authentication on the account
 2. `bun publish --access public`
-3. `npx npm@latest trust github apple-docs-mcp-next --file release.yml --repository xsyetopz/apple-docs-mcp-next --allow-publish`
+3. `bunx npm@latest trust github apple-docs-mcp-next --file release.yml --repository xsyetopz/apple-docs-mcp-next --allow-publish`
 
 Later versions publish when a `v*` tag matching the `package.json` version is pushed.
 
