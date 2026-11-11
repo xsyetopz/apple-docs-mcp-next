@@ -7,78 +7,78 @@ import path from "node:path";
 
 const SRC = path.resolve(import.meta.dir, "../src");
 
-type Layer = "main" | "server" | "tools" | "docs" | "wwdc" | "core" | "types";
+const ALLOWED: ReadonlyMap<string, readonly string[]> = new Map([
+	["main", ["server", "core"]],
+	["server", ["tools"]],
+	["tools", ["docs", "wwdc", "core"]],
+	["docs", ["core", "types"]],
+	["wwdc", ["core", "types"]],
+	["core", []],
+	["types", []],
+]);
 
-const ALLOWED: Record<Layer, readonly Layer[]> = {
-  main: ["server", "core"],
-  server: ["tools"],
-  tools: ["docs", "wwdc", "core"],
-  docs: ["core", "types"],
-  wwdc: ["core", "types"],
-  core: [],
-  types: [],
+const MCP_LAYERS: ReadonlySet<string> = new Set(["main", "server", "tools"]);
+
+const layerOf = (file: string): string => {
+	const [first = ""] = path.relative(SRC, file).split(path.sep);
+	return first.replace(/\.ts$/u, "");
 };
 
-const MCP_LAYERS: readonly Layer[] = ["main", "server", "tools"];
-
-const layerOf = (file: string): Layer => {
-  const [first = ""] = path.relative(SRC, file).split(path.sep);
-  return first.replace(/\.ts$/, "") as Layer;
-};
-
-const imports = async (file: string): Promise<string[]> => {
-  const source = await Bun.file(file).text();
-  return [...source.matchAll(/(?:from|import)\s*\(?\s*"([^"]+)"/g)].map(
-    ([, specifier = ""]) => specifier,
-  );
+const importsOf = async (file: string): Promise<string[]> => {
+	const source = await Bun.file(file).text();
+	return [...source.matchAll(/(?:from|import)\s*\(?\s*"([^"]+)"/gu)].map(
+		([, specifier = ""]) => specifier,
+	);
 };
 
 const files = await Array.fromAsync(
-  new Bun.Glob("**/*.ts").scan({ cwd: SRC, absolute: true }),
+	new Bun.Glob("**/*.ts").scan({ cwd: SRC, absolute: true }),
 );
 
+const sources = await Promise.all(
+	files.map(async (file) => ({ file, specifiers: await importsOf(file) })),
+);
+
+const crossesLayers = (file: string, specifier: string): boolean => {
+	const target = path.resolve(path.dirname(file), specifier);
+	const layer = layerOf(file);
+	const targetLayer = layerOf(target);
+	return (
+		specifier.startsWith(".") &&
+		target.startsWith(SRC) &&
+		targetLayer !== layer &&
+		ALLOWED.get(layer)?.includes(targetLayer) !== true
+	);
+};
+
+const inwardViolations = (): string[] =>
+	sources.flatMap(({ file, specifiers }) =>
+		specifiers
+			.filter((specifier) => crossesLayers(file, specifier))
+			.map((specifier) => `${path.relative(SRC, file)} → ${specifier}`),
+	);
+
+const sdkViolations = (): string[] =>
+	sources
+		.filter(({ file }) => !MCP_LAYERS.has(layerOf(file)))
+		.flatMap(({ file, specifiers }) =>
+			specifiers
+				.filter((specifier) => specifier.startsWith("@modelcontextprotocol/"))
+				.map((specifier) => `${path.relative(SRC, file)} → ${specifier}`),
+		);
+
 describe("the architecture", () => {
-  it("knows the layer of every source file", () => {
-    for (const file of files) {
-      expect(Object.keys(ALLOWED)).toContain(layerOf(file));
-    }
-  });
+	it("knows the layer of every source file", () => {
+		expect(
+			files.map((file) => layerOf(file)).filter((layer) => !ALLOWED.has(layer)),
+		).toEqual([]);
+	});
 
-  it("imports only inward, from a layer to its own files or the layers below it", async () => {
-    const violations: string[] = [];
-    for (const file of files) {
-      const layer = layerOf(file);
-      for (const specifier of await imports(file)) {
-        if (!specifier.startsWith(".")) {
-          continue;
-        }
-        const target = path.resolve(path.dirname(file), specifier);
-        if (!target.startsWith(SRC)) {
-          continue;
-        }
-        const targetLayer = layerOf(target);
-        if (targetLayer !== layer && !ALLOWED[layer].includes(targetLayer)) {
-          violations.push(`${path.relative(SRC, file)} → ${specifier}`);
-        }
-      }
-    }
+	it("imports only inward, from a layer to its own files or the layers below it", () => {
+		expect(inwardViolations()).toEqual([]);
+	});
 
-    expect(violations).toEqual([]);
-  });
-
-  it("keeps the MCP SDK on the MCP side", async () => {
-    const violations: string[] = [];
-    for (const file of files) {
-      if (MCP_LAYERS.includes(layerOf(file))) {
-        continue;
-      }
-      for (const specifier of await imports(file)) {
-        if (specifier.startsWith("@modelcontextprotocol/")) {
-          violations.push(`${path.relative(SRC, file)} → ${specifier}`);
-        }
-      }
-    }
-
-    expect(violations).toEqual([]);
-  });
+	it("keeps the MCP SDK on the MCP side", () => {
+		expect(sdkViolations()).toEqual([]);
+	});
 });

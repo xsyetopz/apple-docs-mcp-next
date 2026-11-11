@@ -1,65 +1,70 @@
 /**
  * How a failure is named: its kind from the error itself, with what to try instead.
  */
-import { describe, expect, it, spyOn } from "bun:test";
+import { describe, expect, it, mock, spyOn } from "bun:test";
 
 import {
-  AppError,
-  classifyError,
-  classifyFetchError,
-  ErrorType,
-  requireText,
+	AppError,
+	classifyError,
+	classifyFetchError,
+	ErrorType,
+	requireText,
 } from "../../src/core/errors.ts";
 import { logger } from "../../src/core/logger.ts";
 
 describe("errors", () => {
-  it("names a failed fetch by what went wrong", () => {
-    expect(
-      classifyFetchError(
-        new TypeError("fetch failed"),
-        "https://developer.apple.com/x",
-      ).type,
-    ).toBe(ErrorType.NETWORK_ERROR);
-    expect(
-      classifyFetchError(
-        new Error("The operation was aborted due to timeout"),
-        "u",
-      ).type,
-    ).toBe(ErrorType.TIMEOUT);
-    expect(
-      classifyFetchError(new Error("GET u: HTTP 404 Not Found"), "u").type,
-    ).toBe(ErrorType.NOT_FOUND);
-    expect(classifyFetchError("odd", "u")).toMatchObject({
-      type: ErrorType.UNKNOWN,
-      message: "odd",
-    });
-  });
+	it("names a failed fetch by what went wrong", () => {
+		expect(
+			classifyFetchError(
+				new TypeError("fetch failed"),
+				"https://developer.apple.com/x",
+			).type,
+		).toBe(ErrorType.NETWORK_ERROR);
+		expect(
+			classifyFetchError(
+				new Error("The operation was aborted due to timeout"),
+				"u",
+			).type,
+		).toBe(ErrorType.TIMEOUT);
+		expect(
+			classifyFetchError(new Error("GET u: HTTP 404 Not Found"), "u").type,
+		).toBe(ErrorType.NOT_FOUND);
+		expect(classifyFetchError("odd", "u")).toMatchObject({
+			type: ErrorType.UNKNOWN,
+			message: "odd",
+		});
+	});
 
-  it("keeps a failure's kind and suggestions on the Error it throws", () => {
-    const error = classifyFetchError(
-      new Error("GET u: HTTP 404 Not Found"),
-      "u",
-    );
+	it("keeps a failure's kind and suggestions on the Error it throws", () => {
+		const error = classifyFetchError(
+			new Error("GET u: HTTP 404 Not Found"),
+			"u",
+		);
 
-    expect(error).toBeInstanceOf(AppError);
-    expect(error.suggestions).toContain("Visit the original URL directly: u");
-  });
+		expect(error).toBeInstanceOf(AppError);
+		expect(error.suggestions).toEqual([
+			"Take the page's URL or the framework's ID from a result of search_docs_map, search_apple_docs or list_technologies; a guessed one is often wrong",
+			"The address that was not found: u",
+		]);
+	});
 
-  it("tells a busy service from a rate limit", () => {
-    spyOn(logger, "error").mockImplementation(() => {});
+	it("tells a busy service from a rate limit", () => {
+		spyOn(logger, "error").mockImplementation(mock());
 
-    expect(classifyError(new Error("HTTP 503"), "search").type).toBe(
-      ErrorType.SERVICE_UNAVAILABLE,
-    );
-    expect(classifyError(new Error("HTTP 429"), "search").type).toBe(
-      ErrorType.RATE_LIMITED,
-    );
-  });
+		expect(classifyError(new Error("HTTP 503"), "search").type).toBe(
+			ErrorType.SERVICE_UNAVAILABLE,
+		);
+		expect(classifyError(new Error("HTTP 429"), "search").type).toBe(
+			ErrorType.RATE_LIMITED,
+		);
+	});
 
-  it("refuses an empty or blank input, and passes a real one", () => {
-    expect(() => requireText("  ", "Search query")).toThrow(
-      expect.objectContaining({ type: ErrorType.INVALID_INPUT }),
-    );
-    expect(() => requireText("NavigationStack", "Search query")).not.toThrow();
-  });
+	it("refuses an empty or blank input, and passes a real one", () => {
+		expect(() => {
+			requireText("  ", "Search query");
+		}).toThrow(expect.objectContaining({ type: ErrorType.INVALID_INPUT }));
+		expect(() => {
+			requireText("NavigationStack", "Search query");
+		}).not.toThrow();
+	});
 });

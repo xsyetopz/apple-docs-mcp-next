@@ -1,17 +1,15 @@
 {
-  "id": "101",
-  "year": "2025",
-  "url": "https://developer.apple.com/videos/play/wwdc2025/101/",
-  "title": "Keynote",
-  "speakers": [],
-  "duration": "",
-  "topics": [
-    "Essentials"
-  ],
-  "hasTranscript": false,
-  "hasCode": false,
-  "resources": {
-    "resourceLinks": []
-  },
-  "extractedAt": "2026-10-11T16:33:18.475Z"
+	"id": "101",
+	"year": "2025",
+	"url": "https://developer.apple.com/videos/play/wwdc2025/101/",
+	"title": "Keynote",
+	"speakers": [],
+	"duration": "",
+	"topics": ["Essentials"],
+	"hasTranscript": false,
+	"hasCode": false,
+	"resources": {
+		"resourceLinks": []
+	},
+	"extractedAt": "2026-10-11T16:33:18.475Z"
 }

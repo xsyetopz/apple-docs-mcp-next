@@ -1,17 +1,15 @@
 {
-  "id": "110420",
-  "year": "2022",
-  "url": "https://developer.apple.com/videos/play/wwdc2022/110420/",
-  "title": "Accessibility icebreaker",
-  "speakers": [],
-  "duration": "",
-  "topics": [
-    "Accessibility & Inclusion"
-  ],
-  "hasTranscript": false,
-  "hasCode": false,
-  "resources": {
-    "resourceLinks": []
-  },
-  "extractedAt": "2026-10-11T16:39:39.845Z"
+	"id": "110420",
+	"year": "2022",
+	"url": "https://developer.apple.com/videos/play/wwdc2022/110420/",
+	"title": "Accessibility icebreaker",
+	"speakers": [],
+	"duration": "",
+	"topics": ["Accessibility & Inclusion"],
+	"hasTranscript": false,
+	"hasCode": false,
+	"resources": {
+		"resourceLinks": []
+	},
+	"extractedAt": "2026-10-11T16:39:39.845Z"
 }

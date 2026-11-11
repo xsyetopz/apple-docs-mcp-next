@@ -1,85 +1,112 @@
 {
-  "name": "apple-docs-mcp-next",
-  "version": "2.0.0",
-  "description": "MCP server for Apple Developer Documentation: API reference, Human Interface Guidelines, App Store Connect Help, sample code and 1,700 WWDC sessions with transcripts and code, on Bun",
-  "keywords": [
-    "mcp",
-    "model-context-protocol",
-    "mcp-server",
-    "apple",
-    "apple-developer",
-    "documentation",
-    "swift",
-    "swiftui",
-    "uikit",
-    "wwdc",
-    "xcode",
-    "ios",
-    "macos",
-    "claude",
-    "cursor"
-  ],
-  "homepage": "https://github.com/xsyetopz/apple-docs-mcp-next#readme",
-  "bugs": {
-    "url": "https://github.com/xsyetopz/apple-docs-mcp-next/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xsyetopz/apple-docs-mcp-next.git"
-  },
-  "license": "MIT",
-  "contributors": [
-    "kimsungwhee (https://github.com/kimsungwhee)",
-    "mishafyi (https://github.com/mishafyi)"
-  ],
-  "type": "module",
-  "bin": {
-    "apple-docs-mcp-next": "./src/main.ts"
-  },
-  "files": [
-    "src",
-    "data",
-    "api-map/apple-docs-map.tsv"
-  ],
-  "engines": {
-    "bun": ">=1.4.3"
-  },
-  "packageManager": "bun@1.4.4",
-  "scripts": {
-    "start": "bun run src/main.ts",
-    "dev": "bun --watch run src/main.ts",
-    "lint": "biome ci .",
-    "format": "biome check --write .",
-    "lint:md": "markdownlint-cli2",
-    "test": "bun test --isolate",
-    "ci": "bun check && bun run lint && bun run lint:md && bun run test",
-    "types:docc": "openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderNode.spec.json --default-non-nullable false -o src/types/docc/render-node.d.ts && openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderIndex.spec.json --default-non-nullable false -o src/types/docc/render-index.d.ts",
-    "types:captured": "bun run scripts/capture-responses.ts && bun run types:captured:generate",
-    "types:captured:generate": "quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchStream --out src/types/captured/search-stream.ts api-map/responses/*.messages.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchDocument --out src/types/captured/search-document.ts api-map/responses/*.document.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level TechnologiesPage --out src/types/captured/technologies.ts api-map/responses/technologies.json"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/server": "2.4.0",
-    "bottleneck": "2.19.5",
-    "header-generator": "2.1.89",
-    "jsdom": "30.1.3",
-    "lru-cache": "11.5.3",
-    "p-retry": "8.0.1",
-    "turndown": "7.2.4",
-    "turndown-plugin-gfm": "1.0.2",
-    "zod": "4.6.7"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.6.3",
-    "@commitlint/cli": "21.2.4",
-    "@commitlint/config-conventional": "21.2.4",
-    "@modelcontextprotocol/client": "2.4.0",
-    "@types/bun": "1.4.4",
-    "@types/jsdom": "30.0.0",
-    "@types/node": "26.6.5",
-    "@types/turndown": "5.0.6",
-    "markdownlint-cli2": "0.24.0",
-    "openapi-typescript": "7.13.0",
-    "playwright": "1.64.1",
-    "quicktype": "26.0.0"
-  }
+	"name": "apple-docs-mcp-next",
+	"version": "2.0.0",
+	"description": "MCP server for Apple Developer Documentation: API reference, Human Interface Guidelines, App Store Connect Help, sample code and 1,700 WWDC sessions with transcripts and code, on Bun",
+	"keywords": [
+		"apple",
+		"apple-developer",
+		"claude",
+		"cursor",
+		"documentation",
+		"ios",
+		"macos",
+		"mcp",
+		"mcp-server",
+		"model-context-protocol",
+		"swift",
+		"swiftui",
+		"uikit",
+		"wwdc",
+		"xcode"
+	],
+	"homepage": "https://github.com/xsyetopz/apple-docs-mcp-next#readme",
+	"bugs": {
+		"url": "https://github.com/xsyetopz/apple-docs-mcp-next/issues"
+	},
+	"license": "MIT",
+	"contributors": [
+		"kimsungwhee (https://github.com/kimsungwhee)",
+		"mishafyi (https://github.com/mishafyi)"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xsyetopz/apple-docs-mcp-next.git"
+	},
+	"bin": {
+		"apple-docs-mcp-next": "./src/main.ts"
+	},
+	"workspaces": {
+		"packages": [],
+		"catalog": {
+			"@types/bun": "1.4.4",
+			"@types/node": "26.6.6",
+			"eslint-plugin-jsdoc": "65.4.5",
+			"markdownlint-cli2": "0.24.0",
+			"markdownlint-rule-title-case-style": "0.4.3",
+			"oxlint": "1.93.0",
+			"oxlint-tsgolint": "7.0.2006",
+			"typescript": "7.0.2",
+			"typescript-bedrock": "0.1.11"
+		}
+	},
+	"files": [
+		"src",
+		"data",
+		"api-map/apple-docs-map.tsv"
+	],
+	"type": "module",
+	"scripts": {
+		"ci": "bun check && bun run lint:md && bun run test",
+		"dev": "bun --watch run src/main.ts",
+		"format": "bun fmt",
+		"format:check": "bun fmt --check",
+		"guard": "typescript-bedrock guard",
+		"lint": "bun run --sequential --no-exit-on-error 'typescript-bedrock lint' markdownlint-cli2",
+		"lint:fix": "bun run --sequential --no-exit-on-error 'typescript-bedrock lint --fix' 'markdownlint-cli2 --fix'",
+		"lint:md": "markdownlint-cli2",
+		"start": "bun run src/main.ts",
+		"test": "bun test --isolate",
+		"typecheck": "bun check",
+		"types:captured": "bun run scripts/capture-responses.ts && bun run types:captured:generate",
+		"types:captured:generate": "quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchStream --out src/types/captured/search-stream.gen.ts api-map/responses/*.messages.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level SearchDocument --out src/types/captured/search-document.gen.ts api-map/responses/*.document.json && quicktype --lang ts --src-lang json --just-types --no-enums --no-date-times --no-uuids --no-integer-strings --no-boolean-strings --top-level TechnologiesPage --out src/types/captured/technologies.gen.ts api-map/responses/technologies.json",
+		"types:docc": "openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderNode.spec.json --default-non-nullable false -o src/types/docc/render-node.gen.ts && openapi-typescript https://raw.githubusercontent.com/swiftlang/swift-docc/main/Sources/SwiftDocC/SwiftDocC.docc/Resources/RenderIndex.spec.json --default-non-nullable false -o src/types/docc/render-index.gen.ts",
+		"verify": "bun run --sequential format:check typecheck lint guard test"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/server": "2.4.0",
+		"bottleneck": "2.19.5",
+		"header-generator": "2.1.90",
+		"jsdom": "31.0.0",
+		"lru-cache": "11.5.3",
+		"p-retry": "9.0.0",
+		"turndown": "7.2.5",
+		"turndown-plugin-gfm": "1.0.2",
+		"zod": "4.6.7"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "21.2.4",
+		"@commitlint/config-conventional": "21.2.4",
+		"@modelcontextprotocol/client": "2.4.0",
+		"@types/bun": "catalog:",
+		"@types/jsdom": "30.0.0",
+		"@types/node": "catalog:",
+		"@types/turndown": "5.0.6",
+		"eslint-plugin-jsdoc": "catalog:",
+		"markdownlint-cli2": "catalog:",
+		"markdownlint-rule-title-case-style": "catalog:",
+		"openapi-typescript": "7.13.0",
+		"oxlint": "catalog:",
+		"oxlint-tsgolint": "catalog:",
+		"playwright": "1.65.0",
+		"quicktype": "26.0.0",
+		"typescript": "catalog:",
+		"typescript-bedrock": "catalog:"
+	},
+	"overrides": {
+		"@types/node": "26.6.6"
+	},
+	"engines": {
+		"bun": ">=1.4.4"
+	},
+	"packageManager": "bun@1.4.4"
 }

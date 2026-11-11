@@ -52,12 +52,35 @@ Restart Claude Desktop and start asking about Apple APIs!
 
 ## 📦 Installation
 
-<details>
-<summary><strong>📱 Claude Code</strong></summary>
+### 📱 Claude Code
 
 ```bash
-claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
+claude mcp add --scope user apple-docs -- bunx apple-docs-mcp-next@latest
 ```
+
+`--scope` sets where the server loads and who gets it:
+
+| Scope | Loads in | Stored in | Fits |
+| ------- | ---------- | ----------- | ------ |
+| `user` | every project of yours | `~/.claude.json` | most setups: the server is useful in any Apple project |
+| `project` | this project, for everyone who clones it | `.mcp.json` in the project root | an app's repository that a team shares: commit the file |
+| `local` (the default) | this project, for you only | `~/.claude.json`, under the project's path | trying the server in one project |
+
+The `project` scope writes a `.mcp.json` such as this one, which you can also write by hand:
+
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next@latest"]
+    }
+  }
+}
+```
+
+Claude Code asks for approval before it uses a server from a `.mcp.json`. `claude mcp list` shows whether the server connects, and `claude mcp remove apple-docs` removes it.
 
 **From source**: `bunx` downloads the package from npm, so it fails with a 404 for a fork or a version that is not on npm.
 Run the server from a clone instead:
@@ -70,17 +93,17 @@ claude mcp add --scope user apple-docs -- bun run "$PWD/src/main.ts"
 ```
 
 Claude Code starts the server from the folder of the current project, so the path must be absolute. `"$PWD"` gives the absolute path of the clone.
+An absolute path is right on one machine only, so a clone fits the `user` or `local` scope, and the `project` scope fits the `bunx` form.
 
-[📖 Claude Code MCP docs](https://docs.anthropic.com/en/docs/claude-code/mcp)
+A log that shows `Usage: bun run [flags] <file or script>` comes from an entry whose `args` are only `["run"]`: add the path of `src/main.ts` after `"run"`.
 
-</details>
+[📖 Claude Code MCP docs](https://code.claude.com/docs/en/mcp)
 
-<details>
-<summary><strong>🖱️ Cursor</strong></summary>
+### 🖱️ Cursor
 
 **Via Settings**: Settings → Cursor Settings → MCP → Add new global MCP server
 
-**Via Config File**: Add to `~/.cursor/mcp.json`:
+**Via Config File**: Add to `~/.cursor/mcp.json` for every project, or to `.cursor/mcp.json` in one project's folder for that project:
 
 ```json
 {
@@ -93,35 +116,30 @@ Claude Code starts the server from the folder of the current project, so the pat
 }
 ```
 
-[📖 Cursor MCP docs](https://docs.cursor.com/context/mcp)
+[📖 Cursor MCP docs](https://cursor.com/docs/context/mcp)
 
-</details>
+### 🔷 VS Code
 
-<details>
-<summary><strong>🔷 VS Code</strong></summary>
-
-Add to your VS Code MCP config:
+Add to `~/.copilot/mcp-config.json` for every workspace, or to `.mcp.json` in a workspace's root to share it with the team.
+The second is the file Claude Code's `project` scope writes, so one file serves both:
 
 ```json
 {
-  "mcp": {
-    "servers": {
-      "apple-docs": {
-        "type": "stdio",
-        "command": "bunx",
-        "args": ["apple-docs-mcp-next"]
-      }
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
-[📖 VS Code MCP docs](https://code.visualstudio.com/docs/editor/mcp)
+**MCP: Add Server** in the Command Palette sets the server up in steps.
 
-</details>
+[📖 VS Code MCP configuration](https://code.visualstudio.com/docs/agents/reference/mcp-configuration)
 
-<details>
-<summary><strong>🌊 Windsurf</strong></summary>
+### 🌊 Windsurf
 
 Add to your Windsurf MCP config:
 
@@ -138,10 +156,7 @@ Add to your Windsurf MCP config:
 
 [📖 Windsurf MCP docs](https://docs.codeium.com/windsurf/mcp)
 
-</details>
-
-<details>
-<summary><strong>⚡ Zed</strong></summary>
+### ⚡ Zed
 
 Add to your Zed `settings.json`:
 
@@ -161,10 +176,7 @@ Add to your Zed `settings.json`:
 
 [📖 Zed Context Server docs](https://zed.dev/docs/context-servers)
 
-</details>
-
-<details>
-<summary><strong>🔧 Cline</strong></summary>
+### 🔧 Cline
 
 **Via Marketplace**:
 
@@ -186,10 +198,7 @@ Add to your Zed `settings.json`:
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>🟠 Amazon Q Developer CLI</strong></summary>
+### 🟠 Amazon Q Developer CLI
 
 **Via Config File**: Add to `~/.aws/amazonq/mcp.json`:
 
@@ -206,10 +215,7 @@ Add to your Zed `settings.json`:
 
 [📖 Amazon Q Developer CLI MCP docs](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html)
 
-</details>
-
-<details>
-<summary><strong>🪟 Windows</strong></summary>
+### 🪟 Windows
 
 For Windows systems, use:
 
@@ -226,10 +232,7 @@ For Windows systems, use:
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>⚙️ Advanced Installation</strong></summary>
+### ⚙️ Advanced Installation
 
 **Global Installation**:
 
@@ -251,8 +254,6 @@ cd apple-docs-mcp-next
 
 bun install
 ```
-
-</details>
 
 ## 💬 Usage Examples
 
@@ -400,6 +401,8 @@ bun install
 
 Every tool is read-only. A failed call returns one error result with what to try instead.
 
+No answer is longer than 22,000 bytes, which keeps it under 10,000 tokens. A longer answer comes in parts: each part ends with a line such as `Part 1 of 5`, and every tool takes a `part` argument (default 1) that selects one. A part never ends inside an open code block.
+
 ## 🏗️ Technical Architecture for Apple Developer Documentation Access
 
 ```text
@@ -409,6 +412,7 @@ apple-docs-mcp-next/
 │   ├── server.ts                     # Composition root: the MCP server and its instructions
 │   ├── tools/                        # MCP side: one spec per tool (name, description, zod input schema, use case)
 │   │   ├── define-tool.ts            # Registers a spec; Markdown or one error result per call
+│   │   ├── answer-parts.ts           # Cuts a long answer into parts of at most 22,000 bytes
 │   │   └── index.ts                  # Every tool the server offers
 │   ├── docs/                         # Use cases for Apple's documentation, HIG, sample code and help pages
 │   ├── wwdc/                         # Use cases for the bundled WWDC data, and its extractors
@@ -426,7 +430,8 @@ apple-docs-mcp-next/
 - **Retries**: network errors, timeouts and 5xx answers retry 3 times with exponential backoff; other statuses fail at once
 - **Pacing**: at most 100 requests a minute, and searches 15 s apart, as Apple answers quicker ones with no results
 - **Validation**: every tool's arguments are checked against its Zod 4 schema before the tool runs
-- **Runtime**: Bun 1.4.3 and the MCP TypeScript SDK 1.32.1
+- **Answer size**: at most 22,000 bytes a call; the rest comes with `part`
+- **Runtime**: Bun 1.4.4 and the MCP TypeScript SDK 2.4.0 (`@modelcontextprotocol/server`)
 
 ### 💾 Caching Strategy
 
@@ -463,14 +468,17 @@ The server logs to stderr only: on the stdio transport, stdout carries the MCP m
 
 ```bash
 bun install
+just setup         # the pinned tools and the git hooks
 
 bun run dev        # the server, restarted on each change
 bun run start      # the server on stdio
-bun check          # type check
-bun run lint       # Biome
-bun run test       # the tests, each file in isolation
-bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
+just typecheck     # type check
+just lint          # oxlint, markdownlint and the hook scripts
+just test          # the tests
+just verify        # format check, type check, lint, guard and the tests, as CI runs them
 ```
+
+[`just`](https://just.systems) runs the recipes, and `just` alone lists them. The checks and their rules come from `typescript-bedrock`.
 
 `tests/architecture.test.ts` checks the layers of `src/`: imports point from `main` to `server`, `tools`, the use cases in `docs` and `wwdc`, and `core`, never back.
 
@@ -496,12 +504,8 @@ This project is not affiliated with or endorsed by Apple Inc. It uses publicly a
 
 ---
 
-<div align="center">
-
-<p><strong>Made with ❤️ for the Apple Developer Community</strong></p>
+Made with ❤️ for the Apple Developer Community
 
 Search Apple Developer Documentation | iOS Development | macOS Development | Swift Programming | SwiftUI | UIKit | Xcode | WWDC Videos | Model Context Protocol | MCP Server
 
 [Report Issues](https://github.com/xsyetopz/apple-docs-mcp-next/issues) • [Request Features](https://github.com/xsyetopz/apple-docs-mcp-next/issues/new) • [Documentation](https://github.com/xsyetopz/apple-docs-mcp-next#readme)
-
-</div>

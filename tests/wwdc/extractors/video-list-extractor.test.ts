@@ -1,25 +1,20 @@
-import { beforeEach, describe, expect, mock, test } from "bun:test";
-import type { Mocked } from "../../helpers/test-helpers.ts";
-import { httpClientModule } from "../../mocks/http-client.mock.ts";
-
 /**
  * Tests for WWDC video list extractor
  */
+import { beforeEach, describe, expect, test } from "bun:test";
 
-import { httpClient } from "../../../src/core/http-client.ts";
 import { extractVideoList as extractWWDCVideoList } from "../../../src/wwdc/extractors/video-list-extractor.ts";
-
-// Mock http client
-mock.module("../../../src/core/http-client.ts", httpClientModule);
-const mockHttpClient = httpClient as Mocked<typeof httpClient>;
+import { spyOnHttpClient } from "../../mocks/http-client.mock.ts";
 
 describe("WWDC Video List Extractor", () => {
-  beforeEach(() => {
-    mock.clearAllMocks();
-  });
+	let http: ReturnType<typeof spyOnHttpClient>;
 
-  test("should extract video list for a specific year", async () => {
-    const mockHtml = `
+	beforeEach(() => {
+		http = spyOnHttpClient();
+	});
+
+	test("should extract video list for a specific year", async () => {
+		const mockHtml = `
       <!DOCTYPE html>
       <html>
       <body>
@@ -49,30 +44,28 @@ describe("WWDC Video List Extractor", () => {
       </html>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    expect(result).toHaveLength(2);
-    expect(result[0]).toMatchObject({
-      id: "10188",
-      url: "https://developer.apple.com/videos/play/wwdc2025/10188/",
-      title: "Meet the Translation API",
-      duration: "",
-      thumbnail: "",
-    });
-    expect(result[1]).toMatchObject({
-      id: "10189",
-      title: "Advanced SwiftUI",
-      duration: "",
-      thumbnail: "",
-    });
-  });
+		expect(result).toHaveLength(2);
+		expect(result[0]).toMatchObject({
+			id: "10188",
+			url: "https://developer.apple.com/videos/play/wwdc2025/10188/",
+			title: "Meet the Translation API",
+			duration: "",
+			thumbnail: "",
+		});
+		expect(result[1]).toMatchObject({
+			id: "10189",
+			title: "Advanced SwiftUI",
+			duration: "",
+			thumbnail: "",
+		});
+	});
 
-  test("should handle empty year parameter gracefully", async () => {
-    const mockHtml = `
+	test("should handle empty year parameter gracefully", async () => {
+		const mockHtml = `
       <!DOCTYPE html>
       <html>
       <body>
@@ -83,17 +76,15 @@ describe("WWDC Video List Extractor", () => {
       </html>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    expect(result).toEqual([]);
-  });
+		expect(result).toEqual([]);
+	});
 
-  test("should handle videos with multiple topics", async () => {
-    const mockHtml = `
+	test("should handle videos with multiple topics", async () => {
+		const mockHtml = `
       <!DOCTYPE html>
       <html>
       <body>
@@ -115,22 +106,20 @@ describe("WWDC Video List Extractor", () => {
       </html>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    expect(result[0]).toMatchObject({
-      id: "10190",
-      title: "SwiftData and CloudKit",
-      duration: "",
-      thumbnail: "",
-    });
-  });
+		expect(result[0]).toMatchObject({
+			id: "10190",
+			title: "SwiftData and CloudKit",
+			duration: "",
+			thumbnail: "",
+		});
+	});
 
-  test("should handle videos without duration", async () => {
-    const mockHtml = `
+	test("should handle videos without duration", async () => {
+		const mockHtml = `
       <!DOCTYPE html>
       <html>
       <body>
@@ -149,22 +138,20 @@ describe("WWDC Video List Extractor", () => {
       </html>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    expect(result[0]).toMatchObject({
-      id: "10191",
-      title: "Keynote",
-      duration: "",
-      thumbnail: "",
-    });
-  });
+		expect(result[0]).toMatchObject({
+			id: "10191",
+			title: "Keynote",
+			duration: "",
+			thumbnail: "",
+		});
+	});
 
-  test("should handle empty video list", async () => {
-    const mockHtml = `
+	test("should handle empty video list", async () => {
+		const mockHtml = `
       <!DOCTYPE html>
       <html>
       <body>
@@ -175,17 +162,15 @@ describe("WWDC Video List Extractor", () => {
       </html>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    expect(result).toEqual([]);
-  });
+		expect(result).toEqual([]);
+	});
 
-  test("should extract video ID from various URL formats", async () => {
-    const mockHtml = `
+	test("should extract video ID from various URL formats", async () => {
+		const mockHtml = `
       <!DOCTYPE html>
       <html>
       <body>
@@ -210,25 +195,25 @@ describe("WWDC Video List Extractor", () => {
       </html>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    expect(result.map((v) => v.id)).toEqual(["238", "10188", "501"]);
-  });
+		expect(result.map((v) => v.id)).toEqual(["238", "10188", "501"]);
+	});
 
-  test("should handle HTTP errors gracefully", async () => {
-    mockHttpClient.get.mockRejectedValue(new Error("Network error"));
+	test("should handle HTTP errors gracefully", async () => {
+		http.get.mockRejectedValue(new Error("Network error"));
 
-    await expect(extractWWDCVideoList("2025")).rejects.toThrow(
-      "Failed to extract video list",
-    );
-  });
+		const error = await extractWWDCVideoList("2025").catch(
+			(error_: unknown) => error_,
+		);
 
-  test("should handle malformed HTML gracefully", async () => {
-    const mockHtml = `
+		expect(String(error)).toContain("Failed to extract video list");
+	});
+
+	test("should handle malformed HTML gracefully", async () => {
+		const mockHtml = `
       <div class="collection-items">
         <section class="collection-item">
           <a href="/invalid-url">
@@ -238,18 +223,15 @@ describe("WWDC Video List Extractor", () => {
       </div>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    // Should skip videos with invalid URLs
-    expect(result).toEqual([]);
-  });
+		expect(result).toEqual([]);
+	});
 
-  test("should deduplicate videos with same ID", async () => {
-    const mockHtml = `
+	test("should deduplicate videos with same ID", async () => {
+		const mockHtml = `
       <!DOCTYPE html>
       <html>
       <body>
@@ -269,13 +251,11 @@ describe("WWDC Video List Extractor", () => {
       </html>
     `;
 
-    mockHttpClient.get.mockResolvedValue({
-      text: mock().mockResolvedValue(mockHtml),
-    } as unknown as Response);
+		http.get.mockResolvedValue(new Response(mockHtml));
 
-    const result = await extractWWDCVideoList("2025");
+		const result = await extractWWDCVideoList("2025");
 
-    expect(result).toHaveLength(1);
-    expect(result[0]?.title).toBe("Video 1");
-  });
+		expect(result).toHaveLength(1);
+		expect(result[0]?.title).toBe("Video 1");
+	});
 });

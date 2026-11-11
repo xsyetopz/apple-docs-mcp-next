@@ -52,12 +52,35 @@ Claude Desktop を再起動して Apple API について質問を始めましょ
 
 ## 📦 インストール
 
-<details>
-<summary><strong>📱 Claude Code</strong></summary>
+### 📱 Claude Code
 
 ```bash
-claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
+claude mcp add --scope user apple-docs -- bunx apple-docs-mcp-next@latest
 ```
+
+`--scope` は、サーバーが読み込まれる場所と使える人を決めます:
+
+| スコープ | 読み込まれる場所 | 保存先 | 向いている場合 |
+| ------- | ---------- | ----------- | ------ |
+| `user` | 自分のすべてのプロジェクト | `~/.claude.json` | ほとんどの場合: どの Apple プロジェクトでも役に立ちます |
+| `project` | このプロジェクト（クローンした全員） | プロジェクトルートの `.mcp.json` | チームで共有するアプリのリポジトリ: このファイルをコミットします |
+| `local`（既定） | このプロジェクト（自分のみ） | `~/.claude.json` 内の、プロジェクトのパスの下 | 1 つのプロジェクトで試す場合 |
+
+`project` スコープは次のような `.mcp.json` を書き込みます。手で書くこともできます:
+
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next@latest"]
+    }
+  }
+}
+```
+
+Claude Code は `.mcp.json` のサーバーを使う前に承認を求めます。`claude mcp list` はサーバーが接続できるかを表示し、`claude mcp remove apple-docs` はサーバーを削除します。
 
 **ソースから**: `bunx` は npm からパッケージをダウンロードするため、フォークや npm にないバージョンでは 404 で失敗します。代わりにクローンからサーバーを実行します:
 
@@ -70,16 +93,17 @@ claude mcp add --scope user apple-docs -- bun run "$PWD/src/main.ts"
 
 Claude Code は現在のプロジェクトのフォルダーからサーバーを起動するため、パスは絶対パスにする必要があります。`"$PWD"` はクローンの絶対パスになります。
 
-[📖 Claude Code MCP ドキュメント](https://docs.anthropic.com/en/docs/claude-code/mcp)
+絶対パスは 1 台のマシンでしか正しくないため、クローンには `user` か `local` スコープが、`project` スコープには `bunx` の形式が向いています。
 
-</details>
+ログに `Usage: bun run [flags] <file or script>` と出る場合、その設定の `args` が `["run"]` だけになっています。`"run"` の後に `src/main.ts` のパスを追加してください。
 
-<details>
-<summary><strong>🖱️ Cursor</strong></summary>
+[📖 Claude Code MCP ドキュメント](https://code.claude.com/docs/en/mcp)
+
+### 🖱️ Cursor
 
 **設定経由**: 設定 → Cursor 設定 → MCP → 新しいグローバル MCP サーバーを追加
 
-**設定ファイル経由**: `~/.cursor/mcp.json` に追加:
+**設定ファイル経由**: すべてのプロジェクトで使うには `~/.cursor/mcp.json` に、1 つのプロジェクトだけで使うにはそのフォルダーの `.cursor/mcp.json` に追加:
 
 ```json
 {
@@ -92,35 +116,30 @@ Claude Code は現在のプロジェクトのフォルダーからサーバー�
 }
 ```
 
-[📖 Cursor MCP ドキュメント](https://docs.cursor.com/context/mcp)
+[📖 Cursor MCP ドキュメント](https://cursor.com/docs/context/mcp)
 
-</details>
+### 🔷 VS Code
 
-<details>
-<summary><strong>🔷 VS Code</strong></summary>
-
-VS Code MCP 設定に追加:
+すべてのワークスペースで使うには `~/.copilot/mcp-config.json` に、チームと共有するにはワークスペースのルートの `.mcp.json` に追加します。
+後者は Claude Code の `project` スコープが書き込むファイルと同じなので、1 つのファイルで両方に使えます:
 
 ```json
 {
-  "mcp": {
-    "servers": {
-      "apple-docs": {
-        "type": "stdio",
-        "command": "bunx",
-        "args": ["apple-docs-mcp-next"]
-      }
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
-[📖 VS Code MCP ドキュメント](https://code.visualstudio.com/docs/editor/mcp)
+コマンドパレットの **MCP: Add Server** は、手順に沿ってサーバーを設定します。
 
-</details>
+[📖 VS Code MCP 設定](https://code.visualstudio.com/docs/agents/reference/mcp-configuration)
 
-<details>
-<summary><strong>🌊 Windsurf</strong></summary>
+### 🌊 Windsurf
 
 Windsurf MCP 設定に追加:
 
@@ -137,10 +156,7 @@ Windsurf MCP 設定に追加:
 
 [📖 Windsurf MCP ドキュメント](https://docs.codeium.com/windsurf/mcp)
 
-</details>
-
-<details>
-<summary><strong>⚡ Zed</strong></summary>
+### ⚡ Zed
 
 Zed の `settings.json` に追加:
 
@@ -160,10 +176,7 @@ Zed の `settings.json` に追加:
 
 [📖 Zed コンテキストサーバー ドキュメント](https://zed.dev/docs/context-servers)
 
-</details>
-
-<details>
-<summary><strong>🔧 Cline</strong></summary>
+### 🔧 Cline
 
 **マーケットプレイス経由**:
 
@@ -185,10 +198,7 @@ Zed の `settings.json` に追加:
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>🟠 Amazon Q Developer CLI</strong></summary>
+### 🟠 Amazon Q Developer CLI
 
 **設定ファイル経由**: `~/.aws/amazonq/mcp.json` に追加:
 
@@ -205,10 +215,7 @@ Zed の `settings.json` に追加:
 
 [📖 Amazon Q Developer CLI MCP ドキュメント](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html)
 
-</details>
-
-<details>
-<summary><strong>🪟 Windows</strong></summary>
+### 🪟 Windows
 
 Windows システムの場合:
 
@@ -225,10 +232,7 @@ Windows システムの場合:
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>⚙️ 高度なインストール</strong></summary>
+### ⚙️ 高度なインストール
 
 **グローバルインストール**:
 
@@ -250,8 +254,6 @@ cd apple-docs-mcp-next
 
 bun install
 ```
-
-</details>
 
 ## 💬 使用例
 
@@ -399,6 +401,8 @@ bun install
 
 すべてのツールは読み取り専用です。失敗した呼び出しは、代わりに何を試すべきかを示す 1 つのエラー結果を返します。
 
+どの回答も 22,000 バイトを超えないため、10,000 トークン未満に収まります。それより長い回答は複数のパートに分かれます。各パートは `Part 1 of 5` のような行で終わり、すべてのツールが受け取る `part` 引数（既定は 1）でパートを選びます。パートが開いたままのコードブロックで終わることはありません。
+
 ## 🏗️ 技術アーキテクチャ
 
 ```text
@@ -408,6 +412,7 @@ apple-docs-mcp-next/
 │   ├── server.ts                     # コンポジションルート: MCP サーバーとその指示
 │   ├── tools/                        # MCP 側: ツールごとに 1 つの定義（名前、説明、zod 入力スキーマ、ユースケース）
 │   │   ├── define-tool.ts            # 定義を登録。呼び出しごとに Markdown か 1 つのエラー結果
+│   │   ├── answer-parts.ts           # 長い回答を 22,000 バイト以下のパートに分割
 │   │   └── index.ts                  # サーバーが提供するすべてのツール
 │   ├── docs/                         # Apple のドキュメント、HIG、サンプルコード、ヘルプページのユースケース
 │   ├── wwdc/                         # 同梱の WWDC データのユースケースと、その抽出器
@@ -425,7 +430,8 @@ apple-docs-mcp-next/
 - **リトライ**: ネットワークエラー、タイムアウト、5xx の応答は指数バックオフで 3 回リトライ。その他のステータスは即座に失敗
 - **ペース調整**: 1 分あたり最大 100 リクエスト。検索は 15 秒間隔。Apple は速すぎる検索に結果を返さないため
 - **検証**: すべてのツールの引数は、ツールを実行する前に Zod 4 スキーマで検査
-- **ランタイム**: Bun 1.4.3 と MCP TypeScript SDK 1.32.1
+- **回答のサイズ**: 1 回の呼び出しで最大 22,000 バイト。残りは `part` で取得
+- **ランタイム**: Bun 1.4.4 と MCP TypeScript SDK 2.4.0（`@modelcontextprotocol/server`）
 
 ### 💾 キャッシュ戦略
 
@@ -462,14 +468,17 @@ WWDC データは **パッケージに同梱** されています（`data/wwdc/`
 
 ```bash
 bun install
+just setup         # the pinned tools and the git hooks
 
 bun run dev        # the server, restarted on each change
 bun run start      # the server on stdio
-bun check          # type check
-bun run lint       # Biome
-bun run test       # the tests, each file in isolation
-bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
+just typecheck     # type check
+just lint          # oxlint, markdownlint and the hook scripts
+just test          # the tests
+just verify        # format check, type check, lint, guard and the tests, as CI runs them
 ```
+
+レシピは [`just`](https://just.systems) で実行し、`just` だけを実行するとレシピの一覧が出ます。チェックとそのルールは `typescript-bedrock` のものです。
 
 `tests/architecture.test.ts` は `src/` のレイヤーを検査します: import は `main` から `server`、`tools`、`docs` と `wwdc` のユースケース、`core` へ向かい、逆向きにはなりません。
 
@@ -495,12 +504,8 @@ MIT ライセンス - 詳細は [LICENSE](LICENSE) をご覧ください。
 
 ---
 
-<div align="center">
-
-<p><strong>Apple 開発者コミュニティのために ❤️ で作成</strong></p>
+Apple 開発者コミュニティのために ❤️ で作成
 
 Apple 開発者ドキュメント検索 | iOS 開発 | macOS 開発 | Swift プログラミング | SwiftUI | UIKit | Xcode | WWDC ビデオ | モデルコンテキストプロトコル | MCP サーバー
 
 [問題を報告](https://github.com/xsyetopz/apple-docs-mcp-next/issues) • [機能リクエスト](https://github.com/xsyetopz/apple-docs-mcp-next/issues/new) • [ドキュメント](https://github.com/xsyetopz/apple-docs-mcp-next#readme)
-
-</div>

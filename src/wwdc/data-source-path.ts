@@ -4,6 +4,5 @@
 import path from "node:path";
 
 /** The package runs from its source, so the data at the package root is two folders up from `src/wwdc/` */
-export const getWWDCDataDirectory = (): string => {
-  return path.resolve(import.meta.dir, "../../data/wwdc");
-};
+export const getWWDCDataDirectory = (): string =>
+	path.resolve(import.meta.dir, "../../data/wwdc");

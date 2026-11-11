@@ -3,248 +3,172 @@
  */
 
 import { JSDOM } from "jsdom";
+
 import { WWDC_URLS } from "../../core/constants.ts";
 import { httpClient } from "../../core/http-client.ts";
 import { logger } from "../../core/logger.ts";
 import type { VideoListItem } from "../types.ts";
+import { absoluteUrl, firstNonEmpty, firstText } from "./dom.ts";
+
+const VIDEO_PATH = /\/videos\/play\/wwdc\d+\/(\d+)\/?/u;
+const CARD = ".video-card, .collection-item, article";
+
+const extractTitle = (element: Element): string => {
+	const title = firstText(element, [
+		".video-title",
+		".item-title",
+		"h2",
+		"h3",
+		"h4",
+		'[itemprop="name"]',
+	]);
+	if (title !== undefined) {
+		return title;
+	}
+
+	const alt = element.querySelector("img[alt]")?.getAttribute("alt") ?? "";
+	if (alt !== "" && !alt.toLowerCase().includes("thumbnail")) {
+		return alt.trim();
+	}
+
+	return "Untitled";
+};
+
+const extractTitleFromLink = (link: Element): string => {
+	const linkText = link.textContent?.trim();
+	if (linkText !== undefined && linkText.length > 3) {
+		return linkText;
+	}
+
+	const parent = link.parentElement;
+	if (parent) {
+		return extractTitle(parent);
+	}
+
+	const sibling = firstNonEmpty(link.nextElementSibling?.textContent);
+	return sibling === "" ? "Untitled" : sibling.trim();
+};
+
+const extractDuration = (element: Element): string => {
+	for (const selector of [
+		".video-duration",
+		".duration",
+		".time",
+		'[itemprop="duration"]',
+	]) {
+		const duration = firstNonEmpty(
+			element.querySelector(selector)?.textContent,
+		).trim();
+		if (/\d+:\d+/u.test(duration)) {
+			return duration;
+		}
+	}
+
+	return "";
+};
+
+const extractThumbnail = (element: Element): string => {
+	const src = firstNonEmpty(
+		element
+			.querySelector(
+				'img[src*="devimages"], img.thumbnail, img.video-thumbnail',
+			)
+			?.getAttribute("src"),
+	);
+	return src === "" ? "" : absoluteUrl(src);
+};
+
+const extractVideoFromElement = (
+	element: HTMLElement,
+	year: string,
+): VideoListItem | null => {
+	const link = element.querySelector('a[href*="/videos/play/"]') ?? element;
+	const id = firstNonEmpty(
+		element.dataset["videoId"],
+		VIDEO_PATH.exec(link.getAttribute("href") ?? "")?.[1],
+	);
+
+	if (id === "") {
+		return null;
+	}
+
+	return {
+		id,
+		url: WWDC_URLS.getVideoUrl(year, id),
+		title: extractTitle(element),
+		duration: extractDuration(element),
+		thumbnail: extractThumbnail(element),
+	};
+};
+
+const videoFromLink = (
+	link: Element,
+	year: string,
+	id: string,
+): VideoListItem => {
+	const card = link.closest(CARD);
+	return {
+		id,
+		url: WWDC_URLS.getVideoUrl(year, id),
+		title: extractTitleFromLink(link),
+		duration: card ? extractDuration(card) : "",
+		thumbnail: card ? extractThumbnail(card) : "",
+	};
+};
+
+const collectVideos = (
+	document: Document,
+	year: string,
+): Map<string, VideoListItem> => {
+	const uniqueVideos = new Map<string, VideoListItem>();
+
+	for (const element of document.querySelectorAll<HTMLElement>(
+		`.video-card, .collection-item, article[data-video-id], a[href*="/videos/play/"]`,
+	)) {
+		const video = extractVideoFromElement(element, year);
+		if (video && !uniqueVideos.has(video.id)) {
+			uniqueVideos.set(video.id, video);
+		}
+	}
+
+	if (uniqueVideos.size === 0) {
+		logger.warn(
+			"No videos found with primary selectors, trying alternative method",
+		);
+
+		for (const link of document.querySelectorAll(
+			`a[href*="/videos/play/wwdc${year}/"]`,
+		)) {
+			const id = VIDEO_PATH.exec(link.getAttribute("href") ?? "")?.[1];
+			if (id !== undefined && !uniqueVideos.has(id)) {
+				uniqueVideos.set(id, videoFromLink(link, year, id));
+			}
+		}
+	}
+
+	return uniqueVideos;
+};
 
 /**
  * Extract all WWDC video list for specified year
  */
 export const extractVideoList = async (
-  year: string,
+	year: string,
 ): Promise<VideoListItem[]> => {
-  const url = WWDC_URLS.getYearUrl(year);
-  logger.info(`Extracting video list for WWDC${year} from ${url}`);
+	const url = WWDC_URLS.getYearUrl(year);
+	logger.info(`Extracting video list for WWDC${year} from ${url}`);
 
-  try {
-    const response = await httpClient.get(url);
-    const html = await response.text();
-    const dom = new JSDOM(html);
-    const document = dom.window.document;
-
-    const uniqueVideos = new Map<string, VideoListItem>();
-
-    // Find all video cards
-    const videoElements = document.querySelectorAll(
-      '.video-card, .collection-item, article[data-video-id], a[href*="/videos/play/"]',
-    );
-
-    videoElements.forEach((element) => {
-      const video = extractVideoFromElement(element, year);
-      if (video && !uniqueVideos.has(video.id)) {
-        uniqueVideos.set(video.id, video);
-      }
-    });
-
-    // If first method found nothing, try alternative selectors
-    if (uniqueVideos.size === 0) {
-      logger.warn(
-        "No videos found with primary selectors, trying alternative method",
-      );
-
-      // Find all video links
-      const videoLinks = document.querySelectorAll(
-        `a[href*="/videos/play/wwdc${year}/"]`,
-      );
-
-      videoLinks.forEach((link) => {
-        const href = link.getAttribute("href") || "";
-        const match = href.match(/\/videos\/play\/wwdc\d+\/(\d+)\/?/);
-
-        if (match) {
-          const id = match[1] ?? "";
-          if (!uniqueVideos.has(id)) {
-            const title = extractTitleFromLink(link);
-            const url = WWDC_URLS.getVideoUrl(year, id);
-
-            uniqueVideos.set(id, {
-              id,
-              url,
-              title,
-              duration: extractDurationFromLink(link),
-              thumbnail: extractThumbnailFromLink(link),
-            });
-          }
-        }
-      });
-    }
-
-    const videos = Array.from(uniqueVideos.values());
-    logger.info(`Found ${videos.length} videos for WWDC${year}`);
-    return videos;
-  } catch (error) {
-    logger.error(`Failed to extract video list for WWDC${year}:`, error);
-    throw new Error(
-      `Failed to extract video list for WWDC${year}: ${error instanceof Error ? error.message : String(error)}`,
-      { cause: error },
-    );
-  }
-};
-
-/**
- * Extract video information from element
- */
-const extractVideoFromElement = (
-  element: Element,
-  year: string,
-): VideoListItem | null => {
-  // Extract video ID, first from the data attribute
-  let id = element.getAttribute("data-video-id");
-
-  // Get from link
-  if (!id) {
-    const link = element.querySelector('a[href*="/videos/play/"]') || element;
-    const href = link.getAttribute("href") || "";
-    const match = href.match(/\/videos\/play\/wwdc\d+\/(\d+)\/?/);
-    if (match) {
-      id = match[1] ?? null;
-    }
-  }
-
-  if (!id) {
-    return null;
-  }
-
-  // Extract title
-  const title = extractTitle(element);
-
-  // Build URL
-  const url = WWDC_URLS.getVideoUrl(year, id);
-
-  // Extract duration
-  const duration = extractDuration(element);
-
-  // Extract thumbnail
-  const thumbnail = extractThumbnail(element);
-
-  return {
-    id,
-    url,
-    title,
-    duration,
-    thumbnail,
-  };
-};
-
-/**
- * Extract title
- */
-const extractTitle = (element: Element): string => {
-  const selectors = [
-    ".video-title",
-    ".item-title",
-    "h2",
-    "h3",
-    "h4",
-    '[itemprop="name"]',
-  ];
-
-  for (const selector of selectors) {
-    const titleElement = element.querySelector(selector);
-    if (titleElement?.textContent) {
-      return titleElement.textContent.trim();
-    }
-  }
-
-  // Get from image alt attribute
-  const img = element.querySelector("img[alt]");
-  if (img) {
-    const alt = img.getAttribute("alt") || "";
-    if (alt && !alt.toLowerCase().includes("thumbnail")) {
-      return alt.trim();
-    }
-  }
-
-  return "Untitled";
-};
-
-/**
- * Extract title from link element
- */
-const extractTitleFromLink = (link: Element): string => {
-  // Try to get from link text
-  const linkText = link.textContent?.trim();
-  if (linkText && linkText.length > 3) {
-    return linkText;
-  }
-
-  // Try to get from parent element
-  const parent = link.parentElement;
-  if (parent) {
-    return extractTitle(parent);
-  }
-
-  // Try to get from adjacent element
-  const nextSibling = link.nextElementSibling;
-  if (nextSibling?.textContent) {
-    return nextSibling.textContent.trim();
-  }
-
-  return "Untitled";
-};
-
-/**
- * Extract duration
- */
-const extractDuration = (element: Element): string => {
-  const selectors = [
-    ".video-duration",
-    ".duration",
-    ".time",
-    '[itemprop="duration"]',
-  ];
-
-  for (const selector of selectors) {
-    const durationElement = element.querySelector(selector);
-    if (durationElement?.textContent) {
-      const duration = durationElement.textContent.trim();
-      // Validate if it's time format
-      if (/\d+:\d+/.test(duration)) {
-        return duration;
-      }
-    }
-  }
-
-  return "";
-};
-
-/**
- * Extract duration from link element
- */
-const extractDurationFromLink = (link: Element): string => {
-  const parent = link.closest(".video-card, .collection-item, article");
-  if (parent) {
-    return extractDuration(parent);
-  }
-  return "";
-};
-
-/**
- * Extract thumbnail
- */
-const extractThumbnail = (element: Element): string => {
-  const img = element.querySelector(
-    'img[src*="devimages"], img.thumbnail, img.video-thumbnail',
-  );
-  if (img) {
-    const src = img.getAttribute("src") || "";
-    if (src) {
-      return src.startsWith("http")
-        ? src
-        : `${WWDC_URLS.BASE.replace("/videos", "")}${src}`;
-    }
-  }
-  return "";
-};
-
-/**
- * Extract thumbnail from link element
- */
-const extractThumbnailFromLink = (link: Element): string => {
-  const parent = link.closest(".video-card, .collection-item, article");
-  if (parent) {
-    return extractThumbnail(parent);
-  }
-  return "";
+	try {
+		const response = await httpClient.get(url);
+		const { document } = new JSDOM(await response.text()).window;
+		const videos = [...collectVideos(document, year).values()];
+		logger.info(`Found ${videos.length} videos for WWDC${year}`);
+		return videos;
+	} catch (error) {
+		logger.error(`Failed to extract video list for WWDC${year}:`, error);
+		throw new Error(
+			`Failed to extract video list for WWDC${year}: ${error instanceof Error ? error.message : String(error)}`,
+			{ cause: error },
+		);
+	}
 };

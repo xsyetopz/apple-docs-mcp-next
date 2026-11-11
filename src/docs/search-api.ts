@@ -13,16 +13,16 @@ import { httpClient } from "../core/http-client.ts";
  * process: two sessions searching at once each keep their own spacing.
  */
 const searchLimiter = new Bottleneck({
-  maxConcurrent: 1,
-  minTime: RATE_LIMIT.SEARCH_SPACING_MS,
+	maxConcurrent: 1,
+	minTime: RATE_LIMIT.SEARCH_SPACING_MS,
 });
 
 const developerPath = (pathPrefix: string) => ({
-  kind: "and",
-  scopes: [
-    { kind: "hostname", value: "developer.apple.com" },
-    { kind: "pathPrefix", value: pathPrefix },
-  ],
+	kind: "and",
+	scopes: [
+		{ kind: "hostname", value: "developer.apple.com" },
+		{ kind: "pathPrefix", value: pathPrefix },
+	],
 });
 
 /**
@@ -32,17 +32,17 @@ const developerPath = (pathPrefix: string) => ({
 export type SearchType = "all" | "documentation" | "design" | "sample" | "help";
 
 const SEARCH_SCOPES: Record<SearchType, object> = {
-  documentation: developerPath("/documentation/"),
-  design: developerPath("/design/human-interface-guidelines/"),
-  sample: { kind: "documentationRole", value: "sampleCode" },
-  help: developerPath("/help/app-store-connect/"),
-  all: {
-    kind: "or",
-    scopes: [
-      developerPath("/documentation/"),
-      developerPath("/design/human-interface-guidelines/"),
-    ],
-  },
+	documentation: developerPath("/documentation/"),
+	design: developerPath("/design/human-interface-guidelines/"),
+	sample: { kind: "documentationRole", value: "sampleCode" },
+	help: developerPath("/help/app-store-connect/"),
+	all: {
+		kind: "or",
+		scopes: [
+			developerPath("/documentation/"),
+			developerPath("/design/human-interface-guidelines/"),
+		],
+	},
 };
 
 /**
@@ -55,27 +55,27 @@ const VIDEOS_SCOPE = developerPath("/videos/play/");
  * The response streams for one search, each read to its end: `all` sends two requests, every other type one
  */
 export const searchStreams = (
-  query: string,
-  type: SearchType,
+	query: string,
+	type: SearchType,
 ): Promise<string[]> => {
-  const search = (
-    includedResponses: string[],
-    searchScope?: object,
-  ): Promise<string> =>
-    httpClient.postText(
-      APPLE_URLS.SEARCH_API,
-      {
-        text: query,
-        targetResultLocale: "en",
-        includedResponses,
-        ...(searchScope && { searchScope }),
-      },
-      "application/jsonl",
-      { limiter: searchLimiter },
-    );
-  return Promise.all(
-    type === "all"
-      ? [search(["search"]), search(["search"], VIDEOS_SCOPE)]
-      : [search(["search"], SEARCH_SCOPES[type])],
-  );
+	const search = (
+		includedResponses: string[],
+		searchScope?: object,
+	): Promise<string> =>
+		httpClient.postText(
+			APPLE_URLS.SEARCH_API,
+			{
+				text: query,
+				targetResultLocale: "en",
+				includedResponses,
+				...(searchScope && { searchScope }),
+			},
+			"application/jsonl",
+			{ limiter: searchLimiter },
+		);
+	return Promise.all(
+		type === "all"
+			? [search(["search"]), search(["search"], VIDEOS_SCOPE)]
+			: [search(["search"], SEARCH_SCOPES[type])],
+	);
 };

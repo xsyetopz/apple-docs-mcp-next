@@ -7,95 +7,61 @@ They use `bun:test`.
 
 ```text
 tests/
-├── helpers/                   # Shared test data and utility functions
+├── helpers/                         # Shared test data
 │   └── test-helpers.ts
-├── mocks/                     # Mock modules
-│   └── http-client.mock.ts
-├── core/                      # Tests for src/core: the HTTP client and the errors
-├── docs/                      # Tests for the use cases in src/docs
-├── wwdc/                      # Tests for the use cases and extractors in src/wwdc
-├── architecture.test.ts       # The layers of src/ and the direction of their imports
-├── response-format.test.ts    # One text result per tool call, over MCP
-├── server.test.ts             # The tools a client lists, each call routed to its use case
-└── setup.ts                   # Preload for every test file
+├── mocks/
+│   ├── http-client.mock.ts          # Spies on the HTTP client
+│   └── tool-client.ts               # An MCP client linked to the server in memory
+├── core/                            # Tests for src/core: the HTTP client and the errors
+├── docs/                            # Tests for the use cases in src/docs
+├── wwdc/                            # Tests for the use cases and extractors in src/wwdc
+├── tools/                           # Tests for src/tools: tool registration and answers in parts
+├── architecture.test.ts             # The layers of src/ and the direction of their imports
+├── response-format.test.ts          # One text result per tool call, over MCP
+├── response-format-tools.test.ts    # The same, for the tools that read Apple's JSON
+├── server.test.ts                   # The tools a client lists, and how the server answers a bad call
+└── setup.ts                         # Preload for every test file
 ```
 
 `tests/setup.ts` is listed in `bunfig.toml` as a preload (`[test] preload`).
-It runs before each test file and sets the global mocks: `fetch`, `console.error`, and the WWDC data folder.
+Before each test it silences `console.error` and makes `fetch` reject, so a test that reaches the network fails.
+After each test it restores every spy.
 
 ## Running Tests
 
 ```bash
-# Run all tests (bun test --isolate)
-bun run test
+# Run all tests
+just test
 
 # Run one test file
-bun run test tests/core/http-client.test.ts
-
-# Run with coverage
-bun test --isolate --coverage
-
-# Run in watch mode
-bun test --isolate --watch
+bun test tests/core/http-client.test.ts
 ```
 
-`bun run test` runs each test file in its own isolated module state.
-Module mocks from one file do not leak into another, so keep `--isolate` when you run the suite.
-
-## Test Coverage Areas
-
-### 1. Unit Tests
-
-- **Tools**: Each tool has tests covering:
-  - Normal operation
-  - Error handling
-  - Edge cases
-  - Input validation
-  - Cache behavior
-- **Utilities**: Error handling, URL conversion, framework mapping, HTTP client, and WWDC data loading
-
-### 2. Server Tests
-
-- **MCP Server**: Server lifecycle and request handling (`index.test.ts`)
-- **Response Format**: Every tool returns a well-formed MCP response (`response-format.test.ts`)
-
-### 3. Regression Tests
-
-- **Nested responses**: `getAppleDocContent` must not wrap an MCP response inside another one (`regression/`)
+`bunfig.toml` runs the files in random order and reports coverage.
 
 ## Key Test Patterns
 
 ### Mocking
 
-- HTTP requests are mocked to avoid external dependencies
-- Cache is mocked to control test data
-- Module mocks use `mock.module` from `bun:test`, and they must be set before the module under test is imported
-- File system operations are avoided in tests, except for the bundled WWDC data test
+- The test files share one process, so a test replaces a function with `spyOn(object, "method")` in `beforeEach` or in the test itself, never with `mock.module`
+- `spyOnHttpClient()` from `mocks/http-client.mock.ts` replaces the HTTP client's requests, and `stubApple()` from `mocks/tool-client.ts` answers them by URL
+- A test that fills a cache clears it in `beforeEach`
+- A tool binds its use case when its module loads, so a spy on the use case's export does not reach the tool: stub the HTTP client, or test `defineTool` with a spec of the test's own
+- The WWDC tests read the bundled data in `data/wwdc`
+
+### Calling Tools
+
+`connectClient()` from `mocks/tool-client.ts` returns an MCP client linked to the server in memory.
+`callTool()` and `textOf()` call one tool and read the text of its result.
 
 ### Test Data
 
-- Shared test data is defined in `helpers/test-helpers.ts`
-- Mock responses match actual API response structure
-
-### Assertions
-
-- Tests verify both success and error paths
-- Response format is validated
-- Edge cases are thoroughly tested
+- Shared test data is defined in `helpers/test-helpers.ts`, and larger fixtures in the `*-fixtures.ts` file next to the tests that use them
+- Mock responses match the structure of Apple's responses
 
 ## Adding New Tests
 
-When adding new features:
-
-1. Add unit tests for the core functionality
-2. Add or update server tests if the feature changes the MCP interface
+1. Add unit tests for the use case
+2. Add or update the server tests if the change alters the MCP interface
 3. Add a regression test for each bug you fix, and check that it fails without the fix
-4. Ensure `bun run test` passes before committing
-
-## Debugging Tests
-
-To debug failing tests:
-
-1. Run the specific test file with `bun run test <path>`
-2. Add `console.log` statements in the test
-3. Check mock implementations match actual behavior
+4. Run `just verify` before committing

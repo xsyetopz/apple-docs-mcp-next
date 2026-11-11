@@ -52,12 +52,35 @@ Apple 开发者文档 MCP 服务器 - 通过模型上下文协议访问 Apple �
 
 ## 📦 安装指南
 
-<details>
-<summary><strong>📱 Claude Code</strong></summary>
+### 📱 Claude Code
 
 ```bash
-claude mcp add apple-docs -- bunx apple-docs-mcp-next@latest
+claude mcp add --scope user apple-docs -- bunx apple-docs-mcp-next@latest
 ```
+
+`--scope` 决定服务器在哪里加载、谁可以使用：
+
+| 作用域 | 加载位置 | 保存位置 | 适合的情况 |
+| ------- | ---------- | ----------- | ------ |
+| `user` | 您的所有项目 | `~/.claude.json` | 大多数情况：它在任何 Apple 项目中都有用 |
+| `project` | 此项目（所有克隆它的人） | 项目根目录的 `.mcp.json` | 团队共享的应用仓库：请提交该文件 |
+| `local`（默认） | 此项目（仅您自己） | `~/.claude.json` 中该项目的路径下 | 在一个项目中试用 |
+
+`project` 作用域会写入类似下面的 `.mcp.json`，您也可以手动编写：
+
+```json
+{
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next@latest"]
+    }
+  }
+}
+```
+
+Claude Code 在使用 `.mcp.json` 中的服务器之前会请求批准。`claude mcp list` 显示服务器是否能连接，`claude mcp remove apple-docs` 移除服务器。
 
 **从源码安装**：`bunx` 从 npm 下载软件包，因此对于 fork 或 npm 上没有的版本，它会以 404 失败。请改为从克隆的仓库运行服务器：
 
@@ -70,16 +93,17 @@ claude mcp add --scope user apple-docs -- bun run "$PWD/src/main.ts"
 
 Claude Code 从当前项目的文件夹启动服务器，因此路径必须是绝对路径。`"$PWD"` 会得到克隆仓库的绝对路径。
 
-[📖 Claude Code MCP 文档](https://docs.anthropic.com/en/docs/claude-code/mcp)
+绝对路径只在一台机器上正确，因此克隆的仓库适合 `user` 或 `local` 作用域，而 `project` 作用域适合 `bunx` 的形式。
 
-</details>
+如果日志中出现 `Usage: bun run [flags] <file or script>`，说明该条目的 `args` 只有 `["run"]`：请在 `"run"` 之后加上 `src/main.ts` 的路径。
 
-<details>
-<summary><strong>🖱️ Cursor</strong></summary>
+[📖 Claude Code MCP 文档](https://code.claude.com/docs/en/mcp)
+
+### 🖱️ Cursor
 
 **通过设置**: 设置 → Cursor 设置 → MCP → 添加新的全局 MCP 服务器
 
-**通过配置文件**: 添加到 `~/.cursor/mcp.json`:
+**通过配置文件**: 要在所有项目中使用，添加到 `~/.cursor/mcp.json`；只在一个项目中使用，添加到该项目文件夹的 `.cursor/mcp.json`:
 
 ```json
 {
@@ -92,35 +116,30 @@ Claude Code 从当前项目的文件夹启动服务器，因此路径必须是�
 }
 ```
 
-[📖 Cursor MCP 文档](https://docs.cursor.com/context/mcp)
+[📖 Cursor MCP 文档](https://cursor.com/docs/context/mcp)
 
-</details>
+### 🔷 VS Code
 
-<details>
-<summary><strong>🔷 VS Code</strong></summary>
-
-添加到您的 VS Code MCP 配置：
+要在所有工作区中使用，添加到 `~/.copilot/mcp-config.json`；要与团队共享，添加到工作区根目录的 `.mcp.json`。
+后者与 Claude Code 的 `project` 作用域写入的是同一个文件，因此一个文件可供两者使用：
 
 ```json
 {
-  "mcp": {
-    "servers": {
-      "apple-docs": {
-        "type": "stdio",
-        "command": "bunx",
-        "args": ["apple-docs-mcp-next"]
-      }
+  "mcpServers": {
+    "apple-docs": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["apple-docs-mcp-next"]
     }
   }
 }
 ```
 
-[📖 VS Code MCP 文档](https://code.visualstudio.com/docs/editor/mcp)
+命令面板中的 **MCP: Add Server** 会分步设置服务器。
 
-</details>
+[📖 VS Code MCP 配置](https://code.visualstudio.com/docs/agents/reference/mcp-configuration)
 
-<details>
-<summary><strong>🌊 Windsurf</strong></summary>
+### 🌊 Windsurf
 
 添加到您的 Windsurf MCP 配置：
 
@@ -137,10 +156,7 @@ Claude Code 从当前项目的文件夹启动服务器，因此路径必须是�
 
 [📖 Windsurf MCP 文档](https://docs.codeium.com/windsurf/mcp)
 
-</details>
-
-<details>
-<summary><strong>⚡ Zed</strong></summary>
+### ⚡ Zed
 
 添加到您的 Zed `settings.json`:
 
@@ -160,10 +176,7 @@ Claude Code 从当前项目的文件夹启动服务器，因此路径必须是�
 
 [📖 Zed 上下文服务器文档](https://zed.dev/docs/context-servers)
 
-</details>
-
-<details>
-<summary><strong>🔧 Cline</strong></summary>
+### 🔧 Cline
 
 **通过市场**:
 
@@ -185,10 +198,7 @@ Claude Code 从当前项目的文件夹启动服务器，因此路径必须是�
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>🟠 Amazon Q Developer CLI</strong></summary>
+### 🟠 Amazon Q Developer CLI
 
 **通过配置文件**: 添加到 `~/.aws/amazonq/mcp.json`:
 
@@ -205,10 +215,7 @@ Claude Code 从当前项目的文件夹启动服务器，因此路径必须是�
 
 [📖 Amazon Q Developer CLI MCP 文档](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html)
 
-</details>
-
-<details>
-<summary><strong>🪟 Windows</strong></summary>
+### 🪟 Windows
 
 对于 Windows 系统，使用：
 
@@ -225,10 +232,7 @@ Claude Code 从当前项目的文件夹启动服务器，因此路径必须是�
 }
 ```
 
-</details>
-
-<details>
-<summary><strong>⚙️ 高级安装</strong></summary>
+### ⚙️ 高级安装
 
 **全局安装**:
 
@@ -250,8 +254,6 @@ cd apple-docs-mcp-next
 
 bun install
 ```
-
-</details>
 
 ## 💬 使用示例
 
@@ -399,6 +401,8 @@ bun install
 
 所有工具都是只读的。失败的调用只返回一个错误结果，并说明可以改为尝试什么。
 
+任何回答都不超过 22,000 字节，因此保持在 10,000 个 token 以下。更长的回答会分成多个部分：每个部分以 `Part 1 of 5` 这样的一行结尾，每个工具都接受 `part` 参数（默认为 1）来选择其中一个部分。一个部分不会在未闭合的代码块中结束。
+
 ## 🏗️ 技术架构
 
 ```text
@@ -408,6 +412,7 @@ apple-docs-mcp-next/
 │   ├── server.ts                     # Composition root: the MCP server and its instructions
 │   ├── tools/                        # MCP side: one spec per tool (name, description, zod input schema, use case)
 │   │   ├── define-tool.ts            # Registers a spec; Markdown or one error result per call
+│   │   ├── answer-parts.ts           # Cuts a long answer into parts of at most 22,000 bytes
 │   │   └── index.ts                  # Every tool the server offers
 │   ├── docs/                         # Use cases for Apple's documentation, HIG, sample code and help pages
 │   ├── wwdc/                         # Use cases for the bundled WWDC data, and its extractors
@@ -425,7 +430,8 @@ apple-docs-mcp-next/
 - **重试**: 网络错误、超时和 5xx 响应最多重试 3 次，采用指数退避；其他状态码立即失败
 - **限速**: 每分钟最多 100 个请求，搜索之间间隔 15 秒，因为 Apple 对更快的请求会返回空结果
 - **校验**: 每个工具的参数在工具运行前都会按其 Zod 4 模式校验
-- **运行时**: Bun 1.4.3 和 MCP TypeScript SDK 1.32.1
+- **回答大小**: 每次调用最多 22,000 字节，其余部分通过 `part` 获取
+- **运行时**: Bun 1.4.4 和 MCP TypeScript SDK 2.4.0（`@modelcontextprotocol/server`）
 
 ### 💾 缓存策略
 
@@ -462,14 +468,17 @@ WWDC 数据**随包一起打包**，位于 `data/wwdc/` 中，因此 WWDC 工具
 
 ```bash
 bun install
+just setup         # the pinned tools and the git hooks
 
 bun run dev        # the server, restarted on each change
 bun run start      # the server on stdio
-bun check          # type check
-bun run lint       # Biome
-bun run test       # the tests, each file in isolation
-bun run ci         # type check, Biome, markdownlint and the tests, as CI runs them
+just typecheck     # type check
+just lint          # oxlint, markdownlint and the hook scripts
+just test          # the tests
+just verify        # format check, type check, lint, guard and the tests, as CI runs them
 ```
+
+这些任务通过 [`just`](https://just.systems) 运行，只运行 `just` 会列出所有任务。各项检查及其规则来自 `typescript-bedrock`。
 
 `tests/architecture.test.ts` 检查 `src/` 的分层：导入方向只能从 `main` 指向 `server`、`tools`、`docs` 和 `wwdc` 中的用例，再指向 `core`，不能反向。
 
@@ -495,12 +504,8 @@ MIT 许可证 - 详见 [LICENSE](LICENSE)。
 
 ---
 
-<div align="center">
-
-<p><strong>为 Apple 开发者社区用 ❤️ 制作</strong></p>
+为 Apple 开发者社区用 ❤️ 制作
 
 搜索 Apple 开发者文档 | iOS 开发 | macOS 开发 | Swift 编程 | SwiftUI | UIKit | Xcode | WWDC 视频 | 模型上下文协议 | MCP 服务器
 
 [报告问题](https://github.com/xsyetopz/apple-docs-mcp-next/issues) • [请求功能](https://github.com/xsyetopz/apple-docs-mcp-next/issues/new) • [文档](https://github.com/xsyetopz/apple-docs-mcp-next#readme)
-
-</div>

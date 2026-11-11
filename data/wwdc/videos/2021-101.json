@@ -1,37 +1,35 @@
 {
-  "id": "101",
-  "year": "2021",
-  "url": "https://developer.apple.com/videos/play/wwdc2021/101/",
-  "title": "Keynote",
-  "speakers": [],
-  "duration": "",
-  "topics": [
-    "Essentials"
-  ],
-  "hasTranscript": false,
-  "hasCode": false,
-  "resources": {
-    "resourceLinks": []
-  },
-  "relatedVideos": [
-    {
-      "id": "111",
-      "year": "2021",
-      "title": "Keynote (ASL)",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/111"
-    },
-    {
-      "id": "102",
-      "year": "2021",
-      "title": "Platforms State of the Union",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/102"
-    },
-    {
-      "id": "112",
-      "year": "2021",
-      "title": "Platforms State of the Union (ASL)",
-      "url": "https://developer.apple.com/videos/play/wwdc2021/112"
-    }
-  ],
-  "extractedAt": "2026-10-11T16:42:23.066Z"
+	"id": "101",
+	"year": "2021",
+	"url": "https://developer.apple.com/videos/play/wwdc2021/101/",
+	"title": "Keynote",
+	"speakers": [],
+	"duration": "",
+	"topics": ["Essentials"],
+	"hasTranscript": false,
+	"hasCode": false,
+	"resources": {
+		"resourceLinks": []
+	},
+	"relatedVideos": [
+		{
+			"id": "111",
+			"year": "2021",
+			"title": "Keynote (ASL)",
+			"url": "https://developer.apple.com/videos/play/wwdc2021/111"
+		},
+		{
+			"id": "102",
+			"year": "2021",
+			"title": "Platforms State of the Union",
+			"url": "https://developer.apple.com/videos/play/wwdc2021/102"
+		},
+		{
+			"id": "112",
+			"year": "2021",
+			"title": "Platforms State of the Union (ASL)",
+			"url": "https://developer.apple.com/videos/play/wwdc2021/112"
+		}
+	],
+	"extractedAt": "2026-10-11T16:42:23.066Z"
 }

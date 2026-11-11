@@ -4,25 +4,25 @@
 import { APPLE_URLS } from "../core/constants.ts";
 import { requireText } from "../core/errors.ts";
 import { logger } from "../core/logger.ts";
-import { type SearchType, searchStreams } from "./search-api.ts";
+import { searchStreams, type SearchType } from "./search-api.ts";
 import { parseSearchResults } from "./search-parser.ts";
 
 export interface DocsSearchQuery {
-  query: string;
-  type: SearchType;
+	query: string;
+	type: SearchType;
 }
 
 export const searchAppleDocs = async ({
-  query,
-  type,
+	query,
+	type,
 }: DocsSearchQuery): Promise<string> => {
-  requireText(query, "Search query");
-  logger.info(`Searching Apple docs for: ${query}`);
-  const streams = await searchStreams(query, type);
-  return parseSearchResults(
-    streams,
-    query,
-    `${APPLE_URLS.SEARCH}?q=${encodeURIComponent(query)}`,
-    type,
-  );
+	requireText(query, "Search query");
+	logger.info(`Searching Apple docs for: ${query}`);
+	const streams = await searchStreams(query, type);
+	return parseSearchResults(
+		streams,
+		query,
+		`${APPLE_URLS.SEARCH}?q=${encodeURIComponent(query)}`,
+		type,
+	);
 };

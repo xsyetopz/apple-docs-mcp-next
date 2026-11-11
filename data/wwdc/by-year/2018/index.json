@@ -1,524 +1,442 @@
 {
-  "year": "2018",
-  "videoCount": 38,
-  "topics": [
-    "Accessibility & Inclusion",
-    "App Services",
-    "Business & Education",
-    "Design",
-    "Developer Tools",
-    "Graphics & Games",
-    "Health & Fitness",
-    "Privacy & Security",
-    "Safari & Web",
-    "Swift",
-    "SwiftUI & UI Frameworks",
-    "System Services"
-  ],
-  "videos": [
-    {
-      "id": "225",
-      "year": "2018",
-      "title": "A Tour of UICollectionView",
-      "topics": [
-        "SwiftUI & UI Frameworks"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/225/",
-      "dataFile": "videos/2018-225.json"
-    },
-    {
-      "id": "706",
-      "year": "2018",
-      "title": "Accessing Health Records with HealthKit",
-      "topics": [
-        "Health & Fitness"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/706/",
-      "dataFile": "videos/2018-706.json"
-    },
-    {
-      "id": "412",
-      "year": "2018",
-      "title": "Advanced Debugging with Xcode and LLDB",
-      "topics": [
-        "Developer Tools"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/412/",
-      "dataFile": "videos/2018-412.json"
-    },
-    {
-      "id": "204",
-      "year": "2018",
-      "title": "Automatic Strong Passwords and Security Code AutoFill",
-      "topics": [
-        "Privacy & Security"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/204/",
-      "dataFile": "videos/2018-204.json"
-    },
-    {
-      "id": "415",
-      "year": "2018",
-      "title": "Behind the Scenes of the Xcode Build Process",
-      "topics": [
-        "Developer Tools",
-        "Swift"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/415/",
-      "dataFile": "videos/2018-415.json"
-    },
-    {
-      "id": "408",
-      "year": "2018",
-      "title": "Building Faster in Xcode",
-      "topics": [
-        "Developer Tools",
-        "Swift"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/408/",
-      "dataFile": "videos/2018-408.json"
-    },
-    {
-      "id": "213",
-      "year": "2018",
-      "title": "CarPlay Audio and Navigation Apps",
-      "topics": [
-        "App Services",
-        "SwiftUI & UI Frameworks"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/213/",
-      "dataFile": "videos/2018-213.json"
-    },
-    {
-      "id": "224",
-      "year": "2018",
-      "title": "Core Data Best Practices",
-      "topics": [
-        "Developer Tools",
-        "System Services"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/224/",
-      "dataFile": "videos/2018-224.json"
-    },
-    {
-      "id": "410",
-      "year": "2018",
-      "title": "Creating Custom Instruments",
-      "topics": [
-        "Developer Tools"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/410/",
-      "dataFile": "videos/2018-410.json"
-    },
-    {
-      "id": "230",
-      "year": "2018",
-      "title": "Deliver an Exceptional Accessibility Experience",
-      "topics": [
-        "Accessibility & Inclusion"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/230/",
-      "dataFile": "videos/2018-230.json"
-    },
-    {
-      "id": "803",
-      "year": "2018",
-      "title": "Designing Fluid Interfaces",
-      "topics": [
-        "Design"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/803/",
-      "dataFile": "videos/2018-803.json"
-    },
-    {
-      "id": "806",
-      "year": "2018",
-      "title": "Designing Notifications",
-      "topics": [
-        "Design"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/806/",
-      "dataFile": "videos/2018-806.json"
-    },
-    {
-      "id": "223",
-      "year": "2018",
-      "title": "Embracing Algorithms",
-      "topics": [
-        "Swift"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/223/",
-      "dataFile": "videos/2018-223.json"
-    },
-    {
-      "id": "411",
-      "year": "2018",
-      "title": "Getting to Know Swift Package Manager",
-      "topics": [
-        "Swift"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/411/",
-      "dataFile": "videos/2018-411.json"
-    },
-    {
-      "id": "802",
-      "year": "2018",
-      "title": "Intentional Design",
-      "topics": [
-        "Design"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/802/",
-      "dataFile": "videos/2018-802.json"
-    },
-    {
-      "id": "215",
-      "year": "2018",
-      "title": "Introducing ClassKit",
-      "topics": [
-        "Business & Education"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/215/",
-      "dataFile": "videos/2018-215.json"
-    },
-    {
-      "id": "715",
-      "year": "2018",
-      "title": "Introducing Network.framework: A modern alternative to Sockets",
-      "topics": [
-        "System Services"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/715/",
-      "dataFile": "videos/2018-715.json"
-    },
-    {
-      "id": "211",
-      "year": "2018",
-      "title": "Introduction to Siri Shortcuts",
-      "topics": [
-        "App Services",
-        "SwiftUI & UI Frameworks"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/211/",
-      "dataFile": "videos/2018-211.json"
-    },
-    {
-      "id": "416",
-      "year": "2018",
-      "title": "iOS Memory Deep Dive",
-      "topics": [
-        "Developer Tools"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/416/",
-      "dataFile": "videos/2018-416.json"
-    },
-    {
-      "id": "405",
-      "year": "2018",
-      "title": "Measuring Performance Using Logging",
-      "topics": [
-        "Developer Tools"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/405/",
-      "dataFile": "videos/2018-405.json"
-    },
-    {
-      "id": "612",
-      "year": "2018",
-      "title": "Metal Game Performance Optimization",
-      "topics": [
-        "Developer Tools",
-        "Graphics & Games"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/612/",
-      "dataFile": "videos/2018-612.json"
-    },
-    {
-      "id": "608",
-      "year": "2018",
-      "title": "Metal Shader Debugging and Profiling",
-      "topics": [
-        "Developer Tools",
-        "Graphics & Games"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/608/",
-      "dataFile": "videos/2018-608.json"
-    },
-    {
-      "id": "707",
-      "year": "2018",
-      "title": "New Ways to Work with Workouts",
-      "topics": [
-        "Health & Fitness"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/707/",
-      "dataFile": "videos/2018-707.json"
-    },
-    {
-      "id": "227",
-      "year": "2018",
-      "title": "Optimizing App Assets",
-      "topics": [
-        "Developer Tools",
-        "SwiftUI & UI Frameworks"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/227/",
-      "dataFile": "videos/2018-227.json"
-    },
-    {
-      "id": "714",
-      "year": "2018",
-      "title": "Optimizing Your App for Today’s Internet",
-      "topics": [
-        "System Services"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/714/",
-      "dataFile": "videos/2018-714.json"
-    },
-    {
-      "id": "407",
-      "year": "2018",
-      "title": "Practical Approaches to Great App Performance",
-      "topics": [
-        "Developer Tools"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/407/",
-      "dataFile": "videos/2018-407.json"
-    },
-    {
-      "id": "811",
-      "year": "2018",
-      "title": "Presenting Design Work",
-      "topics": [
-        "Design"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/811/",
-      "dataFile": "videos/2018-811.json"
-    },
-    {
-      "id": "406",
-      "year": "2018",
-      "title": "Swift Generics (Expanded)",
-      "topics": [
-        "Swift"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/406/",
-      "dataFile": "videos/2018-406.json"
-    },
-    {
-      "id": "417",
-      "year": "2018",
-      "title": "Testing Tips & Tricks",
-      "topics": [
-        "Developer Tools"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/417/",
-      "dataFile": "videos/2018-417.json"
-    },
-    {
-      "id": "221",
-      "year": "2018",
-      "title": "TextKit Best Practices",
-      "topics": [
-        "SwiftUI & UI Frameworks"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/221/",
-      "dataFile": "videos/2018-221.json"
-    },
-    {
-      "id": "804",
-      "year": "2018",
-      "title": "The Life of a Button",
-      "topics": [
-        "Design"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/804/",
-      "dataFile": "videos/2018-804.json"
-    },
-    {
-      "id": "801",
-      "year": "2018",
-      "title": "The Qualities of Great Design",
-      "topics": [
-        "Design"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/801/",
-      "dataFile": "videos/2018-801.json"
-    },
-    {
-      "id": "414",
-      "year": "2018",
-      "title": "Understanding Crashes and Crash Logs",
-      "topics": [
-        "Developer Tools"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/414/",
-      "dataFile": "videos/2018-414.json"
-    },
-    {
-      "id": "701",
-      "year": "2018",
-      "title": "Using Accelerate and simd",
-      "topics": [
-        "System Services"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/701/",
-      "dataFile": "videos/2018-701.json"
-    },
-    {
-      "id": "711",
-      "year": "2018",
-      "title": "Using Grouped Notifications",
-      "topics": [
-        "SwiftUI & UI Frameworks"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/711/",
-      "dataFile": "videos/2018-711.json"
-    },
-    {
-      "id": "209",
-      "year": "2018",
-      "title": "What's New in Cocoa for macOS",
-      "topics": [
-        "Developer Tools",
-        "SwiftUI & UI Frameworks",
-        "System Services"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/209/",
-      "dataFile": "videos/2018-209.json"
-    },
-    {
-      "id": "234",
-      "year": "2018",
-      "title": "What’s New in Safari and WebKit",
-      "topics": [
-        "Safari & Web"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/234/",
-      "dataFile": "videos/2018-234.json"
-    },
-    {
-      "id": "401",
-      "year": "2018",
-      "title": "What's New in Swift",
-      "topics": [
-        "Swift"
-      ],
-      "duration": "",
-      "hasCode": false,
-      "hasTranscript": true,
-      "url": "https://developer.apple.com/videos/play/wwdc2018/401/",
-      "dataFile": "videos/2018-401.json"
-    }
-  ]
+	"year": "2018",
+	"videoCount": 38,
+	"topics": [
+		"Accessibility & Inclusion",
+		"App Services",
+		"Business & Education",
+		"Design",
+		"Developer Tools",
+		"Graphics & Games",
+		"Health & Fitness",
+		"Privacy & Security",
+		"Safari & Web",
+		"Swift",
+		"SwiftUI & UI Frameworks",
+		"System Services"
+	],
+	"videos": [
+		{
+			"id": "225",
+			"year": "2018",
+			"title": "A Tour of UICollectionView",
+			"topics": ["SwiftUI & UI Frameworks"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/225/",
+			"dataFile": "videos/2018-225.json"
+		},
+		{
+			"id": "706",
+			"year": "2018",
+			"title": "Accessing Health Records with HealthKit",
+			"topics": ["Health & Fitness"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/706/",
+			"dataFile": "videos/2018-706.json"
+		},
+		{
+			"id": "412",
+			"year": "2018",
+			"title": "Advanced Debugging with Xcode and LLDB",
+			"topics": ["Developer Tools"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/412/",
+			"dataFile": "videos/2018-412.json"
+		},
+		{
+			"id": "204",
+			"year": "2018",
+			"title": "Automatic Strong Passwords and Security Code AutoFill",
+			"topics": ["Privacy & Security"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/204/",
+			"dataFile": "videos/2018-204.json"
+		},
+		{
+			"id": "415",
+			"year": "2018",
+			"title": "Behind the Scenes of the Xcode Build Process",
+			"topics": ["Developer Tools", "Swift"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/415/",
+			"dataFile": "videos/2018-415.json"
+		},
+		{
+			"id": "408",
+			"year": "2018",
+			"title": "Building Faster in Xcode",
+			"topics": ["Developer Tools", "Swift"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/408/",
+			"dataFile": "videos/2018-408.json"
+		},
+		{
+			"id": "213",
+			"year": "2018",
+			"title": "CarPlay Audio and Navigation Apps",
+			"topics": ["App Services", "SwiftUI & UI Frameworks"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/213/",
+			"dataFile": "videos/2018-213.json"
+		},
+		{
+			"id": "224",
+			"year": "2018",
+			"title": "Core Data Best Practices",
+			"topics": ["Developer Tools", "System Services"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/224/",
+			"dataFile": "videos/2018-224.json"
+		},
+		{
+			"id": "410",
+			"year": "2018",
+			"title": "Creating Custom Instruments",
+			"topics": ["Developer Tools"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/410/",
+			"dataFile": "videos/2018-410.json"
+		},
+		{
+			"id": "230",
+			"year": "2018",
+			"title": "Deliver an Exceptional Accessibility Experience",
+			"topics": ["Accessibility & Inclusion"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/230/",
+			"dataFile": "videos/2018-230.json"
+		},
+		{
+			"id": "803",
+			"year": "2018",
+			"title": "Designing Fluid Interfaces",
+			"topics": ["Design"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/803/",
+			"dataFile": "videos/2018-803.json"
+		},
+		{
+			"id": "806",
+			"year": "2018",
+			"title": "Designing Notifications",
+			"topics": ["Design"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/806/",
+			"dataFile": "videos/2018-806.json"
+		},
+		{
+			"id": "223",
+			"year": "2018",
+			"title": "Embracing Algorithms",
+			"topics": ["Swift"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/223/",
+			"dataFile": "videos/2018-223.json"
+		},
+		{
+			"id": "411",
+			"year": "2018",
+			"title": "Getting to Know Swift Package Manager",
+			"topics": ["Swift"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/411/",
+			"dataFile": "videos/2018-411.json"
+		},
+		{
+			"id": "802",
+			"year": "2018",
+			"title": "Intentional Design",
+			"topics": ["Design"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/802/",
+			"dataFile": "videos/2018-802.json"
+		},
+		{
+			"id": "215",
+			"year": "2018",
+			"title": "Introducing ClassKit",
+			"topics": ["Business & Education"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/215/",
+			"dataFile": "videos/2018-215.json"
+		},
+		{
+			"id": "715",
+			"year": "2018",
+			"title": "Introducing Network.framework: A modern alternative to Sockets",
+			"topics": ["System Services"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/715/",
+			"dataFile": "videos/2018-715.json"
+		},
+		{
+			"id": "211",
+			"year": "2018",
+			"title": "Introduction to Siri Shortcuts",
+			"topics": ["App Services", "SwiftUI & UI Frameworks"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/211/",
+			"dataFile": "videos/2018-211.json"
+		},
+		{
+			"id": "416",
+			"year": "2018",
+			"title": "iOS Memory Deep Dive",
+			"topics": ["Developer Tools"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/416/",
+			"dataFile": "videos/2018-416.json"
+		},
+		{
+			"id": "405",
+			"year": "2018",
+			"title": "Measuring Performance Using Logging",
+			"topics": ["Developer Tools"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/405/",
+			"dataFile": "videos/2018-405.json"
+		},
+		{
+			"id": "612",
+			"year": "2018",
+			"title": "Metal Game Performance Optimization",
+			"topics": ["Developer Tools", "Graphics & Games"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/612/",
+			"dataFile": "videos/2018-612.json"
+		},
+		{
+			"id": "608",
+			"year": "2018",
+			"title": "Metal Shader Debugging and Profiling",
+			"topics": ["Developer Tools", "Graphics & Games"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/608/",
+			"dataFile": "videos/2018-608.json"
+		},
+		{
+			"id": "707",
+			"year": "2018",
+			"title": "New Ways to Work with Workouts",
+			"topics": ["Health & Fitness"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/707/",
+			"dataFile": "videos/2018-707.json"
+		},
+		{
+			"id": "227",
+			"year": "2018",
+			"title": "Optimizing App Assets",
+			"topics": ["Developer Tools", "SwiftUI & UI Frameworks"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/227/",
+			"dataFile": "videos/2018-227.json"
+		},
+		{
+			"id": "714",
+			"year": "2018",
+			"title": "Optimizing Your App for Today’s Internet",
+			"topics": ["System Services"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/714/",
+			"dataFile": "videos/2018-714.json"
+		},
+		{
+			"id": "407",
+			"year": "2018",
+			"title": "Practical Approaches to Great App Performance",
+			"topics": ["Developer Tools"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/407/",
+			"dataFile": "videos/2018-407.json"
+		},
+		{
+			"id": "811",
+			"year": "2018",
+			"title": "Presenting Design Work",
+			"topics": ["Design"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/811/",
+			"dataFile": "videos/2018-811.json"
+		},
+		{
+			"id": "406",
+			"year": "2018",
+			"title": "Swift Generics (Expanded)",
+			"topics": ["Swift"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/406/",
+			"dataFile": "videos/2018-406.json"
+		},
+		{
+			"id": "417",
+			"year": "2018",
+			"title": "Testing Tips & Tricks",
+			"topics": ["Developer Tools"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/417/",
+			"dataFile": "videos/2018-417.json"
+		},
+		{
+			"id": "221",
+			"year": "2018",
+			"title": "TextKit Best Practices",
+			"topics": ["SwiftUI & UI Frameworks"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/221/",
+			"dataFile": "videos/2018-221.json"
+		},
+		{
+			"id": "804",
+			"year": "2018",
+			"title": "The Life of a Button",
+			"topics": ["Design"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/804/",
+			"dataFile": "videos/2018-804.json"
+		},
+		{
+			"id": "801",
+			"year": "2018",
+			"title": "The Qualities of Great Design",
+			"topics": ["Design"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/801/",
+			"dataFile": "videos/2018-801.json"
+		},
+		{
+			"id": "414",
+			"year": "2018",
+			"title": "Understanding Crashes and Crash Logs",
+			"topics": ["Developer Tools"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/414/",
+			"dataFile": "videos/2018-414.json"
+		},
+		{
+			"id": "701",
+			"year": "2018",
+			"title": "Using Accelerate and simd",
+			"topics": ["System Services"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/701/",
+			"dataFile": "videos/2018-701.json"
+		},
+		{
+			"id": "711",
+			"year": "2018",
+			"title": "Using Grouped Notifications",
+			"topics": ["SwiftUI & UI Frameworks"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/711/",
+			"dataFile": "videos/2018-711.json"
+		},
+		{
+			"id": "209",
+			"year": "2018",
+			"title": "What's New in Cocoa for macOS",
+			"topics": [
+				"Developer Tools",
+				"SwiftUI & UI Frameworks",
+				"System Services"
+			],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/209/",
+			"dataFile": "videos/2018-209.json"
+		},
+		{
+			"id": "234",
+			"year": "2018",
+			"title": "What’s New in Safari and WebKit",
+			"topics": ["Safari & Web"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/234/",
+			"dataFile": "videos/2018-234.json"
+		},
+		{
+			"id": "401",
+			"year": "2018",
+			"title": "What's New in Swift",
+			"topics": ["Swift"],
+			"duration": "",
+			"hasCode": false,
+			"hasTranscript": true,
+			"url": "https://developer.apple.com/videos/play/wwdc2018/401/",
+			"dataFile": "videos/2018-401.json"
+		}
+	]
 }

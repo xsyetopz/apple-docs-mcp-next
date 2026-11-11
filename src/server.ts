@@ -29,12 +29,12 @@ Searched wrong, or not there:
 const STATIC_LIST = { ttlMs: 3_600_000, cacheScope: "public" } as const;
 
 export const createServer = (): McpServer => {
-  const server = new McpServer(PACKAGE, {
-    instructions: SEARCH_GUIDE,
-    cacheHints: { "tools/list": STATIC_LIST, "server/discover": STATIC_LIST },
-  });
-  for (const register of tools) {
-    register(server);
-  }
-  return server;
+	const server = new McpServer(PACKAGE, {
+		instructions: SEARCH_GUIDE,
+		cacheHints: { "tools/list": STATIC_LIST, "server/discover": STATIC_LIST },
+	});
+	for (const register of tools) {
+		register(server);
+	}
+	return server;
 };

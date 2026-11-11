@@ -1,17 +1,15 @@
 {
-  "id": "101",
-  "year": "2019",
-  "url": "https://developer.apple.com/videos/play/wwdc2019/101/",
-  "title": "Keynote",
-  "speakers": [],
-  "duration": "",
-  "topics": [
-    "Essentials"
-  ],
-  "hasTranscript": false,
-  "hasCode": false,
-  "resources": {
-    "resourceLinks": []
-  },
-  "extractedAt": "2026-10-11T16:46:45.908Z"
+	"id": "101",
+	"year": "2019",
+	"url": "https://developer.apple.com/videos/play/wwdc2019/101/",
+	"title": "Keynote",
+	"speakers": [],
+	"duration": "",
+	"topics": ["Essentials"],
+	"hasTranscript": false,
+	"hasCode": false,
+	"resources": {
+		"resourceLinks": []
+	},
+	"extractedAt": "2026-10-11T16:46:45.908Z"
 }
