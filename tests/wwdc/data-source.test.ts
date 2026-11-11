@@ -1,191 +1,151 @@
 /**
- * Tests for WWDC Data Source
+ * Tests for WWDC Data Source, reading a data folder of its own
  */
+import { afterEach, beforeEach, describe, expect, it, spyOn } from "bun:test";
+import { mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import path from "node:path";
 
-import { beforeEach, describe, expect, it, type Mock, mock } from "bun:test";
+import { wwdcDataCache } from "../../src/core/cache.ts";
+import { logger } from "../../src/core/logger.ts";
+import * as dataSourcePath from "../../src/wwdc/data-source-path.ts";
+import * as dataSource from "../../src/wwdc/data-source.ts";
+import {
+	makeIndexed,
+	makeMetadata,
+	makeTopicIndex,
+	makeVideo,
+	makeYearIndex,
+	rejectionOf,
+} from "./wwdc-fixtures.ts";
 
-type AnyMock = Mock<(...args: unknown[]) => Promise<unknown>>;
+let dataDir = "";
 
-// Mock the module before importing
-mock.module("../../src/wwdc/data-source.ts", () => ({
-  clearDataCache: mock(),
-  loadAllVideos: mock(),
-  loadGlobalMetadata: mock(),
-  loadTopicIndex: mock(),
-  loadVideoData: mock(),
-  loadYearIndex: mock(),
-}));
-
-// Import after mocking
-const {
-  clearDataCache,
-  loadAllVideos,
-  loadGlobalMetadata,
-  loadTopicIndex,
-  loadVideoData,
-  loadYearIndex,
-} = await import("../../src/wwdc/data-source.ts");
+const writeData = (file: string, data: unknown): Promise<number> =>
+	Bun.write(path.join(dataDir, file), JSON.stringify(data));
 
 describe("WWDC Data Source", () => {
-  beforeEach(() => {
-    mock.clearAllMocks();
-  });
+	beforeEach(async () => {
+		wwdcDataCache.clear();
+		dataDir = await mkdtemp(path.join(tmpdir(), "wwdc-data-"));
+		spyOn(dataSourcePath, "getWWDCDataDirectory").mockReturnValue(dataDir);
+	});
 
-  describe("loadGlobalMetadata", () => {
-    it("should load global metadata", async () => {
-      const mockMetadata = {
-        topics: ["topic1", "topic2"],
-        years: ["2023", "2024"],
-        statistics: { totalVideos: 100 },
-      };
+	afterEach(async () => {
+		await rm(dataDir, { recursive: true, force: true });
+	});
 
-      (loadGlobalMetadata as AnyMock).mockResolvedValue(mockMetadata);
+	describe("loadGlobalMetadata", () => {
+		it("should load global metadata", async () => {
+			const metadata = makeMetadata({ years: ["2023", "2024"] });
+			await writeData("index.json", metadata);
 
-      const result = await loadGlobalMetadata();
+			expect(await dataSource.loadGlobalMetadata()).toEqual(metadata);
+		});
 
-      expect(result).toEqual<unknown>(mockMetadata);
-      expect(loadGlobalMetadata).toHaveBeenCalled();
-    });
+		it("should handle errors gracefully", async () => {
+			expect(await rejectionOf(dataSource.loadGlobalMetadata())).toContain(
+				"Failed to load WWDC metadata",
+			);
+		});
+	});
 
-    it("should handle errors gracefully", async () => {
-      (loadGlobalMetadata as AnyMock).mockRejectedValue(
-        new Error(
-          "Failed to load WWDC metadata. Please ensure the package is properly installed.",
-        ),
-      );
+	describe("loadTopicIndex", () => {
+		it("should load topic index", async () => {
+			const topicIndex = makeTopicIndex("swiftui", [makeIndexed()]);
+			await writeData("by-topic/swiftui/index.json", topicIndex);
 
-      await expect(loadGlobalMetadata()).rejects.toThrow(
-        "Failed to load WWDC metadata",
-      );
-    });
-  });
+			expect(await dataSource.loadTopicIndex("swiftui")).toEqual(topicIndex);
+		});
 
-  describe("loadTopicIndex", () => {
-    it("should load topic index", async () => {
-      const mockTopicIndex = {
-        id: "swiftui",
-        name: "SwiftUI",
-        videos: ["10001", "10002"],
-      };
+		it("should handle non-existent topic", async () => {
+			expect(
+				await rejectionOf(dataSource.loadTopicIndex("invalid-topic")),
+			).toContain("Topic not found: invalid-topic");
+		});
+	});
 
-      (loadTopicIndex as AnyMock).mockResolvedValue(mockTopicIndex);
+	describe("loadYearIndex", () => {
+		it("should load year index", async () => {
+			const yearIndex = makeYearIndex([makeIndexed()], "2024");
+			await writeData("by-year/2024/index.json", yearIndex);
 
-      const result = await loadTopicIndex("swiftui");
+			expect(await dataSource.loadYearIndex("2024")).toEqual(yearIndex);
+		});
 
-      expect(result).toEqual<unknown>(mockTopicIndex);
-      expect(loadTopicIndex).toHaveBeenCalledWith("swiftui");
-    });
+		it("should handle non-existent year", async () => {
+			expect(await rejectionOf(dataSource.loadYearIndex("2099"))).toContain(
+				"Year not found: 2099",
+			);
+		});
+	});
 
-    it("should handle non-existent topic", async () => {
-      (loadTopicIndex as AnyMock).mockRejectedValue(
-        new Error("Topic not found: invalid-topic"),
-      );
+	describe("loadVideoData", () => {
+		it("should load individual video data", async () => {
+			const video = makeVideo({ year: "2024" });
+			await writeData("videos/2024-10188.json", video);
 
-      await expect(loadTopicIndex("invalid-topic")).rejects.toThrow(
-        "Topic not found: invalid-topic",
-      );
-    });
-  });
+			expect(await dataSource.loadVideoData("2024", "10188")).toEqual(video);
+		});
 
-  describe("loadYearIndex", () => {
-    it("should load year index", async () => {
-      const mockYearIndex = {
-        year: "2024",
-        videos: ["10001", "10002"],
-        topics: ["SwiftUI", "UIKit"],
-      };
+		it("should handle non-existent video", async () => {
+			expect(
+				await rejectionOf(dataSource.loadVideoData("2024", "99999")),
+			).toContain("Video not found: 2024-99999");
+		});
 
-      (loadYearIndex as AnyMock).mockResolvedValue(mockYearIndex);
+		it("names the tools that find a session's ID, and logs no error for a wrong one", async () => {
+			const logged = spyOn(logger, "error");
 
-      const result = await loadYearIndex("2024");
+			const failure = await dataSource
+				.loadVideoData("2024", "99999")
+				.catch((error: unknown) => error);
 
-      expect(result).toEqual<unknown>(mockYearIndex);
-      expect(loadYearIndex).toHaveBeenCalledWith("2024");
-    });
+			expect(failure).toMatchObject({
+				type: "NOT_FOUND",
+				suggestions: [
+					'list_wwdc_videos with year "2024" lists that year\'s sessions with their IDs',
+					"search_wwdc_content finds a session by words in its title or transcript",
+				],
+			});
+			expect(logged).not.toHaveBeenCalled();
+		});
+	});
 
-    it("should handle non-existent year", async () => {
-      (loadYearIndex as AnyMock).mockRejectedValue(
-        new Error("Year not found: 2099"),
-      );
+	describe("loadAllVideos", () => {
+		it("should load all videos", async () => {
+			const videos = [makeVideo(), makeVideo({ id: "10189" })];
+			await writeData("all-videos.json", videos);
 
-      await expect(loadYearIndex("2099")).rejects.toThrow(
-        "Year not found: 2099",
-      );
-    });
-  });
+			expect(await dataSource.loadAllVideos()).toEqual(videos);
+		});
 
-  describe("loadVideoData", () => {
-    it("should load individual video data", async () => {
-      const mockVideo = {
-        id: "10001",
-        title: "SwiftUI Essentials",
-        year: "2024",
-        duration: "20 min",
-        topics: ["SwiftUI"],
-      };
+		it("should handle loading error", async () => {
+			expect(await rejectionOf(dataSource.loadAllVideos())).toContain(
+				"Failed to load WWDC video list",
+			);
+		});
+	});
 
-      (loadVideoData as AnyMock).mockResolvedValue(mockVideo);
+	describe("cache", () => {
+		it("serves a file again from the cache after it is removed", async () => {
+			const metadata = makeMetadata();
+			await writeData("index.json", metadata);
+			await dataSource.loadGlobalMetadata();
+			await rm(path.join(dataDir, "index.json"));
 
-      const result = await loadVideoData("2024", "10001");
+			expect(await dataSource.loadGlobalMetadata()).toEqual(metadata);
+		});
 
-      expect(result).toEqual<unknown>(mockVideo);
-      expect(loadVideoData).toHaveBeenCalledWith("2024", "10001");
-    });
+		it("reads the file again after the cache is cleared", async () => {
+			await writeData("index.json", makeMetadata());
+			await dataSource.loadGlobalMetadata();
+			dataSource.clearDataCache();
+			await rm(path.join(dataDir, "index.json"));
 
-    it("should handle non-existent video", async () => {
-      (loadVideoData as AnyMock).mockRejectedValue(
-        new Error("Video not found: 2024-99999"),
-      );
-
-      await expect(loadVideoData("2024", "99999")).rejects.toThrow(
-        "Video not found: 2024-99999",
-      );
-    });
-  });
-
-  describe("loadAllVideos", () => {
-    it("should load all videos", async () => {
-      const mockVideos = [
-        {
-          id: "10001",
-          title: "Video 1",
-          year: "2024",
-        },
-        {
-          id: "10002",
-          title: "Video 2",
-          year: "2024",
-        },
-      ];
-
-      (loadAllVideos as AnyMock).mockResolvedValue(mockVideos);
-
-      const result = await loadAllVideos();
-
-      expect(result).toEqual<unknown>(mockVideos);
-      expect(loadAllVideos).toHaveBeenCalled();
-    });
-
-    it("should handle loading error", async () => {
-      (loadAllVideos as AnyMock).mockRejectedValue(
-        new Error("Failed to load WWDC video list"),
-      );
-
-      await expect(loadAllVideos()).rejects.toThrow(
-        "Failed to load WWDC video list",
-      );
-    });
-  });
-
-  describe("clearDataCache", () => {
-    it("should clear the cache", () => {
-      (clearDataCache as Mock<() => void>).mockImplementation(() => {
-        // Mock implementation
-      });
-
-      clearDataCache();
-
-      expect(clearDataCache).toHaveBeenCalled();
-    });
-  });
+			expect(await rejectionOf(dataSource.loadGlobalMetadata())).toContain(
+				"Failed to load WWDC metadata",
+			);
+		});
+	});
 });
