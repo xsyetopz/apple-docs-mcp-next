@@ -4,134 +4,142 @@
 
 import { APPLE_URLS } from "../core/constants.ts";
 import type {
-  PlatformAvailability,
-  RenderInlineContent,
-  RenderNode,
-  RenderReference,
+	PlatformAvailability,
+	RenderInlineContent,
+	RenderNode,
+	RenderReference,
 } from "../types/docc.ts";
-import { isDeprecated, isTopicReference } from "../types/docc.ts";
+import { isTopicReference } from "../types/docc.ts";
 
 type References = RenderNode["references"];
+
+/**
+ * Whether a string that may be missing has any characters
+ */
+export const hasText = (text: string | null | undefined): text is string =>
+	text !== undefined && text !== null && text !== "";
+
+const formatInline = (
+	inline: RenderInlineContent,
+	references: References,
+): string => {
+	if (inline.type === "text") {
+		return inline.text;
+	}
+	if (inline.type === "codeVoice") {
+		return `\`${inline.code}\``;
+	}
+	if (inline.type === "strong") {
+		return `**${formatInlineContent(inline.inlineContent, references)}**`;
+	}
+	if (inline.type === "emphasis") {
+		return `*${formatInlineContent(inline.inlineContent, references)}*`;
+	}
+	if (inline.type === "link") {
+		return `[${inline.title}](${inline.destination})`;
+	}
+	if (inline.type === "reference") {
+		return formatReference(inline, references);
+	}
+	return inline.type === "image"
+		? formatImage(inline.identifier, references)
+		: "";
+};
 
 /**
  * Format inline content: text, code voice, links and references, keeping strong and emphasized runs
  */
 export const formatInlineContent = (
-  inlineContent: RenderInlineContent[],
-  references: References,
-): string => {
-  return inlineContent
-    .map((inline) => {
-      switch (inline.type) {
-        case "text":
-          return inline.text;
-        case "codeVoice":
-          return `\`${inline.code}\``;
-        case "strong":
-          return `**${formatInlineContent(inline.inlineContent, references)}**`;
-        case "emphasis":
-          return `*${formatInlineContent(inline.inlineContent, references)}*`;
-        case "link":
-          return `[${inline.title}](${inline.destination})`;
-        case "reference":
-          return formatReference(inline, references);
-        case "image":
-          return formatImage(inline.identifier, references);
-        default:
-          return "";
-      }
-    })
-    .join("");
-};
+	inlineContent: RenderInlineContent[],
+	references: References,
+): string =>
+	inlineContent.map((inline) => formatInline(inline, references)).join("");
 
 /**
  * A reference reads as the words the page links (its overriding title), else its target's title; a symbol is code.
  * An active one links to its target, as Apple's pages do.
  */
 const formatReference = (
-  inline: Extract<RenderInlineContent, { type: "reference" }>,
-  references: References,
+	inline: Extract<RenderInlineContent, { type: "reference" }>,
+	references: References,
 ): string => {
-  const target = references?.[inline.identifier];
-  const title =
-    inline.overridingTitle ??
-    (target && "title" in target ? target.title : undefined) ??
-    inline.identifier.split("/").pop() ??
-    "";
-  const text =
-    isTopicReference(target) && target.kind === "symbol"
-      ? `\`${title}\``
-      : title;
-  const url = inline.isActive ? referenceUrl(target) : undefined;
-  return url ? `[${text}](${url})` : text;
+	const target = references?.[inline.identifier];
+	const title =
+		inline.overridingTitle ??
+		(target && "title" in target ? target.title : undefined) ??
+		inline.identifier.split("/").pop() ??
+		"";
+	const text =
+		isTopicReference(target) && target.kind === "symbol"
+			? `\`${title}\``
+			: title;
+	const url = inline.isActive ? referenceUrl(target) : undefined;
+	return hasText(url) ? `[${text}](${url})` : text;
 };
 
 /**
  * Where an asset loads from (an image, a sample's download, a tutorial's project files): its path, with or without a
  * leading slash, is from the pages' base, as swift-docc-render resolves it; a full URL stays as it is
  */
-const assetUrl = (path: string): string => {
-  return new URL(path.replace(/^\//, ""), APPLE_URLS.ASSETS).href;
-};
+const assetUrl = (path: string): string =>
+	new URL(path.replace(/^\//u, ""), APPLE_URLS.ASSETS).href;
 
 /**
  * Where a reference leads: a page (a WWDC session's carries a full URL; a page's, a site path, kept as one because
  * full URLs were a third of a long page), a link, or a download
  */
 export const referenceUrl = (
-  ref: RenderReference | undefined,
+	ref: RenderReference | undefined,
 ): string | undefined => {
-  if (isTopicReference(ref)) {
-    return ref.url;
-  }
-  if (ref?.type === "link") {
-    return ref.url;
-  }
-  return ref?.type === "download" || ref?.type === "externalLocation"
-    ? assetUrl(ref.url)
-    : undefined;
+	if (isTopicReference(ref)) {
+		return ref.url;
+	}
+	if (ref?.type === "link") {
+		return ref.url;
+	}
+	return ref?.type === "download" || ref?.type === "externalLocation"
+		? assetUrl(ref.url)
+		: undefined;
 };
 
 /**
  * The site path of a page Apple names by its doc:// identifier: doc://<bundle>/<path> is developer.apple.com/<path>
  */
-export const docUrl = (identifier: string): string => {
-  return `/${identifier.replace(/^doc:\/\/[^/]+\//, "")}`;
-};
+export const docUrl = (identifier: string): string =>
+	`/${identifier.replace(/^doc:\/\/[^/]+\//u, "")}`;
 
 /**
  * An image as Markdown: Apple's alt text, which carries what the image shows, and its light 2x file
  */
 export const formatImage = (
-  identifier: string,
-  references: References,
+	identifier: string,
+	references: References,
 ): string => {
-  const image = references?.[identifier];
-  if (image?.type !== "image") {
-    return "";
-  }
-  const file =
-    image.variants.find((variant) => variant.traits.includes("light")) ??
-    image.variants[0];
-  if (!file) {
-    return image.alt ?? "";
-  }
-  return `![${image.alt ?? ""}](${assetUrl(file.url)})`;
+	const image = references?.[identifier];
+	if (image?.type !== "image") {
+		return "";
+	}
+	const file =
+		image.variants.find((variant) => variant.traits.includes("light")) ??
+		image.variants[0];
+	if (!file) {
+		return image.alt ?? "";
+	}
+	return `![${image.alt ?? ""}](${assetUrl(file.url)})`;
 };
 
 /**
  * A link to a page the JSON names by identifier, titled as the page's references title it; a symbol is code
  */
 export const formatIdentifierLink = (
-  identifier: string,
-  references: References,
+	identifier: string,
+	references: References,
 ): string => {
-  const ref = references?.[identifier];
-  if (isTopicReference(ref)) {
-    return `[${ref.kind === "symbol" ? `\`${ref.title}\`` : ref.title}](${referenceUrl(ref)})`;
-  }
-  // Unlisted in the references: its identifier is still its address
-  return `[\`${identifier.split("/").pop() ?? identifier}\`](${docUrl(identifier)})`;
+	const ref = references?.[identifier];
+	if (isTopicReference(ref)) {
+		return `[${ref.kind === "symbol" ? `\`${ref.title}\`` : ref.title}](${referenceUrl(ref)})`;
+	}
+	return `[\`${identifier.split("/").pop() ?? identifier}\`](${docUrl(identifier)})`;
 };
 
 /**
@@ -139,91 +147,23 @@ export const formatIdentifierLink = (
  * reference carries, as Apple's pages list a type's members
  */
 export const formatIdentifierLine = (
-  identifier: string,
-  references: References,
-  withSummary = true,
+	identifier: string,
+	references: References,
+	withSummary = true,
 ): string => {
-  const ref = references?.[identifier];
-  const summary =
-    withSummary && isTopicReference(ref) && ref.abstract
-      ? formatInlineContent(ref.abstract, references).trim()
-      : "";
-  const declaration = isTopicReference(ref)
-    ? (ref.fragments ?? []).map((fragment) => fragment.text).join("")
-    : "";
-  const link =
-    isTopicReference(ref) && declaration
-      ? `[\`${declaration}\`](${referenceUrl(ref)})`
-      : formatIdentifierLink(identifier, references);
-  return `- ${link}${summary ? `: ${summary}` : ""}\n`;
-};
-
-/**
- * Format document header with title and status
- */
-export const formatDocumentHeader = (jsonData: RenderNode): string => {
-  let content = "";
-
-  // Add title with status information
-  const title = jsonData.metadata?.title ?? "Documentation";
-  const statusInfo = [];
-
-  // Check for beta/deprecated status
-  const isBeta = jsonData.metadata?.platforms?.some((p) => p.beta) ?? false;
-  const deprecated = jsonData.metadata?.platforms?.some(isDeprecated) ?? false;
-
-  if (isBeta) {
-    statusInfo.push("**Beta**");
-  }
-  if (deprecated) {
-    statusInfo.push("**Deprecated**");
-  }
-
-  const statusText = statusInfo.length > 0 ? ` (${statusInfo.join(", ")})` : "";
-  content += `# ${title}${statusText}\n\n`;
-
-  // Add role/type information with symbol kind
-  if (jsonData.metadata?.roleHeading) {
-    let roleInfo = `**${jsonData.metadata.roleHeading}**`;
-    if (jsonData.metadata?.symbolKind) {
-      roleInfo += ` (${jsonData.metadata.symbolKind})`;
-    }
-    content += `${roleInfo}\n\n`;
-  }
-
-  return content;
-};
-
-/**
- * Format document abstract
- */
-export const formatDocumentAbstract = (jsonData: RenderNode): string => {
-  const abstractText = formatInlineContent(
-    jsonData.abstract ?? [],
-    jsonData.references,
-  ).trim();
-  return abstractText ? `${abstractText}\n\n` : "";
-};
-
-/**
- * Format platform availability section
- */
-export const formatPlatformAvailability = (jsonData: RenderNode): string => {
-  if (
-    !jsonData.metadata?.platforms ||
-    !Array.isArray(jsonData.metadata.platforms) ||
-    jsonData.metadata.platforms.length === 0
-  ) {
-    return "";
-  }
-
-  let content = "## Platform Availability\n\n";
-
-  jsonData.metadata.platforms.forEach((platform) => {
-    content += formatPlatformLine(platform);
-  });
-
-  return `${content}\n`;
+	const ref = references?.[identifier];
+	const summary =
+		withSummary && isTopicReference(ref) && ref.abstract !== undefined
+			? formatInlineContent(ref.abstract, references).trim()
+			: "";
+	const declaration = isTopicReference(ref)
+		? (ref.fragments ?? []).map((fragment) => fragment.text).join("")
+		: "";
+	const link =
+		isTopicReference(ref) && declaration !== ""
+			? `[\`${declaration}\`](${referenceUrl(ref)})`
+			: formatIdentifierLink(identifier, references);
+	return `- ${link}${summary === "" ? "" : `: ${summary}`}\n`;
 };
 
 /**
@@ -231,74 +171,6 @@ export const formatPlatformAvailability = (jsonData: RenderNode): string => {
  * alone (swift-docc-render's AvailabilityRange), as on XCUIAutomation's pages.
  */
 export const formatIntroducedVersion = (
-  platform: PlatformAvailability,
-): string => {
-  return platform.introducedAt ? ` ${platform.introducedAt}+` : "";
-};
-
-/**
- * Format a single platform line
- */
-const formatPlatformLine = (platform: PlatformAvailability): string => {
-  const platformStatus = [];
-
-  if (platform.beta) {
-    platformStatus.push("Beta");
-  }
-  if (isDeprecated(platform)) {
-    platformStatus.push("Deprecated");
-  }
-  if (platform.unavailable) {
-    platformStatus.push("Unavailable");
-  }
-
-  let platformLine = `- **${platform.name}**${formatIntroducedVersion(platform)}`;
-
-  if (platform.deprecatedAt) {
-    platformLine += ` | Deprecated in ${platform.deprecatedAt}`;
-  }
-  if (platformStatus.length > 0) {
-    platformLine += ` | Status: ${platformStatus.join(", ")}`;
-  }
-
-  return `${platformLine}\n`;
-};
-
-/**
- * Format See Also section
- */
-export const formatSeeAlsoSection = (jsonData: RenderNode): string => {
-  const groups = (jsonData.seeAlsoSections ?? [])
-    .filter((seeAlso) => seeAlso.title && seeAlso.identifiers?.length > 0)
-    .map(
-      (seeAlso) =>
-        `### ${seeAlso.title}\n\n${formatSeeAlsoIdentifiers(seeAlso.identifiers, jsonData.references)}`,
-    );
-  return groups.length > 0 ? `## See Also\n\n${groups.join("")}` : "";
-};
-
-/**
- * Format See Also identifiers
- */
-const formatSeeAlsoIdentifiers = (
-  identifiers: string[],
-  references: References,
-): string => {
-  return `${identifiers
-    .map((identifier) => formatIdentifierLine(identifier, references))
-    .join("")}\n`;
-};
-
-/**
- * Check if document is a specific API
- */
-export const isSpecificAPIDocument = (jsonData: RenderNode): boolean => {
-  // A web-service endpoint has no declaration; its URL is its signature
-  return (
-    jsonData.primaryContentSections?.some(
-      (section) =>
-        "kind" in section &&
-        (section.kind === "declarations" || section.kind === "restEndpoint"),
-    ) ?? false
-  );
-};
+	platform: PlatformAvailability,
+): string =>
+	hasText(platform.introducedAt) ? ` ${platform.introducedAt}+` : "";

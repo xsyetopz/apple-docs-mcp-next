@@ -1,285 +1,214 @@
-import {
-  afterEach,
-  beforeEach,
-  describe,
-  expect,
-  it,
-  type Mock,
-  mock,
-} from "bun:test";
-import { httpClientModule } from "../mocks/http-client.mock.ts";
-
 /**
  * Integration tests for WWDC tools
  */
+import { afterEach, beforeEach, describe, expect, it } from "bun:test";
 
-// Mock dependencies BEFORE any imports
-mock.module("../../src/core/http-client.ts", httpClientModule);
-mock.module("../../src/wwdc/data-source.ts", () => ({
-  loadGlobalMetadata: mock(),
-  loadTopicIndex: mock(),
-  loadYearIndex: mock(),
-  loadVideoData: mock(),
-  loadAllVideos: mock(),
-  clearDataCache: mock(),
-}));
+import type { Client } from "@modelcontextprotocol/client";
 
-import { Client, InMemoryTransport } from "@modelcontextprotocol/client";
-
-// Import mocked functions
+import { spyOnHttpClient } from "../mocks/http-client.mock.ts";
+import { callTool, connectClient, textOf } from "../mocks/tool-client.ts";
 import {
-  loadAllVideos,
-  loadGlobalMetadata,
-  loadTopicIndex,
-  loadVideoData,
-  loadYearIndex,
-} from "../../src/wwdc/data-source.ts";
-
-const { createServer } = await import("../../src/server.ts");
-
-const mockLoadGlobalMetadata = loadGlobalMetadata as Mock<
-  (...args: unknown[]) => Promise<unknown>
->;
-const mockLoadTopicIndex = loadTopicIndex as Mock<
-  (...args: unknown[]) => Promise<unknown>
->;
-const mockLoadYearIndex = loadYearIndex as Mock<
-  (...args: unknown[]) => Promise<unknown>
->;
-const mockLoadVideoData = loadVideoData as Mock<
-  (...args: unknown[]) => Promise<unknown>
->;
-const mockLoadAllVideos = loadAllVideos as Mock<
-  (...args: unknown[]) => Promise<unknown>
->;
+	type DataSourceSpies,
+	makeIndexed,
+	makeMetadata,
+	makeTopicIndex,
+	makeVideo,
+	makeYearIndex,
+	spyOnDataSource,
+} from "./wwdc-fixtures.ts";
 
 describe("WWDC Tools Integration", () => {
-  let client: Client;
-  const call = async (
-    name: string,
-    args: Record<string, unknown>,
-  ): Promise<{ content: { text?: string }[] }> =>
-    (await client.callTool({ name, arguments: args })) as {
-      content: { text?: string }[];
-    };
+	let client: Client;
+	let spies: DataSourceSpies;
 
-  beforeEach(async () => {
-    const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
-    client = new Client({ name: "test", version: "test" });
-    await Promise.all([
-      createServer().connect(serverSide),
-      client.connect(clientSide),
-    ]);
+	beforeEach(async () => {
+		spyOnHttpClient();
+		spies = spyOnDataSource();
+		client = await connectClient();
 
-    mock.clearAllMocks();
+		spies.loadGlobalMetadata.mockResolvedValue(
+			makeMetadata({
+				totalVideos: 100,
+				topics: [
+					{ id: "swiftui", name: "SwiftUI", url: "https://example.com" },
+					{
+						id: "swiftui-ui-frameworks",
+						name: "SwiftUI & UI Frameworks",
+						url: "https://example.com",
+					},
+				],
+				years: ["2025", "2024"],
+				statistics: {
+					byTopic: { swiftui: 10 },
+					byYear: { "2025": 50, "2024": 50 },
+					videosWithCode: 80,
+					videosWithTranscript: 90,
+				},
+			}),
+		);
+		spies.loadYearIndex.mockResolvedValue(
+			makeYearIndex([
+				makeIndexed({
+					id: "10001",
+					title: "Test Video",
+					topics: ["SwiftUI"],
+					duration: "20 min",
+					dataFile: "videos/2025-10001.json",
+					url: "https://example.com/10001",
+				}),
+			]),
+		);
+		spies.loadVideoData.mockResolvedValue(
+			makeVideo({
+				id: "10001",
+				title: "Test Video",
+				duration: "20 min",
+				topics: ["SwiftUI"],
+				transcript: { fullText: "Test transcript content", segments: [] },
+				codeExamples: [
+					{ language: "swift", title: "Example", code: 'print("Hello")' },
+				],
+				url: "https://example.com/10001",
+			}),
+		);
+		spies.loadTopicIndex.mockResolvedValue(
+			makeTopicIndex("swiftui-ui-frameworks", [
+				makeIndexed({ id: "10001", dataFile: "videos/2025-10001.json" }),
+			]),
+		);
+	});
 
-    // Setup default mocks
-    mockLoadGlobalMetadata.mockResolvedValue({
-      version: "1.0",
-      lastUpdated: "2025-01-01",
-      totalVideos: 100,
-      topics: [
-        { id: "swiftui", name: "SwiftUI", url: "https://example.com" },
-        {
-          id: "swiftui-ui-frameworks",
-          name: "SwiftUI & UI Frameworks",
-          url: "https://example.com",
-        },
-      ],
-      years: ["2025", "2024"],
-      statistics: {
-        byTopic: { swiftui: 10 },
-        byYear: { "2025": 50, "2024": 50 },
-        videosWithCode: 80,
-        videosWithTranscript: 90,
-      },
-    });
+	afterEach(async () => {
+		await client.close();
+	});
 
-    mockLoadYearIndex.mockResolvedValue({
-      year: "2025",
-      videoCount: 50,
-      topics: ["SwiftUI", "UIKit"],
-      videos: [
-        {
-          id: "10001",
-          year: "2025",
-          title: "Test Video",
-          topics: ["SwiftUI"],
-          duration: "20 min",
-          hasCode: true,
-          hasTranscript: true,
-          dataFile: "videos/2025-10001.json",
-          url: "https://example.com/10001",
-        },
-      ],
-    });
+	describe("list_wwdc_videos", () => {
+		it("should return the index without arguments", async () => {
+			const text = textOf(await callTool(client, "list_wwdc_videos", {}));
 
-    mockLoadVideoData.mockResolvedValue({
-      id: "10001",
-      title: "Test Video",
-      year: "2025",
-      duration: "20 min",
-      topics: ["SwiftUI"],
-      hasTranscript: true,
-      hasCode: true,
-      transcript: {
-        fullText: "Test transcript content",
-        segments: [],
-      },
-      codeExamples: [
-        {
-          language: "swift",
-          platform: "iOS",
-          title: "Example",
-          code: 'print("Hello")',
-        },
-      ],
-      resources: {
-        download: "https://example.com/download",
-      },
-      relatedVideos: [],
-      url: "https://example.com/10001",
-      description: "Test video description",
-      speakers: [],
-    });
+			expect(text).toContain("Years:");
+			expect(text).toContain("2025");
+			expect(text).toContain("2024");
+			expect(spies.loadGlobalMetadata).toHaveBeenCalled();
+		});
 
-    mockLoadTopicIndex.mockResolvedValue({
-      topicId: "swiftui-ui-frameworks",
-      topicName: "SwiftUI & UI Frameworks",
-      videoCount: 10,
-      videos: ["videos/2025-10001.json"],
-    });
+		it("should filter videos by year", async () => {
+			const text = textOf(
+				await callTool(client, "list_wwdc_videos", { year: "2025" }),
+			);
 
-    mockLoadAllVideos.mockResolvedValue([
-      {
-        id: "10001",
-        title: "Test Video",
-        year: "2025",
-        topics: ["SwiftUI"],
-      },
-    ]);
-  });
+			expect(text).toContain("sessions");
+			expect(spies.loadYearIndex).toHaveBeenCalledWith("2025");
+		});
 
-  afterEach(async () => {
-    await client.close();
-  });
+		it("should filter videos by topic", async () => {
+			await callTool(client, "list_wwdc_videos", {
+				topic: "swiftui-ui-frameworks",
+			});
 
-  describe("list_wwdc_videos", () => {
-    it("should return the index without arguments", async () => {
-      const result = await call("list_wwdc_videos", {});
+			expect(spies.loadTopicIndex).toHaveBeenCalledWith(
+				"swiftui-ui-frameworks",
+			);
+		});
+	});
 
-      expect(result).toHaveProperty("content");
-      expect(result.content[0]?.text).toContain("Years:");
-      expect(result.content[0]?.text).toContain("2025");
-      expect(result.content[0]?.text).toContain("2024");
-      expect(mockLoadGlobalMetadata).toHaveBeenCalled();
-    });
+	describe("search_wwdc_content", () => {
+		it("should search WWDC content", async () => {
+			const response = await callTool(client, "search_wwdc_content", {
+				query: "SwiftUI",
+			});
 
-    it("should filter videos by year", async () => {
-      const result = await call("list_wwdc_videos", { year: "2025" });
+			expect(response.content).toHaveLength(1);
+			expect(spies.loadGlobalMetadata).toHaveBeenCalled();
+		});
 
-      expect(result.content[0]?.text).toContain("sessions");
-      expect(mockLoadYearIndex).toHaveBeenCalledWith("2025");
-    });
+		it("should search with filters", async () => {
+			await callTool(client, "search_wwdc_content", {
+				query: "animation",
+				year: "2025",
+				searchInTranscript: true,
+				searchInCode: true,
+			});
 
-    it("should filter videos by topic", async () => {
-      await call("list_wwdc_videos", {
-        topic: "swiftui-ui-frameworks",
-      });
+			expect(spies.loadYearIndex).toHaveBeenCalledWith("2025");
+		});
+	});
 
-      expect(mockLoadTopicIndex).toHaveBeenCalledWith("swiftui-ui-frameworks");
-    });
-  });
+	describe("get_wwdc_video", () => {
+		it("should get video details", async () => {
+			const text = textOf(
+				await callTool(client, "get_wwdc_video", {
+					videoId: "10001",
+					year: "2025",
+				}),
+			);
 
-  describe("search_wwdc_content", () => {
-    it("should search WWDC content", async () => {
-      const result = await call("search_wwdc_content", { query: "SwiftUI" });
+			expect(text).toContain("Test Video");
+			expect(spies.loadVideoData).toHaveBeenCalledWith("2025", "10001");
+		});
 
-      expect(result).toHaveProperty("content");
-      expect(mockLoadGlobalMetadata).toHaveBeenCalled();
-    });
+		it("should include transcript when requested", async () => {
+			const text = textOf(
+				await callTool(client, "get_wwdc_video", {
+					videoId: "10001",
+					year: "2025",
+					includeTranscript: true,
+				}),
+			);
 
-    it("should search with filters", async () => {
-      await call("search_wwdc_content", {
-        query: "animation",
-        year: "2025",
-        searchInTranscript: true,
-        searchInCode: true,
-      });
+			expect(text).toContain("transcript");
+		});
+	});
 
-      expect(mockLoadYearIndex).toHaveBeenCalledWith("2025");
-    });
-  });
+	describe("get_wwdc_code_examples", () => {
+		it("should get code examples", async () => {
+			const response = await callTool(client, "get_wwdc_code_examples", {});
 
-  describe("get_wwdc_video", () => {
-    it("should get video details", async () => {
-      const result = await call("get_wwdc_video", {
-        videoId: "10001",
-        year: "2025",
-      });
+			expect(response.content).toHaveLength(1);
+			expect(spies.loadGlobalMetadata).toHaveBeenCalled();
+		});
 
-      expect(result.content[0]?.text).toContain("Test Video");
-      expect(mockLoadVideoData).toHaveBeenCalledWith("2025", "10001");
-    });
+		it("should filter by framework", async () => {
+			const response = await callTool(client, "get_wwdc_code_examples", {
+				framework: "SwiftUI",
+			});
 
-    it("should include transcript when requested", async () => {
-      const result = await call("get_wwdc_video", {
-        videoId: "10001",
-        year: "2025",
-        includeTranscript: true,
-      });
+			expect(response.content).toHaveLength(1);
+		});
+	});
 
-      expect(result.content[0]?.text).toContain("transcript");
-    });
-  });
+	describe("find_related_wwdc_videos", () => {
+		it("should find related videos", async () => {
+			const response = await callTool(client, "find_related_wwdc_videos", {
+				videoId: "10001",
+				year: "2025",
+			});
 
-  describe("get_wwdc_code_examples", () => {
-    it("should get code examples", async () => {
-      const result = await call("get_wwdc_code_examples", {});
+			expect(response.content).toHaveLength(1);
+			expect(spies.loadVideoData).toHaveBeenCalledWith("2025", "10001");
+		});
+	});
 
-      expect(result).toHaveProperty("content");
-      expect(mockLoadGlobalMetadata).toHaveBeenCalled();
-    });
+	describe("error handling", () => {
+		it("should handle data loading errors gracefully", async () => {
+			spies.loadGlobalMetadata.mockRejectedValue(new Error("Network error"));
 
-    it("should filter by framework", async () => {
-      const result = await call("get_wwdc_code_examples", {
-        framework: "SwiftUI",
-      });
+			const text = textOf(await callTool(client, "list_wwdc_videos", {}));
 
-      expect(result).toHaveProperty("content");
-    });
-  });
+			expect(text).toContain("Error");
+		});
 
-  describe("find_related_wwdc_videos", () => {
-    it("should find related videos", async () => {
-      const result = await call("find_related_wwdc_videos", {
-        videoId: "10001",
-        year: "2025",
-      });
+		it("should handle invalid video ID", async () => {
+			spies.loadVideoData.mockRejectedValue(new Error("Video not found"));
 
-      expect(result).toHaveProperty("content");
-      expect(mockLoadVideoData).toHaveBeenCalledWith("2025", "10001");
-    });
-  });
+			const text = textOf(
+				await callTool(client, "get_wwdc_video", {
+					videoId: "invalid",
+					year: "2025",
+				}),
+			);
 
-  describe("error handling", () => {
-    it("should handle data loading errors gracefully", async () => {
-      mockLoadGlobalMetadata.mockRejectedValue(new Error("Network error"));
-
-      const result = await call("list_wwdc_videos", {});
-
-      expect(result.content[0]?.text).toContain("Error");
-    });
-
-    it("should handle invalid video ID", async () => {
-      mockLoadVideoData.mockRejectedValue(new Error("Video not found"));
-
-      const result = await call("get_wwdc_video", {
-        videoId: "invalid",
-        year: "2025",
-      });
-
-      expect(result.content[0]?.text).toContain("Error");
-    });
-  });
+			expect(text).toContain("Error");
+		});
+	});
 });

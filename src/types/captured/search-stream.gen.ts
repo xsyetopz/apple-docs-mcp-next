@@ -1,9 +1,9 @@
 export interface SearchStream {
-    diff?: Diff;
-    kind:  string;
+	diff?: Diff;
+	kind: string;
 }
 
 export interface Diff {
-    append:     string;
-    removeLast: number;
+	append: string;
+	removeLast: number;
 }

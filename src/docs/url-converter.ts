@@ -7,9 +7,8 @@ import { APPLE_URLS } from "../core/constants.ts";
 /**
  * A page's full URL: a site path, as page links give it ("/documentation/uikit/uiview"), is on developer.apple.com
  */
-export const absoluteAppleUrl = (url: string): string => {
-  return url.startsWith("/") ? `${APPLE_URLS.BASE}${url}` : url;
-};
+export const absoluteAppleUrl = (url: string): string =>
+	url.startsWith("/") ? `${APPLE_URLS.BASE}${url}` : url;
 
 /**
  * Convert a web URL to a JSON API URL
@@ -17,46 +16,33 @@ export const absoluteAppleUrl = (url: string): string => {
  * @returns The corresponding JSON API URL
  */
 export const convertToJsonApiUrl = (webUrl: string): string | null => {
-  try {
-    // Remove trailing slash if present
-    if (webUrl.endsWith("/")) {
-      webUrl = webUrl.slice(0, -1);
-    }
+	try {
+		const trimmed = webUrl.endsWith("/") ? webUrl.slice(0, -1) : webUrl;
+		const urlObj = new URL(absoluteAppleUrl(trimmed));
 
-    // Extract the path from the URL
-    const urlObj = new URL(absoluteAppleUrl(webUrl));
+		if (urlObj.hostname !== "developer.apple.com") {
+			return null;
+		}
 
-    // Check if it's an Apple Developer URL
-    if (urlObj.hostname !== "developer.apple.com") {
-      return null;
-    }
+		const path = urlObj.pathname;
 
-    let path = urlObj.pathname;
+		if (path.includes("/documentation/")) {
+			return `https://developer.apple.com/tutorials/data/documentation/${path.replace("/documentation/", "")}.json`;
+		}
 
-    // For documentation URLs, format for the JSON API
-    if (path.includes("/documentation/")) {
-      // Remove /documentation/ prefix
-      path = path.replace("/documentation/", "");
-      // Convert to JSON API URL format
-      return `https://developer.apple.com/tutorials/data/documentation/${path}.json`;
-    }
+		// The design guidelines are served from the same data path as the documentation, in any letter case:
+		// Xcode's DocumentationSearch writes the path as /design/Human-Interface-Guidelines/…
+		if (
+			path.toLowerCase().startsWith("/design/human-interface-guidelines/") ||
+			path.startsWith("/tutorials/")
+		) {
+			return `https://developer.apple.com/tutorials/data${path}.json`;
+		}
 
-    // The design guidelines are served from the same data path as the documentation, in any letter case:
-    // Xcode's DocumentationSearch writes the path as /design/Human-Interface-Guidelines/…
-    if (path.toLowerCase().startsWith("/design/human-interface-guidelines/")) {
-      return `https://developer.apple.com/tutorials/data${path}.json`;
-    }
-
-    // A tutorial's JSON sits at its whole path under the data path: /tutorials/data/tutorials/…
-    if (path.startsWith("/tutorials/")) {
-      return `https://developer.apple.com/tutorials/data${path}.json`;
-    }
-
-    // If not a recognized URL format, return the original URL
-    return webUrl;
-  } catch {
-    return null;
-  }
+		return trimmed;
+	} catch {
+		return null;
+	}
 };
 
 /**
@@ -65,10 +51,10 @@ export const convertToJsonApiUrl = (webUrl: string): string | null => {
  * @returns True if valid Apple Developer URL
  */
 export const isValidAppleDeveloperUrl = (url: string): boolean => {
-  try {
-    const urlObj = new URL(url);
-    return urlObj.hostname === "developer.apple.com";
-  } catch {
-    return false;
-  }
+	try {
+		const urlObj = new URL(url);
+		return urlObj.hostname === "developer.apple.com";
+	} catch {
+		return false;
+	}
 };

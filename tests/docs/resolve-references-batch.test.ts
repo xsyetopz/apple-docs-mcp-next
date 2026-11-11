@@ -1,91 +1,95 @@
 /**
  * The references embedded in one page's JSON: its pages, not its images, each summary as Apple wrote it.
  */
-import { afterEach, describe, expect, it, mock, spyOn } from "bun:test";
-import { httpClient } from "../../src/core/http-client.ts";
+import { beforeEach, describe, expect, it } from "bun:test";
+
 import { handleResolveReferencesBatch } from "../../src/docs/resolve-references-batch.ts";
+import { spyOnHttpClient } from "../mocks/http-client.mock.ts";
+
+const reference = (name: string) => ({
+	type: "topic",
+	kind: "symbol",
+	role: "symbol",
+	title: name,
+	url: `/documentation/swiftui/${name.toLowerCase()}`,
+	fragments: [
+		{ kind: "keyword", text: "struct" },
+		{ kind: "text", text: " " },
+		{ kind: "identifier", text: name },
+	],
+	abstract: [{ type: "text", text: `The ${name}.` }],
+});
 
 describe("resolve_references_batch", () => {
-  afterEach(() => {
-    mock.restore();
-  });
+	let getJson: ReturnType<typeof spyOnHttpClient>["getJson"];
 
-  it("lists the pages a page references, not its images, keeping code names in summaries", async () => {
-    spyOn(httpClient, "getJson").mockResolvedValue({
-      metadata: { title: "NavigationStack" },
-      references: {
-        "SwiftUI-PageImage-card.png": {
-          type: "image",
-          identifier: "SwiftUI-PageImage-card.png",
-          variants: [],
-        },
-        "doc://SwiftUI/Binding": {
-          type: "topic",
-          kind: "symbol",
-          role: "symbol",
-          title: "Binding",
-          url: "/documentation/swiftui/binding",
-          abstract: [
-            { type: "text", text: "Reads and writes a value owned by a " },
-            { type: "codeVoice", code: "State" },
-            { type: "text", text: "." },
-          ],
-        },
-      },
-    });
+	beforeEach(() => {
+		({ getJson } = spyOnHttpClient());
+	});
 
-    const result = await handleResolveReferencesBatch({
-      sourceUrl:
-        "https://developer.apple.com/documentation/swiftui/navigationstack",
-      maxReferences: 5,
-      filterByType: "all",
-    });
+	it("lists the pages a page references, not its images, keeping code names in summaries", async () => {
+		getJson.mockResolvedValue({
+			metadata: { title: "NavigationStack" },
+			references: {
+				"SwiftUI-PageImage-card.png": {
+					type: "image",
+					identifier: "SwiftUI-PageImage-card.png",
+					variants: [],
+				},
+				"doc://SwiftUI/Binding": {
+					type: "topic",
+					kind: "symbol",
+					role: "symbol",
+					title: "Binding",
+					url: "/documentation/swiftui/binding",
+					abstract: [
+						{ type: "text", text: "Reads and writes a value owned by a " },
+						{ type: "codeVoice", code: "State" },
+						{ type: "text", text: "." },
+					],
+				},
+			},
+		});
 
-    expect(result).not.toContain("Unknown");
-    expect(result).toContain("1 references");
-    expect(result).toContain("Reads and writes a value owned by a `State`.");
-    expect(result).toContain(
-      "- [Binding](/documentation/swiftui/binding): Reads and writes",
-    );
-    expect(result).not.toContain("Kind:");
-    expect(result).not.toContain("Showing");
-  });
+		const result = await handleResolveReferencesBatch({
+			sourceUrl:
+				"https://developer.apple.com/documentation/swiftui/navigationstack",
+			maxReferences: 5,
+			filterByType: "all",
+		});
 
-  it("prints a declaration on the item's line and says when maxReferences cut the list", async () => {
-    const reference = (name: string) => ({
-      type: "topic",
-      kind: "symbol",
-      role: "symbol",
-      title: name,
-      url: `/documentation/swiftui/${name.toLowerCase()}`,
-      fragments: [
-        { kind: "keyword", text: "struct" },
-        { kind: "text", text: " " },
-        { kind: "identifier", text: name },
-      ],
-      abstract: [{ type: "text", text: `The ${name}.` }],
-    });
-    spyOn(httpClient, "getJson").mockResolvedValue({
-      metadata: { title: "View" },
-      references: {
-        "doc://SwiftUI/A": reference("Alpha"),
-        "doc://SwiftUI/B": reference("Beta"),
-        "doc://SwiftUI/C": reference("Gamma"),
-      },
-    });
+		expect(result).not.toContain("Unknown");
+		expect(result).toContain("1 references");
+		expect(result).toContain("Reads and writes a value owned by a `State`.");
+		expect(result).toContain(
+			"- [Binding](/documentation/swiftui/binding): Reads and writes",
+		);
+		expect(result).not.toContain("Kind:");
+		expect(result).not.toContain("Showing");
+	});
 
-    const result = await handleResolveReferencesBatch({
-      sourceUrl: "https://developer.apple.com/documentation/swiftui/view",
-      maxReferences: 2,
-      filterByType: "all",
-    });
+	it("prints a declaration on the item's line and says when maxReferences cut the list", async () => {
+		getJson.mockResolvedValue({
+			metadata: { title: "View" },
+			references: {
+				"doc://SwiftUI/A": reference("Alpha"),
+				"doc://SwiftUI/B": reference("Beta"),
+				"doc://SwiftUI/C": reference("Gamma"),
+			},
+		});
 
-    expect(result).toContain(
-      "- [Alpha](/documentation/swiftui/alpha) `struct Alpha`: The Alpha.",
-    );
-    expect(result).not.toContain("Gamma");
-    expect(result).toContain(
-      "Showing 2 of 3. Narrow with filter, or raise limit.",
-    );
-  });
+		const result = await handleResolveReferencesBatch({
+			sourceUrl: "https://developer.apple.com/documentation/swiftui/view",
+			maxReferences: 2,
+			filterByType: "all",
+		});
+
+		expect(result).toContain(
+			"- [Alpha](/documentation/swiftui/alpha) `struct Alpha`: The Alpha.",
+		);
+		expect(result).not.toContain("Gamma");
+		expect(result).toContain(
+			"Showing 2 of 3. Narrow with filter, or raise limit.",
+		);
+	});
 });

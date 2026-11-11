@@ -1,264 +1,173 @@
 import { generateUrlCacheKey, indexCache } from "../core/cache.ts";
 import { APPLE_URLS, PROCESSING_LIMITS } from "../core/constants.ts";
-import { httpClient } from "../core/http-client.ts";
 import { logger } from "../core/logger.ts";
-import type { RenderIndex, RenderIndexNode } from "../types/docc.ts";
+import type { RenderIndexNode } from "../types/docc.ts";
+import { fetchRenderIndex } from "./docc-json.ts";
 import { normalizeFrameworkName } from "./framework-mapper.ts";
+import { hasText } from "./has-text.ts";
+import {
+	findCollections,
+	formatSymbolItem,
+	groupByType,
+	matchesPattern,
+	pluralizeType,
+} from "./symbol-formatting.ts";
+
+const findSymbolsRecursive = (
+	items: RenderIndexNode[],
+	symbolType: string,
+	namePattern: string | undefined,
+	limit: number,
+	symbols: RenderIndexNode[],
+	depth = 0,
+): boolean => {
+	if (depth > 6) {
+		return false;
+	}
+
+	for (const item of items) {
+		if (symbols.length >= limit) {
+			return true;
+		}
+
+		// Group markers head the symbols that follow them, and an index can list one symbol under two groups
+		if (
+			item.type !== "groupMarker" &&
+			(symbolType === "all" || item.type === symbolType) &&
+			(!hasText(namePattern) || matchesPattern(item.title, namePattern)) &&
+			!symbols.some((symbol) => symbol.path === item.path)
+		) {
+			symbols.push(item);
+		}
+
+		if (
+			item.children &&
+			symbols.length < limit &&
+			findSymbolsRecursive(
+				item.children,
+				symbolType,
+				namePattern,
+				limit,
+				symbols,
+				depth + 1,
+			)
+		) {
+			return true;
+		}
+	}
+
+	return false;
+};
+
+export interface FrameworkSymbolsQuery {
+	framework: string;
+	symbolType: string;
+	namePattern?: string | undefined;
+	language: "swift" | "occ";
+	limit: number;
+}
+
+const typeText = (symbolType: string): string =>
+	symbolType === "all" ? "symbols" : pluralizeType(symbolType).toLowerCase();
+
+const formatNoSymbols = (
+	{ framework, symbolType, namePattern }: FrameworkSymbolsQuery,
+	indexItems: RenderIndexNode[],
+): string => {
+	let result = `No ${typeText(symbolType)} found`;
+	if (hasText(namePattern)) {
+		result += ` matching pattern "${namePattern}"`;
+	}
+	result += ` in ${framework} framework.\n`;
+
+	const collections = findCollections(indexItems);
+	if (collections.length > 0) {
+		result += "\n## Try exploring these collections:\n\n";
+		for (const col of collections.slice(
+			0,
+			PROCESSING_LIMITS.MAX_COLLECTIONS_TO_SHOW,
+		)) {
+			result += `- [${col.title}](${col.path})\n`;
+		}
+	}
+	return result;
+};
+
+const formatSymbols = (
+	{ symbolType, namePattern, limit }: FrameworkSymbolsQuery,
+	symbols: RenderIndexNode[],
+): string => {
+	let result = `${symbols.length} ${typeText(symbolType)}`;
+	if (hasText(namePattern)) {
+		result += ` matching "${namePattern}"`;
+	}
+	result += "\n";
+
+	if (symbolType === "all") {
+		for (const [type, items] of Object.entries(groupByType(symbols))) {
+			result += `\n## ${pluralizeType(type)} (${items.length})\n`;
+			for (const item of items) {
+				result += formatSymbolItem(item);
+			}
+		}
+	} else {
+		for (const symbol of symbols) {
+			result += formatSymbolItem(symbol);
+		}
+	}
+
+	if (symbols.length >= limit) {
+		result += `\nStopped at the limit of ${limit}, so there may be more. Narrow with namePattern or symbolType, or raise limit.\n`;
+	}
+	return result;
+};
 
 /**
  * Searches a framework's symbols (classes, structs, protocols, and so on).
  */
-// Function to find symbols recursively (defined outside to reduce complexity)
-const findSymbolsRecursive = (
-  items: RenderIndexNode[],
-  symbolType: string,
-  namePattern: string | undefined,
-  limit: number,
-  symbols: RenderIndexNode[],
-  depth: number = 0,
-): boolean => {
-  if (depth > 6) {
-    return false;
-  }
+export const searchFrameworkSymbols = async (
+	query: FrameworkSymbolsQuery,
+): Promise<string> => {
+	const { framework, symbolType, namePattern, language, limit } = query;
+	const normalizedFramework = normalizeFrameworkName(framework);
+	logger.info(
+		`Searching ${symbolType} symbols in ${normalizedFramework} framework`,
+	);
 
-  for (const item of items) {
-    if (symbols.length >= limit) {
-      return true; // Limit reached
-    }
+	const indexUrl = `${APPLE_URLS.TUTORIALS_DATA}index/${framework.toLowerCase()}`;
+	const cacheKey = generateUrlCacheKey(indexUrl, {
+		framework: normalizedFramework,
+		symbolType,
+		namePattern,
+		language,
+		limit,
+	});
 
-    // Group markers head the symbols that follow them, and an index can list one symbol under two groups
-    if (
-      item.type !== "groupMarker" &&
-      (symbolType === "all" || item.type === symbolType)
-    ) {
-      if (
-        (!namePattern || matchesPattern(item.title, namePattern)) &&
-        !symbols.some((symbol) => symbol.path === item.path)
-      ) {
-        symbols.push(item);
-      }
-    }
+	const cachedResult = indexCache.get(cacheKey);
+	if (cachedResult !== undefined) {
+		return cachedResult;
+	}
 
-    if (item.children && symbols.length < limit) {
-      const limitReached = findSymbolsRecursive(
-        item.children,
-        symbolType,
-        namePattern,
-        limit,
-        symbols,
-        depth + 1,
-      );
-      if (limitReached) {
-        return true;
-      }
-    }
-  }
+	const data = await fetchRenderIndex(indexUrl);
+	const indexItems = data.interfaceLanguages?.[language] ?? [];
 
-  return false;
-};
+	if (indexItems.length === 0) {
+		const availableLanguages = Object.keys(data.interfaceLanguages ?? {});
+		return `Language "${language}" not available for ${framework}. Available languages: ${availableLanguages.join(", ")}`;
+	}
 
-export interface FrameworkSymbolsQuery {
-  framework: string;
-  symbolType: string;
-  namePattern?: string | undefined;
-  language: "swift" | "occ";
-  limit: number;
-}
+	const symbols: RenderIndexNode[] = [];
+	findSymbolsRecursive(indexItems, symbolType, namePattern, limit, symbols);
 
-export const searchFrameworkSymbols = async ({
-  framework,
-  symbolType,
-  namePattern,
-  language,
-  limit,
-}: FrameworkSymbolsQuery): Promise<string> => {
-  const normalizedFramework = normalizeFrameworkName(framework);
-  logger.info(
-    `Searching ${symbolType} symbols in ${normalizedFramework} framework`,
-  );
+	const typeLabel =
+		symbolType === "all" ? "Symbols" : pluralizeType(symbolType);
+	const result = `# ${framework} Framework ${typeLabel}\n${
+		symbols.length === 0
+			? formatNoSymbols(query, indexItems)
+			: formatSymbols(query, symbols)
+	}`.trimEnd();
 
-  const indexUrl = `${APPLE_URLS.TUTORIALS_DATA}index/${framework.toLowerCase()}`;
-  const cacheKey = generateUrlCacheKey(indexUrl, {
-    framework: normalizedFramework,
-    symbolType,
-    namePattern,
-    language,
-    limit,
-  });
+	indexCache.set(cacheKey, result);
 
-  const cachedResult = indexCache.get(cacheKey);
-  if (cachedResult) {
-    return cachedResult;
-  }
-
-  const data = await httpClient.getJson<RenderIndex>(indexUrl);
-
-  const indexItems = data.interfaceLanguages?.[language] || [];
-
-  if (indexItems.length === 0) {
-    const availableLanguages = Object.keys(data.interfaceLanguages || {});
-    return `Language "${language}" not available for ${framework}. Available languages: ${availableLanguages.join(", ")}`;
-  }
-
-  const symbols: RenderIndexNode[] = [];
-  findSymbolsRecursive(indexItems, symbolType, namePattern, limit, symbols);
-
-  const typeLabel =
-    symbolType === "all" ? "Symbols" : pluralizeType(symbolType);
-  let result = `# ${framework} Framework ${typeLabel}\n`;
-
-  if (symbols.length === 0) {
-    const typeText =
-      symbolType === "all"
-        ? "symbols"
-        : pluralizeType(symbolType).toLowerCase();
-    result += `No ${typeText} found`;
-    if (namePattern) {
-      result += ` matching pattern "${namePattern}"`;
-    }
-    result += ` in ${framework} framework.\n`;
-
-    const collections = findCollections(indexItems);
-    if (collections.length > 0) {
-      result += "\n## Try exploring these collections:\n\n";
-      for (const col of collections.slice(
-        0,
-        PROCESSING_LIMITS.MAX_COLLECTIONS_TO_SHOW,
-      )) {
-        result += `- [${col.title}](${col.path})\n`;
-      }
-    }
-  } else {
-    result += `${symbols.length} ${symbolType === "all" ? "symbols" : pluralizeType(symbolType).toLowerCase()}`;
-    if (namePattern) {
-      result += ` matching "${namePattern}"`;
-    }
-    result += "\n";
-
-    if (symbolType === "all") {
-      const grouped = groupByType(symbols);
-      for (const [type, items] of Object.entries(grouped)) {
-        result += `\n## ${pluralizeType(type)} (${items.length})\n`;
-        for (const item of items) {
-          result += formatSymbolItem(item);
-        }
-      }
-    } else {
-      for (const symbol of symbols) {
-        result += formatSymbolItem(symbol);
-      }
-    }
-
-    if (symbols.length >= limit) {
-      result += `\nStopped at the limit of ${limit}, so there may be more. Narrow with namePattern or symbolType, or raise limit.\n`;
-    }
-  }
-
-  indexCache.set(cacheKey, result.trimEnd());
-
-  return result.trimEnd();
-};
-
-const formatSymbolItem = (item: RenderIndexNode): string => {
-  const url = item.path ?? "";
-  let result = `- [${item.title}](${url})`;
-
-  const metadata = [];
-  if (item.beta) {
-    metadata.push("Beta");
-  }
-  if (item.deprecated) {
-    metadata.push("Deprecated");
-  }
-
-  if (metadata.length > 0) {
-    result += ` (${metadata.join(", ")})`;
-  }
-
-  return `${result}\n`;
-};
-
-const groupByType = (
-  symbols: RenderIndexNode[],
-): Record<string, RenderIndexNode[]> => {
-  const groups: Record<string, RenderIndexNode[]> = {};
-
-  for (const symbol of symbols) {
-    const type = symbol.type ?? "other";
-    groups[type] = [...(groups[type] ?? []), symbol];
-  }
-
-  return groups;
-};
-
-const formatTypeLabel = (type: string): string => {
-  const typeLabels: Record<string, string> = {
-    symbol: "Symbol",
-    module: "Module",
-    class: "Class",
-    struct: "Struct",
-    enum: "Enum",
-    protocol: "Protocol",
-    method: "Method",
-    property: "Property",
-    init: "Initializer",
-    case: "Case",
-    associatedtype: "Associated Type",
-    typealias: "Type Alias",
-    article: "Article",
-    sampleCode: "Sample Code",
-    overview: "Overview",
-    collection: "Collection",
-    func: "Function",
-    var: "Variable",
-    let: "Constant",
-    operator: "Operator",
-    macro: "Macro",
-    namespace: "Namespace",
-  };
-
-  return typeLabels[type] || type.charAt(0).toUpperCase() + type.slice(1);
-};
-
-const pluralizeType = (type: string): string => {
-  const typeLabel = formatTypeLabel(type);
-
-  // Special cases for pluralization
-  const pluralRules: Record<string, string> = {
-    Class: "Classes",
-    Property: "Properties",
-    "Associated Type": "Associated Types",
-    "Type Alias": "Type Aliases",
-    "Sample Code": "Sample Code",
-  };
-
-  return pluralRules[typeLabel] || `${typeLabel}s`;
-};
-
-const matchesPattern = (name: string, pattern: string): boolean => {
-  const regexPattern = pattern
-    .split("*")
-    .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
-    .join(".*");
-
-  const regex = new RegExp(`^${regexPattern}$`, "i");
-  return regex.test(name);
-};
-
-const findCollections = (items: RenderIndexNode[]): RenderIndexNode[] => {
-  const collections: RenderIndexNode[] = [];
-
-  const search = (itemList: RenderIndexNode[]) => {
-    for (const item of itemList) {
-      if (item.type === "collection") {
-        collections.push(item);
-      }
-      if (item.children) {
-        search(item.children);
-      }
-    }
-  };
-
-  search(items);
-  return collections;
+	return result;
 };
