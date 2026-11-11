@@ -31,13 +31,16 @@ To protect the `main` branch, configure the following rules in GitHub:
 - [x] Include administrators
 - [x] Restrict who can push to matching branches
 
-## Required Secrets
+## npm Trusted Publishing
 
-Add these secrets in Settings → Secrets and variables → Actions:
+`release.yml` publishes through npm trusted publishing (OIDC), so the repository holds no npm token.
+The package must exist on npm before it can trust the workflow, so publish the first version by hand:
 
-1. **NPM_TOKEN**: Your npm authentication token for publishing with `bun publish`
-   - Get it from: <https://www.npmjs.com/settings/YOUR_USERNAME/tokens>
-   - Create a token with "Automation" type
+1. `npm login`, with two-factor authentication on the account
+2. `bun publish --access public`
+3. `npx npm@latest trust github apple-docs-mcp-next --file release.yml --repository xsyetopz/apple-docs-mcp-next --allow-publish`
+
+Later versions publish when a `v*` tag matching the `package.json` version is pushed.
 
 ## Workflow Status Badges
 
