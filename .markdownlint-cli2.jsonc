@@ -1,9 +1,18 @@
 {
-  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/main/schema/markdownlint-cli2-config-schema.json",
-  // The rules are in `.markdownlint.jsonc`, which the configs of the skill folders extend.
-  // `.claude/` holds the commands and skills that `openspec init` generates, so its text is not ours to lint.
-  // `.agents/` holds the skills that a user installs for this checkout, which git ignores, so their text is not ours to lint.
-  // `src/` holds the sources and the shared parts of the generator, and the files that it generates in `plugins/` are linted.
-  "globs": ["**/*.md"],
-  "ignores": ["node_modules/**", ".claude/**", ".agents/**", "src/**"]
+	"$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/v0.24.0/schema/markdownlint-cli2-config-schema.json",
+	"globs": ["**/*.md"],
+	"gitignore": true,
+	// A repo without a .gitignore must not have its dependencies linted or fixed.
+	"ignores": [
+		"**/node_modules/**",
+		"node_modules/**",
+		".claude/**",
+		".agents/**",
+		"src/**",
+	],
+	// The rules come from typescript-bedrock; a custom rule must be named here to load.
+	"customRules": ["markdownlint-rule-title-case-style"],
+	"config": {
+		"extends": "./node_modules/typescript-bedrock/markdownlint.jsonc",
+	},
 }
